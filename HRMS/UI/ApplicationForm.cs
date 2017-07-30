@@ -113,12 +113,7 @@ namespace UI
             
             return errorMsg != string.Empty ? false : true;
         }
-
-
-        private void OnLoad(object sender, EventArgs e)
-        {
-
-        }
+        
         private void OnCbxApplicationTypeSelectedValueChanged(object sender, EventArgs e)
         {
             if (cbxApplicationType.SelectedIndex == 1)

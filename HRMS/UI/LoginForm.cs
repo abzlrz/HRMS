@@ -11,7 +11,7 @@ namespace UI
             InitializeComponent();
         }
 
-        private void OnApplicationClick(object sender, EventArgs e)
+        private void OnBtnApplicationClick(object sender, EventArgs e)
         {
             application.ShowDialog();
         }

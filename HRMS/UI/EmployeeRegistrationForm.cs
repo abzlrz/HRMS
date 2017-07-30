@@ -19,11 +19,11 @@ namespace UI
             gbxEvaluationInfo.Enabled = !arg;
             gbxShortlist.Enabled = !arg;
         }
+
         private void OnProceedClick(object sender, EventArgs e)
         {
             EnableControls(true);
         }
-
         private void OnResetClick(object sender, EventArgs e)
         {
             EnableControls(false);

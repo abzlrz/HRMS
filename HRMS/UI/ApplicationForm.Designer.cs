@@ -1227,7 +1227,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Application Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
-            this.Load += new System.EventHandler(this.OnLoad);
             this.personalInfoGroupBox.ResumeLayout(false);
             this.personalInfoGroupBox.PerformLayout();
             this.presentAddressGroupBox.ResumeLayout(false);
