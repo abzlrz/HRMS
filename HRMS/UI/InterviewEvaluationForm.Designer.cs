@@ -1034,7 +1034,6 @@
             this.label3.Size = new System.Drawing.Size(127, 13);
             this.label3.TabIndex = 40;
             this.label3.Text = "Greeting to Committee:";
-            this.label3.Click += new System.EventHandler(this.OnLabel3Click);
             // 
             // btnReset
             // 
@@ -1060,7 +1059,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "InterviewEvaluationForm";
             this.Text = "Evaluation Info";
-            this.Load += new System.EventHandler(this.OnLoad);
             this.gbxView.ResumeLayout(false);
             this.gbxView.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdv)).EndInit();

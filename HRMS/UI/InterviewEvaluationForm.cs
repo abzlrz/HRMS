@@ -60,9 +60,6 @@ namespace UI
             gbxView.Enabled = !arg;
             gbxInfo.Enabled = !arg;
         }
-        private void OnLoad(object sender, EventArgs e)
-        {
-        }
 
         private void OnBtnEvaluateClick(object sender, EventArgs e)
         {
@@ -77,12 +74,6 @@ namespace UI
                 MessageBox.Show(errorMsg);
             }*/
         }
-
-        private void OnLabel3Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void OnResetClick(object sender, EventArgs e)
         {
             EnableControl(false);
