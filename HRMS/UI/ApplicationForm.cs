@@ -159,5 +159,10 @@ namespace UI
         {
             this.ClosingConfirm(e);
         }
+
+        private void OnTbxReferralEmpIDParentChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
