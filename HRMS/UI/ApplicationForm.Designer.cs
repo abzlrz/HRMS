@@ -254,7 +254,6 @@
             this.tbxPersonalSecondContact.Name = "tbxPersonalSecondContact";
             this.tbxPersonalSecondContact.Size = new System.Drawing.Size(160, 22);
             this.tbxPersonalSecondContact.TabIndex = 5;
-            this.tbxPersonalSecondContact.Leave += new System.EventHandler(this.OnTbxPersonalSecondContactLeave);
             // 
             // tbxPersonalPrimContact
             // 
@@ -263,7 +262,6 @@
             this.tbxPersonalPrimContact.Size = new System.Drawing.Size(160, 22);
             this.tbxPersonalPrimContact.TabIndex = 4;
             this.tbxPersonalPrimContact.Tag = "required";
-            this.tbxPersonalPrimContact.Leave += new System.EventHandler(this.OnTbxPersonalPrimContactLeave);
             // 
             // tbxPersonalNickname
             // 
@@ -784,7 +782,6 @@
             this.btnClearAll.TabIndex = 6;
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.UseVisualStyleBackColor = true;
-            this.btnClearAll.Click += new System.EventHandler(this.OnClearAllClick);
             // 
             // referralGroupBox
             // 
@@ -850,7 +847,6 @@
             this.cbxReferralSource.Size = new System.Drawing.Size(152, 21);
             this.cbxReferralSource.TabIndex = 3;
             this.cbxReferralSource.Tag = "required";
-            this.cbxReferralSource.SelectedIndexChanged += new System.EventHandler(this.OnCbxReferralSourceSelectedIndexChanged);
             // 
             // label22
             // 
@@ -879,7 +875,6 @@
             this.tbxReferralEmpID.Name = "tbxReferralEmpID";
             this.tbxReferralEmpID.Size = new System.Drawing.Size(152, 22);
             this.tbxReferralEmpID.TabIndex = 0;
-            this.tbxReferralEmpID.Leave += new System.EventHandler(this.OnTbxReferralEmpIDLeave);
             // 
             // tbxReferralLastname
             // 
@@ -1072,7 +1067,6 @@
             this.cbxApplicationType.Size = new System.Drawing.Size(441, 21);
             this.cbxApplicationType.TabIndex = 46;
             this.cbxApplicationType.Tag = "required";
-            this.cbxApplicationType.SelectedValueChanged += new System.EventHandler(this.OnCbxApplicationTypeSelectedValueChanged);
             // 
             // dtAppliedDate
             // 
@@ -1226,7 +1220,6 @@
             this.Name = "ApplicationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Application Form";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
             this.personalInfoGroupBox.ResumeLayout(false);
             this.personalInfoGroupBox.PerformLayout();
             this.presentAddressGroupBox.ResumeLayout(false);

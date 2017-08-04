@@ -1045,7 +1045,6 @@
             this.btnReset.TabIndex = 87;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.OnResetClick);
             // 
             // InterviewEvaluationForm
             // 

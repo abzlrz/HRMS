@@ -9,11 +9,7 @@ namespace UI
         public LoginForm()
         {
             InitializeComponent();
-        }
-
-        private void OnBtnApplicationClick(object sender, EventArgs e)
-        {
-            application.ShowDialog();
+            btnApplication.Click += (a, x) => application.ShowDialog();
         }
     }
 }

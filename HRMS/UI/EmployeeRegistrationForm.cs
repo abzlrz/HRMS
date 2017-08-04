@@ -8,6 +8,8 @@ namespace UI
         public EmployeeRegistrationForm()
         {
             InitializeComponent();
+            btnProceed.Click += (a, x) => EnableControls(true);
+            btnReset.Click += (a, x) => EnableControls(false);
         }
         private void EnableControls(bool arg)
         {
@@ -18,15 +20,6 @@ namespace UI
             gbxAppInfo.Enabled = !arg;
             gbxEvaluationInfo.Enabled = !arg;
             gbxShortlist.Enabled = !arg;
-        }
-
-        private void OnProceedClick(object sender, EventArgs e)
-        {
-            EnableControls(true);
-        }
-        private void OnResetClick(object sender, EventArgs e)
-        {
-            EnableControls(false);
         }
     }
 }

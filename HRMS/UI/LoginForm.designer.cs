@@ -69,7 +69,6 @@
             this.btnApplication.Text = "Apply Job";
             this.btnApplication.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnApplication.UseVisualStyleBackColor = false;
-            this.btnApplication.Click += new System.EventHandler(this.OnBtnApplicationClick);
             // 
             // button1
             // 

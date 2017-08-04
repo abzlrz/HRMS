@@ -10,7 +10,29 @@ namespace UI
         public ApplicationForm()
         {
             InitializeComponent();
+            //https://stackoverflow.com/questions/4359629/is-there-anything-wrong-with-using-lambda-for-winforms-event
+            //lambda events
+            cbxApplicationType.SelectedValueChanged += (a, x) => {
+
+                if (cbxApplicationType.SelectedIndex == 1)
+                    HistoryOfApplicationContent(true);
+                else
+                    HistoryOfApplicationContent(false);
+            };
+            cbxReferralSource.SelectedValueChanged += (a, x) => {
+
+                if (cbxReferralSource.SelectedIndex == 1)
+                    ApplicationSourceContent(true);
+                else
+                    ApplicationSourceContent(false);
+            };
+            btnClearAll.Click += (a, x) => this.ClearAllFields();
+            tbxPersonalPrimContact.Leave += (a, x) => tbxPersonalPrimContact.AcceptEntry("[^0-9]");
+            tbxPersonalSecondContact.Leave += (a, x) => tbxPersonalPrimContact.AcceptEntry("[^0-9]");
+            tbxReferralEmpID.Leave += (a, x) => tbxReferralEmpID.AcceptEntry("[^0-9]");
+            this.FormClosing += (a, x) => this.ClosingConfirm(x);
         }
+
         void ApplicationSourceContent(bool arg)
         {
             tbxReferralEmpID.Enabled = arg;
@@ -114,24 +136,6 @@ namespace UI
             return errorMsg != string.Empty ? false : true;
         }
         
-        private void OnCbxApplicationTypeSelectedValueChanged(object sender, EventArgs e)
-        {
-            if (cbxApplicationType.SelectedIndex == 1)
-                HistoryOfApplicationContent(true);
-            else
-                HistoryOfApplicationContent(false);
-        }
-        private void OnCbxReferralSourceSelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbxReferralSource.SelectedIndex == 1)
-                ApplicationSourceContent(true);
-            else
-                ApplicationSourceContent(false);
-        }
-        private void OnClearAllClick(object sender, EventArgs e)
-        {
-            this.ClearAllFields();
-        }
         private void OnOKClick(object sender, EventArgs e)
         {
             if (this.ValidateRegistration())
@@ -143,26 +147,6 @@ namespace UI
                 MessageBox.Show(errorMsg);
             }
         }
-        private void OnTbxPersonalPrimContactLeave(object sender, EventArgs e)
-        {
-            tbxPersonalPrimContact.AcceptEntry("[^0-9]");
-        }
-        private void OnTbxPersonalSecondContactLeave(object sender, EventArgs e)
-        {
-            tbxPersonalSecondContact.AcceptEntry("[^0-9]");
-        }
-        private void OnTbxReferralEmpIDLeave(object sender, EventArgs e)
-        {
-            tbxReferralEmpID.AcceptEntry("[^0-9]");
-        }
-        private void OnFormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.ClosingConfirm(e);
-        }
-
-        private void OnTbxReferralEmpIDParentChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

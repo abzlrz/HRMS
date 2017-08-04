@@ -10,6 +10,7 @@ namespace UI
         public InterviewEvaluationForm()
         {
             InitializeComponent();
+            btnReset.Click += (a, x) => EnableControl(false);
         }
         private void AddErrorMessage(string error)
         {
@@ -73,10 +74,6 @@ namespace UI
             {
                 MessageBox.Show(errorMsg);
             }*/
-        }
-        private void OnResetClick(object sender, EventArgs e)
-        {
-            EnableControl(false);
         }
     }
 }

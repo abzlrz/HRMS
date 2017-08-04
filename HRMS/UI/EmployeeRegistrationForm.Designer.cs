@@ -368,7 +368,6 @@
             this.btnProceed.TabIndex = 0;
             this.btnProceed.Text = "Proceed...";
             this.btnProceed.UseVisualStyleBackColor = true;
-            this.btnProceed.Click += new System.EventHandler(this.OnProceedClick);
             // 
             // gbxSalaryInfo
             // 
@@ -769,7 +768,6 @@
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.OnResetClick);
             // 
             // EmployeeRegistrationForm
             // 
