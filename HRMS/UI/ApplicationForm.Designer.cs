@@ -125,12 +125,18 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.personalInfoGroupBox.SuspendLayout();
             this.presentAddressGroupBox.SuspendLayout();
             this.permanentAddressGroupBox.SuspendLayout();
             this.appliedForGroupBox.SuspendLayout();
             this.referralGroupBox.SuspendLayout();
             this.historyAppGroupBox.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // personalInfoGroupBox
@@ -162,7 +168,7 @@
             this.personalInfoGroupBox.Controls.Add(this.label1);
             this.personalInfoGroupBox.Controls.Add(this.fnameTbx);
             this.personalInfoGroupBox.Controls.Add(this.tbxPersonalFname);
-            this.personalInfoGroupBox.Location = new System.Drawing.Point(12, 247);
+            this.personalInfoGroupBox.Location = new System.Drawing.Point(12, 335);
             this.personalInfoGroupBox.Name = "personalInfoGroupBox";
             this.personalInfoGroupBox.Size = new System.Drawing.Size(890, 134);
             this.personalInfoGroupBox.TabIndex = 3;
@@ -441,7 +447,7 @@
             this.presentAddressGroupBox.Controls.Add(this.label12);
             this.presentAddressGroupBox.Controls.Add(this.label11);
             this.presentAddressGroupBox.Controls.Add(this.tbxPresentNo);
-            this.presentAddressGroupBox.Location = new System.Drawing.Point(12, 387);
+            this.presentAddressGroupBox.Location = new System.Drawing.Point(12, 475);
             this.presentAddressGroupBox.Name = "presentAddressGroupBox";
             this.presentAddressGroupBox.Size = new System.Drawing.Size(431, 143);
             this.presentAddressGroupBox.TabIndex = 4;
@@ -533,7 +539,7 @@
             this.permanentAddressGroupBox.Controls.Add(this.label17);
             this.permanentAddressGroupBox.Controls.Add(this.label18);
             this.permanentAddressGroupBox.Controls.Add(this.tbxPermanentNo);
-            this.permanentAddressGroupBox.Location = new System.Drawing.Point(449, 387);
+            this.permanentAddressGroupBox.Location = new System.Drawing.Point(449, 475);
             this.permanentAddressGroupBox.Name = "permanentAddressGroupBox";
             this.permanentAddressGroupBox.Size = new System.Drawing.Size(453, 143);
             this.permanentAddressGroupBox.TabIndex = 5;
@@ -656,7 +662,7 @@
             this.appliedForGroupBox.Controls.Add(this.label27);
             this.appliedForGroupBox.Controls.Add(this.label23);
             this.appliedForGroupBox.Controls.Add(this.tbxAppPosition);
-            this.appliedForGroupBox.Location = new System.Drawing.Point(15, 162);
+            this.appliedForGroupBox.Location = new System.Drawing.Point(15, 250);
             this.appliedForGroupBox.Name = "appliedForGroupBox";
             this.appliedForGroupBox.Size = new System.Drawing.Size(887, 79);
             this.appliedForGroupBox.TabIndex = 2;
@@ -757,7 +763,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(747, 538);
+            this.btnOK.Location = new System.Drawing.Point(747, 626);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 8;
@@ -767,7 +773,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(828, 538);
+            this.btnCancel.Location = new System.Drawing.Point(828, 626);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 9;
@@ -776,7 +782,7 @@
             // 
             // btnClearAll
             // 
-            this.btnClearAll.Location = new System.Drawing.Point(666, 538);
+            this.btnClearAll.Location = new System.Drawing.Point(666, 626);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(75, 23);
             this.btnClearAll.TabIndex = 6;
@@ -795,7 +801,7 @@
             this.referralGroupBox.Controls.Add(this.label19);
             this.referralGroupBox.Controls.Add(this.label20);
             this.referralGroupBox.Controls.Add(this.tbxReferralFirstname);
-            this.referralGroupBox.Location = new System.Drawing.Point(15, 12);
+            this.referralGroupBox.Location = new System.Drawing.Point(15, 100);
             this.referralGroupBox.Name = "referralGroupBox";
             this.referralGroupBox.Size = new System.Drawing.Size(285, 144);
             this.referralGroupBox.TabIndex = 10;
@@ -937,7 +943,7 @@
             this.historyAppGroupBox.Controls.Add(this.label24);
             this.historyAppGroupBox.Controls.Add(this.label25);
             this.historyAppGroupBox.Controls.Add(this.label26);
-            this.historyAppGroupBox.Location = new System.Drawing.Point(306, 12);
+            this.historyAppGroupBox.Location = new System.Drawing.Point(306, 100);
             this.historyAppGroupBox.Name = "historyAppGroupBox";
             this.historyAppGroupBox.Size = new System.Drawing.Size(596, 144);
             this.historyAppGroupBox.TabIndex = 11;
@@ -1179,7 +1185,7 @@
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Red;
-            this.label51.Location = new System.Drawing.Point(12, 544);
+            this.label51.Location = new System.Drawing.Point(12, 632);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(14, 17);
             this.label51.TabIndex = 75;
@@ -1189,18 +1195,60 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(24, 544);
+            this.label52.Location = new System.Drawing.Point(24, 632);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(77, 13);
             this.label52.TabIndex = 75;
             this.label52.Text = "Required fields";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(914, 85);
+            this.panel1.TabIndex = 76;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::UI.Properties.Resources.arvato1;
+            this.pictureBox1.Location = new System.Drawing.Point(762, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(30, 47);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(375, 13);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "This will enable us to inform you about your application and evaluation";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(30, 23);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(201, 15);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Please fill-up this Application Form.";
             // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(914, 569);
+            this.ClientSize = new System.Drawing.Size(914, 661);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.historyAppGroupBox);
@@ -1215,7 +1263,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.HelpButton = true;
-            this.MaximumSize = new System.Drawing.Size(930, 608);
+            this.MaximumSize = new System.Drawing.Size(930, 700);
             this.MinimumSize = new System.Drawing.Size(922, 472);
             this.Name = "ApplicationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1232,6 +1280,9 @@
             this.referralGroupBox.PerformLayout();
             this.historyAppGroupBox.ResumeLayout(false);
             this.historyAppGroupBox.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1336,5 +1387,9 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.ComboBox cbxAppliedBefore;
         private System.Windows.Forms.ComboBox cbxWorkedBefore;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
