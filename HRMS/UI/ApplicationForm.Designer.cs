@@ -129,6 +129,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.personalInfoGroupBox.SuspendLayout();
             this.presentAddressGroupBox.SuspendLayout();
             this.permanentAddressGroupBox.SuspendLayout();
@@ -785,7 +786,7 @@
             this.btnClearAll.Location = new System.Drawing.Point(666, 626);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(75, 23);
-            this.btnClearAll.TabIndex = 6;
+            this.btnClearAll.TabIndex = 7;
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.UseVisualStyleBackColor = true;
             // 
@@ -804,7 +805,7 @@
             this.referralGroupBox.Location = new System.Drawing.Point(15, 100);
             this.referralGroupBox.Name = "referralGroupBox";
             this.referralGroupBox.Size = new System.Drawing.Size(285, 144);
-            this.referralGroupBox.TabIndex = 10;
+            this.referralGroupBox.TabIndex = 0;
             this.referralGroupBox.TabStop = false;
             this.referralGroupBox.Text = "Application Source";
             // 
@@ -851,7 +852,7 @@
             this.cbxReferralSource.Location = new System.Drawing.Point(97, 31);
             this.cbxReferralSource.Name = "cbxReferralSource";
             this.cbxReferralSource.Size = new System.Drawing.Size(152, 21);
-            this.cbxReferralSource.TabIndex = 3;
+            this.cbxReferralSource.TabIndex = 0;
             this.cbxReferralSource.Tag = "required";
             // 
             // label22
@@ -880,7 +881,7 @@
             this.tbxReferralEmpID.Location = new System.Drawing.Point(97, 55);
             this.tbxReferralEmpID.Name = "tbxReferralEmpID";
             this.tbxReferralEmpID.Size = new System.Drawing.Size(152, 22);
-            this.tbxReferralEmpID.TabIndex = 0;
+            this.tbxReferralEmpID.TabIndex = 1;
             // 
             // tbxReferralLastname
             // 
@@ -889,7 +890,7 @@
             this.tbxReferralLastname.Name = "tbxReferralLastname";
             this.tbxReferralLastname.ReadOnly = true;
             this.tbxReferralLastname.Size = new System.Drawing.Size(152, 22);
-            this.tbxReferralLastname.TabIndex = 2;
+            this.tbxReferralLastname.TabIndex = 3;
             // 
             // label19
             // 
@@ -918,7 +919,7 @@
             this.tbxReferralFirstname.Name = "tbxReferralFirstname";
             this.tbxReferralFirstname.ReadOnly = true;
             this.tbxReferralFirstname.Size = new System.Drawing.Size(152, 22);
-            this.tbxReferralFirstname.TabIndex = 1;
+            this.tbxReferralFirstname.TabIndex = 2;
             // 
             // historyAppGroupBox
             // 
@@ -946,7 +947,7 @@
             this.historyAppGroupBox.Location = new System.Drawing.Point(306, 100);
             this.historyAppGroupBox.Name = "historyAppGroupBox";
             this.historyAppGroupBox.Size = new System.Drawing.Size(596, 144);
-            this.historyAppGroupBox.TabIndex = 11;
+            this.historyAppGroupBox.TabIndex = 1;
             this.historyAppGroupBox.TabStop = false;
             this.historyAppGroupBox.Text = "History of Application";
             // 
@@ -961,7 +962,7 @@
             this.cbxWorkedBefore.Location = new System.Drawing.Point(133, 54);
             this.cbxWorkedBefore.Name = "cbxWorkedBefore";
             this.cbxWorkedBefore.Size = new System.Drawing.Size(152, 21);
-            this.cbxWorkedBefore.TabIndex = 64;
+            this.cbxWorkedBefore.TabIndex = 1;
             this.cbxWorkedBefore.Tag = "required";
             // 
             // cbxAppliedBefore
@@ -975,7 +976,7 @@
             this.cbxAppliedBefore.Location = new System.Drawing.Point(422, 54);
             this.cbxAppliedBefore.Name = "cbxAppliedBefore";
             this.cbxAppliedBefore.Size = new System.Drawing.Size(152, 21);
-            this.cbxAppliedBefore.TabIndex = 63;
+            this.cbxAppliedBefore.TabIndex = 4;
             this.cbxAppliedBefore.Tag = "required";
             // 
             // b4
@@ -1071,7 +1072,7 @@
             this.cbxApplicationType.Location = new System.Drawing.Point(133, 31);
             this.cbxApplicationType.Name = "cbxApplicationType";
             this.cbxApplicationType.Size = new System.Drawing.Size(441, 21);
-            this.cbxApplicationType.TabIndex = 46;
+            this.cbxApplicationType.TabIndex = 0;
             this.cbxApplicationType.Tag = "required";
             // 
             // dtAppliedDate
@@ -1080,7 +1081,7 @@
             this.dtAppliedDate.Location = new System.Drawing.Point(422, 101);
             this.dtAppliedDate.Name = "dtAppliedDate";
             this.dtAppliedDate.Size = new System.Drawing.Size(152, 22);
-            this.dtAppliedDate.TabIndex = 5;
+            this.dtAppliedDate.TabIndex = 6;
             // 
             // label32
             // 
@@ -1099,7 +1100,7 @@
             this.dtAppliedTo.Location = new System.Drawing.Point(422, 78);
             this.dtAppliedTo.Name = "dtAppliedTo";
             this.dtAppliedTo.Size = new System.Drawing.Size(152, 22);
-            this.dtAppliedTo.TabIndex = 4;
+            this.dtAppliedTo.TabIndex = 5;
             this.dtAppliedTo.Value = new System.DateTime(2017, 7, 22, 0, 0, 0, 0);
             // 
             // label28
@@ -1138,7 +1139,7 @@
             this.dtWorkedTo.Location = new System.Drawing.Point(133, 101);
             this.dtWorkedTo.Name = "dtWorkedTo";
             this.dtWorkedTo.Size = new System.Drawing.Size(152, 22);
-            this.dtWorkedTo.TabIndex = 2;
+            this.dtWorkedTo.TabIndex = 3;
             // 
             // dtWorkedFrom
             // 
@@ -1147,7 +1148,7 @@
             this.dtWorkedFrom.Location = new System.Drawing.Point(133, 78);
             this.dtWorkedFrom.Name = "dtWorkedFrom";
             this.dtWorkedFrom.Size = new System.Drawing.Size(152, 22);
-            this.dtWorkedFrom.TabIndex = 1;
+            this.dtWorkedFrom.TabIndex = 2;
             this.dtWorkedFrom.Value = new System.DateTime(2017, 7, 22, 0, 0, 0, 0);
             // 
             // label24
@@ -1204,6 +1205,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.label33);
@@ -1242,12 +1244,22 @@
             this.label33.TabIndex = 0;
             this.label33.Text = "Please fill-up this Application Form.";
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(585, 626);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 23);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(914, 661);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label52);
             this.Controls.Add(this.label51);
@@ -1391,5 +1403,6 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

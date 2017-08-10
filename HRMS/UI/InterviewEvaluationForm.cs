@@ -12,7 +12,7 @@ namespace UI
             InitializeComponent();
             btnReset.Click += (a, x) => EnableControl(false);
         }
-        private void AddErrorMessage(string error)
+        void AddErrorMessage(string error)
         {
             if (this.errorMsg == string.Empty)
             {
@@ -20,7 +20,7 @@ namespace UI
             }
             this.errorMsg += error + "\n";
         }
-        private bool ValidateSelectionInfo()
+        bool ValidateSelectionInfo()
         {
             errorMsg = string.Empty;
             if(gdv.SelectedRows.Count == 0)
@@ -55,7 +55,7 @@ namespace UI
 
             return errorMsg != string.Empty ? false : true;
         }
-        private void EnableControl(bool arg)
+        void EnableControl(bool arg)
         {
             gbxEvaluationAnalysis.Enabled = arg;
             gbxView.Enabled = !arg;

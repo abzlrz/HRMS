@@ -77,8 +77,9 @@
             this.cbxTeam = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxContractType = new System.Windows.Forms.ComboBox();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.gbxAppSource = new System.Windows.Forms.GroupBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -91,7 +92,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
             this.gbxAppInfo.SuspendLayout();
             this.gbxShortlist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -611,20 +611,10 @@
             this.cbxContractType.TabIndex = 43;
             this.cbxContractType.Tag = "required";
             // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnRegister.Enabled = false;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Location = new System.Drawing.Point(1028, 494);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(138, 27);
-            this.btnRegister.TabIndex = 8;
-            this.btnRegister.Text = "Register Employee";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            // 
             // gbxAppSource
             // 
+            this.gbxAppSource.Controls.Add(this.btnReset);
+            this.gbxAppSource.Controls.Add(this.btnRegister);
             this.gbxAppSource.Controls.Add(this.textBox9);
             this.gbxAppSource.Controls.Add(this.label36);
             this.gbxAppSource.Controls.Add(this.textBox8);
@@ -641,14 +631,39 @@
             this.gbxAppSource.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxAppSource.Location = new System.Drawing.Point(762, 290);
             this.gbxAppSource.Name = "gbxAppSource";
-            this.gbxAppSource.Size = new System.Drawing.Size(404, 198);
+            this.gbxAppSource.Size = new System.Drawing.Size(404, 234);
             this.gbxAppSource.TabIndex = 4;
             this.gbxAppSource.TabStop = false;
             this.gbxAppSource.Text = "Application Source";
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnReset.Enabled = false;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReset.Location = new System.Drawing.Point(99, 201);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(138, 27);
+            this.btnReset.TabIndex = 71;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnRegister.Enabled = false;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegister.Location = new System.Drawing.Point(247, 201);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(138, 27);
+            this.btnRegister.TabIndex = 70;
+            this.btnRegister.Text = "Register Employee";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.OnRegisterClick);
+            // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(227, 160);
+            this.textBox9.Location = new System.Drawing.Point(227, 151);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(138, 22);
             this.textBox9.TabIndex = 69;
@@ -657,7 +672,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(28, 163);
+            this.label36.Location = new System.Drawing.Point(28, 154);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(68, 13);
             this.label36.TabIndex = 68;
@@ -665,14 +680,14 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(227, 135);
+            this.textBox8.Location = new System.Drawing.Point(227, 126);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(138, 22);
             this.textBox8.TabIndex = 67;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(227, 110);
+            this.textBox7.Location = new System.Drawing.Point(227, 101);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(138, 22);
             this.textBox7.TabIndex = 54;
@@ -681,7 +696,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(28, 138);
+            this.label39.Location = new System.Drawing.Point(28, 129);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(79, 13);
             this.label39.TabIndex = 66;
@@ -691,7 +706,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(27, 113);
+            this.label37.Location = new System.Drawing.Point(27, 104);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(74, 13);
             this.label37.TabIndex = 64;
@@ -757,26 +772,12 @@
             this.label33.TabIndex = 60;
             this.label33.Text = "Referral Name:";
             // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnReset.Enabled = false;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReset.Location = new System.Drawing.Point(880, 494);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(138, 27);
-            this.btnReset.TabIndex = 9;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            // 
             // EmployeeRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 536);
-            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.gbxAppSource);
-            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.gbxEvaluationInfo);
             this.Controls.Add(this.gbxSalaryInfo);
             this.Controls.Add(this.gbxShortlist);
@@ -836,7 +837,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox1;
@@ -866,5 +866,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

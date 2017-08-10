@@ -50,9 +50,10 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 359);
+            this.panel1.Size = new System.Drawing.Size(480, 383);
             this.panel1.TabIndex = 0;
             // 
             // btnApplication
@@ -62,7 +63,7 @@
             this.btnApplication.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnApplication.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplication.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnApplication.Location = new System.Drawing.Point(143, 292);
+            this.btnApplication.Location = new System.Drawing.Point(157, 315);
             this.btnApplication.Name = "btnApplication";
             this.btnApplication.Size = new System.Drawing.Size(170, 31);
             this.btnApplication.TabIndex = 6;
@@ -77,7 +78,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(143, 255);
+            this.button1.Location = new System.Drawing.Point(157, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 31);
             this.button1.TabIndex = 5;
@@ -90,7 +91,7 @@
             this.textBox2.BackColor = System.Drawing.Color.SteelBlue;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(115, 201);
+            this.textBox2.Location = new System.Drawing.Point(129, 224);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(232, 29);
             this.textBox2.TabIndex = 4;
@@ -102,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(195, 183);
+            this.label2.Location = new System.Drawing.Point(209, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 3;
@@ -113,7 +114,7 @@
             this.textBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(115, 135);
+            this.textBox1.Location = new System.Drawing.Point(129, 158);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(232, 29);
             this.textBox1.TabIndex = 2;
@@ -124,7 +125,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(195, 117);
+            this.label1.Location = new System.Drawing.Point(209, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 15);
             this.label1.TabIndex = 1;
@@ -133,7 +134,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UI.Properties.Resources.Untitled_1;
-            this.pictureBox1.Location = new System.Drawing.Point(143, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(157, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

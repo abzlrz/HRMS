@@ -147,6 +147,5 @@ namespace UI
                 MessageBox.Show(errorMsg);
             }
         }
-        
     }
 }

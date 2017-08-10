@@ -44,6 +44,8 @@ namespace UI
                     ComboBox comboBox = (ComboBox)control;
                     if (comboBox.Items.Count > 0)
                         comboBox.SelectedIndex = -1;
+                    else
+                        comboBox.Text = null;
                     break;
 
                 case "CheckBox":

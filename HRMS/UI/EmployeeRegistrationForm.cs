@@ -5,6 +5,7 @@ namespace UI
 {
     public partial class EmployeeRegistrationForm : Form
     {
+        SubForms.TrainingScheduleDialogForm trainingSchedForm = new SubForms.TrainingScheduleDialogForm();
         public EmployeeRegistrationForm()
         {
             InitializeComponent();
@@ -20,6 +21,21 @@ namespace UI
             gbxAppInfo.Enabled = !arg;
             gbxEvaluationInfo.Enabled = !arg;
             gbxShortlist.Enabled = !arg;
+        }
+
+        private void OnRegisterClick(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Schedule for training?", "Schedule?",
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                trainingSchedForm.ShowDialog();
+            }
+            else if (result == DialogResult.No)
+            {
+
+            }
         }
     }
 }

@@ -15,6 +15,30 @@ namespace UI
         public TrainingFeedbackAssesmentForm()
         {
             InitializeComponent();
+            btnProceed.Click += (a, x) => EnableControls(true);
+            btnReset.Click += (a, x) => {
+
+                if(MessageBox.Show("Are you sure?", "Question", 
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    EnableControls(false);
+                    this.ClearAllFields();
+                }
+            };
+            btnChangeEmployee.Click += (a, x) => EnableControls(false);
+        }
+        private void EnableControls(bool arg)
+        {
+            gbxPerformance.Enabled = arg;
+            gbxSummary.Enabled = arg;
+            gbxShortlist.Enabled = !arg;
+            gbxInfo.Enabled = !arg;
+        }
+
+        private void OnProceedClick(object sender, EventArgs e)
+        {
+
         }
     }
 }
