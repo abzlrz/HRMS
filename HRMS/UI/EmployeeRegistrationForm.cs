@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Windows.Forms;
+using UI.SubForms;
 
 namespace UI
 {
     public partial class EmployeeRegistrationForm : Form
     {
-        SubForms.TrainingScheduleDialogForm trainingSchedForm = new SubForms.TrainingScheduleDialogForm();
+        TrainingScheduleDialogForm trainingSchedForm = new TrainingScheduleDialogForm();
         public EmployeeRegistrationForm()
         {
             InitializeComponent();
             btnProceed.Click += (a, x) => EnableControls(true);
-            btnReset.Click += (a, x) => EnableControls(false);
+            btnReset.Click += (a, x) => {
+                EnableControls(false);
+                this.ClearAllFields();
+            };
+            btnChangeEmployee.Click += (a, x) => EnableControls(false);
         }
         private void EnableControls(bool arg)
         {

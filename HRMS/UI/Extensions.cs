@@ -82,4 +82,12 @@ namespace UI
             }
         }
     }
+
+    interface IForm
+    {
+        void AddErrorMessage(string error);
+        bool ValidateSelectedInfo();
+        void EnableControl(bool arg);
+        void ResetAll();
+    }
 }

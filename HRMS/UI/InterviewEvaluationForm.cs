@@ -10,9 +10,12 @@ namespace UI
         public InterviewEvaluationForm()
         {
             InitializeComponent();
-            btnReset.Click += (a, x) => EnableControl(false);
+
+            btnReset.Click += (a, x) => ResetAll();
+            btnEvaluate.Click += (a, x) => EnableControl(true);
+            btnChangeEmployee.Click += (a, x) => EnableControl(false);
         }
-        void AddErrorMessage(string error)
+        private void AddErrorMessage(string error)
         {
             if (this.errorMsg == string.Empty)
             {
@@ -20,7 +23,7 @@ namespace UI
             }
             this.errorMsg += error + "\n";
         }
-        bool ValidateSelectionInfo()
+        private bool ValidateSelectedInfo()
         {
             errorMsg = string.Empty;
             if(gdv.SelectedRows.Count == 0)
@@ -55,25 +58,21 @@ namespace UI
 
             return errorMsg != string.Empty ? false : true;
         }
-        void EnableControl(bool arg)
+        private void EnableControl(bool arg)
         {
             gbxEvaluationAnalysis.Enabled = arg;
             gbxView.Enabled = !arg;
             gbxInfo.Enabled = !arg;
         }
-
-        private void OnBtnEvaluateClick(object sender, EventArgs e)
+        private void ResetAll()
         {
-            EnableControl(true);
-            /*
-            if (this.ValidateSelectionInfo())
+            if (MessageBox.Show("The data you entered will be all reset. Are you sure?", "Confirmation",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                evaluationAnalysis.Enabled = true;
+                EnableControl(false);
+                this.ClearAllFields();
             }
-            else
-            {
-                MessageBox.Show(errorMsg);
-            }*/
         }
     }
 }

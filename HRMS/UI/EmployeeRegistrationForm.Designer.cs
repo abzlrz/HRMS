@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -78,6 +79,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbxContractType = new System.Windows.Forms.ComboBox();
             this.gbxAppSource = new System.Windows.Forms.GroupBox();
+            this.btnChangeEmployee = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -92,6 +94,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.gbxAppInfo.SuspendLayout();
             this.gbxShortlist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -362,11 +365,12 @@
             // 
             // btnProceed
             // 
-            this.btnProceed.Location = new System.Drawing.Point(258, 123);
+            this.btnProceed.Location = new System.Drawing.Point(257, 132);
             this.btnProceed.Name = "btnProceed";
             this.btnProceed.Size = new System.Drawing.Size(75, 23);
             this.btnProceed.TabIndex = 0;
             this.btnProceed.Text = "Proceed...";
+            this.toolTip.SetToolTip(this.btnProceed, "Proceed to next process");
             this.btnProceed.UseVisualStyleBackColor = true;
             // 
             // gbxSalaryInfo
@@ -613,6 +617,7 @@
             // 
             // gbxAppSource
             // 
+            this.gbxAppSource.Controls.Add(this.btnChangeEmployee);
             this.gbxAppSource.Controls.Add(this.btnReset);
             this.gbxAppSource.Controls.Add(this.btnRegister);
             this.gbxAppSource.Controls.Add(this.textBox9);
@@ -636,16 +641,29 @@
             this.gbxAppSource.TabStop = false;
             this.gbxAppSource.Text = "Application Source";
             // 
+            // btnChangeEmployee
+            // 
+            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChangeEmployee.Location = new System.Drawing.Point(77, 201);
+            this.btnChangeEmployee.Name = "btnChangeEmployee";
+            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
+            this.btnChangeEmployee.TabIndex = 92;
+            this.btnChangeEmployee.Text = "Employee...";
+            this.toolTip.SetToolTip(this.btnChangeEmployee, "Change the applicant");
+            this.btnChangeEmployee.UseVisualStyleBackColor = false;
+            // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnReset.Enabled = false;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReset.Location = new System.Drawing.Point(99, 201);
+            this.btnReset.Location = new System.Drawing.Point(175, 201);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(138, 27);
+            this.btnReset.Size = new System.Drawing.Size(92, 27);
             this.btnReset.TabIndex = 71;
             this.btnReset.Text = "Reset";
+            this.toolTip.SetToolTip(this.btnReset, "Reset all");
             this.btnReset.UseVisualStyleBackColor = false;
             // 
             // btnRegister
@@ -653,11 +671,12 @@
             this.btnRegister.BackColor = System.Drawing.Color.LimeGreen;
             this.btnRegister.Enabled = false;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Location = new System.Drawing.Point(247, 201);
+            this.btnRegister.Location = new System.Drawing.Point(273, 201);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(138, 27);
+            this.btnRegister.Size = new System.Drawing.Size(92, 27);
             this.btnRegister.TabIndex = 70;
-            this.btnRegister.Text = "Register Employee";
+            this.btnRegister.Text = "Register";
+            this.toolTip.SetToolTip(this.btnRegister, "Register applicant as new Employee");
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.OnRegisterClick);
             // 
@@ -772,6 +791,10 @@
             this.label33.TabIndex = 60;
             this.label33.Text = "Referral Name:";
             // 
+            // toolTip
+            // 
+            this.toolTip.IsBalloon = true;
+            // 
             // EmployeeRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -867,5 +890,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnChangeEmployee;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

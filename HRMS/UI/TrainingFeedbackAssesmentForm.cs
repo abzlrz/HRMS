@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UI
@@ -15,20 +8,18 @@ namespace UI
         public TrainingFeedbackAssesmentForm()
         {
             InitializeComponent();
-            btnProceed.Click += (a, x) => EnableControls(true);
-            btnReset.Click += (a, x) => {
 
-                if(MessageBox.Show("Are you sure?", "Question", 
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    EnableControls(false);
-                    this.ClearAllFields();
-                }
-            };
-            btnChangeEmployee.Click += (a, x) => EnableControls(false);
+            btnProceed.Click += (a, x) => EnableControl(true);
+            btnReset.Click += (a, x) => ResetAll();
+            btnChangeEmployee.Click += (a, x) => EnableControl(false);
         }
-        private void EnableControls(bool arg)
+
+        void AddErrorMessage(string error)
+        {
+            
+        }
+
+        void EnableControl(bool arg)
         {
             gbxPerformance.Enabled = arg;
             gbxSummary.Enabled = arg;
@@ -36,9 +27,20 @@ namespace UI
             gbxInfo.Enabled = !arg;
         }
 
-        private void OnProceedClick(object sender, EventArgs e)
+        void ResetAll()
         {
+            if (MessageBox.Show("The data you entered will be all reset. Are you sure?", "Confirmation",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                EnableControl(false);
+                this.ClearAllFields();
+            }
+        }
 
+        bool ValidateSelectedInfo()
+        {
+            throw new NotImplementedException();
         }
     }
 }

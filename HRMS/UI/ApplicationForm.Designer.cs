@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.personalInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -130,6 +131,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.personalInfoGroupBox.SuspendLayout();
             this.presentAddressGroupBox.SuspendLayout();
             this.permanentAddressGroupBox.SuspendLayout();
@@ -716,6 +718,7 @@
             this.cbxAppLoc.Size = new System.Drawing.Size(152, 21);
             this.cbxAppLoc.TabIndex = 2;
             this.cbxAppLoc.Tag = "required";
+            this.toolTip.SetToolTip(this.cbxAppLoc, "Which arvato sites do you refer to?");
             // 
             // label31
             // 
@@ -761,6 +764,7 @@
             this.tbxAppPosition.Name = "tbxAppPosition";
             this.tbxAppPosition.Size = new System.Drawing.Size(152, 22);
             this.tbxAppPosition.TabIndex = 0;
+            this.toolTip.SetToolTip(this.tbxAppPosition, "What position are you going to apply for?");
             // 
             // btnOK
             // 
@@ -854,6 +858,7 @@
             this.cbxReferralSource.Size = new System.Drawing.Size(152, 21);
             this.cbxReferralSource.TabIndex = 0;
             this.cbxReferralSource.Tag = "required";
+            this.toolTip.SetToolTip(this.cbxReferralSource, "To which you knew this job application?");
             // 
             // label22
             // 
@@ -1074,6 +1079,7 @@
             this.cbxApplicationType.Size = new System.Drawing.Size(441, 21);
             this.cbxApplicationType.TabIndex = 0;
             this.cbxApplicationType.Tag = "required";
+            this.toolTip.SetToolTip(this.cbxApplicationType, "Which type of applicant are you?");
             // 
             // dtAppliedDate
             // 
@@ -1273,7 +1279,7 @@
             this.Controls.Add(this.presentAddressGroupBox);
             this.Controls.Add(this.personalInfoGroupBox);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
             this.MaximumSize = new System.Drawing.Size(930, 700);
             this.MinimumSize = new System.Drawing.Size(922, 472);
@@ -1404,5 +1410,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

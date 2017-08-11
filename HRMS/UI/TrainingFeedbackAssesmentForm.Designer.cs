@@ -177,7 +177,6 @@
             this.btnProceed.TabIndex = 69;
             this.btnProceed.Text = "Proceed...";
             this.btnProceed.UseVisualStyleBackColor = true;
-            this.btnProceed.Click += new System.EventHandler(this.OnProceedClick);
             // 
             // textBox1
             // 

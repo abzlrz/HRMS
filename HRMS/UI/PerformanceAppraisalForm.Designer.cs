@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbxShortlist = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            this.gbxEmployee = new System.Windows.Forms.GroupBox();
             this.cbxAppliedBefore = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxInfo = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,12 +49,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbxPeriod = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbxDescription = new System.Windows.Forms.GroupBox();
+            this.btnChangeEmployee = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,26 +66,26 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnChangeEmployee = new System.Windows.Forms.Button();
-            this.gbxShortlist.SuspendLayout();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.gbxEmployee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbxInfo.SuspendLayout();
+            this.gbxPeriod.SuspendLayout();
+            this.gbxDescription.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbxShortlist
+            // gbxEmployee
             // 
-            this.gbxShortlist.Controls.Add(this.cbxAppliedBefore);
-            this.gbxShortlist.Controls.Add(this.textBox2);
-            this.gbxShortlist.Controls.Add(this.dataGridView1);
-            this.gbxShortlist.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxShortlist.Location = new System.Drawing.Point(12, 12);
-            this.gbxShortlist.Name = "gbxShortlist";
-            this.gbxShortlist.Size = new System.Drawing.Size(357, 286);
-            this.gbxShortlist.TabIndex = 2;
-            this.gbxShortlist.TabStop = false;
-            this.gbxShortlist.Text = "Employee List";
+            this.gbxEmployee.Controls.Add(this.cbxAppliedBefore);
+            this.gbxEmployee.Controls.Add(this.textBox2);
+            this.gbxEmployee.Controls.Add(this.dataGridView1);
+            this.gbxEmployee.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxEmployee.Location = new System.Drawing.Point(12, 12);
+            this.gbxEmployee.Name = "gbxEmployee";
+            this.gbxEmployee.Size = new System.Drawing.Size(357, 286);
+            this.gbxEmployee.TabIndex = 2;
+            this.gbxEmployee.TabStop = false;
+            this.gbxEmployee.Text = "Employee List";
             // 
             // cbxAppliedBefore
             // 
@@ -116,30 +118,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(325, 201);
             this.dataGridView1.TabIndex = 2;
             // 
-            // groupBox1
+            // gbxInfo
             // 
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.btnProceed);
-            this.groupBox1.Controls.Add(this.tbxEmployeeName);
-            this.groupBox1.Controls.Add(this.tbxJobTitle);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 304);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(357, 260);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Info";
+            this.gbxInfo.Controls.Add(this.label10);
+            this.gbxInfo.Controls.Add(this.textBox6);
+            this.gbxInfo.Controls.Add(this.comboBox1);
+            this.gbxInfo.Controls.Add(this.label1);
+            this.gbxInfo.Controls.Add(this.label6);
+            this.gbxInfo.Controls.Add(this.textBox4);
+            this.gbxInfo.Controls.Add(this.textBox1);
+            this.gbxInfo.Controls.Add(this.label4);
+            this.gbxInfo.Controls.Add(this.textBox3);
+            this.gbxInfo.Controls.Add(this.btnProceed);
+            this.gbxInfo.Controls.Add(this.tbxEmployeeName);
+            this.gbxInfo.Controls.Add(this.tbxJobTitle);
+            this.gbxInfo.Controls.Add(this.label2);
+            this.gbxInfo.Controls.Add(this.label9);
+            this.gbxInfo.Controls.Add(this.label19);
+            this.gbxInfo.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxInfo.Location = new System.Drawing.Point(12, 304);
+            this.gbxInfo.Name = "gbxInfo";
+            this.gbxInfo.Size = new System.Drawing.Size(357, 260);
+            this.gbxInfo.TabIndex = 3;
+            this.gbxInfo.TabStop = false;
+            this.gbxInfo.Text = "Info";
             // 
             // label10
             // 
@@ -293,19 +295,20 @@
             this.label19.TabIndex = 55;
             this.label19.Text = "Employee ID:";
             // 
-            // groupBox2
+            // gbxPeriod
             // 
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(375, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(360, 111);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Evaluation Period";
+            this.gbxPeriod.Controls.Add(this.dateTimePicker2);
+            this.gbxPeriod.Controls.Add(this.label5);
+            this.gbxPeriod.Controls.Add(this.dateTimePicker1);
+            this.gbxPeriod.Controls.Add(this.label3);
+            this.gbxPeriod.Enabled = false;
+            this.gbxPeriod.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxPeriod.Location = new System.Drawing.Point(375, 12);
+            this.gbxPeriod.Name = "gbxPeriod";
+            this.gbxPeriod.Size = new System.Drawing.Size(360, 111);
+            this.gbxPeriod.TabIndex = 4;
+            this.gbxPeriod.TabStop = false;
+            this.gbxPeriod.Text = "Evaluation Period";
             // 
             // dateTimePicker2
             // 
@@ -341,26 +344,39 @@
             this.label3.TabIndex = 76;
             this.label3.Text = "From:";
             // 
-            // groupBox3
+            // gbxDescription
             // 
-            this.groupBox3.Controls.Add(this.btnChangeEmployee);
-            this.groupBox3.Controls.Add(this.btnReset);
-            this.groupBox3.Controls.Add(this.btnRegister);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.cbxApprover);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.dateTimePicker3);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(375, 129);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(360, 435);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Appraisal Description";
+            this.gbxDescription.Controls.Add(this.btnChangeEmployee);
+            this.gbxDescription.Controls.Add(this.btnReset);
+            this.gbxDescription.Controls.Add(this.btnRegister);
+            this.gbxDescription.Controls.Add(this.label12);
+            this.gbxDescription.Controls.Add(this.textBox7);
+            this.gbxDescription.Controls.Add(this.label11);
+            this.gbxDescription.Controls.Add(this.textBox5);
+            this.gbxDescription.Controls.Add(this.cbxApprover);
+            this.gbxDescription.Controls.Add(this.label8);
+            this.gbxDescription.Controls.Add(this.dateTimePicker3);
+            this.gbxDescription.Controls.Add(this.label7);
+            this.gbxDescription.Enabled = false;
+            this.gbxDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxDescription.Location = new System.Drawing.Point(375, 129);
+            this.gbxDescription.Name = "gbxDescription";
+            this.gbxDescription.Size = new System.Drawing.Size(360, 435);
+            this.gbxDescription.TabIndex = 5;
+            this.gbxDescription.TabStop = false;
+            this.gbxDescription.Text = "Appraisal Description";
+            // 
+            // btnChangeEmployee
+            // 
+            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChangeEmployee.Location = new System.Drawing.Point(32, 398);
+            this.btnChangeEmployee.Name = "btnChangeEmployee";
+            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
+            this.btnChangeEmployee.TabIndex = 91;
+            this.btnChangeEmployee.Text = "Employee...";
+            this.toolTip.SetToolTip(this.btnChangeEmployee, "Change the selected employee");
+            this.btnChangeEmployee.UseVisualStyleBackColor = false;
             // 
             // btnReset
             // 
@@ -372,6 +388,7 @@
             this.btnReset.Size = new System.Drawing.Size(103, 27);
             this.btnReset.TabIndex = 88;
             this.btnReset.Text = "Reset";
+            this.toolTip.SetToolTip(this.btnReset, "Reset all");
             this.btnReset.UseVisualStyleBackColor = false;
             // 
             // btnRegister
@@ -384,6 +401,7 @@
             this.btnRegister.Size = new System.Drawing.Size(103, 27);
             this.btnRegister.TabIndex = 87;
             this.btnRegister.Text = "OK";
+            this.toolTip.SetToolTip(this.btnRegister, "Apply changes");
             this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // label12
@@ -460,49 +478,42 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Approved Date:";
             // 
-            // btnChangeEmployee
+            // toolTip
             // 
-            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChangeEmployee.Location = new System.Drawing.Point(32, 398);
-            this.btnChangeEmployee.Name = "btnChangeEmployee";
-            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
-            this.btnChangeEmployee.TabIndex = 91;
-            this.btnChangeEmployee.Text = "Employee...";
-            this.btnChangeEmployee.UseVisualStyleBackColor = false;
+            this.toolTip.IsBalloon = true;
             // 
             // PerformanceAppraisalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 576);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.gbxShortlist);
+            this.Controls.Add(this.gbxDescription);
+            this.Controls.Add(this.gbxPeriod);
+            this.Controls.Add(this.gbxInfo);
+            this.Controls.Add(this.gbxEmployee);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PerformanceAppraisalForm";
             this.Text = "Performance Appraisal Form";
-            this.gbxShortlist.ResumeLayout(false);
-            this.gbxShortlist.PerformLayout();
+            this.gbxEmployee.ResumeLayout(false);
+            this.gbxEmployee.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbxInfo.ResumeLayout(false);
+            this.gbxInfo.PerformLayout();
+            this.gbxPeriod.ResumeLayout(false);
+            this.gbxPeriod.PerformLayout();
+            this.gbxDescription.ResumeLayout(false);
+            this.gbxDescription.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbxShortlist;
+        private System.Windows.Forms.GroupBox gbxEmployee;
         private System.Windows.Forms.ComboBox cbxAppliedBefore;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxInfo;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnProceed;
         private System.Windows.Forms.TextBox tbxEmployeeName;
@@ -510,7 +521,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxPeriod;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
@@ -521,7 +532,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbxDescription;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label7;
@@ -535,5 +546,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnChangeEmployee;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

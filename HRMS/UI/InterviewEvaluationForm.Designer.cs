@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbxView = new System.Windows.Forms.GroupBox();
             this.cbxAppliedBefore = new System.Windows.Forms.ComboBox();
             this.gdv = new System.Windows.Forms.DataGridView();
@@ -101,6 +102,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.btnChangeEmployee = new System.Windows.Forms.Button();
             this.gbxView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdv)).BeginInit();
             this.gbxInfo.SuspendLayout();
@@ -214,8 +217,8 @@
             this.btnEvaluate.Size = new System.Drawing.Size(80, 23);
             this.btnEvaluate.TabIndex = 40;
             this.btnEvaluate.Text = "Proceed...";
+            this.toolTip.SetToolTip(this.btnEvaluate, "Proceed to next proccess");
             this.btnEvaluate.UseVisualStyleBackColor = true;
-            this.btnEvaluate.Click += new System.EventHandler(this.OnBtnEvaluateClick);
             // 
             // label2
             // 
@@ -346,6 +349,7 @@
             // 
             // gbxEvaluationAnalysis
             // 
+            this.gbxEvaluationAnalysis.Controls.Add(this.btnChangeEmployee);
             this.gbxEvaluationAnalysis.Controls.Add(this.btnReset);
             this.gbxEvaluationAnalysis.Controls.Add(this.button4);
             this.gbxEvaluationAnalysis.Controls.Add(this.button3);
@@ -408,33 +412,36 @@
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReset.Location = new System.Drawing.Point(62, 593);
+            this.btnReset.Location = new System.Drawing.Point(169, 593);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(92, 27);
             this.btnReset.TabIndex = 87;
             this.btnReset.Text = "Reset";
+            this.toolTip.SetToolTip(this.btnReset, "Reset all");
             this.btnReset.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Gold;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(159, 593);
+            this.button4.Location = new System.Drawing.Point(267, 593);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 27);
+            this.button4.Size = new System.Drawing.Size(92, 27);
             this.button4.TabIndex = 86;
-            this.button4.Text = "Add to Shortlist";
+            this.button4.Text = "To Shortlist";
+            this.toolTip.SetToolTip(this.button4, "Add the applicant to waiting list or shortlist");
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(293, 593);
+            this.button3.Location = new System.Drawing.Point(365, 593);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 27);
+            this.button3.Size = new System.Drawing.Size(92, 27);
             this.button3.TabIndex = 85;
-            this.button3.Text = "Offer a Job";
+            this.button3.Text = "Accept";
+            this.toolTip.SetToolTip(this.button3, "Offer a job real quick");
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -442,11 +449,12 @@
             this.button2.BackColor = System.Drawing.Color.Maroon;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(427, 593);
+            this.button2.Location = new System.Drawing.Point(463, 593);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 27);
+            this.button2.Size = new System.Drawing.Size(92, 27);
             this.button2.TabIndex = 41;
             this.button2.Text = "Reject";
+            this.toolTip.SetToolTip(this.button2, "Disregard the application");
             this.button2.UseVisualStyleBackColor = false;
             // 
             // comboBox27
@@ -1047,6 +1055,22 @@
             this.label3.TabIndex = 40;
             this.label3.Text = "Greeting to Committee:";
             // 
+            // toolTip
+            // 
+            this.toolTip.IsBalloon = true;
+            // 
+            // btnChangeEmployee
+            // 
+            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChangeEmployee.Location = new System.Drawing.Point(72, 593);
+            this.btnChangeEmployee.Name = "btnChangeEmployee";
+            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
+            this.btnChangeEmployee.TabIndex = 92;
+            this.btnChangeEmployee.Text = "Employee...";
+            this.toolTip.SetToolTip(this.btnChangeEmployee, "Change the selected employee");
+            this.btnChangeEmployee.UseVisualStyleBackColor = false;
+            // 
             // InterviewEvaluationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1145,6 +1169,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbxJobTitle;
+        private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Button btnChangeEmployee;
     }
 }
 
