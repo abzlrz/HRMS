@@ -1,0 +1,47 @@
+
+1. Exit interview Form
+	1.2. Reasons For Leaving 
+			Better prospects Competition
+			Better prospects Non-Competition
+			Compensation
+			Personal
+			Annualized Hours
+			Travel
+			Education/Higher Studies
+			Family Problems
+			Job Dissatisfaction
+			Health Problems
+			Relocation
+			Transfer
+			Other
+			Abandon
+			Lack of Personal Development
+			Non-Performance
+			Training Failure
+			Disciplinary Issues
+			End of ETC
+			Redundancy/Rightsizing
+			Death
+
+
+	1.3. Reasons Analysis
+			Attendance
+			SOX
+			PIP
+			Misconduct
+			Performance
+			Timekeeping
+			Compliance
+			Absence
+			Data Privacy Breach
+			Security
+			PII Compliance
+			Integrity
+			Negligence
+			Office Protocol
+			Health and Safety
+			People Management
+			Confidentiality
+			Email and Internet
+			Sexual Harassment
+			Ops Policy and Procedure

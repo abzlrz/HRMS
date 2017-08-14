@@ -68,7 +68,7 @@ namespace UI
         private LoginForm loginForm = new LoginForm();
         private MainForm mainform = new MainForm();
         private TrainingFeedbackAssesmentForm trainingForm = new TrainingFeedbackAssesmentForm();
-        private TrainingScheduleDialogForm scheduleForm = new TrainingScheduleDialogForm();
+        private TrainingScheduleDialogBox scheduleForm = new TrainingScheduleDialogBox();
         private PERChecklistForm checkListForm = new PERChecklistForm();
         private ExitInterviewForm exitForm = new ExitInterviewForm();
 

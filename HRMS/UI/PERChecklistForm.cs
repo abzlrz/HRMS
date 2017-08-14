@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UI
@@ -16,15 +9,40 @@ namespace UI
         {
             InitializeComponent();
         }
-
-        private void OnGroupBox1Enter(object sender, EventArgs e)
+        void CheckAllCheckbox(TableLayoutPanel panel, bool arg)
         {
-
+            foreach (var control in panel.Controls)
+            {
+                if (control is CheckBox)
+                {
+                    CheckBox cbx = (CheckBox)control;
+                    cbx.Checked = arg;
+                }
+            }
         }
 
-        private void OnButton1Click(object sender, EventArgs e)
+        private void OnCheckAll1CheckedChanged(object sender, EventArgs e)
         {
+            if(checkAll1.Checked == true)
+            {
+                CheckAllCheckbox(tableLayoutPanel1, true);
+            }
+            else
+            {
+                CheckAllCheckbox(tableLayoutPanel1, false);
+            }
+        }
 
+        private void OnCheckAll2CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkAll2.Checked == true)
+            {
+                CheckAllCheckbox(tableLayoutPanel2, true);
+            }
+            else
+            {
+                CheckAllCheckbox(tableLayoutPanel2, false);
+            }
         }
     }
 }

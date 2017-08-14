@@ -6,7 +6,7 @@ namespace UI
 {
     public partial class EmployeeRegistrationForm : Form
     {
-        TrainingScheduleDialogForm trainingSchedForm = new TrainingScheduleDialogForm();
+        private TrainingScheduleDialogBox trainingSchedForm = new TrainingScheduleDialogBox();
         public EmployeeRegistrationForm()
         {
             InitializeComponent();

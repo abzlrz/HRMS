@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI.SubForms
 {
-    public partial class TrainingScheduleDialogForm : Form
+    public partial class TrainingScheduleDialogBox : Form
     {
-        public TrainingScheduleDialogForm()
+        public TrainingScheduleDialogBox()
         {
             InitializeComponent();
         }

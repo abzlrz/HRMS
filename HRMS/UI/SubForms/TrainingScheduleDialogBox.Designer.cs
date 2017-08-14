@@ -1,6 +1,6 @@
 ﻿namespace UI.SubForms
 {
-    partial class TrainingScheduleDialogForm
+    partial class TrainingScheduleDialogBox
     {
         /// <summary>
         /// Required designer variable.

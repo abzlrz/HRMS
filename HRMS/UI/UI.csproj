@@ -110,11 +110,11 @@
     <Compile Include="ShowSlides.Designer.cs">
       <DependentUpon>ShowSlides.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\TrainingScheduleDialogForm.cs">
+    <Compile Include="SubForms\TrainingScheduleDialogBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\TrainingScheduleDialogForm.Designer.cs">
-      <DependentUpon>TrainingScheduleDialogForm.cs</DependentUpon>
+    <Compile Include="SubForms\TrainingScheduleDialogBox.Designer.cs">
+      <DependentUpon>TrainingScheduleDialogBox.cs</DependentUpon>
     </Compile>
     <Compile Include="TrainingFeedbackAssesmentForm.cs">
       <SubType>Form</SubType>
@@ -162,8 +162,8 @@
     <EmbeddedResource Include="ShowSlides.resx">
       <DependentUpon>ShowSlides.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\TrainingScheduleDialogForm.resx">
-      <DependentUpon>TrainingScheduleDialogForm.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\TrainingScheduleDialogBox.resx">
+      <DependentUpon>TrainingScheduleDialogBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrainingFeedbackAssesmentForm.resx">
       <DependentUpon>TrainingFeedbackAssesmentForm.cs</DependentUpon>
