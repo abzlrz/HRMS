@@ -1,25 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using UI.SubForms;
 namespace UI
 {
     public partial class ShowSlides : Form
     {
-        ApplicationForm applicationForm = new ApplicationForm();
-        InterviewEvaluationForm interviewForm = new InterviewEvaluationForm();
-        EmployeeRegistrationForm registrationForm = new EmployeeRegistrationForm();
-        PerformanceAppraisalForm appraisalForm = new PerformanceAppraisalForm();
-        LoginForm loginForm = new LoginForm();
-        MainForm mainform = new MainForm();
-        TrainingFeedbackAssesmentForm trainingForm = new TrainingFeedbackAssesmentForm();
-        SubForms.TrainingScheduleDialogForm scheduleForm = new SubForms.TrainingScheduleDialogForm();
         public ShowSlides()
         {
             InitializeComponent();
@@ -64,5 +49,29 @@ namespace UI
         {
             scheduleForm.ShowDialog();
         }
+
+        private void OnButton9Click(object sender, EventArgs e)
+        {
+            checkListForm.ShowDialog();
+        }
+
+        private void OnExitClick(object sender, EventArgs e)
+        {
+            exitForm.ShowDialog();
+        }
+
+
+        private ApplicationForm applicationForm = new ApplicationForm();
+        private InterviewEvaluationForm interviewForm = new InterviewEvaluationForm();
+        private EmployeeRegistrationForm registrationForm = new EmployeeRegistrationForm();
+        private PerformanceAppraisalForm appraisalForm = new PerformanceAppraisalForm();
+        private LoginForm loginForm = new LoginForm();
+        private MainForm mainform = new MainForm();
+        private TrainingFeedbackAssesmentForm trainingForm = new TrainingFeedbackAssesmentForm();
+        private TrainingScheduleDialogForm scheduleForm = new TrainingScheduleDialogForm();
+        private PERChecklistForm checkListForm = new PERChecklistForm();
+        private ExitInterviewForm exitForm = new ExitInterviewForm();
+
+        
     }
 }

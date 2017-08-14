@@ -36,6 +36,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.btnPERChecklist = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -142,11 +144,39 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.OnButton8Click);
             // 
+            // btnPERChecklist
+            // 
+            this.btnPERChecklist.BackColor = System.Drawing.Color.Chocolate;
+            this.btnPERChecklist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPERChecklist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPERChecklist.Location = new System.Drawing.Point(0, 184);
+            this.btnPERChecklist.Name = "btnPERChecklist";
+            this.btnPERChecklist.Size = new System.Drawing.Size(258, 23);
+            this.btnPERChecklist.TabIndex = 8;
+            this.btnPERChecklist.Text = "PER Checklist Form";
+            this.btnPERChecklist.UseVisualStyleBackColor = false;
+            this.btnPERChecklist.Click += new System.EventHandler(this.OnButton9Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Chocolate;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExit.Location = new System.Drawing.Point(0, 207);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(258, 23);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit Interview Form";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.OnExitClick);
+            // 
             // ShowSlides
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 210);
+            this.ClientSize = new System.Drawing.Size(258, 262);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnPERChecklist);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -172,5 +202,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnPERChecklist;
+        private System.Windows.Forms.Button btnExit;
     }
 }
