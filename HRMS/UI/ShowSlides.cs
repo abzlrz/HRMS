@@ -66,7 +66,7 @@ namespace UI
         private EmployeeRegistrationForm registrationForm = new EmployeeRegistrationForm();
         private PerformanceAppraisalForm appraisalForm = new PerformanceAppraisalForm();
         private LoginForm loginForm = new LoginForm();
-        private MainForm mainform = new MainForm();
+        private LoginForm mainform = new LoginForm();
         private TrainingFeedbackAssesmentForm trainingForm = new TrainingFeedbackAssesmentForm();
         private TrainingScheduleDialogBox scheduleForm = new TrainingScheduleDialogBox();
         private PERChecklistForm checkListForm = new PERChecklistForm();

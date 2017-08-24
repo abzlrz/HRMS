@@ -63,9 +63,59 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arvato_airplane {
+            get {
+                object obj = ResourceManager.GetObject("arvato airplane", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arvato_feet {
+            get {
+                object obj = ResourceManager.GetObject("arvato feet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arvato_push {
+            get {
+                object obj = ResourceManager.GetObject("arvato push", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arvato_UK_hr_outsourcing_training_4_adaptive_1280 {
+            get {
+                object obj = ResourceManager.GetObject("arvato_UK_hr_outsourcing_training_4.adaptive.1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arvato1 {
             get {
                 object obj = ResourceManager.GetObject("arvato1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arvatomain {
+            get {
+                object obj = ResourceManager.GetObject("arvatomain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

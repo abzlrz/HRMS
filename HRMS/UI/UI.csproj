@@ -81,7 +81,7 @@
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.designer.cs">
+    <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -189,6 +189,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arvato1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvatomain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvato_UK_hr_outsourcing_training_4.adaptive.1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvato push.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvato airplane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arvato feet.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
