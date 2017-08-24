@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿using System.Windows.Forms;
+using UI.SubForms;
 namespace UI
 {
     public partial class MainForm : Form
@@ -15,6 +7,32 @@ namespace UI
         public MainForm()
         {
             InitializeComponent();
+            InitializeModules();
         }
+
+        private void InitializeModules()
+        {
+            this.employeeform = new EmployeeRegistrationForm();
+            this.interviewform = new InterviewEvaluationForm();
+            this.performanceform = new PerformanceAppraisalForm();
+            this.trainingform = new TrainingFeedbackAssesmentForm();
+            this.checklistform = new PERChecklistForm();
+            this.exitform = new ExitInterviewForm();
+        }
+        private void OnRegisterClick(object sender, System.EventArgs e)
+        {
+            employeeform.ShowDialog();
+        }
+        //private 
+
+        private EmployeeRegistrationForm employeeform;
+        private InterviewEvaluationForm interviewform;
+        private PerformanceAppraisalForm performanceform;
+        private TrainingFeedbackAssesmentForm trainingform;
+        private PERChecklistForm checklistform;
+        private ExitInterviewForm exitform;
+
+        
     }
+ 
 }
