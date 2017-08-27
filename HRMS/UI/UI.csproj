@@ -59,6 +59,12 @@
     <Compile Include="EmployeeRegistrationForm.designer.cs">
       <DependentUpon>EmployeeRegistrationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExistingEmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingEmployeeRegistration.Designer.cs">
+      <DependentUpon>ExistingEmployeeRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExitInterviewForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeRegistrationForm.resx">
       <DependentUpon>EmployeeRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingEmployeeRegistration.resx">
+      <DependentUpon>ExistingEmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitInterviewForm.resx">
       <DependentUpon>ExitInterviewForm.cs</DependentUpon>

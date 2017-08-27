@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Presentation.DialogBox;
+using System;
 using System.Windows.Forms;
 
-namespace UI
+namespace Presentation
 {
     static class Program
     {
@@ -13,7 +14,7 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ExistingEmployeeRegistration());
+            Application.Run(new Main());
         }
     }
 }

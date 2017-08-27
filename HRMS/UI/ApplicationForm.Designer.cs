@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.personalInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.tbxHdmf = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -144,6 +146,8 @@
             // 
             // personalInfoGroupBox
             // 
+            this.personalInfoGroupBox.Controls.Add(this.tbxHdmf);
+            this.personalInfoGroupBox.Controls.Add(this.label35);
             this.personalInfoGroupBox.Controls.Add(this.label50);
             this.personalInfoGroupBox.Controls.Add(this.label49);
             this.personalInfoGroupBox.Controls.Add(this.label47);
@@ -177,6 +181,24 @@
             this.personalInfoGroupBox.TabIndex = 3;
             this.personalInfoGroupBox.TabStop = false;
             this.personalInfoGroupBox.Text = "Personal Information";
+            // 
+            // tbxHdmf
+            // 
+            this.tbxHdmf.Location = new System.Drawing.Point(730, 98);
+            this.tbxHdmf.Name = "tbxHdmf";
+            this.tbxHdmf.Size = new System.Drawing.Size(120, 22);
+            this.tbxHdmf.TabIndex = 69;
+            this.tbxHdmf.Tag = "required";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(649, 101);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(49, 13);
+            this.label35.TabIndex = 70;
+            this.label35.Text = "HDMF#:";
             // 
             // label50
             // 
@@ -784,6 +806,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.OnCancelClick);
             // 
             // btnClearAll
             // 
@@ -1286,6 +1309,7 @@
             this.Name = "ApplicationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Application Form";
+            this.Load += new System.EventHandler(this.OnLoad);
             this.personalInfoGroupBox.ResumeLayout(false);
             this.personalInfoGroupBox.PerformLayout();
             this.presentAddressGroupBox.ResumeLayout(false);
@@ -1411,5 +1435,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.TextBox tbxHdmf;
+        private System.Windows.Forms.Label label35;
     }
 }

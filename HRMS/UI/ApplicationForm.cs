@@ -147,5 +147,15 @@ namespace UI
                 MessageBox.Show(errorMsg);
             }
         }
+
+        private void OnLoad(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnCancelClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
