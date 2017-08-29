@@ -1,4 +1,5 @@
-﻿using Presentation.View;
+﻿using Presentation.Modules;
+using Presentation.View;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -13,18 +14,18 @@ namespace Presentation
 
         private void InitializeGridView()
         {
-            this.recruitmentView = new Recruitment();
-            this.trainingView = new Training();
-            this.performanceView = new PerformanceAppraisal();
-            this.relivingView = new Reliving();
+            this.recruitmentView = new VRecruitment();
+            this.trainingView = new VTraining();
+            this.relivingView = new VReliving();
+            this.employeeView = new VEmployee();
         }
-
         private void ShowControl(UserControl ctrl1, UserControl ctrl2)
         {
             splitContainer1.Panel1.Controls.Clear();
             splitContainer1.Panel2.Controls.Clear();
 
             ctrl1.Dock = DockStyle.Fill;
+            ctrl2.Dock = DockStyle.Fill;
             splitContainer1.Panel1.Controls.Add(ctrl1);
             splitContainer1.Panel2.Controls.Add(ctrl2);
         }
@@ -44,7 +45,15 @@ namespace Presentation
 
             if (selectedNode == "Employee Registration (Existing)")
                 ShowControl(recruitmentView.employeeRegistrationExisting, recruitmentView);
+
+            if (selectedNode == "Employee PER Checklist")
+                ShowControl(employeeView.checklist, employeeView);
+            
+            if (selectedNode == "Employee Performance Appraisal")
+                ShowControl(employeeView.performanceAppraisal, employeeView);
+
             #endregion
+
             #region training
             if (selectedNode == "Training")
                 ShowControl(trainingView.dashboard, trainingView);
@@ -56,12 +65,31 @@ namespace Presentation
                 ShowControl(trainingView.trainingFeedback, trainingView);
             #endregion
 
+            #region reliving
+            if (selectedNode == "Reliving")
+                ShowControl(relivingView.dashboard, relivingView);
+
+            if (selectedNode == "Employee Resignation")
+                ShowControl(relivingView.resignation, relivingView);
+            
+            #endregion
+
+            #region reporting
+
+            #endregion
+
+        }
+        private void OnSignoutToolStripMenuItemClick(object sender, System.EventArgs e)
+        {
+            var login = new Login();
+            login.Show();
+            this.Close();
         }
 
-        private Recruitment recruitmentView;
-        private Training trainingView;
-        private PerformanceAppraisal performanceView;
-        private Reliving relivingView;
+        private VEmployee employeeView;
+        private VRecruitment recruitmentView;
+        private VTraining trainingView;
+        private VReliving relivingView;
     }
     
 }

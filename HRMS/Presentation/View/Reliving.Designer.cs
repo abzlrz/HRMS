@@ -1,6 +1,6 @@
 ﻿namespace Presentation.View
 {
-    partial class Reliving
+    partial class VReliving
     {
         /// <summary> 
         /// Required designer variable.

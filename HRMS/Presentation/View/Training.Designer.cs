@@ -1,6 +1,6 @@
 ﻿namespace Presentation.View
 {
-    partial class Training
+    partial class VTraining
     {
         /// <summary> 
         /// Required designer variable.

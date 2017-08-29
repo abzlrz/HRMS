@@ -52,6 +52,7 @@
             this.cbxJobTitle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbxEvaluationAnalysis = new System.Windows.Forms.GroupBox();
+            this.btnChangeEmployee = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -103,7 +104,6 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.btnChangeEmployee = new System.Windows.Forms.Button();
             this.gbxView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdv)).BeginInit();
             this.gbxInfo.SuspendLayout();
@@ -407,6 +407,19 @@
             this.gbxEvaluationAnalysis.TabIndex = 2;
             this.gbxEvaluationAnalysis.TabStop = false;
             this.gbxEvaluationAnalysis.Text = "Evaluation Analysis";
+            this.gbxEvaluationAnalysis.Enter += new System.EventHandler(this.OnGbxEvaluationAnalysisEnter);
+            // 
+            // btnChangeEmployee
+            // 
+            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChangeEmployee.Location = new System.Drawing.Point(72, 593);
+            this.btnChangeEmployee.Name = "btnChangeEmployee";
+            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
+            this.btnChangeEmployee.TabIndex = 92;
+            this.btnChangeEmployee.Text = "Employee...";
+            this.toolTip.SetToolTip(this.btnChangeEmployee, "Change the selected employee");
+            this.btnChangeEmployee.UseVisualStyleBackColor = false;
             // 
             // btnReset
             // 
@@ -1058,18 +1071,6 @@
             // toolTip
             // 
             this.toolTip.IsBalloon = true;
-            // 
-            // btnChangeEmployee
-            // 
-            this.btnChangeEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnChangeEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChangeEmployee.Location = new System.Drawing.Point(72, 593);
-            this.btnChangeEmployee.Name = "btnChangeEmployee";
-            this.btnChangeEmployee.Size = new System.Drawing.Size(92, 27);
-            this.btnChangeEmployee.TabIndex = 92;
-            this.btnChangeEmployee.Text = "Employee...";
-            this.toolTip.SetToolTip(this.btnChangeEmployee, "Change the selected employee");
-            this.btnChangeEmployee.UseVisualStyleBackColor = false;
             // 
             // InterviewEvaluationForm
             // 

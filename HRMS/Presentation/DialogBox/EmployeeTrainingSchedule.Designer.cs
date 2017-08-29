@@ -217,6 +217,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EmployeeTrainingSchedule";
             this.Text = "Schedule Training";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeTrainingSchedule_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);

@@ -74,5 +74,10 @@ namespace UI
                 this.ClearAllFields();
             }
         }
+
+        private void OnGbxEvaluationAnalysisEnter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

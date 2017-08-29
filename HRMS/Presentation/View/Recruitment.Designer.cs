@@ -1,6 +1,6 @@
 ﻿namespace Presentation.View
 {
-    partial class Recruitment
+    partial class VRecruitment
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,23 +29,25 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Applicant = new System.Windows.Forms.TabPage();
             this.Employee = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbxAppliedBefore = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Applicant = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
-            this.Applicant.SuspendLayout();
             this.Employee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Applicant.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -59,18 +61,6 @@
             this.tabControl1.Size = new System.Drawing.Size(1106, 471);
             this.tabControl1.TabIndex = 0;
             // 
-            // Applicant
-            // 
-            this.Applicant.Controls.Add(this.dataGridView1);
-            this.Applicant.Controls.Add(this.panel1);
-            this.Applicant.Location = new System.Drawing.Point(4, 22);
-            this.Applicant.Name = "Applicant";
-            this.Applicant.Padding = new System.Windows.Forms.Padding(3);
-            this.Applicant.Size = new System.Drawing.Size(1098, 445);
-            this.Applicant.TabIndex = 0;
-            this.Applicant.Text = "Applicant";
-            this.Applicant.UseVisualStyleBackColor = true;
-            // 
             // Employee
             // 
             this.Employee.Controls.Add(this.dataGridView2);
@@ -82,25 +72,6 @@
             this.Employee.TabIndex = 1;
             this.Employee.Text = "Employee";
             this.Employee.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1092, 391);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1092, 48);
-            this.panel1.TabIndex = 1;
             // 
             // dataGridView2
             // 
@@ -131,7 +102,7 @@
             "Lastname",
             "Date Evaluated",
             "Job Title"});
-            this.cbxAppliedBefore.Location = new System.Drawing.Point(218, 14);
+            this.cbxAppliedBefore.Location = new System.Drawing.Point(218, 13);
             this.cbxAppliedBefore.Name = "cbxAppliedBefore";
             this.cbxAppliedBefore.Size = new System.Drawing.Size(146, 21);
             this.cbxAppliedBefore.TabIndex = 2;
@@ -143,6 +114,23 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(192, 20);
             this.textBox2.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1092, 48);
+            this.panel1.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(20, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(192, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // comboBox1
             // 
@@ -160,12 +148,49 @@
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Tag = "required";
             // 
-            // textBox1
+            // dataGridView1
             // 
-            this.textBox1.Location = new System.Drawing.Point(20, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
-            this.textBox1.TabIndex = 5;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 51);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1092, 391);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Applicant
+            // 
+            this.Applicant.Controls.Add(this.dataGridView1);
+            this.Applicant.Controls.Add(this.panel1);
+            this.Applicant.Location = new System.Drawing.Point(4, 22);
+            this.Applicant.Name = "Applicant";
+            this.Applicant.Padding = new System.Windows.Forms.Padding(3);
+            this.Applicant.Size = new System.Drawing.Size(1098, 445);
+            this.Applicant.TabIndex = 0;
+            this.Applicant.Text = "Applicant";
+            this.Applicant.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "ID",
+            "Firstname",
+            "Lastname",
+            "Date Evaluated",
+            "Job Title"});
+            this.comboBox2.Location = new System.Drawing.Point(218, 13);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(146, 21);
+            this.comboBox2.TabIndex = 4;
+            this.comboBox2.Tag = "required";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(20, 13);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(192, 20);
+            this.textBox3.TabIndex = 5;
             // 
             // Recruitment
             // 
@@ -175,30 +200,31 @@
             this.Name = "Recruitment";
             this.Size = new System.Drawing.Size(1106, 471);
             this.tabControl1.ResumeLayout(false);
-            this.Applicant.ResumeLayout(false);
             this.Employee.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Applicant.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage Applicant;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage Employee;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cbxAppliedBefore;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TabPage Applicant;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }

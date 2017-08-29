@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{D3A7ECB5-93EC-4D75-90D1-9957D6899D01}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{D2CE237C-CFFF-4288-AC83-3E8E0496472D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1F25FE7-950E-42F6-8AAB-F22236831CD5}"
@@ -20,10 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3A7ECB5-93EC-4D75-90D1-9957D6899D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3A7ECB5-93EC-4D75-90D1-9957D6899D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3A7ECB5-93EC-4D75-90D1-9957D6899D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3A7ECB5-93EC-4D75-90D1-9957D6899D01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2CE237C-CFFF-4288-AC83-3E8E0496472D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2CE237C-CFFF-4288-AC83-3E8E0496472D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2CE237C-CFFF-4288-AC83-3E8E0496472D}.Release|Any CPU.ActiveCfg = Release|Any CPU

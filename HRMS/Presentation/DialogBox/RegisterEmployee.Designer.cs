@@ -973,6 +973,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "RegisterEmployee";
             this.Text = "Register Employee";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegisterEmployee_FormClosing);
             this.gbxAppInfo.ResumeLayout(false);
             this.applicantInfo.ResumeLayout(false);
             this.applicantInfo.PerformLayout();

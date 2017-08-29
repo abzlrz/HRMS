@@ -12,7 +12,7 @@ namespace Presentation.DialogBox
 
         private void OnLoad(object sender, EventArgs e)
         {
-
+            btnBack.PerformClick();
         }
 
         private void OnNextClick(object sender, EventArgs e)
@@ -25,8 +25,13 @@ namespace Presentation.DialogBox
             panel1.BringToFront();
         }
 
-        private void OnCancel2Click(object sender, EventArgs e)
+        private void EvaluateApplicant_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if(MessageBox.Show("Data you entered will be disregarded. Are you sure?",
+                "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                panel1.BringToFront();
+            }
         }
     }
 }

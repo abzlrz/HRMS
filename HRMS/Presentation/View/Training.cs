@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace Presentation.View
 {
-    public partial class Training : UserControl
+    public partial class VTraining : UserControl
     {
-        public Training()
+        public VTraining()
         {
             InitializeComponent();
             this.dashboard = new TrainingDashboard();
