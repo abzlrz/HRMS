@@ -33,6 +33,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.scheduleTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -41,19 +43,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.p1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.scheduleTrainingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.p1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.contextMenuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.contextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -92,6 +92,20 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(1067, 335);
             this.dataGridView.TabIndex = 0;
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.scheduleTrainingToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip";
+            this.contextMenuStrip.Size = new System.Drawing.Size(169, 26);
+            // 
+            // scheduleTrainingToolStripMenuItem
+            // 
+            this.scheduleTrainingToolStripMenuItem.Name = "scheduleTrainingToolStripMenuItem";
+            this.scheduleTrainingToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.scheduleTrainingToolStripMenuItem.Text = "Schedule Training";
+            this.scheduleTrainingToolStripMenuItem.Click += new System.EventHandler(this.OnScheduleTrainingToolStripMenuItemClick);
             // 
             // panel2
             // 
@@ -176,6 +190,17 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Search:";
             // 
+            // p1
+            // 
+            this.p1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
+            this.p1.Location = new System.Drawing.Point(1039, 0);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(26, 27);
+            this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.p1.TabIndex = 1;
+            this.p1.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -189,7 +214,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.SeaGreen;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -199,31 +224,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Training Schedule";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // contextMenuStrip
-            // 
-            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.scheduleTrainingToolStripMenuItem});
-            this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(169, 26);
-            // 
-            // scheduleTrainingToolStripMenuItem
-            // 
-            this.scheduleTrainingToolStripMenuItem.Name = "scheduleTrainingToolStripMenuItem";
-            this.scheduleTrainingToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.scheduleTrainingToolStripMenuItem.Text = "Schedule Training";
-            this.scheduleTrainingToolStripMenuItem.Click += new System.EventHandler(this.OnScheduleTrainingToolStripMenuItemClick);
-            // 
-            // p1
-            // 
-            this.p1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(1039, 0);
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(26, 27);
-            this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.p1.TabIndex = 1;
-            this.p1.TabStop = false;
             // 
             // TrainingSchedule
             // 
@@ -235,12 +235,12 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.contextMenuStrip.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.contextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

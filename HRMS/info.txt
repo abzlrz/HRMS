@@ -45,3 +45,13 @@
 			Email and Internet
 			Sexual Harassment
 			Ops Policy and Procedure
+
+
+			-----------------------------------------------------------------------
+			splitContainer1.Panel1.Controls.Clear();
+            splitContainer1.Panel2.Controls.Clear();
+
+            ctrl1.Dock = DockStyle.Fill;
+            ctrl2.Dock = DockStyle.Fill;
+            splitContainer1.Panel1.Controls.Add(ctrl1);
+            splitContainer1.Panel2.Controls.Add(ctrl2);

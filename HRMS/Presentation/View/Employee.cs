@@ -3,11 +3,12 @@ using System.Windows.Forms;
 
 namespace Presentation.View
 {
-    public partial class VTraining : UserControl
+    public partial class VEmployee : UserControl
     {
-        public VTraining()
+        public VEmployee()
         {
             InitializeComponent();
         }
+        
     }
 }

@@ -35,16 +35,15 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -53,8 +52,9 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -150,7 +150,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -203,16 +203,15 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.33645F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.66355F));
+            this.tableLayoutPanel3.Controls.Add(this.textBox20, 1, 8);
+            this.tableLayoutPanel3.Controls.Add(this.textBox19, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.textBox18, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.textBox17, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker3, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker2, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.textBox2, 1, 9);
             this.tableLayoutPanel3.Controls.Add(this.label33, 0, 9);
             this.tableLayoutPanel3.Controls.Add(this.textBox15, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox7, 1, 7);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox10, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox11, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox12, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox13, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox14, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox15, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label24, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label25, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label26, 0, 4);
@@ -221,8 +220,9 @@
             this.tableLayoutPanel3.Controls.Add(this.label29, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label30, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label31, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox9, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.label32, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.dateTimePicker1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.textBox6, 1, 3);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(19, 26);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 10;
@@ -238,6 +238,60 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(321, 232);
             this.tableLayoutPanel3.TabIndex = 56;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox20.Location = new System.Drawing.Point(168, 186);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(151, 22);
+            this.textBox20.TabIndex = 89;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox19.Location = new System.Drawing.Point(168, 163);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(151, 22);
+            this.textBox19.TabIndex = 88;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox18.Location = new System.Drawing.Point(168, 117);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(151, 22);
+            this.textBox18.TabIndex = 87;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox17.Location = new System.Drawing.Point(168, 94);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(151, 22);
+            this.textBox17.TabIndex = 86;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker3.Location = new System.Drawing.Point(168, 48);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(0);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(151, 22);
+            this.dateTimePicker3.TabIndex = 84;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker2.Location = new System.Drawing.Point(168, 25);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(0);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(151, 22);
+            this.dateTimePicker2.TabIndex = 83;
             // 
             // textBox2
             // 
@@ -270,90 +324,6 @@
             this.textBox15.Size = new System.Drawing.Size(151, 22);
             this.textBox15.TabIndex = 79;
             this.textBox15.Tag = "required";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(168, 163);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(151, 21);
-            this.comboBox7.TabIndex = 58;
-            this.comboBox7.Tag = "required";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(168, 117);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(151, 21);
-            this.comboBox10.TabIndex = 48;
-            this.comboBox10.Tag = "required";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(168, 94);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(151, 21);
-            this.comboBox11.TabIndex = 47;
-            this.comboBox11.Tag = "required";
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(168, 71);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(151, 21);
-            this.comboBox12.TabIndex = 46;
-            this.comboBox12.Tag = "required";
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(168, 48);
-            this.comboBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(151, 21);
-            this.comboBox13.TabIndex = 45;
-            this.comboBox13.Tag = "required";
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(168, 25);
-            this.comboBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(151, 21);
-            this.comboBox14.TabIndex = 44;
-            this.comboBox14.Tag = "required";
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(168, 2);
-            this.comboBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(151, 21);
-            this.comboBox15.TabIndex = 43;
-            this.comboBox15.Tag = "required";
             // 
             // label24
             // 
@@ -451,18 +421,6 @@
             this.label31.Text = "Relocation Allowance:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox9
-            // 
-            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(168, 186);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(151, 21);
-            this.comboBox9.TabIndex = 53;
-            this.comboBox9.Tag = "required";
-            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -474,6 +432,24 @@
             this.label32.TabIndex = 51;
             this.label32.Text = "Relocation Allowance Detail:";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePicker1.Location = new System.Drawing.Point(168, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 22);
+            this.dateTimePicker1.TabIndex = 82;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox6.Location = new System.Drawing.Point(168, 71);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(151, 22);
+            this.textBox6.TabIndex = 85;
             // 
             // btnRegister
             // 
@@ -904,8 +880,8 @@
             // 
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.41745F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.58255F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.3361F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.6639F));
             this.tableLayoutPanel4.Controls.Add(this.comboBox16, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.textBox16, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label20, 0, 6);
@@ -945,20 +921,20 @@
             this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(114, 140);
+            this.comboBox16.Location = new System.Drawing.Point(144, 140);
             this.comboBox16.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(127, 21);
+            this.comboBox16.Size = new System.Drawing.Size(97, 21);
             this.comboBox16.TabIndex = 83;
             this.comboBox16.Tag = "required";
             // 
             // textBox16
             // 
             this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Location = new System.Drawing.Point(114, 2);
+            this.textBox16.Location = new System.Drawing.Point(144, 2);
             this.textBox16.Margin = new System.Windows.Forms.Padding(0);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(127, 22);
+            this.textBox16.Size = new System.Drawing.Size(97, 22);
             this.textBox16.TabIndex = 82;
             this.textBox16.Tag = "required";
             // 
@@ -969,7 +945,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(5, 140);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 21);
+            this.label20.Size = new System.Drawing.Size(134, 21);
             this.label20.TabIndex = 81;
             this.label20.Text = "Job Title:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -979,10 +955,10 @@
             this.cbxTeam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbxTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTeam.FormattingEnabled = true;
-            this.cbxTeam.Location = new System.Drawing.Point(114, 163);
+            this.cbxTeam.Location = new System.Drawing.Point(144, 163);
             this.cbxTeam.Margin = new System.Windows.Forms.Padding(0);
             this.cbxTeam.Name = "cbxTeam";
-            this.cbxTeam.Size = new System.Drawing.Size(127, 21);
+            this.cbxTeam.Size = new System.Drawing.Size(97, 21);
             this.cbxTeam.TabIndex = 58;
             this.cbxTeam.Tag = "required";
             // 
@@ -991,10 +967,10 @@
             this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(114, 186);
+            this.comboBox8.Location = new System.Drawing.Point(144, 186);
             this.comboBox8.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(127, 21);
+            this.comboBox8.Size = new System.Drawing.Size(97, 21);
             this.comboBox8.TabIndex = 53;
             this.comboBox8.Tag = "required";
             // 
@@ -1003,10 +979,10 @@
             this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(114, 117);
+            this.comboBox5.Location = new System.Drawing.Point(144, 117);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(127, 21);
+            this.comboBox5.Size = new System.Drawing.Size(97, 21);
             this.comboBox5.TabIndex = 48;
             this.comboBox5.Tag = "required";
             // 
@@ -1015,10 +991,10 @@
             this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(114, 94);
+            this.comboBox4.Location = new System.Drawing.Point(144, 94);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(127, 21);
+            this.comboBox4.Size = new System.Drawing.Size(97, 21);
             this.comboBox4.TabIndex = 47;
             this.comboBox4.Tag = "required";
             // 
@@ -1027,10 +1003,10 @@
             this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(114, 71);
+            this.comboBox3.Location = new System.Drawing.Point(144, 71);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(127, 21);
+            this.comboBox3.Size = new System.Drawing.Size(97, 21);
             this.comboBox3.TabIndex = 46;
             this.comboBox3.Tag = "required";
             // 
@@ -1039,10 +1015,10 @@
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(114, 48);
+            this.comboBox2.Location = new System.Drawing.Point(144, 48);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(127, 21);
+            this.comboBox2.Size = new System.Drawing.Size(97, 21);
             this.comboBox2.TabIndex = 45;
             this.comboBox2.Tag = "required";
             // 
@@ -1051,10 +1027,10 @@
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(114, 25);
+            this.comboBox1.Location = new System.Drawing.Point(144, 25);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 21);
+            this.comboBox1.Size = new System.Drawing.Size(97, 21);
             this.comboBox1.TabIndex = 44;
             this.comboBox1.Tag = "required";
             // 
@@ -1065,7 +1041,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(5, 117);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(104, 21);
+            this.label16.Size = new System.Drawing.Size(134, 21);
             this.label16.TabIndex = 42;
             this.label16.Text = "Titan Level:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1077,7 +1053,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 94);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 21);
+            this.label15.Size = new System.Drawing.Size(134, 21);
             this.label15.TabIndex = 40;
             this.label15.Text = "Arvato Level:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1089,7 +1065,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(5, 71);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 21);
+            this.label13.Size = new System.Drawing.Size(134, 21);
             this.label13.TabIndex = 36;
             this.label13.Text = "Bucket:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1099,9 +1075,11 @@
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(5, 48);
+            this.label11.Location = new System.Drawing.Point(2, 48);
+            this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 21);
+            this.label11.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.label11.Size = new System.Drawing.Size(140, 21);
             this.label11.TabIndex = 34;
             this.label11.Text = "Language Requirement:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1113,7 +1091,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(5, 25);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 21);
+            this.label10.Size = new System.Drawing.Size(134, 21);
             this.label10.TabIndex = 32;
             this.label10.Text = "Titan Title:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1125,7 +1103,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(5, 2);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(104, 21);
+            this.label21.Size = new System.Drawing.Size(134, 21);
             this.label21.TabIndex = 30;
             this.label21.Text = "Employee ID:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1137,7 +1115,7 @@
             this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(5, 163);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(104, 21);
+            this.label22.Size = new System.Drawing.Size(134, 21);
             this.label22.TabIndex = 50;
             this.label22.Text = "Team:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1149,7 +1127,7 @@
             this.label34.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(5, 186);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(104, 21);
+            this.label34.Size = new System.Drawing.Size(134, 21);
             this.label34.TabIndex = 51;
             this.label34.Text = "Contract Type:";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1238,13 +1216,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
@@ -1253,11 +1224,18 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
