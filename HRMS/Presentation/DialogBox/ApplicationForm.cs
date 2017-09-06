@@ -15,6 +15,7 @@ namespace Presentation.DialogBox
         public ApplicationForm()
         {
             InitializeComponent();
+            this.background = new BackgroundHistoryForm();
         }
 
         private void ApplicationForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -24,5 +25,12 @@ namespace Presentation.DialogBox
             {
             }
         }
+
+        private void backgroundHistoryLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            background.ShowDialog();
+        }
+
+        private BackgroundHistoryForm background;
     }
 }

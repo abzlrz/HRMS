@@ -30,10 +30,11 @@
         {
             this.btnApply = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbx_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -58,16 +59,32 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.tbx_password);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbx_username);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(61, 40);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(566, 674);
             this.panel1.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(15)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(247, 578);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 39);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.exitClick);
             // 
             // btnLogin
             // 
@@ -84,17 +101,17 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.OnClick);
             // 
-            // textBox2
+            // tbx_password
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(175, 411);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 29);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.tbx_password.BackColor = System.Drawing.SystemColors.Control;
+            this.tbx_password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbx_password.Location = new System.Drawing.Point(175, 411);
+            this.tbx_password.Name = "tbx_password";
+            this.tbx_password.Size = new System.Drawing.Size(232, 29);
+            this.tbx_password.TabIndex = 11;
+            this.tbx_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_password.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -108,16 +125,16 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // tbx_username
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(175, 345);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 29);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbx_username.BackColor = System.Drawing.SystemColors.Control;
+            this.tbx_username.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tbx_username.Location = new System.Drawing.Point(175, 345);
+            this.tbx_username.Name = "tbx_username";
+            this.tbx_username.Size = new System.Drawing.Size(232, 29);
+            this.tbx_username.TabIndex = 9;
+            this.tbx_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -167,10 +184,11 @@
         private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbx_password;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

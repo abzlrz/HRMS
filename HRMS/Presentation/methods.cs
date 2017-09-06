@@ -87,6 +87,34 @@ namespace Presentation
             }
         }
     }
+    static class PanelExtensions
+    {
+        /// <summary>
+        /// Gets the value selected from RadioButton group
+        /// </summary>
+        /// <param name="panel"></param>
+        /// <returns></returns>
+        public static string GetRadioButtonValue(this Panel panel)
+        {
+            string result = string.Empty;
+            foreach (var c in panel.Controls)
+            {
+                if (c is RadioButton)
+                {
+                    RadioButton rb = c as RadioButton;
+                    if (rb.Checked) result = rb.Text;
+                }
+            }
+            return result;
+        }
+    }
+    static class UserControlExtensions
+    {
+        public static void ResetScrollbar(this UserControl ctrl)
+        {
+            ctrl.VerticalScroll.Value = 0;
+        }
+    }
 
     interface IForm
     {

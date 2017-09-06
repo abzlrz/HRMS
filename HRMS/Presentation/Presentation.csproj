@@ -46,11 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connect2SQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connect2SQL.Designer.cs">
+      <DependentUpon>Connect2SQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\ApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DialogBox\ApplicationForm.Designer.cs">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistoryForm.Designer.cs">
+      <DependentUpon>BackgroundHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\EducationBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\EducationBackground.Designer.cs">
+      <DependentUpon>EducationBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\IllnessHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\IllnessHistory.Designer.cs">
+      <DependentUpon>IllnessHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\LegalHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\LegalHistory.Designer.cs">
+      <DependentUpon>LegalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\WorkHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\BackgroundHistory\WorkHistory.Designer.cs">
+      <DependentUpon>WorkHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\EmployeeExitForm.cs">
       <SubType>Form</SubType>
@@ -204,8 +240,26 @@
     <Compile Include="methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Connect2SQL.resx">
+      <DependentUpon>Connect2SQL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\BackgroundHistoryForm.resx">
+      <DependentUpon>BackgroundHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\BackgroundHistory\EducationBackground.resx">
+      <DependentUpon>EducationBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\BackgroundHistory\IllnessHistory.resx">
+      <DependentUpon>IllnessHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\BackgroundHistory\LegalHistory.resx">
+      <DependentUpon>LegalHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\BackgroundHistory\WorkHistory.resx">
+      <DependentUpon>WorkHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\EmployeeExitForm.resx">
       <DependentUpon>EmployeeExitForm.cs</DependentUpon>
@@ -280,7 +334,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
