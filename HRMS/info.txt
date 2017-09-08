@@ -46,6 +46,12 @@
 			Sexual Harassment
 			Ops Policy and Procedure
 
+	1.4		Access Level
+			Administrator
+			General
+			Low
+
+
 
 			-----------------------------------------------------------------------
 			splitContainer1.Panel1.Controls.Clear();
@@ -55,3 +61,49 @@
             ctrl2.Dock = DockStyle.Fill;
             splitContainer1.Panel1.Controls.Add(ctrl1);
             splitContainer1.Panel2.Controls.Add(ctrl2);
+
+
+			----------------------
+
+
+		public bool Login(string username, string password)
+        {
+            var table = new DataTable();
+            DataRow row;
+
+            using (var adapter = new OleDbDataAdapter())
+            {
+                adapter.SelectCommand = new OleDbCommand();
+                adapter.SelectCommand.Connection = Connection;
+                adapter.SelectCommand.CommandType = CommandType.Text;
+                adapter.SelectCommand.CommandText = "select * from [User].[User] where [Username] = @username AND [Password] = @password";
+                adapter.SelectCommand.Parameters.AddWithValue("@username", username);
+                adapter.SelectCommand.Parameters.AddWithValue("@password", password);
+
+                adapter.Fill(table);
+                row = table.Rows.Count > 0 ? table.Rows[0] : null;
+
+                return row == null ? false : true;
+            }
+        }
+
+
+		private void OnLoginBtnClick(object sender, System.EventArgs e)
+        {
+            try
+            {
+                if (Login(usertbx.Text, passwordtbx.Text))
+                {
+                    this.main.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Username or Password is Invalid");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }

@@ -14,7 +14,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Connect2SQL());
+            Application.Run(new Login());
         }
     }
 }

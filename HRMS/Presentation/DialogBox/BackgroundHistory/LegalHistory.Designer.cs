@@ -37,7 +37,6 @@
             this.tbx_School = new System.Windows.Forms.TextBox();
             this.tbx_location = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,10 +56,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.convictionPanel.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -74,6 +74,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -175,7 +177,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.listBox1);
+            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -183,17 +185,6 @@
             this.panel3.Padding = new System.Windows.Forms.Padding(3);
             this.panel3.Size = new System.Drawing.Size(196, 198);
             this.panel3.TabIndex = 7;
-            // 
-            // listBox1
-            // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "default"});
-            this.listBox1.Location = new System.Drawing.Point(3, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(190, 130);
-            this.listBox1.TabIndex = 3;
             // 
             // panel5
             // 
@@ -399,7 +390,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.listBox2);
+            this.panel6.Controls.Add(this.dataGridView2);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
@@ -407,17 +398,6 @@
             this.panel6.Padding = new System.Windows.Forms.Padding(3);
             this.panel6.Size = new System.Drawing.Size(196, 198);
             this.panel6.TabIndex = 6;
-            // 
-            // listBox2
-            // 
-            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
-            "default"});
-            this.listBox2.Location = new System.Drawing.Point(3, 3);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(190, 130);
-            this.listBox2.TabIndex = 3;
             // 
             // panel7
             // 
@@ -447,6 +427,26 @@
             this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(190, 130);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(190, 130);
+            this.dataGridView2.TabIndex = 4;
+            // 
             // LegalHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -474,6 +474,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -489,7 +491,6 @@
         private System.Windows.Forms.TextBox tbx_School;
         private System.Windows.Forms.TextBox tbx_location;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
@@ -509,9 +510,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

@@ -39,17 +39,17 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.promoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.info = new System.Windows.Forms.Panel();
-            this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.promoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicantMenuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -57,10 +57,10 @@
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.employeeMenuStrip.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
-            this.employeeMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // applicantMenuStrip
@@ -167,6 +167,40 @@
             this.dataGridView1.Size = new System.Drawing.Size(752, 525);
             this.dataGridView1.TabIndex = 5;
             // 
+            // employeeMenuStrip
+            // 
+            this.employeeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checklistToolStripMenuItem,
+            this.promoteToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.employeeMenuStrip.Name = "employeeMenuStrip";
+            this.employeeMenuStrip.Size = new System.Drawing.Size(123, 92);
+            // 
+            // checklistToolStripMenuItem
+            // 
+            this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
+            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.checklistToolStripMenuItem.Text = "Checklist";
+            // 
+            // promoteToolStripMenuItem
+            // 
+            this.promoteToolStripMenuItem.Name = "promoteToolStripMenuItem";
+            this.promoteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.promoteToolStripMenuItem.Text = "Promote";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.editToolStripMenuItem.Text = "Edit...";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -226,40 +260,6 @@
             this.info.Size = new System.Drawing.Size(309, 340);
             this.info.TabIndex = 0;
             // 
-            // employeeMenuStrip
-            // 
-            this.employeeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checklistToolStripMenuItem,
-            this.promoteToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.deleteToolStripMenuItem});
-            this.employeeMenuStrip.Name = "employeeMenuStrip";
-            this.employeeMenuStrip.Size = new System.Drawing.Size(123, 92);
-            // 
-            // checklistToolStripMenuItem
-            // 
-            this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
-            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.checklistToolStripMenuItem.Text = "Checklist";
-            // 
-            // promoteToolStripMenuItem
-            // 
-            this.promoteToolStripMenuItem.Name = "promoteToolStripMenuItem";
-            this.promoteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.promoteToolStripMenuItem.Text = "Promote";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.editToolStripMenuItem.Text = "Edit...";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
             // RecruitmentDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,10 +274,10 @@
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.employeeMenuStrip.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.employeeMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

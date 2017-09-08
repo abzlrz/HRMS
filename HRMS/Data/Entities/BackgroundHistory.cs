@@ -36,9 +36,26 @@ namespace Data.Entities
         public string MonthlyCompensation { get; set; }
         public string ReasonForLeaving { get; set; }
     }
-
+    
     public class Illness
     {
+        public bool HadIllness { get; set; }
+        public string Name { get; set; }
+        public string Details { get; set; }
+        public bool IsPerpetual { get; set; }
+    }
 
+    public class Conviction
+    {
+        public bool IsConvicted { get; set; }
+        public string Name { get; set; }
+        public string Details { get; set; }
+    }
+
+    public class LegalCase
+    {
+        public bool IsLawSuited { get; set; }
+        public string Name { get; set; }
+        public string Details { get; set; }
     }
 }

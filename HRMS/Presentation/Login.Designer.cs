@@ -28,17 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnApply = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbx_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbx_username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tip = new System.Windows.Forms.ToolTip(this.components);
+            this.x3 = new System.Windows.Forms.Button();
+            this.x2 = new System.Windows.Forms.Button();
+            this.x1 = new System.Windows.Forms.Button();
+            this.header = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnApply
@@ -59,32 +67,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.tbx_password);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.tbx_username);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(61, 40);
+            this.panel1.Location = new System.Drawing.Point(61, 54);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(566, 674);
             this.panel1.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(15)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(247, 578);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 39);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.exitClick);
             // 
             // btnLogin
             // 
@@ -151,7 +143,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Presentation.Properties.Resources.Untitled_1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(152, 157);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 130);
@@ -159,15 +151,98 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // x3
+            // 
+            this.x3.BackColor = System.Drawing.Color.Transparent;
+            this.x3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.x3.FlatAppearance.BorderSize = 0;
+            this.x3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(151)))), ((int)(((byte)(206)))));
+            this.x3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x3.ForeColor = System.Drawing.Color.Transparent;
+            this.x3.Image = global::Presentation.Properties.Resources.exit;
+            this.x3.Location = new System.Drawing.Point(1335, 0);
+            this.x3.Margin = new System.Windows.Forms.Padding(0);
+            this.x3.Name = "x3";
+            this.x3.Size = new System.Drawing.Size(27, 24);
+            this.x3.TabIndex = 3;
+            this.tip.SetToolTip(this.x3, "Close");
+            this.x3.UseVisualStyleBackColor = false;
+            this.x3.Click += new System.EventHandler(this.closeClick);
+            // 
+            // x2
+            // 
+            this.x2.BackColor = System.Drawing.Color.Transparent;
+            this.x2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.x2.FlatAppearance.BorderSize = 0;
+            this.x2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(151)))), ((int)(((byte)(206)))));
+            this.x2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x2.ForeColor = System.Drawing.Color.Transparent;
+            this.x2.Image = global::Presentation.Properties.Resources.restore;
+            this.x2.Location = new System.Drawing.Point(1308, 0);
+            this.x2.Margin = new System.Windows.Forms.Padding(0);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(27, 24);
+            this.x2.TabIndex = 4;
+            this.tip.SetToolTip(this.x2, "Restore Down");
+            this.x2.UseVisualStyleBackColor = false;
+            this.x2.Click += new System.EventHandler(this.restoreDownClick);
+            // 
+            // x1
+            // 
+            this.x1.BackColor = System.Drawing.Color.Transparent;
+            this.x1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.x1.FlatAppearance.BorderSize = 0;
+            this.x1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(151)))), ((int)(((byte)(206)))));
+            this.x1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x1.ForeColor = System.Drawing.Color.Transparent;
+            this.x1.Image = global::Presentation.Properties.Resources.minimize;
+            this.x1.Location = new System.Drawing.Point(1281, 0);
+            this.x1.Margin = new System.Windows.Forms.Padding(0);
+            this.x1.Name = "x1";
+            this.x1.Size = new System.Drawing.Size(27, 24);
+            this.x1.TabIndex = 5;
+            this.tip.SetToolTip(this.x1, "Minimize");
+            this.x1.UseVisualStyleBackColor = false;
+            this.x1.Click += new System.EventHandler(this.minimizeClick);
+            // 
+            // header
+            // 
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.header.Controls.Add(this.label3);
+            this.header.Controls.Add(this.x1);
+            this.header.Controls.Add(this.x2);
+            this.header.Controls.Add(this.x3);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Margin = new System.Windows.Forms.Padding(0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(1362, 24);
+            this.header.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "  Login - Arvato HRMS";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Presentation.Properties.Resources.arvato_feet;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.header);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
@@ -175,6 +250,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.header.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,6 +265,11 @@
         private System.Windows.Forms.TextBox tbx_username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip tip;
+        private System.Windows.Forms.Panel header;
+        private System.Windows.Forms.Button x3;
+        private System.Windows.Forms.Button x2;
+        private System.Windows.Forms.Button x1;
+        private System.Windows.Forms.Label label3;
     }
 }

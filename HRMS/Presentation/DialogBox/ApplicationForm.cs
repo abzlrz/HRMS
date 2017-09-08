@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Presentation.DialogBox
 {
@@ -16,6 +8,7 @@ namespace Presentation.DialogBox
         {
             InitializeComponent();
             this.background = new BackgroundHistoryForm();
+            this.contacts = new ContactPersonForm();
         }
 
         private void ApplicationForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,6 +24,12 @@ namespace Presentation.DialogBox
             background.ShowDialog();
         }
 
+        private void contactPersonLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            contacts.ShowDialog();
+        }
+
         private BackgroundHistoryForm background;
+        private ContactPersonForm contacts;
     }
 }

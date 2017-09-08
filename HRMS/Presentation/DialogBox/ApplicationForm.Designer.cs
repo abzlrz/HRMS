@@ -100,6 +100,10 @@
             this.btnClearAll = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -114,6 +118,8 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -283,7 +289,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 227);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(338, 184);
+            this.groupBox1.Size = new System.Drawing.Size(338, 89);
             this.groupBox1.TabIndex = 79;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Background History";
@@ -292,16 +298,16 @@
             // 
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.50512F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.49488F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42662F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57338F));
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 73);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 27);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(295, 38);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(295, 41);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // label7
@@ -311,7 +317,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 2);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 40);
+            this.label7.Size = new System.Drawing.Size(211, 39);
             this.label7.TabIndex = 51;
             this.label7.Text = "Work, Education, Illness History && etc.";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -320,10 +326,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Location = new System.Drawing.Point(190, 2);
+            this.linkLabel1.Location = new System.Drawing.Point(221, 2);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(103, 40);
+            this.linkLabel1.Size = new System.Drawing.Size(72, 39);
             this.linkLabel1.TabIndex = 82;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "modify...";
@@ -336,7 +342,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 417);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(338, 155);
+            this.groupBox3.Size = new System.Drawing.Size(338, 118);
             this.groupBox3.TabIndex = 80;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Applied For";
@@ -353,7 +359,7 @@
             this.tableLayoutPanel2.Controls.Add(this.comboBox7, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker8, 1, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(25, 46);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(25, 32);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -1052,11 +1058,65 @@
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.tableLayoutPanel7);
+            this.groupBox7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Location = new System.Drawing.Point(12, 322);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(338, 89);
+            this.groupBox7.TabIndex = 80;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Contact Person";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.42662F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.57338F));
+            this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.linkLabel2, 1, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(25, 27);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(295, 41);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(5, 2);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 39);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "Person to Contact";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkLabel2.Location = new System.Drawing.Point(221, 2);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(0);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(72, 39);
+            this.linkLabel2.TabIndex = 82;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "modify...";
+            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.contactPersonLinkClicked);
+            // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 584);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnClearAll);
             this.Controls.Add(this.btnCancel);
@@ -1097,6 +1157,9 @@
             this.groupBox5.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1175,5 +1238,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

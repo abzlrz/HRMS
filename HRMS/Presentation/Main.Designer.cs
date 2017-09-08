@@ -29,36 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Interview Evaluation");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Employee Registration");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Employee Registration (Existing)");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Employee Performance Appraisal");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Employee PER Checklist");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Recruitment", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20});
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Training Schedule");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Training Feedback & Assesment");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Training", new System.Windows.Forms.TreeNode[] {
-            treeNode22,
-            treeNode23});
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Employee Resignation");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Reliving", new System.Windows.Forms.TreeNode[] {
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Reporting");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("5th Month");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Contract");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Notifications", new System.Windows.Forms.TreeNode[] {
-            treeNode28,
-            treeNode29});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Interview Evaluation");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Employee Registration");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Employee Registration (Existing)");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Employee Performance Appraisal");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Employee PER Checklist");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Recruitment", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Training Schedule");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Training Feedback & Assesment");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Training", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Employee Resignation");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Reliving", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Reporting");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("5th Month");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Contract");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Notifications", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.treeView = new System.Windows.Forms.TreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,12 +95,17 @@
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.modPanel = new System.Windows.Forms.Panel();
             this.viewsPanel = new System.Windows.Forms.Panel();
+            this.header = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.x1 = new System.Windows.Forms.Button();
+            this.x3 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
+            this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView
@@ -107,59 +113,59 @@
             this.treeView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeView.ImageIndex = 0;
             this.treeView.ImageList = this.imageList;
-            this.treeView.Location = new System.Drawing.Point(12, 27);
+            this.treeView.Location = new System.Drawing.Point(12, 67);
             this.treeView.Name = "treeView";
-            treeNode16.ImageIndex = 0;
-            treeNode16.Name = "Node2";
-            treeNode16.Text = "Interview Evaluation";
-            treeNode17.ImageIndex = 0;
-            treeNode17.Name = "Node3";
-            treeNode17.Text = "Employee Registration";
-            treeNode18.ImageIndex = 0;
-            treeNode18.Name = "Node0";
-            treeNode18.Text = "Employee Registration (Existing)";
-            treeNode19.Name = "Node3";
-            treeNode19.Text = "Employee Performance Appraisal";
-            treeNode20.Name = "Node0";
-            treeNode20.Text = "Employee PER Checklist";
-            treeNode21.ImageIndex = 0;
-            treeNode21.Name = "Node0";
-            treeNode21.Text = "Recruitment";
-            treeNode22.ImageIndex = 0;
-            treeNode22.Name = "Node4";
-            treeNode22.Text = "Training Schedule";
-            treeNode23.ImageIndex = 0;
-            treeNode23.Name = "Node6";
-            treeNode23.Text = "Training Feedback & Assesment";
-            treeNode24.ImageIndex = 0;
-            treeNode24.Name = "Node1";
-            treeNode24.Text = "Training";
-            treeNode25.ImageIndex = 0;
-            treeNode25.Name = "Node9";
-            treeNode25.Text = "Employee Resignation";
-            treeNode26.ImageIndex = 0;
-            treeNode26.Name = "Node8";
-            treeNode26.Text = "Reliving";
-            treeNode27.ImageIndex = 0;
-            treeNode27.Name = "Node11";
-            treeNode27.Text = "Reporting";
-            treeNode28.ImageIndex = 0;
-            treeNode28.Name = "Node18";
-            treeNode28.Text = "5th Month";
-            treeNode29.ImageIndex = 0;
-            treeNode29.Name = "Node20";
-            treeNode29.Text = "Contract";
-            treeNode30.ImageIndex = 0;
-            treeNode30.Name = "Node17";
-            treeNode30.Text = "Notifications";
+            treeNode1.ImageIndex = 0;
+            treeNode1.Name = "Node2";
+            treeNode1.Text = "Interview Evaluation";
+            treeNode2.ImageIndex = 0;
+            treeNode2.Name = "Node3";
+            treeNode2.Text = "Employee Registration";
+            treeNode3.ImageIndex = 0;
+            treeNode3.Name = "Node0";
+            treeNode3.Text = "Employee Registration (Existing)";
+            treeNode4.Name = "Node3";
+            treeNode4.Text = "Employee Performance Appraisal";
+            treeNode5.Name = "Node0";
+            treeNode5.Text = "Employee PER Checklist";
+            treeNode6.ImageIndex = 0;
+            treeNode6.Name = "Node0";
+            treeNode6.Text = "Recruitment";
+            treeNode7.ImageIndex = 0;
+            treeNode7.Name = "Node4";
+            treeNode7.Text = "Training Schedule";
+            treeNode8.ImageIndex = 0;
+            treeNode8.Name = "Node6";
+            treeNode8.Text = "Training Feedback & Assesment";
+            treeNode9.ImageIndex = 0;
+            treeNode9.Name = "Node1";
+            treeNode9.Text = "Training";
+            treeNode10.ImageIndex = 0;
+            treeNode10.Name = "Node9";
+            treeNode10.Text = "Employee Resignation";
+            treeNode11.ImageIndex = 0;
+            treeNode11.Name = "Node8";
+            treeNode11.Text = "Reliving";
+            treeNode12.ImageIndex = 0;
+            treeNode12.Name = "Node11";
+            treeNode12.Text = "Reporting";
+            treeNode13.ImageIndex = 0;
+            treeNode13.Name = "Node18";
+            treeNode13.Text = "5th Month";
+            treeNode14.ImageIndex = 0;
+            treeNode14.Name = "Node20";
+            treeNode14.Text = "Contract";
+            treeNode15.ImageIndex = 0;
+            treeNode15.Name = "Node17";
+            treeNode15.Text = "Notifications";
             this.treeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode21,
-            treeNode24,
-            treeNode26,
-            treeNode27,
-            treeNode30});
+            treeNode6,
+            treeNode9,
+            treeNode11,
+            treeNode12,
+            treeNode15});
             this.treeView.SelectedImageIndex = 0;
-            this.treeView.Size = new System.Drawing.Size(243, 691);
+            this.treeView.Size = new System.Drawing.Size(243, 689);
             this.treeView.TabIndex = 1;
             this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.OnTreeViewAfterSelect);
             // 
@@ -171,13 +177,14 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userToolStripMenuItem,
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Location = new System.Drawing.Point(0, 24);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1366, 24);
             this.menuStrip.TabIndex = 3;
@@ -185,16 +192,26 @@
             // 
             // userToolStripMenuItem
             // 
+            this.userToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageUsersToolStripMenuItem,
             this.signOutToolStripMenuItem});
+            this.userToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.userToolStripMenuItem.Text = "User";
+            this.userToolStripMenuItem.Text = "&User";
+            // 
+            // manageUsersToolStripMenuItem
+            // 
+            this.manageUsersToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
+            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.manageUsersToolStripMenuItem.Text = "Manage Users...";
             // 
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.signOutToolStripMenuItem.Text = "Sign-Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.OnSignoutToolStripMenuItemClick);
             // 
@@ -211,6 +228,7 @@
             this.printPreviewToolStripMenuItem,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
@@ -297,6 +315,7 @@
             this.pasteToolStripMenuItem,
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
+            this.editToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "&Edit";
@@ -363,6 +382,7 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "&Tools";
@@ -387,6 +407,7 @@
             this.searchToolStripMenuItem,
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
@@ -422,17 +443,17 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(261, 27);
+            this.panel1.Location = new System.Drawing.Point(261, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1093, 691);
+            this.panel1.Size = new System.Drawing.Size(1093, 686);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.splitContainer);
-            this.panel2.Location = new System.Drawing.Point(261, 27);
+            this.panel2.Location = new System.Drawing.Point(261, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1093, 691);
+            this.panel2.Size = new System.Drawing.Size(1093, 686);
             this.panel2.TabIndex = 5;
             // 
             // splitContainer
@@ -449,8 +470,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.viewsPanel);
-            this.splitContainer.Size = new System.Drawing.Size(1093, 691);
-            this.splitContainer.SplitterDistance = 408;
+            this.splitContainer.Size = new System.Drawing.Size(1093, 686);
+            this.splitContainer.SplitterDistance = 405;
             this.splitContainer.TabIndex = 0;
             // 
             // modPanel
@@ -459,7 +480,7 @@
             this.modPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.modPanel.Location = new System.Drawing.Point(0, 0);
             this.modPanel.Name = "modPanel";
-            this.modPanel.Size = new System.Drawing.Size(1093, 408);
+            this.modPanel.Size = new System.Drawing.Size(1093, 405);
             this.modPanel.TabIndex = 0;
             // 
             // viewsPanel
@@ -468,22 +489,86 @@
             this.viewsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.viewsPanel.Location = new System.Drawing.Point(0, 0);
             this.viewsPanel.Name = "viewsPanel";
-            this.viewsPanel.Size = new System.Drawing.Size(1093, 279);
+            this.viewsPanel.Size = new System.Drawing.Size(1093, 277);
             this.viewsPanel.TabIndex = 0;
+            // 
+            // header
+            // 
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.header.Controls.Add(this.label3);
+            this.header.Controls.Add(this.x1);
+            this.header.Controls.Add(this.x3);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Margin = new System.Windows.Forms.Padding(0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(1366, 24);
+            this.header.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "  Main - Arvato HRMS";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // x1
+            // 
+            this.x1.BackColor = System.Drawing.Color.Transparent;
+            this.x1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.x1.FlatAppearance.BorderSize = 0;
+            this.x1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.x1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(151)))), ((int)(((byte)(206)))));
+            this.x1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x1.ForeColor = System.Drawing.Color.Transparent;
+            this.x1.Image = global::Presentation.Properties.Resources.minimize;
+            this.x1.Location = new System.Drawing.Point(1312, 0);
+            this.x1.Margin = new System.Windows.Forms.Padding(0);
+            this.x1.Name = "x1";
+            this.x1.Size = new System.Drawing.Size(27, 24);
+            this.x1.TabIndex = 5;
+            this.x1.UseVisualStyleBackColor = false;
+            this.x1.Click += new System.EventHandler(this.minimizeClick);
+            // 
+            // x3
+            // 
+            this.x3.BackColor = System.Drawing.Color.Transparent;
+            this.x3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.x3.FlatAppearance.BorderSize = 0;
+            this.x3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.x3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(151)))), ((int)(((byte)(206)))));
+            this.x3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.x3.ForeColor = System.Drawing.Color.Transparent;
+            this.x3.Image = global::Presentation.Properties.Resources.exit;
+            this.x3.Location = new System.Drawing.Point(1339, 0);
+            this.x3.Margin = new System.Windows.Forms.Padding(0);
+            this.x3.Name = "x3";
+            this.x3.Size = new System.Drawing.Size(27, 24);
+            this.x3.TabIndex = 3;
+            this.x3.UseVisualStyleBackColor = false;
+            this.x3.Click += new System.EventHandler(this.closeClick);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.treeView);
             this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OnLoad);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -492,6 +577,7 @@
             this.splitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
             this.splitContainer.ResumeLayout(false);
+            this.header.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,6 +624,11 @@
         private System.Windows.Forms.SplitContainer splitContainer;
         public System.Windows.Forms.Panel modPanel;
         public System.Windows.Forms.Panel viewsPanel;
+        private System.Windows.Forms.ToolStripMenuItem manageUsersToolStripMenuItem;
+        private System.Windows.Forms.Panel header;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button x1;
+        private System.Windows.Forms.Button x3;
     }
 }
 

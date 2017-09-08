@@ -88,6 +88,12 @@
     <Compile Include="DialogBox\BackgroundHistory\WorkHistory.Designer.cs">
       <DependentUpon>WorkHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="DialogBox\ContactPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\ContactPersonForm.Designer.cs">
+      <DependentUpon>ContactPersonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\EmployeeExitForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +136,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\EmployeeRegistration.cs">
       <SubType>UserControl</SubType>
@@ -261,6 +279,9 @@
     <EmbeddedResource Include="DialogBox\BackgroundHistory\WorkHistory.resx">
       <DependentUpon>WorkHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\ContactPersonForm.resx">
+      <DependentUpon>ContactPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\EmployeeExitForm.resx">
       <DependentUpon>EmployeeExitForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,8 +303,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\EmployeeRegistration.resx">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
@@ -374,6 +401,27 @@
       <Project>{D2CE237C-CFFF-4288-AC83-3E8E0496472D}</Project>
       <Name>Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

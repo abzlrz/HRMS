@@ -33,7 +33,6 @@ namespace Presentation
             this.mod_trainingFeedback = new TrainingFeedback();
             this.mod_trainingSchedule = new TrainingSchedule();
         }
-
         private void ShowControlOnPanel1(UserControl ctrl)
         {
             if (!panel1.Controls.Contains(ctrl))
@@ -162,7 +161,18 @@ namespace Presentation
             views.ForEach(x => { viewsPanel.Controls.Add(x); x.Dock = DockStyle.Fill; });
             dash.ForEach(x => { panel1.Controls.Add(x); x.Dock = DockStyle.Fill; });
         }
-
+        private void closeClick(object sender, System.EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?", "Arvato HRMS",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        private void minimizeClick(object sender, System.EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
         private VEmployee view_employee;
         private VRecruitment view_recruitment;
         private VTraining view_training;
