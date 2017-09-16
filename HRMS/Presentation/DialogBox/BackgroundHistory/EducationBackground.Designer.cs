@@ -30,11 +30,10 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_remove = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
             this.main = new System.Windows.Forms.Panel();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.dt2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +49,6 @@
             this.dt1 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.panel3.SuspendLayout();
             this.main.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
@@ -58,11 +56,11 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridView);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 318);
+            this.panel2.Padding = new System.Windows.Forms.Padding(5);
+            this.panel2.Size = new System.Drawing.Size(196, 300);
             this.panel2.TabIndex = 2;
             // 
             // dataGridView
@@ -70,61 +68,62 @@
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Location = new System.Drawing.Point(5, 5);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(196, 256);
+            this.dataGridView.Size = new System.Drawing.Size(186, 290);
             this.dataGridView.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btn_remove);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 256);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(196, 62);
-            this.panel3.TabIndex = 3;
-            // 
-            // btn_remove
-            // 
-            this.btn_remove.Enabled = false;
-            this.btn_remove.Location = new System.Drawing.Point(58, 11);
-            this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(75, 23);
-            this.btn_remove.TabIndex = 4;
-            this.btn_remove.Text = "Remove";
-            this.btn_remove.UseVisualStyleBackColor = true;
-            this.btn_remove.Click += new System.EventHandler(this.removeClick);
-            // 
-            // btn_add
-            // 
-            this.btn_add.Location = new System.Drawing.Point(296, 256);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
-            this.btn_add.TabIndex = 3;
-            this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.addClick);
-            // 
-            // btn_save
-            // 
-            this.btn_save.Location = new System.Drawing.Point(296, 256);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(75, 23);
-            this.btn_save.TabIndex = 5;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.saveClick);
             // 
             // main
             // 
-            this.main.Controls.Add(this.tableLayoutPanel6);
+            this.main.Controls.Add(this.btn_delete);
             this.main.Controls.Add(this.btn_add);
-            this.main.Controls.Add(this.btn_save);
+            this.main.Controls.Add(this.btn_edit);
+            this.main.Controls.Add(this.tableLayoutPanel6);
             this.main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main.Location = new System.Drawing.Point(208, 12);
             this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(423, 318);
+            this.main.Size = new System.Drawing.Size(424, 300);
             this.main.TabIndex = 3;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Location = new System.Drawing.Point(300, 260);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.TabIndex = 9;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            // 
+            // btn_add
+            // 
+            this.btn_add.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(138, 260);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.TabIndex = 8;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = false;
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.BackColor = System.Drawing.Color.Green;
+            this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.Location = new System.Drawing.Point(219, 260);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_edit.TabIndex = 10;
+            this.btn_edit.Text = "Save";
+            this.btn_edit.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel6
             // 
@@ -302,11 +301,10 @@
             this.Controls.Add(this.panel2);
             this.Name = "EducationBackground";
             this.Padding = new System.Windows.Forms.Padding(12);
-            this.Size = new System.Drawing.Size(643, 342);
+            this.Size = new System.Drawing.Size(644, 324);
             this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.main.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -316,16 +314,12 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_remove;
-        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Panel main;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox tbx_School;
         private System.Windows.Forms.TextBox tbx_location;
-        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.DateTimePicker dt2;
         private System.Windows.Forms.Label label1;
@@ -335,5 +329,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dt1;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_edit;
     }
 }

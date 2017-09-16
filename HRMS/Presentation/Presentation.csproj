@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connect2SQL.cs">
+    <Compile Include="ClearanceLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connect2SQL.Designer.cs">
-      <DependentUpon>Connect2SQL.cs</DependentUpon>
+    <Compile Include="ClearanceLogin.Designer.cs">
+      <DependentUpon>ClearanceLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\ApplicationForm.cs">
       <SubType>Form</SubType>
@@ -129,18 +130,6 @@
     </Compile>
     <Compile Include="DialogBox\RegisterEmployee.Designer.cs">
       <DependentUpon>RegisterEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -258,8 +247,8 @@
     <Compile Include="methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Connect2SQL.resx">
-      <DependentUpon>Connect2SQL.cs</DependentUpon>
+    <EmbeddedResource Include="ClearanceLogin.resx">
+      <DependentUpon>ClearanceLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
@@ -299,12 +288,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\RegisterEmployee.resx">
       <DependentUpon>RegisterEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -422,6 +405,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Add_27831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Remove_27874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Save_27876.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

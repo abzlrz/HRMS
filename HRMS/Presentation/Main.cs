@@ -1,4 +1,5 @@
-﻿using Presentation.Modules;
+﻿using Presentation.Maintenance;
+using Presentation.Modules;
 using Presentation.View;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -32,6 +33,9 @@ namespace Presentation
             this.mod_checklist = new PERChecklist();
             this.mod_trainingFeedback = new TrainingFeedback();
             this.mod_trainingSchedule = new TrainingSchedule();
+
+            this.usermgr = new UserManager();
+            this.clrLogin = new ClearanceLogin();
         }
         private void ShowControlOnPanel1(UserControl ctrl)
         {
@@ -138,7 +142,6 @@ namespace Presentation
             login.Show();
             this.Close();
         }
-
         private void OnLoad(object sender, System.EventArgs e)
         {
             var mods = new List<UserControl>()
@@ -173,6 +176,11 @@ namespace Presentation
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        private void manageUsersClick(object sender, System.EventArgs e)
+        {
+            
+        }
+
         private VEmployee view_employee;
         private VRecruitment view_recruitment;
         private VTraining view_training;
@@ -190,6 +198,9 @@ namespace Presentation
         private EmployeeResignation mod_resignation;
         private TrainingFeedback mod_trainingFeedback;
         private TrainingSchedule mod_trainingSchedule;
+
+        private UserManager usermgr;
+        private ClearanceLogin clrLogin;
     }
     
 }

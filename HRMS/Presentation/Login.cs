@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Data.Access;
 using Data.Entities;
+using Presentation.Maintenance;
 
 namespace Presentation
 {
@@ -12,25 +13,28 @@ namespace Presentation
         public Login()
         {
             InitializeComponent();
-
-            //transparent panel
-            this.panel1.BackColor = Color.FromArgb(150, ArvatoBlue);
-
+            
             this.applicationForm = new ApplicationForm();
             this.main = new Main();
             
-            //user acces begin here
-            this.access = new UserAccess("Data Source=.;Initial Catalog=HRMS;Integrated Security=True");
+            // user acces begin here
+            this.access = new UserAccess();
 
-            //draggable flowlayoutpanel
+            // draggable flowlayoutpanel
             this.draggable = new Draggable(header, this);
 
             this.user = new User();
 
-            //reduce flicker
+            // reduce flicker
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer |
                 ControlStyles.AllPaintingInWmPaint |
                 ControlStyles.UserPaint, true);
+
+            // user management
+            this.userManagement = new UserManager();
+
+            //clearance login
+            this.clearance = new ClearanceLogin();
         }
         private void ImplementDraggable()
         {
@@ -83,6 +87,7 @@ namespace Presentation
             // 
             this.btnApply.Location = new Point(421, 209);
             this.btnApply.Size = new Size(270, 75);
+            this.btnApply.Font = new Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // Form
             //
@@ -149,6 +154,7 @@ namespace Presentation
             // 
             this.btnApply.Location = new Point(857, 378);
             this.btnApply.Size = new Size(402, 75);
+            this.btnApply.Font = new Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // Form2
             //
@@ -188,12 +194,11 @@ namespace Presentation
                     MessageBox.Show("Username or Password is Invalid");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void OnApplyClick(object sender, System.EventArgs e)
         {
             this.applicationForm.ShowDialog();
@@ -214,7 +219,6 @@ namespace Presentation
                 Maximize();
 
             }
-
         }
         private void closeClick(object sender, EventArgs e)
         {
@@ -224,12 +228,29 @@ namespace Presentation
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        private void OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == (Keys.Control | Keys.R))
+            {
+                this.clearance.Text = "Register User";
+                this.clearance.ShowDialog();
+                e.SuppressKeyPress = true;
+            }
+
+            if (e.KeyCode == Keys.F1)
+            {
+                this.applicationForm.ShowDialog();
+                e.SuppressKeyPress = true;
+            }
+        }
 
         private Color ArvatoBlue = Color.FromArgb(0, 104, 169);
         private Color ArvatoGreen = Color.FromArgb(176, 200, 0);
         private Color ArvatoRed = Color.FromArgb(233, 15, 64);
         private Draggable draggable;
         private ApplicationForm applicationForm;
+        private UserManager userManagement;
+        private ClearanceLogin clearance;
         private Main main;
         private UserAccess access;
         private User user;

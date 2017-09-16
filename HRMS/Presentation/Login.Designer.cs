@@ -59,14 +59,16 @@
             this.btnApply.Location = new System.Drawing.Point(857, 378);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(402, 75);
-            this.btnApply.TabIndex = 16;
+            this.btnApply.TabIndex = 0;
             this.btnApply.Text = "Apply Job";
+            this.tip.SetToolTip(this.btnApply, "Press F1");
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.OnApplyClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.tbx_password);
             this.panel1.Controls.Add(this.label2);
@@ -88,7 +90,7 @@
             this.btnLogin.Location = new System.Drawing.Point(207, 477);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(170, 67);
-            this.btnLogin.TabIndex = 12;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.OnClick);
@@ -101,7 +103,7 @@
             this.tbx_password.Location = new System.Drawing.Point(175, 411);
             this.tbx_password.Name = "tbx_password";
             this.tbx_password.Size = new System.Drawing.Size(232, 29);
-            this.tbx_password.TabIndex = 11;
+            this.tbx_password.TabIndex = 1;
             this.tbx_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbx_password.UseSystemPasswordChar = true;
             // 
@@ -125,7 +127,7 @@
             this.tbx_username.Location = new System.Drawing.Point(175, 345);
             this.tbx_username.Name = "tbx_username";
             this.tbx_username.Size = new System.Drawing.Size(232, 29);
-            this.tbx_username.TabIndex = 9;
+            this.tbx_username.TabIndex = 0;
             this.tbx_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -207,7 +209,8 @@
             // 
             // header
             // 
-            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.header.BackColor = System.Drawing.Color.Transparent;
+            this.header.BackgroundImage = global::Presentation.Properties.Resources.gradient;
             this.header.Controls.Add(this.label3);
             this.header.Controls.Add(this.x1);
             this.header.Controls.Add(this.x2);
@@ -244,9 +247,11 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Login";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

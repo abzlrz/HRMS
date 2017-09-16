@@ -59,7 +59,7 @@ namespace Presentation.DialogBox.BackgroundHistory
             //specify what index of an item should be removed
 
             //enable specific buttons
-            btn_remove.Enabled = false;
+            
             btn_add.BringToFront();
 
             //resets all fields
@@ -78,8 +78,6 @@ namespace Presentation.DialogBox.BackgroundHistory
             finally
             {
                 //enables specific buttons
-                btn_save.BringToFront();
-                btn_remove.Enabled = true;
             }
         }
         private void saveClick(object sender, EventArgs e)

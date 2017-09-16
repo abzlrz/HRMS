@@ -17,9 +17,9 @@ namespace Data.Access
             {
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = Connection;
-                adapter.SelectCommand.CommandType = CommandType.Text;
-                adapter.SelectCommand.CommandText = "select * from [User].[User] where [Username] = @username AND [Password] = @password";
-                adapter.SelectCommand.Parameters.AddWithValue("@username", user.Username);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_Login";
+                adapter.SelectCommand.Parameters.AddWithValue("@username", int.Parse(user.Username));
                 adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
 
                 adapter.Fill(table);
@@ -28,9 +28,13 @@ namespace Data.Access
                 return row == null ? false : true;
             }
         }
-        public UserAccess(string connectionString)
+        public bool ChangePassword(int id, User user)
         {
-            this.Connection = new SqlConnection(connectionString);
+            return false;
+        }
+        public UserAccess()
+        {
+            this.Connection = new SqlConnection(DBConnection.ConnectionString);
         }
     }
 }

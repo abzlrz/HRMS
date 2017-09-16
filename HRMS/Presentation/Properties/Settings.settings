@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=ArvatoHRM;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>
