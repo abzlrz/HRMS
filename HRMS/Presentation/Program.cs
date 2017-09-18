@@ -1,4 +1,6 @@
 ﻿using Presentation.DialogBox;
+using Presentation.DialogBox.ExternalApplicationForm;
+using Presentation.DialogBox.ExternalApplication;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +16,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BackgroundHistoryForm());
+            Application.Run(new FormExternalApplicant());
         }
     }
 }

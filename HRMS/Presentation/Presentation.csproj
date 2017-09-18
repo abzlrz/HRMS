@@ -53,83 +53,107 @@
     <Compile Include="ClearanceLogin.Designer.cs">
       <DependentUpon>ClearanceLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\ApplicationForm.cs">
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogBox\ApplicationForm.Designer.cs">
-      <DependentUpon>ApplicationForm.cs</DependentUpon>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.Designer.cs">
+      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistoryForm.cs">
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistoryForm.Designer.cs">
-      <DependentUpon>BackgroundHistoryForm.cs</DependentUpon>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.Designer.cs">
+      <DependentUpon>FormBackgroundEmployment.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\EducationBackground.cs">
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.Designer.cs">
+      <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.Designer.cs">
+      <DependentUpon>FormLegalBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.Designer.cs">
+      <DependentUpon>FormContactPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeExit.Designer.cs">
+      <DependentUpon>FormEmployeeExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeePerformanceAppraisal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeePerformanceAppraisal.Designer.cs">
+      <DependentUpon>FormEmployeePerformanceAppraisal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeTrainingFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeTrainingFeedback.Designer.cs">
+      <DependentUpon>FormEmployeeTrainingFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeTrainingSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeTrainingSchedule.Designer.cs">
+      <DependentUpon>FormEmployeeTrainingSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormEvaluateApplicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEvaluateApplicant.Designer.cs">
+      <DependentUpon>FormEvaluateApplicant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormExternalApplicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormExternalApplicant.Designer.cs">
+      <DependentUpon>FormExternalApplicant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlAddress.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\EducationBackground.Designer.cs">
-      <DependentUpon>EducationBackground.cs</DependentUpon>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlAddress.Designer.cs">
+      <DependentUpon>ControlAddress.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\IllnessHistory.cs">
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlApplicationDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\IllnessHistory.Designer.cs">
-      <DependentUpon>IllnessHistory.cs</DependentUpon>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlApplicationDetails.Designer.cs">
+      <DependentUpon>ControlApplicationDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\LegalHistory.cs">
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\LegalHistory.Designer.cs">
-      <DependentUpon>LegalHistory.cs</DependentUpon>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.Designer.cs">
+      <DependentUpon>ControlOtherDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\WorkHistory.cs">
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlPersonalInformation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DialogBox\BackgroundHistory\WorkHistory.Designer.cs">
-      <DependentUpon>WorkHistory.cs</DependentUpon>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlPersonalInformation.Designer.cs">
+      <DependentUpon>ControlPersonalInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\ContactPersonForm.cs">
+    <Compile Include="DialogBox\FormRegisterEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogBox\ContactPersonForm.Designer.cs">
-      <DependentUpon>ContactPersonForm.cs</DependentUpon>
+    <Compile Include="DialogBox\FormRegisterEmployee.Designer.cs">
+      <DependentUpon>FormRegisterEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\EmployeeExitForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogBox\EmployeeExitForm.Designer.cs">
-      <DependentUpon>EmployeeExitForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\EmployeePerformanceAppraisal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\EmployeePerformanceAppraisal.Designer.cs">
-      <DependentUpon>EmployeePerformanceAppraisal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\EmployeeTrainingFeedback.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\EmployeeTrainingFeedback.Designer.cs">
-      <DependentUpon>EmployeeTrainingFeedback.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\EmployeeTrainingSchedule.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\EmployeeTrainingSchedule.Designer.cs">
-      <DependentUpon>EmployeeTrainingSchedule.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\EvaluateApplicant.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\EvaluateApplicant.Designer.cs">
-      <DependentUpon>EvaluateApplicant.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\RegisterEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\RegisterEmployee.Designer.cs">
-      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -250,44 +274,56 @@
     <EmbeddedResource Include="ClearanceLogin.resx">
       <DependentUpon>ClearanceLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\ApplicationForm.resx">
-      <DependentUpon>ApplicationForm.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.resx">
+      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\BackgroundHistoryForm.resx">
-      <DependentUpon>BackgroundHistoryForm.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.resx">
+      <DependentUpon>FormBackgroundEmployment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\BackgroundHistory\EducationBackground.resx">
-      <DependentUpon>EducationBackground.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.resx">
+      <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\BackgroundHistory\IllnessHistory.resx">
-      <DependentUpon>IllnessHistory.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.resx">
+      <DependentUpon>FormLegalBackground.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\BackgroundHistory\LegalHistory.resx">
-      <DependentUpon>LegalHistory.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.resx">
+      <DependentUpon>FormContactPerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\BackgroundHistory\WorkHistory.resx">
-      <DependentUpon>WorkHistory.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormEmployeeExit.resx">
+      <DependentUpon>FormEmployeeExit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\ContactPersonForm.resx">
-      <DependentUpon>ContactPersonForm.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormEmployeePerformanceAppraisal.resx">
+      <DependentUpon>FormEmployeePerformanceAppraisal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\EmployeeExitForm.resx">
-      <DependentUpon>EmployeeExitForm.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormEmployeeTrainingFeedback.resx">
+      <DependentUpon>FormEmployeeTrainingFeedback.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\EmployeePerformanceAppraisal.resx">
-      <DependentUpon>EmployeePerformanceAppraisal.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormEmployeeTrainingSchedule.resx">
+      <DependentUpon>FormEmployeeTrainingSchedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\EmployeeTrainingFeedback.resx">
-      <DependentUpon>EmployeeTrainingFeedback.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormEvaluateApplicant.resx">
+      <DependentUpon>FormEvaluateApplicant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\EmployeeTrainingSchedule.resx">
-      <DependentUpon>EmployeeTrainingSchedule.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\FormExternalApplicant.resx">
+      <DependentUpon>FormExternalApplicant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\EvaluateApplicant.resx">
-      <DependentUpon>EvaluateApplicant.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlAddress.resx">
+      <DependentUpon>ControlAddress.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\RegisterEmployee.resx">
-      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlApplicationDetails.resx">
+      <DependentUpon>ControlApplicationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.resx">
+      <DependentUpon>ControlOtherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlPersonalInformation.resx">
+      <DependentUpon>ControlPersonalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormRegisterEmployee.resx">
+      <DependentUpon>FormRegisterEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

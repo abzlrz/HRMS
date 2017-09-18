@@ -14,7 +14,7 @@ namespace Presentation
         {
             InitializeComponent();
             
-            this.applicationForm = new ApplicationForm();
+            this.applicationForm = new FormExternalApplicant();
             this.main = new Main();
             
             // user acces begin here
@@ -181,7 +181,7 @@ namespace Presentation
         {
             try
             {
-                this.user.Username = tbx_username.Text;
+                this.user.ID = tbx_username.Text;
                 this.user.Password = tbx_password.Text;
 
                 if (access.Login(user))
@@ -248,7 +248,7 @@ namespace Presentation
         private Color ArvatoGreen = Color.FromArgb(176, 200, 0);
         private Color ArvatoRed = Color.FromArgb(233, 15, 64);
         private Draggable draggable;
-        private ApplicationForm applicationForm;
+        private FormExternalApplicant applicationForm;
         private UserManager userManagement;
         private ClearanceLogin clearance;
         private Main main;

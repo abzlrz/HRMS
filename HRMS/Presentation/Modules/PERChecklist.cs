@@ -11,5 +11,10 @@ namespace Presentation.Modules
         }
 
         private PerformanceAppraisal appraisal;
+
+        private void label16_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

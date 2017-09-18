@@ -1,13 +1,12 @@
 ﻿using Data.Entities;
 using System.Data;
 using System.Data.SqlClient;
+using Data.Types;
 
 namespace Data.Access
 {
-    public class UserAccess
+    public class UserAccess : IUserAccess
     {
-        SqlConnection Connection { get; set; }
-
         public bool Login(User user)
         {
             var table = new DataTable();
@@ -16,10 +15,10 @@ namespace Data.Access
             using (var adapter = new SqlDataAdapter())
             {
                 adapter.SelectCommand = new SqlCommand();
-                adapter.SelectCommand.Connection = Connection;
+                adapter.SelectCommand.Connection = new SqlConnection(DB.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "sp_Login";
-                adapter.SelectCommand.Parameters.AddWithValue("@username", int.Parse(user.Username));
+                adapter.SelectCommand.CommandText = "sp_login";
+                adapter.SelectCommand.Parameters.AddWithValue("@id", int.Parse(user.ID));
                 adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
 
                 adapter.Fill(table);
@@ -28,13 +27,23 @@ namespace Data.Access
                 return row == null ? false : true;
             }
         }
-        public bool ChangePassword(int id, User user)
+        public bool ChangePassword(User user)
         {
-            return false;
-        }
-        public UserAccess()
-        {
-            this.Connection = new SqlConnection(DBConnection.ConnectionString);
+            using (var command = new SqlCommand())
+            {
+                command.Connection = new SqlConnection(DB.ConnectionString);
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "sp_changePassword";
+
+                command.Parameters.AddWithValue("@id", user.ID);
+                command.Parameters.AddWithValue("@password", user.Password);
+
+                command.Connection.Open();
+                var rows = command.ExecuteNonQuery();
+                command.Connection.Close();
+
+                return rows > 0;
+            }
         }
     }
 }

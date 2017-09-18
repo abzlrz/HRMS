@@ -8,7 +8,7 @@ namespace Presentation.Modules
         public TrainingSchedule()
         {
             InitializeComponent();
-            this.schedule = new EmployeeTrainingSchedule();
+            this.schedule = new FormEmployeeTrainingSchedule();
         }
 
         #region Help Button
@@ -28,6 +28,6 @@ namespace Presentation.Modules
             schedule.ShowDialog();
         }
 
-        private EmployeeTrainingSchedule schedule;
+        private FormEmployeeTrainingSchedule schedule;
     }
 }

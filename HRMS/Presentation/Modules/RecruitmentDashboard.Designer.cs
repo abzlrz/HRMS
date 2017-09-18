@@ -38,7 +38,7 @@
             this.p = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.view_employee = new System.Windows.Forms.DataGridView();
             this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +46,7 @@
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.view_applicant = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.info = new System.Windows.Forms.Panel();
@@ -56,31 +56,32 @@
             this.p.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
             this.employeeMenuStrip.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_applicant)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // applicantMenuStrip
             // 
+            this.applicantMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.applicantMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.evaluateToolStripMenuItem,
             this.modifyToolStripMenuItem});
             this.applicantMenuStrip.Name = "applicantMenuStrip";
-            this.applicantMenuStrip.Size = new System.Drawing.Size(119, 48);
+            this.applicantMenuStrip.Size = new System.Drawing.Size(150, 64);
             // 
             // evaluateToolStripMenuItem
             // 
             this.evaluateToolStripMenuItem.Name = "evaluateToolStripMenuItem";
-            this.evaluateToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.evaluateToolStripMenuItem.Size = new System.Drawing.Size(149, 30);
             this.evaluateToolStripMenuItem.Text = "Evaluate";
             // 
             // modifyToolStripMenuItem
             // 
             this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(149, 30);
             this.modifyToolStripMenuItem.Text = "Modify";
             // 
             // tableLayoutPanel1
@@ -92,11 +93,12 @@
             this.tableLayoutPanel1.Controls.Add(this.p, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 691);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 308F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1640, 1063);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // panel4
@@ -104,10 +106,10 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1);
+            this.panel4.Location = new System.Drawing.Point(5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1085, 23);
+            this.panel4.Size = new System.Drawing.Size(1630, 34);
             this.panel4.TabIndex = 2;
             // 
             // label1
@@ -117,8 +119,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1085, 23);
+            this.label1.Size = new System.Drawing.Size(1630, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Recruitment Module";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,9 +131,10 @@
             this.p.Controls.Add(this.tabControl);
             this.p.Controls.Add(this.panel3);
             this.p.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p.Location = new System.Drawing.Point(6, 34);
+            this.p.Location = new System.Drawing.Point(7, 49);
+            this.p.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.p.Name = "p";
-            this.p.Size = new System.Drawing.Size(1081, 651);
+            this.p.Size = new System.Drawing.Size(1626, 1006);
             this.p.TabIndex = 3;
             // 
             // tabControl
@@ -141,101 +145,110 @@
             this.tabControl.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.HotTrack = true;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(760, 651);
+            this.tabControl.Size = new System.Drawing.Size(1146, 1006);
             this.tabControl.TabIndex = 4;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.view_employee);
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(752, 625);
+            this.tabPage1.Size = new System.Drawing.Size(1138, 970);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Employee";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // view_employee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ContextMenuStrip = this.employeeMenuStrip;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(752, 525);
-            this.dataGridView1.TabIndex = 5;
+            this.view_employee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_employee.ContextMenuStrip = this.employeeMenuStrip;
+            this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_employee.Location = new System.Drawing.Point(0, 154);
+            this.view_employee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.view_employee.Name = "view_employee";
+            this.view_employee.Size = new System.Drawing.Size(1138, 816);
+            this.view_employee.TabIndex = 5;
+            this.view_employee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // employeeMenuStrip
             // 
+            this.employeeMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.employeeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checklistToolStripMenuItem,
             this.promoteToolStripMenuItem,
             this.editToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.employeeMenuStrip.Name = "employeeMenuStrip";
-            this.employeeMenuStrip.Size = new System.Drawing.Size(123, 92);
+            this.employeeMenuStrip.Size = new System.Drawing.Size(154, 124);
             // 
             // checklistToolStripMenuItem
             // 
             this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
-            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(153, 30);
             this.checklistToolStripMenuItem.Text = "Checklist";
             // 
             // promoteToolStripMenuItem
             // 
             this.promoteToolStripMenuItem.Name = "promoteToolStripMenuItem";
-            this.promoteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.promoteToolStripMenuItem.Size = new System.Drawing.Size(153, 30);
             this.promoteToolStripMenuItem.Text = "Promote";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(153, 30);
             this.editToolStripMenuItem.Text = "Edit...";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(153, 30);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 100);
+            this.panel1.Size = new System.Drawing.Size(1138, 154);
             this.panel1.TabIndex = 4;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.view_applicant);
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(752, 625);
+            this.tabPage2.Size = new System.Drawing.Size(1138, 970);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Applicant";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // view_applicant
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ContextMenuStrip = this.applicantMenuStrip;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 100);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(752, 525);
-            this.dataGridView2.TabIndex = 2;
+            this.view_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_applicant.ContextMenuStrip = this.applicantMenuStrip;
+            this.view_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_applicant.Location = new System.Drawing.Point(0, 154);
+            this.view_applicant.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.view_applicant.Name = "view_applicant";
+            this.view_applicant.Size = new System.Drawing.Size(1138, 816);
+            this.view_applicant.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(752, 100);
+            this.panel2.Size = new System.Drawing.Size(1138, 154);
             this.panel2.TabIndex = 3;
             // 
             // panel3
@@ -244,10 +257,11 @@
             this.panel3.Controls.Add(this.info);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(760, 0);
+            this.panel3.Location = new System.Drawing.Point(1146, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(5);
-            this.panel3.Size = new System.Drawing.Size(321, 651);
+            this.panel3.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel3.Size = new System.Drawing.Size(480, 1006);
             this.panel3.TabIndex = 5;
             // 
             // info
@@ -255,28 +269,30 @@
             this.info.BackColor = System.Drawing.Color.White;
             this.info.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.info.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.info.Location = new System.Drawing.Point(5, 304);
+            this.info.Location = new System.Drawing.Point(8, 475);
+            this.info.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(309, 340);
+            this.info.Size = new System.Drawing.Size(462, 521);
             this.info.TabIndex = 0;
             // 
             // RecruitmentDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RecruitmentDashboard";
-            this.Size = new System.Drawing.Size(1093, 691);
+            this.Size = new System.Drawing.Size(1640, 1063);
             this.applicantMenuStrip.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.p.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
             this.employeeMenuStrip.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_applicant)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -292,10 +308,10 @@
         private System.Windows.Forms.Panel p;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView view_employee;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView view_applicant;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel info;

@@ -5,11 +5,11 @@ namespace Presentation.Modules
 {
     public partial class InterviewEvaluation : UserControl
     {
-        private EvaluateApplicant evaluation;
+        private FormEvaluateApplicant evaluation;
         public InterviewEvaluation()
         {
             InitializeComponent();
-            this.evaluation = new EvaluateApplicant();
+            this.evaluation = new FormEvaluateApplicant();
         }
 
         private void OnEvaluateToolStripMenuItemClick(object sender, System.EventArgs e)

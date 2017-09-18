@@ -1,12 +1,15 @@
 ﻿namespace Data
 {
-    static class DBConnection
+    static class DB
     {
         public static string ConnectionString = Properties.Settings.Default.ConnectionString;
 
-        static void ChangeConnectionString(string str)
-        {
-            Properties.Settings.Default.ConnectionString = str;
-        }
+        //USER SCHEMA
+        public static string LoginUser = "[User].[sp_login]";
+        public static string PopulateUser = "[User].[sp_populateUser]";
+        public static string ChangePassword = "[User].[sp_changePassword]";
+
+        //EXTERNAL APPLICANT SCHEMA
+        public static string InsertApplicant = "[ExternalApplicant].[sp_insert]";
     }
 }

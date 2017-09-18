@@ -9,7 +9,7 @@ namespace Presentation.Modules
         public PerformanceAppraisal()
         {
             InitializeComponent();
-            this.appraisal = new EmployeePerformanceAppraisal();
+            this.appraisal = new FormEmployeePerformanceAppraisal();
         }
 
         private void OnPerformanceAppraisalToolStripMenuItemClick(object sender, EventArgs e)
@@ -17,6 +17,6 @@ namespace Presentation.Modules
             appraisal.ShowDialog();
         }
 
-        private EmployeePerformanceAppraisal appraisal;
+        private FormEmployeePerformanceAppraisal appraisal;
     }
 }

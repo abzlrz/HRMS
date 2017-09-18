@@ -5,11 +5,11 @@ namespace Presentation.Modules
 {
     public partial class TrainingFeedback : UserControl
     {
-        private EmployeeTrainingFeedback feedback;
+        private FormEmployeeTrainingFeedback feedback;
         public TrainingFeedback()
         {
             InitializeComponent();
-            this.feedback = new EmployeeTrainingFeedback();
+            this.feedback = new FormEmployeeTrainingFeedback();
         }
 
         #region Help Button

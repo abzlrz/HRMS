@@ -209,8 +209,7 @@
             // 
             // header
             // 
-            this.header.BackColor = System.Drawing.Color.Transparent;
-            this.header.BackgroundImage = global::Presentation.Properties.Resources.gradient;
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
             this.header.Controls.Add(this.label3);
             this.header.Controls.Add(this.x1);
             this.header.Controls.Add(this.x2);

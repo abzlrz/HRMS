@@ -6,11 +6,11 @@ namespace Presentation.Modules
 {
     public partial class EmployeeRegistration : UserControl
     {
-        private RegisterEmployee registerEmployee;
+        private FormRegisterEmployee registerEmployee;
         public EmployeeRegistration()
         {
             InitializeComponent();
-            this.registerEmployee = new RegisterEmployee();
+            this.registerEmployee = new FormRegisterEmployee();
         }
 
         #region Help Button

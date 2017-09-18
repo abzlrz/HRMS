@@ -57,27 +57,27 @@
             this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.label84 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.linkLabel38 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel37 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel36 = new System.Windows.Forms.LinkLabel();
+            this.link_locker = new System.Windows.Forms.LinkLabel();
+            this.link_IdentificationCard = new System.Windows.Forms.LinkLabel();
+            this.link_acceptablePolicy = new System.Windows.Forms.LinkLabel();
             this.linkLabel35 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel34 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel33 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel32 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel31 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel30 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel29 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel28 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel27 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel26 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel25 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel23 = new System.Windows.Forms.LinkLabel();
+            this.link_consent = new System.Windows.Forms.LinkLabel();
+            this.link_acceptanceCOC = new System.Windows.Forms.LinkLabel();
+            this.link_acceptance_COD = new System.Windows.Forms.LinkLabel();
+            this.link_NSOmarriage = new System.Windows.Forms.LinkLabel();
+            this.link_NSOdependent = new System.Windows.Forms.LinkLabel();
+            this.link_cedula = new System.Windows.Forms.LinkLabel();
+            this.link_OccupationalPermit = new System.Windows.Forms.LinkLabel();
+            this.link_2316 = new System.Windows.Forms.LinkLabel();
+            this.link_2305 = new System.Windows.Forms.LinkLabel();
+            this.link_1905 = new System.Windows.Forms.LinkLabel();
+            this.link_bankForm = new System.Windows.Forms.LinkLabel();
+            this.link_HMO = new System.Windows.Forms.LinkLabel();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
+            this.labs = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -110,7 +110,7 @@
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.linkLabel22 = new System.Windows.Forms.LinkLabel();
+            this.link_payroll = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.checkAll1 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
@@ -154,22 +154,22 @@
             this.label51 = new System.Windows.Forms.Label();
             this.linkLabel19 = new System.Windows.Forms.LinkLabel();
             this.linkLabel18 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel16 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel15 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.link_informationForm = new System.Windows.Forms.LinkLabel();
+            this.link_backgroundResult = new System.Windows.Forms.LinkLabel();
+            this.link_backgroundCheck = new System.Windows.Forms.LinkLabel();
+            this.link_resume = new System.Windows.Forms.LinkLabel();
+            this.link_InterviewDocs = new System.Windows.Forms.LinkLabel();
+            this.link_NDA = new System.Windows.Forms.LinkLabel();
+            this.link_NewHire = new System.Windows.Forms.LinkLabel();
+            this.link_SNO = new System.Windows.Forms.LinkLabel();
+            this.link_TOR = new System.Windows.Forms.LinkLabel();
+            this.link_COE = new System.Windows.Forms.LinkLabel();
+            this.link_NBI = new System.Windows.Forms.LinkLabel();
+            this.lin_IDPicture = new System.Windows.Forms.LinkLabel();
+            this.link_validID = new System.Windows.Forms.LinkLabel();
+            this.link_ProofOfPagibig = new System.Windows.Forms.LinkLabel();
+            this.link_proofOfPhilHealth = new System.Windows.Forms.LinkLabel();
+            this.link_proofOfSSS = new System.Windows.Forms.LinkLabel();
             this.label48 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -194,24 +194,24 @@
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.link_proofOftin = new System.Windows.Forms.LinkLabel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.applicantInfo = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_pagibig = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lbl_employeeID = new System.Windows.Forms.Label();
+            this.lbl_employeeName = new System.Windows.Forms.Label();
+            this.lbl_dateHire = new System.Windows.Forms.Label();
+            this.lbl_Program = new System.Windows.Forms.Label();
+            this.lbl_SSS = new System.Windows.Forms.Label();
+            this.lbl_TIN = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -236,11 +236,12 @@
             this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1075, 400);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 308F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1612, 615);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel1
@@ -251,10 +252,10 @@
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.gbxAppInfo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1);
+            this.panel1.Location = new System.Drawing.Point(5, 46);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 364);
+            this.panel1.Size = new System.Drawing.Size(1602, 564);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -262,18 +263,20 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnRegister);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 690);
+            this.panel2.Location = new System.Drawing.Point(0, 1062);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1050, 58);
+            this.panel2.Size = new System.Drawing.Size(1576, 89);
             this.panel2.TabIndex = 84;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(841, 17);
+            this.button1.Location = new System.Drawing.Point(1262, 26);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 27);
+            this.button1.Size = new System.Drawing.Size(138, 42);
             this.button1.TabIndex = 86;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
@@ -282,9 +285,10 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.Orange;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Location = new System.Drawing.Point(939, 17);
+            this.btnRegister.Location = new System.Drawing.Point(1408, 26);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(92, 27);
+            this.btnRegister.Size = new System.Drawing.Size(138, 42);
             this.btnRegister.TabIndex = 85;
             this.btnRegister.Text = "Cancel";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -293,10 +297,10 @@
             // 
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 265F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 398F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel3.Controls.Add(this.checkAll2, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.linkLabel21, 2, 18);
             this.tableLayoutPanel3.Controls.Add(this.checkBox38, 3, 18);
@@ -319,27 +323,27 @@
             this.tableLayoutPanel3.Controls.Add(this.checkBox21, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.label84, 0, 18);
             this.tableLayoutPanel3.Controls.Add(this.label59, 0, 18);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel38, 2, 17);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel37, 2, 16);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel36, 2, 15);
+            this.tableLayoutPanel3.Controls.Add(this.link_locker, 2, 17);
+            this.tableLayoutPanel3.Controls.Add(this.link_IdentificationCard, 2, 16);
+            this.tableLayoutPanel3.Controls.Add(this.link_acceptablePolicy, 2, 15);
             this.tableLayoutPanel3.Controls.Add(this.linkLabel35, 2, 14);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel34, 2, 13);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel33, 2, 12);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel32, 2, 11);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel31, 2, 10);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel30, 2, 9);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel29, 2, 8);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel28, 2, 7);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel27, 2, 6);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel26, 2, 5);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel25, 2, 4);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel24, 2, 3);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel23, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.link_consent, 2, 13);
+            this.tableLayoutPanel3.Controls.Add(this.link_acceptanceCOC, 2, 12);
+            this.tableLayoutPanel3.Controls.Add(this.link_acceptance_COD, 2, 11);
+            this.tableLayoutPanel3.Controls.Add(this.link_NSOmarriage, 2, 10);
+            this.tableLayoutPanel3.Controls.Add(this.link_NSOdependent, 2, 9);
+            this.tableLayoutPanel3.Controls.Add(this.link_cedula, 2, 8);
+            this.tableLayoutPanel3.Controls.Add(this.link_OccupationalPermit, 2, 7);
+            this.tableLayoutPanel3.Controls.Add(this.link_2316, 2, 6);
+            this.tableLayoutPanel3.Controls.Add(this.link_2305, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.link_1905, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.link_bankForm, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.link_HMO, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.label60, 1, 17);
             this.tableLayoutPanel3.Controls.Add(this.label61, 0, 17);
             this.tableLayoutPanel3.Controls.Add(this.label62, 1, 16);
             this.tableLayoutPanel3.Controls.Add(this.label63, 0, 16);
-            this.tableLayoutPanel3.Controls.Add(this.label64, 1, 15);
+            this.tableLayoutPanel3.Controls.Add(this.labs, 1, 15);
             this.tableLayoutPanel3.Controls.Add(this.label65, 0, 15);
             this.tableLayoutPanel3.Controls.Add(this.label66, 1, 14);
             this.tableLayoutPanel3.Controls.Add(this.label67, 0, 14);
@@ -372,31 +376,32 @@
             this.tableLayoutPanel3.Controls.Add(this.label95, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label96, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label97, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.linkLabel22, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.link_payroll, 2, 1);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(426, 226);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(639, 348);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 19;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(372, 423);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(558, 651);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
             // checkAll2
@@ -404,9 +409,10 @@
             this.checkAll2.AutoSize = true;
             this.checkAll2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.checkAll2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkAll2.Location = new System.Drawing.Point(353, 5);
+            this.checkAll2.Location = new System.Drawing.Point(525, 7);
+            this.checkAll2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkAll2.Name = "checkAll2";
-            this.checkAll2.Size = new System.Drawing.Size(18, 14);
+            this.checkAll2.Size = new System.Drawing.Size(31, 21);
             this.checkAll2.TabIndex = 148;
             this.checkAll2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkAll2.UseVisualStyleBackColor = false;
@@ -415,9 +421,10 @@
             // 
             this.linkLabel21.AutoSize = true;
             this.linkLabel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel21.Location = new System.Drawing.Point(301, 398);
+            this.linkLabel21.Location = new System.Drawing.Point(448, 596);
+            this.linkLabel21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel21.Name = "linkLabel21";
-            this.linkLabel21.Size = new System.Drawing.Size(44, 23);
+            this.linkLabel21.Size = new System.Drawing.Size(67, 53);
             this.linkLabel21.TabIndex = 147;
             this.linkLabel21.TabStop = true;
             this.linkLabel21.Text = "File";
@@ -427,9 +434,10 @@
             // 
             this.checkBox38.AutoSize = true;
             this.checkBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox38.Location = new System.Drawing.Point(353, 401);
+            this.checkBox38.Location = new System.Drawing.Point(525, 601);
+            this.checkBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(18, 17);
+            this.checkBox38.Size = new System.Drawing.Size(31, 43);
             this.checkBox38.TabIndex = 146;
             this.checkBox38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox38.UseVisualStyleBackColor = true;
@@ -438,9 +446,10 @@
             // 
             this.checkBox37.AutoSize = true;
             this.checkBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox37.Location = new System.Drawing.Point(353, 379);
+            this.checkBox37.Location = new System.Drawing.Point(525, 568);
+            this.checkBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(18, 14);
+            this.checkBox37.Size = new System.Drawing.Size(31, 21);
             this.checkBox37.TabIndex = 145;
             this.checkBox37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox37.UseVisualStyleBackColor = true;
@@ -449,9 +458,10 @@
             // 
             this.checkBox36.AutoSize = true;
             this.checkBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox36.Location = new System.Drawing.Point(353, 357);
+            this.checkBox36.Location = new System.Drawing.Point(525, 535);
+            this.checkBox36.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(18, 14);
+            this.checkBox36.Size = new System.Drawing.Size(31, 21);
             this.checkBox36.TabIndex = 144;
             this.checkBox36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox36.UseVisualStyleBackColor = true;
@@ -460,9 +470,10 @@
             // 
             this.checkBox35.AutoSize = true;
             this.checkBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox35.Location = new System.Drawing.Point(353, 335);
+            this.checkBox35.Location = new System.Drawing.Point(525, 502);
+            this.checkBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(18, 14);
+            this.checkBox35.Size = new System.Drawing.Size(31, 21);
             this.checkBox35.TabIndex = 143;
             this.checkBox35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox35.UseVisualStyleBackColor = true;
@@ -471,9 +482,10 @@
             // 
             this.checkBox34.AutoSize = true;
             this.checkBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox34.Location = new System.Drawing.Point(353, 313);
+            this.checkBox34.Location = new System.Drawing.Point(525, 469);
+            this.checkBox34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(18, 14);
+            this.checkBox34.Size = new System.Drawing.Size(31, 21);
             this.checkBox34.TabIndex = 142;
             this.checkBox34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox34.UseVisualStyleBackColor = true;
@@ -482,9 +494,10 @@
             // 
             this.checkBox33.AutoSize = true;
             this.checkBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox33.Location = new System.Drawing.Point(353, 291);
+            this.checkBox33.Location = new System.Drawing.Point(525, 436);
+            this.checkBox33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(18, 14);
+            this.checkBox33.Size = new System.Drawing.Size(31, 21);
             this.checkBox33.TabIndex = 141;
             this.checkBox33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox33.UseVisualStyleBackColor = true;
@@ -493,9 +506,10 @@
             // 
             this.checkBox32.AutoSize = true;
             this.checkBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox32.Location = new System.Drawing.Point(353, 269);
+            this.checkBox32.Location = new System.Drawing.Point(525, 403);
+            this.checkBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(18, 14);
+            this.checkBox32.Size = new System.Drawing.Size(31, 21);
             this.checkBox32.TabIndex = 140;
             this.checkBox32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox32.UseVisualStyleBackColor = true;
@@ -504,9 +518,10 @@
             // 
             this.checkBox31.AutoSize = true;
             this.checkBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox31.Location = new System.Drawing.Point(353, 247);
+            this.checkBox31.Location = new System.Drawing.Point(525, 370);
+            this.checkBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(18, 14);
+            this.checkBox31.Size = new System.Drawing.Size(31, 21);
             this.checkBox31.TabIndex = 139;
             this.checkBox31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox31.UseVisualStyleBackColor = true;
@@ -515,9 +530,10 @@
             // 
             this.checkBox30.AutoSize = true;
             this.checkBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox30.Location = new System.Drawing.Point(353, 225);
+            this.checkBox30.Location = new System.Drawing.Point(525, 337);
+            this.checkBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(18, 14);
+            this.checkBox30.Size = new System.Drawing.Size(31, 21);
             this.checkBox30.TabIndex = 138;
             this.checkBox30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox30.UseVisualStyleBackColor = true;
@@ -526,9 +542,10 @@
             // 
             this.checkBox29.AutoSize = true;
             this.checkBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox29.Location = new System.Drawing.Point(353, 203);
+            this.checkBox29.Location = new System.Drawing.Point(525, 304);
+            this.checkBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(18, 14);
+            this.checkBox29.Size = new System.Drawing.Size(31, 21);
             this.checkBox29.TabIndex = 137;
             this.checkBox29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox29.UseVisualStyleBackColor = true;
@@ -537,9 +554,10 @@
             // 
             this.checkBox28.AutoSize = true;
             this.checkBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox28.Location = new System.Drawing.Point(353, 181);
+            this.checkBox28.Location = new System.Drawing.Point(525, 271);
+            this.checkBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(18, 14);
+            this.checkBox28.Size = new System.Drawing.Size(31, 21);
             this.checkBox28.TabIndex = 136;
             this.checkBox28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox28.UseVisualStyleBackColor = true;
@@ -548,9 +566,10 @@
             // 
             this.checkBox27.AutoSize = true;
             this.checkBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox27.Location = new System.Drawing.Point(353, 159);
+            this.checkBox27.Location = new System.Drawing.Point(525, 238);
+            this.checkBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(18, 14);
+            this.checkBox27.Size = new System.Drawing.Size(31, 21);
             this.checkBox27.TabIndex = 135;
             this.checkBox27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox27.UseVisualStyleBackColor = true;
@@ -559,9 +578,10 @@
             // 
             this.checkBox26.AutoSize = true;
             this.checkBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox26.Location = new System.Drawing.Point(353, 137);
+            this.checkBox26.Location = new System.Drawing.Point(525, 205);
+            this.checkBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(18, 14);
+            this.checkBox26.Size = new System.Drawing.Size(31, 21);
             this.checkBox26.TabIndex = 134;
             this.checkBox26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox26.UseVisualStyleBackColor = true;
@@ -570,9 +590,10 @@
             // 
             this.checkBox25.AutoSize = true;
             this.checkBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox25.Location = new System.Drawing.Point(353, 115);
+            this.checkBox25.Location = new System.Drawing.Point(525, 172);
+            this.checkBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(18, 14);
+            this.checkBox25.Size = new System.Drawing.Size(31, 21);
             this.checkBox25.TabIndex = 133;
             this.checkBox25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox25.UseVisualStyleBackColor = true;
@@ -581,9 +602,10 @@
             // 
             this.checkBox24.AutoSize = true;
             this.checkBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox24.Location = new System.Drawing.Point(353, 93);
+            this.checkBox24.Location = new System.Drawing.Point(525, 139);
+            this.checkBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(18, 14);
+            this.checkBox24.Size = new System.Drawing.Size(31, 21);
             this.checkBox24.TabIndex = 132;
             this.checkBox24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox24.UseVisualStyleBackColor = true;
@@ -592,9 +614,10 @@
             // 
             this.checkBox23.AutoSize = true;
             this.checkBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox23.Location = new System.Drawing.Point(353, 71);
+            this.checkBox23.Location = new System.Drawing.Point(525, 106);
+            this.checkBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(18, 14);
+            this.checkBox23.Size = new System.Drawing.Size(31, 21);
             this.checkBox23.TabIndex = 131;
             this.checkBox23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox23.UseVisualStyleBackColor = true;
@@ -603,9 +626,10 @@
             // 
             this.checkBox22.AutoSize = true;
             this.checkBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox22.Location = new System.Drawing.Point(353, 49);
+            this.checkBox22.Location = new System.Drawing.Point(525, 73);
+            this.checkBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(18, 14);
+            this.checkBox22.Size = new System.Drawing.Size(31, 21);
             this.checkBox22.TabIndex = 130;
             this.checkBox22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox22.UseVisualStyleBackColor = true;
@@ -614,9 +638,10 @@
             // 
             this.checkBox21.AutoSize = true;
             this.checkBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox21.Location = new System.Drawing.Point(353, 27);
+            this.checkBox21.Location = new System.Drawing.Point(525, 40);
+            this.checkBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(18, 14);
+            this.checkBox21.Size = new System.Drawing.Size(31, 21);
             this.checkBox21.TabIndex = 129;
             this.checkBox21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox21.UseVisualStyleBackColor = true;
@@ -625,9 +650,10 @@
             // 
             this.label84.AutoSize = true;
             this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label84.Location = new System.Drawing.Point(5, 398);
+            this.label84.Location = new System.Drawing.Point(6, 596);
+            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(21, 23);
+            this.label84.Size = new System.Drawing.Size(32, 53);
             this.label84.TabIndex = 98;
             this.label84.Text = "18";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -636,212 +662,230 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label59.Location = new System.Drawing.Point(34, 398);
+            this.label59.Location = new System.Drawing.Point(48, 596);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(259, 23);
+            this.label59.Size = new System.Drawing.Size(390, 53);
             this.label59.TabIndex = 97;
             this.label59.Text = "Data Privacy Consent";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // linkLabel38
+            // link_locker
             // 
-            this.linkLabel38.AutoSize = true;
-            this.linkLabel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel38.Location = new System.Drawing.Point(301, 376);
-            this.linkLabel38.Name = "linkLabel38";
-            this.linkLabel38.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel38.TabIndex = 94;
-            this.linkLabel38.TabStop = true;
-            this.linkLabel38.Text = "File";
-            this.linkLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_locker.AutoSize = true;
+            this.link_locker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_locker.Location = new System.Drawing.Point(448, 563);
+            this.link_locker.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_locker.Name = "link_locker";
+            this.link_locker.Size = new System.Drawing.Size(67, 31);
+            this.link_locker.TabIndex = 94;
+            this.link_locker.TabStop = true;
+            this.link_locker.Text = "File";
+            this.link_locker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel37
+            // link_IdentificationCard
             // 
-            this.linkLabel37.AutoSize = true;
-            this.linkLabel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel37.Location = new System.Drawing.Point(301, 354);
-            this.linkLabel37.Name = "linkLabel37";
-            this.linkLabel37.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel37.TabIndex = 93;
-            this.linkLabel37.TabStop = true;
-            this.linkLabel37.Text = "File";
-            this.linkLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_IdentificationCard.AutoSize = true;
+            this.link_IdentificationCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_IdentificationCard.Location = new System.Drawing.Point(448, 530);
+            this.link_IdentificationCard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_IdentificationCard.Name = "link_IdentificationCard";
+            this.link_IdentificationCard.Size = new System.Drawing.Size(67, 31);
+            this.link_IdentificationCard.TabIndex = 93;
+            this.link_IdentificationCard.TabStop = true;
+            this.link_IdentificationCard.Text = "File";
+            this.link_IdentificationCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel36
+            // link_acceptablePolicy
             // 
-            this.linkLabel36.AutoSize = true;
-            this.linkLabel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel36.Location = new System.Drawing.Point(301, 332);
-            this.linkLabel36.Name = "linkLabel36";
-            this.linkLabel36.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel36.TabIndex = 92;
-            this.linkLabel36.TabStop = true;
-            this.linkLabel36.Text = "File";
-            this.linkLabel36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_acceptablePolicy.AutoSize = true;
+            this.link_acceptablePolicy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_acceptablePolicy.Location = new System.Drawing.Point(448, 497);
+            this.link_acceptablePolicy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_acceptablePolicy.Name = "link_acceptablePolicy";
+            this.link_acceptablePolicy.Size = new System.Drawing.Size(67, 31);
+            this.link_acceptablePolicy.TabIndex = 92;
+            this.link_acceptablePolicy.TabStop = true;
+            this.link_acceptablePolicy.Text = "File";
+            this.link_acceptablePolicy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkLabel35
             // 
             this.linkLabel35.AutoSize = true;
             this.linkLabel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel35.Location = new System.Drawing.Point(301, 310);
+            this.linkLabel35.Location = new System.Drawing.Point(448, 464);
+            this.linkLabel35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel35.Name = "linkLabel35";
-            this.linkLabel35.Size = new System.Drawing.Size(44, 20);
+            this.linkLabel35.Size = new System.Drawing.Size(67, 31);
             this.linkLabel35.TabIndex = 91;
             this.linkLabel35.TabStop = true;
             this.linkLabel35.Text = "File";
             this.linkLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel34
+            // link_consent
             // 
-            this.linkLabel34.AutoSize = true;
-            this.linkLabel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel34.Location = new System.Drawing.Point(301, 288);
-            this.linkLabel34.Name = "linkLabel34";
-            this.linkLabel34.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel34.TabIndex = 90;
-            this.linkLabel34.TabStop = true;
-            this.linkLabel34.Text = "File";
-            this.linkLabel34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_consent.AutoSize = true;
+            this.link_consent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_consent.Location = new System.Drawing.Point(448, 431);
+            this.link_consent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_consent.Name = "link_consent";
+            this.link_consent.Size = new System.Drawing.Size(67, 31);
+            this.link_consent.TabIndex = 90;
+            this.link_consent.TabStop = true;
+            this.link_consent.Text = "File";
+            this.link_consent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel33
+            // link_acceptanceCOC
             // 
-            this.linkLabel33.AutoSize = true;
-            this.linkLabel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel33.Location = new System.Drawing.Point(301, 266);
-            this.linkLabel33.Name = "linkLabel33";
-            this.linkLabel33.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel33.TabIndex = 89;
-            this.linkLabel33.TabStop = true;
-            this.linkLabel33.Text = "File";
-            this.linkLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_acceptanceCOC.AutoSize = true;
+            this.link_acceptanceCOC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_acceptanceCOC.Location = new System.Drawing.Point(448, 398);
+            this.link_acceptanceCOC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_acceptanceCOC.Name = "link_acceptanceCOC";
+            this.link_acceptanceCOC.Size = new System.Drawing.Size(67, 31);
+            this.link_acceptanceCOC.TabIndex = 89;
+            this.link_acceptanceCOC.TabStop = true;
+            this.link_acceptanceCOC.Text = "File";
+            this.link_acceptanceCOC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel32
+            // link_acceptance_COD
             // 
-            this.linkLabel32.AutoSize = true;
-            this.linkLabel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel32.Location = new System.Drawing.Point(301, 244);
-            this.linkLabel32.Name = "linkLabel32";
-            this.linkLabel32.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel32.TabIndex = 88;
-            this.linkLabel32.TabStop = true;
-            this.linkLabel32.Text = "File";
-            this.linkLabel32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_acceptance_COD.AutoSize = true;
+            this.link_acceptance_COD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_acceptance_COD.Location = new System.Drawing.Point(448, 365);
+            this.link_acceptance_COD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_acceptance_COD.Name = "link_acceptance_COD";
+            this.link_acceptance_COD.Size = new System.Drawing.Size(67, 31);
+            this.link_acceptance_COD.TabIndex = 88;
+            this.link_acceptance_COD.TabStop = true;
+            this.link_acceptance_COD.Text = "File";
+            this.link_acceptance_COD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel31
+            // link_NSOmarriage
             // 
-            this.linkLabel31.AutoSize = true;
-            this.linkLabel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel31.Location = new System.Drawing.Point(301, 222);
-            this.linkLabel31.Name = "linkLabel31";
-            this.linkLabel31.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel31.TabIndex = 87;
-            this.linkLabel31.TabStop = true;
-            this.linkLabel31.Text = "File";
-            this.linkLabel31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_NSOmarriage.AutoSize = true;
+            this.link_NSOmarriage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_NSOmarriage.Location = new System.Drawing.Point(448, 332);
+            this.link_NSOmarriage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_NSOmarriage.Name = "link_NSOmarriage";
+            this.link_NSOmarriage.Size = new System.Drawing.Size(67, 31);
+            this.link_NSOmarriage.TabIndex = 87;
+            this.link_NSOmarriage.TabStop = true;
+            this.link_NSOmarriage.Text = "File";
+            this.link_NSOmarriage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel30
+            // link_NSOdependent
             // 
-            this.linkLabel30.AutoSize = true;
-            this.linkLabel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel30.Location = new System.Drawing.Point(301, 200);
-            this.linkLabel30.Name = "linkLabel30";
-            this.linkLabel30.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel30.TabIndex = 86;
-            this.linkLabel30.TabStop = true;
-            this.linkLabel30.Text = "File";
-            this.linkLabel30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_NSOdependent.AutoSize = true;
+            this.link_NSOdependent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_NSOdependent.Location = new System.Drawing.Point(448, 299);
+            this.link_NSOdependent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_NSOdependent.Name = "link_NSOdependent";
+            this.link_NSOdependent.Size = new System.Drawing.Size(67, 31);
+            this.link_NSOdependent.TabIndex = 86;
+            this.link_NSOdependent.TabStop = true;
+            this.link_NSOdependent.Text = "File";
+            this.link_NSOdependent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel29
+            // link_cedula
             // 
-            this.linkLabel29.AutoSize = true;
-            this.linkLabel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel29.Location = new System.Drawing.Point(301, 178);
-            this.linkLabel29.Name = "linkLabel29";
-            this.linkLabel29.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel29.TabIndex = 85;
-            this.linkLabel29.TabStop = true;
-            this.linkLabel29.Text = "File";
-            this.linkLabel29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_cedula.AutoSize = true;
+            this.link_cedula.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_cedula.Location = new System.Drawing.Point(448, 266);
+            this.link_cedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_cedula.Name = "link_cedula";
+            this.link_cedula.Size = new System.Drawing.Size(67, 31);
+            this.link_cedula.TabIndex = 85;
+            this.link_cedula.TabStop = true;
+            this.link_cedula.Text = "File";
+            this.link_cedula.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel28
+            // link_OccupationalPermit
             // 
-            this.linkLabel28.AutoSize = true;
-            this.linkLabel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel28.Location = new System.Drawing.Point(301, 156);
-            this.linkLabel28.Name = "linkLabel28";
-            this.linkLabel28.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel28.TabIndex = 84;
-            this.linkLabel28.TabStop = true;
-            this.linkLabel28.Text = "File";
-            this.linkLabel28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_OccupationalPermit.AutoSize = true;
+            this.link_OccupationalPermit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_OccupationalPermit.Location = new System.Drawing.Point(448, 233);
+            this.link_OccupationalPermit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_OccupationalPermit.Name = "link_OccupationalPermit";
+            this.link_OccupationalPermit.Size = new System.Drawing.Size(67, 31);
+            this.link_OccupationalPermit.TabIndex = 84;
+            this.link_OccupationalPermit.TabStop = true;
+            this.link_OccupationalPermit.Text = "File";
+            this.link_OccupationalPermit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel27
+            // link_2316
             // 
-            this.linkLabel27.AutoSize = true;
-            this.linkLabel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel27.Location = new System.Drawing.Point(301, 134);
-            this.linkLabel27.Name = "linkLabel27";
-            this.linkLabel27.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel27.TabIndex = 83;
-            this.linkLabel27.TabStop = true;
-            this.linkLabel27.Text = "File";
-            this.linkLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_2316.AutoSize = true;
+            this.link_2316.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_2316.Location = new System.Drawing.Point(448, 200);
+            this.link_2316.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_2316.Name = "link_2316";
+            this.link_2316.Size = new System.Drawing.Size(67, 31);
+            this.link_2316.TabIndex = 83;
+            this.link_2316.TabStop = true;
+            this.link_2316.Text = "File";
+            this.link_2316.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel26
+            // link_2305
             // 
-            this.linkLabel26.AutoSize = true;
-            this.linkLabel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel26.Location = new System.Drawing.Point(301, 112);
-            this.linkLabel26.Name = "linkLabel26";
-            this.linkLabel26.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel26.TabIndex = 82;
-            this.linkLabel26.TabStop = true;
-            this.linkLabel26.Text = "File";
-            this.linkLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_2305.AutoSize = true;
+            this.link_2305.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_2305.Location = new System.Drawing.Point(448, 167);
+            this.link_2305.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_2305.Name = "link_2305";
+            this.link_2305.Size = new System.Drawing.Size(67, 31);
+            this.link_2305.TabIndex = 82;
+            this.link_2305.TabStop = true;
+            this.link_2305.Text = "File";
+            this.link_2305.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel25
+            // link_1905
             // 
-            this.linkLabel25.AutoSize = true;
-            this.linkLabel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel25.Location = new System.Drawing.Point(301, 90);
-            this.linkLabel25.Name = "linkLabel25";
-            this.linkLabel25.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel25.TabIndex = 81;
-            this.linkLabel25.TabStop = true;
-            this.linkLabel25.Text = "File";
-            this.linkLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_1905.AutoSize = true;
+            this.link_1905.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_1905.Location = new System.Drawing.Point(448, 134);
+            this.link_1905.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_1905.Name = "link_1905";
+            this.link_1905.Size = new System.Drawing.Size(67, 31);
+            this.link_1905.TabIndex = 81;
+            this.link_1905.TabStop = true;
+            this.link_1905.Text = "File";
+            this.link_1905.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel24
+            // link_bankForm
             // 
-            this.linkLabel24.AutoSize = true;
-            this.linkLabel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel24.Location = new System.Drawing.Point(301, 68);
-            this.linkLabel24.Name = "linkLabel24";
-            this.linkLabel24.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel24.TabIndex = 80;
-            this.linkLabel24.TabStop = true;
-            this.linkLabel24.Text = "File";
-            this.linkLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_bankForm.AutoSize = true;
+            this.link_bankForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_bankForm.Location = new System.Drawing.Point(448, 101);
+            this.link_bankForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_bankForm.Name = "link_bankForm";
+            this.link_bankForm.Size = new System.Drawing.Size(67, 31);
+            this.link_bankForm.TabIndex = 80;
+            this.link_bankForm.TabStop = true;
+            this.link_bankForm.Text = "File";
+            this.link_bankForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel23
+            // link_HMO
             // 
-            this.linkLabel23.AutoSize = true;
-            this.linkLabel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel23.Location = new System.Drawing.Point(301, 46);
-            this.linkLabel23.Name = "linkLabel23";
-            this.linkLabel23.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel23.TabIndex = 79;
-            this.linkLabel23.TabStop = true;
-            this.linkLabel23.Text = "File";
-            this.linkLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_HMO.AutoSize = true;
+            this.link_HMO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_HMO.Location = new System.Drawing.Point(448, 68);
+            this.link_HMO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_HMO.Name = "link_HMO";
+            this.link_HMO.Size = new System.Drawing.Size(67, 31);
+            this.link_HMO.TabIndex = 79;
+            this.link_HMO.TabStop = true;
+            this.link_HMO.Text = "File";
+            this.link_HMO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label60
             // 
             this.label60.AutoSize = true;
             this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label60.Location = new System.Drawing.Point(34, 376);
+            this.label60.Location = new System.Drawing.Point(48, 563);
+            this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(259, 20);
+            this.label60.Size = new System.Drawing.Size(390, 31);
             this.label60.TabIndex = 77;
             this.label60.Text = "Locker Accountability && Usage Policy";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -850,9 +894,10 @@
             // 
             this.label61.AutoSize = true;
             this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label61.Location = new System.Drawing.Point(5, 376);
+            this.label61.Location = new System.Drawing.Point(6, 563);
+            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(21, 20);
+            this.label61.Size = new System.Drawing.Size(32, 31);
             this.label61.TabIndex = 76;
             this.label61.Text = "17";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -861,9 +906,10 @@
             // 
             this.label62.AutoSize = true;
             this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label62.Location = new System.Drawing.Point(34, 354);
+            this.label62.Location = new System.Drawing.Point(48, 530);
+            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(259, 20);
+            this.label62.Size = new System.Drawing.Size(390, 31);
             this.label62.TabIndex = 75;
             this.label62.Text = "Identification Card && ID Badge";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -872,31 +918,34 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.Location = new System.Drawing.Point(5, 354);
+            this.label63.Location = new System.Drawing.Point(6, 530);
+            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(21, 20);
+            this.label63.Size = new System.Drawing.Size(32, 31);
             this.label63.TabIndex = 74;
             this.label63.Text = "16";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label64
+            // labs
             // 
-            this.label64.AutoSize = true;
-            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.Location = new System.Drawing.Point(34, 332);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(259, 20);
-            this.label64.TabIndex = 73;
-            this.label64.Text = "Acceptable Use Policy";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labs.AutoSize = true;
+            this.labs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labs.Location = new System.Drawing.Point(48, 497);
+            this.labs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labs.Name = "labs";
+            this.labs.Size = new System.Drawing.Size(390, 31);
+            this.labs.TabIndex = 73;
+            this.labs.Text = "Acceptable Use Policy";
+            this.labs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label65
             // 
             this.label65.AutoSize = true;
             this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label65.Location = new System.Drawing.Point(5, 332);
+            this.label65.Location = new System.Drawing.Point(6, 497);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(21, 20);
+            this.label65.Size = new System.Drawing.Size(32, 31);
             this.label65.TabIndex = 72;
             this.label65.Text = "15";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -905,9 +954,10 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label66.Location = new System.Drawing.Point(34, 310);
+            this.label66.Location = new System.Drawing.Point(48, 464);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(259, 20);
+            this.label66.Size = new System.Drawing.Size(390, 31);
             this.label66.TabIndex = 71;
             this.label66.Text = "Consent && Waiver for Call Recording";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -916,9 +966,10 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label67.Location = new System.Drawing.Point(5, 310);
+            this.label67.Location = new System.Drawing.Point(6, 464);
+            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(21, 20);
+            this.label67.Size = new System.Drawing.Size(32, 31);
             this.label67.TabIndex = 70;
             this.label67.Text = "14";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -927,9 +978,10 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label68.Location = new System.Drawing.Point(34, 288);
+            this.label68.Location = new System.Drawing.Point(48, 431);
+            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(259, 20);
+            this.label68.Size = new System.Drawing.Size(390, 31);
             this.label68.TabIndex = 69;
             this.label68.Text = "Confidentiality Agreement";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -938,9 +990,10 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label69.Location = new System.Drawing.Point(5, 288);
+            this.label69.Location = new System.Drawing.Point(6, 431);
+            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(21, 20);
+            this.label69.Size = new System.Drawing.Size(32, 31);
             this.label69.TabIndex = 68;
             this.label69.Text = "13";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -949,9 +1002,10 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label70.Location = new System.Drawing.Point(34, 266);
+            this.label70.Location = new System.Drawing.Point(48, 398);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(259, 20);
+            this.label70.Size = new System.Drawing.Size(390, 31);
             this.label70.TabIndex = 67;
             this.label70.Text = "Acceptance of Code of Conduct";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -960,9 +1014,10 @@
             // 
             this.label71.AutoSize = true;
             this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label71.Location = new System.Drawing.Point(5, 266);
+            this.label71.Location = new System.Drawing.Point(6, 398);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(21, 20);
+            this.label71.Size = new System.Drawing.Size(32, 31);
             this.label71.TabIndex = 66;
             this.label71.Text = "12";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -971,9 +1026,10 @@
             // 
             this.label72.AutoSize = true;
             this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label72.Location = new System.Drawing.Point(34, 244);
+            this.label72.Location = new System.Drawing.Point(48, 365);
+            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(259, 20);
+            this.label72.Size = new System.Drawing.Size(390, 31);
             this.label72.TabIndex = 65;
             this.label72.Text = "Acceptance of Code of Discipline";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -982,9 +1038,10 @@
             // 
             this.label73.AutoSize = true;
             this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label73.Location = new System.Drawing.Point(5, 244);
+            this.label73.Location = new System.Drawing.Point(6, 365);
+            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(21, 20);
+            this.label73.Size = new System.Drawing.Size(32, 31);
             this.label73.TabIndex = 64;
             this.label73.Text = "11";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -993,9 +1050,10 @@
             // 
             this.label74.AutoSize = true;
             this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label74.Location = new System.Drawing.Point(34, 222);
+            this.label74.Location = new System.Drawing.Point(48, 332);
+            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(259, 20);
+            this.label74.Size = new System.Drawing.Size(390, 31);
             this.label74.TabIndex = 63;
             this.label74.Text = "NSO Marriage Certificate (4 copies)";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1004,9 +1062,10 @@
             // 
             this.label75.AutoSize = true;
             this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label75.Location = new System.Drawing.Point(5, 222);
+            this.label75.Location = new System.Drawing.Point(6, 332);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(21, 20);
+            this.label75.Size = new System.Drawing.Size(32, 31);
             this.label75.TabIndex = 62;
             this.label75.Text = "10";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1015,9 +1074,10 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label76.Location = new System.Drawing.Point(34, 200);
+            this.label76.Location = new System.Drawing.Point(48, 299);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(259, 20);
+            this.label76.Size = new System.Drawing.Size(390, 31);
             this.label76.TabIndex = 61;
             this.label76.Text = "NSO Dependent/s\' Birth Certificate (4 copies)";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1026,9 +1086,10 @@
             // 
             this.label77.AutoSize = true;
             this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label77.Location = new System.Drawing.Point(5, 200);
+            this.label77.Location = new System.Drawing.Point(6, 299);
+            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(21, 20);
+            this.label77.Size = new System.Drawing.Size(32, 31);
             this.label77.TabIndex = 60;
             this.label77.Text = "9";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1037,9 +1098,10 @@
             // 
             this.label78.AutoSize = true;
             this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label78.Location = new System.Drawing.Point(34, 178);
+            this.label78.Location = new System.Drawing.Point(48, 266);
+            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(259, 20);
+            this.label78.Size = new System.Drawing.Size(390, 31);
             this.label78.TabIndex = 59;
             this.label78.Text = "Cedula";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1048,9 +1110,10 @@
             // 
             this.label79.AutoSize = true;
             this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label79.Location = new System.Drawing.Point(5, 178);
+            this.label79.Location = new System.Drawing.Point(6, 266);
+            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(21, 20);
+            this.label79.Size = new System.Drawing.Size(32, 31);
             this.label79.TabIndex = 58;
             this.label79.Text = "8";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1059,9 +1122,10 @@
             // 
             this.label80.AutoSize = true;
             this.label80.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label80.Location = new System.Drawing.Point(34, 156);
+            this.label80.Location = new System.Drawing.Point(48, 233);
+            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(259, 20);
+            this.label80.Size = new System.Drawing.Size(390, 31);
             this.label80.TabIndex = 57;
             this.label80.Text = "Occupational Permit";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1070,9 +1134,10 @@
             // 
             this.label81.AutoSize = true;
             this.label81.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label81.Location = new System.Drawing.Point(34, 134);
+            this.label81.Location = new System.Drawing.Point(48, 200);
+            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(259, 20);
+            this.label81.Size = new System.Drawing.Size(390, 31);
             this.label81.TabIndex = 56;
             this.label81.Text = "BIR 2316 or BIR 2316 with waiver";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1081,9 +1146,10 @@
             // 
             this.label82.AutoSize = true;
             this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label82.Location = new System.Drawing.Point(34, 112);
+            this.label82.Location = new System.Drawing.Point(48, 167);
+            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(259, 20);
+            this.label82.Size = new System.Drawing.Size(390, 31);
             this.label82.TabIndex = 55;
             this.label82.Text = "BIR 2305";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1092,9 +1158,10 @@
             // 
             this.label83.AutoSize = true;
             this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label83.Location = new System.Drawing.Point(34, 90);
+            this.label83.Location = new System.Drawing.Point(48, 134);
+            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(259, 20);
+            this.label83.Size = new System.Drawing.Size(390, 31);
             this.label83.TabIndex = 54;
             this.label83.Text = "BIR 1905";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1103,9 +1170,10 @@
             // 
             this.label85.AutoSize = true;
             this.label85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label85.Location = new System.Drawing.Point(34, 68);
+            this.label85.Location = new System.Drawing.Point(48, 101);
+            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(259, 20);
+            this.label85.Size = new System.Drawing.Size(390, 31);
             this.label85.TabIndex = 53;
             this.label85.Text = "Bank Forms";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1114,9 +1182,10 @@
             // 
             this.label86.AutoSize = true;
             this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label86.Location = new System.Drawing.Point(34, 46);
+            this.label86.Location = new System.Drawing.Point(48, 68);
+            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(259, 20);
+            this.label86.Size = new System.Drawing.Size(390, 31);
             this.label86.TabIndex = 52;
             this.label86.Text = "HMO/AXA Form";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1125,9 +1194,10 @@
             // 
             this.label87.AutoSize = true;
             this.label87.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label87.Location = new System.Drawing.Point(34, 24);
+            this.label87.Location = new System.Drawing.Point(48, 35);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(259, 20);
+            this.label87.Size = new System.Drawing.Size(390, 31);
             this.label87.TabIndex = 51;
             this.label87.Text = "Payroll Data Form";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1138,10 +1208,10 @@
             this.label88.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label88.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label88.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(298, 2);
+            this.label88.Location = new System.Drawing.Point(444, 2);
             this.label88.Margin = new System.Windows.Forms.Padding(0);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(50, 20);
+            this.label88.Size = new System.Drawing.Size(75, 31);
             this.label88.TabIndex = 2;
             this.label88.Text = "@@";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1155,7 +1225,7 @@
             this.label89.Location = new System.Drawing.Point(2, 2);
             this.label89.Margin = new System.Windows.Forms.Padding(0);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(27, 20);
+            this.label89.Size = new System.Drawing.Size(40, 31);
             this.label89.TabIndex = 1;
             this.label89.Text = "#";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1166,10 +1236,10 @@
             this.label90.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label90.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label90.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(31, 2);
+            this.label90.Location = new System.Drawing.Point(44, 2);
             this.label90.Margin = new System.Windows.Forms.Padding(0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(265, 20);
+            this.label90.Size = new System.Drawing.Size(398, 31);
             this.label90.TabIndex = 0;
             this.label90.Text = "Secondary Requirements";
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1178,9 +1248,10 @@
             // 
             this.label91.AutoSize = true;
             this.label91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label91.Location = new System.Drawing.Point(5, 24);
+            this.label91.Location = new System.Drawing.Point(6, 35);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(21, 20);
+            this.label91.Size = new System.Drawing.Size(32, 31);
             this.label91.TabIndex = 44;
             this.label91.Text = "1";
             this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1189,9 +1260,10 @@
             // 
             this.label92.AutoSize = true;
             this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label92.Location = new System.Drawing.Point(5, 46);
+            this.label92.Location = new System.Drawing.Point(6, 68);
+            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(21, 20);
+            this.label92.Size = new System.Drawing.Size(32, 31);
             this.label92.TabIndex = 45;
             this.label92.Text = "2";
             this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1200,9 +1272,10 @@
             // 
             this.label93.AutoSize = true;
             this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label93.Location = new System.Drawing.Point(5, 68);
+            this.label93.Location = new System.Drawing.Point(6, 101);
+            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(21, 20);
+            this.label93.Size = new System.Drawing.Size(32, 31);
             this.label93.TabIndex = 46;
             this.label93.Text = "3";
             this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1211,9 +1284,10 @@
             // 
             this.label94.AutoSize = true;
             this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label94.Location = new System.Drawing.Point(5, 90);
+            this.label94.Location = new System.Drawing.Point(6, 134);
+            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(21, 20);
+            this.label94.Size = new System.Drawing.Size(32, 31);
             this.label94.TabIndex = 47;
             this.label94.Text = "4";
             this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1222,9 +1296,10 @@
             // 
             this.label95.AutoSize = true;
             this.label95.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label95.Location = new System.Drawing.Point(5, 112);
+            this.label95.Location = new System.Drawing.Point(6, 167);
+            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(21, 20);
+            this.label95.Size = new System.Drawing.Size(32, 31);
             this.label95.TabIndex = 48;
             this.label95.Text = "5";
             this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1233,9 +1308,10 @@
             // 
             this.label96.AutoSize = true;
             this.label96.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label96.Location = new System.Drawing.Point(5, 134);
+            this.label96.Location = new System.Drawing.Point(6, 200);
+            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(21, 20);
+            this.label96.Size = new System.Drawing.Size(32, 31);
             this.label96.TabIndex = 49;
             this.label96.Text = "6";
             this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1244,33 +1320,35 @@
             // 
             this.label97.AutoSize = true;
             this.label97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label97.Location = new System.Drawing.Point(5, 156);
+            this.label97.Location = new System.Drawing.Point(6, 233);
+            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(21, 20);
+            this.label97.Size = new System.Drawing.Size(32, 31);
             this.label97.TabIndex = 50;
             this.label97.Text = "7";
             this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel22
+            // link_payroll
             // 
-            this.linkLabel22.AutoSize = true;
-            this.linkLabel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel22.Location = new System.Drawing.Point(301, 24);
-            this.linkLabel22.Name = "linkLabel22";
-            this.linkLabel22.Size = new System.Drawing.Size(44, 20);
-            this.linkLabel22.TabIndex = 78;
-            this.linkLabel22.TabStop = true;
-            this.linkLabel22.Text = "File";
-            this.linkLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_payroll.AutoSize = true;
+            this.link_payroll.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_payroll.Location = new System.Drawing.Point(448, 35);
+            this.link_payroll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_payroll.Name = "link_payroll";
+            this.link_payroll.Size = new System.Drawing.Size(67, 31);
+            this.link_payroll.TabIndex = 78;
+            this.link_payroll.TabStop = true;
+            this.link_payroll.Text = "File";
+            this.link_payroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 264F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 396F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.Controls.Add(this.checkAll1, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.checkBox20, 3, 20);
             this.tableLayoutPanel2.Controls.Add(this.checkBox19, 3, 19);
@@ -1313,22 +1391,22 @@
             this.tableLayoutPanel2.Controls.Add(this.label51, 1, 20);
             this.tableLayoutPanel2.Controls.Add(this.linkLabel19, 2, 19);
             this.tableLayoutPanel2.Controls.Add(this.linkLabel18, 2, 18);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel17, 2, 17);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel16, 2, 16);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel15, 2, 15);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel14, 2, 14);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel13, 2, 13);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel12, 2, 12);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel11, 2, 11);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel10, 2, 10);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel9, 2, 9);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel8, 2, 8);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel7, 2, 7);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel6, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel5, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel4, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel3, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel2, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.link_informationForm, 2, 17);
+            this.tableLayoutPanel2.Controls.Add(this.link_backgroundResult, 2, 16);
+            this.tableLayoutPanel2.Controls.Add(this.link_backgroundCheck, 2, 15);
+            this.tableLayoutPanel2.Controls.Add(this.link_resume, 2, 14);
+            this.tableLayoutPanel2.Controls.Add(this.link_InterviewDocs, 2, 13);
+            this.tableLayoutPanel2.Controls.Add(this.link_NDA, 2, 12);
+            this.tableLayoutPanel2.Controls.Add(this.link_NewHire, 2, 11);
+            this.tableLayoutPanel2.Controls.Add(this.link_SNO, 2, 10);
+            this.tableLayoutPanel2.Controls.Add(this.link_TOR, 2, 9);
+            this.tableLayoutPanel2.Controls.Add(this.link_COE, 2, 8);
+            this.tableLayoutPanel2.Controls.Add(this.link_NBI, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lin_IDPicture, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.link_validID, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.link_ProofOfPagibig, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.link_proofOfPhilHealth, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.link_proofOfSSS, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.label48, 0, 19);
             this.tableLayoutPanel2.Controls.Add(this.label46, 0, 18);
             this.tableLayoutPanel2.Controls.Add(this.label44, 0, 17);
@@ -1353,35 +1431,36 @@
             this.tableLayoutPanel2.Controls.Add(this.label56, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label57, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.label58, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.linkLabel1, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.link_proofOftin, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.checkBox1, 3, 1);
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 226);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(42, 348);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 21;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(373, 464);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(560, 714);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // checkAll1
@@ -1389,9 +1468,10 @@
             this.checkAll1.AutoSize = true;
             this.checkAll1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.checkAll1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkAll1.Location = new System.Drawing.Point(353, 5);
+            this.checkAll1.Location = new System.Drawing.Point(524, 7);
+            this.checkAll1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkAll1.Name = "checkAll1";
-            this.checkAll1.Size = new System.Drawing.Size(19, 14);
+            this.checkAll1.Size = new System.Drawing.Size(32, 21);
             this.checkAll1.TabIndex = 148;
             this.checkAll1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkAll1.UseVisualStyleBackColor = false;
@@ -1400,9 +1480,10 @@
             // 
             this.checkBox20.AutoSize = true;
             this.checkBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox20.Location = new System.Drawing.Point(353, 445);
+            this.checkBox20.Location = new System.Drawing.Point(524, 667);
+            this.checkBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(19, 14);
+            this.checkBox20.Size = new System.Drawing.Size(32, 40);
             this.checkBox20.TabIndex = 147;
             this.checkBox20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox20.UseVisualStyleBackColor = true;
@@ -1411,9 +1492,10 @@
             // 
             this.checkBox19.AutoSize = true;
             this.checkBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox19.Location = new System.Drawing.Point(353, 423);
+            this.checkBox19.Location = new System.Drawing.Point(524, 634);
+            this.checkBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(19, 14);
+            this.checkBox19.Size = new System.Drawing.Size(32, 21);
             this.checkBox19.TabIndex = 146;
             this.checkBox19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox19.UseVisualStyleBackColor = true;
@@ -1422,9 +1504,10 @@
             // 
             this.checkBox18.AutoSize = true;
             this.checkBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox18.Location = new System.Drawing.Point(353, 401);
+            this.checkBox18.Location = new System.Drawing.Point(524, 601);
+            this.checkBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(19, 14);
+            this.checkBox18.Size = new System.Drawing.Size(32, 21);
             this.checkBox18.TabIndex = 145;
             this.checkBox18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox18.UseVisualStyleBackColor = true;
@@ -1433,9 +1516,10 @@
             // 
             this.checkBox17.AutoSize = true;
             this.checkBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox17.Location = new System.Drawing.Point(353, 379);
+            this.checkBox17.Location = new System.Drawing.Point(524, 568);
+            this.checkBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(19, 14);
+            this.checkBox17.Size = new System.Drawing.Size(32, 21);
             this.checkBox17.TabIndex = 144;
             this.checkBox17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox17.UseVisualStyleBackColor = true;
@@ -1444,9 +1528,10 @@
             // 
             this.checkBox16.AutoSize = true;
             this.checkBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox16.Location = new System.Drawing.Point(353, 357);
+            this.checkBox16.Location = new System.Drawing.Point(524, 535);
+            this.checkBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(19, 14);
+            this.checkBox16.Size = new System.Drawing.Size(32, 21);
             this.checkBox16.TabIndex = 143;
             this.checkBox16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox16.UseVisualStyleBackColor = true;
@@ -1455,9 +1540,10 @@
             // 
             this.checkBox15.AutoSize = true;
             this.checkBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox15.Location = new System.Drawing.Point(353, 335);
+            this.checkBox15.Location = new System.Drawing.Point(524, 502);
+            this.checkBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(19, 14);
+            this.checkBox15.Size = new System.Drawing.Size(32, 21);
             this.checkBox15.TabIndex = 142;
             this.checkBox15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox15.UseVisualStyleBackColor = true;
@@ -1466,9 +1552,10 @@
             // 
             this.checkBox14.AutoSize = true;
             this.checkBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox14.Location = new System.Drawing.Point(353, 313);
+            this.checkBox14.Location = new System.Drawing.Point(524, 469);
+            this.checkBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(19, 14);
+            this.checkBox14.Size = new System.Drawing.Size(32, 21);
             this.checkBox14.TabIndex = 141;
             this.checkBox14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox14.UseVisualStyleBackColor = true;
@@ -1477,9 +1564,10 @@
             // 
             this.checkBox13.AutoSize = true;
             this.checkBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox13.Location = new System.Drawing.Point(353, 291);
+            this.checkBox13.Location = new System.Drawing.Point(524, 436);
+            this.checkBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(19, 14);
+            this.checkBox13.Size = new System.Drawing.Size(32, 21);
             this.checkBox13.TabIndex = 140;
             this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox13.UseVisualStyleBackColor = true;
@@ -1488,9 +1576,10 @@
             // 
             this.checkBox12.AutoSize = true;
             this.checkBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox12.Location = new System.Drawing.Point(353, 269);
+            this.checkBox12.Location = new System.Drawing.Point(524, 403);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(19, 14);
+            this.checkBox12.Size = new System.Drawing.Size(32, 21);
             this.checkBox12.TabIndex = 139;
             this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox12.UseVisualStyleBackColor = true;
@@ -1499,9 +1588,10 @@
             // 
             this.checkBox11.AutoSize = true;
             this.checkBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox11.Location = new System.Drawing.Point(353, 247);
+            this.checkBox11.Location = new System.Drawing.Point(524, 370);
+            this.checkBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(19, 14);
+            this.checkBox11.Size = new System.Drawing.Size(32, 21);
             this.checkBox11.TabIndex = 138;
             this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox11.UseVisualStyleBackColor = true;
@@ -1510,9 +1600,10 @@
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox10.Location = new System.Drawing.Point(353, 225);
+            this.checkBox10.Location = new System.Drawing.Point(524, 337);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(19, 14);
+            this.checkBox10.Size = new System.Drawing.Size(32, 21);
             this.checkBox10.TabIndex = 137;
             this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -1521,9 +1612,10 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox9.Location = new System.Drawing.Point(353, 203);
+            this.checkBox9.Location = new System.Drawing.Point(524, 304);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(19, 14);
+            this.checkBox9.Size = new System.Drawing.Size(32, 21);
             this.checkBox9.TabIndex = 136;
             this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -1532,9 +1624,10 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox8.Location = new System.Drawing.Point(353, 181);
+            this.checkBox8.Location = new System.Drawing.Point(524, 271);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(19, 14);
+            this.checkBox8.Size = new System.Drawing.Size(32, 21);
             this.checkBox8.TabIndex = 135;
             this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -1543,9 +1636,10 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox7.Location = new System.Drawing.Point(353, 159);
+            this.checkBox7.Location = new System.Drawing.Point(524, 238);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(19, 14);
+            this.checkBox7.Size = new System.Drawing.Size(32, 21);
             this.checkBox7.TabIndex = 134;
             this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -1554,9 +1648,10 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox6.Location = new System.Drawing.Point(353, 137);
+            this.checkBox6.Location = new System.Drawing.Point(524, 205);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(19, 14);
+            this.checkBox6.Size = new System.Drawing.Size(32, 21);
             this.checkBox6.TabIndex = 133;
             this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -1565,9 +1660,10 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox5.Location = new System.Drawing.Point(353, 115);
+            this.checkBox5.Location = new System.Drawing.Point(524, 172);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(19, 14);
+            this.checkBox5.Size = new System.Drawing.Size(32, 21);
             this.checkBox5.TabIndex = 132;
             this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -1576,9 +1672,10 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox4.Location = new System.Drawing.Point(353, 93);
+            this.checkBox4.Location = new System.Drawing.Point(524, 139);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(19, 14);
+            this.checkBox4.Size = new System.Drawing.Size(32, 21);
             this.checkBox4.TabIndex = 131;
             this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -1587,9 +1684,10 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox3.Location = new System.Drawing.Point(353, 71);
+            this.checkBox3.Location = new System.Drawing.Point(524, 106);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(19, 14);
+            this.checkBox3.Size = new System.Drawing.Size(32, 21);
             this.checkBox3.TabIndex = 130;
             this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -1598,9 +1696,10 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox2.Location = new System.Drawing.Point(353, 49);
+            this.checkBox2.Location = new System.Drawing.Point(524, 73);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(19, 14);
+            this.checkBox2.Size = new System.Drawing.Size(32, 21);
             this.checkBox2.TabIndex = 129;
             this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -1609,9 +1708,10 @@
             // 
             this.linkLabel20.AutoSize = true;
             this.linkLabel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel20.Location = new System.Drawing.Point(300, 442);
+            this.linkLabel20.Location = new System.Drawing.Point(446, 662);
+            this.linkLabel20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel20.Name = "linkLabel20";
-            this.linkLabel20.Size = new System.Drawing.Size(45, 20);
+            this.linkLabel20.Size = new System.Drawing.Size(68, 50);
             this.linkLabel20.TabIndex = 126;
             this.linkLabel20.TabStop = true;
             this.linkLabel20.Text = "File";
@@ -1621,9 +1721,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(5, 442);
+            this.label10.Location = new System.Drawing.Point(6, 662);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(21, 20);
+            this.label10.Size = new System.Drawing.Size(32, 50);
             this.label10.TabIndex = 125;
             this.label10.Text = "20";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1632,9 +1733,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(34, 68);
+            this.label21.Location = new System.Drawing.Point(48, 101);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(258, 20);
+            this.label21.Size = new System.Drawing.Size(388, 31);
             this.label21.TabIndex = 124;
             this.label21.Text = "Proof of PhilHealth/PMRF";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1643,9 +1745,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(34, 90);
+            this.label22.Location = new System.Drawing.Point(48, 134);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(258, 20);
+            this.label22.Size = new System.Drawing.Size(388, 31);
             this.label22.TabIndex = 123;
             this.label22.Text = "Proof of Pag-Ibig";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1654,9 +1757,10 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(34, 112);
+            this.label23.Location = new System.Drawing.Point(48, 167);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(258, 20);
+            this.label23.Size = new System.Drawing.Size(388, 31);
             this.label23.TabIndex = 122;
             this.label23.Text = "2 Valid ID\'s";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1665,9 +1769,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Location = new System.Drawing.Point(34, 134);
+            this.label24.Location = new System.Drawing.Point(48, 200);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(258, 20);
+            this.label24.Size = new System.Drawing.Size(388, 31);
             this.label24.TabIndex = 121;
             this.label24.Text = "ID Pictures (6 pieces 1 x 1 with nameplate)";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1676,9 +1781,10 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(34, 156);
+            this.label25.Location = new System.Drawing.Point(48, 233);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(258, 20);
+            this.label25.Size = new System.Drawing.Size(388, 31);
             this.label25.TabIndex = 120;
             this.label25.Text = "NBI Clearance (Receipt is not acceptable)";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1687,9 +1793,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Location = new System.Drawing.Point(34, 178);
+            this.label27.Location = new System.Drawing.Point(48, 266);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(258, 20);
+            this.label27.Size = new System.Drawing.Size(388, 31);
             this.label27.TabIndex = 119;
             this.label27.Text = "COE (Proof of Employment)";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1698,9 +1805,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(34, 200);
+            this.label29.Location = new System.Drawing.Point(48, 299);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(258, 20);
+            this.label29.Size = new System.Drawing.Size(388, 31);
             this.label29.TabIndex = 118;
             this.label29.Text = "TOR/Diploma (School Records)";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1709,9 +1817,10 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Location = new System.Drawing.Point(34, 222);
+            this.label31.Location = new System.Drawing.Point(48, 332);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(258, 20);
+            this.label31.Size = new System.Drawing.Size(388, 31);
             this.label31.TabIndex = 117;
             this.label31.Text = "NSO Birth Certificate (4 copies)";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1720,9 +1829,10 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Location = new System.Drawing.Point(34, 244);
+            this.label33.Location = new System.Drawing.Point(48, 365);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(258, 20);
+            this.label33.Size = new System.Drawing.Size(388, 31);
             this.label33.TabIndex = 116;
             this.label33.Text = "New Hire Acknowledgement";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1731,9 +1841,10 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Location = new System.Drawing.Point(34, 266);
+            this.label35.Location = new System.Drawing.Point(48, 398);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(258, 20);
+            this.label35.Size = new System.Drawing.Size(388, 31);
             this.label35.TabIndex = 115;
             this.label35.Text = "NDA";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1742,9 +1853,10 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Location = new System.Drawing.Point(34, 288);
+            this.label37.Location = new System.Drawing.Point(48, 431);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(258, 20);
+            this.label37.Size = new System.Drawing.Size(388, 31);
             this.label37.TabIndex = 114;
             this.label37.Text = "Interview/Assesment Docs";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1753,9 +1865,10 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Location = new System.Drawing.Point(34, 310);
+            this.label39.Location = new System.Drawing.Point(48, 464);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(258, 20);
+            this.label39.Size = new System.Drawing.Size(388, 31);
             this.label39.TabIndex = 113;
             this.label39.Text = "Resume/CV";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1764,9 +1877,10 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.Location = new System.Drawing.Point(34, 332);
+            this.label41.Location = new System.Drawing.Point(48, 497);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(258, 20);
+            this.label41.Size = new System.Drawing.Size(388, 31);
             this.label41.TabIndex = 112;
             this.label41.Text = "Background Investigation Check Form";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1775,9 +1889,10 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.Location = new System.Drawing.Point(34, 354);
+            this.label43.Location = new System.Drawing.Point(48, 530);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(258, 20);
+            this.label43.Size = new System.Drawing.Size(388, 31);
             this.label43.TabIndex = 111;
             this.label43.Text = "Background Investigation Result";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1786,9 +1901,10 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label45.Location = new System.Drawing.Point(34, 376);
+            this.label45.Location = new System.Drawing.Point(48, 563);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(258, 20);
+            this.label45.Size = new System.Drawing.Size(388, 31);
             this.label45.TabIndex = 110;
             this.label45.Text = "Employee Information Form";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1797,9 +1913,10 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.Location = new System.Drawing.Point(34, 398);
+            this.label47.Location = new System.Drawing.Point(48, 596);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(258, 20);
+            this.label47.Size = new System.Drawing.Size(388, 31);
             this.label47.TabIndex = 108;
             this.label47.Text = "Job Description";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1808,9 +1925,10 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Location = new System.Drawing.Point(34, 420);
+            this.label49.Location = new System.Drawing.Point(48, 629);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(258, 20);
+            this.label49.Size = new System.Drawing.Size(388, 31);
             this.label49.TabIndex = 107;
             this.label49.Text = "Employee Contract";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1819,9 +1937,10 @@
             // 
             this.label51.AutoSize = true;
             this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Location = new System.Drawing.Point(34, 442);
+            this.label51.Location = new System.Drawing.Point(48, 662);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(258, 20);
+            this.label51.Size = new System.Drawing.Size(388, 50);
             this.label51.TabIndex = 106;
             this.label51.Text = "PEME Slip";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1830,9 +1949,10 @@
             // 
             this.linkLabel19.AutoSize = true;
             this.linkLabel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel19.Location = new System.Drawing.Point(300, 420);
+            this.linkLabel19.Location = new System.Drawing.Point(446, 629);
+            this.linkLabel19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel19.Name = "linkLabel19";
-            this.linkLabel19.Size = new System.Drawing.Size(45, 20);
+            this.linkLabel19.Size = new System.Drawing.Size(68, 31);
             this.linkLabel19.TabIndex = 100;
             this.linkLabel19.TabStop = true;
             this.linkLabel19.Text = "File";
@@ -1842,213 +1962,231 @@
             // 
             this.linkLabel18.AutoSize = true;
             this.linkLabel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel18.Location = new System.Drawing.Point(300, 398);
+            this.linkLabel18.Location = new System.Drawing.Point(446, 596);
+            this.linkLabel18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel18.Name = "linkLabel18";
-            this.linkLabel18.Size = new System.Drawing.Size(45, 20);
+            this.linkLabel18.Size = new System.Drawing.Size(68, 31);
             this.linkLabel18.TabIndex = 99;
             this.linkLabel18.TabStop = true;
             this.linkLabel18.Text = "File";
             this.linkLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel17
+            // link_informationForm
             // 
-            this.linkLabel17.AutoSize = true;
-            this.linkLabel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel17.Location = new System.Drawing.Point(300, 376);
-            this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel17.TabIndex = 98;
-            this.linkLabel17.TabStop = true;
-            this.linkLabel17.Text = "File";
-            this.linkLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_informationForm.AutoSize = true;
+            this.link_informationForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_informationForm.Location = new System.Drawing.Point(446, 563);
+            this.link_informationForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_informationForm.Name = "link_informationForm";
+            this.link_informationForm.Size = new System.Drawing.Size(68, 31);
+            this.link_informationForm.TabIndex = 98;
+            this.link_informationForm.TabStop = true;
+            this.link_informationForm.Text = "File";
+            this.link_informationForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel16
+            // link_backgroundResult
             // 
-            this.linkLabel16.AutoSize = true;
-            this.linkLabel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel16.Location = new System.Drawing.Point(300, 354);
-            this.linkLabel16.Name = "linkLabel16";
-            this.linkLabel16.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel16.TabIndex = 97;
-            this.linkLabel16.TabStop = true;
-            this.linkLabel16.Text = "File";
-            this.linkLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_backgroundResult.AutoSize = true;
+            this.link_backgroundResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_backgroundResult.Location = new System.Drawing.Point(446, 530);
+            this.link_backgroundResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_backgroundResult.Name = "link_backgroundResult";
+            this.link_backgroundResult.Size = new System.Drawing.Size(68, 31);
+            this.link_backgroundResult.TabIndex = 97;
+            this.link_backgroundResult.TabStop = true;
+            this.link_backgroundResult.Text = "File";
+            this.link_backgroundResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel15
+            // link_backgroundCheck
             // 
-            this.linkLabel15.AutoSize = true;
-            this.linkLabel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel15.Location = new System.Drawing.Point(300, 332);
-            this.linkLabel15.Name = "linkLabel15";
-            this.linkLabel15.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel15.TabIndex = 96;
-            this.linkLabel15.TabStop = true;
-            this.linkLabel15.Text = "File";
-            this.linkLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_backgroundCheck.AutoSize = true;
+            this.link_backgroundCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_backgroundCheck.Location = new System.Drawing.Point(446, 497);
+            this.link_backgroundCheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_backgroundCheck.Name = "link_backgroundCheck";
+            this.link_backgroundCheck.Size = new System.Drawing.Size(68, 31);
+            this.link_backgroundCheck.TabIndex = 96;
+            this.link_backgroundCheck.TabStop = true;
+            this.link_backgroundCheck.Text = "File";
+            this.link_backgroundCheck.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel14
+            // link_resume
             // 
-            this.linkLabel14.AutoSize = true;
-            this.linkLabel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel14.Location = new System.Drawing.Point(300, 310);
-            this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel14.TabIndex = 95;
-            this.linkLabel14.TabStop = true;
-            this.linkLabel14.Text = "File";
-            this.linkLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_resume.AutoSize = true;
+            this.link_resume.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_resume.Location = new System.Drawing.Point(446, 464);
+            this.link_resume.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_resume.Name = "link_resume";
+            this.link_resume.Size = new System.Drawing.Size(68, 31);
+            this.link_resume.TabIndex = 95;
+            this.link_resume.TabStop = true;
+            this.link_resume.Text = "File";
+            this.link_resume.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel13
+            // link_InterviewDocs
             // 
-            this.linkLabel13.AutoSize = true;
-            this.linkLabel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel13.Location = new System.Drawing.Point(300, 288);
-            this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel13.TabIndex = 94;
-            this.linkLabel13.TabStop = true;
-            this.linkLabel13.Text = "File";
-            this.linkLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_InterviewDocs.AutoSize = true;
+            this.link_InterviewDocs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_InterviewDocs.Location = new System.Drawing.Point(446, 431);
+            this.link_InterviewDocs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_InterviewDocs.Name = "link_InterviewDocs";
+            this.link_InterviewDocs.Size = new System.Drawing.Size(68, 31);
+            this.link_InterviewDocs.TabIndex = 94;
+            this.link_InterviewDocs.TabStop = true;
+            this.link_InterviewDocs.Text = "File";
+            this.link_InterviewDocs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel12
+            // link_NDA
             // 
-            this.linkLabel12.AutoSize = true;
-            this.linkLabel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel12.Location = new System.Drawing.Point(300, 266);
-            this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel12.TabIndex = 93;
-            this.linkLabel12.TabStop = true;
-            this.linkLabel12.Text = "File";
-            this.linkLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_NDA.AutoSize = true;
+            this.link_NDA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_NDA.Location = new System.Drawing.Point(446, 398);
+            this.link_NDA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_NDA.Name = "link_NDA";
+            this.link_NDA.Size = new System.Drawing.Size(68, 31);
+            this.link_NDA.TabIndex = 93;
+            this.link_NDA.TabStop = true;
+            this.link_NDA.Text = "File";
+            this.link_NDA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel11
+            // link_NewHire
             // 
-            this.linkLabel11.AutoSize = true;
-            this.linkLabel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel11.Location = new System.Drawing.Point(300, 244);
-            this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel11.TabIndex = 92;
-            this.linkLabel11.TabStop = true;
-            this.linkLabel11.Text = "File";
-            this.linkLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_NewHire.AutoSize = true;
+            this.link_NewHire.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_NewHire.Location = new System.Drawing.Point(446, 365);
+            this.link_NewHire.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_NewHire.Name = "link_NewHire";
+            this.link_NewHire.Size = new System.Drawing.Size(68, 31);
+            this.link_NewHire.TabIndex = 92;
+            this.link_NewHire.TabStop = true;
+            this.link_NewHire.Text = "File";
+            this.link_NewHire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel10
+            // link_SNO
             // 
-            this.linkLabel10.AutoSize = true;
-            this.linkLabel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel10.Location = new System.Drawing.Point(300, 222);
-            this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel10.TabIndex = 91;
-            this.linkLabel10.TabStop = true;
-            this.linkLabel10.Text = "File";
-            this.linkLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_SNO.AutoSize = true;
+            this.link_SNO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_SNO.Location = new System.Drawing.Point(446, 332);
+            this.link_SNO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_SNO.Name = "link_SNO";
+            this.link_SNO.Size = new System.Drawing.Size(68, 31);
+            this.link_SNO.TabIndex = 91;
+            this.link_SNO.TabStop = true;
+            this.link_SNO.Text = "File";
+            this.link_SNO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel9
+            // link_TOR
             // 
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel9.Location = new System.Drawing.Point(300, 200);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel9.TabIndex = 90;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "File";
-            this.linkLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_TOR.AutoSize = true;
+            this.link_TOR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_TOR.Location = new System.Drawing.Point(446, 299);
+            this.link_TOR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_TOR.Name = "link_TOR";
+            this.link_TOR.Size = new System.Drawing.Size(68, 31);
+            this.link_TOR.TabIndex = 90;
+            this.link_TOR.TabStop = true;
+            this.link_TOR.Text = "File";
+            this.link_TOR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel8
+            // link_COE
             // 
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel8.Location = new System.Drawing.Point(300, 178);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel8.TabIndex = 89;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "File";
-            this.linkLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_COE.AutoSize = true;
+            this.link_COE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_COE.Location = new System.Drawing.Point(446, 266);
+            this.link_COE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_COE.Name = "link_COE";
+            this.link_COE.Size = new System.Drawing.Size(68, 31);
+            this.link_COE.TabIndex = 89;
+            this.link_COE.TabStop = true;
+            this.link_COE.Text = "File";
+            this.link_COE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel7
+            // link_NBI
             // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel7.Location = new System.Drawing.Point(300, 156);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel7.TabIndex = 88;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "File";
-            this.linkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_NBI.AutoSize = true;
+            this.link_NBI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_NBI.Location = new System.Drawing.Point(446, 233);
+            this.link_NBI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_NBI.Name = "link_NBI";
+            this.link_NBI.Size = new System.Drawing.Size(68, 31);
+            this.link_NBI.TabIndex = 88;
+            this.link_NBI.TabStop = true;
+            this.link_NBI.Text = "File";
+            this.link_NBI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel6
+            // lin_IDPicture
             // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel6.Location = new System.Drawing.Point(300, 134);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel6.TabIndex = 87;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "File";
-            this.linkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lin_IDPicture.AutoSize = true;
+            this.lin_IDPicture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lin_IDPicture.Location = new System.Drawing.Point(446, 200);
+            this.lin_IDPicture.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lin_IDPicture.Name = "lin_IDPicture";
+            this.lin_IDPicture.Size = new System.Drawing.Size(68, 31);
+            this.lin_IDPicture.TabIndex = 87;
+            this.lin_IDPicture.TabStop = true;
+            this.lin_IDPicture.Text = "File";
+            this.lin_IDPicture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel5
+            // link_validID
             // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel5.Location = new System.Drawing.Point(300, 112);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel5.TabIndex = 86;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "File";
-            this.linkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_validID.AutoSize = true;
+            this.link_validID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_validID.Location = new System.Drawing.Point(446, 167);
+            this.link_validID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_validID.Name = "link_validID";
+            this.link_validID.Size = new System.Drawing.Size(68, 31);
+            this.link_validID.TabIndex = 86;
+            this.link_validID.TabStop = true;
+            this.link_validID.Text = "File";
+            this.link_validID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel4
+            // link_ProofOfPagibig
             // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel4.Location = new System.Drawing.Point(300, 90);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel4.TabIndex = 85;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "File";
-            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_ProofOfPagibig.AutoSize = true;
+            this.link_ProofOfPagibig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_ProofOfPagibig.Location = new System.Drawing.Point(446, 134);
+            this.link_ProofOfPagibig.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_ProofOfPagibig.Name = "link_ProofOfPagibig";
+            this.link_ProofOfPagibig.Size = new System.Drawing.Size(68, 31);
+            this.link_ProofOfPagibig.TabIndex = 85;
+            this.link_ProofOfPagibig.TabStop = true;
+            this.link_ProofOfPagibig.Text = "File";
+            this.link_ProofOfPagibig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel3
+            // link_proofOfPhilHealth
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel3.Location = new System.Drawing.Point(300, 68);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel3.TabIndex = 84;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "File";
-            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_proofOfPhilHealth.AutoSize = true;
+            this.link_proofOfPhilHealth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_proofOfPhilHealth.Location = new System.Drawing.Point(446, 101);
+            this.link_proofOfPhilHealth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_proofOfPhilHealth.Name = "link_proofOfPhilHealth";
+            this.link_proofOfPhilHealth.Size = new System.Drawing.Size(68, 31);
+            this.link_proofOfPhilHealth.TabIndex = 84;
+            this.link_proofOfPhilHealth.TabStop = true;
+            this.link_proofOfPhilHealth.Text = "File";
+            this.link_proofOfPhilHealth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel2
+            // link_proofOfSSS
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel2.Location = new System.Drawing.Point(300, 46);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel2.TabIndex = 83;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "File";
-            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_proofOfSSS.AutoSize = true;
+            this.link_proofOfSSS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_proofOfSSS.Location = new System.Drawing.Point(446, 68);
+            this.link_proofOfSSS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_proofOfSSS.Name = "link_proofOfSSS";
+            this.link_proofOfSSS.Size = new System.Drawing.Size(68, 31);
+            this.link_proofOfSSS.TabIndex = 83;
+            this.link_proofOfSSS.TabStop = true;
+            this.link_proofOfSSS.Text = "File";
+            this.link_proofOfSSS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label48
             // 
             this.label48.AutoSize = true;
             this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Location = new System.Drawing.Point(5, 420);
+            this.label48.Location = new System.Drawing.Point(6, 629);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(21, 20);
+            this.label48.Size = new System.Drawing.Size(32, 31);
             this.label48.TabIndex = 80;
             this.label48.Text = "19";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2057,9 +2195,10 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label46.Location = new System.Drawing.Point(5, 398);
+            this.label46.Location = new System.Drawing.Point(6, 596);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(21, 20);
+            this.label46.Size = new System.Drawing.Size(32, 31);
             this.label46.TabIndex = 78;
             this.label46.Text = "18";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2068,9 +2207,10 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Location = new System.Drawing.Point(5, 376);
+            this.label44.Location = new System.Drawing.Point(6, 563);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(21, 20);
+            this.label44.Size = new System.Drawing.Size(32, 31);
             this.label44.TabIndex = 76;
             this.label44.Text = "17";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2079,9 +2219,10 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.Location = new System.Drawing.Point(5, 354);
+            this.label42.Location = new System.Drawing.Point(6, 530);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(21, 20);
+            this.label42.Size = new System.Drawing.Size(32, 31);
             this.label42.TabIndex = 74;
             this.label42.Text = "16";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2090,9 +2231,10 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Location = new System.Drawing.Point(5, 332);
+            this.label40.Location = new System.Drawing.Point(6, 497);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(21, 20);
+            this.label40.Size = new System.Drawing.Size(32, 31);
             this.label40.TabIndex = 72;
             this.label40.Text = "15";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2101,9 +2243,10 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Location = new System.Drawing.Point(5, 310);
+            this.label38.Location = new System.Drawing.Point(6, 464);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(21, 20);
+            this.label38.Size = new System.Drawing.Size(32, 31);
             this.label38.TabIndex = 70;
             this.label38.Text = "14";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2112,9 +2255,10 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(5, 288);
+            this.label36.Location = new System.Drawing.Point(6, 431);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(21, 20);
+            this.label36.Size = new System.Drawing.Size(32, 31);
             this.label36.TabIndex = 68;
             this.label36.Text = "13";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2123,9 +2267,10 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(5, 266);
+            this.label34.Location = new System.Drawing.Point(6, 398);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(21, 20);
+            this.label34.Size = new System.Drawing.Size(32, 31);
             this.label34.TabIndex = 66;
             this.label34.Text = "12";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2134,9 +2279,10 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Location = new System.Drawing.Point(5, 244);
+            this.label32.Location = new System.Drawing.Point(6, 365);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(21, 20);
+            this.label32.Size = new System.Drawing.Size(32, 31);
             this.label32.TabIndex = 64;
             this.label32.Text = "11";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2145,9 +2291,10 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Location = new System.Drawing.Point(5, 222);
+            this.label30.Location = new System.Drawing.Point(6, 332);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(21, 20);
+            this.label30.Size = new System.Drawing.Size(32, 31);
             this.label30.TabIndex = 62;
             this.label30.Text = "10";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2156,9 +2303,10 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(5, 200);
+            this.label28.Location = new System.Drawing.Point(6, 299);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(21, 20);
+            this.label28.Size = new System.Drawing.Size(32, 31);
             this.label28.TabIndex = 60;
             this.label28.Text = "9";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2167,9 +2315,10 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(5, 178);
+            this.label26.Location = new System.Drawing.Point(6, 266);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(21, 20);
+            this.label26.Size = new System.Drawing.Size(32, 31);
             this.label26.TabIndex = 58;
             this.label26.Text = "8";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2178,9 +2327,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(34, 46);
+            this.label20.Location = new System.Drawing.Point(48, 68);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(258, 20);
+            this.label20.Size = new System.Drawing.Size(388, 31);
             this.label20.TabIndex = 52;
             this.label20.Text = "Proof of SSS";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2189,9 +2339,10 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(34, 24);
+            this.label18.Location = new System.Drawing.Point(48, 35);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(258, 20);
+            this.label18.Size = new System.Drawing.Size(388, 31);
             this.label18.TabIndex = 51;
             this.label18.Text = "Proof of TIN/BIR 1902";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2202,10 +2353,10 @@
             this.label14.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(297, 2);
+            this.label14.Location = new System.Drawing.Point(442, 2);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 20);
+            this.label14.Size = new System.Drawing.Size(76, 31);
             this.label14.TabIndex = 2;
             this.label14.Text = "@@";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2219,7 +2370,7 @@
             this.label19.Location = new System.Drawing.Point(2, 2);
             this.label19.Margin = new System.Windows.Forms.Padding(0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(27, 20);
+            this.label19.Size = new System.Drawing.Size(40, 31);
             this.label19.TabIndex = 1;
             this.label19.Text = "#";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2230,10 +2381,10 @@
             this.label50.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label50.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(31, 2);
+            this.label50.Location = new System.Drawing.Point(44, 2);
             this.label50.Margin = new System.Windows.Forms.Padding(0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(264, 20);
+            this.label50.Size = new System.Drawing.Size(396, 31);
             this.label50.TabIndex = 0;
             this.label50.Text = "Primary Requirements";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2242,9 +2393,10 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Location = new System.Drawing.Point(5, 24);
+            this.label52.Location = new System.Drawing.Point(6, 35);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(21, 20);
+            this.label52.Size = new System.Drawing.Size(32, 31);
             this.label52.TabIndex = 44;
             this.label52.Text = "1";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2253,9 +2405,10 @@
             // 
             this.label53.AutoSize = true;
             this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.Location = new System.Drawing.Point(5, 46);
+            this.label53.Location = new System.Drawing.Point(6, 68);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(21, 20);
+            this.label53.Size = new System.Drawing.Size(32, 31);
             this.label53.TabIndex = 45;
             this.label53.Text = "2";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2264,9 +2417,10 @@
             // 
             this.label54.AutoSize = true;
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Location = new System.Drawing.Point(5, 68);
+            this.label54.Location = new System.Drawing.Point(6, 101);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(21, 20);
+            this.label54.Size = new System.Drawing.Size(32, 31);
             this.label54.TabIndex = 46;
             this.label54.Text = "3";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2275,9 +2429,10 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label55.Location = new System.Drawing.Point(5, 90);
+            this.label55.Location = new System.Drawing.Point(6, 134);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(21, 20);
+            this.label55.Size = new System.Drawing.Size(32, 31);
             this.label55.TabIndex = 47;
             this.label55.Text = "4";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2286,9 +2441,10 @@
             // 
             this.label56.AutoSize = true;
             this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label56.Location = new System.Drawing.Point(5, 112);
+            this.label56.Location = new System.Drawing.Point(6, 167);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(21, 20);
+            this.label56.Size = new System.Drawing.Size(32, 31);
             this.label56.TabIndex = 48;
             this.label56.Text = "5";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2297,9 +2453,10 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label57.Location = new System.Drawing.Point(5, 134);
+            this.label57.Location = new System.Drawing.Point(6, 200);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(21, 20);
+            this.label57.Size = new System.Drawing.Size(32, 31);
             this.label57.TabIndex = 49;
             this.label57.Text = "6";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2308,32 +2465,35 @@
             // 
             this.label58.AutoSize = true;
             this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label58.Location = new System.Drawing.Point(5, 156);
+            this.label58.Location = new System.Drawing.Point(6, 233);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(21, 20);
+            this.label58.Size = new System.Drawing.Size(32, 31);
             this.label58.TabIndex = 50;
             this.label58.Text = "7";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkLabel1
+            // link_proofOftin
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabel1.Location = new System.Drawing.Point(300, 24);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(45, 20);
-            this.linkLabel1.TabIndex = 82;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "File";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_proofOftin.AutoSize = true;
+            this.link_proofOftin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_proofOftin.Location = new System.Drawing.Point(446, 35);
+            this.link_proofOftin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.link_proofOftin.Name = "link_proofOftin";
+            this.link_proofOftin.Size = new System.Drawing.Size(68, 31);
+            this.link_proofOftin.TabIndex = 82;
+            this.link_proofOftin.TabStop = true;
+            this.link_proofOftin.Text = "File";
+            this.link_proofOftin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox1.Location = new System.Drawing.Point(353, 27);
+            this.checkBox1.Location = new System.Drawing.Point(524, 40);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(19, 14);
+            this.checkBox1.Size = new System.Drawing.Size(32, 21);
             this.checkBox1.TabIndex = 128;
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -2342,9 +2502,11 @@
             // 
             this.gbxAppInfo.Controls.Add(this.applicantInfo);
             this.gbxAppInfo.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxAppInfo.Location = new System.Drawing.Point(28, 18);
+            this.gbxAppInfo.Location = new System.Drawing.Point(42, 28);
+            this.gbxAppInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbxAppInfo.Name = "gbxAppInfo";
-            this.gbxAppInfo.Size = new System.Drawing.Size(770, 202);
+            this.gbxAppInfo.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbxAppInfo.Size = new System.Drawing.Size(1155, 311);
             this.gbxAppInfo.TabIndex = 4;
             this.gbxAppInfo.TabStop = false;
             this.gbxAppInfo.Text = "Info";
@@ -2356,37 +2518,37 @@
             this.applicantInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.39221F));
             this.applicantInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.60779F));
             this.applicantInfo.Controls.Add(this.label9, 0, 6);
-            this.applicantInfo.Controls.Add(this.label8, 0, 6);
+            this.applicantInfo.Controls.Add(this.lbl_pagibig, 0, 6);
             this.applicantInfo.Controls.Add(this.label2, 0, 0);
             this.applicantInfo.Controls.Add(this.label3, 0, 1);
             this.applicantInfo.Controls.Add(this.label4, 0, 2);
             this.applicantInfo.Controls.Add(this.label5, 0, 3);
             this.applicantInfo.Controls.Add(this.label6, 0, 4);
             this.applicantInfo.Controls.Add(this.label7, 0, 5);
-            this.applicantInfo.Controls.Add(this.label11, 1, 0);
-            this.applicantInfo.Controls.Add(this.label12, 1, 1);
-            this.applicantInfo.Controls.Add(this.label13, 1, 2);
-            this.applicantInfo.Controls.Add(this.label15, 1, 3);
-            this.applicantInfo.Controls.Add(this.label16, 1, 4);
-            this.applicantInfo.Controls.Add(this.label17, 1, 5);
-            this.applicantInfo.Location = new System.Drawing.Point(25, 24);
-            this.applicantInfo.Margin = new System.Windows.Forms.Padding(1);
+            this.applicantInfo.Controls.Add(this.lbl_employeeID, 1, 0);
+            this.applicantInfo.Controls.Add(this.lbl_employeeName, 1, 1);
+            this.applicantInfo.Controls.Add(this.lbl_dateHire, 1, 2);
+            this.applicantInfo.Controls.Add(this.lbl_Program, 1, 3);
+            this.applicantInfo.Controls.Add(this.lbl_SSS, 1, 4);
+            this.applicantInfo.Controls.Add(this.lbl_TIN, 1, 5);
+            this.applicantInfo.Location = new System.Drawing.Point(38, 37);
+            this.applicantInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.applicantInfo.Name = "applicantInfo";
             this.applicantInfo.RowCount = 7;
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.applicantInfo.Size = new System.Drawing.Size(721, 156);
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.applicantInfo.Size = new System.Drawing.Size(1082, 240);
             this.applicantInfo.TabIndex = 0;
             // 
             // label9
@@ -2394,35 +2556,37 @@
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(5, 134);
+            this.label9.Location = new System.Drawing.Point(6, 200);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 20);
+            this.label9.Size = new System.Drawing.Size(232, 38);
             this.label9.TabIndex = 67;
             this.label9.Text = "Pag-Ibig:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lbl_pagibig
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(164, 134);
-            this.label8.Margin = new System.Windows.Forms.Padding(0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(555, 20);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "<----->";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_pagibig.AutoSize = true;
+            this.lbl_pagibig.BackColor = System.Drawing.Color.White;
+            this.lbl_pagibig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_pagibig.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pagibig.Location = new System.Drawing.Point(244, 200);
+            this.lbl_pagibig.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_pagibig.Name = "lbl_pagibig";
+            this.lbl_pagibig.Size = new System.Drawing.Size(836, 38);
+            this.lbl_pagibig.TabIndex = 66;
+            this.lbl_pagibig.Text = "<----->";
+            this.lbl_pagibig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 2);
+            this.label2.Location = new System.Drawing.Point(6, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 20);
+            this.label2.Size = new System.Drawing.Size(232, 31);
             this.label2.TabIndex = 51;
             this.label2.Text = "Employee ID:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2432,9 +2596,10 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 24);
+            this.label3.Location = new System.Drawing.Point(6, 35);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 20);
+            this.label3.Size = new System.Drawing.Size(232, 31);
             this.label3.TabIndex = 52;
             this.label3.Text = "Employee Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2444,9 +2609,10 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 46);
+            this.label4.Location = new System.Drawing.Point(6, 68);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 20);
+            this.label4.Size = new System.Drawing.Size(232, 31);
             this.label4.TabIndex = 53;
             this.label4.Text = "Date of Hire:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2456,9 +2622,10 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 68);
+            this.label5.Location = new System.Drawing.Point(6, 101);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 20);
+            this.label5.Size = new System.Drawing.Size(232, 31);
             this.label5.TabIndex = 54;
             this.label5.Text = "Program:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2468,9 +2635,10 @@
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(5, 90);
+            this.label6.Location = new System.Drawing.Point(6, 134);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 20);
+            this.label6.Size = new System.Drawing.Size(232, 31);
             this.label6.TabIndex = 55;
             this.label6.Text = "SSS:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2480,106 +2648,108 @@
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 112);
+            this.label7.Location = new System.Drawing.Point(6, 167);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 20);
+            this.label7.Size = new System.Drawing.Size(232, 31);
             this.label7.TabIndex = 56;
             this.label7.Text = "TIN:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label11
+            // lbl_employeeID
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(164, 2);
-            this.label11.Margin = new System.Windows.Forms.Padding(0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(555, 20);
-            this.label11.TabIndex = 60;
-            this.label11.Text = "<----->";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_employeeID.AutoSize = true;
+            this.lbl_employeeID.BackColor = System.Drawing.Color.White;
+            this.lbl_employeeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_employeeID.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employeeID.Location = new System.Drawing.Point(244, 2);
+            this.lbl_employeeID.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_employeeID.Name = "lbl_employeeID";
+            this.lbl_employeeID.Size = new System.Drawing.Size(836, 31);
+            this.lbl_employeeID.TabIndex = 60;
+            this.lbl_employeeID.Text = "<----->";
+            this.lbl_employeeID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // lbl_employeeName
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(164, 24);
-            this.label12.Margin = new System.Windows.Forms.Padding(0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(555, 20);
-            this.label12.TabIndex = 61;
-            this.label12.Text = "<----->";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_employeeName.AutoSize = true;
+            this.lbl_employeeName.BackColor = System.Drawing.Color.White;
+            this.lbl_employeeName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_employeeName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employeeName.Location = new System.Drawing.Point(244, 35);
+            this.lbl_employeeName.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_employeeName.Name = "lbl_employeeName";
+            this.lbl_employeeName.Size = new System.Drawing.Size(836, 31);
+            this.lbl_employeeName.TabIndex = 61;
+            this.lbl_employeeName.Text = "<----->";
+            this.lbl_employeeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label13
+            // lbl_dateHire
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(164, 46);
-            this.label13.Margin = new System.Windows.Forms.Padding(0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(555, 20);
-            this.label13.TabIndex = 62;
-            this.label13.Text = "<----->";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_dateHire.AutoSize = true;
+            this.lbl_dateHire.BackColor = System.Drawing.Color.White;
+            this.lbl_dateHire.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_dateHire.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dateHire.Location = new System.Drawing.Point(244, 68);
+            this.lbl_dateHire.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_dateHire.Name = "lbl_dateHire";
+            this.lbl_dateHire.Size = new System.Drawing.Size(836, 31);
+            this.lbl_dateHire.TabIndex = 62;
+            this.lbl_dateHire.Text = "<----->";
+            this.lbl_dateHire.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label15
+            // lbl_Program
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(164, 68);
-            this.label15.Margin = new System.Windows.Forms.Padding(0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(555, 20);
-            this.label15.TabIndex = 63;
-            this.label15.Text = "<----->";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Program.AutoSize = true;
+            this.lbl_Program.BackColor = System.Drawing.Color.White;
+            this.lbl_Program.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Program.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Program.Location = new System.Drawing.Point(244, 101);
+            this.lbl_Program.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Program.Name = "lbl_Program";
+            this.lbl_Program.Size = new System.Drawing.Size(836, 31);
+            this.lbl_Program.TabIndex = 63;
+            this.lbl_Program.Text = "<----->";
+            this.lbl_Program.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lbl_SSS
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(164, 90);
-            this.label16.Margin = new System.Windows.Forms.Padding(0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(555, 20);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "<----->";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_SSS.AutoSize = true;
+            this.lbl_SSS.BackColor = System.Drawing.Color.White;
+            this.lbl_SSS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_SSS.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SSS.Location = new System.Drawing.Point(244, 134);
+            this.lbl_SSS.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_SSS.Name = "lbl_SSS";
+            this.lbl_SSS.Size = new System.Drawing.Size(836, 31);
+            this.lbl_SSS.TabIndex = 64;
+            this.lbl_SSS.Text = "<----->";
+            this.lbl_SSS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_SSS.Click += new System.EventHandler(this.label16_Click);
             // 
-            // label17
+            // lbl_TIN
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(164, 112);
-            this.label17.Margin = new System.Windows.Forms.Padding(0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(555, 20);
-            this.label17.TabIndex = 65;
-            this.label17.Text = "<----->";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_TIN.AutoSize = true;
+            this.lbl_TIN.BackColor = System.Drawing.Color.White;
+            this.lbl_TIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TIN.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TIN.Location = new System.Drawing.Point(244, 167);
+            this.lbl_TIN.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_TIN.Name = "lbl_TIN";
+            this.lbl_TIN.Size = new System.Drawing.Size(836, 31);
+            this.lbl_TIN.TabIndex = 65;
+            this.lbl_TIN.Text = "<----->";
+            this.lbl_TIN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1);
+            this.panel4.Location = new System.Drawing.Point(5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1067, 23);
+            this.panel4.Size = new System.Drawing.Size(1602, 34);
             this.panel4.TabIndex = 2;
             // 
             // label1
@@ -2589,32 +2759,35 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1067, 23);
+            this.label1.Size = new System.Drawing.Size(1602, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Employee PER Checklist";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // contextMenuStrip
             // 
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checklistToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(123, 26);
+            this.contextMenuStrip.Size = new System.Drawing.Size(154, 34);
             // 
             // checklistToolStripMenuItem
             // 
             this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
-            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.checklistToolStripMenuItem.Size = new System.Drawing.Size(153, 30);
             this.checklistToolStripMenuItem.Text = "Checklist";
             // 
             // PERChecklist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PERChecklist";
-            this.Size = new System.Drawing.Size(1075, 400);
+            this.Size = new System.Drawing.Size(1612, 615);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -2647,14 +2820,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbl_employeeID;
+        private System.Windows.Forms.Label lbl_employeeName;
+        private System.Windows.Forms.Label lbl_dateHire;
+        private System.Windows.Forms.Label lbl_Program;
+        private System.Windows.Forms.Label lbl_SSS;
+        private System.Windows.Forms.Label lbl_TIN;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbl_pagibig;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.CheckBox checkAll1;
         private System.Windows.Forms.CheckBox checkBox20;
@@ -2698,22 +2871,22 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.LinkLabel linkLabel19;
         private System.Windows.Forms.LinkLabel linkLabel18;
-        private System.Windows.Forms.LinkLabel linkLabel17;
-        private System.Windows.Forms.LinkLabel linkLabel16;
-        private System.Windows.Forms.LinkLabel linkLabel15;
-        private System.Windows.Forms.LinkLabel linkLabel14;
-        private System.Windows.Forms.LinkLabel linkLabel13;
-        private System.Windows.Forms.LinkLabel linkLabel12;
-        private System.Windows.Forms.LinkLabel linkLabel11;
-        private System.Windows.Forms.LinkLabel linkLabel10;
-        private System.Windows.Forms.LinkLabel linkLabel9;
-        private System.Windows.Forms.LinkLabel linkLabel8;
-        private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel link_informationForm;
+        private System.Windows.Forms.LinkLabel link_backgroundResult;
+        private System.Windows.Forms.LinkLabel link_backgroundCheck;
+        private System.Windows.Forms.LinkLabel link_resume;
+        private System.Windows.Forms.LinkLabel link_InterviewDocs;
+        private System.Windows.Forms.LinkLabel link_NDA;
+        private System.Windows.Forms.LinkLabel link_NewHire;
+        private System.Windows.Forms.LinkLabel link_SNO;
+        private System.Windows.Forms.LinkLabel link_TOR;
+        private System.Windows.Forms.LinkLabel link_COE;
+        private System.Windows.Forms.LinkLabel link_NBI;
+        private System.Windows.Forms.LinkLabel lin_IDPicture;
+        private System.Windows.Forms.LinkLabel link_validID;
+        private System.Windows.Forms.LinkLabel link_ProofOfPagibig;
+        private System.Windows.Forms.LinkLabel link_proofOfPhilHealth;
+        private System.Windows.Forms.LinkLabel link_proofOfSSS;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label44;
@@ -2738,7 +2911,7 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel link_proofOftin;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -2764,27 +2937,27 @@
         private System.Windows.Forms.CheckBox checkBox21;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.LinkLabel linkLabel38;
-        private System.Windows.Forms.LinkLabel linkLabel37;
-        private System.Windows.Forms.LinkLabel linkLabel36;
+        private System.Windows.Forms.LinkLabel link_locker;
+        private System.Windows.Forms.LinkLabel link_IdentificationCard;
+        private System.Windows.Forms.LinkLabel link_acceptablePolicy;
         private System.Windows.Forms.LinkLabel linkLabel35;
-        private System.Windows.Forms.LinkLabel linkLabel34;
-        private System.Windows.Forms.LinkLabel linkLabel33;
-        private System.Windows.Forms.LinkLabel linkLabel32;
-        private System.Windows.Forms.LinkLabel linkLabel31;
-        private System.Windows.Forms.LinkLabel linkLabel30;
-        private System.Windows.Forms.LinkLabel linkLabel29;
-        private System.Windows.Forms.LinkLabel linkLabel28;
-        private System.Windows.Forms.LinkLabel linkLabel27;
-        private System.Windows.Forms.LinkLabel linkLabel26;
-        private System.Windows.Forms.LinkLabel linkLabel25;
-        private System.Windows.Forms.LinkLabel linkLabel24;
-        private System.Windows.Forms.LinkLabel linkLabel23;
+        private System.Windows.Forms.LinkLabel link_consent;
+        private System.Windows.Forms.LinkLabel link_acceptanceCOC;
+        private System.Windows.Forms.LinkLabel link_acceptance_COD;
+        private System.Windows.Forms.LinkLabel link_NSOmarriage;
+        private System.Windows.Forms.LinkLabel link_NSOdependent;
+        private System.Windows.Forms.LinkLabel link_cedula;
+        private System.Windows.Forms.LinkLabel link_OccupationalPermit;
+        private System.Windows.Forms.LinkLabel link_2316;
+        private System.Windows.Forms.LinkLabel link_2305;
+        private System.Windows.Forms.LinkLabel link_1905;
+        private System.Windows.Forms.LinkLabel link_bankForm;
+        private System.Windows.Forms.LinkLabel link_HMO;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label labs;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
@@ -2817,7 +2990,7 @@
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.LinkLabel linkLabel22;
+        private System.Windows.Forms.LinkLabel link_payroll;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnRegister;
     }
