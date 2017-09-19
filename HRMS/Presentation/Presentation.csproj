@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClearanceLogin.cs">
+    <Compile Include="FormClearanceLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClearanceLogin.Designer.cs">
-      <DependentUpon>ClearanceLogin.cs</DependentUpon>
+    <Compile Include="FormClearanceLogin.Designer.cs">
+      <DependentUpon>FormClearanceLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.cs">
       <SubType>Form</SubType>
@@ -149,130 +149,124 @@
     <Compile Include="DialogBox\FormRegisterEmployee.Designer.cs">
       <DependentUpon>FormRegisterEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Maintenance\FormUserManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Maintenance\FormUserManager.Designer.cs">
+      <DependentUpon>FormUserManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maintenance\ManageUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Maintenance\ManageUsers.Designer.cs">
-      <DependentUpon>ManageUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\EmployeeRegistration.cs">
+    <Compile Include="Modules\ControlEmployeeRegistration.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\EmployeeRegistration.Designer.cs">
-      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    <Compile Include="Modules\ControlEmployeeRegistration.Designer.cs">
+      <DependentUpon>ControlEmployeeRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\EmployeeResignation.cs">
+    <Compile Include="Modules\ControlEmployeeResignation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\EmployeeResignation.Designer.cs">
-      <DependentUpon>EmployeeResignation.cs</DependentUpon>
+    <Compile Include="Modules\ControlEmployeeResignation.Designer.cs">
+      <DependentUpon>ControlEmployeeResignation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\InterviewEvaluation.cs">
+    <Compile Include="Modules\ControlInterviewEvaluation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\InterviewEvaluation.Designer.cs">
-      <DependentUpon>InterviewEvaluation.cs</DependentUpon>
+    <Compile Include="Modules\ControlInterviewEvaluation.Designer.cs">
+      <DependentUpon>ControlInterviewEvaluation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\PERChecklist.cs">
+    <Compile Include="Modules\ControlPERChecklist.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\PERChecklist.Designer.cs">
-      <DependentUpon>PERChecklist.cs</DependentUpon>
+    <Compile Include="Modules\ControlPERChecklist.Designer.cs">
+      <DependentUpon>ControlPERChecklist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\PerformanceAppraisal.cs">
+    <Compile Include="Modules\ControlPerformanceAppraisal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\PerformanceAppraisal.Designer.cs">
-      <DependentUpon>PerformanceAppraisal.cs</DependentUpon>
+    <Compile Include="Modules\ControlPerformanceAppraisal.Designer.cs">
+      <DependentUpon>ControlPerformanceAppraisal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\RecruitmentDashboard.cs">
+    <Compile Include="Modules\ControlRecruitmentDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\RecruitmentDashboard.Designer.cs">
-      <DependentUpon>RecruitmentDashboard.cs</DependentUpon>
+    <Compile Include="Modules\ControlRecruitmentDashboard.Designer.cs">
+      <DependentUpon>ControlRecruitmentDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\RegisterExistingEmployee.cs">
+    <Compile Include="Modules\ControlExistingEmployeeRegistration.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\RegisterExistingEmployee.Designer.cs">
-      <DependentUpon>RegisterExistingEmployee.cs</DependentUpon>
+    <Compile Include="Modules\ControlExistingEmployeeRegistration.Designer.cs">
+      <DependentUpon>ControlExistingEmployeeRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\RelivingDashboard.cs">
+    <Compile Include="Modules\ControlRelivingDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\RelivingDashboard.Designer.cs">
-      <DependentUpon>RelivingDashboard.cs</DependentUpon>
+    <Compile Include="Modules\ControlRelivingDashboard.Designer.cs">
+      <DependentUpon>ControlRelivingDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\TrainingDashboard.cs">
+    <Compile Include="Modules\ControlTrainingDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\TrainingDashboard.Designer.cs">
-      <DependentUpon>TrainingDashboard.cs</DependentUpon>
+    <Compile Include="Modules\ControlTrainingDashboard.Designer.cs">
+      <DependentUpon>ControlTrainingDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\TrainingFeedback.cs">
+    <Compile Include="Modules\ControlTrainingFeedback.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\TrainingFeedback.Designer.cs">
-      <DependentUpon>TrainingFeedback.cs</DependentUpon>
+    <Compile Include="Modules\ControlTrainingFeedback.Designer.cs">
+      <DependentUpon>ControlTrainingFeedback.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\TrainingSchedule.cs">
+    <Compile Include="Modules\ControlTrainingSchedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\TrainingSchedule.Designer.cs">
-      <DependentUpon>TrainingSchedule.cs</DependentUpon>
+    <Compile Include="Modules\ControlTrainingSchedule.Designer.cs">
+      <DependentUpon>ControlTrainingSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="View\Employee.cs">
+    <Compile Include="View\ControlEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <Compile Include="View\ControlEmployee.Designer.cs">
+      <DependentUpon>ControlEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Recruitment.cs">
+    <Compile Include="View\ControlRecruitment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Recruitment.Designer.cs">
-      <DependentUpon>Recruitment.cs</DependentUpon>
+    <Compile Include="View\ControlRecruitment.Designer.cs">
+      <DependentUpon>ControlRecruitment.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Reliving.cs">
+    <Compile Include="View\ControlReliving.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Reliving.Designer.cs">
-      <DependentUpon>Reliving.cs</DependentUpon>
+    <Compile Include="View\ControlReliving.Designer.cs">
+      <DependentUpon>ControlReliving.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Training.cs">
+    <Compile Include="View\ControlTraining.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Training.Designer.cs">
-      <DependentUpon>Training.cs</DependentUpon>
+    <Compile Include="View\ControlTraining.Designer.cs">
+      <DependentUpon>ControlTraining.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ClearanceLogin.resx">
-      <DependentUpon>ClearanceLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FormClearanceLogin.resx">
+      <DependentUpon>FormClearanceLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.resx">
       <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
@@ -322,62 +316,59 @@
     <EmbeddedResource Include="DialogBox\FormRegisterEmployee.resx">
       <DependentUpon>FormRegisterEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Maintenance\FormUserManager.resx">
+      <DependentUpon>FormUserManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Maintenance\ManageUsers.resx">
-      <DependentUpon>ManageUsers.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlEmployeeRegistration.resx">
+      <DependentUpon>ControlEmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\EmployeeRegistration.resx">
-      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlEmployeeResignation.resx">
+      <DependentUpon>ControlEmployeeResignation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\EmployeeResignation.resx">
-      <DependentUpon>EmployeeResignation.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlInterviewEvaluation.resx">
+      <DependentUpon>ControlInterviewEvaluation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\InterviewEvaluation.resx">
-      <DependentUpon>InterviewEvaluation.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlPERChecklist.resx">
+      <DependentUpon>ControlPERChecklist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\PERChecklist.resx">
-      <DependentUpon>PERChecklist.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlPerformanceAppraisal.resx">
+      <DependentUpon>ControlPerformanceAppraisal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\PerformanceAppraisal.resx">
-      <DependentUpon>PerformanceAppraisal.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlRecruitmentDashboard.resx">
+      <DependentUpon>ControlRecruitmentDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\RecruitmentDashboard.resx">
-      <DependentUpon>RecruitmentDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlExistingEmployeeRegistration.resx">
+      <DependentUpon>ControlExistingEmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\RegisterExistingEmployee.resx">
-      <DependentUpon>RegisterExistingEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlRelivingDashboard.resx">
+      <DependentUpon>ControlRelivingDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\RelivingDashboard.resx">
-      <DependentUpon>RelivingDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlTrainingDashboard.resx">
+      <DependentUpon>ControlTrainingDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\TrainingDashboard.resx">
-      <DependentUpon>TrainingDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlTrainingFeedback.resx">
+      <DependentUpon>ControlTrainingFeedback.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\TrainingFeedback.resx">
-      <DependentUpon>TrainingFeedback.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\ControlTrainingSchedule.resx">
+      <DependentUpon>ControlTrainingSchedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\TrainingSchedule.resx">
-      <DependentUpon>TrainingSchedule.cs</DependentUpon>
+    <EmbeddedResource Include="View\ControlEmployee.resx">
+      <DependentUpon>ControlEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Employee.resx">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <EmbeddedResource Include="View\ControlRecruitment.resx">
+      <DependentUpon>ControlRecruitment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Recruitment.resx">
-      <DependentUpon>Recruitment.cs</DependentUpon>
+    <EmbeddedResource Include="View\ControlReliving.resx">
+      <DependentUpon>ControlReliving.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Reliving.resx">
-      <DependentUpon>Reliving.cs</DependentUpon>
+    <EmbeddedResource Include="View\ControlTraining.resx">
+      <DependentUpon>ControlTraining.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Training.resx">
-      <DependentUpon>Training.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
