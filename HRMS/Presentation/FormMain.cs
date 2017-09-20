@@ -201,6 +201,14 @@ namespace Presentation
 
         private FormUserManager usermgr;
         private FormClearanceLogin clrLogin;
+
+        private void flow_procedures_MouseUp(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void flow_procedures_MouseDown(object sender, MouseEventArgs e)
+        {
+        }
     }
     
 }

@@ -99,6 +99,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.x1 = new System.Windows.Forms.Button();
             this.x3 = new System.Windows.Forms.Button();
+            this.flow_procedures = new System.Windows.Forms.FlowLayoutPanel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
@@ -106,6 +115,7 @@
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             this.header.SuspendLayout();
+            this.flow_procedures.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView
@@ -165,7 +175,7 @@
             treeNode12,
             treeNode15});
             this.treeView.SelectedImageIndex = 0;
-            this.treeView.Size = new System.Drawing.Size(243, 689);
+            this.treeView.Size = new System.Drawing.Size(243, 321);
             this.treeView.TabIndex = 1;
             this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.OnTreeViewAfterSelect);
             // 
@@ -554,12 +564,155 @@
             this.x3.UseVisualStyleBackColor = false;
             this.x3.Click += new System.EventHandler(this.closeClick);
             // 
+            // flow_procedures
+            // 
+            this.flow_procedures.AutoScroll = true;
+            this.flow_procedures.AutoScrollMinSize = new System.Drawing.Size(5, 0);
+            this.flow_procedures.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.flow_procedures.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flow_procedures.Controls.Add(this.button5);
+            this.flow_procedures.Controls.Add(this.button6);
+            this.flow_procedures.Controls.Add(this.button7);
+            this.flow_procedures.Controls.Add(this.button9);
+            this.flow_procedures.Controls.Add(this.button11);
+            this.flow_procedures.Controls.Add(this.button8);
+            this.flow_procedures.Controls.Add(this.button10);
+            this.flow_procedures.Controls.Add(this.button12);
+            this.flow_procedures.Location = new System.Drawing.Point(12, 394);
+            this.flow_procedures.Name = "flow_procedures";
+            this.flow_procedures.Padding = new System.Windows.Forms.Padding(5);
+            this.flow_procedures.Size = new System.Drawing.Size(243, 359);
+            this.flow_procedures.TabIndex = 0;
+            this.flow_procedures.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flow_procedures_MouseDown);
+            this.flow_procedures.MouseUp += new System.Windows.Forms.MouseEventHandler(this.flow_procedures_MouseUp);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SteelBlue;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Window;
+            this.button5.Location = new System.Drawing.Point(8, 8);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(220, 35);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Register New Employee";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.SteelBlue;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.Window;
+            this.button6.Location = new System.Drawing.Point(8, 49);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(220, 35);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Register Existing Employee";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.SteelBlue;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.Window;
+            this.button7.Location = new System.Drawing.Point(8, 90);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(220, 35);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "New Performance Appraisal";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.SteelBlue;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Window;
+            this.button9.Location = new System.Drawing.Point(8, 131);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(220, 35);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.SteelBlue;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.Window;
+            this.button11.Location = new System.Drawing.Point(8, 172);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(220, 35);
+            this.button11.TabIndex = 10;
+            this.button11.Text = "button11";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.SteelBlue;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Window;
+            this.button8.Location = new System.Drawing.Point(8, 213);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(220, 35);
+            this.button8.TabIndex = 12;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.SteelBlue;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.Window;
+            this.button10.Location = new System.Drawing.Point(8, 254);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(220, 35);
+            this.button10.TabIndex = 13;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.SteelBlue;
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.SystemColors.Window;
+            this.button12.Location = new System.Drawing.Point(8, 295);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(220, 35);
+            this.button12.TabIndex = 14;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.flow_procedures);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.treeView);
@@ -579,6 +732,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
             this.splitContainer.ResumeLayout(false);
             this.header.ResumeLayout(false);
+            this.flow_procedures.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,6 +784,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button x1;
         private System.Windows.Forms.Button x3;
+        private System.Windows.Forms.FlowLayoutPanel flow_procedures;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button12;
     }
 }
 
