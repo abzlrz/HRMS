@@ -16,12 +16,7 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             bool result = true;
 
-            if (string.IsNullOrEmpty(cbx_source.Text) || string.IsNullOrWhiteSpace(cbx_source.Text))
-                result = false;
-            if (string.IsNullOrEmpty(cbx_position.Text) || string.IsNullOrWhiteSpace(cbx_position.Text))
-                result = false;
-            if (string.IsNullOrEmpty(cbx_preferredSite.Text) || string.IsNullOrWhiteSpace(cbx_preferredSite.Text))
-                result = false;
+            
 
             return result;
         }
@@ -47,10 +42,6 @@ namespace Presentation.DialogBox.ExternalApplication
                 lbl_employeeID.ImageIndex = -1;
                 lbl_employeeName.ImageIndex = -1;
             }
-        }
-
-        private void tbx_employeeID_TextChanged(object sender, System.EventArgs e)
-        {
         }
 
         private void cbx_position_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -89,6 +80,11 @@ namespace Presentation.DialogBox.ExternalApplication
                 lbl_employeeID.ImageIndex = 1;
             else
                 lbl_employeeID.ImageIndex = 0;
+        }
+
+        private void btn_clearAll_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

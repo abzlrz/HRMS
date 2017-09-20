@@ -19,19 +19,7 @@ namespace Presentation.DialogBox.ExternalApplication
         public bool ValidateFields()
         {
             bool result = true;
-
-            if (string.IsNullOrEmpty(tbx_firstName.Text) || string.IsNullOrWhiteSpace(tbx_firstName.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_midname.Text) || string.IsNullOrWhiteSpace(tbx_midname.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_lastName.Text) || string.IsNullOrWhiteSpace(tbx_lastName.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_firstName.Text) || string.IsNullOrWhiteSpace(tbx_firstName.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_primaryContact.Text) || string.IsNullOrWhiteSpace(tbx_primaryContact.Text))
-                result = false;
-            if (cbx_isUnder18.SelectedIndex == -1)
-                result = false;
+            
 
             return result;
         }

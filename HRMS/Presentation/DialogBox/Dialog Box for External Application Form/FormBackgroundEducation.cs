@@ -15,15 +15,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             bool result = true;
 
 
-            if (string.IsNullOrEmpty(tbx_school.Text))
-                result = false;
-            else
-                result = true;
-
-            if (string.IsNullOrEmpty(tbx_location.Text))
-                result = false;
-            else
-                result = true;
+            
 
             return result;
         }

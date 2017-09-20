@@ -15,19 +15,7 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             bool result = true;
 
-            if (string.IsNullOrEmpty(tbx_street1.Text) || string.IsNullOrWhiteSpace(tbx_street1.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_street2.Text) || string.IsNullOrWhiteSpace(tbx_street2.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_postalArea1.Text) || string.IsNullOrWhiteSpace(tbx_postalArea1.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_postalArea2.Text) || string.IsNullOrWhiteSpace(tbx_postalArea2.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_postalNo1.Text) || string.IsNullOrWhiteSpace(tbx_postalNo1.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_postalNo2.Text) || string.IsNullOrWhiteSpace(tbx_postalNo2.Text))
-                result = false;
-
+            
             return result;
         }
 
