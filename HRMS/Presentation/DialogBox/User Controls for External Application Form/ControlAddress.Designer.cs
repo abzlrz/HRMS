@@ -202,6 +202,7 @@
             this.tbx_street2.Size = new System.Drawing.Size(312, 22);
             this.tbx_street2.TabIndex = 109;
             this.tbx_street2.Tag = "required";
+            this.tbx_street2.TextChanged += new System.EventHandler(this.tbx_street2_TextChanged_1);
             // 
             // tbx_postalArea2
             // 
@@ -212,6 +213,7 @@
             this.tbx_postalArea2.Size = new System.Drawing.Size(312, 22);
             this.tbx_postalArea2.TabIndex = 110;
             this.tbx_postalArea2.Tag = "required";
+            this.tbx_postalArea2.TextChanged += new System.EventHandler(this.tbx_postalArea2_TextChanged_1);
             // 
             // tbx_postalNo2
             // 
@@ -222,6 +224,7 @@
             this.tbx_postalNo2.Size = new System.Drawing.Size(312, 22);
             this.tbx_postalNo2.TabIndex = 111;
             this.tbx_postalNo2.Tag = "required";
+            this.tbx_postalNo2.TextChanged += new System.EventHandler(this.tbx_postalNo2_TextChanged_1);
             // 
             // groupBox6
             // 
@@ -343,6 +346,7 @@
             this.tbx_street1.Size = new System.Drawing.Size(312, 22);
             this.tbx_street1.TabIndex = 109;
             this.tbx_street1.Tag = "required";
+            this.tbx_street1.TextChanged += new System.EventHandler(this.tbx_street1_TextChanged_1);
             // 
             // tbx_postalArea1
             // 
@@ -353,6 +357,7 @@
             this.tbx_postalArea1.Size = new System.Drawing.Size(312, 22);
             this.tbx_postalArea1.TabIndex = 110;
             this.tbx_postalArea1.Tag = "required";
+            this.tbx_postalArea1.TextChanged += new System.EventHandler(this.tbx_postalArea1_TextChanged_1);
             // 
             // tbx_postalNo1
             // 
@@ -363,6 +368,7 @@
             this.tbx_postalNo1.Size = new System.Drawing.Size(312, 22);
             this.tbx_postalNo1.TabIndex = 111;
             this.tbx_postalNo1.Tag = "required";
+            this.tbx_postalNo1.TextChanged += new System.EventHandler(this.tbx_postalNo1_TextChanged_1);
             // 
             // panel2
             // 

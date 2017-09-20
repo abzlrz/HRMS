@@ -88,5 +88,53 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             Previous.BringToFront();
         }
+
+        private void tbx_street1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_street1.Text) || string.IsNullOrWhiteSpace(tbx_street1.Text))
+                lbl_street1.ImageIndex = 0;
+            else
+                lbl_street1.ImageIndex = 0;
+        }
+
+        private void tbx_postalArea1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_postalArea1.Text) || string.IsNullOrWhiteSpace(tbx_postalArea1.Text))
+                lbl_postalArea1.ImageIndex = 1;
+            else
+                lbl_postalArea1.ImageIndex = 0;
+        }
+
+        private void tbx_postalNo1_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_postalNo1.Text) || string.IsNullOrWhiteSpace(tbx_postalNo1.Text))
+                lbl_postalNo1.ImageIndex = 1;
+            else
+                lbl_postalNo2.ImageIndex = 0;
+        }
+
+        private void tbx_street2_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_street2.Text) || string.IsNullOrWhiteSpace(tbx_street2.Text))
+                lbl_street2.ImageIndex = 1;
+            else
+                lbl_street2.ImageIndex = 0;
+        }
+
+        private void tbx_postalArea2_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_postalArea2.Text) || string.IsNullOrWhiteSpace(tbx_postalArea2.Text))
+                lbl_postalArea2.ImageIndex = 1;
+            else
+                lbl_postalArea2.ImageIndex = 0;
+        }
+
+        private void tbx_postalNo2_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_postalNo2.Text) || string.IsNullOrWhiteSpace(tbx_postalNo2.Text))
+                lbl_postalNo2.ImageIndex = 1;
+            else
+                lbl_postalNo2.ImageIndex = 0;
+        }
     }
 }

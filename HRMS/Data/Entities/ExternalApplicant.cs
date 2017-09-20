@@ -15,8 +15,8 @@ namespace Data.Entities
         public BindingList<LegalConviction> LegalConvictionHistory { get; set; }
         public BindingList<MedicalOperation> MedicalOperationHistory { get; set; }
         public BindingList<ContactPerson> Contacts { get; set; }
-        public Address PresentAddress { get; set; }
-        public Address PermanentAddress { get; set; }
+        public ApplicantAddress PresentAddress { get; set; }
+        public ApplicantAddress PermanentAddress { get; set; }
         public Position ApplicationPosition { get; set; }
     }
 
@@ -113,7 +113,7 @@ namespace Data.Entities
         public string PreferredSite { get; set; }
     }
 
-    public class Address
+    public class ApplicantAddress
     {
         public int ApplicantID { get; set; }
         public string HouseNo { get; set; } = null;

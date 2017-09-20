@@ -40,12 +40,12 @@
             this.lbl_preferredSite = new System.Windows.Forms.Label();
             this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_name = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbx_employeeID = new System.Windows.Forms.TextBox();
+            this.cbx_employeeName = new System.Windows.Forms.ComboBox();
+            this.lbl_employeeName = new System.Windows.Forms.Label();
             this.lbl_source = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_employeeID = new System.Windows.Forms.Label();
             this.cbx_source = new System.Windows.Forms.ComboBox();
+            this.cbx_employeeID = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
@@ -203,57 +203,49 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.34471F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.65529F));
-            this.tableLayoutPanel3.Controls.Add(this.lbl_name, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.tbx_employeeID, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cbx_employeeName, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_employeeName, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.lbl_source, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_employeeID, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.cbx_source, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cbx_employeeID, 1, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(53, 109);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(496, 71);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // lbl_name
+            // cbx_employeeName
             // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.BackColor = System.Drawing.Color.White;
-            this.lbl_name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_name.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(216, 48);
-            this.lbl_name.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(278, 21);
-            this.lbl_name.TabIndex = 81;
-            this.lbl_name.Text = "<----->";
-            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cbx_employeeName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_employeeName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbx_employeeName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_employeeName.Enabled = false;
+            this.cbx_employeeName.FormattingEnabled = true;
+            this.cbx_employeeName.Location = new System.Drawing.Point(216, 49);
+            this.cbx_employeeName.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_employeeName.Name = "cbx_employeeName";
+            this.cbx_employeeName.Size = new System.Drawing.Size(278, 21);
+            this.cbx_employeeName.TabIndex = 83;
+            this.cbx_employeeName.TextChanged += new System.EventHandler(this.cbx_employeeName_TextChanged);
             // 
-            // label2
+            // lbl_employeeName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(206, 21);
-            this.label2.TabIndex = 80;
-            this.label2.Text = "Name:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbx_employeeID
-            // 
-            this.tbx_employeeID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_employeeID.Enabled = false;
-            this.tbx_employeeID.Location = new System.Drawing.Point(216, 25);
-            this.tbx_employeeID.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_employeeID.Name = "tbx_employeeID";
-            this.tbx_employeeID.Size = new System.Drawing.Size(278, 22);
-            this.tbx_employeeID.TabIndex = 79;
+            this.lbl_employeeName.AutoSize = true;
+            this.lbl_employeeName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_employeeName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employeeName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_employeeName.ImageList = this.imageList;
+            this.lbl_employeeName.Location = new System.Drawing.Point(5, 49);
+            this.lbl_employeeName.Name = "lbl_employeeName";
+            this.lbl_employeeName.Size = new System.Drawing.Size(206, 20);
+            this.lbl_employeeName.TabIndex = 80;
+            this.lbl_employeeName.Text = "Name:";
+            this.lbl_employeeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_source
             // 
@@ -270,17 +262,19 @@
             this.lbl_source.Text = "Source:";
             this.lbl_source.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // lbl_employeeID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 21);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Employee ID:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_employeeID.AutoSize = true;
+            this.lbl_employeeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_employeeID.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employeeID.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_employeeID.ImageList = this.imageList;
+            this.lbl_employeeID.Location = new System.Drawing.Point(5, 25);
+            this.lbl_employeeID.Name = "lbl_employeeID";
+            this.lbl_employeeID.Size = new System.Drawing.Size(206, 22);
+            this.lbl_employeeID.TabIndex = 52;
+            this.lbl_employeeID.Text = "Employee ID:";
+            this.lbl_employeeID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cbx_source
             // 
@@ -308,6 +302,20 @@
             this.cbx_source.Size = new System.Drawing.Size(278, 21);
             this.cbx_source.TabIndex = 76;
             this.cbx_source.SelectedIndexChanged += new System.EventHandler(this.cbx_source_SelectedIndexChanged);
+            // 
+            // cbx_employeeID
+            // 
+            this.cbx_employeeID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_employeeID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbx_employeeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_employeeID.Enabled = false;
+            this.cbx_employeeID.FormattingEnabled = true;
+            this.cbx_employeeID.Location = new System.Drawing.Point(216, 25);
+            this.cbx_employeeID.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_employeeID.Name = "cbx_employeeID";
+            this.cbx_employeeID.Size = new System.Drawing.Size(278, 21);
+            this.cbx_employeeID.TabIndex = 82;
+            this.cbx_employeeID.SelectedIndexChanged += new System.EventHandler(this.cbx_employeeID_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -384,11 +392,9 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbx_employeeID;
+        private System.Windows.Forms.Label lbl_employeeName;
         private System.Windows.Forms.Label lbl_source;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_employeeID;
         private System.Windows.Forms.ComboBox cbx_source;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox cbx_preferredSite;
@@ -402,5 +408,7 @@
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_previous;
+        private System.Windows.Forms.ComboBox cbx_employeeName;
+        private System.Windows.Forms.ComboBox cbx_employeeID;
     }
 }

@@ -47,6 +47,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.Designer.cs">
+      <DependentUpon>ControlApplicantEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluationDetails.Designer.cs">
+      <DependentUpon>ControlApplicantEvaluationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeApplicationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeApplicationDetails.Designer.cs">
+      <DependentUpon>ControlEmployeeApplicationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeDetailsAndSalaryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeDetailsAndSalaryInfo.Designer.cs">
+      <DependentUpon>ControlEmployeeDetailsAndSalaryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeEvaluationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration\ControlEmployeeEvaluationDetails.Designer.cs">
+      <DependentUpon>ControlEmployeeEvaluationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeEvaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeEvaluation.Designer.cs">
+      <DependentUpon>ControlEmployeeEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeInfo.Designer.cs">
+      <DependentUpon>ControlEmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlSalaryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlSalaryInfo.Designer.cs">
+      <DependentUpon>ControlSalaryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormRegisterExistingEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormRegisterExistingEmployee.Designer.cs">
+      <DependentUpon>FormRegisterExistingEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClearanceLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,9 +316,36 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="methods.cs" />
+    <Compile Include="Miscellaneous.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.resx">
+      <DependentUpon>ControlApplicantEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluationDetails.resx">
+      <DependentUpon>ControlApplicantEvaluationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration\ControlEmployeeApplicationDetails.resx">
+      <DependentUpon>ControlEmployeeApplicationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration\ControlEmployeeDetailsAndSalaryInfo.resx">
+      <DependentUpon>ControlEmployeeDetailsAndSalaryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration\ControlEmployeeEvaluationDetails.resx">
+      <DependentUpon>ControlEmployeeEvaluationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeEvaluation.resx">
+      <DependentUpon>ControlEmployeeEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlEmployeeInfo.resx">
+      <DependentUpon>ControlEmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\User Controls for Employee Registration %28Existing Employee%29\ControlSalaryInfo.resx">
+      <DependentUpon>ControlSalaryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormRegisterExistingEmployee.resx">
+      <DependentUpon>FormRegisterExistingEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClearanceLogin.resx">
       <DependentUpon>FormClearanceLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -447,6 +528,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_Save_27876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

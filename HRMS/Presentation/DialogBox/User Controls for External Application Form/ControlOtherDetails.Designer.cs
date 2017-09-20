@@ -44,8 +44,9 @@
             this.link_employment = new System.Windows.Forms.LinkLabel();
             this.link_contacts = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -246,7 +247,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btn_add);
+            this.panel2.Controls.Add(this.btn_save);
+            this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.btn_previous);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(12, 412);
@@ -254,19 +256,19 @@
             this.panel2.Size = new System.Drawing.Size(617, 91);
             this.panel2.TabIndex = 3;
             // 
-            // btn_add
+            // btn_clear
             // 
-            this.btn_add.BackColor = System.Drawing.Color.DimGray;
-            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(411, 35);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 35);
-            this.btn_add.TabIndex = 11;
-            this.btn_add.Text = "Clear All";
-            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_clear.BackColor = System.Drawing.Color.DimGray;
+            this.btn_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_clear.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.ForeColor = System.Drawing.Color.White;
+            this.btn_clear.Location = new System.Drawing.Point(328, 35);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 35);
+            this.btn_clear.TabIndex = 11;
+            this.btn_clear.Text = "Clear All";
+            this.btn_clear.UseVisualStyleBackColor = false;
             // 
             // btn_previous
             // 
@@ -274,13 +276,26 @@
             this.btn_previous.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_previous.ForeColor = System.Drawing.Color.White;
-            this.btn_previous.Location = new System.Drawing.Point(492, 35);
+            this.btn_previous.Location = new System.Drawing.Point(409, 35);
             this.btn_previous.Name = "btn_previous";
             this.btn_previous.Size = new System.Drawing.Size(75, 35);
             this.btn_previous.TabIndex = 13;
             this.btn_previous.Text = "Previous";
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.BackColor = System.Drawing.Color.Teal;
+            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(490, 35);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 35);
+            this.btn_save.TabIndex = 63;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = false;
             // 
             // ControlOtherDetails
             // 
@@ -315,7 +330,8 @@
         private System.Windows.Forms.LinkLabel link_contacts;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_previous;
+        private System.Windows.Forms.Button btn_save;
     }
 }

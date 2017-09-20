@@ -43,6 +43,7 @@
     <Compile Include="Access\ApplicationAccess.cs" />
     <Compile Include="Access\UserAccess.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\ExternalApplicant.cs" />
     <Compile Include="Entities\InterviewEvaluation.cs" />
     <Compile Include="Entities\User.cs" />

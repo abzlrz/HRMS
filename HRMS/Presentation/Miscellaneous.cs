@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace Presentation
 {
+    public delegate bool InsertProc();
     static class TextboxExtensions
     {
         public static void AcceptEntry(this TextBox tbx, string expression)
@@ -103,6 +104,53 @@ namespace Presentation
             }
             return result;
         }
+
+        public static void ClearAll(this Panel panel)
+        {
+            foreach (Control control in panel.Controls)
+            {
+                ClearDeepInside(control);
+            }
+        }
+        static void ClearDeepInside(Control control)
+        {
+            switch (control.GetType().Name)
+            {
+                case "TextBox":
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = null;
+                    break;
+
+                case "ComboBox":
+                    ComboBox comboBox = (ComboBox)control;
+                    if (comboBox.Items.Count > 0)
+                        comboBox.SelectedIndex = -1;
+                    else
+                        comboBox.Text = null;
+                    break;
+
+                case "CheckBox":
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false;
+                    break;
+
+                case "ListBox":
+                    ListBox listBox = (ListBox)control;
+                    listBox.ClearSelected();
+                    break;
+
+                case "NumericUpDown":
+                    NumericUpDown numericUpDown = (NumericUpDown)control;
+                    numericUpDown.Value = 0;
+                    break;
+
+                case "DateTimePicker":
+                    DateTimePicker dTPicker = (DateTimePicker)control;
+                    dTPicker.ResetText();
+                    break;
+            }
+        }
+
     }
     static class UserControlExtensions
     {
@@ -111,7 +159,24 @@ namespace Presentation
             ctrl.VerticalScroll.Value = 0;
         }
     }
+    public static class Misc
+    {
+        public static void TurnGreenIndicator(string text, Label source)
+        {
+            if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
+                source.ImageIndex = 1;
+            else
+                source.ImageIndex = 0;
+        }
 
+        public static void TurnGreenIndicator(int index, Label source)
+        {
+            if (index == -1)
+                source.ImageIndex = 1;
+            else
+                source.ImageIndex = 0;
+        }
+    }
     public class Draggable
     {
         private bool dragging = false;
