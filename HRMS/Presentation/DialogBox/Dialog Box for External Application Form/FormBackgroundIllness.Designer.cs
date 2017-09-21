@@ -38,9 +38,9 @@
             this.yesIllness = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_delete2 = new System.Windows.Forms.Button();
+            this.btn_add2 = new System.Windows.Forms.Button();
+            this.btn_save2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_operation = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -49,9 +49,9 @@
             this.tbx_details = new System.Windows.Forms.TextBox();
             this.illnessPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
+            this.btn_delete1 = new System.Windows.Forms.Button();
+            this.btn_add1 = new System.Windows.Forms.Button();
+            this.btn_save1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_lifetime = new System.Windows.Forms.Label();
             this.lbl_illness = new System.Windows.Forms.Label();
@@ -71,8 +71,9 @@
             this.operationPanel = new System.Windows.Forms.Panel();
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_ok = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.lbl_appID = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_operation)).BeginInit();
             this.panel8.SuspendLayout();
@@ -167,9 +168,9 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.button3);
+            this.panel8.Controls.Add(this.btn_delete2);
+            this.panel8.Controls.Add(this.btn_add2);
+            this.panel8.Controls.Add(this.btn_save2);
             this.panel8.Controls.Add(this.tableLayoutPanel1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(196, 0);
@@ -177,45 +178,48 @@
             this.panel8.Size = new System.Drawing.Size(390, 192);
             this.panel8.TabIndex = 7;
             // 
-            // button1
+            // btn_delete2
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(286, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_delete2.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_delete2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_delete2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete2.ForeColor = System.Drawing.Color.White;
+            this.btn_delete2.Location = new System.Drawing.Point(286, 157);
+            this.btn_delete2.Name = "btn_delete2";
+            this.btn_delete2.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete2.TabIndex = 9;
+            this.btn_delete2.Text = "Delete";
+            this.btn_delete2.UseVisualStyleBackColor = false;
+            this.btn_delete2.Click += new System.EventHandler(this.btn_delete2_Click);
             // 
-            // button2
+            // btn_add2
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(124, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_add2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_add2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_add2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_add2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add2.ForeColor = System.Drawing.Color.White;
+            this.btn_add2.Location = new System.Drawing.Point(124, 157);
+            this.btn_add2.Name = "btn_add2";
+            this.btn_add2.Size = new System.Drawing.Size(75, 23);
+            this.btn_add2.TabIndex = 8;
+            this.btn_add2.Text = "Add";
+            this.btn_add2.UseVisualStyleBackColor = false;
+            this.btn_add2.Click += new System.EventHandler(this.btn_add2_Click);
             // 
-            // button3
+            // btn_save2
             // 
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(205, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_save2.BackColor = System.Drawing.Color.Green;
+            this.btn_save2.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_save2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save2.ForeColor = System.Drawing.Color.White;
+            this.btn_save2.Location = new System.Drawing.Point(205, 157);
+            this.btn_save2.Name = "btn_save2";
+            this.btn_save2.Size = new System.Drawing.Size(75, 23);
+            this.btn_save2.TabIndex = 10;
+            this.btn_save2.Text = "Save";
+            this.btn_save2.UseVisualStyleBackColor = false;
+            this.btn_save2.Click += new System.EventHandler(this.btn_save2_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -305,9 +309,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btn_delete);
-            this.panel4.Controls.Add(this.btn_add);
-            this.panel4.Controls.Add(this.btn_edit);
+            this.panel4.Controls.Add(this.btn_delete1);
+            this.panel4.Controls.Add(this.btn_add1);
+            this.panel4.Controls.Add(this.btn_save1);
             this.panel4.Controls.Add(this.tableLayoutPanel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(196, 0);
@@ -315,45 +319,48 @@
             this.panel4.Size = new System.Drawing.Size(390, 209);
             this.panel4.TabIndex = 8;
             // 
-            // btn_delete
+            // btn_delete1
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.Firebrick;
-            this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(288, 177);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(75, 23);
-            this.btn_delete.TabIndex = 9;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete1.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_delete1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_delete1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete1.ForeColor = System.Drawing.Color.White;
+            this.btn_delete1.Location = new System.Drawing.Point(288, 177);
+            this.btn_delete1.Name = "btn_delete1";
+            this.btn_delete1.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete1.TabIndex = 9;
+            this.btn_delete1.Text = "Delete";
+            this.btn_delete1.UseVisualStyleBackColor = false;
+            this.btn_delete1.Click += new System.EventHandler(this.btn_delete1_Click);
             // 
-            // btn_add
+            // btn_add1
             // 
-            this.btn_add.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(126, 177);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
-            this.btn_add.TabIndex = 8;
-            this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_add1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_add1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_add1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add1.ForeColor = System.Drawing.Color.White;
+            this.btn_add1.Location = new System.Drawing.Point(126, 177);
+            this.btn_add1.Name = "btn_add1";
+            this.btn_add1.Size = new System.Drawing.Size(75, 23);
+            this.btn_add1.TabIndex = 8;
+            this.btn_add1.Text = "Add";
+            this.btn_add1.UseVisualStyleBackColor = false;
+            this.btn_add1.Click += new System.EventHandler(this.btn_add1_Click);
             // 
-            // btn_edit
+            // btn_save1
             // 
-            this.btn_edit.BackColor = System.Drawing.Color.Green;
-            this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.Location = new System.Drawing.Point(207, 177);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(75, 23);
-            this.btn_edit.TabIndex = 10;
-            this.btn_edit.Text = "Save";
-            this.btn_edit.UseVisualStyleBackColor = false;
+            this.btn_save1.BackColor = System.Drawing.Color.Green;
+            this.btn_save1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_save1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save1.ForeColor = System.Drawing.Color.White;
+            this.btn_save1.Location = new System.Drawing.Point(207, 177);
+            this.btn_save1.Name = "btn_save1";
+            this.btn_save1.Size = new System.Drawing.Size(75, 23);
+            this.btn_save1.TabIndex = 10;
+            this.btn_save1.Text = "Save";
+            this.btn_save1.UseVisualStyleBackColor = false;
+            this.btn_save1.Click += new System.EventHandler(this.btn_save1_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -567,6 +574,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbl_appID);
             this.panel1.Controls.Add(this.btn_cancel);
             this.panel1.Controls.Add(this.btn_ok);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -575,23 +583,34 @@
             this.panel1.Size = new System.Drawing.Size(590, 52);
             this.panel1.TabIndex = 9;
             // 
-            // btn_cancel
-            // 
-            this.btn_cancel.Location = new System.Drawing.Point(515, 27);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(75, 25);
-            this.btn_cancel.TabIndex = 1;
-            this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
-            // 
             // btn_ok
             // 
             this.btn_ok.Location = new System.Drawing.Point(434, 27);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(75, 25);
             this.btn_ok.TabIndex = 0;
-            this.btn_ok.Text = "OK";
+            this.btn_ok.Text = "&OK";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Location = new System.Drawing.Point(515, 27);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(75, 25);
+            this.btn_cancel.TabIndex = 1;
+            this.btn_cancel.Text = "&Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // lbl_appID
+            // 
+            this.lbl_appID.AutoSize = true;
+            this.lbl_appID.Location = new System.Drawing.Point(4, 27);
+            this.lbl_appID.Name = "lbl_appID";
+            this.lbl_appID.Size = new System.Drawing.Size(78, 13);
+            this.lbl_appID.TabIndex = 3;
+            this.lbl_appID.Text = "<employee-ID>";
             // 
             // FormBackgroundIllness
             // 
@@ -627,6 +646,7 @@
             this.confirmationIllness.PerformLayout();
             this.operationPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -641,9 +661,9 @@
         private System.Windows.Forms.RadioButton yesIllness;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_delete2;
+        private System.Windows.Forms.Button btn_add2;
+        private System.Windows.Forms.Button btn_save2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lbl_operation;
         private System.Windows.Forms.Label label4;
@@ -651,9 +671,9 @@
         private System.Windows.Forms.TextBox tbx_details;
         private System.Windows.Forms.Panel illnessPanel;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.Button btn_delete1;
+        private System.Windows.Forms.Button btn_add1;
+        private System.Windows.Forms.Button btn_save1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label lbl_lifetime;
         private System.Windows.Forms.Label lbl_illness;
@@ -676,5 +696,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_ok;
+        private System.Windows.Forms.Label lbl_appID;
     }
 }

@@ -90,34 +90,22 @@ namespace Presentation.DialogBox.ExternalApplicationForm
         #region If fields are empty conditions
         private void tbx_school_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_school.Text) || string.IsNullOrWhiteSpace(tbx_school.Text))
-                lbl_school.ImageIndex = 1;
-            else
-                lbl_school.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_school.Text, lbl_school);
         }
 
         private void tbx_location_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_location.Text) || string.IsNullOrWhiteSpace(tbx_location.Text))
-                lbl_location.ImageIndex = 1;
-            else
-                lbl_location.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_location.Text, lbl_location);
         }
 
         private void cbx_degree_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbx_degree.SelectedIndex == -1)
-                lbl_degree.ImageIndex = 1;
-            else
-                lbl_degree.ImageIndex = 0;
+            Misc.TurnGreenIndicator(cbx_degree.SelectedIndex, lbl_degree);
         }
 
         private void tbx_course_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_course.Text) || string.IsNullOrWhiteSpace(tbx_course.Text))
-                lbl_course.ImageIndex = 1;
-            else
-                lbl_course.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_course.Text, lbl_course);
         }
 
         private void date_from_ValueChanged(object sender, EventArgs e)

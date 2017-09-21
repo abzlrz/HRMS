@@ -1,4 +1,5 @@
 ﻿using Presentation.Maintenance;
+using Presentation.Miscellaneous;
 using Presentation.Modules;
 using Presentation.View;
 using System.Collections.Generic;
@@ -36,6 +37,8 @@ namespace Presentation
 
             this.usermgr = new FormUserManager();
             this.clrLogin = new FormClearanceLogin();
+
+            this.about = new AboutBox();
         }
         private void ShowControlOnPanel1(UserControl ctrl)
         {
@@ -140,7 +143,7 @@ namespace Presentation
         {
             var login = new FormLogin();
             login.Show();
-            this.Close();
+            this.Hide();
         }
         private void OnLoad(object sender, System.EventArgs e)
         {
@@ -202,12 +205,19 @@ namespace Presentation
         private FormUserManager usermgr;
         private FormClearanceLogin clrLogin;
 
+        private AboutBox about;
+
         private void flow_procedures_MouseUp(object sender, MouseEventArgs e)
         {
         }
 
         private void flow_procedures_MouseDown(object sender, MouseEventArgs e)
         {
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            about.ShowDialog();
         }
     }
     

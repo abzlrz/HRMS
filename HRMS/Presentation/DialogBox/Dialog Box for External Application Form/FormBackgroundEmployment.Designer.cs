@@ -202,7 +202,6 @@
             this.lbl_supervisor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_supervisor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_supervisor.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_supervisor.ImageIndex = 1;
             this.lbl_supervisor.ImageList = this.imageList;
             this.lbl_supervisor.Location = new System.Drawing.Point(3, 75);
             this.lbl_supervisor.Name = "lbl_supervisor";
@@ -325,7 +324,6 @@
             this.lbl_compensation.AutoSize = true;
             this.lbl_compensation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_compensation.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_compensation.ImageIndex = 1;
             this.lbl_compensation.ImageList = this.imageList;
             this.lbl_compensation.Location = new System.Drawing.Point(3, 175);
             this.lbl_compensation.Name = "lbl_compensation";
@@ -441,7 +439,6 @@
             this.MinimizeBox = false;
             this.Name = "FormBackgroundEmployment";
             this.Padding = new System.Windows.Forms.Padding(12);
-            this.Text = "Employment History";
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();

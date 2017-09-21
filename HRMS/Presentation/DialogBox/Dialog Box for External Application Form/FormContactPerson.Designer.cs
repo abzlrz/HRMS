@@ -75,6 +75,7 @@
             this.view_contact.Name = "view_contact";
             this.view_contact.Size = new System.Drawing.Size(196, 265);
             this.view_contact.TabIndex = 6;
+            this.view_contact.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_contact_CellContentClick);
             // 
             // main
             // 

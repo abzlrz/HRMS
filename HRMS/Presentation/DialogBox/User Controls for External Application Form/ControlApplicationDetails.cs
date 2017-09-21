@@ -4,29 +4,43 @@ namespace Presentation.DialogBox.ExternalApplication
 {
     public partial class ControlApplicationDetails : UserControl
     {
+        #region properties
         public UserControl Next { get; set; }
         public UserControl Previous { get; set; }
+        #endregion
 
         public ControlApplicationDetails()
         {
             InitializeComponent();
         }
 
-        public bool ValidateFields()
+        #region methods
+        private bool ValidateFields()
         {
             bool result = true;
 
-            
+            if (lbl_source.ImageIndex == 1)
+                result = false;
+            if(lbl_source.ImageIndex == 0)
+            {
+                if (lbl_employeeID.ImageIndex == 1)
+                    result = false;
+                if (lbl_employeeName.ImageIndex == 1)
+                    result = false;
+            }
+            if (lbl_position.ImageIndex == 1)
+                result = false;
+            if (lbl_preferredSite.ImageIndex == 1)
+                result = false;
 
             return result;
         }
+        #endregion
 
+        #region if fields are empty conditions
         private void cbx_source_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            if (cbx_source.SelectedIndex == -1)
-                lbl_source.ImageIndex = 1;
-            else
-                lbl_source.ImageIndex = 0;
+            Misc.TurnGreenIndicator(cbx_source.SelectedIndex, lbl_source);
             
             if(cbx_source.SelectedIndex == 1)
             {
@@ -46,19 +60,43 @@ namespace Presentation.DialogBox.ExternalApplication
 
         private void cbx_position_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            if (cbx_position.SelectedIndex == -1)
-                lbl_position.ImageIndex = 0;
+            Misc.TurnGreenIndicator(cbx_position.SelectedIndex, lbl_position);
         }
 
         private void cbx_preferredSite_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            if (cbx_preferredSite.SelectedIndex == -1)
-                lbl_preferredSite.ImageIndex = 0;
+            Misc.TurnGreenIndicator(cbx_preferredSite.SelectedIndex, lbl_preferredSite);
+        }
+
+        private void cbx_employeeName_TextChanged(object sender, System.EventArgs e)
+        {
+            Misc.TurnGreenIndicator(cbx_employeeName.SelectedIndex, lbl_employeeName);
+        }
+
+        private void cbx_employeeID_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            Misc.TurnGreenIndicator(cbx_employeeID.SelectedIndex, lbl_employeeID);
+        }
+        #endregion
+
+        #region buttons
+        private void btn_clearAll_Click(object sender, System.EventArgs e)
+        {
+
         }
 
         private void btn_next_Click(object sender, System.EventArgs e)
         {
             Next.BringToFront();
+            /*
+            if (ValidateFields())
+            {
+                Next.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please fill-up all the required fields", "Arvato HRMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }*/
         }
 
         private void btn_previous_Click(object sender, System.EventArgs e)
@@ -66,25 +104,6 @@ namespace Presentation.DialogBox.ExternalApplication
             Previous.BringToFront();
         }
 
-        private void cbx_employeeName_TextChanged(object sender, System.EventArgs e)
-        {
-            if (string.IsNullOrEmpty(cbx_employeeName.Text) || string.IsNullOrWhiteSpace(cbx_employeeName.Text))
-                lbl_employeeName.ImageIndex = 1;
-            else
-                lbl_employeeName.ImageIndex = 0;
-        }
-
-        private void cbx_employeeID_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            if (string.IsNullOrEmpty(cbx_employeeID.Text) || string.IsNullOrWhiteSpace(cbx_employeeID.Text))
-                lbl_employeeID.ImageIndex = 1;
-            else
-                lbl_employeeID.ImageIndex = 0;
-        }
-
-        private void btn_clearAll_Click(object sender, System.EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

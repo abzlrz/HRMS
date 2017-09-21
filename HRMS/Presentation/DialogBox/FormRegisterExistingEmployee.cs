@@ -34,5 +34,11 @@ namespace Presentation.DialogBox
         {
             throw new NotImplementedException();
         }
+
+        private void FormRegisterExistingEmployee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // reset all fields
+            // back to first user control
+        }
     }
 }

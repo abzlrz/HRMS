@@ -86,11 +86,6 @@ namespace Presentation
     }
     static class PanelExtensions
     {
-        /// <summary>
-        /// Gets the value selected from RadioButton group
-        /// </summary>
-        /// <param name="panel"></param>
-        /// <returns></returns>
         public static string GetRadioButtonValue(this Panel panel)
         {
             string result = string.Empty;
@@ -104,7 +99,6 @@ namespace Presentation
             }
             return result;
         }
-
         public static void ClearAll(this Panel panel)
         {
             foreach (Control control in panel.Controls)
@@ -168,7 +162,6 @@ namespace Presentation
             else
                 source.ImageIndex = 0;
         }
-
         public static void TurnGreenIndicator(int index, Label source)
         {
             if (index == -1)

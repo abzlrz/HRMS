@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Access\ApplicationAccess.cs" />
+    <Compile Include="Access\EmployeeAccess.cs" />
     <Compile Include="Access\UserAccess.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Entities\Employee.cs" />

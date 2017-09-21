@@ -95,6 +95,7 @@ namespace Presentation.DialogBox
             this.MinimizeBox = false;
             this.Name = "FormRegisterExistingEmployee";
             this.Text = "Register Existing Employee";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRegisterExistingEmployee_FormClosed);
             this.ResumeLayout(false);
 
         }

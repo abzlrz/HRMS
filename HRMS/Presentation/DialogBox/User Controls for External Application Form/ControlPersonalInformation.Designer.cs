@@ -138,7 +138,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(254, 23);
             this.label1.TabIndex = 110;
-            this.label1.Text = "Bank Account#:";
+            this.label1.Text = "BPI Card#:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList

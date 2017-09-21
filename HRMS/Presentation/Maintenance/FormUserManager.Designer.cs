@@ -197,6 +197,7 @@
             this.Name = "FormUserManager";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Manage Users";
+            this.Load += new System.EventHandler(this.OnLoad);
             this.main.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_education)).EndInit();

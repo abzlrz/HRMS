@@ -6,9 +6,12 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 {
     public partial class ControlEmployeeEvaluation : UserControl
     {
+        #region properties
         public UserControl Previous { get; set; }
         public UserControl Next { get; set; }
+        #endregion
 
+        #region fields
         private EmployeeHiringManager _details;
         private EmployeeTitanTitle _titantitle;
         private EmployeeBucket _bucket;
@@ -16,12 +19,14 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private EmployeeJobTitle _jobTitle;
         private EmployeeTeam _team;
         private EmployeeContractType _contractType;
-
+        #endregion
+        
         public ControlEmployeeEvaluation()
         {
             InitializeComponent();
         }
 
+        #region get values
         public EmployeeHiringManager GetHiringManager()
         {
             return this._details = new EmployeeHiringManager()
@@ -79,6 +84,35 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 ContractType = cbx_contractType.Text
             };
         }
+        #endregion
+
+        #region methods 
+        private bool ValidateFields()
+        {
+            bool result = true;
+
+            if (lbl_managerID.ImageIndex == 1)
+                result = false;
+            if (lbl_managerName.ImageIndex == 1)
+                result = false;
+            if (lbl_titanTitle.ImageIndex == 1)
+                result = false;
+            if (lbl_langRequirement.ImageIndex == 1)
+                result = false;
+            if (lbl_bucket.ImageIndex == 1)
+                result = false;
+            if (lbl_arvatoLevel.ImageIndex == 1)
+                result = false;
+            if (lbl_jobTitle.ImageIndex == 1)
+                result = false;
+            if (lbl_team.ImageIndex == 1)
+                result = false;
+            if (lbl_contractType.ImageIndex == 1)
+                result = false;
+
+            return result;
+        }
+        #endregion
 
         #region If fields are empty conditions
         private void cbx_titanTitle_SelectedIndexChanged(object sender, EventArgs e)
@@ -136,7 +170,14 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
         private void btn_next_Click(object sender, EventArgs e)
         {
-            Next.BringToFront();
+            if (ValidateFields())
+            {
+                Next.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Please fill-up all the required fields", "Arvato HRMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         #endregion
     }

@@ -1,54 +1,74 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Data.Entities;
+using System;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox
 {
     public partial class FormContactPerson : Form
     {
+        #region fields
+        private BindingList<ContactPerson> _contacts;
+        #endregion
+
         public FormContactPerson()
         {
             InitializeComponent();
+            this._contacts = new BindingList<ContactPerson>();
         }
+
+        #region methods
+        private bool ValidateFields()
+        {
+            bool result = true;
+
+            if (lbl_firstname.ImageIndex == 1)
+                result = false;
+            if (lbl_lastname.ImageIndex == 1)
+                result = false;
+            if (lbl_relationship.ImageIndex == 1)
+                result = false;
+            if (lbl_contactNo.ImageIndex == 1)
+                result = false;
+
+            return result;
+        }
+        private bool HaveValues()
+        {
+            bool result = true;
+
+            if (_contacts.Count < 2)
+                result = false;
+
+            return result;
+        }
+        #endregion
 
         #region If fields are empty conditions
         private void tbx_firstname_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_firstname.Text) || string.IsNullOrWhiteSpace(tbx_firstname.Text))
-                lbl_firstname.ImageIndex = 1;
-            else
-                lbl_firstname.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_firstname.Text, lbl_firstname);
         }
 
         private void tbx_lastname_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_lastname.Text) || string.IsNullOrWhiteSpace(tbx_lastname.Text))
-                lbl_lastname.ImageIndex = 1;
-            else
-                lbl_lastname.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_lastname.Text, lbl_lastname);
         }
 
         private void tbx_contactNo_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(tbx_contactNo.Text) || string.IsNullOrWhiteSpace(tbx_contactNo.Text))
-                lbl_contactNo.ImageIndex = 1;
-            else
-                lbl_contactNo.ImageIndex = 0;
+            Misc.TurnGreenIndicator(tbx_contactNo.Text, lbl_contactNo);
         }
 
         private void cbx_relationship_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbx_relationship.SelectedIndex == -1)
-                lbl_relationship.ImageIndex = 1;
-            else
-                lbl_relationship.ImageIndex = 0;
+            Misc.TurnGreenIndicator(cbx_relationship.SelectedIndex, lbl_relationship);
         }
         #endregion
+
+        private void view_contact_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -215,6 +215,12 @@
     <Compile Include="Maintenance\FormUserManager.Designer.cs">
       <DependentUpon>FormUserManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Miscellaneous\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\ControlEmployeeRegistration.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -403,6 +409,9 @@
     <EmbeddedResource Include="Maintenance\FormUserManager.resx">
       <DependentUpon>FormUserManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlEmployeeRegistration.resx">
       <DependentUpon>ControlEmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -529,9 +538,7 @@
   <ItemGroup>
     <None Include="Resources\if_Save_27876.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

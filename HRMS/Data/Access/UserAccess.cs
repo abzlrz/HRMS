@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using Data.Types;
+using System;
 
 namespace Data.Access
 {
@@ -17,7 +18,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(DB.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "sp_login";
+                adapter.SelectCommand.CommandText = "[User].sp_login";
                 adapter.SelectCommand.Parameters.AddWithValue("@id", int.Parse(user.ID));
                 adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
 
@@ -44,6 +45,21 @@ namespace Data.Access
 
                 return rows > 0;
             }
+        }
+
+        public DataTable Show()
+        {
+            var table = new DataTable();
+            using(var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Properties.Settings.Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "[User].sp_populateUser";
+
+                adapter.Fill(table);
+            }
+            return table;
         }
     }
 }

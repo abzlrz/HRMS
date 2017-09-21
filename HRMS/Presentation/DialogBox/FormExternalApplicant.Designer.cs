@@ -128,7 +128,6 @@
             this.controlOtherDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlOtherDetails1.Location = new System.Drawing.Point(0, 85);
             this.controlOtherDetails1.Name = "controlOtherDetails1";
-            this.controlOtherDetails1.Next = null;
             this.controlOtherDetails1.Padding = new System.Windows.Forms.Padding(12);
             this.controlOtherDetails1.Previous = this.controlApplicationDetails1;
             this.controlOtherDetails1.Size = new System.Drawing.Size(641, 515);
