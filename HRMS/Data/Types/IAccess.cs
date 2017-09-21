@@ -25,6 +25,6 @@ namespace Data.Types
         bool Insert(EmployeeAddress address);
         bool Insert(EmployeeSalaryInfo salary);
         bool Insert(EmployeeHiringManager manager);
-        bool Insert()
+        bool Insert();
     }
 }
