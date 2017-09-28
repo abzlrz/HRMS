@@ -538,5 +538,29 @@ namespace Data.Properties {
                 this["DeleteTitanTitle"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showIllnessData_temp")]
+        public string ShowIllnessDataTemp {
+            get {
+                return ((string)(this["ShowIllnessDataTemp"]));
+            }
+            set {
+                this["ShowIllnessDataTemp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=tempdb;Integrated Security=True")]
+        public string TempDBConnectionString {
+            get {
+                return ((string)(this["TempDBConnectionString"]));
+            }
+            set {
+                this["TempDBConnectionString"] = value;
+            }
+        }
     }
 }

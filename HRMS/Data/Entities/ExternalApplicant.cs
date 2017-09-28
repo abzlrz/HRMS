@@ -82,8 +82,8 @@ namespace Data.Entities
     public class Illness
     {
         public int ApplicantID { get; set; }
-        public bool IsDiagnosed { get; set; } = false;
-        public bool IsLifetime { get; set; } = false;
+        public string IsDiagnosed { get; set; }
+        public string IsLifetime { get; set; }
         public string Description { get; set; }
         public string Details { get; set; }
     }
@@ -91,7 +91,7 @@ namespace Data.Entities
     public class LegalCase
     {
         public int ApplicantID { get; set; }
-        public bool IsLawsuited { get; set; } = false;
+        public string IsLawsuited { get; set; }
         public string Description { get; set; }
         public string Details { get; set; }
     }
@@ -99,7 +99,7 @@ namespace Data.Entities
     public class LegalConviction
     {
         public int ApplicantID { get; set; }
-        public bool IsConvicted { get; set; } = false;
+        public string IsConvicted { get; set; }
         public string Description { get; set; }
         public string Details { get; set; }
     }
@@ -107,7 +107,7 @@ namespace Data.Entities
     public class MedicalOperation
     {
         public int ApplicantID { get; set; }
-        public bool IsOperated { get; set; } = false;
+        public string IsOperated { get; set; }
         public string Description { get; set; }
         public string Details { get; set; }
     }

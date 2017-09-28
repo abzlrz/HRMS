@@ -61,14 +61,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_delete = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.view_contacts = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
-            this.bs_contacts = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_ok = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.helpProvider = new System.Windows.Forms.HelpProvider();
+            this.view_contacts = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -77,11 +76,10 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_contacts)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -508,9 +506,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.view_contacts);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.view_contacts);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(10, 10);
@@ -521,10 +519,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.btn_delete);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 238);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 233);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(334, 58);
+            this.panel5.Size = new System.Drawing.Size(334, 63);
             this.panel5.TabIndex = 28;
             // 
             // btn_delete
@@ -552,23 +550,6 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // view_contacts
-            // 
-            this.view_contacts.AllowUserToAddRows = false;
-            this.view_contacts.AllowUserToDeleteRows = false;
-            this.view_contacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.view_contacts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.view_contacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_contacts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.view_contacts.Location = new System.Drawing.Point(0, 31);
-            this.view_contacts.Name = "view_contacts";
-            this.view_contacts.ReadOnly = true;
-            this.view_contacts.RowHeadersVisible = false;
-            this.view_contacts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_contacts.Size = new System.Drawing.Size(334, 207);
-            this.view_contacts.TabIndex = 2;
-            this.view_contacts.SelectionChanged += new System.EventHandler(this.view_contacts_SelectionChanged);
             // 
             // label13
             // 
@@ -624,6 +605,24 @@
             this.tabControl1.Size = new System.Drawing.Size(386, 320);
             this.tabControl1.TabIndex = 10;
             // 
+            // view_contacts
+            // 
+            this.view_contacts.AllowUserToAddRows = false;
+            this.view_contacts.AllowUserToDeleteRows = false;
+            this.view_contacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_contacts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.view_contacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_contacts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_contacts.Location = new System.Drawing.Point(0, 31);
+            this.view_contacts.Name = "view_contacts";
+            this.view_contacts.ReadOnly = true;
+            this.view_contacts.RowHeadersVisible = false;
+            this.view_contacts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_contacts.Size = new System.Drawing.Size(334, 202);
+            this.view_contacts.TabIndex = 12;
+            this.view_contacts.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_contacts_RowsAdded);
+            this.view_contacts.SelectionChanged += new System.EventHandler(this.view_contacts_SelectionChanged);
+            // 
             // FormContactPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -639,6 +638,7 @@
             this.Name = "FormContactPerson";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Contacts";
+            this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -649,11 +649,10 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_contacts)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -681,9 +680,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView view_contacts;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.BindingSource bs_contacts;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_ok;
@@ -699,5 +696,6 @@
         private System.Windows.Forms.ComboBox cbx_edit_relationship;
         private System.Windows.Forms.HelpProvider helpProvider;
         private Miscellaneous.CustomTextbox tbx_add_contactno;
+        private System.Windows.Forms.DataGridView view_contacts;
     }
 }

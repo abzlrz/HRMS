@@ -1,6 +1,7 @@
 ﻿using Data.Entities;
 using System;
-using System.ComponentModel;
+using System.Data;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox
@@ -8,22 +9,30 @@ namespace Presentation.DialogBox
     public partial class FormContactPerson : Form
     {
         #region fields
-        private BindingList<ContactPerson> contacts;
+        private DataTable table_contacts;
         #endregion
 
         public FormContactPerson()
         {
             InitializeComponent();
-            this.contacts = new BindingList<ContactPerson>();
-            this.bs_contacts = new BindingSource(contacts, null);
-
-            this.view_contacts.DataSource = bs_contacts;
-            this.view_contacts.Columns["ApplicantID"].Visible = false;
-            this.view_contacts.Columns["ContactNumber"].HeaderText = "Contact Number";
-
-            this.contacts.ListChanged += Contacts_ListChanged;
+            this.table_contacts = new DataTable();
         }
 
+        private DataTable GetContacts()
+        {
+            this.table_contacts.Columns.Add("ApplicantID", typeof(int));
+            this.table_contacts.Columns.Add("Firstname", typeof(string));
+            this.table_contacts.Columns.Add("Lastname", typeof(string));
+            this.table_contacts.Columns.Add("Relationship", typeof(string));
+            this.table_contacts.Columns.Add("ContactNumber", typeof(string));
+
+            return table_contacts;
+        }
+
+        public void ImplementNotSortable(DataGridView view)
+        {
+            view.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
+        }
 
         private bool ValidateAddFields()
         {
@@ -55,10 +64,6 @@ namespace Presentation.DialogBox
 
             return result;
         }
-        private void RefreshData()
-        {
-            this.view_contacts.DataSource = bs_contacts;
-        }
         private void ResetAddFields()
         {
             tbx_add_firstname.ResetText();
@@ -80,21 +85,17 @@ namespace Presentation.DialogBox
             cbx_edit_relationship.Text = obj.RelationShip;
             tbx_edit_contactno.Text = obj.ContactNumber;
         }
-        private void ReCheck()
+
+        private void OnLoad(object sender, EventArgs e)
         {
-            if(contacts.Count == 0)
-            {
-                btn_delete.Enabled = false;
-                btn_edit_save.Enabled = false;
-            }
-            else
-            {
-                btn_delete.Enabled = true;
-                btn_edit_save.Enabled = true;
-            }
-
+            //
+            // contacts datagridview
+            //
+            this.view_contacts.DataSource = GetContacts();
+            this.view_contacts.Columns["ApplicantID"].Visible = false;
+            ImplementNotSortable(view_contacts);
         }
-
+        
         #region Events
         private void tbx_add_firstname_TextChanged(object sender, EventArgs e)
         {
@@ -135,60 +136,116 @@ namespace Presentation.DialogBox
         {
             Misc.TurnGreenIndicator(tbx_edit_contactno.Text, lbl_edit_contactno);
         }
-        
-        private void Contacts_ListChanged(object sender, ListChangedEventArgs e)
-        {
-            ReCheck();
-        }
 
         private void btn_add_reset_Click(object sender, EventArgs e)
         {
             ResetAddFields();
         }
 
+        #endregion
+
         private void btn_add_save_Click(object sender, EventArgs e)
         {
-            if (ValidateAddFields())
+            try
             {
-                var contact = new ContactPerson()
+                if (ValidateAddFields())
                 {
-                    Firstname = tbx_add_firstname.Text,
-                    Lastname = tbx_add_lastname.Text,
-                    RelationShip = cbx_add_relationship.Text,
-                    ContactNumber = tbx_add_contactno.Text
-                };
+                    var rows = new ContactPerson()
+                    {
+                        ApplicantID = 0,
+                        Firstname = tbx_add_firstname.Text,
+                        Lastname = tbx_add_lastname.Text,
+                        RelationShip = cbx_add_relationship.Text,
+                        ContactNumber = tbx_add_contactno.Text
+                    };
 
-                contacts.Add(contact);
-                ResetAddFields();
+                    table_contacts.Rows.Add(rows.ApplicantID,
+                        rows.Firstname,
+                        rows.Lastname,
+                        rows.RelationShip,
+                        rows.ContactNumber);
+
+                    MessageBox.Show("Data Successfully Added!");
+                }
+                else
+                {
+                    MessageBox.Show("Please complete the fields!");
+                }
             }
-            else
+            catch { }
+            finally
             {
-                MessageBox.Show("Please complete all the required fields!");
+                view_contacts.ClearSelection();
+                ResetAddFields();
             }
         }
 
         private void btn_edit_save_Click(object sender, EventArgs e)
         {
-            if (ValidateEditFields())
+            try
             {
-                if (contacts.Count > 0)
+                if (ValidateEditFields())
                 {
-                    int index = view_contacts.SelectedRows[0].Index;
-
-                    var new_contact = new ContactPerson()
+                    var row = new ContactPerson()
                     {
+                        ApplicantID = 0,
                         Firstname = tbx_edit_firstname.Text,
                         Lastname = tbx_edit_lastname.Text,
-                        RelationShip = cbx_edit_relationship.Text,
-                        ContactNumber = tbx_edit_contactno.Text
+                        ContactNumber = tbx_edit_contactno.Text,
+                        RelationShip = cbx_edit_relationship.Text
                     };
-                    contacts[index] = new_contact;
+
+                    table_contacts.Rows.RemoveAt(view_contacts.SelectedRows[0].Index);
+                    table_contacts.Rows.Add(row.ApplicantID,
+                        row.Firstname,
+                        row.Lastname,
+                        row.RelationShip,
+                        row.ContactNumber);
+
+                    btn_edit_save.Enabled = false;
+                    btn_delete.Enabled = false;
                 }
-                
             }
-            else
+            catch { }
+            finally
             {
-                MessageBox.Show("Please complete all the required fields!");
+                view_contacts.ClearSelection();
+                ResetEditFields();
+            }
+        }
+
+        private void view_contacts_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (view_contacts.SelectedRows.Count > 0)
+                {
+                    var item = table_contacts.Rows[view_contacts.SelectedRows[0].Index];
+
+                    tbx_edit_firstname.Text = item["Firstname"].ToString();
+                    tbx_edit_lastname.Text = item["Lastname"].ToString();
+                    cbx_edit_relationship.Text = item["Relationship"].ToString();
+                    tbx_edit_contactno.Text = item["ContactNumber"].ToString();
+
+
+                    btn_edit_save.Enabled = true;
+                    btn_delete.Enabled = true;
+                }
+                else
+                {
+                    btn_edit_save.Enabled = false;
+                    btn_delete.Enabled = false;
+                }
+            }
+            catch { }
+        }
+
+        private void view_contacts_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            if(view_contacts.Rows.Count > 0)
+            {
+                btn_edit_save.Enabled = true;
+                btn_delete.Enabled = true;
             }
         }
 
@@ -196,25 +253,14 @@ namespace Presentation.DialogBox
         {
             try
             {
-                view_contacts.Rows.Remove(view_contacts.SelectedRows[0]);
-                RefreshData();
-                ResetEditFields();
-                view_contacts.ClearSelection();
+                table_contacts.Rows.RemoveAt(view_contacts.SelectedRows[0].Index);
             }
             catch { }
-        }
-
-        private void view_contacts_SelectionChanged(object sender, EventArgs e)
-        {
-            try
+            finally
             {
-                var item = view_contacts.SelectedRows[0].DataBoundItem as ContactPerson;
-
-                if (contacts.Count > 0)
-                    Populate(item);
+                view_contacts.ClearSelection();
+                ResetEditFields();
             }
-            catch { }
         }
-        #endregion
     }
 }

@@ -29,47 +29,44 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.controlYesNoRadioButton2 = new Presentation.Miscellaneous.ControlYesNoRadioButton();
+            this.IsMedOperated = new Presentation.Miscellaneous.ControlYesNoRadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.view_operations = new System.Windows.Forms.DataGridView();
+            this.panel_operations = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbx_operated_details = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.view_operation = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tbx_operated_desc = new System.Windows.Forms.TextBox();
+            this.btn_operated_add = new System.Windows.Forms.Button();
+            this.btn_operated_delete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.view_illness = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.view_illness = new System.Windows.Forms.DataGridView();
+            this.panel_illness = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.controlYesNoRadioButton3 = new Presentation.Miscellaneous.ControlYesNoRadioButton();
+            this.IsLifetimeIllness = new Presentation.Miscellaneous.ControlYesNoRadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbx_illness_details = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.controlYesNoRadioButton1 = new Presentation.Miscellaneous.ControlYesNoRadioButton();
+            this.tbx_illness_description = new System.Windows.Forms.TextBox();
+            this.btn_illness_add = new System.Windows.Forms.Button();
+            this.btn_illness_delete = new System.Windows.Forms.Button();
+            this.IsDiagnosedByIlness = new Presentation.Miscellaneous.ControlYesNoRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_operations)).BeginInit();
+            this.panel_operations.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_illness)).BeginInit();
+            this.panel_illness.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.controlYesNoRadioButton2);
+            this.panel2.Controls.Add(this.IsMedOperated);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -79,39 +76,58 @@
             this.panel2.Size = new System.Drawing.Size(418, 403);
             this.panel2.TabIndex = 1;
             // 
-            // controlYesNoRadioButton2
+            // IsMedOperated
             // 
-            this.controlYesNoRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
-            this.controlYesNoRadioButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.controlYesNoRadioButton2.Location = new System.Drawing.Point(19, 36);
-            this.controlYesNoRadioButton2.Name = "controlYesNoRadioButton2";
-            this.controlYesNoRadioButton2.Padding = new System.Windows.Forms.Padding(3);
-            this.controlYesNoRadioButton2.Size = new System.Drawing.Size(125, 37);
-            this.controlYesNoRadioButton2.TabIndex = 5;
+            this.IsMedOperated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.IsMedOperated.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.IsMedOperated.Location = new System.Drawing.Point(19, 36);
+            this.IsMedOperated.Name = "IsMedOperated";
+            this.IsMedOperated.Padding = new System.Windows.Forms.Padding(3);
+            this.IsMedOperated.Size = new System.Drawing.Size(125, 37);
+            this.IsMedOperated.TabIndex = 5;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.view_operation);
+            this.panel3.Controls.Add(this.view_operations);
+            this.panel3.Controls.Add(this.panel_operations);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(7, 73);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(404, 323);
             this.panel3.TabIndex = 3;
             // 
-            // panel7
+            // view_operations
             // 
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.textBox2);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.textBox4);
-            this.panel7.Controls.Add(this.button3);
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 177);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(404, 146);
-            this.panel7.TabIndex = 1;
+            this.view_operations.AllowUserToAddRows = false;
+            this.view_operations.AllowUserToDeleteRows = false;
+            this.view_operations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_operations.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.view_operations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_operations.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_operations.Enabled = false;
+            this.view_operations.Location = new System.Drawing.Point(0, 0);
+            this.view_operations.Name = "view_operations";
+            this.view_operations.ReadOnly = true;
+            this.view_operations.RowHeadersVisible = false;
+            this.view_operations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_operations.Size = new System.Drawing.Size(404, 177);
+            this.view_operations.TabIndex = 3;
+            this.view_operations.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_operations_RowsAdded);
+            // 
+            // panel_operations
+            // 
+            this.panel_operations.Controls.Add(this.label7);
+            this.panel_operations.Controls.Add(this.tbx_operated_details);
+            this.panel_operations.Controls.Add(this.label8);
+            this.panel_operations.Controls.Add(this.tbx_operated_desc);
+            this.panel_operations.Controls.Add(this.btn_operated_add);
+            this.panel_operations.Controls.Add(this.btn_operated_delete);
+            this.panel_operations.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_operations.Enabled = false;
+            this.panel_operations.Location = new System.Drawing.Point(0, 177);
+            this.panel_operations.Name = "panel_operations";
+            this.panel_operations.Size = new System.Drawing.Size(404, 146);
+            this.panel_operations.TabIndex = 1;
             // 
             // label7
             // 
@@ -123,13 +139,13 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Details:";
             // 
-            // textBox2
+            // tbx_operated_details
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 41);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(319, 20);
-            this.textBox2.TabIndex = 18;
+            this.tbx_operated_details.Location = new System.Drawing.Point(80, 41);
+            this.tbx_operated_details.Margin = new System.Windows.Forms.Padding(5);
+            this.tbx_operated_details.Name = "tbx_operated_details";
+            this.tbx_operated_details.Size = new System.Drawing.Size(319, 20);
+            this.tbx_operated_details.TabIndex = 18;
             // 
             // label8
             // 
@@ -141,60 +157,34 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Description:";
             // 
-            // textBox4
+            // tbx_operated_desc
             // 
-            this.textBox4.Location = new System.Drawing.Point(80, 16);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(319, 20);
-            this.textBox4.TabIndex = 14;
+            this.tbx_operated_desc.Location = new System.Drawing.Point(80, 16);
+            this.tbx_operated_desc.Margin = new System.Windows.Forms.Padding(5);
+            this.tbx_operated_desc.Name = "tbx_operated_desc";
+            this.tbx_operated_desc.Size = new System.Drawing.Size(319, 20);
+            this.tbx_operated_desc.TabIndex = 14;
             // 
-            // button3
+            // btn_operated_add
             // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(241, 119);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 22);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_operated_add.Location = new System.Drawing.Point(241, 119);
+            this.btn_operated_add.Name = "btn_operated_add";
+            this.btn_operated_add.Size = new System.Drawing.Size(75, 22);
+            this.btn_operated_add.TabIndex = 15;
+            this.btn_operated_add.Text = "Add";
+            this.btn_operated_add.UseVisualStyleBackColor = true;
+            this.btn_operated_add.Click += new System.EventHandler(this.btn_operated_add_Click);
             // 
-            // button4
+            // btn_operated_delete
             // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(324, 119);
-            this.button4.Margin = new System.Windows.Forms.Padding(5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 22);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // view_operation
-            // 
-            this.view_operation.BackColor = System.Drawing.SystemColors.Control;
-            this.view_operation.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2,
-            this.columnHeader5});
-            this.view_operation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_operation.HideSelection = false;
-            this.view_operation.Location = new System.Drawing.Point(0, 0);
-            this.view_operation.MultiSelect = false;
-            this.view_operation.Name = "view_operation";
-            this.view_operation.Size = new System.Drawing.Size(404, 323);
-            this.view_operation.TabIndex = 2;
-            this.view_operation.UseCompatibleStateImageBehavior = false;
-            this.view_operation.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Description";
-            this.columnHeader2.Width = 177;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Details";
-            this.columnHeader5.Width = 220;
+            this.btn_operated_delete.Location = new System.Drawing.Point(324, 119);
+            this.btn_operated_delete.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_operated_delete.Name = "btn_operated_delete";
+            this.btn_operated_delete.Size = new System.Drawing.Size(75, 22);
+            this.btn_operated_delete.TabIndex = 16;
+            this.btn_operated_delete.Text = "Delete";
+            this.btn_operated_delete.UseVisualStyleBackColor = true;
+            this.btn_operated_delete.Click += new System.EventHandler(this.btn_operated_delete_Click);
             // 
             // label1
             // 
@@ -227,7 +217,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.view_illness);
-            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel_illness);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(7, 73);
             this.panel4.Name = "panel4";
@@ -236,51 +226,38 @@
             // 
             // view_illness
             // 
-            this.view_illness.BackColor = System.Drawing.SystemColors.Control;
-            this.view_illness.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader3,
-            this.columnHeader4});
+            this.view_illness.AllowUserToAddRows = false;
+            this.view_illness.AllowUserToDeleteRows = false;
+            this.view_illness.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_illness.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.view_illness.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.view_illness.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_illness.HideSelection = false;
+            this.view_illness.Enabled = false;
             this.view_illness.Location = new System.Drawing.Point(0, 0);
-            this.view_illness.MultiSelect = false;
             this.view_illness.Name = "view_illness";
+            this.view_illness.ReadOnly = true;
+            this.view_illness.RowHeadersVisible = false;
+            this.view_illness.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_illness.Size = new System.Drawing.Size(404, 177);
-            this.view_illness.TabIndex = 2;
-            this.view_illness.UseCompatibleStateImageBehavior = false;
-            this.view_illness.View = System.Windows.Forms.View.Details;
+            this.view_illness.TabIndex = 3;
+            this.view_illness.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_illness_RowsAdded);
             // 
-            // columnHeader1
+            // panel_illness
             // 
-            this.columnHeader1.Text = "Description";
-            this.columnHeader1.Width = 176;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Details";
-            this.columnHeader3.Width = 136;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Is Lifetime?";
-            this.columnHeader4.Width = 86;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.controlYesNoRadioButton3);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 177);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(404, 146);
-            this.panel5.TabIndex = 1;
+            this.panel_illness.Controls.Add(this.label5);
+            this.panel_illness.Controls.Add(this.IsLifetimeIllness);
+            this.panel_illness.Controls.Add(this.label4);
+            this.panel_illness.Controls.Add(this.tbx_illness_details);
+            this.panel_illness.Controls.Add(this.label3);
+            this.panel_illness.Controls.Add(this.tbx_illness_description);
+            this.panel_illness.Controls.Add(this.btn_illness_add);
+            this.panel_illness.Controls.Add(this.btn_illness_delete);
+            this.panel_illness.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_illness.Enabled = false;
+            this.panel_illness.Location = new System.Drawing.Point(0, 177);
+            this.panel_illness.Name = "panel_illness";
+            this.panel_illness.Size = new System.Drawing.Size(404, 146);
+            this.panel_illness.TabIndex = 1;
             // 
             // label5
             // 
@@ -292,15 +269,15 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Is it a lifetime illness?";
             // 
-            // controlYesNoRadioButton3
+            // IsLifetimeIllness
             // 
-            this.controlYesNoRadioButton3.BackColor = System.Drawing.SystemColors.Control;
-            this.controlYesNoRadioButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.controlYesNoRadioButton3.Location = new System.Drawing.Point(130, 69);
-            this.controlYesNoRadioButton3.Name = "controlYesNoRadioButton3";
-            this.controlYesNoRadioButton3.Padding = new System.Windows.Forms.Padding(3);
-            this.controlYesNoRadioButton3.Size = new System.Drawing.Size(132, 37);
-            this.controlYesNoRadioButton3.TabIndex = 12;
+            this.IsLifetimeIllness.BackColor = System.Drawing.SystemColors.Control;
+            this.IsLifetimeIllness.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.IsLifetimeIllness.Location = new System.Drawing.Point(130, 69);
+            this.IsLifetimeIllness.Name = "IsLifetimeIllness";
+            this.IsLifetimeIllness.Padding = new System.Windows.Forms.Padding(3);
+            this.IsLifetimeIllness.Size = new System.Drawing.Size(132, 37);
+            this.IsLifetimeIllness.TabIndex = 12;
             // 
             // label4
             // 
@@ -312,13 +289,13 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Details:";
             // 
-            // textBox3
+            // tbx_illness_details
             // 
-            this.textBox3.Location = new System.Drawing.Point(80, 41);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(319, 20);
-            this.textBox3.TabIndex = 10;
+            this.tbx_illness_details.Location = new System.Drawing.Point(80, 41);
+            this.tbx_illness_details.Margin = new System.Windows.Forms.Padding(5);
+            this.tbx_illness_details.Name = "tbx_illness_details";
+            this.tbx_illness_details.Size = new System.Drawing.Size(319, 20);
+            this.tbx_illness_details.TabIndex = 10;
             // 
             // label3
             // 
@@ -330,48 +307,48 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Description:";
             // 
-            // textBox1
+            // tbx_illness_description
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 16);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 20);
-            this.textBox1.TabIndex = 6;
+            this.tbx_illness_description.Location = new System.Drawing.Point(80, 16);
+            this.tbx_illness_description.Margin = new System.Windows.Forms.Padding(5);
+            this.tbx_illness_description.Name = "tbx_illness_description";
+            this.tbx_illness_description.Size = new System.Drawing.Size(319, 20);
+            this.tbx_illness_description.TabIndex = 6;
             // 
-            // button1
+            // btn_illness_add
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(241, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_illness_add.Location = new System.Drawing.Point(241, 119);
+            this.btn_illness_add.Name = "btn_illness_add";
+            this.btn_illness_add.Size = new System.Drawing.Size(75, 22);
+            this.btn_illness_add.TabIndex = 7;
+            this.btn_illness_add.Text = "Add";
+            this.btn_illness_add.UseVisualStyleBackColor = true;
+            this.btn_illness_add.Click += new System.EventHandler(this.btn_illness_add_Click);
             // 
-            // button2
+            // btn_illness_delete
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(324, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 22);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_illness_delete.Location = new System.Drawing.Point(324, 119);
+            this.btn_illness_delete.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_illness_delete.Name = "btn_illness_delete";
+            this.btn_illness_delete.Size = new System.Drawing.Size(75, 22);
+            this.btn_illness_delete.TabIndex = 8;
+            this.btn_illness_delete.Text = "Delete";
+            this.btn_illness_delete.UseVisualStyleBackColor = true;
+            this.btn_illness_delete.Click += new System.EventHandler(this.btn_illness_delete_Click);
             // 
-            // controlYesNoRadioButton1
+            // IsDiagnosedByIlness
             // 
-            this.controlYesNoRadioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
-            this.controlYesNoRadioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.controlYesNoRadioButton1.Location = new System.Drawing.Point(19, 36);
-            this.controlYesNoRadioButton1.Name = "controlYesNoRadioButton1";
-            this.controlYesNoRadioButton1.Padding = new System.Windows.Forms.Padding(3);
-            this.controlYesNoRadioButton1.Size = new System.Drawing.Size(132, 37);
-            this.controlYesNoRadioButton1.TabIndex = 4;
+            this.IsDiagnosedByIlness.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.IsDiagnosedByIlness.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.IsDiagnosedByIlness.Location = new System.Drawing.Point(19, 36);
+            this.IsDiagnosedByIlness.Name = "IsDiagnosedByIlness";
+            this.IsDiagnosedByIlness.Padding = new System.Windows.Forms.Padding(3);
+            this.IsDiagnosedByIlness.Size = new System.Drawing.Size(132, 37);
+            this.IsDiagnosedByIlness.TabIndex = 4;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.controlYesNoRadioButton1);
+            this.panel1.Controls.Add(this.IsDiagnosedByIlness);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -395,14 +372,16 @@
             this.Name = "FormBackgroundIllness";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "History of Illness";
-            this.Load += new System.EventHandler(this.FormBackgroundIllness_Load);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_operations)).EndInit();
+            this.panel_operations.ResumeLayout(false);
+            this.panel_operations.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_illness)).EndInit();
+            this.panel_illness.ResumeLayout(false);
+            this.panel_illness.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -411,34 +390,29 @@
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ListView view_operation;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel_operations;
         private System.Windows.Forms.Label label1;
-        private Miscellaneous.ControlYesNoRadioButton controlYesNoRadioButton2;
+        private Miscellaneous.ControlYesNoRadioButton IsMedOperated;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbx_operated_details;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.TextBox tbx_operated_desc;
+        private System.Windows.Forms.Button btn_operated_add;
+        private System.Windows.Forms.Button btn_operated_delete;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ListView view_illness;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel_illness;
         private System.Windows.Forms.Label label5;
-        private Miscellaneous.ControlYesNoRadioButton controlYesNoRadioButton3;
+        private Miscellaneous.ControlYesNoRadioButton IsLifetimeIllness;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbx_illness_details;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private Miscellaneous.ControlYesNoRadioButton controlYesNoRadioButton1;
+        private System.Windows.Forms.TextBox tbx_illness_description;
+        private System.Windows.Forms.Button btn_illness_add;
+        private System.Windows.Forms.Button btn_illness_delete;
+        private Miscellaneous.ControlYesNoRadioButton IsDiagnosedByIlness;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView view_operations;
+        private System.Windows.Forms.DataGridView view_illness;
     }
 }

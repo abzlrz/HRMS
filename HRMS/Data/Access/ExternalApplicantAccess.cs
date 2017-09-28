@@ -24,6 +24,10 @@ namespace Data.Access
             }
             return data;
         }
-       
+
+        public DataTable ShowIllnessData()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

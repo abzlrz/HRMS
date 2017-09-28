@@ -896,7 +896,6 @@
         private System.Windows.Forms.HelpProvider helpProvider;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_ok;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fromToDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
