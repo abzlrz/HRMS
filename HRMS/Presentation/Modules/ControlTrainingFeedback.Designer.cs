@@ -58,7 +58,6 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
@@ -77,10 +76,10 @@
             this.panel1.Controls.Add(this.view_trainingFeedback);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Location = new System.Drawing.Point(1, 26);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 364);
+            this.panel1.Size = new System.Drawing.Size(1073, 373);
             this.panel1.TabIndex = 1;
             // 
             // view_trainingFeedback
@@ -90,7 +89,7 @@
             this.view_trainingFeedback.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_trainingFeedback.Location = new System.Drawing.Point(0, 29);
             this.view_trainingFeedback.Name = "view_trainingFeedback";
-            this.view_trainingFeedback.Size = new System.Drawing.Size(1067, 335);
+            this.view_trainingFeedback.Size = new System.Drawing.Size(1073, 344);
             this.view_trainingFeedback.TabIndex = 0;
             // 
             // contextMenuStrip
@@ -116,7 +115,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1067, 29);
+            this.panel2.Size = new System.Drawing.Size(1073, 29);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -130,7 +129,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1039, 27);
+            this.panel3.Size = new System.Drawing.Size(1045, 27);
             this.panel3.TabIndex = 0;
             // 
             // cbx_show
@@ -195,7 +194,7 @@
             // 
             this.p1.Dock = System.Windows.Forms.DockStyle.Right;
             this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(1039, 0);
+            this.p1.Location = new System.Drawing.Point(1045, 0);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(26, 27);
             this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -209,24 +208,24 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel4.Location = new System.Drawing.Point(1, 1);
+            this.panel4.Margin = new System.Windows.Forms.Padding(1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1067, 23);
+            this.panel4.Size = new System.Drawing.Size(1073, 23);
             this.panel4.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.SeaGreen;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1067, 23);
+            this.label1.Size = new System.Drawing.Size(1073, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Training Feedback && Assesment";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ControlTrainingFeedback
             // 

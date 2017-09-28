@@ -3,10 +3,11 @@ using System.Data;
 using System.Data.SqlClient;
 using Data.Types;
 using System;
+using static Data.Properties.Settings;
 
 namespace Data.Access
 {
-    public class UserAccess : IUserAccess
+    public class UserAccess
     {
         public bool Login(User user)
         {
@@ -19,7 +20,7 @@ namespace Data.Access
                 adapter.SelectCommand.Connection = new SqlConnection(DB.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
                 adapter.SelectCommand.CommandText = "[User].sp_login";
-                adapter.SelectCommand.Parameters.AddWithValue("@id", int.Parse(user.ID));
+                adapter.SelectCommand.Parameters.AddWithValue("@id", user.Username);
                 adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
 
                 adapter.Fill(table);
@@ -28,38 +29,97 @@ namespace Data.Access
                 return row == null ? false : true;
             }
         }
-        public bool ChangePassword(User user)
+
+        public DataRow GetUserByID(int id)
         {
-            using (var command = new SqlCommand())
+            var table = new DataTable();
+            DataRow row;
+            using (var adapter = new SqlDataAdapter())
             {
-                command.Connection = new SqlConnection(DB.ConnectionString);
-                command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "sp_changePassword";
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = Default.GetUserByID;
 
-                command.Parameters.AddWithValue("@id", user.ID);
-                command.Parameters.AddWithValue("@password", user.Password);
+                adapter.SelectCommand.Parameters.AddWithValue("@id", id);
 
-                command.Connection.Open();
-                var rows = command.ExecuteNonQuery();
-                command.Connection.Close();
+                adapter.Fill(table);
+                row = table.Rows.Count > 0 ? table.Rows[0] : null;
+
+                return row;
+            }
+        }
+
+        public bool Insert(User user)
+        {
+            using(var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = Default.InsertUser;
+
+                cmd.Parameters.AddWithValue("@username", user.Username);
+                cmd.Parameters.AddWithValue("@password", user.Password);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
 
                 return rows > 0;
             }
         }
 
-        public DataTable Show()
+        public DataTable ShowData()
         {
-            var table = new DataTable();
+            var data = new DataTable();
             using(var adapter = new SqlDataAdapter())
             {
                 adapter.SelectCommand = new SqlCommand();
-                adapter.SelectCommand.Connection = new SqlConnection(Properties.Settings.Default.ConnectionString);
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "[User].sp_populateUser";
+                adapter.SelectCommand.CommandText = Default.ShowUserData;
 
-                adapter.Fill(table);
+                adapter.Fill(data);
             }
-            return table;
+            return data;
         }
+
+        public bool Update(int id, User user)
+        {
+            using(var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = Default.UpdateUser;
+
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@username", user.Username);
+                cmd.Parameters.AddWithValue("@password", user.Password);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return rows > 0;
+            }
+        }
+        public bool Delete(int id)
+        {
+            using (var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = Default.DeleteUser;
+
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.Connection.Open();
+                var row = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return row > 0;
+            }
+        }
+
     }
 }

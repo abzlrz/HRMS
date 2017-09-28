@@ -47,6 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.designer.cs">
+      <DependentUpon>FormEmploymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.designer.cs">
+      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormCheckVacancies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormCheckVacancies.Designer.cs">
+      <DependentUpon>FormCheckVacancies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox\FormJobPosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormJobPosting.Designer.cs">
+      <DependentUpon>FormJobPosting.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,23 +125,17 @@
     <Compile Include="DialogBox\FormRegisterExistingEmployee.Designer.cs">
       <DependentUpon>FormRegisterExistingEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormClearanceLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormClearanceLogin.Designer.cs">
       <DependentUpon>FormClearanceLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.Designer.cs">
-      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.Designer.cs">
-      <DependentUpon>FormBackgroundEmployment.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.cs">
       <SubType>Form</SubType>
@@ -209,17 +227,41 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maintenance\FormUserManager.cs">
+    <Compile Include="Maintenance\FormRefManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Maintenance\FormUserManager.Designer.cs">
-      <DependentUpon>FormUserManager.cs</DependentUpon>
+    <Compile Include="Maintenance\FormRefManager.Designer.cs">
+      <DependentUpon>FormRefManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\FormUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FormUserManagement.Designer.cs">
+      <DependentUpon>FormUserManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Miscellaneous\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\ControlCurrentUserOnUse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\ControlCurrentUserOnUse.Designer.cs">
+      <DependentUpon>ControlCurrentUserOnUse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\ControlYesNoRadioButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\ControlYesNoRadioButton.Designer.cs">
+      <DependentUpon>ControlYesNoRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\CustomTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\CustomTextbox.Designer.cs">
+      <DependentUpon>CustomTextbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\ControlEmployeeRegistration.cs">
       <SubType>UserControl</SubType>
@@ -256,12 +298,6 @@
     </Compile>
     <Compile Include="Modules\ControlRecruitmentDashboard.Designer.cs">
       <DependentUpon>ControlRecruitmentDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\ControlExistingEmployeeRegistration.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Modules\ControlExistingEmployeeRegistration.Designer.cs">
-      <DependentUpon>ControlExistingEmployeeRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\ControlRelivingDashboard.cs">
       <SubType>UserControl</SubType>
@@ -325,6 +361,18 @@
     <Compile Include="Miscellaneous.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.resx">
+      <DependentUpon>FormEmploymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.resx">
+      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormCheckVacancies.resx">
+      <DependentUpon>FormCheckVacancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormJobPosting.resx">
+      <DependentUpon>FormJobPosting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.resx">
       <DependentUpon>ControlApplicantEvaluation.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,14 +400,11 @@
     <EmbeddedResource Include="DialogBox\FormRegisterExistingEmployee.resx">
       <DependentUpon>FormRegisterExistingEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClearanceLogin.resx">
       <DependentUpon>FormClearanceLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.resx">
-      <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEmployment.resx">
-      <DependentUpon>FormBackgroundEmployment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.resx">
       <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
@@ -406,11 +451,23 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Maintenance\FormUserManager.resx">
-      <DependentUpon>FormUserManager.cs</DependentUpon>
+    <EmbeddedResource Include="Maintenance\FormRefManager.resx">
+      <DependentUpon>FormRefManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FormUserManagement.resx">
+      <DependentUpon>FormUserManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\ControlCurrentUserOnUse.resx">
+      <DependentUpon>ControlCurrentUserOnUse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\ControlYesNoRadioButton.resx">
+      <DependentUpon>ControlYesNoRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\CustomTextbox.resx">
+      <DependentUpon>CustomTextbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlEmployeeRegistration.resx">
       <DependentUpon>ControlEmployeeRegistration.cs</DependentUpon>
@@ -429,9 +486,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlRecruitmentDashboard.resx">
       <DependentUpon>ControlRecruitmentDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ControlExistingEmployeeRegistration.resx">
-      <DependentUpon>ControlExistingEmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlRelivingDashboard.resx">
       <DependentUpon>ControlRelivingDashboard.cs</DependentUpon>
@@ -465,6 +519,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Data.Entities.Applicant.datasource" />
+    <None Include="Properties\DataSources\Data.Entities.Education.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -538,7 +594,9 @@
   <ItemGroup>
     <None Include="Resources\if_Save_27876.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

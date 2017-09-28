@@ -32,17 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlApplicationDetails));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbx_preferredSite = new System.Windows.Forms.ComboBox();
-            this.lbl_position = new System.Windows.Forms.Label();
+            this.lbl_site = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.label8 = new System.Windows.Forms.Label();
-            this.cbx_position = new System.Windows.Forms.ComboBox();
-            this.lbl_preferredSite = new System.Windows.Forms.Label();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.date_applicationDate = new System.Windows.Forms.DateTimePicker();
+            this.lbl_position_title = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.cbx_employeeName = new System.Windows.Forms.ComboBox();
             this.lbl_employeeName = new System.Windows.Forms.Label();
-            this.lbl_source = new System.Windows.Forms.Label();
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.cbx_source = new System.Windows.Forms.ComboBox();
             this.cbx_employeeID = new System.Windows.Forms.ComboBox();
@@ -50,6 +47,9 @@
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
+            this.lbl_position = new System.Windows.Forms.Label();
+            this.lbl_preferredSite = new System.Windows.Forms.Label();
+            this.lbl_source = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -75,12 +75,12 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.34471F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.65529F));
-            this.tableLayoutPanel2.Controls.Add(this.cbx_preferredSite, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_site, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.lbl_position, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.cbx_position, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_preferredSite, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker8, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.date_applicationDate, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_position_title, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(53, 202);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -95,38 +95,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(496, 71);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // cbx_preferredSite
+            // lbl_site
             // 
-            this.cbx_preferredSite.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_preferredSite.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_preferredSite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_preferredSite.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_preferredSite.FormattingEnabled = true;
-            this.cbx_preferredSite.Items.AddRange(new object[] {
-            "Alabang",
-            "Eastwood",
-            "Clark, Pampanga"});
-            this.cbx_preferredSite.Location = new System.Drawing.Point(216, 48);
-            this.cbx_preferredSite.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_preferredSite.Name = "cbx_preferredSite";
-            this.cbx_preferredSite.Size = new System.Drawing.Size(278, 21);
-            this.cbx_preferredSite.TabIndex = 89;
-            this.cbx_preferredSite.SelectedIndexChanged += new System.EventHandler(this.cbx_preferredSite_SelectedIndexChanged);
-            // 
-            // lbl_position
-            // 
-            this.lbl_position.AutoSize = true;
-            this.lbl_position.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_position.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_position.ImageIndex = 1;
-            this.lbl_position.ImageList = this.imageList;
-            this.lbl_position.Location = new System.Drawing.Point(5, 2);
-            this.lbl_position.Name = "lbl_position";
-            this.lbl_position.Size = new System.Drawing.Size(206, 21);
-            this.lbl_position.TabIndex = 51;
-            this.lbl_position.Text = "Position:";
-            this.lbl_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_site.BackColor = System.Drawing.Color.White;
+            this.lbl_site.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_site.Location = new System.Drawing.Point(219, 48);
+            this.lbl_site.Name = "lbl_site";
+            this.lbl_site.Size = new System.Drawing.Size(272, 21);
+            this.lbl_site.TabIndex = 91;
+            this.lbl_site.Text = "<--->";
+            this.lbl_site.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // imageList
             // 
@@ -147,55 +125,25 @@
             this.label8.Text = "Application Date:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cbx_position
+            // date_applicationDate
             // 
-            this.cbx_position.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_position.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_position.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_position.FormattingEnabled = true;
-            this.cbx_position.Items.AddRange(new object[] {
-            "Applicant Referral",
-            "Employee Referral",
-            "Word of Mouth",
-            "Jobstreet",
-            "Social Media",
-            "Billboards",
-            "Banner/Poster/Flyer",
-            "TV/Radio/Newspaper Ad",
-            "Recruitment Events/Job Fair",
-            "Recruitment Partners/Vendors",
-            "Former Employee",
-            "Others"});
-            this.cbx_position.Location = new System.Drawing.Point(216, 2);
-            this.cbx_position.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_position.Name = "cbx_position";
-            this.cbx_position.Size = new System.Drawing.Size(278, 21);
-            this.cbx_position.TabIndex = 76;
-            this.cbx_position.SelectedIndexChanged += new System.EventHandler(this.cbx_position_SelectedIndexChanged);
+            this.date_applicationDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.date_applicationDate.Location = new System.Drawing.Point(216, 25);
+            this.date_applicationDate.Margin = new System.Windows.Forms.Padding(0);
+            this.date_applicationDate.Name = "date_applicationDate";
+            this.date_applicationDate.Size = new System.Drawing.Size(278, 22);
+            this.date_applicationDate.TabIndex = 88;
             // 
-            // lbl_preferredSite
+            // lbl_position_title
             // 
-            this.lbl_preferredSite.AutoSize = true;
-            this.lbl_preferredSite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_preferredSite.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_preferredSite.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_preferredSite.ImageIndex = 1;
-            this.lbl_preferredSite.ImageList = this.imageList;
-            this.lbl_preferredSite.Location = new System.Drawing.Point(5, 48);
-            this.lbl_preferredSite.Name = "lbl_preferredSite";
-            this.lbl_preferredSite.Size = new System.Drawing.Size(206, 21);
-            this.lbl_preferredSite.TabIndex = 83;
-            this.lbl_preferredSite.Text = "Preffered Site:";
-            this.lbl_preferredSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dateTimePicker8
-            // 
-            this.dateTimePicker8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker8.Location = new System.Drawing.Point(216, 25);
-            this.dateTimePicker8.Margin = new System.Windows.Forms.Padding(0);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(278, 22);
-            this.dateTimePicker8.TabIndex = 88;
+            this.lbl_position_title.BackColor = System.Drawing.Color.White;
+            this.lbl_position_title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_position_title.Location = new System.Drawing.Point(219, 2);
+            this.lbl_position_title.Name = "lbl_position_title";
+            this.lbl_position_title.Size = new System.Drawing.Size(272, 21);
+            this.lbl_position_title.TabIndex = 90;
+            this.lbl_position_title.Text = "<--->";
+            this.lbl_position_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -246,21 +194,6 @@
             this.lbl_employeeName.TabIndex = 80;
             this.lbl_employeeName.Text = "Name:";
             this.lbl_employeeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_source
-            // 
-            this.lbl_source.AutoSize = true;
-            this.lbl_source.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_source.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_source.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_source.ImageIndex = 1;
-            this.lbl_source.ImageList = this.imageList;
-            this.lbl_source.Location = new System.Drawing.Point(5, 2);
-            this.lbl_source.Name = "lbl_source";
-            this.lbl_source.Size = new System.Drawing.Size(206, 21);
-            this.lbl_source.TabIndex = 51;
-            this.lbl_source.Text = "Source:";
-            this.lbl_source.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_employeeID
             // 
@@ -371,6 +304,51 @@
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
+            // lbl_position
+            // 
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_position.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_position.ImageIndex = 1;
+            this.lbl_position.ImageList = this.imageList;
+            this.lbl_position.Location = new System.Drawing.Point(5, 2);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Size = new System.Drawing.Size(206, 21);
+            this.lbl_position.TabIndex = 51;
+            this.lbl_position.Text = "Position:";
+            this.lbl_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_preferredSite
+            // 
+            this.lbl_preferredSite.AutoSize = true;
+            this.lbl_preferredSite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_preferredSite.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_preferredSite.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_preferredSite.ImageIndex = 1;
+            this.lbl_preferredSite.ImageList = this.imageList;
+            this.lbl_preferredSite.Location = new System.Drawing.Point(5, 48);
+            this.lbl_preferredSite.Name = "lbl_preferredSite";
+            this.lbl_preferredSite.Size = new System.Drawing.Size(206, 21);
+            this.lbl_preferredSite.TabIndex = 83;
+            this.lbl_preferredSite.Text = "Preffered Site:";
+            this.lbl_preferredSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_source
+            // 
+            this.lbl_source.AutoSize = true;
+            this.lbl_source.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_source.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_source.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_source.ImageIndex = 1;
+            this.lbl_source.ImageList = this.imageList;
+            this.lbl_source.Location = new System.Drawing.Point(5, 2);
+            this.lbl_source.Name = "lbl_source";
+            this.lbl_source.Size = new System.Drawing.Size(206, 21);
+            this.lbl_source.TabIndex = 51;
+            this.lbl_source.Text = "Source:";
+            this.lbl_source.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // ControlApplicationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +358,7 @@
             this.Name = "ControlApplicationDetails";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(641, 515);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -398,12 +377,10 @@
         private System.Windows.Forms.Label lbl_employeeID;
         private System.Windows.Forms.ComboBox cbx_source;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ComboBox cbx_preferredSite;
         private System.Windows.Forms.Label lbl_position;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbx_position;
         private System.Windows.Forms.Label lbl_preferredSite;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
+        private System.Windows.Forms.DateTimePicker date_applicationDate;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_next;
@@ -411,5 +388,7 @@
         private System.Windows.Forms.Button btn_previous;
         private System.Windows.Forms.ComboBox cbx_employeeName;
         private System.Windows.Forms.ComboBox cbx_employeeID;
+        private System.Windows.Forms.Label lbl_site;
+        private System.Windows.Forms.Label lbl_position_title;
     }
 }

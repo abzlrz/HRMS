@@ -1,4 +1,5 @@
-﻿using Presentation.Maintenance;
+﻿using Presentation.DialogBox;
+using Presentation.Maintenance;
 using Presentation.Miscellaneous;
 using Presentation.Modules;
 using Presentation.View;
@@ -27,7 +28,6 @@ namespace Presentation
             this.dash_training = new ControlTrainingDashboard();
 
             this.mod_employeeRegistration = new ControlEmployeeRegistration();
-            this.mod_employeeRegistrationEx = new ControlExistingEmployeeRegistration();
             this.mod_evaluation = new ControlInterviewEvaluation();
             this.mod_resignation = new ControlEmployeeResignation();
             this.mod_appraisal = new ControlPerformanceAppraisal();
@@ -35,8 +35,10 @@ namespace Presentation
             this.mod_trainingFeedback = new ControlTrainingFeedback();
             this.mod_trainingSchedule = new ControlTrainingSchedule();
 
-            this.usermgr = new FormUserManager();
+            this.usermgr = new FormUserManagement();
             this.clrLogin = new FormClearanceLogin();
+            this.refmngr = new FormRefManager();
+            this.jobposting = new FormJobPosting();
 
             this.about = new AboutBox();
         }
@@ -56,6 +58,7 @@ namespace Presentation
             ctrl.BringToFront();
             panel2.BringToFront();
         }
+
         private void OnTreeViewAfterSelect(object sender, TreeViewEventArgs e)
         {
             string selectedNode = treeView.SelectedNode.Text;
@@ -74,13 +77,6 @@ namespace Presentation
             if (selectedNode == "Interview Evaluation")
             {
                 ShowControlOnPanel2(modPanel, mod_evaluation);
-                ShowControlOnPanel2(viewsPanel, view_recruitment);
-            }
-                
-
-            if (selectedNode == "Employee Registration (Existing)")
-            {
-                ShowControlOnPanel2(modPanel, mod_employeeRegistrationEx);
                 ShowControlOnPanel2(viewsPanel, view_recruitment);
             }
                 
@@ -139,17 +135,19 @@ namespace Presentation
 
             #endregion
         }
+
         private void OnSignoutToolStripMenuItemClick(object sender, System.EventArgs e)
         {
             var login = new FormLogin();
             login.Show();
             this.Hide();
         }
+
         private void OnLoad(object sender, System.EventArgs e)
         {
             var mods = new List<UserControl>()
             {
-                mod_employeeRegistration, mod_employeeRegistrationEx, mod_evaluation, mod_appraisal,
+                mod_employeeRegistration, mod_evaluation, mod_appraisal,
                 mod_checklist, mod_resignation, mod_trainingFeedback, mod_trainingSchedule
             };
 
@@ -167,6 +165,7 @@ namespace Presentation
             views.ForEach(x => { viewsPanel.Controls.Add(x); x.Dock = DockStyle.Fill; });
             dash.ForEach(x => { panel1.Controls.Add(x); x.Dock = DockStyle.Fill; });
         }
+
         private void closeClick(object sender, System.EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "Arvato HRMS",
@@ -175,13 +174,25 @@ namespace Presentation
                 Application.Exit();
             }
         }
+
         private void minimizeClick(object sender, System.EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void manageUsersClick(object sender, System.EventArgs e)
+
+        private void aboutToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            
+            about.ShowDialog();
+        }
+
+        private void manageReferencesToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            refmngr.ShowDialog();
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            jobposting.ShowDialog();
         }
 
         private ControlEmployee view_employee;
@@ -194,7 +205,6 @@ namespace Presentation
         private ControlRelivingDashboard dash_reliving;
 
         private ControlEmployeeRegistration mod_employeeRegistration;
-        private ControlExistingEmployeeRegistration mod_employeeRegistrationEx;
         private ControlInterviewEvaluation mod_evaluation;
         private ControlPERChecklist mod_checklist;
         private ControlPerformanceAppraisal mod_appraisal;
@@ -202,23 +212,12 @@ namespace Presentation
         private ControlTrainingFeedback mod_trainingFeedback;
         private ControlTrainingSchedule mod_trainingSchedule;
 
-        private FormUserManager usermgr;
+        private FormUserManagement usermgr;
         private FormClearanceLogin clrLogin;
+        private FormRefManager refmngr;
+        private FormJobPosting jobposting;
 
         private AboutBox about;
-
-        private void flow_procedures_MouseUp(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void flow_procedures_MouseDown(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            about.ShowDialog();
-        }
     }
     
 }

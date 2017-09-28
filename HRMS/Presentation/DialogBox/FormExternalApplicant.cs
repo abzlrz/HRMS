@@ -6,6 +6,7 @@ namespace Presentation.DialogBox
 {
     public partial class FormExternalApplicant : Form
     {
+
         private ControlPersonalInformation ctrl_info;
         private ControlApplicationDetails ctrl_appDetails;
         private ControlAddress ctrl_address;

@@ -55,7 +55,6 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 0);
@@ -74,24 +73,24 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel4.Location = new System.Drawing.Point(1, 1);
+            this.panel4.Margin = new System.Windows.Forms.Padding(1);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1085, 23);
+            this.panel4.Size = new System.Drawing.Size(1091, 23);
             this.panel4.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Brown;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1085, 23);
+            this.label1.Size = new System.Drawing.Size(1091, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Reliving Module";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControl1
             // 
@@ -99,10 +98,10 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(6, 34);
+            this.tabControl1.Location = new System.Drawing.Point(3, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1081, 651);
+            this.tabControl1.Size = new System.Drawing.Size(1087, 660);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -111,7 +110,7 @@
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1073, 625);
+            this.tabPage1.Size = new System.Drawing.Size(1079, 634);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Employee";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -122,7 +121,7 @@
             this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_employee.Location = new System.Drawing.Point(0, 100);
             this.view_employee.Name = "view_employee";
-            this.view_employee.Size = new System.Drawing.Size(1073, 525);
+            this.view_employee.Size = new System.Drawing.Size(1079, 534);
             this.view_employee.TabIndex = 0;
             // 
             // panel1
@@ -130,7 +129,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1073, 100);
+            this.panel1.Size = new System.Drawing.Size(1079, 100);
             this.panel1.TabIndex = 1;
             // 
             // tabPage2
@@ -139,7 +138,7 @@
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1076, 628);
+            this.tabPage2.Size = new System.Drawing.Size(1073, 625);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Resignees";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -150,7 +149,7 @@
             this.view_resignees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_resignees.Location = new System.Drawing.Point(0, 100);
             this.view_resignees.Name = "view_resignees";
-            this.view_resignees.Size = new System.Drawing.Size(1076, 528);
+            this.view_resignees.Size = new System.Drawing.Size(1073, 525);
             this.view_resignees.TabIndex = 2;
             // 
             // panel2
@@ -158,7 +157,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1076, 100);
+            this.panel2.Size = new System.Drawing.Size(1073, 100);
             this.panel2.TabIndex = 3;
             // 
             // resigneedMenuStrip

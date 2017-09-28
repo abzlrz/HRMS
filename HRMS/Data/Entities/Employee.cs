@@ -2,7 +2,7 @@
 
 namespace Data.Entities
 {
-    public class ExistingEmployeeRegistrationForm
+    public class ExistingEmployee
     {
         public Employee Employee { get; set; }
         public EmployeeAddress Address { get; set; }
@@ -51,15 +51,15 @@ namespace Data.Entities
         public decimal AnnualLanguageAllowance { get; set; }
         public decimal ShiftAllowance { get; set; }
         public decimal RelocationAllowance { get; set; }
-        public decimal RelocationAllowanceDetail { get; set; }
+        public string RelocationAllowanceDetail { get; set; }
         public decimal CostCentre { get; set; }
     }
 
     public class EmployeeHiringManager
     {
         public int EmployeeID { get; set; }
-        public int HiringManagerID { get; set; }
-        public string HiringManagerName { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
     
     public class EmployeeTitanTitle

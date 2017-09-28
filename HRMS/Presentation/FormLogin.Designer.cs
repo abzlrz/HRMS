@@ -60,7 +60,7 @@
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(402, 75);
             this.btnApply.TabIndex = 0;
-            this.btnApply.Text = "Apply Job";
+            this.btnApply.Text = "Check Vacancies";
             this.tip.SetToolTip(this.btnApply, "Press F1");
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.OnApplyClick);
@@ -136,11 +136,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(249, 320);
+            this.label1.Location = new System.Drawing.Point(249, 323);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 21);
+            this.label1.Size = new System.Drawing.Size(81, 21);
             this.label1.TabIndex = 8;
-            this.label1.Text = "ID";
+            this.label1.Text = "Username";
             // 
             // pictureBox1
             // 

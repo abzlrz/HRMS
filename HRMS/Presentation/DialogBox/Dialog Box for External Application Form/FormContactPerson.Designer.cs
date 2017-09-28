@@ -31,142 +31,120 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormContactPerson));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.view_contact = new System.Windows.Forms.DataGridView();
-            this.main = new System.Windows.Forms.Panel();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_relationship = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_edit_contactno = new System.Windows.Forms.TextBox();
+            this.lbl_edit_contactno = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.lbl_firstname = new System.Windows.Forms.Label();
-            this.lbl_lastname = new System.Windows.Forms.Label();
-            this.lbl_contactNo = new System.Windows.Forms.Label();
-            this.tbx_firstname = new System.Windows.Forms.TextBox();
-            this.tbx_lastname = new System.Windows.Forms.TextBox();
-            this.tbx_contactNo = new System.Windows.Forms.TextBox();
-            this.cbx_relationship = new System.Windows.Forms.ComboBox();
+            this.lbl_edit_firstname = new System.Windows.Forms.Label();
+            this.lbl_edit_lastname = new System.Windows.Forms.Label();
+            this.lbl_edit_relationship = new System.Windows.Forms.Label();
+            this.tbx_edit_firstname = new System.Windows.Forms.TextBox();
+            this.tbx_edit_lastname = new System.Windows.Forms.TextBox();
+            this.cbx_edit_relationship = new System.Windows.Forms.ComboBox();
+            this.btn_edit_save = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.main = new System.Windows.Forms.Panel();
+            this.btn_add_reset = new System.Windows.Forms.Button();
+            this.btn_add_save = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_add_contactno = new System.Windows.Forms.Label();
+            this.lbl_add_firstname = new System.Windows.Forms.Label();
+            this.lbl_add_lastname = new System.Windows.Forms.Label();
+            this.lbl_add_relationship = new System.Windows.Forms.Label();
+            this.tbx_add_firstname = new System.Windows.Forms.TextBox();
+            this.tbx_add_lastname = new System.Windows.Forms.TextBox();
+            this.cbx_add_relationship = new System.Windows.Forms.ComboBox();
+            this.tbx_add_contactno = new Presentation.Miscellaneous.CustomTextbox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.view_contacts = new System.Windows.Forms.DataGridView();
+            this.label13 = new System.Windows.Forms.Label();
+            this.bs_contacts = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_ok = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_contact)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.main.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bs_contacts)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.view_contact);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Controls.Add(this.tableLayoutPanel2);
+            this.panel2.Controls.Add(this.btn_edit_save);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(10, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 265);
-            this.panel2.TabIndex = 4;
+            this.panel2.Size = new System.Drawing.Size(358, 270);
+            this.panel2.TabIndex = 9;
             // 
-            // view_contact
+            // tableLayoutPanel2
             // 
-            this.view_contact.BackgroundColor = System.Drawing.Color.White;
-            this.view_contact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_contact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_contact.Location = new System.Drawing.Point(0, 0);
-            this.view_contact.Name = "view_contact";
-            this.view_contact.Size = new System.Drawing.Size(196, 265);
-            this.view_contact.TabIndex = 6;
-            this.view_contact.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_contact_CellContentClick);
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.64306F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.35694F));
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_contactno, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_contactno, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_firstname, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_lastname, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_relationship, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_firstname, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_lastname, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cbx_edit_relationship, 1, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1, 38);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(357, 173);
+            this.tableLayoutPanel2.TabIndex = 11;
             // 
-            // main
+            // tbx_edit_contactno
             // 
-            this.main.Controls.Add(this.btn_delete);
-            this.main.Controls.Add(this.btn_add);
-            this.main.Controls.Add(this.btn_edit);
-            this.main.Controls.Add(this.tableLayoutPanel6);
-            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main.Location = new System.Drawing.Point(208, 12);
-            this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(403, 265);
-            this.main.TabIndex = 5;
+            this.tbx_edit_contactno.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbx_edit_contactno.Location = new System.Drawing.Point(148, 90);
+            this.tbx_edit_contactno.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_contactno.MaxLength = 15;
+            this.tbx_edit_contactno.Name = "tbx_edit_contactno";
+            this.tbx_edit_contactno.Size = new System.Drawing.Size(209, 25);
+            this.tbx_edit_contactno.TabIndex = 111;
+            this.tbx_edit_contactno.Tag = "required";
+            this.tbx_edit_contactno.TextChanged += new System.EventHandler(this.tbx_edit_contactno_TextChanged);
             // 
-            // btn_delete
+            // lbl_edit_contactno
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.Firebrick;
-            this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(296, 232);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(75, 23);
-            this.btn_delete.TabIndex = 12;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.UseVisualStyleBackColor = false;
-            // 
-            // btn_add
-            // 
-            this.btn_add.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(134, 232);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
-            this.btn_add.TabIndex = 11;
-            this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = false;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.Green;
-            this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.Location = new System.Drawing.Point(215, 232);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(75, 23);
-            this.btn_edit.TabIndex = 13;
-            this.btn_edit.Text = "Save";
-            this.btn_edit.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.49292F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.50708F));
-            this.tableLayoutPanel6.Controls.Add(this.lbl_relationship, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.lbl_firstname, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.lbl_lastname, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lbl_contactNo, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.tbx_firstname, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.tbx_lastname, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.tbx_contactNo, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.cbx_relationship, 1, 3);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(18, 49);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 4;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(353, 136);
-            this.tableLayoutPanel6.TabIndex = 2;
-            // 
-            // lbl_relationship
-            // 
-            this.lbl_relationship.AutoSize = true;
-            this.lbl_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_relationship.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_relationship.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_relationship.ImageIndex = 1;
-            this.lbl_relationship.ImageList = this.imageList;
-            this.lbl_relationship.Location = new System.Drawing.Point(3, 90);
-            this.lbl_relationship.Name = "lbl_relationship";
-            this.lbl_relationship.Size = new System.Drawing.Size(144, 46);
-            this.lbl_relationship.TabIndex = 90;
-            this.lbl_relationship.Text = "Relationship:";
+            this.lbl_edit_contactno.AutoSize = true;
+            this.lbl_edit_contactno.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_contactno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_edit_contactno.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_edit_contactno.ImageIndex = 1;
+            this.lbl_edit_contactno.ImageList = this.imageList;
+            this.lbl_edit_contactno.Location = new System.Drawing.Point(3, 90);
+            this.lbl_edit_contactno.Name = "lbl_edit_contactno";
+            this.lbl_edit_contactno.Size = new System.Drawing.Size(142, 83);
+            this.lbl_edit_contactno.TabIndex = 90;
+            this.lbl_edit_contactno.Text = "Contact Number:";
             // 
             // imageList
             // 
@@ -175,86 +153,78 @@
             this.imageList.Images.SetKeyName(0, "green_dot.png");
             this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
-            // lbl_firstname
+            // lbl_edit_firstname
             // 
-            this.lbl_firstname.AutoSize = true;
-            this.lbl_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_firstname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_firstname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_firstname.ImageIndex = 1;
-            this.lbl_firstname.ImageList = this.imageList;
-            this.lbl_firstname.Location = new System.Drawing.Point(3, 0);
-            this.lbl_firstname.Name = "lbl_firstname";
-            this.lbl_firstname.Size = new System.Drawing.Size(144, 30);
-            this.lbl_firstname.TabIndex = 51;
-            this.lbl_firstname.Text = "Firstname:";
+            this.lbl_edit_firstname.AutoSize = true;
+            this.lbl_edit_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_firstname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_edit_firstname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_edit_firstname.ImageIndex = 1;
+            this.lbl_edit_firstname.ImageList = this.imageList;
+            this.lbl_edit_firstname.Location = new System.Drawing.Point(3, 0);
+            this.lbl_edit_firstname.Name = "lbl_edit_firstname";
+            this.lbl_edit_firstname.Size = new System.Drawing.Size(142, 30);
+            this.lbl_edit_firstname.TabIndex = 51;
+            this.lbl_edit_firstname.Text = "Firstname:";
             // 
-            // lbl_lastname
+            // lbl_edit_lastname
             // 
-            this.lbl_lastname.AutoSize = true;
-            this.lbl_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_lastname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lastname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_lastname.ImageIndex = 1;
-            this.lbl_lastname.ImageList = this.imageList;
-            this.lbl_lastname.Location = new System.Drawing.Point(3, 30);
-            this.lbl_lastname.Name = "lbl_lastname";
-            this.lbl_lastname.Size = new System.Drawing.Size(144, 30);
-            this.lbl_lastname.TabIndex = 52;
-            this.lbl_lastname.Text = "Lastname:";
+            this.lbl_edit_lastname.AutoSize = true;
+            this.lbl_edit_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_lastname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_edit_lastname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_edit_lastname.ImageIndex = 1;
+            this.lbl_edit_lastname.ImageList = this.imageList;
+            this.lbl_edit_lastname.Location = new System.Drawing.Point(3, 30);
+            this.lbl_edit_lastname.Name = "lbl_edit_lastname";
+            this.lbl_edit_lastname.Size = new System.Drawing.Size(142, 30);
+            this.lbl_edit_lastname.TabIndex = 52;
+            this.lbl_edit_lastname.Text = "Lastname:";
             // 
-            // lbl_contactNo
+            // lbl_edit_relationship
             // 
-            this.lbl_contactNo.AutoSize = true;
-            this.lbl_contactNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_contactNo.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_contactNo.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_contactNo.ImageIndex = 1;
-            this.lbl_contactNo.ImageList = this.imageList;
-            this.lbl_contactNo.Location = new System.Drawing.Point(3, 60);
-            this.lbl_contactNo.Name = "lbl_contactNo";
-            this.lbl_contactNo.Size = new System.Drawing.Size(144, 30);
-            this.lbl_contactNo.TabIndex = 83;
-            this.lbl_contactNo.Text = "Contact Number:";
+            this.lbl_edit_relationship.AutoSize = true;
+            this.lbl_edit_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_relationship.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_edit_relationship.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_edit_relationship.ImageIndex = 1;
+            this.lbl_edit_relationship.ImageList = this.imageList;
+            this.lbl_edit_relationship.Location = new System.Drawing.Point(3, 60);
+            this.lbl_edit_relationship.Name = "lbl_edit_relationship";
+            this.lbl_edit_relationship.Size = new System.Drawing.Size(142, 30);
+            this.lbl_edit_relationship.TabIndex = 83;
+            this.lbl_edit_relationship.Text = "Relationship:";
             // 
-            // tbx_firstname
+            // tbx_edit_firstname
             // 
-            this.tbx_firstname.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbx_firstname.Location = new System.Drawing.Point(150, 0);
-            this.tbx_firstname.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_firstname.Name = "tbx_firstname";
-            this.tbx_firstname.Size = new System.Drawing.Size(203, 20);
-            this.tbx_firstname.TabIndex = 108;
-            this.tbx_firstname.Tag = "required";
-            this.tbx_firstname.TextChanged += new System.EventHandler(this.tbx_firstname_TextChanged);
+            this.tbx_edit_firstname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbx_edit_firstname.Location = new System.Drawing.Point(148, 0);
+            this.tbx_edit_firstname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_firstname.MaxLength = 99;
+            this.tbx_edit_firstname.Name = "tbx_edit_firstname";
+            this.tbx_edit_firstname.Size = new System.Drawing.Size(209, 25);
+            this.tbx_edit_firstname.TabIndex = 108;
+            this.tbx_edit_firstname.Tag = "required";
+            this.tbx_edit_firstname.TextChanged += new System.EventHandler(this.tbx_edit_firstname_TextChanged);
             // 
-            // tbx_lastname
+            // tbx_edit_lastname
             // 
-            this.tbx_lastname.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbx_lastname.Location = new System.Drawing.Point(150, 30);
-            this.tbx_lastname.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_lastname.Name = "tbx_lastname";
-            this.tbx_lastname.Size = new System.Drawing.Size(203, 20);
-            this.tbx_lastname.TabIndex = 109;
-            this.tbx_lastname.Tag = "required";
-            this.tbx_lastname.TextChanged += new System.EventHandler(this.tbx_lastname_TextChanged);
+            this.tbx_edit_lastname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbx_edit_lastname.Location = new System.Drawing.Point(148, 30);
+            this.tbx_edit_lastname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_lastname.MaxLength = 99;
+            this.tbx_edit_lastname.Name = "tbx_edit_lastname";
+            this.tbx_edit_lastname.Size = new System.Drawing.Size(209, 25);
+            this.tbx_edit_lastname.TabIndex = 109;
+            this.tbx_edit_lastname.Tag = "required";
+            this.tbx_edit_lastname.TextChanged += new System.EventHandler(this.tbx_edit_lastname_TextChanged);
             // 
-            // tbx_contactNo
+            // cbx_edit_relationship
             // 
-            this.tbx_contactNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_contactNo.Location = new System.Drawing.Point(150, 60);
-            this.tbx_contactNo.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_contactNo.Name = "tbx_contactNo";
-            this.tbx_contactNo.Size = new System.Drawing.Size(203, 20);
-            this.tbx_contactNo.TabIndex = 110;
-            this.tbx_contactNo.TextChanged += new System.EventHandler(this.tbx_contactNo_TextChanged);
-            // 
-            // cbx_relationship
-            // 
-            this.cbx_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_relationship.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_relationship.FormattingEnabled = true;
-            this.cbx_relationship.Items.AddRange(new object[] {
+            this.cbx_edit_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_edit_relationship.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_edit_relationship.FormattingEnabled = true;
+            this.cbx_edit_relationship.Items.AddRange(new object[] {
             "Father",
             "Mother",
             "Wife",
@@ -281,50 +251,386 @@
             "Stepbrother",
             "Stepsister",
             "Friend",
-            "Colleague",
             "Others"});
-            this.cbx_relationship.Location = new System.Drawing.Point(150, 90);
-            this.cbx_relationship.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_relationship.Name = "cbx_relationship";
-            this.cbx_relationship.Size = new System.Drawing.Size(203, 21);
-            this.cbx_relationship.TabIndex = 111;
-            this.cbx_relationship.SelectedIndexChanged += new System.EventHandler(this.cbx_relationship_SelectedIndexChanged);
+            this.cbx_edit_relationship.Location = new System.Drawing.Point(148, 60);
+            this.cbx_edit_relationship.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_edit_relationship.Name = "cbx_edit_relationship";
+            this.cbx_edit_relationship.Size = new System.Drawing.Size(209, 25);
+            this.cbx_edit_relationship.TabIndex = 110;
+            this.cbx_edit_relationship.SelectedIndexChanged += new System.EventHandler(this.cbx_edit_relationship_SelectedIndexChanged);
+            // 
+            // btn_edit_save
+            // 
+            this.btn_edit_save.BackColor = System.Drawing.Color.Green;
+            this.btn_edit_save.Enabled = false;
+            this.btn_edit_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_edit_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit_save.ForeColor = System.Drawing.Color.White;
+            this.btn_edit_save.Location = new System.Drawing.Point(149, 218);
+            this.btn_edit_save.Name = "btn_edit_save";
+            this.btn_edit_save.Size = new System.Drawing.Size(75, 33);
+            this.btn_edit_save.TabIndex = 10;
+            this.btn_edit_save.Text = "Save";
+            this.btn_edit_save.UseVisualStyleBackColor = false;
+            this.btn_edit_save.Click += new System.EventHandler(this.btn_edit_save_Click);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.main);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(10);
+            this.tabPage1.Size = new System.Drawing.Size(378, 290);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Add";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // main
+            // 
+            this.main.Controls.Add(this.btn_add_reset);
+            this.main.Controls.Add(this.btn_add_save);
+            this.main.Controls.Add(this.tableLayoutPanel1);
+            this.main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main.Location = new System.Drawing.Point(10, 10);
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(358, 270);
+            this.main.TabIndex = 8;
+            // 
+            // btn_add_reset
+            // 
+            this.btn_add_reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(169)))));
+            this.btn_add_reset.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_add_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_reset.ForeColor = System.Drawing.Color.White;
+            this.btn_add_reset.Location = new System.Drawing.Point(112, 217);
+            this.btn_add_reset.Name = "btn_add_reset";
+            this.btn_add_reset.Size = new System.Drawing.Size(75, 33);
+            this.btn_add_reset.TabIndex = 11;
+            this.btn_add_reset.Text = "Reset";
+            this.btn_add_reset.UseVisualStyleBackColor = false;
+            this.btn_add_reset.Click += new System.EventHandler(this.btn_add_reset_Click);
+            // 
+            // btn_add_save
+            // 
+            this.btn_add_save.BackColor = System.Drawing.Color.Green;
+            this.btn_add_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_add_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_save.ForeColor = System.Drawing.Color.White;
+            this.helpProvider.SetHelpString(this.btn_add_save, "Put input values on fields first before saving");
+            this.btn_add_save.Location = new System.Drawing.Point(193, 217);
+            this.btn_add_save.Name = "btn_add_save";
+            this.helpProvider.SetShowHelp(this.btn_add_save, true);
+            this.btn_add_save.Size = new System.Drawing.Size(75, 33);
+            this.btn_add_save.TabIndex = 10;
+            this.btn_add_save.Text = "Save";
+            this.btn_add_save.UseVisualStyleBackColor = false;
+            this.btn_add_save.Click += new System.EventHandler(this.btn_add_save_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.64306F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.35694F));
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_contactno, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_firstname, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_lastname, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_relationship, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_firstname, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_lastname, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_add_relationship, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_contactno, 1, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 38);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(357, 173);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // lbl_add_contactno
+            // 
+            this.lbl_add_contactno.AutoSize = true;
+            this.lbl_add_contactno.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_contactno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_add_contactno.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_add_contactno.ImageIndex = 1;
+            this.lbl_add_contactno.ImageList = this.imageList;
+            this.lbl_add_contactno.Location = new System.Drawing.Point(3, 90);
+            this.lbl_add_contactno.Name = "lbl_add_contactno";
+            this.lbl_add_contactno.Size = new System.Drawing.Size(142, 83);
+            this.lbl_add_contactno.TabIndex = 90;
+            this.lbl_add_contactno.Text = "Contact Number:";
+            // 
+            // lbl_add_firstname
+            // 
+            this.lbl_add_firstname.AutoSize = true;
+            this.lbl_add_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_firstname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_add_firstname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_add_firstname.ImageIndex = 1;
+            this.lbl_add_firstname.ImageList = this.imageList;
+            this.lbl_add_firstname.Location = new System.Drawing.Point(3, 0);
+            this.lbl_add_firstname.Name = "lbl_add_firstname";
+            this.lbl_add_firstname.Size = new System.Drawing.Size(142, 30);
+            this.lbl_add_firstname.TabIndex = 51;
+            this.lbl_add_firstname.Text = "Firstname:";
+            // 
+            // lbl_add_lastname
+            // 
+            this.lbl_add_lastname.AutoSize = true;
+            this.lbl_add_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_lastname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_add_lastname.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_add_lastname.ImageIndex = 1;
+            this.lbl_add_lastname.ImageList = this.imageList;
+            this.lbl_add_lastname.Location = new System.Drawing.Point(3, 30);
+            this.lbl_add_lastname.Name = "lbl_add_lastname";
+            this.lbl_add_lastname.Size = new System.Drawing.Size(142, 30);
+            this.lbl_add_lastname.TabIndex = 52;
+            this.lbl_add_lastname.Text = "Lastname:";
+            // 
+            // lbl_add_relationship
+            // 
+            this.lbl_add_relationship.AutoSize = true;
+            this.lbl_add_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_relationship.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_add_relationship.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_add_relationship.ImageIndex = 1;
+            this.lbl_add_relationship.ImageList = this.imageList;
+            this.lbl_add_relationship.Location = new System.Drawing.Point(3, 60);
+            this.lbl_add_relationship.Name = "lbl_add_relationship";
+            this.lbl_add_relationship.Size = new System.Drawing.Size(142, 30);
+            this.lbl_add_relationship.TabIndex = 83;
+            this.lbl_add_relationship.Text = "Relationship:";
+            // 
+            // tbx_add_firstname
+            // 
+            this.tbx_add_firstname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbx_add_firstname.Location = new System.Drawing.Point(148, 0);
+            this.tbx_add_firstname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_firstname.MaxLength = 99;
+            this.tbx_add_firstname.Name = "tbx_add_firstname";
+            this.tbx_add_firstname.Size = new System.Drawing.Size(209, 25);
+            this.tbx_add_firstname.TabIndex = 108;
+            this.tbx_add_firstname.Tag = "required";
+            this.tbx_add_firstname.TextChanged += new System.EventHandler(this.tbx_add_firstname_TextChanged);
+            // 
+            // tbx_add_lastname
+            // 
+            this.tbx_add_lastname.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbx_add_lastname.Location = new System.Drawing.Point(148, 30);
+            this.tbx_add_lastname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_lastname.MaxLength = 99;
+            this.tbx_add_lastname.Name = "tbx_add_lastname";
+            this.tbx_add_lastname.Size = new System.Drawing.Size(209, 25);
+            this.tbx_add_lastname.TabIndex = 109;
+            this.tbx_add_lastname.Tag = "required";
+            this.tbx_add_lastname.TextChanged += new System.EventHandler(this.tbx_add_lastname_TextChanged);
+            // 
+            // cbx_add_relationship
+            // 
+            this.cbx_add_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_add_relationship.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_add_relationship.FormattingEnabled = true;
+            this.cbx_add_relationship.Items.AddRange(new object[] {
+            "Father",
+            "Mother",
+            "Wife",
+            "Husband",
+            "Son",
+            "Daughter",
+            "Brother",
+            "Sister",
+            "Grandfather",
+            "Grandmother",
+            "Grandson",
+            "Granddaughter",
+            "Uncle",
+            "Aunt",
+            "Cousin",
+            "Nephew",
+            "Niece",
+            "Father-in-Law",
+            "Mother-in-Law",
+            "Brother-in-Law",
+            "Sister-in-Law",
+            "Stepmother",
+            "Stepfather",
+            "Stepbrother",
+            "Stepsister",
+            "Friend",
+            "Others"});
+            this.cbx_add_relationship.Location = new System.Drawing.Point(148, 60);
+            this.cbx_add_relationship.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_add_relationship.Name = "cbx_add_relationship";
+            this.cbx_add_relationship.Size = new System.Drawing.Size(209, 25);
+            this.cbx_add_relationship.TabIndex = 110;
+            this.cbx_add_relationship.SelectedIndexChanged += new System.EventHandler(this.cbx_add_relationship_SelectedIndexChanged);
+            // 
+            // tbx_add_contactno
+            // 
+            this.tbx_add_contactno.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_add_contactno.Location = new System.Drawing.Point(148, 90);
+            this.tbx_add_contactno.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_contactno.MaxLength = 15;
+            this.tbx_add_contactno.Name = "tbx_add_contactno";
+            this.tbx_add_contactno.Size = new System.Drawing.Size(209, 25);
+            this.tbx_add_contactno.TabIndex = 111;
+            this.tbx_add_contactno.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
+            this.tbx_add_contactno.TextChanged += new System.EventHandler(this.tbx_add_contactno_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(142, 412);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(398, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 14);
+            this.panel3.Size = new System.Drawing.Size(354, 320);
+            this.panel3.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.view_contacts);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(10, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(334, 296);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_delete);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 238);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(334, 58);
+            this.panel5.TabIndex = 28;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_delete.Enabled = false;
+            this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Location = new System.Drawing.Point(132, 6);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 33);
+            this.btn_delete.TabIndex = 11;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(218, 428);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // view_contacts
+            // 
+            this.view_contacts.AllowUserToAddRows = false;
+            this.view_contacts.AllowUserToDeleteRows = false;
+            this.view_contacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.view_contacts.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.view_contacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_contacts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.view_contacts.Location = new System.Drawing.Point(0, 31);
+            this.view_contacts.Name = "view_contacts";
+            this.view_contacts.ReadOnly = true;
+            this.view_contacts.RowHeadersVisible = false;
+            this.view_contacts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_contacts.Size = new System.Drawing.Size(334, 207);
+            this.view_contacts.TabIndex = 2;
+            this.view_contacts.SelectionChanged += new System.EventHandler(this.view_contacts_SelectionChanged);
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Teal;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(0, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(334, 31);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Contacts";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(10);
+            this.tabPage2.Size = new System.Drawing.Size(378, 290);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Edit";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btn_cancel);
             this.panel1.Controls.Add(this.btn_ok);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(12, 277);
+            this.panel1.Location = new System.Drawing.Point(12, 332);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 52);
-            this.panel1.TabIndex = 11;
-            // 
-            // btn_cancel
-            // 
-            this.btn_cancel.Location = new System.Drawing.Point(515, 27);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(75, 25);
-            this.btn_cancel.TabIndex = 1;
-            this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.panel1.Size = new System.Drawing.Size(740, 33);
+            this.panel1.TabIndex = 9;
             // 
             // btn_ok
             // 
-            this.btn_ok.Location = new System.Drawing.Point(434, 27);
+            this.btn_ok.Location = new System.Drawing.Point(665, 8);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(75, 25);
             this.btn_ok.TabIndex = 0;
             this.btn_ok.Text = "OK";
             this.btn_ok.UseVisualStyleBackColor = true;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(386, 320);
+            this.tabControl1.TabIndex = 10;
+            // 
             // FormContactPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 341);
-            this.Controls.Add(this.main);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(764, 377);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.HelpButton = true;
@@ -334,11 +640,20 @@
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Contacts";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_contact)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
             this.main.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_contacts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bs_contacts)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -346,24 +661,43 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView view_contact;
-        private System.Windows.Forms.Panel main;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lbl_relationship;
-        private System.Windows.Forms.Label lbl_firstname;
-        private System.Windows.Forms.Label lbl_lastname;
-        private System.Windows.Forms.Label lbl_contactNo;
-        private System.Windows.Forms.TextBox tbx_firstname;
-        private System.Windows.Forms.TextBox tbx_lastname;
-        private System.Windows.Forms.TextBox tbx_contactNo;
-        private System.Windows.Forms.ComboBox cbx_relationship;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.Button btn_edit;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.Button btn_ok;
+        private System.Windows.Forms.Button btn_edit_save;
         private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel main;
+        private System.Windows.Forms.Button btn_add_reset;
+        private System.Windows.Forms.Button btn_add_save;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label lbl_add_contactno;
+        private System.Windows.Forms.Label lbl_add_firstname;
+        private System.Windows.Forms.Label lbl_add_lastname;
+        private System.Windows.Forms.Label lbl_add_relationship;
+        private System.Windows.Forms.TextBox tbx_add_firstname;
+        private System.Windows.Forms.TextBox tbx_add_lastname;
+        private System.Windows.Forms.ComboBox cbx_add_relationship;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView view_contacts;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.BindingSource bs_contacts;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_ok;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox tbx_edit_contactno;
+        private System.Windows.Forms.Label lbl_edit_contactno;
+        private System.Windows.Forms.Label lbl_edit_firstname;
+        private System.Windows.Forms.Label lbl_edit_lastname;
+        private System.Windows.Forms.Label lbl_edit_relationship;
+        private System.Windows.Forms.TextBox tbx_edit_firstname;
+        private System.Windows.Forms.TextBox tbx_edit_lastname;
+        private System.Windows.Forms.ComboBox cbx_edit_relationship;
         private System.Windows.Forms.HelpProvider helpProvider;
+        private Miscellaneous.CustomTextbox tbx_add_contactno;
     }
 }

@@ -12,7 +12,7 @@ namespace Data.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.0.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -32,6 +32,510 @@ namespace Data.Properties {
             }
             set {
                 this["ConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].[sp_showData]")]
+        public string ShowEmployeeData {
+            get {
+                return ((string)(this["ShowEmployeeData"]));
+            }
+            set {
+                this["ShowEmployeeData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[InternalApplicant].[sp_showData]")]
+        public string ShowInternalApplicantData {
+            get {
+                return ((string)(this["ShowInternalApplicantData"]));
+            }
+            set {
+                this["ShowInternalApplicantData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[ExternalApplicant].[sp_showData]")]
+        public string ShowExternalApplicantData {
+            get {
+                return ((string)(this["ShowExternalApplicantData"]));
+            }
+            set {
+                this["ShowExternalApplicantData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_showData_positionTitle")]
+        public string ShowEmployeeWithPosition {
+            get {
+                return ((string)(this["ShowEmployeeWithPosition"]));
+            }
+            set {
+                this["ShowEmployeeWithPosition"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_RegisterExistingEmployee")]
+        public string RegisterExistingEmployee {
+            get {
+                return ((string)(this["RegisterExistingEmployee"]));
+            }
+            set {
+                this["RegisterExistingEmployee"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_showHiringManagerData")]
+        public string ShowHiringManagerData {
+            get {
+                return ((string)(this["ShowHiringManagerData"]));
+            }
+            set {
+                this["ShowHiringManagerData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showTitanTitleData")]
+        public string ShowTitanTitleData {
+            get {
+                return ((string)(this["ShowTitanTitleData"]));
+            }
+            set {
+                this["ShowTitanTitleData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showBucketData")]
+        public string ShowBucketData {
+            get {
+                return ((string)(this["ShowBucketData"]));
+            }
+            set {
+                this["ShowBucketData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showArvatoLevelData")]
+        public string ShowArvatoLevelData {
+            get {
+                return ((string)(this["ShowArvatoLevelData"]));
+            }
+            set {
+                this["ShowArvatoLevelData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showJobTitleData")]
+        public string ShowJobTitleData {
+            get {
+                return ((string)(this["ShowJobTitleData"]));
+            }
+            set {
+                this["ShowJobTitleData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showTeamData")]
+        public string ShowTeamData {
+            get {
+                return ((string)(this["ShowTeamData"]));
+            }
+            set {
+                this["ShowTeamData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showContractType")]
+        public string ShowContractType {
+            get {
+                return ((string)(this["ShowContractType"]));
+            }
+            set {
+                this["ShowContractType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_updateEmployee")]
+        public string UpdateEmployee {
+            get {
+                return ((string)(this["UpdateEmployee"]));
+            }
+            set {
+                this["UpdateEmployee"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showApplicationSourceData")]
+        public string ShowApplicationSourceData {
+            get {
+                return ((string)(this["ShowApplicationSourceData"]));
+            }
+            set {
+                this["ShowApplicationSourceData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[User].sp_getUserByID")]
+        public string GetUserByID {
+            get {
+                return ((string)(this["GetUserByID"]));
+            }
+            set {
+                this["GetUserByID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[User].sp_changePassword")]
+        public string ChangeUserPassword {
+            get {
+                return ((string)(this["ChangeUserPassword"]));
+            }
+            set {
+                this["ChangeUserPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertUser")]
+        public string InsertUser {
+            get {
+                return ((string)(this["InsertUser"]));
+            }
+            set {
+                this["InsertUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_updateUser")]
+        public string UpdateUser {
+            get {
+                return ((string)(this["UpdateUser"]));
+            }
+            set {
+                this["UpdateUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showUsers")]
+        public string ShowUserData {
+            get {
+                return ((string)(this["ShowUserData"]));
+            }
+            set {
+                this["ShowUserData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteUser")]
+        public string DeleteUser {
+            get {
+                return ((string)(this["DeleteUser"]));
+            }
+            set {
+                this["DeleteUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showAppraisalType")]
+        public string ShowAppraisalType {
+            get {
+                return ((string)(this["ShowAppraisalType"]));
+            }
+            set {
+                this["ShowAppraisalType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showReasonAnalysis")]
+        public string ShowReasonAnalysisData {
+            get {
+                return ((string)(this["ShowReasonAnalysisData"]));
+            }
+            set {
+                this["ShowReasonAnalysisData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showReasonForLeaving")]
+        public string ShowReasonForLeavingData {
+            get {
+                return ((string)(this["ShowReasonForLeavingData"]));
+            }
+            set {
+                this["ShowReasonForLeavingData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showRole")]
+        public string ShowRoleData {
+            get {
+                return ((string)(this["ShowRoleData"]));
+            }
+            set {
+                this["ShowRoleData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertAppSource")]
+        public string InsertAppSource {
+            get {
+                return ((string)(this["InsertAppSource"]));
+            }
+            set {
+                this["InsertAppSource"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertAppraisalType")]
+        public string InsertAppraisalType {
+            get {
+                return ((string)(this["InsertAppraisalType"]));
+            }
+            set {
+                this["InsertAppraisalType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertBucket")]
+        public string InsertBucket {
+            get {
+                return ((string)(this["InsertBucket"]));
+            }
+            set {
+                this["InsertBucket"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertJobTitle")]
+        public string InsertJobTitle {
+            get {
+                return ((string)(this["InsertJobTitle"]));
+            }
+            set {
+                this["InsertJobTitle"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertReasonAnalysis")]
+        public string InsertReasonAnalysis {
+            get {
+                return ((string)(this["InsertReasonAnalysis"]));
+            }
+            set {
+                this["InsertReasonAnalysis"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertReasonForLeaving")]
+        public string InsertReasonForLeaving {
+            get {
+                return ((string)(this["InsertReasonForLeaving"]));
+            }
+            set {
+                this["InsertReasonForLeaving"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertRole")]
+        public string InsertRole {
+            get {
+                return ((string)(this["InsertRole"]));
+            }
+            set {
+                this["InsertRole"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertTeam")]
+        public string InsertTeam {
+            get {
+                return ((string)(this["InsertTeam"]));
+            }
+            set {
+                this["InsertTeam"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertTitanTitle")]
+        public string InsertTitanTitle {
+            get {
+                return ((string)(this["InsertTitanTitle"]));
+            }
+            set {
+                this["InsertTitanTitle"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteAppSource")]
+        public string DeleteAppSource {
+            get {
+                return ((string)(this["DeleteAppSource"]));
+            }
+            set {
+                this["DeleteAppSource"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteAppraisalType")]
+        public string DeleteAppraisalType {
+            get {
+                return ((string)(this["DeleteAppraisalType"]));
+            }
+            set {
+                this["DeleteAppraisalType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteBucket")]
+        public string DeleteBucket {
+            get {
+                return ((string)(this["DeleteBucket"]));
+            }
+            set {
+                this["DeleteBucket"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteJobTitle")]
+        public string DeleteJobTitle {
+            get {
+                return ((string)(this["DeleteJobTitle"]));
+            }
+            set {
+                this["DeleteJobTitle"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteReasonAnalysis")]
+        public string DeleteReasonAnalysis {
+            get {
+                return ((string)(this["DeleteReasonAnalysis"]));
+            }
+            set {
+                this["DeleteReasonAnalysis"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteReasonForLeaving")]
+        public string DeleteReasonForLeaving {
+            get {
+                return ((string)(this["DeleteReasonForLeaving"]));
+            }
+            set {
+                this["DeleteReasonForLeaving"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteRole")]
+        public string DeleteRole {
+            get {
+                return ((string)(this["DeleteRole"]));
+            }
+            set {
+                this["DeleteRole"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteTeam")]
+        public string DeleteTeam {
+            get {
+                return ((string)(this["DeleteTeam"]));
+            }
+            set {
+                this["DeleteTeam"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_deleteTitanTitle")]
+        public string DeleteTitanTitle {
+            get {
+                return ((string)(this["DeleteTitanTitle"]));
+            }
+            set {
+                this["DeleteTitanTitle"] = value;
             }
         }
     }

@@ -119,7 +119,6 @@
             this.controlPersonalInformation1.Name = "controlPersonalInformation1";
             this.controlPersonalInformation1.Next = this.controlAddress1;
             this.controlPersonalInformation1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlPersonalInformation1.Previous = null;
             this.controlPersonalInformation1.Size = new System.Drawing.Size(641, 515);
             this.controlPersonalInformation1.TabIndex = 83;
             // 

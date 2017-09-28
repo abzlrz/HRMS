@@ -3,6 +3,7 @@ using Presentation.DialogBox.ExternalApplicationForm;
 using Presentation.DialogBox.ExternalApplication;
 using System;
 using System.Windows.Forms;
+using Presentation.Maintenance;
 
 namespace Presentation
 {
@@ -16,7 +17,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FormBackgroundIllness());
         }
     }
 }

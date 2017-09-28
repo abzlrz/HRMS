@@ -54,7 +54,7 @@
             this.tbx_postalNo1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
-            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -373,7 +373,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_next);
-            this.panel2.Controls.Add(this.btn_add);
+            this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Controls.Add(this.btn_previous);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 400);
@@ -395,19 +395,20 @@
             this.btn_next.UseVisualStyleBackColor = false;
             this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
-            // btn_add
+            // btn_clear
             // 
-            this.btn_add.BackColor = System.Drawing.Color.DimGray;
-            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(330, 35);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 35);
-            this.btn_add.TabIndex = 11;
-            this.btn_add.Text = "Clear All";
-            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_clear.BackColor = System.Drawing.Color.DimGray;
+            this.btn_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_clear.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.ForeColor = System.Drawing.Color.White;
+            this.btn_clear.Location = new System.Drawing.Point(330, 35);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 35);
+            this.btn_clear.TabIndex = 11;
+            this.btn_clear.Text = "Clear All";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_previous
             // 
@@ -468,7 +469,7 @@
         private System.Windows.Forms.TextBox tbx_postalNo1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_next;
-        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_previous;
     }
 }

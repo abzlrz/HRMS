@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using Data.Access;
+using Data.Entities;
+using System.Windows.Forms;
 
 namespace Presentation.DialogBox.ExternalApplication
 {
@@ -9,9 +11,16 @@ namespace Presentation.DialogBox.ExternalApplication
         public UserControl Previous { get; set; }
         #endregion
 
+        #region fields
+        private ApplicationSource source;
+        private DataAccess context;
+        #endregion
+
         public ControlApplicationDetails()
         {
             InitializeComponent();
+            this.source = new ApplicationSource();
+            this.context = new DataAccess();
         }
 
         #region methods
@@ -34,6 +43,14 @@ namespace Presentation.DialogBox.ExternalApplication
                 result = false;
 
             return result;
+        }
+        public void ClearAllFields()
+        {
+            cbx_source.SelectedIndex = -1;
+            cbx_employeeID.SelectedIndex = -1;
+            cbx_employeeName.SelectedIndex = -1;
+
+            date_applicationDate.ResetText();
         }
         #endregion
 
@@ -58,16 +75,6 @@ namespace Presentation.DialogBox.ExternalApplication
             }
         }
 
-        private void cbx_position_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            Misc.TurnGreenIndicator(cbx_position.SelectedIndex, lbl_position);
-        }
-
-        private void cbx_preferredSite_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            Misc.TurnGreenIndicator(cbx_preferredSite.SelectedIndex, lbl_preferredSite);
-        }
-
         private void cbx_employeeName_TextChanged(object sender, System.EventArgs e)
         {
             Misc.TurnGreenIndicator(cbx_employeeName.SelectedIndex, lbl_employeeName);
@@ -82,21 +89,26 @@ namespace Presentation.DialogBox.ExternalApplication
         #region buttons
         private void btn_clearAll_Click(object sender, System.EventArgs e)
         {
-
+            ClearAllFields();
         }
 
         private void btn_next_Click(object sender, System.EventArgs e)
         {
-            Next.BringToFront();
-            /*
             if (ValidateFields())
             {
+                //
+                // application source
+                //
+                source.Source = cbx_source.Text;
+                source.ReferralID = int.Parse(cbx_source.Text);
+                source.ReferralName = cbx_employeeName.Text;
+
                 Next.BringToFront();
             }
             else
             {
                 MessageBox.Show("Please fill-up all the required fields", "Arvato HRMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+            }
         }
 
         private void btn_previous_Click(object sender, System.EventArgs e)
@@ -105,5 +117,15 @@ namespace Presentation.DialogBox.ExternalApplication
         }
 
         #endregion
+
+        private void OnLoad(object sender, System.EventArgs e)
+        {
+            //
+            // cbx_applicationsource
+            //
+            this.cbx_source.DisplayMember = "Source";
+            this.cbx_source.ValueMember = "Source";
+            this.cbx_source.DataSource = context.ShowApplicationSourceData();
+        }
     }
 }

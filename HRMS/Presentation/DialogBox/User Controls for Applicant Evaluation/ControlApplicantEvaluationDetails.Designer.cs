@@ -188,6 +188,11 @@
             this.cbx_arvatoLevel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbx_arvatoLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_arvatoLevel.FormattingEnabled = true;
+            this.cbx_arvatoLevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
             this.cbx_arvatoLevel.Location = new System.Drawing.Point(184, 94);
             this.cbx_arvatoLevel.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_arvatoLevel.Name = "cbx_arvatoLevel";

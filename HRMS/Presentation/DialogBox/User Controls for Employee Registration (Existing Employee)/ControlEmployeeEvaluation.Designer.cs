@@ -32,9 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlEmployeeEvaluation));
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.cbx_hiringManagerID = new System.Windows.Forms.ComboBox();
+            this.cbx_hiringManagerName = new System.Windows.Forms.ComboBox();
+            this.lbl_managerName = new System.Windows.Forms.Label();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.lbl_managerID = new System.Windows.Forms.Label();
             this.cbx_jobTitle = new System.Windows.Forms.ComboBox();
             this.lbl_jobTitle = new System.Windows.Forms.Label();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.cbx_team = new System.Windows.Forms.ComboBox();
             this.cbx_contractType = new System.Windows.Forms.ComboBox();
             this.cbx_arvatoLevel = new System.Windows.Forms.ComboBox();
@@ -51,10 +55,6 @@
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
-            this.lbl_managerID = new System.Windows.Forms.Label();
-            this.lbl_managerName = new System.Windows.Forms.Label();
-            this.cbx_hiringManagerName = new System.Windows.Forms.ComboBox();
-            this.cbx_hiringManagerID = new System.Windows.Forms.ComboBox();
             this.gbxAppInfo.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -112,6 +112,69 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(506, 209);
             this.tableLayoutPanel4.TabIndex = 56;
             // 
+            // cbx_hiringManagerID
+            // 
+            this.cbx_hiringManagerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_hiringManagerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbx_hiringManagerID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_hiringManagerID.Enabled = false;
+            this.cbx_hiringManagerID.FormattingEnabled = true;
+            this.cbx_hiringManagerID.Location = new System.Drawing.Point(237, 2);
+            this.cbx_hiringManagerID.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_hiringManagerID.Name = "cbx_hiringManagerID";
+            this.cbx_hiringManagerID.Size = new System.Drawing.Size(267, 21);
+            this.cbx_hiringManagerID.TabIndex = 57;
+            this.cbx_hiringManagerID.Tag = "required";
+            // 
+            // cbx_hiringManagerName
+            // 
+            this.cbx_hiringManagerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_hiringManagerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbx_hiringManagerName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_hiringManagerName.FormattingEnabled = true;
+            this.cbx_hiringManagerName.Location = new System.Drawing.Point(237, 25);
+            this.cbx_hiringManagerName.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_hiringManagerName.Name = "cbx_hiringManagerName";
+            this.cbx_hiringManagerName.Size = new System.Drawing.Size(267, 21);
+            this.cbx_hiringManagerName.TabIndex = 57;
+            this.cbx_hiringManagerName.Tag = "required";
+            this.cbx_hiringManagerName.SelectedValueChanged += new System.EventHandler(this.cbx_hiringManagerName_SelectedValueChanged);
+            this.cbx_hiringManagerName.TextChanged += new System.EventHandler(this.cbx_hiringManagerName_TextChanged);
+            // 
+            // lbl_managerName
+            // 
+            this.lbl_managerName.AutoSize = true;
+            this.lbl_managerName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_managerName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_managerName.ImageIndex = 1;
+            this.lbl_managerName.ImageList = this.imageList;
+            this.lbl_managerName.Location = new System.Drawing.Point(5, 25);
+            this.lbl_managerName.Name = "lbl_managerName";
+            this.lbl_managerName.Size = new System.Drawing.Size(227, 21);
+            this.lbl_managerName.TabIndex = 58;
+            this.lbl_managerName.Text = "Hiring Manager Name:";
+            this.lbl_managerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // imageList
+            // 
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "green_dot.png");
+            this.imageList.Images.SetKeyName(1, "red_dot.png");
+            // 
+            // lbl_managerID
+            // 
+            this.lbl_managerID.AutoSize = true;
+            this.lbl_managerID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_managerID.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_managerID.ImageIndex = 1;
+            this.lbl_managerID.Location = new System.Drawing.Point(5, 2);
+            this.lbl_managerID.Name = "lbl_managerID";
+            this.lbl_managerID.Size = new System.Drawing.Size(227, 21);
+            this.lbl_managerID.TabIndex = 57;
+            this.lbl_managerID.Text = "Hiring Manager ID:";
+            this.lbl_managerID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // cbx_jobTitle
             // 
             this.cbx_jobTitle.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -139,13 +202,6 @@
             this.lbl_jobTitle.TabIndex = 81;
             this.lbl_jobTitle.Text = "Job Title:";
             this.lbl_jobTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // imageList
-            // 
-            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
-            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "green_dot.png");
-            this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
             // cbx_team
             // 
@@ -178,6 +234,11 @@
             this.cbx_arvatoLevel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbx_arvatoLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_arvatoLevel.FormattingEnabled = true;
+            this.cbx_arvatoLevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
             this.cbx_arvatoLevel.Location = new System.Drawing.Point(237, 117);
             this.cbx_arvatoLevel.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_arvatoLevel.Name = "cbx_arvatoLevel";
@@ -204,6 +265,9 @@
             this.cbx_langRequirement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbx_langRequirement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_langRequirement.FormattingEnabled = true;
+            this.cbx_langRequirement.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
             this.cbx_langRequirement.Location = new System.Drawing.Point(237, 71);
             this.cbx_langRequirement.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_langRequirement.Name = "cbx_langRequirement";
@@ -371,60 +435,6 @@
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
-            // lbl_managerID
-            // 
-            this.lbl_managerID.AutoSize = true;
-            this.lbl_managerID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_managerID.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_managerID.ImageIndex = 1;
-            this.lbl_managerID.ImageList = this.imageList;
-            this.lbl_managerID.Location = new System.Drawing.Point(5, 2);
-            this.lbl_managerID.Name = "lbl_managerID";
-            this.lbl_managerID.Size = new System.Drawing.Size(227, 21);
-            this.lbl_managerID.TabIndex = 57;
-            this.lbl_managerID.Text = "Hiring Manager ID:";
-            this.lbl_managerID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_managerName
-            // 
-            this.lbl_managerName.AutoSize = true;
-            this.lbl_managerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_managerName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_managerName.ImageIndex = 1;
-            this.lbl_managerName.ImageList = this.imageList;
-            this.lbl_managerName.Location = new System.Drawing.Point(5, 25);
-            this.lbl_managerName.Name = "lbl_managerName";
-            this.lbl_managerName.Size = new System.Drawing.Size(227, 21);
-            this.lbl_managerName.TabIndex = 58;
-            this.lbl_managerName.Text = "Hiring Manager Name:";
-            this.lbl_managerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // cbx_hiringManagerName
-            // 
-            this.cbx_hiringManagerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_hiringManagerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_hiringManagerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_hiringManagerName.FormattingEnabled = true;
-            this.cbx_hiringManagerName.Location = new System.Drawing.Point(237, 25);
-            this.cbx_hiringManagerName.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_hiringManagerName.Name = "cbx_hiringManagerName";
-            this.cbx_hiringManagerName.Size = new System.Drawing.Size(267, 21);
-            this.cbx_hiringManagerName.TabIndex = 57;
-            this.cbx_hiringManagerName.Tag = "required";
-            // 
-            // cbx_hiringManagerID
-            // 
-            this.cbx_hiringManagerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_hiringManagerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_hiringManagerID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_hiringManagerID.FormattingEnabled = true;
-            this.cbx_hiringManagerID.Location = new System.Drawing.Point(237, 2);
-            this.cbx_hiringManagerID.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_hiringManagerID.Name = "cbx_hiringManagerID";
-            this.cbx_hiringManagerID.Size = new System.Drawing.Size(267, 21);
-            this.cbx_hiringManagerID.TabIndex = 57;
-            this.cbx_hiringManagerID.Tag = "required";
-            // 
             // ControlEmployeeEvaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +444,7 @@
             this.Name = "ControlEmployeeEvaluation";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(587, 519);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.gbxAppInfo.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();

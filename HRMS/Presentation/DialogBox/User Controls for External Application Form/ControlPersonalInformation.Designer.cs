@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPersonalInformation));
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbx_info = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -60,23 +60,23 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.groupBox4.SuspendLayout();
+            this.gbx_info.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox4
+            // gbx_info
             // 
-            this.groupBox4.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 12);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(20);
-            this.groupBox4.Size = new System.Drawing.Size(617, 400);
-            this.groupBox4.TabIndex = 86;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Personal Information";
+            this.gbx_info.Controls.Add(this.tableLayoutPanel4);
+            this.gbx_info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbx_info.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbx_info.Location = new System.Drawing.Point(12, 12);
+            this.gbx_info.Name = "gbx_info";
+            this.gbx_info.Padding = new System.Windows.Forms.Padding(20);
+            this.gbx_info.Size = new System.Drawing.Size(617, 400);
+            this.gbx_info.TabIndex = 86;
+            this.gbx_info.TabStop = false;
+            this.gbx_info.Text = "Personal Information";
             // 
             // tableLayoutPanel4
             // 
@@ -138,7 +138,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(254, 23);
             this.label1.TabIndex = 110;
-            this.label1.Text = "BPI Card#:";
+            this.label1.Text = "Bank Account#:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList
@@ -319,6 +319,7 @@
             this.cbx_isUnder18.Size = new System.Drawing.Size(286, 21);
             this.cbx_isUnder18.TabIndex = 97;
             this.cbx_isUnder18.SelectedIndexChanged += new System.EventHandler(this.cbx_isUnder18_SelectedIndexChanged);
+            this.cbx_isUnder18.TextChanged += new System.EventHandler(this.cbx_isUnder18_TextChanged);
             // 
             // tbx_firstName
             // 
@@ -476,12 +477,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.gbx_info);
             this.Controls.Add(this.panel2);
             this.Name = "ControlPersonalInformation";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(641, 515);
-            this.groupBox4.ResumeLayout(false);
+            this.gbx_info.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -491,7 +492,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbx_info;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_isUnder18;

@@ -14,8 +14,8 @@ namespace Presentation
         {
             InitializeComponent();
             
-            this.applicationForm = new FormExternalApplicant();
-            this.main = new FormMain();
+            this.form_application = new FormExternalApplicant();
+            this.form_main = new FormMain();
             
             // user acces begin here
             this.access = new UserAccess();
@@ -31,10 +31,13 @@ namespace Presentation
                 ControlStyles.UserPaint, true);
 
             // user management
-            this.userManagement = new FormUserManager();
+            this.form_userManagement = new FormUserManagement();
 
             //clearance login
-            this.clearance = new FormClearanceLogin();
+            this.form_loginclearance = new FormClearanceLogin();
+
+            //check vancancies
+            this.form_vacancies = new FormCheckVacancies();
         }
         private void ImplementDraggable()
         {
@@ -181,12 +184,12 @@ namespace Presentation
         {
             try
             {
-                this.user.ID = tbx_username.Text;
+                this.user.Username = tbx_username.Text;
                 this.user.Password = tbx_password.Text;
 
                 if (access.Login(user))
                 {
-                    this.main.Show();
+                    this.form_main.Show();
                     this.Hide();
                 }
                 else
@@ -201,7 +204,7 @@ namespace Presentation
         }
         private void OnApplyClick(object sender, System.EventArgs e)
         {
-            this.applicationForm.ShowDialog();
+            this.form_vacancies.ShowDialog();
         }
         private void restoreDownClick(object sender, EventArgs e)
         {
@@ -232,14 +235,14 @@ namespace Presentation
         {
             if (e.KeyData == (Keys.Control | Keys.R))
             {
-                this.clearance.Text = "Register User";
-                this.clearance.ShowDialog();
+                this.form_loginclearance.Text = "Register User";
+                this.form_loginclearance.ShowDialog();
                 e.SuppressKeyPress = true;
             }
 
             if (e.KeyCode == Keys.F1)
             {
-                this.applicationForm.ShowDialog();
+                this.form_application.ShowDialog();
                 e.SuppressKeyPress = true;
             }
         }
@@ -248,10 +251,13 @@ namespace Presentation
         private Color ArvatoGreen = Color.FromArgb(176, 200, 0);
         private Color ArvatoRed = Color.FromArgb(233, 15, 64);
         private Draggable draggable;
-        private FormExternalApplicant applicationForm;
-        private FormUserManager userManagement;
-        private FormClearanceLogin clearance;
-        private FormMain main;
+
+        private FormExternalApplicant form_application;
+        private FormUserManagement form_userManagement;
+        private FormClearanceLogin form_loginclearance;
+        private FormCheckVacancies form_vacancies;
+        private FormMain form_main;
+
         private UserAccess access;
         private User user;
         

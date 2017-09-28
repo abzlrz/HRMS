@@ -11,7 +11,7 @@ namespace Presentation.DialogBox.ExternalApplication
 
         #region fields
         private FormBackgroundEducation education;
-        private FormBackgroundEmployment employment;
+        //private FormBackgroundEmployment employment;
         private FormBackgroundIllness illness;
         private FormContactPerson contacts;
         private FormLegalBackground legal;
@@ -20,7 +20,7 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             InitializeComponent();
             this.education = new FormBackgroundEducation();
-            this.employment = new FormBackgroundEmployment();
+            //this.employment = new FormBackgroundEmployment();
             this.illness = new FormBackgroundIllness();
             this.contacts = new FormContactPerson();
             this.legal = new FormLegalBackground();

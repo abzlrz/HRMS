@@ -6,44 +6,17 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 {
     public partial class ControlEmployeeInfo : UserControl
     {
-        private Employee employee;
-        private EmployeeAddress address;
+        public Employee employee;
+        public EmployeeAddress address;
         public UserControl Next { get; set; }
         
         public ControlEmployeeInfo()
         {
             InitializeComponent();
+            this.employee = new Employee();
+            this.address = new EmployeeAddress();
         }
-
-        public EmployeeAddress GetAddress()
-        {
-            return this.address = new EmployeeAddress()
-            {
-                HouseNo = tbx_presentAddNo.Text,
-                Street = tbx_presentAddStreet.Text,
-                PostalArea = tbx_presentPostalArea.Text,
-                PostalNo = tbx_presentPostalNo.Text
-            };
-        }
-        public Employee GetEmployeeInfo()
-        {
-            return this.employee = new Employee()
-            {
-                Firstname = tbx_firstname.Text,
-                Middlename = tbx_middlename.Text,
-                Lastname = tbx_lastname.Text,
-                PrimaryContact = tbx_primaryContact.Text,
-                SecondaryContact = tbx_secondaryContact.Text,
-                MaritalStatus = cbx_maritalStatus.Text,
-                Email = tbx_email.Text,
-                SSS = tbx_SSS.Text,
-                TIN = tbx_TIN.Text,
-                HDMF = tbx_HDMF.Text,
-                BPICard = tbx_BPI.Text
-            };
-        }
-        
-        bool ValidateFields()
+        private bool ValidateFields()
         {
             bool result = true;
 
@@ -66,12 +39,52 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
             return result;
         }
+        public void ClearAllFields()
+        {
+            this.tbx_firstname.ResetText();
+            this.tbx_middlename.ResetText();
+            this.tbx_lastname.ResetText();
+            this.tbx_primaryContact.ResetText();
+            this.tbx_secondaryContact.ResetText();
+            this.cbx_maritalStatus.SelectedIndex = -1;
+            this.tbx_email.ResetText();
+            this.tbx_SSS.ResetText();
+            this.tbx_TIN.ResetText();
+            this.tbx_HDMF.ResetText();
+            this.tbx_BPI.ResetText();
+            this.tbx_presentAddNo.ResetText();
+            this.tbx_presentAddStreet.ResetText();
+            this.tbx_presentPostalArea.ResetText();
+            this.tbx_presentPostalNo.ResetText();
+        }
         
         #region Buttons
         private void btn_next_Click(object sender, EventArgs e)
         {
             if (ValidateFields())
             {
+                //
+                // employee info
+                //
+                this.employee.Firstname = tbx_firstname.Text;
+                this.employee.Middlename = tbx_middlename.Text;
+                this.employee.Lastname = tbx_lastname.Text;
+                this.employee.PrimaryContact = tbx_primaryContact.Text;
+                this.employee.SecondaryContact = tbx_secondaryContact.Text;
+                this.employee.MaritalStatus = cbx_maritalStatus.Text;
+                this.employee.Email = tbx_email.Text;
+                this.employee.SSS = tbx_SSS.Text;
+                this.employee.TIN = tbx_TIN.Text;
+                this.employee.HDMF = tbx_HDMF.Text;
+                this.employee.BPICard = tbx_BPI.Text;
+                //
+                // employee address
+                //
+                this.address.HouseNo = tbx_presentAddNo.Text;
+                this.address.Street = tbx_presentAddStreet.Text;
+                this.address.PostalArea = tbx_presentPostalArea.Text;
+                this.address.PostalNo = tbx_presentPostalNo.Text;
+
                 Next.BringToFront();
             }
             else
@@ -82,21 +95,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            tbx_firstname.ResetText();
-            tbx_middlename.ResetText();
-            tbx_lastname.ResetText();
-            tbx_primaryContact.ResetText();
-            tbx_secondaryContact.ResetText();
-            cbx_maritalStatus.SelectedIndex = -1;
-            tbx_email.ResetText();
-            tbx_SSS.ResetText();
-            tbx_TIN.ResetText();
-            tbx_HDMF.ResetText();
-            tbx_BPI.ResetText();
-            tbx_presentAddNo.ResetText();
-            tbx_presentAddStreet.ResetText();
-            tbx_presentPostalArea.ResetText();
-            tbx_presentPostalNo.ResetText();
+            ClearAllFields();
         }
         #endregion
 
@@ -146,6 +145,5 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             Misc.TurnGreenIndicator(tbx_presentPostalNo.Text, lbl_presentPostalNo);
         }
         #endregion
-
     }
 }

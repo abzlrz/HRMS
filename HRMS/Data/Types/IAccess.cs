@@ -7,8 +7,8 @@ namespace Data.Types
     public interface IUserAccess
     {
         bool Login(User user);
-        bool ChangePassword(User user);
-        DataTable Show();
+        bool InsertUser(User user);
+        DataTable ShowData();
     }
     public interface IExternalApplicationAccess
     {
@@ -20,7 +20,7 @@ namespace Data.Types
     }
     public interface IEmployeeAccess
     {
-        bool Insert(ExistingEmployeeRegistrationForm form);
+        bool Insert(ExistingEmployee form);
         bool Insert(Employee employee);
         bool Insert(EmployeeAddress address);
         bool Insert(EmployeeSalaryInfo salary);

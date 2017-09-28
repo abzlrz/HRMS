@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 
 namespace Data.Entities
 {
@@ -28,8 +31,10 @@ namespace Data.Entities
 
     public class ApplicationSource
     {
-        public int ApplicationSourceID { get; set; }
+        public int ApplicantID { get; set; }
+        public string Source { get; set; }
         public int ReferralID { get; set; }
+        public string ReferralName { get; set; }
     }
 
     public class Applicant
@@ -56,7 +61,8 @@ namespace Data.Entities
         public string Location { get; set; }
         public string AcademicDegree { get; set; }
         public string CourseProgram { get; set; }
-        public YearSpan FromTo { get; set; }
+        public DateTime FromDate { get; set; }
+        public DateTime ToDate { get; set; }
     }
 
     public class Employment
@@ -66,8 +72,8 @@ namespace Data.Entities
         public string Company { get; set; }
         public string Location { get; set; }
         public string Supervisor { get; set; }
-        public string Middlename { get; set; }
-        public YearSpan FromTo { get; set; }
+        public DateTime FromDate { get; set; }
+        public DateTime ToDate { get; set; }
         public string Nature { get; set; }
         public decimal MonthlyCompensation { get; set; }
         public string ReasonForLeaving { get; set; }
@@ -109,7 +115,7 @@ namespace Data.Entities
     public class Position
     {
         public int ApplicantID { get; set; }
-        public int PositionID { get; set; }
+        public string PositionTitle { get; set; }
         public string PreferredSite { get; set; }
     }
 

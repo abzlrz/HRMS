@@ -5,5 +5,131 @@
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=ArvatoHRM;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="ShowEmployeeData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Employee].[sp_showData]</Value>
+    </Setting>
+    <Setting Name="ShowInternalApplicantData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[InternalApplicant].[sp_showData]</Value>
+    </Setting>
+    <Setting Name="ShowExternalApplicantData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[ExternalApplicant].[sp_showData]</Value>
+    </Setting>
+    <Setting Name="ShowEmployeeWithPosition" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Employee].sp_showData_positionTitle</Value>
+    </Setting>
+    <Setting Name="RegisterExistingEmployee" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Employee].sp_RegisterExistingEmployee</Value>
+    </Setting>
+    <Setting Name="ShowHiringManagerData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Employee].sp_showHiringManagerData</Value>
+    </Setting>
+    <Setting Name="ShowTitanTitleData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showTitanTitleData</Value>
+    </Setting>
+    <Setting Name="ShowBucketData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showBucketData</Value>
+    </Setting>
+    <Setting Name="ShowArvatoLevelData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showArvatoLevelData</Value>
+    </Setting>
+    <Setting Name="ShowJobTitleData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showJobTitleData</Value>
+    </Setting>
+    <Setting Name="ShowTeamData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showTeamData</Value>
+    </Setting>
+    <Setting Name="ShowContractType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showContractType</Value>
+    </Setting>
+    <Setting Name="UpdateEmployee" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Employee].sp_updateEmployee</Value>
+    </Setting>
+    <Setting Name="ShowApplicationSourceData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showApplicationSourceData</Value>
+    </Setting>
+    <Setting Name="GetUserByID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[User].sp_getUserByID</Value>
+    </Setting>
+    <Setting Name="ChangeUserPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[User].sp_changePassword</Value>
+    </Setting>
+    <Setting Name="InsertUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertUser</Value>
+    </Setting>
+    <Setting Name="UpdateUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_updateUser</Value>
+    </Setting>
+    <Setting Name="ShowUserData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showUsers</Value>
+    </Setting>
+    <Setting Name="DeleteUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteUser</Value>
+    </Setting>
+    <Setting Name="ShowAppraisalType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showAppraisalType</Value>
+    </Setting>
+    <Setting Name="ShowReasonAnalysisData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showReasonAnalysis</Value>
+    </Setting>
+    <Setting Name="ShowReasonForLeavingData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showReasonForLeaving</Value>
+    </Setting>
+    <Setting Name="ShowRoleData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showRole</Value>
+    </Setting>
+    <Setting Name="InsertAppSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertAppSource</Value>
+    </Setting>
+    <Setting Name="InsertAppraisalType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertAppraisalType</Value>
+    </Setting>
+    <Setting Name="InsertBucket" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertBucket</Value>
+    </Setting>
+    <Setting Name="InsertJobTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertJobTitle</Value>
+    </Setting>
+    <Setting Name="InsertReasonAnalysis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertReasonAnalysis</Value>
+    </Setting>
+    <Setting Name="InsertReasonForLeaving" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertReasonForLeaving</Value>
+    </Setting>
+    <Setting Name="InsertRole" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertRole</Value>
+    </Setting>
+    <Setting Name="InsertTeam" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertTeam</Value>
+    </Setting>
+    <Setting Name="InsertTitanTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertTitanTitle</Value>
+    </Setting>
+    <Setting Name="DeleteAppSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteAppSource</Value>
+    </Setting>
+    <Setting Name="DeleteAppraisalType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteAppraisalType</Value>
+    </Setting>
+    <Setting Name="DeleteBucket" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteBucket</Value>
+    </Setting>
+    <Setting Name="DeleteJobTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteJobTitle</Value>
+    </Setting>
+    <Setting Name="DeleteReasonAnalysis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteReasonAnalysis</Value>
+    </Setting>
+    <Setting Name="DeleteReasonForLeaving" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteReasonForLeaving</Value>
+    </Setting>
+    <Setting Name="DeleteRole" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteRole</Value>
+    </Setting>
+    <Setting Name="DeleteTeam" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteTeam</Value>
+    </Setting>
+    <Setting Name="DeleteTitanTitle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_deleteTitanTitle</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -6,34 +6,18 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 {
     public partial class ControlSalaryInfo : UserControl
     {
-        private EmployeeSalaryInfo _salaryInfo;
+        public EmployeeSalaryInfo salaryInfo;
         public UserControl Previous { get; set; }
 
         public ControlSalaryInfo()
         {
             InitializeComponent();
+            this.salaryInfo = new EmployeeSalaryInfo();
         }
 
-        public EmployeeSalaryInfo GetSalaryInfo()
+        public bool ValidateFields()
         {
-            return this._salaryInfo = new EmployeeSalaryInfo()
-            {
-                DateApproved = date_approved.Value,
-                DateAccepted = date_accepted.Value,
-                DateStarted = date_started.Value,
-                ApprovedSalary = decimal.Parse(tbx_approvedSalary.Text),
-                AnnualBasedSalary = decimal.Parse(tbx_annualBasedSalary.Text),
-                AnnualLanguageAllowance = decimal.Parse(tbx_annualLangAllowance.Text),
-                ShiftAllowance = decimal.Parse(tbx_shiftAllowance.Text),
-                RelocationAllowance = decimal.Parse(tbx_relocAllowance.Text),
-                RelocationAllowanceDetail = decimal.Parse(tbx_relocAllowanceDetails.Text),
-                CostCentre = decimal.Parse(tbx_costCenter.Text)
-            };
-        }
-
-        bool ValidateFields()
-        {
-            bool result = false;
+            bool result = true;
 
             if (lbl_dateApproved.ImageIndex == 1)
                 result = false;
@@ -51,6 +35,34 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 result = false;
 
             return result;
+        }
+        public void LoadInputs()
+        {
+            salaryInfo = new EmployeeSalaryInfo()
+            {
+                DateApproved = date_approved.Value,
+                DateAccepted = date_accepted.Value,
+                DateStarted = date_started.Value,
+                ApprovedSalary = decimal.Parse(tbx_approvedSalary.Text),
+                AnnualBasedSalary = decimal.Parse(tbx_annualBasedSalary.Text),
+                AnnualLanguageAllowance = decimal.Parse(tbx_annualLangAllowance.Text),
+                ShiftAllowance = decimal.Parse(tbx_shiftAllowance.Text),
+                RelocationAllowance = decimal.Parse(tbx_relocAllowance.Text),
+                RelocationAllowanceDetail = tbx_relocAllowanceDetails.Text,
+                CostCentre = decimal.Parse(tbx_costCenter.Text)
+            };
+        }
+        public void ClearAllFields()
+        {
+            this.date_accepted.ResetText();
+            this.date_approved.ResetText();
+            this.tbx_annualBasedSalary.ResetText();
+            this.tbx_annualLangAllowance.ResetText();
+            this.tbx_approvedSalary.ResetText();
+            this.tbx_costCenter.ResetText();
+            this.tbx_relocAllowance.ResetText();
+            this.tbx_relocAllowanceDetails.ResetText();
+            this.tbx_shiftAllowance.ResetText();
         }
 
         #region If fields are empty conditions
@@ -98,15 +110,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            date_accepted.ResetText();
-            date_approved.ResetText();
-            tbx_annualBasedSalary.ResetText();
-            tbx_annualLangAllowance.ResetText();
-            tbx_approvedSalary.ResetText();
-            tbx_costCenter.ResetText();
-            tbx_relocAllowance.ResetText();
-            tbx_relocAllowanceDetails.ResetText();
-            tbx_shiftAllowance.ResetText();
+            ClearAllFields();
         }
         #endregion
     }
