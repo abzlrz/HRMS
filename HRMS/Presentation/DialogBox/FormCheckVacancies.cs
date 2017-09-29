@@ -12,9 +12,16 @@ namespace Presentation.DialogBox
 {
     public partial class FormCheckVacancies : Form
     {
+        private FormExternalApplicant form_applicant;
         public FormCheckVacancies()
         {
             InitializeComponent();
+            this.form_applicant = new FormExternalApplicant();
+        }
+
+        private void btnApply_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

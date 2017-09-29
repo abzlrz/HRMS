@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.No = new System.Windows.Forms.RadioButton();
+            this.Yes = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // radioButton2
+            // No
             // 
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton2.Location = new System.Drawing.Point(67, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(62, 31);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.No.BackColor = System.Drawing.Color.Transparent;
+            this.No.Checked = true;
+            this.No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.No.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.No.Location = new System.Drawing.Point(67, 3);
+            this.No.Name = "No";
+            this.No.Size = new System.Drawing.Size(62, 31);
+            this.No.TabIndex = 7;
+            this.No.TabStop = true;
+            this.No.Text = "No";
+            this.No.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // Yes
             // 
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 31);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.Text = "Yes";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.Yes.BackColor = System.Drawing.Color.Transparent;
+            this.Yes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Yes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Yes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Yes.Location = new System.Drawing.Point(3, 3);
+            this.Yes.Name = "Yes";
+            this.Yes.Size = new System.Drawing.Size(64, 31);
+            this.Yes.TabIndex = 6;
+            this.Yes.Text = "Yes";
+            this.Yes.UseVisualStyleBackColor = false;
             // 
             // ControlYesNoRadioButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.No);
+            this.Controls.Add(this.Yes);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "ControlYesNoRadioButton";
             this.Padding = new System.Windows.Forms.Padding(3);
@@ -77,7 +77,7 @@
 
         #endregion
 
-        public System.Windows.Forms.RadioButton radioButton2;
-        public System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.RadioButton No;
+        public System.Windows.Forms.RadioButton Yes;
     }
 }

@@ -35,9 +35,9 @@
             this.label33 = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.controlApplicationDetails1 = new Presentation.DialogBox.ExternalApplication.ControlApplicationDetails();
+            this.controlOtherDetails1 = new Presentation.DialogBox.ExternalApplication.ControlOtherDetails();
             this.controlAddress1 = new Presentation.DialogBox.ExternalApplication.ControlAddress();
             this.controlPersonalInformation1 = new Presentation.DialogBox.ExternalApplication.ControlPersonalInformation();
-            this.controlOtherDetails1 = new Presentation.DialogBox.ExternalApplication.ControlOtherDetails();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +101,16 @@
             this.controlApplicationDetails1.Size = new System.Drawing.Size(641, 515);
             this.controlApplicationDetails1.TabIndex = 81;
             // 
+            // controlOtherDetails1
+            // 
+            this.controlOtherDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlOtherDetails1.Location = new System.Drawing.Point(0, 85);
+            this.controlOtherDetails1.Name = "controlOtherDetails1";
+            this.controlOtherDetails1.Padding = new System.Windows.Forms.Padding(12);
+            this.controlOtherDetails1.Previous = this.controlApplicationDetails1;
+            this.controlOtherDetails1.Size = new System.Drawing.Size(641, 515);
+            this.controlOtherDetails1.TabIndex = 84;
+            // 
             // controlAddress1
             // 
             this.controlAddress1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -121,16 +131,6 @@
             this.controlPersonalInformation1.Padding = new System.Windows.Forms.Padding(12);
             this.controlPersonalInformation1.Size = new System.Drawing.Size(641, 515);
             this.controlPersonalInformation1.TabIndex = 83;
-            // 
-            // controlOtherDetails1
-            // 
-            this.controlOtherDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlOtherDetails1.Location = new System.Drawing.Point(0, 85);
-            this.controlOtherDetails1.Name = "controlOtherDetails1";
-            this.controlOtherDetails1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlOtherDetails1.Previous = this.controlApplicationDetails1;
-            this.controlOtherDetails1.Size = new System.Drawing.Size(641, 515);
-            this.controlOtherDetails1.TabIndex = 84;
             // 
             // FormExternalApplicant
             // 

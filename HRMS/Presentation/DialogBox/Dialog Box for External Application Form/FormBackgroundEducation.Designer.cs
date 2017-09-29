@@ -76,7 +76,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.view_educ = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
-            this.bs_education = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -89,7 +88,6 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_educ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_education)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList
@@ -407,6 +405,7 @@
             // btn_edit_save
             // 
             this.btn_edit_save.BackColor = System.Drawing.Color.Green;
+            this.btn_edit_save.Enabled = false;
             this.btn_edit_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_edit_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_edit_save.ForeColor = System.Drawing.Color.White;
@@ -677,7 +676,7 @@
             this.view_educ.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_educ.Size = new System.Drawing.Size(422, 207);
             this.view_educ.TabIndex = 2;
-            this.view_educ.RowValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_educ_RowValidated);
+            this.view_educ.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_educ_RowsAdded);
             this.view_educ.SelectionChanged += new System.EventHandler(this.view_educ_SelectionChanged);
             // 
             // label13
@@ -709,7 +708,6 @@
             this.Name = "FormBackgroundEducation";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Education Background";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBackgroundEducation_FormClosing);
             this.Load += new System.EventHandler(this.OnLoad);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -725,7 +723,6 @@
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_educ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_education)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -777,6 +774,5 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_add_reset;
-        private System.Windows.Forms.BindingSource bs_education;
     }
 }

@@ -17,7 +17,7 @@ namespace Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormBackgroundIllness());
+            Application.Run(new FormExternalApplicant());
         }
     }
 }

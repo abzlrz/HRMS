@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.view_employee = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.link_detail_jobdesc = new System.Windows.Forms.LinkLabel();
+            this.lbl_detail_location = new System.Windows.Forms.Label();
+            this.lbl_detail_headcount = new System.Windows.Forms.Label();
+            this.lbl_detail_wage = new System.Windows.Forms.Label();
+            this.lbl_detail_closedate = new System.Windows.Forms.Label();
+            this.lbl_detail_posteddate = new System.Windows.Forms.Label();
+            this.lbl_detail_position = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_detail_positiontype = new System.Windows.Forms.Label();
-            this.lbl_detail_position = new System.Windows.Forms.Label();
-            this.lbl_detail_posteddate = new System.Windows.Forms.Label();
-            this.lbl_detail_closedate = new System.Windows.Forms.Label();
-            this.lbl_detail_wage = new System.Windows.Forms.Label();
-            this.lbl_detail_headcount = new System.Windows.Forms.Label();
-            this.lbl_detail_location = new System.Windows.Forms.Label();
             this.link_detail_qualification = new System.Windows.Forms.LinkLabel();
-            this.link_detail_jobdesc = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnApply = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -79,17 +79,6 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(12);
             this.panel1.Size = new System.Drawing.Size(413, 460);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(425, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(12);
-            this.panel2.Size = new System.Drawing.Size(442, 460);
-            this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -129,6 +118,35 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(387, 53);
             this.panel4.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(19, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Search";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(71, 16);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(293, 22);
+            this.textBox1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(425, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(12);
+            this.panel2.Size = new System.Drawing.Size(442, 460);
+            this.panel2.TabIndex = 1;
             // 
             // panel5
             // 
@@ -199,6 +217,84 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(418, 235);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // link_detail_jobdesc
+            // 
+            this.link_detail_jobdesc.AutoSize = true;
+            this.link_detail_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_detail_jobdesc.Location = new System.Drawing.Point(212, 209);
+            this.link_detail_jobdesc.Name = "link_detail_jobdesc";
+            this.link_detail_jobdesc.Size = new System.Drawing.Size(202, 25);
+            this.link_detail_jobdesc.TabIndex = 17;
+            this.link_detail_jobdesc.TabStop = true;
+            this.link_detail_jobdesc.Text = "Open";
+            this.link_detail_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_location
+            // 
+            this.lbl_detail_location.AutoSize = true;
+            this.lbl_detail_location.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_location.Location = new System.Drawing.Point(212, 157);
+            this.lbl_detail_location.Name = "lbl_detail_location";
+            this.lbl_detail_location.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_location.TabIndex = 15;
+            this.lbl_detail_location.Text = "<-->";
+            this.lbl_detail_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_headcount
+            // 
+            this.lbl_detail_headcount.AutoSize = true;
+            this.lbl_detail_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_headcount.Location = new System.Drawing.Point(212, 131);
+            this.lbl_detail_headcount.Name = "lbl_detail_headcount";
+            this.lbl_detail_headcount.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_headcount.TabIndex = 14;
+            this.lbl_detail_headcount.Text = "<-->";
+            this.lbl_detail_headcount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_wage
+            // 
+            this.lbl_detail_wage.AutoSize = true;
+            this.lbl_detail_wage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_wage.Location = new System.Drawing.Point(212, 105);
+            this.lbl_detail_wage.Name = "lbl_detail_wage";
+            this.lbl_detail_wage.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_wage.TabIndex = 13;
+            this.lbl_detail_wage.Text = "<-->";
+            this.lbl_detail_wage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_closedate
+            // 
+            this.lbl_detail_closedate.AutoSize = true;
+            this.lbl_detail_closedate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_closedate.Location = new System.Drawing.Point(212, 79);
+            this.lbl_detail_closedate.Name = "lbl_detail_closedate";
+            this.lbl_detail_closedate.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_closedate.TabIndex = 12;
+            this.lbl_detail_closedate.Text = "<-->";
+            this.lbl_detail_closedate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_posteddate
+            // 
+            this.lbl_detail_posteddate.AutoSize = true;
+            this.lbl_detail_posteddate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_posteddate.Location = new System.Drawing.Point(212, 53);
+            this.lbl_detail_posteddate.Name = "lbl_detail_posteddate";
+            this.lbl_detail_posteddate.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_posteddate.TabIndex = 11;
+            this.lbl_detail_posteddate.Text = "<-->";
+            this.lbl_detail_posteddate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_detail_position
+            // 
+            this.lbl_detail_position.AutoSize = true;
+            this.lbl_detail_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_detail_position.Location = new System.Drawing.Point(212, 27);
+            this.lbl_detail_position.Name = "lbl_detail_position";
+            this.lbl_detail_position.Size = new System.Drawing.Size(202, 25);
+            this.lbl_detail_position.TabIndex = 10;
+            this.lbl_detail_position.Text = "<-->";
+            this.lbl_detail_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -265,20 +361,6 @@
             this.label7.Text = "Head Count";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Job Posting Details";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -323,72 +405,6 @@
             this.lbl_detail_positiontype.Text = "<-->";
             this.lbl_detail_positiontype.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_detail_position
-            // 
-            this.lbl_detail_position.AutoSize = true;
-            this.lbl_detail_position.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_position.Location = new System.Drawing.Point(212, 27);
-            this.lbl_detail_position.Name = "lbl_detail_position";
-            this.lbl_detail_position.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_position.TabIndex = 10;
-            this.lbl_detail_position.Text = "<-->";
-            this.lbl_detail_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_detail_posteddate
-            // 
-            this.lbl_detail_posteddate.AutoSize = true;
-            this.lbl_detail_posteddate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_posteddate.Location = new System.Drawing.Point(212, 53);
-            this.lbl_detail_posteddate.Name = "lbl_detail_posteddate";
-            this.lbl_detail_posteddate.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_posteddate.TabIndex = 11;
-            this.lbl_detail_posteddate.Text = "<-->";
-            this.lbl_detail_posteddate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_detail_closedate
-            // 
-            this.lbl_detail_closedate.AutoSize = true;
-            this.lbl_detail_closedate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_closedate.Location = new System.Drawing.Point(212, 79);
-            this.lbl_detail_closedate.Name = "lbl_detail_closedate";
-            this.lbl_detail_closedate.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_closedate.TabIndex = 12;
-            this.lbl_detail_closedate.Text = "<-->";
-            this.lbl_detail_closedate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_detail_wage
-            // 
-            this.lbl_detail_wage.AutoSize = true;
-            this.lbl_detail_wage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_wage.Location = new System.Drawing.Point(212, 105);
-            this.lbl_detail_wage.Name = "lbl_detail_wage";
-            this.lbl_detail_wage.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_wage.TabIndex = 13;
-            this.lbl_detail_wage.Text = "<-->";
-            this.lbl_detail_wage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_detail_headcount
-            // 
-            this.lbl_detail_headcount.AutoSize = true;
-            this.lbl_detail_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_headcount.Location = new System.Drawing.Point(212, 131);
-            this.lbl_detail_headcount.Name = "lbl_detail_headcount";
-            this.lbl_detail_headcount.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_headcount.TabIndex = 14;
-            this.lbl_detail_headcount.Text = "<-->";
-            this.lbl_detail_headcount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_detail_location
-            // 
-            this.lbl_detail_location.AutoSize = true;
-            this.lbl_detail_location.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_detail_location.Location = new System.Drawing.Point(212, 157);
-            this.lbl_detail_location.Name = "lbl_detail_location";
-            this.lbl_detail_location.Size = new System.Drawing.Size(202, 25);
-            this.lbl_detail_location.TabIndex = 15;
-            this.lbl_detail_location.Text = "<-->";
-            this.lbl_detail_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // link_detail_qualification
             // 
             this.link_detail_qualification.AutoSize = true;
@@ -401,17 +417,19 @@
             this.link_detail_qualification.Text = "Open";
             this.link_detail_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // link_detail_jobdesc
+            // label1
             // 
-            this.link_detail_jobdesc.AutoSize = true;
-            this.link_detail_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.link_detail_jobdesc.Location = new System.Drawing.Point(212, 209);
-            this.link_detail_jobdesc.Name = "link_detail_jobdesc";
-            this.link_detail_jobdesc.Size = new System.Drawing.Size(202, 25);
-            this.link_detail_jobdesc.TabIndex = 17;
-            this.link_detail_jobdesc.TabStop = true;
-            this.link_detail_jobdesc.Text = "Open";
-            this.link_detail_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(418, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Job Posting Details";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
@@ -435,24 +453,7 @@
             this.btnApply.TabIndex = 3;
             this.btnApply.Text = "Apply";
             this.btnApply.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 18);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 17);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Search";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(71, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 22);
-            this.textBox1.TabIndex = 0;
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
             // FormCheckVacancies
             // 
@@ -471,11 +472,11 @@
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Check Vacancies";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

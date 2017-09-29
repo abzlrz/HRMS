@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.Designer.cs">
+      <DependentUpon>FormBackgroundLegal.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,12 +148,6 @@
     </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.Designer.cs">
       <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.Designer.cs">
-      <DependentUpon>FormLegalBackground.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.cs">
       <SubType>Form</SubType>
@@ -361,6 +361,9 @@
     <Compile Include="Miscellaneous.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.resx">
+      <DependentUpon>FormBackgroundLegal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.resx">
       <DependentUpon>FormEmploymentHistory.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,9 +411,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.resx">
       <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormLegalBackground.resx">
-      <DependentUpon>FormLegalBackground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.resx">
       <DependentUpon>FormContactPerson.cs</DependentUpon>

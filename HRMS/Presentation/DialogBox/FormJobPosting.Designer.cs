@@ -399,7 +399,7 @@
             // 
             this.cbx_add_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_position.FormattingEnabled = true;
-            this.cbx_add_position.Location = new System.Drawing.Point(127, 35);
+            this.cbx_add_position.Location = new System.Drawing.Point(127, 33);
             this.cbx_add_position.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_position.Name = "cbx_add_position";
             this.cbx_add_position.Size = new System.Drawing.Size(183, 23);
@@ -700,7 +700,7 @@
             // 
             this.tbx_edit_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbx_edit_position.FormattingEnabled = true;
-            this.tbx_edit_position.Location = new System.Drawing.Point(127, 33);
+            this.tbx_edit_position.Location = new System.Drawing.Point(127, 35);
             this.tbx_edit_position.Margin = new System.Windows.Forms.Padding(0);
             this.tbx_edit_position.Name = "tbx_edit_position";
             this.tbx_edit_position.Size = new System.Drawing.Size(183, 23);

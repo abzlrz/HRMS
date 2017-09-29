@@ -54,6 +54,8 @@
             this.btn_illness_delete = new System.Windows.Forms.Button();
             this.IsDiagnosedByIlness = new Presentation.Miscellaneous.ControlYesNoRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_ok = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_operations)).BeginInit();
@@ -62,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.view_illness)).BeginInit();
             this.panel_illness.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -73,7 +76,7 @@
             this.panel2.Location = new System.Drawing.Point(430, 12);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(7);
-            this.panel2.Size = new System.Drawing.Size(418, 403);
+            this.panel2.Size = new System.Drawing.Size(418, 404);
             this.panel2.TabIndex = 1;
             // 
             // IsMedOperated
@@ -93,7 +96,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(7, 73);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(404, 323);
+            this.panel3.Size = new System.Drawing.Size(404, 324);
             this.panel3.TabIndex = 3;
             // 
             // view_operations
@@ -110,7 +113,7 @@
             this.view_operations.ReadOnly = true;
             this.view_operations.RowHeadersVisible = false;
             this.view_operations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_operations.Size = new System.Drawing.Size(404, 177);
+            this.view_operations.Size = new System.Drawing.Size(404, 178);
             this.view_operations.TabIndex = 3;
             this.view_operations.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_operations_RowsAdded);
             // 
@@ -124,7 +127,7 @@
             this.panel_operations.Controls.Add(this.btn_operated_delete);
             this.panel_operations.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_operations.Enabled = false;
-            this.panel_operations.Location = new System.Drawing.Point(0, 177);
+            this.panel_operations.Location = new System.Drawing.Point(0, 178);
             this.panel_operations.Name = "panel_operations";
             this.panel_operations.Size = new System.Drawing.Size(404, 146);
             this.panel_operations.TabIndex = 1;
@@ -221,7 +224,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(7, 73);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(404, 323);
+            this.panel4.Size = new System.Drawing.Size(404, 324);
             this.panel4.TabIndex = 3;
             // 
             // view_illness
@@ -238,7 +241,7 @@
             this.view_illness.ReadOnly = true;
             this.view_illness.RowHeadersVisible = false;
             this.view_illness.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_illness.Size = new System.Drawing.Size(404, 177);
+            this.view_illness.Size = new System.Drawing.Size(404, 178);
             this.view_illness.TabIndex = 3;
             this.view_illness.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_illness_RowsAdded);
             // 
@@ -254,7 +257,7 @@
             this.panel_illness.Controls.Add(this.btn_illness_delete);
             this.panel_illness.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_illness.Enabled = false;
-            this.panel_illness.Location = new System.Drawing.Point(0, 177);
+            this.panel_illness.Location = new System.Drawing.Point(0, 178);
             this.panel_illness.Name = "panel_illness";
             this.panel_illness.Size = new System.Drawing.Size(404, 146);
             this.panel_illness.TabIndex = 1;
@@ -355,16 +358,36 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(7);
-            this.panel1.Size = new System.Drawing.Size(418, 403);
+            this.panel1.Size = new System.Drawing.Size(418, 404);
             this.panel1.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_ok);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(12, 416);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(836, 33);
+            this.panel5.TabIndex = 10;
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.Location = new System.Drawing.Point(761, 8);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(75, 25);
+            this.btn_ok.TabIndex = 0;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // FormBackgroundIllness
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 427);
+            this.ClientSize = new System.Drawing.Size(860, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.MaximizeBox = false;
@@ -372,6 +395,7 @@
             this.Name = "FormBackgroundIllness";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "History of Illness";
+           
             this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -383,6 +407,7 @@
             this.panel_illness.ResumeLayout(false);
             this.panel_illness.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -414,5 +439,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView view_operations;
         private System.Windows.Forms.DataGridView view_illness;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btn_ok;
     }
 }

@@ -9,7 +9,7 @@ namespace Presentation.DialogBox
     public partial class FormContactPerson : Form
     {
         #region fields
-        private DataTable table_contacts;
+        public DataTable table_contacts;
         #endregion
 
         public FormContactPerson()
@@ -33,7 +33,10 @@ namespace Presentation.DialogBox
         {
             view.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
         }
-
+        public bool CheckValue()
+        {
+            return table_contacts.Rows.Count > 0;
+        }
         private bool ValidateAddFields()
         {
             bool result = true;
@@ -91,9 +94,12 @@ namespace Presentation.DialogBox
             //
             // contacts datagridview
             //
-            this.view_contacts.DataSource = GetContacts();
-            this.view_contacts.Columns["ApplicantID"].Visible = false;
-            ImplementNotSortable(view_contacts);
+            if (view_contacts.Rows.Count is 0)
+            {
+                this.view_contacts.DataSource = GetContacts();
+                this.view_contacts.Columns["ApplicantID"].Visible = false;
+                ImplementNotSortable(view_contacts);
+            }
         }
         
         #region Events
@@ -150,7 +156,7 @@ namespace Presentation.DialogBox
             {
                 if (ValidateAddFields())
                 {
-                    var rows = new ContactPerson()
+                    var row = new ContactPerson()
                     {
                         ApplicantID = 0,
                         Firstname = tbx_add_firstname.Text,
@@ -159,11 +165,11 @@ namespace Presentation.DialogBox
                         ContactNumber = tbx_add_contactno.Text
                     };
 
-                    table_contacts.Rows.Add(rows.ApplicantID,
-                        rows.Firstname,
-                        rows.Lastname,
-                        rows.RelationShip,
-                        rows.ContactNumber);
+                    table_contacts.Rows.Add(row.ApplicantID,
+                        row.Firstname,
+                        row.Lastname,
+                        row.RelationShip,
+                        row.ContactNumber);
 
                     MessageBox.Show("Data Successfully Added!");
                 }
@@ -261,6 +267,13 @@ namespace Presentation.DialogBox
                 view_contacts.ClearSelection();
                 ResetEditFields();
             }
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            if (view_contacts.Rows.Count is 0)
+                table_contacts.Columns.Clear();
+            this.Hide();
         }
     }
 }

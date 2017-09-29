@@ -213,13 +213,12 @@
             this.lbl_employment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_employment.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employment.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_employment.ImageIndex = 1;
             this.lbl_employment.ImageList = this.imageList;
             this.lbl_employment.Location = new System.Drawing.Point(5, 95);
             this.lbl_employment.Name = "lbl_employment";
             this.lbl_employment.Size = new System.Drawing.Size(382, 21);
             this.lbl_employment.TabIndex = 86;
-            this.lbl_employment.Text = "Employment History";
+            this.lbl_employment.Text = "    Employment History";
             this.lbl_employment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // link_illness
@@ -262,6 +261,7 @@
             this.link_employment.TabStop = true;
             this.link_employment.Text = "Open";
             this.link_employment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_employment.Visible = false;
             this.link_employment.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_employment_LinkClicked);
             // 
             // link_contacts

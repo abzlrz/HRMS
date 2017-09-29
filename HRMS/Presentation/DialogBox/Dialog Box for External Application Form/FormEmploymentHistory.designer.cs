@@ -34,7 +34,7 @@
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.btn_add_save = new System.Windows.Forms.Button();
             this.btn_add_reset = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_edit_save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_ok = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -87,7 +87,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.view_employee = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
-            this.bs_employment = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -100,7 +99,6 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_employment)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList
@@ -142,21 +140,21 @@
             this.btn_add_reset.UseVisualStyleBackColor = false;
             this.btn_add_reset.Click += new System.EventHandler(this.btn_add_reset_Click);
             // 
-            // btn_save
+            // btn_edit_save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.Green;
-            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.helpProvider.SetHelpString(this.btn_save, "Put input values on fields first before saving");
-            this.btn_save.Location = new System.Drawing.Point(211, 389);
-            this.btn_save.Name = "btn_save";
-            this.helpProvider.SetShowHelp(this.btn_save, true);
-            this.btn_save.Size = new System.Drawing.Size(75, 33);
-            this.btn_save.TabIndex = 11;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_edit_save_Click);
+            this.btn_edit_save.BackColor = System.Drawing.Color.Green;
+            this.btn_edit_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_edit_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit_save.ForeColor = System.Drawing.Color.White;
+            this.helpProvider.SetHelpString(this.btn_edit_save, "Put input values on fields first before saving");
+            this.btn_edit_save.Location = new System.Drawing.Point(211, 389);
+            this.btn_edit_save.Name = "btn_edit_save";
+            this.helpProvider.SetShowHelp(this.btn_edit_save, true);
+            this.btn_edit_save.Size = new System.Drawing.Size(75, 33);
+            this.btn_edit_save.TabIndex = 11;
+            this.btn_edit_save.Text = "Save";
+            this.btn_edit_save.UseVisualStyleBackColor = false;
+            this.btn_edit_save.Click += new System.EventHandler(this.btn_edit_save_Click);
             // 
             // panel1
             // 
@@ -169,6 +167,7 @@
             // 
             // btn_ok
             // 
+            this.btn_ok.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_ok.Location = new System.Drawing.Point(871, 8);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(75, 25);
@@ -493,7 +492,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.tableLayoutPanel1);
-            this.panel2.Controls.Add(this.btn_save);
+            this.panel2.Controls.Add(this.btn_edit_save);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(10, 10);
             this.panel2.Name = "panel2";
@@ -839,6 +838,7 @@
             this.view_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_employee.Size = new System.Drawing.Size(445, 378);
             this.view_employee.TabIndex = 2;
+            this.view_employee.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.view_employee_RowsAdded);
             this.view_employee.SelectionChanged += new System.EventHandler(this.view_employee_SelectionChanged);
             // 
             // label13
@@ -870,7 +870,6 @@
             this.Name = "FormEmploymentHistory";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Employment History";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormEmploymentHistory_FormClosing);
             this.Load += new System.EventHandler(this.OnLoad);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -886,7 +885,6 @@
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bs_employment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -909,7 +907,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_add_reset;
-        private System.Windows.Forms.BindingSource bs_employment;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.DateTimePicker date_add_to;
         private System.Windows.Forms.TextBox tbx_add_nature;
@@ -943,7 +940,7 @@
         private System.Windows.Forms.TextBox tbx_edit_location;
         private System.Windows.Forms.Label lbl_edit_reason;
         private System.Windows.Forms.DateTimePicker date_edit_from;
-        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_edit_save;
         private System.Windows.Forms.TextBox tbx_add_reason;
         private System.Windows.Forms.Label lbl_add_nature;
         private System.Windows.Forms.Label lbl_add_compensation;

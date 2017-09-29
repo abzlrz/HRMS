@@ -9,33 +9,18 @@ namespace Presentation.DialogBox.ExternalApplicationForm
 {
     public partial class FormEmploymentHistory : Form
     {
-        private BindingList<Employment> employments;
+        public DataTable table_employment;
 
         public FormEmploymentHistory()
         {
             InitializeComponent();
-            ResetText();
-
-            this.employments = new BindingList<Employment>();
-            this.bs_employment = new BindingSource(employments, null);
-
-            this.view_employee.DataSource = bs_employment;
-            this.view_employee.Columns["ApplicantID"].Visible = false;
-            this.view_employee.Columns["PositionTitle"].HeaderText = "Position Title";
-            this.view_employee.Columns["MonthlyCompensation"].HeaderText = "Monthly Compensation";
-            this.view_employee.Columns["ReasonForLeaving"].HeaderText = "Reason for Leaving";
-
-            this.employments.ListChanged += Employments_ListChanged;
+            this.table_employment = new DataTable();
         }
-
-        private void Employments_ListChanged(object sender, ListChangedEventArgs e)
+        
+        public bool CheckValue()
         {
-            if (employments.Count == 0)
-                btn_delete.Enabled = false;
-            else
-                btn_delete.Enabled = true;
+            return this.table_employment.Rows.Count > 0;
         }
-
         private void ResetAddFields()
         {
             tbx_add_company.ResetText();
@@ -66,10 +51,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             lbl_date_from.ImageIndex = 1;
             lbl_date_to.ImageIndex = 1;
         }
-        private void RefreshData()
-        {
-            this.view_employee.DataSource = bs_employment;
-        }
+
         private bool ValidateAddFields()
         {
             bool result = true;
@@ -112,6 +94,27 @@ namespace Presentation.DialogBox.ExternalApplicationForm
 
             return result;
         }
+        
+        private DataTable GetEmployments()
+        {
+            this.table_employment.Columns.Add("ApplicantID", typeof(int));
+            this.table_employment.Columns.Add("PositionTitle", typeof(string));
+            this.table_employment.Columns.Add("Company", typeof(string));
+            this.table_employment.Columns.Add("Location", typeof(string));
+            this.table_employment.Columns.Add("Supervisor", typeof(string));
+            this.table_employment.Columns.Add("FromDate", typeof(string));
+            this.table_employment.Columns.Add("ToDate", typeof(string));
+            this.table_employment.Columns.Add("Nature", typeof(string));
+            this.table_employment.Columns.Add("MonthlyCompensation", typeof(string));
+            this.table_employment.Columns.Add("ReasonForLeaving", typeof(string));
+
+            return table_employment;
+        }
+
+        public void ImplementNotSortable(DataGridView view)
+        {
+            view.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
+        }
 
         #region Events
 
@@ -122,53 +125,97 @@ namespace Presentation.DialogBox.ExternalApplicationForm
 
         private void btn_add_save_Click(object sender, EventArgs e)
         {
-            if (ValidateAddFields())
+            try
             {
-                var employment = new Employment()
+                if (ValidateAddFields())
                 {
-                    PositionTitle = tbx_add_postionTitle.Text,
-                    Company = tbx_add_company.Text,
-                    Location = tbx_add_location.Text,
-                    Supervisor = tbx_add_supervisor.Text,
-                    FromDate = date_add_from.Value,
-                    ToDate = date_add_to.Value,
-                    Nature = tbx_add_nature.Text,
-                    MonthlyCompensation = decimal.Parse(tbx_add_compensation.Text),
-                    ReasonForLeaving = tbx_add_compensation.Text
-                };
+                    var row = new Employment()
+                    {
+                        ApplicantID = 0,
+                        PositionTitle = tbx_add_postionTitle.Text,
+                        Company = tbx_add_company.Text,
+                        Location = tbx_add_location.Text,
+                        Supervisor = tbx_add_supervisor.Text,
+                        FromDate = date_add_from.Value,
+                        ToDate = date_add_to.Value,
+                        Nature = tbx_add_nature.Text,
+                        MonthlyCompensation = decimal.Parse(tbx_add_compensation.Text),
+                        ReasonForLeaving = tbx_add_reason.Text
+                    };
 
-                employments.Add(employment);
-                ResetAddFields();
+                    table_employment.Rows.Add(row.ApplicantID,
+                        row.PositionTitle,
+                        row.Company,
+                        row.Location,
+                        row.Supervisor,
+                        row.FromDate,
+                        row.ToDate,
+                        row.Nature,
+                        row.MonthlyCompensation,
+                        row.ReasonForLeaving);
+
+                    MessageBox.Show("Data Successfully Added!");
+                }
+                else
+                {
+                    MessageBox.Show("Please complete the fields!");
+                }
             }
-            else
+            catch { }
+            finally
             {
-                MessageBox.Show("Please complete all the required fields!");
+                view_employee.ClearSelection();
+                ResetAddFields();
             }
         }
 
         private void btn_edit_save_Click(object sender, EventArgs e)
         {
-            if (ValidateEditFields())
+            try
             {
-                int index = view_employee.SelectedRows[0].Index;
-                var employment = new Employment()
+                if (ValidateEditFields())
                 {
-                    PositionTitle = tbx_add_postionTitle.Text,
-                    Company = tbx_add_company.Text,
-                    Location = tbx_add_location.Text,
-                    Supervisor = tbx_add_supervisor.Text,
-                    FromDate = date_add_from.Value,
-                    ToDate = date_add_to.Value,
-                    Nature = tbx_add_nature.Text,
-                    MonthlyCompensation = decimal.Parse(tbx_add_compensation.Text),
-                    ReasonForLeaving = tbx_add_compensation.Text
-                };
+                    var row = new Employment()
+                    {
+                        ApplicantID = 0,
+                        PositionTitle = tbx_edit_position.Text,
+                        Company = tbx_edit_company.Text,
+                        Location = tbx_edit_location.Text,
+                        Supervisor = tbx_edit_supervisor.Text,
+                        FromDate = date_edit_from.Value,
+                        ToDate = date_edit_to.Value,
+                        Nature = tbx_edit_nature.Text,
+                        MonthlyCompensation = decimal.Parse(tbx_edit_compensation.Text),
+                        ReasonForLeaving = tbx_edit_reason.Text
+                    };
 
-                employments[index] = employment;
+                    table_employment.Rows.RemoveAt(view_employee.SelectedRows[0].Index);
+                    table_employment.Rows.Add(row.ApplicantID,
+                        row.PositionTitle,
+                        row.Company,
+                        row.Location,
+                        row.Supervisor,
+                        row.FromDate,
+                        row.ToDate,
+                        row.Nature,
+                        row.MonthlyCompensation,
+                        row.ReasonForLeaving);
+
+                    btn_edit_save.Enabled = false;
+                    btn_delete.Enabled = false;
+
+                    MessageBox.Show("Saved!");
+                }
+                else
+                {
+                    MessageBox.Show("Please complete all the required fields!");
+                }
             }
-            else
+            catch { }
+            finally
             {
-                MessageBox.Show("Please complete all the required fields!");
+                view_employee.ClearSelection();
+                ResetEditFields();
             }
         }
 
@@ -176,38 +223,56 @@ namespace Presentation.DialogBox.ExternalApplicationForm
         {
             try
             {
-                var item = view_employee.SelectedRows[0].DataBoundItem as Employment;
-
-                if (view_employee.SelectedRows.Count > 0)
+                if(view_employee.SelectedRows.Count > 0)
                 {
-                    tbx_edit_position.Text = item.PositionTitle;
-                    tbx_edit_company.Text = item.Company;
-                    tbx_edit_location.Text = item.Location;
-                    tbx_edit_supervisor.Text = item.Supervisor;
-                    date_edit_from.Value = item.FromDate;
-                    date_edit_to.Value = item.ToDate;
-                    tbx_edit_nature.Text = item.Nature;
-                    tbx_edit_compensation.Text = item.MonthlyCompensation.ToString();
-                    tbx_edit_reason.Text = item.ReasonForLeaving;
+                    var item = table_employment.Rows[view_employee.SelectedRows[0].Index];
+
+                    tbx_edit_position.Text = item["PositionTitle"].ToString();
+                    tbx_edit_company.Text = item["Company"].ToString();
+                    tbx_edit_location.Text = item["Location"].ToString();
+                    tbx_edit_supervisor.Text = item["Supervisor"].ToString();
+                    date_edit_from.Value = DateTime.Parse(item["FromDate"].ToString());
+                    date_edit_to.Value = DateTime.Parse(item["ToDate"].ToString());
+                    tbx_edit_nature.Text = item["Nature"].ToString();
+                    tbx_edit_compensation.Text = item["MonthlyCompensation"].ToString();
+                    tbx_edit_reason.Text = item["ReasonForLeaving"].ToString();
+
+                    btn_edit_save.Enabled = true;
+                    btn_delete.Enabled = true;
+                }
+                else
+                {
+                    btn_edit_save.Enabled = false;
+                    btn_delete.Enabled = false;
                 }
             }
             catch { }
         }
         private void OnLoad(object sender, System.EventArgs e)
         {
-            ResetText();
+            //
+            // employment datagridview
+            //
+            if (view_employee.DataSource is null)
+            {
+                this.view_employee.DataSource = GetEmployments();
+                this.view_employee.Columns["ApplicantID"].Visible = false;
+                ImplementNotSortable(view_employee);
+            }
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
             try
             {
-                view_employee.Rows.Remove(view_employee.SelectedRows[0]);
-                RefreshData();
-                ResetEditFields();
-                view_employee.ClearSelection();
+                table_employment.Rows.RemoveAt(view_employee.SelectedRows[0].Index);
             }
             catch { }
+            finally
+            {
+                view_employee.ClearSelection();
+                ResetEditFields();
+            }
         }
 
         private void tbx_add_postionTitle_TextChanged(object sender, EventArgs e)
@@ -262,12 +327,12 @@ namespace Presentation.DialogBox.ExternalApplicationForm
 
         private void date_edit_from_ValueChanged(object sender, EventArgs e)
         {
-            lbl_date_from.ImageIndex = 1;
+            lbl_date_from.ImageIndex = 0;
         }
 
         private void date_edit_to_ValueChanged(object sender, EventArgs e)
         {
-            lbl_date_to.ImageIndex = 1;
+            lbl_date_to.ImageIndex = 0;
         }
 
         private void tbx_edit_nature_TextChanged(object sender, EventArgs e)
@@ -280,32 +345,21 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             Misc.TurnGreenIndicator(tbx_edit_reason.Text, lbl_edit_reason);
         }
 
-        private void FormEmploymentHistory_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (employments.Count > 0)
-            {
-                DialogResult = MessageBox.Show("All data you input will be disregarded,\nAre you sure?",
-                "Background Education", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (DialogResult == DialogResult.Yes)
-                {
-                    ResetAddFields();
-                    ResetEditFields();
-                    employments.Clear();
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-        }
-
         private void btn_ok_Click(object sender, EventArgs e)
         {
-            ResetEditFields();
-            ResetAddFields();
+            if (view_employee.Rows.Count is 0)
+                table_employment.Columns.Clear();
             this.Hide();
         }
         #endregion
+
+        private void view_employee_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            if(view_employee.Rows.Count > 0)
+            {
+                btn_edit_save.Enabled = true;
+                btn_delete.Enabled = true;
+            }
+        }
     }
 }

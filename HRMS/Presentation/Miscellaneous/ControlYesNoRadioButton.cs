@@ -13,10 +13,10 @@ namespace Presentation.Miscellaneous
         {
             string result = string.Empty;
 
-            if (radioButton1.Checked)
-                result = radioButton1.Text;
-            if (radioButton2.Checked)
-                result = radioButton2.Text;
+            if (Yes.Checked)
+                result = Yes.Text;
+            if (No.Checked)
+                result = No.Text;
 
             return result;
         }

@@ -18,20 +18,61 @@ namespace Presentation.DialogBox.ExternalApplicationForm
         public FormBackgroundIllness()
         {
             InitializeComponent();
-            this.IsDiagnosedByIlness.radioButton1.ForeColor = Color.White;
-            this.IsDiagnosedByIlness.radioButton2.ForeColor = Color.White;
-            this.IsMedOperated.radioButton1.ForeColor = Color.White;
-            this.IsMedOperated.radioButton2.ForeColor = Color.White;
-            this.IsDiagnosedByIlness.radioButton1.CheckedChanged += RadioButton1_CheckedChanged;
-            this.IsDiagnosedByIlness.radioButton2.CheckedChanged += RadioButton2_CheckedChanged;
-            this.IsMedOperated.radioButton1.CheckedChanged += RadioButton1_CheckedChanged1;
-            this.IsMedOperated.radioButton2.CheckedChanged += RadioButton2_CheckedChanged1;
+            this.IsDiagnosedByIlness.Yes.ForeColor = Color.White;
+            this.IsDiagnosedByIlness.No.ForeColor = Color.White;
+            this.IsMedOperated.Yes.ForeColor = Color.White;
+            this.IsMedOperated.No.ForeColor = Color.White;
+            this.IsDiagnosedByIlness.Yes.CheckedChanged += RadioButton1_CheckedChanged;
+            this.IsDiagnosedByIlness.No.CheckedChanged += RadioButton2_CheckedChanged;
+            this.IsMedOperated.Yes.CheckedChanged += RadioButton1_CheckedChanged1;
+            this.IsMedOperated.No.CheckedChanged += RadioButton2_CheckedChanged1;
             
             this.access = new DataAccess();
             this.table_illnesses = new DataTable();
             this.table_operations = new DataTable();
         }
-        
+        private bool ValidateFields()
+        {
+            bool result = true;
+
+            if(IsDiagnosedByIlness.Yes.Checked == true)
+            {
+                if (view_illness.Rows.Count > 0)
+                    result = true;
+                else
+                    result = false;
+            }
+
+            if(IsMedOperated.Yes.Checked == true)
+            {
+                if (view_operations.Rows.Count > 0)
+                    result = true;
+                else
+                    result = false;
+            }
+
+            return result;
+        }
+        public bool CheckValue()
+        {
+            bool illness_haveVal = table_illnesses != null;
+            bool operation_haveVal = table_operations != null;
+
+            return illness_haveVal && operation_haveVal;
+        }
+
+        private void CheckIfNoHaveValues_Illness()
+        {
+            if (table_illnesses.Rows.Count > 0)
+                table_illnesses.Rows.RemoveAt(0);
+        }
+
+        private void CheckIfNoHaveValues_MedOperation()
+        {
+            if (table_operations.Rows.Count > 0)
+                table_operations.Rows.RemoveAt(0);
+        }
+
         private void EnableControl(bool arg, DataGridView view, Panel panel)
         {
             view.Enabled = arg;
@@ -42,7 +83,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
         {
             tbx_illness_description.ResetText();
             tbx_illness_details.ResetText();
-            IsLifetimeIllness.radioButton2.Checked = true;
+            IsLifetimeIllness.No.Checked = true;
         }
 
         private DataTable GetIllnessData()
@@ -69,6 +110,20 @@ namespace Presentation.DialogBox.ExternalApplicationForm
         public void ImplementNotSortable(DataGridView view)
         {
             view.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
+        }
+        private void CheckNoValues()
+        {
+            if (IsDiagnosedByIlness.GetValue() == "No")
+            {
+                table_illnesses.Rows.Add(0, IsDiagnosedByIlness.GetValue(), null, null, null);
+                table_illnesses.Rows.RemoveAt(0);
+            }
+
+            if (IsMedOperated.GetValue() == "No")
+            {
+                table_operations.Rows.Add(0, IsMedOperated.GetValue(), null, null);
+                table_operations.Rows.RemoveAt(0);
+            }
         }
 
         private bool ValidateOperationFields()
@@ -128,17 +183,25 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             //
             // illness datagridview
             //
-            this.view_illness.DataSource = GetIllnessData();
-            this.view_illness.Columns["ApplicantID"].Visible = false;
-            this.view_illness.Columns["IsDiagnosed"].Visible = false;
-            ImplementNotSortable(view_illness);
+            if (view_illness.DataSource is null)
+            {
+                this.view_illness.DataSource = GetIllnessData();
+                this.view_illness.Columns["ApplicantID"].Visible = false;
+                this.view_illness.Columns["IsDiagnosed"].Visible = false;
+                ImplementNotSortable(view_illness);
+            }
             //
             // medical operation datagridview
             //
-            this.view_operations.DataSource = GetMedOperationData();
-            this.view_operations.Columns["ApplicantID"].Visible = false;
-            this.view_operations.Columns["IsOperated"].Visible = false;
-            ImplementNotSortable(view_operations);
+            if(view_operations.DataSource is null)
+            {
+                this.view_operations.DataSource = GetMedOperationData();
+                this.view_operations.Columns["ApplicantID"].Visible = false;
+                this.view_operations.Columns["IsOperated"].Visible = false;
+                ImplementNotSortable(view_operations);
+            }
+
+            CheckNoValues();
         }
 
         private void btn_illness_add_Click(object sender, EventArgs e)
@@ -210,7 +273,8 @@ namespace Presentation.DialogBox.ExternalApplicationForm
                         row.Description,
                         row.Details);
 
-                    MessageBox.Show("Saved!");
+                    MessageBox.Show("Data Successfully Added!");
+                    ResetOperationFields();
                 }
                 else
                 {
@@ -259,6 +323,19 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             if (view_operations.Rows.Count > 0)
             {
                 btn_operated_delete.Enabled = true;
+            }
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            if (ValidateFields())
+            {
+                this.Hide();
+            }
+            else
+            {
+                CheckNoValues();
+                MessageBox.Show("Your input data is required!");
             }
         }
     }

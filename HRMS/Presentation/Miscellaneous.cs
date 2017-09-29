@@ -170,6 +170,14 @@ namespace Presentation
             else
                 source.ImageIndex = 0;
         }
+
+        public static void TurnGreenIndicator(bool linkvalue, Label source)
+        {
+            if (linkvalue)
+                source.ImageIndex = 0;
+            else
+                source.ImageIndex = 1;
+        }
         
     }
     public class Draggable
