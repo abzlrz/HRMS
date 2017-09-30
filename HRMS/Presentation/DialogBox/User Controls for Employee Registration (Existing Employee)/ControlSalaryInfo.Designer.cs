@@ -150,6 +150,7 @@
             this.tbx_relocAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_relocAllowance.Location = new System.Drawing.Point(262, 163);
             this.tbx_relocAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_relocAllowance.MaxLength = 10;
             this.tbx_relocAllowance.Name = "tbx_relocAllowance";
             this.tbx_relocAllowance.Size = new System.Drawing.Size(235, 22);
             this.tbx_relocAllowance.TabIndex = 88;
@@ -159,6 +160,7 @@
             this.tbx_annualLangAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_annualLangAllowance.Location = new System.Drawing.Point(262, 117);
             this.tbx_annualLangAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_annualLangAllowance.MaxLength = 10;
             this.tbx_annualLangAllowance.Name = "tbx_annualLangAllowance";
             this.tbx_annualLangAllowance.Size = new System.Drawing.Size(235, 22);
             this.tbx_annualLangAllowance.TabIndex = 87;
@@ -169,6 +171,7 @@
             this.tbx_annualBasedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_annualBasedSalary.Location = new System.Drawing.Point(262, 94);
             this.tbx_annualBasedSalary.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_annualBasedSalary.MaxLength = 10;
             this.tbx_annualBasedSalary.Name = "tbx_annualBasedSalary";
             this.tbx_annualBasedSalary.Size = new System.Drawing.Size(235, 22);
             this.tbx_annualBasedSalary.TabIndex = 86;
@@ -179,6 +182,7 @@
             this.tbx_costCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_costCenter.Location = new System.Drawing.Point(262, 209);
             this.tbx_costCenter.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_costCenter.MaxLength = 10;
             this.tbx_costCenter.Name = "tbx_costCenter";
             this.tbx_costCenter.Size = new System.Drawing.Size(235, 22);
             this.tbx_costCenter.TabIndex = 81;
@@ -202,6 +206,7 @@
             this.tbx_shiftAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_shiftAllowance.Location = new System.Drawing.Point(262, 140);
             this.tbx_shiftAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_shiftAllowance.MaxLength = 10;
             this.tbx_shiftAllowance.Name = "tbx_shiftAllowance";
             this.tbx_shiftAllowance.Size = new System.Drawing.Size(235, 22);
             this.tbx_shiftAllowance.TabIndex = 79;
@@ -351,6 +356,7 @@
             this.tbx_approvedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_approvedSalary.Location = new System.Drawing.Point(262, 71);
             this.tbx_approvedSalary.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_approvedSalary.MaxLength = 10;
             this.tbx_approvedSalary.Name = "tbx_approvedSalary";
             this.tbx_approvedSalary.Size = new System.Drawing.Size(235, 22);
             this.tbx_approvedSalary.TabIndex = 85;

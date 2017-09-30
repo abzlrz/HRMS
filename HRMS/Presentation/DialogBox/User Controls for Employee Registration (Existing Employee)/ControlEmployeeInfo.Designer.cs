@@ -32,6 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlEmployeeInfo));
             this.gbx_info = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_presentAddNo = new System.Windows.Forms.TextBox();
+            this.tbx_BPI = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_HDMF = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_TIN = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_SSS = new System.Windows.Forms.MaskedTextBox();
             this.cbx_maritalStatus = new System.Windows.Forms.ComboBox();
             this.lbl_presentPostalNo = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -42,27 +47,22 @@
             this.tbx_firstname = new System.Windows.Forms.TextBox();
             this.tbx_middlename = new System.Windows.Forms.TextBox();
             this.tbx_lastname = new System.Windows.Forms.TextBox();
-            this.tbx_primaryContact = new System.Windows.Forms.TextBox();
-            this.tbx_secondaryContact = new System.Windows.Forms.TextBox();
             this.tbx_email = new System.Windows.Forms.TextBox();
-            this.tbx_SSS = new System.Windows.Forms.TextBox();
-            this.tbx_TIN = new System.Windows.Forms.TextBox();
-            this.tbx_HDMF = new System.Windows.Forms.TextBox();
-            this.tbx_BPI = new System.Windows.Forms.TextBox();
-            this.tbx_presentAddNo = new System.Windows.Forms.TextBox();
             this.tbx_presentAddStreet = new System.Windows.Forms.TextBox();
             this.tbx_presentPostalArea = new System.Windows.Forms.TextBox();
             this.tbx_presentPostalNo = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lbl_secondaryContact = new System.Windows.Forms.Label();
             this.lbl_maritalStatus = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_sss = new System.Windows.Forms.Label();
+            this.lbl_tin = new System.Windows.Forms.Label();
+            this.lbl_hdmf = new System.Windows.Forms.Label();
+            this.lbl_bpi = new System.Windows.Forms.Label();
             this.lbl_presentAddNo = new System.Windows.Forms.Label();
             this.lbl_presentStreet = new System.Windows.Forms.Label();
             this.lbl_presentPostalArea = new System.Windows.Forms.Label();
+            this.tbx_primaryContact = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -89,6 +89,11 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.41745F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.58255F));
+            this.tableLayoutPanel2.Controls.Add(this.tbx_presentAddNo, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_BPI, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_HDMF, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_TIN, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_SSS, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.cbx_maritalStatus, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.lbl_presentPostalNo, 0, 14);
             this.tableLayoutPanel2.Controls.Add(this.lbl_firstname, 0, 0);
@@ -98,27 +103,22 @@
             this.tableLayoutPanel2.Controls.Add(this.tbx_firstname, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tbx_middlename, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.tbx_lastname, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_primaryContact, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_secondaryContact, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.tbx_email, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_SSS, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_TIN, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_HDMF, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_BPI, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_presentAddNo, 1, 11);
             this.tableLayoutPanel2.Controls.Add(this.tbx_presentAddStreet, 1, 12);
             this.tableLayoutPanel2.Controls.Add(this.tbx_presentPostalArea, 1, 13);
             this.tableLayoutPanel2.Controls.Add(this.tbx_presentPostalNo, 1, 14);
-            this.tableLayoutPanel2.Controls.Add(this.label23, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_secondaryContact, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.lbl_maritalStatus, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.lbl_email, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_sss, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_tin, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_hdmf, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_bpi, 0, 10);
             this.tableLayoutPanel2.Controls.Add(this.lbl_presentAddNo, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.lbl_presentStreet, 0, 12);
             this.tableLayoutPanel2.Controls.Add(this.lbl_presentPostalArea, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_primaryContact, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_secondaryContact, 1, 4);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(25, 34);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 15;
@@ -139,6 +139,75 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(509, 347);
             this.tableLayoutPanel2.TabIndex = 56;
+            // 
+            // tbx_presentAddNo
+            // 
+            this.tbx_presentAddNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_presentAddNo.Location = new System.Drawing.Point(237, 255);
+            this.tbx_presentAddNo.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_presentAddNo.MaxLength = 49;
+            this.tbx_presentAddNo.Name = "tbx_presentAddNo";
+            this.tbx_presentAddNo.Size = new System.Drawing.Size(270, 22);
+            this.tbx_presentAddNo.TabIndex = 91;
+            this.tbx_presentAddNo.Tag = "required";
+            // 
+            // tbx_BPI
+            // 
+            this.tbx_BPI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_BPI.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_BPI.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.tbx_BPI.Location = new System.Drawing.Point(237, 232);
+            this.tbx_BPI.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_BPI.Mask = "0000 0000 00";
+            this.tbx_BPI.Name = "tbx_BPI";
+            this.tbx_BPI.Size = new System.Drawing.Size(270, 20);
+            this.tbx_BPI.TabIndex = 118;
+            this.tbx_BPI.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbx_BPI.TextChanged += new System.EventHandler(this.tbx_BPI_TextChanged);
+            // 
+            // tbx_HDMF
+            // 
+            this.tbx_HDMF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_HDMF.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_HDMF.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.tbx_HDMF.Location = new System.Drawing.Point(237, 209);
+            this.tbx_HDMF.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_HDMF.Mask = "0000-0000";
+            this.tbx_HDMF.Name = "tbx_HDMF";
+            this.tbx_HDMF.Size = new System.Drawing.Size(270, 20);
+            this.tbx_HDMF.TabIndex = 117;
+            this.tbx_HDMF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbx_HDMF.TextChanged += new System.EventHandler(this.tbx_HDMF_TextChanged);
+            // 
+            // tbx_TIN
+            // 
+            this.tbx_TIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_TIN.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_TIN.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.tbx_TIN.Location = new System.Drawing.Point(237, 186);
+            this.tbx_TIN.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_TIN.Mask = "000-000-000";
+            this.tbx_TIN.Name = "tbx_TIN";
+            this.tbx_TIN.Size = new System.Drawing.Size(270, 20);
+            this.tbx_TIN.TabIndex = 116;
+            this.tbx_TIN.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbx_TIN.TextChanged += new System.EventHandler(this.tbx_TIN_TextChanged);
+            // 
+            // tbx_SSS
+            // 
+            this.tbx_SSS.AllowPromptAsInput = false;
+            this.tbx_SSS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_SSS.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_SSS.Location = new System.Drawing.Point(237, 163);
+            this.tbx_SSS.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_SSS.Mask = "00-0000000-0";
+            this.tbx_SSS.Name = "tbx_SSS";
+            this.tbx_SSS.RejectInputOnFirstFailure = true;
+            this.tbx_SSS.Size = new System.Drawing.Size(270, 20);
+            this.tbx_SSS.SkipLiterals = false;
+            this.tbx_SSS.TabIndex = 115;
+            this.tbx_SSS.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbx_SSS.TextChanged += new System.EventHandler(this.tbx_SSS_TextChanged);
             // 
             // cbx_maritalStatus
             // 
@@ -241,6 +310,7 @@
             this.tbx_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_firstname.Location = new System.Drawing.Point(237, 2);
             this.tbx_firstname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_firstname.MaxLength = 99;
             this.tbx_firstname.Name = "tbx_firstname";
             this.tbx_firstname.Size = new System.Drawing.Size(270, 22);
             this.tbx_firstname.TabIndex = 78;
@@ -252,6 +322,7 @@
             this.tbx_middlename.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_middlename.Location = new System.Drawing.Point(237, 25);
             this.tbx_middlename.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_middlename.MaxLength = 99;
             this.tbx_middlename.Name = "tbx_middlename";
             this.tbx_middlename.Size = new System.Drawing.Size(270, 22);
             this.tbx_middlename.TabIndex = 79;
@@ -262,100 +333,31 @@
             this.tbx_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_lastname.Location = new System.Drawing.Point(237, 48);
             this.tbx_lastname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_lastname.MaxLength = 99;
             this.tbx_lastname.Name = "tbx_lastname";
             this.tbx_lastname.Size = new System.Drawing.Size(270, 22);
             this.tbx_lastname.TabIndex = 80;
             this.tbx_lastname.Tag = "required";
             this.tbx_lastname.TextChanged += new System.EventHandler(this.tbx_lastname_TextChanged);
             // 
-            // tbx_primaryContact
-            // 
-            this.tbx_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_primaryContact.Location = new System.Drawing.Point(237, 71);
-            this.tbx_primaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_primaryContact.Name = "tbx_primaryContact";
-            this.tbx_primaryContact.Size = new System.Drawing.Size(270, 22);
-            this.tbx_primaryContact.TabIndex = 81;
-            this.tbx_primaryContact.Tag = "required";
-            this.tbx_primaryContact.TextChanged += new System.EventHandler(this.tbx_primaryContact_TextChanged);
-            // 
-            // tbx_secondaryContact
-            // 
-            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_secondaryContact.Location = new System.Drawing.Point(237, 94);
-            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
-            this.tbx_secondaryContact.Size = new System.Drawing.Size(270, 22);
-            this.tbx_secondaryContact.TabIndex = 82;
-            this.tbx_secondaryContact.Tag = "required";
-            // 
             // tbx_email
             // 
             this.tbx_email.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_email.Location = new System.Drawing.Point(237, 140);
             this.tbx_email.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_email.MaxLength = 49;
             this.tbx_email.Name = "tbx_email";
             this.tbx_email.Size = new System.Drawing.Size(270, 22);
             this.tbx_email.TabIndex = 84;
             this.tbx_email.Tag = "required";
             this.tbx_email.TextChanged += new System.EventHandler(this.tbx_email_TextChanged);
             // 
-            // tbx_SSS
-            // 
-            this.tbx_SSS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_SSS.Location = new System.Drawing.Point(237, 163);
-            this.tbx_SSS.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_SSS.Name = "tbx_SSS";
-            this.tbx_SSS.Size = new System.Drawing.Size(270, 22);
-            this.tbx_SSS.TabIndex = 85;
-            this.tbx_SSS.Tag = "required";
-            // 
-            // tbx_TIN
-            // 
-            this.tbx_TIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_TIN.Location = new System.Drawing.Point(237, 186);
-            this.tbx_TIN.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_TIN.Name = "tbx_TIN";
-            this.tbx_TIN.Size = new System.Drawing.Size(270, 22);
-            this.tbx_TIN.TabIndex = 86;
-            this.tbx_TIN.Tag = "required";
-            // 
-            // tbx_HDMF
-            // 
-            this.tbx_HDMF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_HDMF.Location = new System.Drawing.Point(237, 209);
-            this.tbx_HDMF.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_HDMF.Name = "tbx_HDMF";
-            this.tbx_HDMF.Size = new System.Drawing.Size(270, 22);
-            this.tbx_HDMF.TabIndex = 87;
-            this.tbx_HDMF.Tag = "required";
-            // 
-            // tbx_BPI
-            // 
-            this.tbx_BPI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_BPI.Location = new System.Drawing.Point(237, 232);
-            this.tbx_BPI.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_BPI.Name = "tbx_BPI";
-            this.tbx_BPI.Size = new System.Drawing.Size(270, 22);
-            this.tbx_BPI.TabIndex = 88;
-            this.tbx_BPI.Tag = "required";
-            // 
-            // tbx_presentAddNo
-            // 
-            this.tbx_presentAddNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_presentAddNo.Location = new System.Drawing.Point(237, 255);
-            this.tbx_presentAddNo.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_presentAddNo.Name = "tbx_presentAddNo";
-            this.tbx_presentAddNo.Size = new System.Drawing.Size(270, 22);
-            this.tbx_presentAddNo.TabIndex = 89;
-            this.tbx_presentAddNo.Tag = "required";
-            this.tbx_presentAddNo.TextChanged += new System.EventHandler(this.tbx_presentAddNo_TextChanged);
-            // 
             // tbx_presentAddStreet
             // 
             this.tbx_presentAddStreet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_presentAddStreet.Location = new System.Drawing.Point(237, 278);
             this.tbx_presentAddStreet.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_presentAddStreet.MaxLength = 99;
             this.tbx_presentAddStreet.Name = "tbx_presentAddStreet";
             this.tbx_presentAddStreet.Size = new System.Drawing.Size(270, 22);
             this.tbx_presentAddStreet.TabIndex = 90;
@@ -367,6 +369,7 @@
             this.tbx_presentPostalArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_presentPostalArea.Location = new System.Drawing.Point(237, 301);
             this.tbx_presentPostalArea.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_presentPostalArea.MaxLength = 99;
             this.tbx_presentPostalArea.Name = "tbx_presentPostalArea";
             this.tbx_presentPostalArea.Size = new System.Drawing.Size(270, 22);
             this.tbx_presentPostalArea.TabIndex = 91;
@@ -378,22 +381,25 @@
             this.tbx_presentPostalNo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_presentPostalNo.Location = new System.Drawing.Point(237, 324);
             this.tbx_presentPostalNo.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_presentPostalNo.MaxLength = 99;
             this.tbx_presentPostalNo.Name = "tbx_presentPostalNo";
             this.tbx_presentPostalNo.Size = new System.Drawing.Size(270, 22);
             this.tbx_presentPostalNo.TabIndex = 92;
             this.tbx_presentPostalNo.TextChanged += new System.EventHandler(this.tbx_presentPostalNo_TextChanged);
             // 
-            // label23
+            // lbl_secondaryContact
             // 
-            this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(5, 94);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(227, 21);
-            this.label23.TabIndex = 93;
-            this.label23.Text = "Secondary Contact#:";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_secondaryContact.AutoSize = true;
+            this.lbl_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_secondaryContact.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_secondaryContact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_secondaryContact.ImageList = this.imageList;
+            this.lbl_secondaryContact.Location = new System.Drawing.Point(5, 94);
+            this.lbl_secondaryContact.Name = "lbl_secondaryContact";
+            this.lbl_secondaryContact.Size = new System.Drawing.Size(227, 21);
+            this.lbl_secondaryContact.TabIndex = 93;
+            this.lbl_secondaryContact.Text = "Secondary Contact#:";
+            this.lbl_secondaryContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_maritalStatus
             // 
@@ -425,53 +431,61 @@
             this.lbl_email.Text = "Email Address:";
             this.lbl_email.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // lbl_sss
             // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 163);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(227, 21);
-            this.label7.TabIndex = 96;
-            this.label7.Text = "SSS#:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_sss.AutoSize = true;
+            this.lbl_sss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_sss.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sss.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_sss.ImageList = this.imageList;
+            this.lbl_sss.Location = new System.Drawing.Point(5, 163);
+            this.lbl_sss.Name = "lbl_sss";
+            this.lbl_sss.Size = new System.Drawing.Size(227, 21);
+            this.lbl_sss.TabIndex = 96;
+            this.lbl_sss.Text = "SSS#:";
+            this.lbl_sss.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lbl_tin
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 186);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(227, 21);
-            this.label8.TabIndex = 97;
-            this.label8.Text = "TIN#:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_tin.AutoSize = true;
+            this.lbl_tin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_tin.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_tin.ImageList = this.imageList;
+            this.lbl_tin.Location = new System.Drawing.Point(5, 186);
+            this.lbl_tin.Name = "lbl_tin";
+            this.lbl_tin.Size = new System.Drawing.Size(227, 21);
+            this.lbl_tin.TabIndex = 97;
+            this.lbl_tin.Text = "TIN#:";
+            this.lbl_tin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // lbl_hdmf
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(5, 209);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(227, 21);
-            this.label9.TabIndex = 98;
-            this.label9.Text = "HDMF#:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_hdmf.AutoSize = true;
+            this.lbl_hdmf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_hdmf.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hdmf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_hdmf.ImageList = this.imageList;
+            this.lbl_hdmf.Location = new System.Drawing.Point(5, 209);
+            this.lbl_hdmf.Name = "lbl_hdmf";
+            this.lbl_hdmf.Size = new System.Drawing.Size(227, 21);
+            this.lbl_hdmf.TabIndex = 98;
+            this.lbl_hdmf.Text = "HDMF#:";
+            this.lbl_hdmf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // lbl_bpi
             // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(5, 232);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(227, 21);
-            this.label12.TabIndex = 99;
-            this.label12.Text = "BPI Card#:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_bpi.AutoSize = true;
+            this.lbl_bpi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_bpi.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bpi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_bpi.ImageList = this.imageList;
+            this.lbl_bpi.Location = new System.Drawing.Point(5, 232);
+            this.lbl_bpi.Name = "lbl_bpi";
+            this.lbl_bpi.Size = new System.Drawing.Size(227, 21);
+            this.lbl_bpi.TabIndex = 99;
+            this.lbl_bpi.Text = "BPI Card#:";
+            this.lbl_bpi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_presentAddNo
             // 
@@ -515,6 +529,29 @@
             this.lbl_presentPostalArea.TabIndex = 102;
             this.lbl_presentPostalArea.Text = "(Address) Postal Area:";
             this.lbl_presentPostalArea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbx_primaryContact
+            // 
+            this.tbx_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_primaryContact.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_primaryContact.Location = new System.Drawing.Point(237, 71);
+            this.tbx_primaryContact.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_primaryContact.Mask = "(+63)0000000000";
+            this.tbx_primaryContact.Name = "tbx_primaryContact";
+            this.tbx_primaryContact.Size = new System.Drawing.Size(270, 20);
+            this.tbx_primaryContact.TabIndex = 104;
+            // 
+            // tbx_secondaryContact
+            // 
+            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_secondaryContact.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_secondaryContact.Location = new System.Drawing.Point(237, 94);
+            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_secondaryContact.Mask = "(+63)0000000000";
+            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
+            this.tbx_secondaryContact.Size = new System.Drawing.Size(270, 20);
+            this.tbx_secondaryContact.TabIndex = 105;
+            this.tbx_secondaryContact.TextChanged += new System.EventHandler(this.tbx_secondaryContact_TextChanged);
             // 
             // panel2
             // 
@@ -585,24 +622,17 @@
         private System.Windows.Forms.TextBox tbx_firstname;
         private System.Windows.Forms.TextBox tbx_middlename;
         private System.Windows.Forms.TextBox tbx_lastname;
-        private System.Windows.Forms.TextBox tbx_primaryContact;
-        private System.Windows.Forms.TextBox tbx_secondaryContact;
         private System.Windows.Forms.TextBox tbx_email;
-        private System.Windows.Forms.TextBox tbx_SSS;
-        private System.Windows.Forms.TextBox tbx_TIN;
-        private System.Windows.Forms.TextBox tbx_HDMF;
-        private System.Windows.Forms.TextBox tbx_BPI;
-        private System.Windows.Forms.TextBox tbx_presentAddNo;
         private System.Windows.Forms.TextBox tbx_presentAddStreet;
         private System.Windows.Forms.TextBox tbx_presentPostalArea;
         private System.Windows.Forms.TextBox tbx_presentPostalNo;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lbl_secondaryContact;
         private System.Windows.Forms.Label lbl_maritalStatus;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbl_sss;
+        private System.Windows.Forms.Label lbl_tin;
+        private System.Windows.Forms.Label lbl_hdmf;
+        private System.Windows.Forms.Label lbl_bpi;
         private System.Windows.Forms.Label lbl_presentAddNo;
         private System.Windows.Forms.Label lbl_presentStreet;
         private System.Windows.Forms.Label lbl_presentPostalArea;
@@ -610,5 +640,12 @@
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.MaskedTextBox tbx_primaryContact;
+        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
+        private System.Windows.Forms.MaskedTextBox tbx_SSS;
+        private System.Windows.Forms.MaskedTextBox tbx_TIN;
+        private System.Windows.Forms.MaskedTextBox tbx_HDMF;
+        private System.Windows.Forms.TextBox tbx_presentAddNo;
+        private System.Windows.Forms.MaskedTextBox tbx_BPI;
     }
 }

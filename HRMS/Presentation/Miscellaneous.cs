@@ -160,7 +160,7 @@ namespace Presentation
         {
             if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
                 source.ImageIndex = 1;
-            else if (text.Length < 5)
+            else if (text.Length < 2)
                 source.ImageIndex = 1;
             else
                 source.ImageIndex = 0;
@@ -181,12 +181,27 @@ namespace Presentation
                 source.ImageIndex = 1;
         }
 
-        public static void TurnGreenIndicator(MaskedTextBox tbs, Label source)
+        public static void TurnGreenIndicator(MaskedTextBox tbs, Label source, bool IsRequired)
         {
-            if (tbs.MaskCompleted)
-                source.ImageIndex = 0;
+            if (IsRequired)
+            {
+                if (tbs.MaskCompleted)
+                    source.ImageIndex = 0;
+                else
+                    source.ImageIndex = 1;
+            }
             else
-                source.ImageIndex = 1;
+            {
+                if (tbs.Text.Length < 1)
+                    source.ImageIndex = -1;
+                else
+                {
+                    if (tbs.MaskCompleted)
+                        source.ImageIndex = 0;
+                    else
+                        source.ImageIndex = 1;
+                }
+            }
         }
     }
     public class Draggable

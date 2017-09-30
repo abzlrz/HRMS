@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPersonalInformation));
             this.gbx_info = new System.Windows.Forms.GroupBox();
-            this.cx_bpi = new System.Windows.Forms.CheckBox();
-            this.cx_hdmf = new System.Windows.Forms.CheckBox();
-            this.cx_tin = new System.Windows.Forms.CheckBox();
-            this.cx_sss = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
             this.lbl_bpi = new System.Windows.Forms.Label();
@@ -71,10 +67,6 @@
             // 
             // gbx_info
             // 
-            this.gbx_info.Controls.Add(this.cx_bpi);
-            this.gbx_info.Controls.Add(this.cx_hdmf);
-            this.gbx_info.Controls.Add(this.cx_tin);
-            this.gbx_info.Controls.Add(this.cx_sss);
             this.gbx_info.Controls.Add(this.tableLayoutPanel4);
             this.gbx_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbx_info.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,46 +77,6 @@
             this.gbx_info.TabIndex = 86;
             this.gbx_info.TabStop = false;
             this.gbx_info.Text = "Personal Information";
-            // 
-            // cx_bpi
-            // 
-            this.cx_bpi.AutoSize = true;
-            this.cx_bpi.Location = new System.Drawing.Point(585, 306);
-            this.cx_bpi.Name = "cx_bpi";
-            this.cx_bpi.Size = new System.Drawing.Size(15, 14);
-            this.cx_bpi.TabIndex = 6;
-            this.cx_bpi.UseVisualStyleBackColor = true;
-            this.cx_bpi.CheckedChanged += new System.EventHandler(this.cx_bpi_CheckedChanged);
-            // 
-            // cx_hdmf
-            // 
-            this.cx_hdmf.AutoSize = true;
-            this.cx_hdmf.Location = new System.Drawing.Point(585, 282);
-            this.cx_hdmf.Name = "cx_hdmf";
-            this.cx_hdmf.Size = new System.Drawing.Size(15, 14);
-            this.cx_hdmf.TabIndex = 5;
-            this.cx_hdmf.UseVisualStyleBackColor = true;
-            this.cx_hdmf.CheckedChanged += new System.EventHandler(this.cx_hdmf_CheckedChanged);
-            // 
-            // cx_tin
-            // 
-            this.cx_tin.AutoSize = true;
-            this.cx_tin.Location = new System.Drawing.Point(585, 259);
-            this.cx_tin.Name = "cx_tin";
-            this.cx_tin.Size = new System.Drawing.Size(15, 14);
-            this.cx_tin.TabIndex = 4;
-            this.cx_tin.UseVisualStyleBackColor = true;
-            this.cx_tin.CheckedChanged += new System.EventHandler(this.cx_tin_CheckedChanged);
-            // 
-            // cx_sss
-            // 
-            this.cx_sss.AutoSize = true;
-            this.cx_sss.Location = new System.Drawing.Point(585, 236);
-            this.cx_sss.Name = "cx_sss";
-            this.cx_sss.Size = new System.Drawing.Size(15, 14);
-            this.cx_sss.TabIndex = 3;
-            this.cx_sss.UseVisualStyleBackColor = true;
-            this.cx_sss.CheckedChanged += new System.EventHandler(this.cx_sss_CheckedChanged);
             // 
             // tableLayoutPanel4
             // 
@@ -450,7 +402,6 @@
             // 
             this.tbx_SSS.AllowPromptAsInput = false;
             this.tbx_SSS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_SSS.Enabled = false;
             this.tbx_SSS.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_SSS.Location = new System.Drawing.Point(264, 186);
             this.tbx_SSS.Margin = new System.Windows.Forms.Padding(0);
@@ -460,12 +411,12 @@
             this.tbx_SSS.Size = new System.Drawing.Size(286, 20);
             this.tbx_SSS.SkipLiterals = false;
             this.tbx_SSS.TabIndex = 114;
+            this.tbx_SSS.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_SSS.TextChanged += new System.EventHandler(this.tbx_SSS_TextChanged);
             // 
             // tbx_TIN
             // 
             this.tbx_TIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_TIN.Enabled = false;
             this.tbx_TIN.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_TIN.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_TIN.Location = new System.Drawing.Point(264, 209);
@@ -474,12 +425,12 @@
             this.tbx_TIN.Name = "tbx_TIN";
             this.tbx_TIN.Size = new System.Drawing.Size(286, 20);
             this.tbx_TIN.TabIndex = 115;
+            this.tbx_TIN.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_TIN.TextChanged += new System.EventHandler(this.tbx_TIN_TextChanged);
             // 
             // tbx_HDMF
             // 
             this.tbx_HDMF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_HDMF.Enabled = false;
             this.tbx_HDMF.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_HDMF.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_HDMF.Location = new System.Drawing.Point(264, 232);
@@ -488,12 +439,12 @@
             this.tbx_HDMF.Name = "tbx_HDMF";
             this.tbx_HDMF.Size = new System.Drawing.Size(286, 20);
             this.tbx_HDMF.TabIndex = 116;
+            this.tbx_HDMF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_HDMF.TextChanged += new System.EventHandler(this.tbx_HDMF_TextChanged);
             // 
             // tbx_bankAccnt
             // 
             this.tbx_bankAccnt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_bankAccnt.Enabled = false;
             this.tbx_bankAccnt.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_bankAccnt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_bankAccnt.Location = new System.Drawing.Point(264, 255);
@@ -502,6 +453,7 @@
             this.tbx_bankAccnt.Name = "tbx_bankAccnt";
             this.tbx_bankAccnt.Size = new System.Drawing.Size(286, 20);
             this.tbx_bankAccnt.TabIndex = 117;
+            this.tbx_bankAccnt.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_bankAccnt.TextChanged += new System.EventHandler(this.tbx_bankAccnt_TextChanged);
             // 
             // panel2
@@ -553,7 +505,6 @@
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(641, 515);
             this.gbx_info.ResumeLayout(false);
-            this.gbx_info.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -564,7 +515,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbx_info;
+        private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_next;
+        private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
         private System.Windows.Forms.Label lbl_bpi;
         private System.Windows.Forms.Label lbl_isUnder18;
         private System.Windows.Forms.Label lbl_fname;
@@ -583,19 +539,10 @@
         private System.Windows.Forms.TextBox tbx_lastName;
         private System.Windows.Forms.TextBox tbx_nickname;
         private System.Windows.Forms.TextBox tbx_email;
-        private System.Windows.Forms.ImageList imageList;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_next;
-        private System.Windows.Forms.Button btn_clear;
-        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
         private System.Windows.Forms.MaskedTextBox tbx_primaryContact;
         private System.Windows.Forms.MaskedTextBox tbx_SSS;
         private System.Windows.Forms.MaskedTextBox tbx_TIN;
         private System.Windows.Forms.MaskedTextBox tbx_HDMF;
         private System.Windows.Forms.MaskedTextBox tbx_bankAccnt;
-        private System.Windows.Forms.CheckBox cx_bpi;
-        private System.Windows.Forms.CheckBox cx_hdmf;
-        private System.Windows.Forms.CheckBox cx_tin;
-        private System.Windows.Forms.CheckBox cx_sss;
     }
 }

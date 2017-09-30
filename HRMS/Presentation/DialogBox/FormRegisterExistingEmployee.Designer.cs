@@ -33,7 +33,6 @@ namespace Presentation.DialogBox
             this.controlEmployeeEvaluation1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlEmployeeEvaluation();
             this.controlSalaryInfo1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlSalaryInfo();
             this.controlEmployeeInfo1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlEmployeeInfo();
-            this.btn_previous = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // controlEmployeeEvaluation1
@@ -67,19 +66,6 @@ namespace Presentation.DialogBox
             this.controlEmployeeInfo1.Size = new System.Drawing.Size(587, 521);
             this.controlEmployeeInfo1.TabIndex = 3;
             // 
-            // btn_previous
-            // 
-            this.btn_previous.BackColor = System.Drawing.Color.Navy;
-            this.btn_previous.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_previous.ForeColor = System.Drawing.Color.White;
-            this.btn_previous.Location = new System.Drawing.Point(470, 450);
-            this.btn_previous.Name = "btn_previous";
-            this.btn_previous.Size = new System.Drawing.Size(75, 35);
-            this.btn_previous.TabIndex = 14;
-            this.btn_previous.Text = "Save";
-            this.btn_previous.UseVisualStyleBackColor = false;
-            // 
             // FormRegisterExistingEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -87,7 +73,6 @@ namespace Presentation.DialogBox
             this.ClientSize = new System.Drawing.Size(587, 521);
             this.Controls.Add(this.controlEmployeeInfo1);
             this.Controls.Add(this.controlEmployeeEvaluation1);
-            this.Controls.Add(this.btn_previous);
             this.Controls.Add(this.controlSalaryInfo1);
             this.DoubleBuffered = true;
             this.HelpButton = true;
@@ -104,6 +89,5 @@ namespace Presentation.DialogBox
         private ControlEmployeeInfo controlEmployeeInfo1;
         private ControlEmployeeEvaluation controlEmployeeEvaluation1;
         private ControlSalaryInfo controlSalaryInfo1;
-        private System.Windows.Forms.Button btn_previous;
     }
 }

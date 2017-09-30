@@ -37,6 +37,15 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             if (lbl_presentPostalNo.ImageIndex == 1)
                 result = false;
 
+            if (lbl_sss.ImageIndex == 1)
+                result = false;
+            if (lbl_tin.ImageIndex == 1)
+                result = false;
+            if (lbl_hdmf.ImageIndex == 1)
+                result = false;
+            if (lbl_bpi.ImageIndex == 1)
+                result = false;
+
             return result;
         }
         public void ClearAllFields()
@@ -112,7 +121,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
         private void tbx_primaryContact_TextChanged(object sender, EventArgs e)
         {
-            Misc.TurnGreenIndicator(tbx_primaryContact.Text, lbl_primaryContact);
+            Misc.TurnGreenIndicator(tbx_primaryContact, lbl_primaryContact, true);
         }
 
         private void cbx_maritalStatus_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,5 +154,30 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             Misc.TurnGreenIndicator(tbx_presentPostalNo.Text, lbl_presentPostalNo);
         }
         #endregion
+
+        private void tbx_SSS_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_SSS, lbl_sss, false);
+        }
+
+        private void tbx_TIN_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_TIN, lbl_tin, false);
+        }
+
+        private void tbx_HDMF_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_HDMF, lbl_hdmf, false);
+        }
+
+        private void tbx_BPI_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_BPI, lbl_bpi, false);
+        }
+
+        private void tbx_secondaryContact_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_secondaryContact, lbl_secondaryContact, false);
+        }
     }
 }
