@@ -33,13 +33,16 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_site = new System.Windows.Forms.Label();
+            this.lbl_position = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.label8 = new System.Windows.Forms.Label();
+            this.lbl_preferredSite = new System.Windows.Forms.Label();
             this.date_applicationDate = new System.Windows.Forms.DateTimePicker();
             this.lbl_position_title = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.cbx_employeeName = new System.Windows.Forms.ComboBox();
             this.lbl_employeeName = new System.Windows.Forms.Label();
+            this.lbl_source = new System.Windows.Forms.Label();
             this.lbl_employeeID = new System.Windows.Forms.Label();
             this.cbx_source = new System.Windows.Forms.ComboBox();
             this.cbx_employeeID = new System.Windows.Forms.ComboBox();
@@ -47,9 +50,6 @@
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
-            this.lbl_position = new System.Windows.Forms.Label();
-            this.lbl_preferredSite = new System.Windows.Forms.Label();
-            this.lbl_source = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -106,6 +106,21 @@
             this.lbl_site.Text = "<--->";
             this.lbl_site.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbl_position
+            // 
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_position.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_position.ImageIndex = 1;
+            this.lbl_position.ImageList = this.imageList;
+            this.lbl_position.Location = new System.Drawing.Point(5, 2);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Size = new System.Drawing.Size(206, 21);
+            this.lbl_position.TabIndex = 51;
+            this.lbl_position.Text = "Position:";
+            this.lbl_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // imageList
             // 
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
@@ -124,6 +139,21 @@
             this.label8.TabIndex = 52;
             this.label8.Text = "Application Date:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_preferredSite
+            // 
+            this.lbl_preferredSite.AutoSize = true;
+            this.lbl_preferredSite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_preferredSite.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_preferredSite.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_preferredSite.ImageIndex = 1;
+            this.lbl_preferredSite.ImageList = this.imageList;
+            this.lbl_preferredSite.Location = new System.Drawing.Point(5, 48);
+            this.lbl_preferredSite.Name = "lbl_preferredSite";
+            this.lbl_preferredSite.Size = new System.Drawing.Size(206, 21);
+            this.lbl_preferredSite.TabIndex = 83;
+            this.lbl_preferredSite.Text = "Preffered Site:";
+            this.lbl_preferredSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // date_applicationDate
             // 
@@ -194,6 +224,21 @@
             this.lbl_employeeName.TabIndex = 80;
             this.lbl_employeeName.Text = "Name:";
             this.lbl_employeeName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_source
+            // 
+            this.lbl_source.AutoSize = true;
+            this.lbl_source.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_source.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_source.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_source.ImageIndex = 1;
+            this.lbl_source.ImageList = this.imageList;
+            this.lbl_source.Location = new System.Drawing.Point(5, 2);
+            this.lbl_source.Name = "lbl_source";
+            this.lbl_source.Size = new System.Drawing.Size(206, 21);
+            this.lbl_source.TabIndex = 51;
+            this.lbl_source.Text = "Source:";
+            this.lbl_source.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_employeeID
             // 
@@ -303,51 +348,6 @@
             this.btn_previous.Text = "Previous";
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
-            // 
-            // lbl_position
-            // 
-            this.lbl_position.AutoSize = true;
-            this.lbl_position.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_position.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_position.ImageIndex = 1;
-            this.lbl_position.ImageList = this.imageList;
-            this.lbl_position.Location = new System.Drawing.Point(5, 2);
-            this.lbl_position.Name = "lbl_position";
-            this.lbl_position.Size = new System.Drawing.Size(206, 21);
-            this.lbl_position.TabIndex = 51;
-            this.lbl_position.Text = "Position:";
-            this.lbl_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_preferredSite
-            // 
-            this.lbl_preferredSite.AutoSize = true;
-            this.lbl_preferredSite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_preferredSite.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_preferredSite.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_preferredSite.ImageIndex = 1;
-            this.lbl_preferredSite.ImageList = this.imageList;
-            this.lbl_preferredSite.Location = new System.Drawing.Point(5, 48);
-            this.lbl_preferredSite.Name = "lbl_preferredSite";
-            this.lbl_preferredSite.Size = new System.Drawing.Size(206, 21);
-            this.lbl_preferredSite.TabIndex = 83;
-            this.lbl_preferredSite.Text = "Preffered Site:";
-            this.lbl_preferredSite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_source
-            // 
-            this.lbl_source.AutoSize = true;
-            this.lbl_source.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_source.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_source.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_source.ImageIndex = 1;
-            this.lbl_source.ImageList = this.imageList;
-            this.lbl_source.Location = new System.Drawing.Point(5, 2);
-            this.lbl_source.Name = "lbl_source";
-            this.lbl_source.Size = new System.Drawing.Size(206, 21);
-            this.lbl_source.TabIndex = 51;
-            this.lbl_source.Text = "Source:";
-            this.lbl_source.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ControlApplicationDetails
             // 

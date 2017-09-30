@@ -31,8 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPersonalInformation));
             this.gbx_info = new System.Windows.Forms.GroupBox();
+            this.cx_bpi = new System.Windows.Forms.CheckBox();
+            this.cx_hdmf = new System.Windows.Forms.CheckBox();
+            this.cx_tin = new System.Windows.Forms.CheckBox();
+            this.cx_sss = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
+            this.lbl_bpi = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.lbl_isUnder18 = new System.Windows.Forms.Label();
             this.lbl_fname = new System.Windows.Forms.Label();
@@ -42,21 +47,20 @@
             this.lbl_primaryContact = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lbl_sss = new System.Windows.Forms.Label();
+            this.lbl_tin = new System.Windows.Forms.Label();
+            this.lbl_hdmf = new System.Windows.Forms.Label();
             this.cbx_isUnder18 = new System.Windows.Forms.ComboBox();
             this.tbx_firstName = new System.Windows.Forms.TextBox();
             this.tbx_midname = new System.Windows.Forms.TextBox();
             this.tbx_lastName = new System.Windows.Forms.TextBox();
             this.tbx_nickname = new System.Windows.Forms.TextBox();
-            this.tbx_primaryContact = new System.Windows.Forms.TextBox();
-            this.tbx_secondaryContact = new System.Windows.Forms.TextBox();
             this.tbx_email = new System.Windows.Forms.TextBox();
-            this.tbx_SSS = new System.Windows.Forms.TextBox();
-            this.tbx_TIN = new System.Windows.Forms.TextBox();
-            this.tbx_HDMF = new System.Windows.Forms.TextBox();
-            this.tbx_bankAccnt = new System.Windows.Forms.TextBox();
+            this.tbx_primaryContact = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_SSS = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_TIN = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_HDMF = new System.Windows.Forms.MaskedTextBox();
+            this.tbx_bankAccnt = new System.Windows.Forms.MaskedTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -67,6 +71,10 @@
             // 
             // gbx_info
             // 
+            this.gbx_info.Controls.Add(this.cx_bpi);
+            this.gbx_info.Controls.Add(this.cx_hdmf);
+            this.gbx_info.Controls.Add(this.cx_tin);
+            this.gbx_info.Controls.Add(this.cx_sss);
             this.gbx_info.Controls.Add(this.tableLayoutPanel4);
             this.gbx_info.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbx_info.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,13 +86,54 @@
             this.gbx_info.TabStop = false;
             this.gbx_info.Text = "Personal Information";
             // 
+            // cx_bpi
+            // 
+            this.cx_bpi.AutoSize = true;
+            this.cx_bpi.Location = new System.Drawing.Point(585, 306);
+            this.cx_bpi.Name = "cx_bpi";
+            this.cx_bpi.Size = new System.Drawing.Size(15, 14);
+            this.cx_bpi.TabIndex = 6;
+            this.cx_bpi.UseVisualStyleBackColor = true;
+            this.cx_bpi.CheckedChanged += new System.EventHandler(this.cx_bpi_CheckedChanged);
+            // 
+            // cx_hdmf
+            // 
+            this.cx_hdmf.AutoSize = true;
+            this.cx_hdmf.Location = new System.Drawing.Point(585, 282);
+            this.cx_hdmf.Name = "cx_hdmf";
+            this.cx_hdmf.Size = new System.Drawing.Size(15, 14);
+            this.cx_hdmf.TabIndex = 5;
+            this.cx_hdmf.UseVisualStyleBackColor = true;
+            this.cx_hdmf.CheckedChanged += new System.EventHandler(this.cx_hdmf_CheckedChanged);
+            // 
+            // cx_tin
+            // 
+            this.cx_tin.AutoSize = true;
+            this.cx_tin.Location = new System.Drawing.Point(585, 259);
+            this.cx_tin.Name = "cx_tin";
+            this.cx_tin.Size = new System.Drawing.Size(15, 14);
+            this.cx_tin.TabIndex = 4;
+            this.cx_tin.UseVisualStyleBackColor = true;
+            this.cx_tin.CheckedChanged += new System.EventHandler(this.cx_tin_CheckedChanged);
+            // 
+            // cx_sss
+            // 
+            this.cx_sss.AutoSize = true;
+            this.cx_sss.Location = new System.Drawing.Point(585, 236);
+            this.cx_sss.Name = "cx_sss";
+            this.cx_sss.Size = new System.Drawing.Size(15, 14);
+            this.cx_sss.TabIndex = 3;
+            this.cx_sss.UseVisualStyleBackColor = true;
+            this.cx_sss.CheckedChanged += new System.EventHandler(this.cx_sss_CheckedChanged);
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.78068F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.21932F));
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 11);
+            this.tableLayoutPanel4.Controls.Add(this.tbx_secondaryContact, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_bpi, 0, 11);
             this.tableLayoutPanel4.Controls.Add(this.lbl_isUnder18, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.lbl_fname, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.lbl_midName, 0, 1);
@@ -93,17 +142,16 @@
             this.tableLayoutPanel4.Controls.Add(this.lbl_primaryContact, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.label16, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.lbl_email, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.label18, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label19, 0, 9);
-            this.tableLayoutPanel4.Controls.Add(this.label20, 0, 10);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_sss, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_tin, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_hdmf, 0, 10);
             this.tableLayoutPanel4.Controls.Add(this.cbx_isUnder18, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.tbx_firstName, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.tbx_midname, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.tbx_lastName, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.tbx_nickname, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.tbx_primaryContact, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.tbx_secondaryContact, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.tbx_email, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.tbx_primaryContact, 1, 4);
             this.tableLayoutPanel4.Controls.Add(this.tbx_SSS, 1, 8);
             this.tableLayoutPanel4.Controls.Add(this.tbx_TIN, 1, 9);
             this.tableLayoutPanel4.Controls.Add(this.tbx_HDMF, 1, 10);
@@ -125,21 +173,33 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(552, 280);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(552, 278);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // label1
+            // tbx_secondaryContact
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ImageList = this.imageList;
-            this.label1.Location = new System.Drawing.Point(5, 255);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 23);
-            this.label1.TabIndex = 110;
-            this.label1.Text = "Bank Account#:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_secondaryContact.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_secondaryContact.Location = new System.Drawing.Point(264, 117);
+            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_secondaryContact.Mask = "(+63)0000000000";
+            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
+            this.tbx_secondaryContact.Size = new System.Drawing.Size(286, 20);
+            this.tbx_secondaryContact.TabIndex = 113;
+            // 
+            // lbl_bpi
+            // 
+            this.lbl_bpi.AutoSize = true;
+            this.lbl_bpi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_bpi.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bpi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_bpi.ImageList = this.imageList;
+            this.lbl_bpi.Location = new System.Drawing.Point(5, 255);
+            this.lbl_bpi.Name = "lbl_bpi";
+            this.lbl_bpi.Size = new System.Drawing.Size(254, 21);
+            this.lbl_bpi.TabIndex = 110;
+            this.lbl_bpi.Text = "BPI Account#:";
+            this.lbl_bpi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList
             // 
@@ -185,8 +245,6 @@
             this.lbl_midName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_midName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_midName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_midName.ImageIndex = 1;
-            this.lbl_midName.ImageList = this.imageList;
             this.lbl_midName.Location = new System.Drawing.Point(5, 25);
             this.lbl_midName.Name = "lbl_midName";
             this.lbl_midName.Size = new System.Drawing.Size(254, 21);
@@ -264,44 +322,47 @@
             this.lbl_email.Text = "Email:";
             this.lbl_email.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label18
+            // lbl_sss
             // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ImageList = this.imageList;
-            this.label18.Location = new System.Drawing.Point(5, 186);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(254, 21);
-            this.label18.TabIndex = 94;
-            this.label18.Text = "SSS#:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_sss.AutoSize = true;
+            this.lbl_sss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_sss.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_sss.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_sss.ImageList = this.imageList;
+            this.lbl_sss.Location = new System.Drawing.Point(5, 186);
+            this.lbl_sss.Name = "lbl_sss";
+            this.lbl_sss.Size = new System.Drawing.Size(254, 21);
+            this.lbl_sss.TabIndex = 94;
+            this.lbl_sss.Text = "SSS#:";
+            this.lbl_sss.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label19
+            // lbl_tin
             // 
-            this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ImageList = this.imageList;
-            this.label19.Location = new System.Drawing.Point(5, 209);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(254, 21);
-            this.label19.TabIndex = 95;
-            this.label19.Text = "TIN#:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_tin.AutoSize = true;
+            this.lbl_tin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_tin.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_tin.ImageList = this.imageList;
+            this.lbl_tin.Location = new System.Drawing.Point(5, 209);
+            this.lbl_tin.Name = "lbl_tin";
+            this.lbl_tin.Size = new System.Drawing.Size(254, 21);
+            this.lbl_tin.TabIndex = 95;
+            this.lbl_tin.Text = "TIN#:";
+            this.lbl_tin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label20
+            // lbl_hdmf
             // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ImageList = this.imageList;
-            this.label20.Location = new System.Drawing.Point(5, 232);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(254, 21);
-            this.label20.TabIndex = 96;
-            this.label20.Text = "HDMF#:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_hdmf.AutoSize = true;
+            this.lbl_hdmf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_hdmf.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_hdmf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_hdmf.ImageList = this.imageList;
+            this.lbl_hdmf.Location = new System.Drawing.Point(5, 232);
+            this.lbl_hdmf.Name = "lbl_hdmf";
+            this.lbl_hdmf.Size = new System.Drawing.Size(254, 21);
+            this.lbl_hdmf.TabIndex = 96;
+            this.lbl_hdmf.Text = "HDMF#:";
+            this.lbl_hdmf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cbx_isUnder18
             // 
@@ -341,7 +402,6 @@
             this.tbx_midname.Size = new System.Drawing.Size(286, 22);
             this.tbx_midname.TabIndex = 99;
             this.tbx_midname.Tag = "required";
-            this.tbx_midname.TextChanged += new System.EventHandler(this.tbx_midname_TextChanged);
             // 
             // tbx_lastName
             // 
@@ -364,27 +424,6 @@
             this.tbx_nickname.TabIndex = 101;
             this.tbx_nickname.Tag = "required";
             // 
-            // tbx_primaryContact
-            // 
-            this.tbx_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_primaryContact.Location = new System.Drawing.Point(264, 94);
-            this.tbx_primaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_primaryContact.Name = "tbx_primaryContact";
-            this.tbx_primaryContact.Size = new System.Drawing.Size(286, 22);
-            this.tbx_primaryContact.TabIndex = 102;
-            this.tbx_primaryContact.Tag = "required";
-            this.tbx_primaryContact.TextChanged += new System.EventHandler(this.tbx_primaryContact_TextChanged);
-            // 
-            // tbx_secondaryContact
-            // 
-            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_secondaryContact.Location = new System.Drawing.Point(264, 117);
-            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
-            this.tbx_secondaryContact.Size = new System.Drawing.Size(286, 22);
-            this.tbx_secondaryContact.TabIndex = 103;
-            this.tbx_secondaryContact.Tag = "required";
-            // 
             // tbx_email
             // 
             this.tbx_email.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -395,44 +434,75 @@
             this.tbx_email.TabIndex = 104;
             this.tbx_email.Tag = "required";
             // 
+            // tbx_primaryContact
+            // 
+            this.tbx_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_primaryContact.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_primaryContact.Location = new System.Drawing.Point(264, 94);
+            this.tbx_primaryContact.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_primaryContact.Mask = "(+63)0000000000";
+            this.tbx_primaryContact.Name = "tbx_primaryContact";
+            this.tbx_primaryContact.Size = new System.Drawing.Size(286, 20);
+            this.tbx_primaryContact.TabIndex = 112;
+            this.tbx_primaryContact.TextChanged += new System.EventHandler(this.tbx_primaryContact_TextChanged);
+            // 
             // tbx_SSS
             // 
+            this.tbx_SSS.AllowPromptAsInput = false;
             this.tbx_SSS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_SSS.Enabled = false;
+            this.tbx_SSS.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_SSS.Location = new System.Drawing.Point(264, 186);
             this.tbx_SSS.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_SSS.Mask = "00-0000000-0";
             this.tbx_SSS.Name = "tbx_SSS";
-            this.tbx_SSS.Size = new System.Drawing.Size(286, 22);
-            this.tbx_SSS.TabIndex = 105;
-            this.tbx_SSS.Tag = "required";
+            this.tbx_SSS.RejectInputOnFirstFailure = true;
+            this.tbx_SSS.Size = new System.Drawing.Size(286, 20);
+            this.tbx_SSS.SkipLiterals = false;
+            this.tbx_SSS.TabIndex = 114;
+            this.tbx_SSS.TextChanged += new System.EventHandler(this.tbx_SSS_TextChanged);
             // 
             // tbx_TIN
             // 
             this.tbx_TIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_TIN.Enabled = false;
+            this.tbx_TIN.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_TIN.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_TIN.Location = new System.Drawing.Point(264, 209);
             this.tbx_TIN.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_TIN.Mask = "000-000-000";
             this.tbx_TIN.Name = "tbx_TIN";
-            this.tbx_TIN.Size = new System.Drawing.Size(286, 22);
-            this.tbx_TIN.TabIndex = 106;
-            this.tbx_TIN.Tag = "required";
+            this.tbx_TIN.Size = new System.Drawing.Size(286, 20);
+            this.tbx_TIN.TabIndex = 115;
+            this.tbx_TIN.TextChanged += new System.EventHandler(this.tbx_TIN_TextChanged);
             // 
             // tbx_HDMF
             // 
             this.tbx_HDMF.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_HDMF.Enabled = false;
+            this.tbx_HDMF.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_HDMF.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_HDMF.Location = new System.Drawing.Point(264, 232);
             this.tbx_HDMF.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_HDMF.Mask = "0000-0000";
             this.tbx_HDMF.Name = "tbx_HDMF";
-            this.tbx_HDMF.Size = new System.Drawing.Size(286, 22);
-            this.tbx_HDMF.TabIndex = 107;
-            this.tbx_HDMF.Tag = "required";
+            this.tbx_HDMF.Size = new System.Drawing.Size(286, 20);
+            this.tbx_HDMF.TabIndex = 116;
+            this.tbx_HDMF.TextChanged += new System.EventHandler(this.tbx_HDMF_TextChanged);
             // 
             // tbx_bankAccnt
             // 
             this.tbx_bankAccnt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_bankAccnt.Enabled = false;
+            this.tbx_bankAccnt.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_bankAccnt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.tbx_bankAccnt.Location = new System.Drawing.Point(264, 255);
             this.tbx_bankAccnt.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_bankAccnt.Mask = "0000 0000 00";
             this.tbx_bankAccnt.Name = "tbx_bankAccnt";
-            this.tbx_bankAccnt.Size = new System.Drawing.Size(286, 22);
-            this.tbx_bankAccnt.TabIndex = 111;
+            this.tbx_bankAccnt.Size = new System.Drawing.Size(286, 20);
+            this.tbx_bankAccnt.TabIndex = 117;
+            this.tbx_bankAccnt.TextChanged += new System.EventHandler(this.tbx_bankAccnt_TextChanged);
             // 
             // panel2
             // 
@@ -483,6 +553,7 @@
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(641, 515);
             this.gbx_info.ResumeLayout(false);
+            this.gbx_info.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -494,7 +565,7 @@
 
         private System.Windows.Forms.GroupBox gbx_info;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_bpi;
         private System.Windows.Forms.Label lbl_isUnder18;
         private System.Windows.Forms.Label lbl_fname;
         private System.Windows.Forms.Label lbl_midName;
@@ -503,24 +574,28 @@
         private System.Windows.Forms.Label lbl_primaryContact;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbl_sss;
+        private System.Windows.Forms.Label lbl_tin;
+        private System.Windows.Forms.Label lbl_hdmf;
         private System.Windows.Forms.ComboBox cbx_isUnder18;
         private System.Windows.Forms.TextBox tbx_firstName;
         private System.Windows.Forms.TextBox tbx_midname;
         private System.Windows.Forms.TextBox tbx_lastName;
         private System.Windows.Forms.TextBox tbx_nickname;
-        private System.Windows.Forms.TextBox tbx_primaryContact;
-        private System.Windows.Forms.TextBox tbx_secondaryContact;
         private System.Windows.Forms.TextBox tbx_email;
-        private System.Windows.Forms.TextBox tbx_SSS;
-        private System.Windows.Forms.TextBox tbx_TIN;
-        private System.Windows.Forms.TextBox tbx_HDMF;
-        private System.Windows.Forms.TextBox tbx_bankAccnt;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
+        private System.Windows.Forms.MaskedTextBox tbx_primaryContact;
+        private System.Windows.Forms.MaskedTextBox tbx_SSS;
+        private System.Windows.Forms.MaskedTextBox tbx_TIN;
+        private System.Windows.Forms.MaskedTextBox tbx_HDMF;
+        private System.Windows.Forms.MaskedTextBox tbx_bankAccnt;
+        private System.Windows.Forms.CheckBox cx_bpi;
+        private System.Windows.Forms.CheckBox cx_hdmf;
+        private System.Windows.Forms.CheckBox cx_tin;
+        private System.Windows.Forms.CheckBox cx_sss;
     }
 }

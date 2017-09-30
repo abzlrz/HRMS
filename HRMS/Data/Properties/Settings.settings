@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=.;Initial Catalog=ArvatoHRM;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=Arvato_db;Integrated Security=True</Value>
     </Setting>
     <Setting Name="ShowEmployeeData" Type="System.String" Scope="User">
       <Value Profile="(Default)">[Employee].[sp_showData]</Value>
@@ -136,6 +136,15 @@
     </Setting>
     <Setting Name="TempDBConnectionString" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source=.;Initial Catalog=tempdb;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="ShowJobPostingData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_showJobPostingData</Value>
+    </Setting>
+    <Setting Name="InsertJobPostings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_insertJobPosting</Value>
+    </Setting>
+    <Setting Name="GetJobPostingByID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sp_getJobPostingByID</Value>
     </Setting>
   </Settings>
 </SettingsFile>

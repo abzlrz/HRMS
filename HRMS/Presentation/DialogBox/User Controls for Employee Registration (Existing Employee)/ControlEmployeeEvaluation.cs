@@ -205,12 +205,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             this.cbx_bucket.ValueMember = "Description";
             this.cbx_bucket.DataSource = _eval.ShowBucketData();
             //
-            // arvato level
-            //
-            this.cbx_arvatoLevel.DisplayMember = "Level";
-            this.cbx_arvatoLevel.ValueMember = "Level";
-            this.cbx_arvatoLevel.DataSource = _eval.ShowArvatoLevelData();
-            //
             // job title
             //
             this.cbx_jobTitle.DisplayMember = "Title";

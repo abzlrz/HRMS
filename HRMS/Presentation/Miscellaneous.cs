@@ -160,6 +160,8 @@ namespace Presentation
         {
             if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
                 source.ImageIndex = 1;
+            else if (text.Length < 5)
+                source.ImageIndex = 1;
             else
                 source.ImageIndex = 0;
         }
@@ -178,7 +180,14 @@ namespace Presentation
             else
                 source.ImageIndex = 1;
         }
-        
+
+        public static void TurnGreenIndicator(MaskedTextBox tbs, Label source)
+        {
+            if (tbs.MaskCompleted)
+                source.ImageIndex = 0;
+            else
+                source.ImageIndex = 1;
+        }
     }
     public class Draggable
     {

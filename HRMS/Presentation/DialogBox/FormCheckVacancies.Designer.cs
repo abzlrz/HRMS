@@ -97,16 +97,19 @@
             this.view_employee.AllowUserToAddRows = false;
             this.view_employee.AllowUserToDeleteRows = false;
             this.view_employee.AllowUserToResizeRows = false;
-            this.view_employee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_employee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.view_employee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.view_employee.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.view_employee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_employee.Location = new System.Drawing.Point(0, 53);
             this.view_employee.Name = "view_employee";
+            this.view_employee.ReadOnly = true;
             this.view_employee.RowHeadersVisible = false;
             this.view_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_employee.Size = new System.Drawing.Size(387, 381);
             this.view_employee.TabIndex = 8;
+            this.view_employee.SelectionChanged += new System.EventHandler(this.view_employee_SelectionChanged);
             // 
             // panel4
             // 
@@ -219,6 +222,7 @@
             // 
             // link_detail_jobdesc
             // 
+            this.link_detail_jobdesc.AutoEllipsis = true;
             this.link_detail_jobdesc.AutoSize = true;
             this.link_detail_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.link_detail_jobdesc.Location = new System.Drawing.Point(212, 209);
@@ -407,6 +411,7 @@
             // 
             // link_detail_qualification
             // 
+            this.link_detail_qualification.AutoEllipsis = true;
             this.link_detail_qualification.AutoSize = true;
             this.link_detail_qualification.Dock = System.Windows.Forms.DockStyle.Fill;
             this.link_detail_qualification.Location = new System.Drawing.Point(212, 183);
@@ -471,6 +476,7 @@
             this.Name = "FormCheckVacancies";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Check Vacancies";
+            this.Load += new System.EventHandler(this.FormCheckVacancies_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();

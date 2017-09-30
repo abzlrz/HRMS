@@ -45,6 +45,7 @@
     <Compile Include="Access\DataAccess.cs" />
     <Compile Include="Access\EmployeeAccess.cs" />
     <Compile Include="Access\InternalApplicantAccess.cs" />
+    <Compile Include="Access\JobPostingAccess.cs" />
     <Compile Include="Access\UserAccess.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Entities\Employee.cs" />

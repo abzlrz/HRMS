@@ -2,7 +2,6 @@
 using Data.Entities;
 using System;
 using System.Windows.Forms;
-using static Presentation.Properties.Settings;
 
 namespace Presentation.DialogBox
 {

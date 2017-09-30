@@ -26,7 +26,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowReasonAnalysisData()
         {
             var data = new DataTable();
@@ -41,7 +40,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowRoleData()
         {
             var data = new DataTable();
@@ -56,7 +54,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowReasonForLeavingData()
         {
             var data = new DataTable();
@@ -71,7 +68,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowAppraisalTypeData()
         {
             var data = new DataTable();
@@ -86,7 +82,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowBucketData()
         {
             var data = new DataTable();
@@ -101,22 +96,6 @@ namespace Data.Access
             }
             return data;
         }
-
-        public DataTable ShowArvatoLevelData()
-        {
-            var data = new DataTable();
-            using (var adapter = new SqlDataAdapter())
-            {
-                adapter.SelectCommand = new SqlCommand();
-                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
-                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowArvatoLevelData;
-
-                adapter.Fill(data);
-            }
-            return data;
-        }
-
         public DataTable ShowJobTitleData()
         {
             var data = new DataTable();
@@ -131,7 +110,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowTeamData()
         {
             var data = new DataTable();
@@ -146,7 +124,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowContractType()
         {
             var data = new DataTable();
@@ -161,7 +138,6 @@ namespace Data.Access
             }
             return data;
         }
-
         public DataTable ShowApplicationSourceData()
         {
             var data = new DataTable();
@@ -196,7 +172,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertAppraisalType(string text)
         {
             using (var command = new SqlCommand())
@@ -214,7 +189,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertBucket(string text)
         {
             using (var command = new SqlCommand())
@@ -232,7 +206,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertJobTitle(string text)
         {
             using (var command = new SqlCommand())
@@ -250,7 +223,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertReasonAnalysis(string text)
         {
             using (var command = new SqlCommand())
@@ -268,7 +240,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertReasonForLeaving(string text)
         {
             using (var command = new SqlCommand())
@@ -286,7 +257,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertRole(string text)
         {
             using (var command = new SqlCommand())
@@ -304,7 +274,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertTeam(string text)
         {
             using (var command = new SqlCommand())
@@ -322,7 +291,6 @@ namespace Data.Access
                 return rowsAffected > 0;
             }
         }
-
         public bool InsertTitanTitle(string text)
         {
             using (var command = new SqlCommand())

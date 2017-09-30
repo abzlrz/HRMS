@@ -32,29 +32,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormJobPosting));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.date_add_close = new System.Windows.Forms.DateTimePicker();
             this.link_add_jobdesc = new System.Windows.Forms.LinkLabel();
-            this.tbx_add_headcount = new System.Windows.Forms.TextBox();
-            this.tbx_add_wage = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_add_positiontype = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_add_position = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lbl_add_headcount = new System.Windows.Forms.Label();
+            this.lbl_add_location = new System.Windows.Forms.Label();
+            this.lbl_add_qualification = new System.Windows.Forms.Label();
+            this.lbl_add_jobdesc = new System.Windows.Forms.Label();
             this.tbx_add_positiontype = new System.Windows.Forms.TextBox();
             this.link_add_qualification = new System.Windows.Forms.LinkLabel();
             this.cbx_add_location = new System.Windows.Forms.ComboBox();
             this.date_add_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_add_comment = new System.Windows.Forms.TextBox();
             this.cbx_add_position = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
@@ -62,29 +61,33 @@
             this.link_edit_jobdesc = new System.Windows.Forms.LinkLabel();
             this.tbx_edit_headcount = new System.Windows.Forms.TextBox();
             this.tbx_edit_wage = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_edit_positiontype = new System.Windows.Forms.Label();
+            this.lbl_edit_position = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lbl_edit_headcount = new System.Windows.Forms.Label();
+            this.lbl_edit_location = new System.Windows.Forms.Label();
+            this.lbl_edit_qualification = new System.Windows.Forms.Label();
+            this.lbl_edit_jobdesc = new System.Windows.Forms.Label();
             this.tbx_edit_positiontype = new System.Windows.Forms.TextBox();
             this.link_edit_qualification = new System.Windows.Forms.LinkLabel();
             this.cbx_edit_location = new System.Windows.Forms.ComboBox();
             this.date_edit_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_edit_comment = new System.Windows.Forms.TextBox();
             this.tbx_edit_position = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxSearchBy = new System.Windows.Forms.ComboBox();
             this.tbx_search = new System.Windows.Forms.TextBox();
             this.view_posting = new System.Windows.Forms.DataGridView();
+            this.dialog_qualification = new System.Windows.Forms.OpenFileDialog();
+            this.dialog_jobdesc = new System.Windows.Forms.OpenFileDialog();
+            this.tbx_add_headcount = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_add_wage = new Presentation.Miscellaneous.CustomTextbox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -109,8 +112,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btn_reset);
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btn_add);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(10);
@@ -118,6 +122,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Location = new System.Drawing.Point(102, 412);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(75, 23);
+            this.btn_reset.TabIndex = 5;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -127,23 +142,23 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.date_add_close, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.link_add_jobdesc, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.tbx_add_headcount, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.tbx_add_wage, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_positiontype, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_position, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_headcount, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_location, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_qualification, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_jobdesc, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.tbx_add_positiontype, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.link_add_qualification, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.cbx_add_location, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.date_add_posted, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tbx_add_comment, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.cbx_add_position, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_headcount, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_wage, 1, 4);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -184,6 +199,7 @@
             // 
             // link_add_jobdesc
             // 
+            this.link_add_jobdesc.AutoEllipsis = true;
             this.link_add_jobdesc.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_add_jobdesc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_add_jobdesc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,40 +211,21 @@
             this.link_add_jobdesc.TabStop = true;
             this.link_add_jobdesc.Text = "Upload";
             this.link_add_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_add_jobdesc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_add_jobdesc_LinkClicked);
             // 
-            // tbx_add_headcount
+            // lbl_add_positiontype
             // 
-            this.tbx_add_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_headcount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_add_headcount.Location = new System.Drawing.Point(127, 146);
-            this.tbx_add_headcount.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_headcount.Name = "tbx_add_headcount";
-            this.tbx_add_headcount.Size = new System.Drawing.Size(183, 22);
-            this.tbx_add_headcount.TabIndex = 6;
-            // 
-            // tbx_add_wage
-            // 
-            this.tbx_add_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_wage.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_add_wage.Location = new System.Drawing.Point(127, 118);
-            this.tbx_add_wage.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_wage.Name = "tbx_add_wage";
-            this.tbx_add_wage.Size = new System.Drawing.Size(183, 22);
-            this.tbx_add_wage.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.ImageIndex = 1;
-            this.label3.ImageList = this.imageList;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 28);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Position Type:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_positiontype.AutoSize = true;
+            this.lbl_add_positiontype.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_positiontype.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_positiontype.ImageIndex = 1;
+            this.lbl_add_positiontype.ImageList = this.imageList;
+            this.lbl_add_positiontype.Location = new System.Drawing.Point(3, 0);
+            this.lbl_add_positiontype.Name = "lbl_add_positiontype";
+            this.lbl_add_positiontype.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_positiontype.TabIndex = 0;
+            this.lbl_add_positiontype.Text = "Position Type:";
+            this.lbl_add_positiontype.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList
             // 
@@ -237,19 +234,19 @@
             this.imageList.Images.SetKeyName(0, "green_dot.png");
             this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
-            // label4
+            // lbl_add_position
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.ImageIndex = 1;
-            this.label4.ImageList = this.imageList;
-            this.label4.Location = new System.Drawing.Point(3, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 28);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Position:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_position.AutoSize = true;
+            this.lbl_add_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_position.ImageIndex = 1;
+            this.lbl_add_position.ImageList = this.imageList;
+            this.lbl_add_position.Location = new System.Drawing.Point(3, 28);
+            this.lbl_add_position.Name = "lbl_add_position";
+            this.lbl_add_position.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_position.TabIndex = 1;
+            this.lbl_add_position.Text = "Position:";
+            this.lbl_add_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -284,61 +281,61 @@
             this.label7.Text = "Wage:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lbl_add_headcount
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.ImageIndex = 1;
-            this.label8.ImageList = this.imageList;
-            this.label8.Location = new System.Drawing.Point(3, 140);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 28);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Head Count:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_headcount.AutoSize = true;
+            this.lbl_add_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_headcount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_headcount.ImageIndex = 1;
+            this.lbl_add_headcount.ImageList = this.imageList;
+            this.lbl_add_headcount.Location = new System.Drawing.Point(3, 140);
+            this.lbl_add_headcount.Name = "lbl_add_headcount";
+            this.lbl_add_headcount.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_headcount.TabIndex = 5;
+            this.lbl_add_headcount.Text = "Head Count:";
+            this.lbl_add_headcount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // lbl_add_location
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.ImageIndex = 1;
-            this.label9.ImageList = this.imageList;
-            this.label9.Location = new System.Drawing.Point(3, 168);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 28);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Location:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_location.AutoSize = true;
+            this.lbl_add_location.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_location.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_location.ImageIndex = 1;
+            this.lbl_add_location.ImageList = this.imageList;
+            this.lbl_add_location.Location = new System.Drawing.Point(3, 168);
+            this.lbl_add_location.Name = "lbl_add_location";
+            this.lbl_add_location.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_location.TabIndex = 6;
+            this.lbl_add_location.Text = "Location:";
+            this.lbl_add_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label10
+            // lbl_add_qualification
             // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label10.ImageIndex = 1;
-            this.label10.ImageList = this.imageList;
-            this.label10.Location = new System.Drawing.Point(3, 196);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 28);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Qualification:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_qualification.AutoSize = true;
+            this.lbl_add_qualification.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_qualification.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_qualification.ImageIndex = 1;
+            this.lbl_add_qualification.ImageList = this.imageList;
+            this.lbl_add_qualification.Location = new System.Drawing.Point(3, 196);
+            this.lbl_add_qualification.Name = "lbl_add_qualification";
+            this.lbl_add_qualification.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_qualification.TabIndex = 7;
+            this.lbl_add_qualification.Text = "Qualification:";
+            this.lbl_add_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label20
+            // lbl_add_jobdesc
             // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label20.ImageIndex = 1;
-            this.label20.ImageList = this.imageList;
-            this.label20.Location = new System.Drawing.Point(3, 224);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(121, 28);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Job Description:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_add_jobdesc.AutoSize = true;
+            this.lbl_add_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_jobdesc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_jobdesc.ImageIndex = 1;
+            this.lbl_add_jobdesc.ImageList = this.imageList;
+            this.lbl_add_jobdesc.Location = new System.Drawing.Point(3, 224);
+            this.lbl_add_jobdesc.Name = "lbl_add_jobdesc";
+            this.lbl_add_jobdesc.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_jobdesc.TabIndex = 8;
+            this.lbl_add_jobdesc.Text = "Job Description:";
+            this.lbl_add_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbx_add_positiontype
             // 
@@ -349,9 +346,11 @@
             this.tbx_add_positiontype.Name = "tbx_add_positiontype";
             this.tbx_add_positiontype.Size = new System.Drawing.Size(183, 22);
             this.tbx_add_positiontype.TabIndex = 0;
+            this.tbx_add_positiontype.TextChanged += new System.EventHandler(this.tbx_add_positiontype_TextChanged);
             // 
             // link_add_qualification
             // 
+            this.link_add_qualification.AutoEllipsis = true;
             this.link_add_qualification.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_add_qualification.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_add_qualification.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,17 +362,23 @@
             this.link_add_qualification.TabStop = true;
             this.link_add_qualification.Text = "Upload";
             this.link_add_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_add_qualification.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_add_qualification_LinkClicked);
             // 
             // cbx_add_location
             // 
             this.cbx_add_location.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_location.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_add_location.FormattingEnabled = true;
+            this.cbx_add_location.Items.AddRange(new object[] {
+            "Clark, Pampanga",
+            "Alabang",
+            "Quezon City"});
             this.cbx_add_location.Location = new System.Drawing.Point(127, 175);
             this.cbx_add_location.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_location.Name = "cbx_add_location";
             this.cbx_add_location.Size = new System.Drawing.Size(183, 21);
             this.cbx_add_location.TabIndex = 7;
+            this.cbx_add_location.SelectedIndexChanged += new System.EventHandler(this.cbx_add_location_SelectedIndexChanged);
             // 
             // date_add_posted
             // 
@@ -404,21 +409,23 @@
             this.cbx_add_position.Name = "cbx_add_position";
             this.cbx_add_position.Size = new System.Drawing.Size(183, 23);
             this.cbx_add_position.TabIndex = 1;
+            this.cbx_add_position.SelectedIndexChanged += new System.EventHandler(this.cbx_add_position_SelectedIndexChanged);
             // 
-            // button2
+            // btn_add
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(142, 412);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Location = new System.Drawing.Point(183, 412);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.btn_save);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -437,15 +444,15 @@
             this.tableLayoutPanel2.Controls.Add(this.link_edit_jobdesc, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_headcount, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_wage, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_positiontype, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_position, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label19, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label21, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_headcount, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_location, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_qualification, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_jobdesc, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_positiontype, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.link_edit_qualification, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.cbx_edit_location, 1, 6);
@@ -503,6 +510,7 @@
             this.link_edit_jobdesc.TabStop = true;
             this.link_edit_jobdesc.Text = "Upload";
             this.link_edit_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_edit_jobdesc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_jobdesc_LinkClicked);
             // 
             // tbx_edit_headcount
             // 
@@ -513,6 +521,7 @@
             this.tbx_edit_headcount.Name = "tbx_edit_headcount";
             this.tbx_edit_headcount.Size = new System.Drawing.Size(183, 22);
             this.tbx_edit_headcount.TabIndex = 6;
+            this.tbx_edit_headcount.TextChanged += new System.EventHandler(this.tbx_edit_headcount_TextChanged);
             // 
             // tbx_edit_wage
             // 
@@ -524,33 +533,33 @@
             this.tbx_edit_wage.Size = new System.Drawing.Size(183, 22);
             this.tbx_edit_wage.TabIndex = 4;
             // 
-            // label12
+            // lbl_edit_positiontype
             // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label12.ImageIndex = 1;
-            this.label12.ImageList = this.imageList;
-            this.label12.Location = new System.Drawing.Point(3, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 28);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Position Type:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_positiontype.AutoSize = true;
+            this.lbl_edit_positiontype.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_positiontype.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_positiontype.ImageIndex = 1;
+            this.lbl_edit_positiontype.ImageList = this.imageList;
+            this.lbl_edit_positiontype.Location = new System.Drawing.Point(3, 0);
+            this.lbl_edit_positiontype.Name = "lbl_edit_positiontype";
+            this.lbl_edit_positiontype.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_positiontype.TabIndex = 0;
+            this.lbl_edit_positiontype.Text = "Position Type:";
+            this.lbl_edit_positiontype.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label13
+            // lbl_edit_position
             // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.ImageIndex = 1;
-            this.label13.ImageList = this.imageList;
-            this.label13.Location = new System.Drawing.Point(3, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(121, 28);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Position:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_position.AutoSize = true;
+            this.lbl_edit_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_position.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_position.ImageIndex = 1;
+            this.lbl_edit_position.ImageList = this.imageList;
+            this.lbl_edit_position.Location = new System.Drawing.Point(3, 28);
+            this.lbl_edit_position.Name = "lbl_edit_position";
+            this.lbl_edit_position.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_position.TabIndex = 1;
+            this.lbl_edit_position.Text = "Position:";
+            this.lbl_edit_position.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label14
             // 
@@ -585,61 +594,61 @@
             this.label16.Text = "Wage:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
+            // lbl_edit_headcount
             // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label17.ImageIndex = 1;
-            this.label17.ImageList = this.imageList;
-            this.label17.Location = new System.Drawing.Point(3, 140);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(121, 28);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Head Count:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_headcount.AutoSize = true;
+            this.lbl_edit_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_headcount.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_headcount.ImageIndex = 1;
+            this.lbl_edit_headcount.ImageList = this.imageList;
+            this.lbl_edit_headcount.Location = new System.Drawing.Point(3, 140);
+            this.lbl_edit_headcount.Name = "lbl_edit_headcount";
+            this.lbl_edit_headcount.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_headcount.TabIndex = 5;
+            this.lbl_edit_headcount.Text = "Head Count:";
+            this.lbl_edit_headcount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label18
+            // lbl_edit_location
             // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label18.ImageIndex = 1;
-            this.label18.ImageList = this.imageList;
-            this.label18.Location = new System.Drawing.Point(3, 168);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(121, 28);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Location:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_location.AutoSize = true;
+            this.lbl_edit_location.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_location.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_location.ImageIndex = 1;
+            this.lbl_edit_location.ImageList = this.imageList;
+            this.lbl_edit_location.Location = new System.Drawing.Point(3, 168);
+            this.lbl_edit_location.Name = "lbl_edit_location";
+            this.lbl_edit_location.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_location.TabIndex = 6;
+            this.lbl_edit_location.Text = "Location:";
+            this.lbl_edit_location.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label19
+            // lbl_edit_qualification
             // 
-            this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label19.ImageIndex = 1;
-            this.label19.ImageList = this.imageList;
-            this.label19.Location = new System.Drawing.Point(3, 196);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 28);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Qualification:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_qualification.AutoSize = true;
+            this.lbl_edit_qualification.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_qualification.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_qualification.ImageIndex = 1;
+            this.lbl_edit_qualification.ImageList = this.imageList;
+            this.lbl_edit_qualification.Location = new System.Drawing.Point(3, 196);
+            this.lbl_edit_qualification.Name = "lbl_edit_qualification";
+            this.lbl_edit_qualification.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_qualification.TabIndex = 7;
+            this.lbl_edit_qualification.Text = "Qualification:";
+            this.lbl_edit_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label21
+            // lbl_edit_jobdesc
             // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label21.ImageIndex = 1;
-            this.label21.ImageList = this.imageList;
-            this.label21.Location = new System.Drawing.Point(3, 224);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 28);
-            this.label21.TabIndex = 8;
-            this.label21.Text = "Job Description:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_edit_jobdesc.AutoSize = true;
+            this.lbl_edit_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_jobdesc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_jobdesc.ImageIndex = 1;
+            this.lbl_edit_jobdesc.ImageList = this.imageList;
+            this.lbl_edit_jobdesc.Location = new System.Drawing.Point(3, 224);
+            this.lbl_edit_jobdesc.Name = "lbl_edit_jobdesc";
+            this.lbl_edit_jobdesc.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_jobdesc.TabIndex = 8;
+            this.lbl_edit_jobdesc.Text = "Job Description:";
+            this.lbl_edit_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbx_edit_positiontype
             // 
@@ -650,6 +659,7 @@
             this.tbx_edit_positiontype.Name = "tbx_edit_positiontype";
             this.tbx_edit_positiontype.Size = new System.Drawing.Size(183, 22);
             this.tbx_edit_positiontype.TabIndex = 0;
+            this.tbx_edit_positiontype.TextChanged += new System.EventHandler(this.tbx_edit_positiontype_TextChanged);
             // 
             // link_edit_qualification
             // 
@@ -664,6 +674,7 @@
             this.link_edit_qualification.TabStop = true;
             this.link_edit_qualification.Text = "Upload";
             this.link_edit_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_edit_qualification.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_qualification_LinkClicked);
             // 
             // cbx_edit_location
             // 
@@ -675,6 +686,7 @@
             this.cbx_edit_location.Name = "cbx_edit_location";
             this.cbx_edit_location.Size = new System.Drawing.Size(183, 21);
             this.cbx_edit_location.TabIndex = 7;
+            this.cbx_edit_location.SelectedIndexChanged += new System.EventHandler(this.cbx_edit_location_SelectedIndexChanged);
             // 
             // date_edit_posted
             // 
@@ -705,16 +717,17 @@
             this.tbx_edit_position.Name = "tbx_edit_position";
             this.tbx_edit_position.Size = new System.Drawing.Size(183, 23);
             this.tbx_edit_position.TabIndex = 1;
+            this.tbx_edit_position.SelectedIndexChanged += new System.EventHandler(this.tbx_edit_position_SelectedIndexChanged);
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(142, 412);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Location = new System.Drawing.Point(142, 412);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 0;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -729,7 +742,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btn_delete);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.cbxSearchBy);
             this.panel2.Controls.Add(this.tbx_search);
@@ -740,15 +753,15 @@
             this.panel2.Size = new System.Drawing.Size(471, 468);
             this.panel2.TabIndex = 0;
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(218, 428);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Location = new System.Drawing.Point(218, 428);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.TabIndex = 3;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -768,10 +781,10 @@
             this.cbxSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSearchBy.FormattingEnabled = true;
             this.cbxSearchBy.Items.AddRange(new object[] {
-            "Firstname",
-            "Middlename",
-            "Lastname",
-            "Address"});
+            "Location",
+            "Position Type",
+            "Position",
+            "Posted Date"});
             this.cbxSearchBy.Location = new System.Drawing.Point(299, 46);
             this.cbxSearchBy.Name = "cbxSearchBy";
             this.cbxSearchBy.Size = new System.Drawing.Size(156, 21);
@@ -787,11 +800,45 @@
             // 
             // view_posting
             // 
+            this.view_posting.AllowUserToAddRows = false;
+            this.view_posting.AllowUserToDeleteRows = false;
+            this.view_posting.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.view_posting.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.view_posting.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.view_posting.Location = new System.Drawing.Point(13, 73);
             this.view_posting.Name = "view_posting";
+            this.view_posting.RowHeadersVisible = false;
             this.view_posting.Size = new System.Drawing.Size(442, 348);
             this.view_posting.TabIndex = 2;
+            // 
+            // dialog_qualification
+            // 
+            this.dialog_qualification.FileName = "openFileDialog1";
+            // 
+            // dialog_jobdesc
+            // 
+            this.dialog_jobdesc.FileName = "openFileDialog1";
+            // 
+            // tbx_add_headcount
+            // 
+            this.tbx_add_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_add_headcount.Location = new System.Drawing.Point(127, 145);
+            this.tbx_add_headcount.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_headcount.Name = "tbx_add_headcount";
+            this.tbx_add_headcount.Size = new System.Drawing.Size(183, 23);
+            this.tbx_add_headcount.TabIndex = 22;
+            this.tbx_add_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
+            this.tbx_add_headcount.TextChanged += new System.EventHandler(this.tbx_add_headcount_TextChanged);
+            // 
+            // tbx_add_wage
+            // 
+            this.tbx_add_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_add_wage.Location = new System.Drawing.Point(127, 117);
+            this.tbx_add_wage.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_wage.Name = "tbx_add_wage";
+            this.tbx_add_wage.Size = new System.Drawing.Size(183, 23);
+            this.tbx_add_wage.TabIndex = 23;
+            this.tbx_add_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
             // 
             // FormJobPosting
             // 
@@ -808,6 +855,7 @@
             this.Name = "FormJobPosting";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Job Posting";
+            this.Load += new System.EventHandler(this.FormJobPosting_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -829,29 +877,29 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxSearchBy;
         private System.Windows.Forms.TextBox tbx_search;
         private System.Windows.Forms.DataGridView view_posting;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker date_edit_close;
         private System.Windows.Forms.LinkLabel link_edit_jobdesc;
         private System.Windows.Forms.TextBox tbx_edit_headcount;
         private System.Windows.Forms.TextBox tbx_edit_wage;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_edit_positiontype;
+        private System.Windows.Forms.Label lbl_edit_position;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbl_edit_headcount;
+        private System.Windows.Forms.Label lbl_edit_location;
+        private System.Windows.Forms.Label lbl_edit_qualification;
+        private System.Windows.Forms.Label lbl_edit_jobdesc;
         private System.Windows.Forms.TextBox tbx_edit_positiontype;
         private System.Windows.Forms.LinkLabel link_edit_qualification;
         private System.Windows.Forms.ComboBox cbx_edit_location;
@@ -861,17 +909,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker date_add_close;
         private System.Windows.Forms.LinkLabel link_add_jobdesc;
-        private System.Windows.Forms.TextBox tbx_add_headcount;
-        private System.Windows.Forms.TextBox tbx_add_wage;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_add_positiontype;
+        private System.Windows.Forms.Label lbl_add_position;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbl_add_headcount;
+        private System.Windows.Forms.Label lbl_add_location;
+        private System.Windows.Forms.Label lbl_add_qualification;
+        private System.Windows.Forms.Label lbl_add_jobdesc;
         private System.Windows.Forms.TextBox tbx_add_positiontype;
         private System.Windows.Forms.LinkLabel link_add_qualification;
         private System.Windows.Forms.ComboBox cbx_add_location;
@@ -880,5 +926,10 @@
         private System.Windows.Forms.ComboBox cbx_add_position;
         private System.Windows.Forms.ComboBox tbx_edit_position;
         private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.OpenFileDialog dialog_qualification;
+        private System.Windows.Forms.OpenFileDialog dialog_jobdesc;
+        private Miscellaneous.CustomTextbox tbx_add_headcount;
+        private Miscellaneous.CustomTextbox tbx_add_wage;
     }
 }

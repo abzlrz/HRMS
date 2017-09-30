@@ -25,7 +25,7 @@ namespace Data.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=ArvatoHRM;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Arvato_db;Integrated Security=True")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
@@ -560,6 +560,42 @@ namespace Data.Properties {
             }
             set {
                 this["TempDBConnectionString"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showJobPostingData")]
+        public string ShowJobPostingData {
+            get {
+                return ((string)(this["ShowJobPostingData"]));
+            }
+            set {
+                this["ShowJobPostingData"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertJobPosting")]
+        public string InsertJobPostings {
+            get {
+                return ((string)(this["InsertJobPostings"]));
+            }
+            set {
+                this["InsertJobPostings"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_getJobPostingByID")]
+        public string GetJobPostingByID {
+            get {
+                return ((string)(this["GetJobPostingByID"]));
+            }
+            set {
+                this["GetJobPostingByID"] = value;
             }
         }
     }
