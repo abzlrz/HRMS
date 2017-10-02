@@ -53,14 +53,14 @@
             this.date_add_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_add_comment = new System.Windows.Forms.TextBox();
             this.cbx_add_position = new System.Windows.Forms.ComboBox();
+            this.tbx_add_headcount = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_add_wage = new Presentation.Miscellaneous.CustomTextbox();
             this.btn_add = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.date_edit_close = new System.Windows.Forms.DateTimePicker();
             this.link_edit_jobdesc = new System.Windows.Forms.LinkLabel();
-            this.tbx_edit_headcount = new System.Windows.Forms.TextBox();
-            this.tbx_edit_wage = new System.Windows.Forms.TextBox();
             this.lbl_edit_positiontype = new System.Windows.Forms.Label();
             this.lbl_edit_position = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -76,6 +76,8 @@
             this.date_edit_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_edit_comment = new System.Windows.Forms.TextBox();
             this.tbx_edit_position = new System.Windows.Forms.ComboBox();
+            this.tbx_edit_wage = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_edit_headcount = new Presentation.Miscellaneous.CustomTextbox();
             this.btn_save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -86,8 +88,9 @@
             this.view_posting = new System.Windows.Forms.DataGridView();
             this.dialog_qualification = new System.Windows.Forms.OpenFileDialog();
             this.dialog_jobdesc = new System.Windows.Forms.OpenFileDialog();
-            this.tbx_add_headcount = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_add_wage = new Presentation.Miscellaneous.CustomTextbox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -96,6 +99,8 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_posting)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -107,7 +112,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(344, 478);
+            this.tabControl1.Size = new System.Drawing.Size(344, 470);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -118,7 +123,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(10);
-            this.tabPage1.Size = new System.Drawing.Size(336, 448);
+            this.tabPage1.Size = new System.Drawing.Size(336, 440);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -129,7 +134,7 @@
             this.btn_reset.Location = new System.Drawing.Point(102, 412);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(75, 23);
-            this.btn_reset.TabIndex = 5;
+            this.btn_reset.TabIndex = 1;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
@@ -377,7 +382,7 @@
             this.cbx_add_location.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_location.Name = "cbx_add_location";
             this.cbx_add_location.Size = new System.Drawing.Size(183, 21);
-            this.cbx_add_location.TabIndex = 7;
+            this.cbx_add_location.TabIndex = 6;
             this.cbx_add_location.SelectedIndexChanged += new System.EventHandler(this.cbx_add_location_SelectedIndexChanged);
             // 
             // date_add_posted
@@ -395,6 +400,7 @@
             this.tbx_add_comment.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbx_add_comment.Location = new System.Drawing.Point(127, 264);
             this.tbx_add_comment.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_comment.MaxLength = 99;
             this.tbx_add_comment.Multiline = true;
             this.tbx_add_comment.Name = "tbx_add_comment";
             this.tbx_add_comment.Size = new System.Drawing.Size(183, 86);
@@ -404,12 +410,35 @@
             // 
             this.cbx_add_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_position.FormattingEnabled = true;
-            this.cbx_add_position.Location = new System.Drawing.Point(127, 33);
+            this.cbx_add_position.Location = new System.Drawing.Point(127, 35);
             this.cbx_add_position.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_position.Name = "cbx_add_position";
             this.cbx_add_position.Size = new System.Drawing.Size(183, 23);
             this.cbx_add_position.TabIndex = 1;
             this.cbx_add_position.SelectedIndexChanged += new System.EventHandler(this.cbx_add_position_SelectedIndexChanged);
+            // 
+            // tbx_add_headcount
+            // 
+            this.tbx_add_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_add_headcount.Location = new System.Drawing.Point(127, 145);
+            this.tbx_add_headcount.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_headcount.MaxLength = 10;
+            this.tbx_add_headcount.Name = "tbx_add_headcount";
+            this.tbx_add_headcount.Size = new System.Drawing.Size(183, 23);
+            this.tbx_add_headcount.TabIndex = 5;
+            this.tbx_add_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
+            this.tbx_add_headcount.TextChanged += new System.EventHandler(this.tbx_add_headcount_TextChanged);
+            // 
+            // tbx_add_wage
+            // 
+            this.tbx_add_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_add_wage.Location = new System.Drawing.Point(127, 117);
+            this.tbx_add_wage.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_wage.MaxLength = 10;
+            this.tbx_add_wage.Name = "tbx_add_wage";
+            this.tbx_add_wage.Size = new System.Drawing.Size(183, 23);
+            this.tbx_add_wage.TabIndex = 4;
+            this.tbx_add_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
             // 
             // btn_add
             // 
@@ -429,7 +458,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(336, 448);
+            this.tabPage2.Size = new System.Drawing.Size(336, 440);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Edit";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -442,8 +471,6 @@
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.date_edit_close, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.link_edit_jobdesc, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_headcount, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_wage, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_positiontype, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_position, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 2);
@@ -459,6 +486,8 @@
             this.tableLayoutPanel2.Controls.Add(this.date_edit_posted, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_comment, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_position, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_wage, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_headcount, 1, 5);
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -511,27 +540,6 @@
             this.link_edit_jobdesc.Text = "Upload";
             this.link_edit_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.link_edit_jobdesc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_jobdesc_LinkClicked);
-            // 
-            // tbx_edit_headcount
-            // 
-            this.tbx_edit_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_edit_headcount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_edit_headcount.Location = new System.Drawing.Point(127, 146);
-            this.tbx_edit_headcount.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_edit_headcount.Name = "tbx_edit_headcount";
-            this.tbx_edit_headcount.Size = new System.Drawing.Size(183, 22);
-            this.tbx_edit_headcount.TabIndex = 6;
-            this.tbx_edit_headcount.TextChanged += new System.EventHandler(this.tbx_edit_headcount_TextChanged);
-            // 
-            // tbx_edit_wage
-            // 
-            this.tbx_edit_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_edit_wage.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_edit_wage.Location = new System.Drawing.Point(127, 118);
-            this.tbx_edit_wage.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_edit_wage.Name = "tbx_edit_wage";
-            this.tbx_edit_wage.Size = new System.Drawing.Size(183, 22);
-            this.tbx_edit_wage.TabIndex = 4;
             // 
             // lbl_edit_positiontype
             // 
@@ -685,7 +693,7 @@
             this.cbx_edit_location.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_edit_location.Name = "cbx_edit_location";
             this.cbx_edit_location.Size = new System.Drawing.Size(183, 21);
-            this.cbx_edit_location.TabIndex = 7;
+            this.cbx_edit_location.TabIndex = 6;
             this.cbx_edit_location.SelectedIndexChanged += new System.EventHandler(this.cbx_edit_location_SelectedIndexChanged);
             // 
             // date_edit_posted
@@ -703,6 +711,7 @@
             this.tbx_edit_comment.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbx_edit_comment.Location = new System.Drawing.Point(127, 264);
             this.tbx_edit_comment.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_comment.MaxLength = 99;
             this.tbx_edit_comment.Multiline = true;
             this.tbx_edit_comment.Name = "tbx_edit_comment";
             this.tbx_edit_comment.Size = new System.Drawing.Size(183, 86);
@@ -712,12 +721,32 @@
             // 
             this.tbx_edit_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbx_edit_position.FormattingEnabled = true;
-            this.tbx_edit_position.Location = new System.Drawing.Point(127, 35);
+            this.tbx_edit_position.Location = new System.Drawing.Point(127, 33);
             this.tbx_edit_position.Margin = new System.Windows.Forms.Padding(0);
             this.tbx_edit_position.Name = "tbx_edit_position";
             this.tbx_edit_position.Size = new System.Drawing.Size(183, 23);
             this.tbx_edit_position.TabIndex = 1;
             this.tbx_edit_position.SelectedIndexChanged += new System.EventHandler(this.tbx_edit_position_SelectedIndexChanged);
+            // 
+            // tbx_edit_wage
+            // 
+            this.tbx_edit_wage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_edit_wage.Location = new System.Drawing.Point(127, 112);
+            this.tbx_edit_wage.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_wage.Name = "tbx_edit_wage";
+            this.tbx_edit_wage.Size = new System.Drawing.Size(183, 23);
+            this.tbx_edit_wage.TabIndex = 4;
+            this.tbx_edit_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            // 
+            // tbx_edit_headcount
+            // 
+            this.tbx_edit_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_edit_headcount.Location = new System.Drawing.Point(127, 140);
+            this.tbx_edit_headcount.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_headcount.Name = "tbx_edit_headcount";
+            this.tbx_edit_headcount.Size = new System.Drawing.Size(183, 23);
+            this.tbx_edit_headcount.TabIndex = 5;
+            this.tbx_edit_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
             // 
             // btn_save
             // 
@@ -735,8 +764,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(356, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.panel1.Size = new System.Drawing.Size(491, 478);
+            this.panel1.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(491, 470);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -750,7 +779,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(10, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(471, 468);
+            this.panel2.Size = new System.Drawing.Size(481, 460);
             this.panel2.TabIndex = 0;
             // 
             // btn_delete
@@ -771,7 +800,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(471, 31);
+            this.label1.Size = new System.Drawing.Size(481, 31);
             this.label1.TabIndex = 27;
             this.label1.Text = "Search Job Postings";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -787,7 +816,7 @@
             "Posted Date"});
             this.cbxSearchBy.Location = new System.Drawing.Point(299, 46);
             this.cbxSearchBy.Name = "cbxSearchBy";
-            this.cbxSearchBy.Size = new System.Drawing.Size(156, 21);
+            this.cbxSearchBy.Size = new System.Drawing.Size(172, 21);
             this.cbxSearchBy.TabIndex = 1;
             // 
             // tbx_search
@@ -808,7 +837,7 @@
             this.view_posting.Location = new System.Drawing.Point(13, 73);
             this.view_posting.Name = "view_posting";
             this.view_posting.RowHeadersVisible = false;
-            this.view_posting.Size = new System.Drawing.Size(442, 348);
+            this.view_posting.Size = new System.Drawing.Size(458, 348);
             this.view_posting.TabIndex = 2;
             // 
             // dialog_qualification
@@ -819,35 +848,45 @@
             // 
             this.dialog_jobdesc.FileName = "openFileDialog1";
             // 
-            // tbx_add_headcount
+            // panel3
             // 
-            this.tbx_add_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_headcount.Location = new System.Drawing.Point(127, 145);
-            this.tbx_add_headcount.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_headcount.Name = "tbx_add_headcount";
-            this.tbx_add_headcount.Size = new System.Drawing.Size(183, 23);
-            this.tbx_add_headcount.TabIndex = 22;
-            this.tbx_add_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
-            this.tbx_add_headcount.TextChanged += new System.EventHandler(this.tbx_add_headcount_TextChanged);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(12, 482);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(835, 51);
+            this.panel3.TabIndex = 2;
             // 
-            // tbx_add_wage
+            // panel4
             // 
-            this.tbx_add_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_wage.Location = new System.Drawing.Point(127, 117);
-            this.tbx_add_wage.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_wage.Name = "tbx_add_wage";
-            this.tbx_add_wage.Size = new System.Drawing.Size(183, 23);
-            this.tbx_add_wage.TabIndex = 23;
-            this.tbx_add_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 9);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(835, 42);
+            this.panel4.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(750, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormJobPosting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(859, 502);
+            this.ClientSize = new System.Drawing.Size(859, 545);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.MaximizeBox = false;
@@ -867,6 +906,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_posting)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -889,8 +930,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker date_edit_close;
         private System.Windows.Forms.LinkLabel link_edit_jobdesc;
-        private System.Windows.Forms.TextBox tbx_edit_headcount;
-        private System.Windows.Forms.TextBox tbx_edit_wage;
         private System.Windows.Forms.Label lbl_edit_positiontype;
         private System.Windows.Forms.Label lbl_edit_position;
         private System.Windows.Forms.Label label14;
@@ -931,5 +970,10 @@
         private System.Windows.Forms.OpenFileDialog dialog_jobdesc;
         private Miscellaneous.CustomTextbox tbx_add_headcount;
         private Miscellaneous.CustomTextbox tbx_add_wage;
+        private Miscellaneous.CustomTextbox tbx_edit_wage;
+        private Miscellaneous.CustomTextbox tbx_edit_headcount;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
     }
 }

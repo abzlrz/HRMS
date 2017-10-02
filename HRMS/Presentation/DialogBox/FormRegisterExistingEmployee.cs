@@ -31,7 +31,7 @@ namespace Presentation.DialogBox
         {
             // load inputs first from salary info
             controlSalaryInfo1.LoadInputs();
-
+            employee.ID = 0;
             employee.Employee = controlEmployeeInfo1.employee;
             employee.Address = controlEmployeeInfo1.address;
             employee.HiringManager = controlEmployeeEvaluation1.hiringmanager;
@@ -41,6 +41,8 @@ namespace Presentation.DialogBox
             employee.JobTitle = controlEmployeeEvaluation1.jobtitle;
             employee.Team = controlEmployeeEvaluation1.team;
             employee.ContractType = controlEmployeeEvaluation1.contract_type;
+            employee.Role = controlEmployeeEvaluation1.role;
+            employee.Owner = controlEmployeeEvaluation1.owner;
             employee.SalaryInfo = controlSalaryInfo1.salaryInfo;
 
             var success = context.Employee.InsertData(employee);

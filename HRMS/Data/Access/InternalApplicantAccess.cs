@@ -15,7 +15,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowInternalApplicantData;
+                adapter.SelectCommand.CommandText = Default.ShowBucketData ;
 
                 adapter.Fill(data);
             }

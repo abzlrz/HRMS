@@ -39,7 +39,6 @@
             this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceAppraisalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendEmailToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +66,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.p.SuspendLayout();
@@ -174,9 +174,9 @@
             // 
             this.employeeMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.employeeMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripMenuItem,
             this.newEmployeeToolStripMenuItem,
             this.checklistToolStripMenuItem,
-            this.toolStripMenuItem1,
             this.deleteToolStripMenuItem,
             this.performanceAppraisalToolStripMenuItem,
             this.sendEmailToolStripMenuItem2,
@@ -184,7 +184,7 @@
             this.sendEmailToolStripMenuItem,
             this.viewInformationToolStripMenuItem});
             this.employeeMenuStrip.Name = "employeeMenuStrip";
-            this.employeeMenuStrip.Size = new System.Drawing.Size(224, 186);
+            this.employeeMenuStrip.Size = new System.Drawing.Size(224, 208);
             // 
             // newEmployeeToolStripMenuItem
             // 
@@ -198,12 +198,6 @@
             this.checklistToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.checklistToolStripMenuItem.Text = "Register Existing Employee...";
             this.checklistToolStripMenuItem.Click += new System.EventHandler(this.checklistToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(223, 22);
-            this.toolStripMenuItem1.Text = "Edit Employee...";
             // 
             // deleteToolStripMenuItem
             // 
@@ -245,7 +239,7 @@
             this.tabPage2.Controls.Add(this.view_external_applicant);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1073, 625);
+            this.tabPage2.Size = new System.Drawing.Size(1079, 634);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "External Applicant";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -263,7 +257,7 @@
             this.view_external_applicant.Name = "view_external_applicant";
             this.view_external_applicant.RowHeadersVisible = false;
             this.view_external_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_external_applicant.Size = new System.Drawing.Size(1073, 625);
+            this.view_external_applicant.Size = new System.Drawing.Size(1079, 634);
             this.view_external_applicant.TabIndex = 6;
             // 
             // externalApplicantMenuStrip
@@ -334,7 +328,7 @@
             this.tabPage3.Controls.Add(this.view_internal_applicant);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1073, 625);
+            this.tabPage3.Size = new System.Drawing.Size(1079, 634);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "InternalApplicant";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -352,7 +346,7 @@
             this.view_internal_applicant.Name = "view_internal_applicant";
             this.view_internal_applicant.RowHeadersVisible = false;
             this.view_internal_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_internal_applicant.Size = new System.Drawing.Size(1073, 625);
+            this.view_internal_applicant.Size = new System.Drawing.Size(1079, 634);
             this.view_internal_applicant.TabIndex = 7;
             // 
             // internalApplicantMenuStrip
@@ -411,6 +405,12 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(181, 22);
             this.toolStripMenuItem8.Text = "Evaluation Result";
             // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            // 
             // ControlRecruitmentDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,7 +447,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ContextMenuStrip employeeMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem checklistToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem performanceAppraisalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem2;
@@ -475,5 +474,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem newEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
     }
 }

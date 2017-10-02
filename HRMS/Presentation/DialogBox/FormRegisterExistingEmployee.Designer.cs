@@ -30,21 +30,10 @@ namespace Presentation.DialogBox
         /// </summary>
         private void InitializeComponent()
         {
-            this.controlEmployeeEvaluation1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlEmployeeEvaluation();
             this.controlSalaryInfo1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlSalaryInfo();
             this.controlEmployeeInfo1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlEmployeeInfo();
+            this.controlEmployeeEvaluation1 = new Presentation.DialogBox.ExistingEmployeeRegistration.ControlEmployeeEvaluation();
             this.SuspendLayout();
-            // 
-            // controlEmployeeEvaluation1
-            // 
-            this.controlEmployeeEvaluation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlEmployeeEvaluation1.Location = new System.Drawing.Point(0, 0);
-            this.controlEmployeeEvaluation1.Name = "controlEmployeeEvaluation1";
-            this.controlEmployeeEvaluation1.Next = this.controlSalaryInfo1;
-            this.controlEmployeeEvaluation1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlEmployeeEvaluation1.Previous = this.controlEmployeeInfo1;
-            this.controlEmployeeEvaluation1.Size = new System.Drawing.Size(587, 521);
-            this.controlEmployeeEvaluation1.TabIndex = 1;
             // 
             // controlSalaryInfo1
             // 
@@ -65,6 +54,17 @@ namespace Presentation.DialogBox
             this.controlEmployeeInfo1.Padding = new System.Windows.Forms.Padding(12);
             this.controlEmployeeInfo1.Size = new System.Drawing.Size(587, 521);
             this.controlEmployeeInfo1.TabIndex = 3;
+            // 
+            // controlEmployeeEvaluation1
+            // 
+            this.controlEmployeeEvaluation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlEmployeeEvaluation1.Location = new System.Drawing.Point(0, 0);
+            this.controlEmployeeEvaluation1.Name = "controlEmployeeEvaluation1";
+            this.controlEmployeeEvaluation1.Next = this.controlSalaryInfo1;
+            this.controlEmployeeEvaluation1.Padding = new System.Windows.Forms.Padding(12);
+            this.controlEmployeeEvaluation1.Previous = this.controlEmployeeInfo1;
+            this.controlEmployeeEvaluation1.Size = new System.Drawing.Size(587, 521);
+            this.controlEmployeeEvaluation1.TabIndex = 5;
             // 
             // FormRegisterExistingEmployee
             // 
@@ -87,7 +87,7 @@ namespace Presentation.DialogBox
 
         #endregion
         private ControlEmployeeInfo controlEmployeeInfo1;
-        private ControlEmployeeEvaluation controlEmployeeEvaluation1;
         private ControlSalaryInfo controlSalaryInfo1;
+        private ControlEmployeeEvaluation controlEmployeeEvaluation1;
     }
 }

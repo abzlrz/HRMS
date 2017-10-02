@@ -71,6 +71,12 @@
     <Compile Include="DialogBox\FormCheckVacancies.Designer.cs">
       <DependentUpon>FormCheckVacancies.cs</DependentUpon>
     </Compile>
+    <Compile Include="DialogBox\FormEmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormEmployeeDashboard.Designer.cs">
+      <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\FormJobPosting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\FormCheckVacancies.resx">
       <DependentUpon>FormCheckVacancies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormEmployeeDashboard.resx">
+      <DependentUpon>FormEmployeeDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\FormJobPosting.resx">
       <DependentUpon>FormJobPosting.cs</DependentUpon>

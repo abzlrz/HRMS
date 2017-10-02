@@ -196,7 +196,7 @@
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.08943F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tableLayoutPanel1.Controls.Add(this.comboBox30, 1, 22);
             this.tableLayoutPanel1.Controls.Add(this.label32, 0, 22);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
@@ -284,10 +284,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox30.Location = new System.Drawing.Point(295, 489);
+            this.comboBox30.Location = new System.Drawing.Point(293, 489);
             this.comboBox30.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(173, 21);
+            this.comboBox30.Size = new System.Drawing.Size(175, 21);
             this.comboBox30.TabIndex = 106;
             this.comboBox30.Tag = "required";
             // 
@@ -298,7 +298,7 @@
             this.label32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(5, 489);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(285, 22);
+            this.label32.Size = new System.Drawing.Size(283, 22);
             this.label32.TabIndex = 105;
             this.label32.Text = "Asked Good Work Questions:";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,7 +310,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(285, 21);
+            this.label5.Size = new System.Drawing.Size(283, 21);
             this.label5.TabIndex = 44;
             this.label5.Text = "Made Good First Impression:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,7 +322,7 @@
             this.label31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(5, 467);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(285, 20);
+            this.label31.Size = new System.Drawing.Size(283, 20);
             this.label31.TabIndex = 104;
             this.label31.Text = "Organization/Planning Skills:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -338,10 +338,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox29.Location = new System.Drawing.Point(295, 467);
+            this.comboBox29.Location = new System.Drawing.Point(293, 467);
             this.comboBox29.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(173, 21);
+            this.comboBox29.Size = new System.Drawing.Size(175, 21);
             this.comboBox29.TabIndex = 42;
             this.comboBox29.Tag = "required";
             // 
@@ -352,7 +352,7 @@
             this.label30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(5, 445);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(285, 20);
+            this.label30.Size = new System.Drawing.Size(283, 20);
             this.label30.TabIndex = 103;
             this.label30.Text = "Judgement, Decision Making:";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -364,7 +364,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 2);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(285, 21);
+            this.label6.Size = new System.Drawing.Size(283, 21);
             this.label6.TabIndex = 43;
             this.label6.Text = "Greeting to Committee:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -376,7 +376,7 @@
             this.label29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(5, 423);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(285, 20);
+            this.label29.Size = new System.Drawing.Size(283, 20);
             this.label29.TabIndex = 102;
             this.label29.Text = "Self Motivation && Goals:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,10 +392,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox28.Location = new System.Drawing.Point(295, 445);
+            this.comboBox28.Location = new System.Drawing.Point(293, 445);
             this.comboBox28.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(173, 21);
+            this.comboBox28.Size = new System.Drawing.Size(175, 21);
             this.comboBox28.TabIndex = 41;
             this.comboBox28.Tag = "required";
             // 
@@ -406,7 +406,7 @@
             this.label28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(5, 401);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(285, 20);
+            this.label28.Size = new System.Drawing.Size(283, 20);
             this.label28.TabIndex = 101;
             this.label28.Text = "Coping Ability (Stress, Conflict, Time Demands):";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -422,10 +422,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox27.Location = new System.Drawing.Point(295, 423);
+            this.comboBox27.Location = new System.Drawing.Point(293, 423);
             this.comboBox27.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(173, 21);
+            this.comboBox27.Size = new System.Drawing.Size(175, 21);
             this.comboBox27.TabIndex = 40;
             this.comboBox27.Tag = "required";
             // 
@@ -436,7 +436,7 @@
             this.label27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(5, 379);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(285, 20);
+            this.label27.Size = new System.Drawing.Size(283, 20);
             this.label27.TabIndex = 100;
             this.label27.Text = "Leadership Skills:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -452,10 +452,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox26.Location = new System.Drawing.Point(295, 401);
+            this.comboBox26.Location = new System.Drawing.Point(293, 401);
             this.comboBox26.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(173, 21);
+            this.comboBox26.Size = new System.Drawing.Size(175, 21);
             this.comboBox26.TabIndex = 39;
             this.comboBox26.Tag = "required";
             // 
@@ -466,7 +466,7 @@
             this.label26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(5, 357);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(285, 20);
+            this.label26.Size = new System.Drawing.Size(283, 20);
             this.label26.TabIndex = 99;
             this.label26.Text = "Listening Skills:";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -482,10 +482,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox25.Location = new System.Drawing.Point(295, 379);
+            this.comboBox25.Location = new System.Drawing.Point(293, 379);
             this.comboBox25.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(173, 21);
+            this.comboBox25.Size = new System.Drawing.Size(175, 21);
             this.comboBox25.TabIndex = 38;
             this.comboBox25.Tag = "required";
             // 
@@ -496,7 +496,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 335);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(285, 20);
+            this.label7.Size = new System.Drawing.Size(283, 20);
             this.label7.TabIndex = 98;
             this.label7.Text = "Non-verbal (Posture, Hand Gesture, Didn\'t Fidget):";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -512,10 +512,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox24.Location = new System.Drawing.Point(295, 357);
+            this.comboBox24.Location = new System.Drawing.Point(293, 357);
             this.comboBox24.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(173, 21);
+            this.comboBox24.Size = new System.Drawing.Size(175, 21);
             this.comboBox24.TabIndex = 37;
             this.comboBox24.Tag = "required";
             // 
@@ -526,7 +526,7 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(5, 313);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(285, 20);
+            this.label24.Size = new System.Drawing.Size(283, 20);
             this.label24.TabIndex = 97;
             this.label24.Text = "Communication Skills:";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -542,10 +542,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox23.Location = new System.Drawing.Point(295, 335);
+            this.comboBox23.Location = new System.Drawing.Point(293, 335);
             this.comboBox23.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(173, 21);
+            this.comboBox23.Size = new System.Drawing.Size(175, 21);
             this.comboBox23.TabIndex = 36;
             this.comboBox23.Tag = "required";
             // 
@@ -556,7 +556,7 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(5, 291);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(285, 20);
+            this.label23.Size = new System.Drawing.Size(283, 20);
             this.label23.TabIndex = 96;
             this.label23.Text = "Customer Service Skills:";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -572,10 +572,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox22.Location = new System.Drawing.Point(295, 313);
+            this.comboBox22.Location = new System.Drawing.Point(293, 313);
             this.comboBox22.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(173, 21);
+            this.comboBox22.Size = new System.Drawing.Size(175, 21);
             this.comboBox22.TabIndex = 35;
             this.comboBox22.Tag = "required";
             // 
@@ -586,7 +586,7 @@
             this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(5, 269);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(285, 20);
+            this.label22.Size = new System.Drawing.Size(283, 20);
             this.label22.TabIndex = 95;
             this.label22.Text = "Team Skills:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -602,10 +602,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox21.Location = new System.Drawing.Point(295, 291);
+            this.comboBox21.Location = new System.Drawing.Point(293, 291);
             this.comboBox21.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(173, 21);
+            this.comboBox21.Size = new System.Drawing.Size(175, 21);
             this.comboBox21.TabIndex = 34;
             this.comboBox21.Tag = "required";
             // 
@@ -616,7 +616,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(5, 247);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(285, 20);
+            this.label21.Size = new System.Drawing.Size(283, 20);
             this.label21.TabIndex = 94;
             this.label21.Text = "Answers Focus on Strengths:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -632,10 +632,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox20.Location = new System.Drawing.Point(295, 269);
+            this.comboBox20.Location = new System.Drawing.Point(293, 269);
             this.comboBox20.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(173, 21);
+            this.comboBox20.Size = new System.Drawing.Size(175, 21);
             this.comboBox20.TabIndex = 33;
             this.comboBox20.Tag = "required";
             // 
@@ -646,7 +646,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(5, 225);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(285, 20);
+            this.label20.Size = new System.Drawing.Size(283, 20);
             this.label20.TabIndex = 93;
             this.label20.Text = "Answered Questions Well:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -662,10 +662,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox19.Location = new System.Drawing.Point(295, 247);
+            this.comboBox19.Location = new System.Drawing.Point(293, 247);
             this.comboBox19.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(173, 21);
+            this.comboBox19.Size = new System.Drawing.Size(175, 21);
             this.comboBox19.TabIndex = 32;
             this.comboBox19.Tag = "required";
             // 
@@ -676,7 +676,7 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(5, 203);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(285, 20);
+            this.label19.Size = new System.Drawing.Size(283, 20);
             this.label19.TabIndex = 92;
             this.label19.Text = "Related Experience:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -692,10 +692,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox18.Location = new System.Drawing.Point(295, 225);
+            this.comboBox18.Location = new System.Drawing.Point(293, 225);
             this.comboBox18.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(173, 21);
+            this.comboBox18.Size = new System.Drawing.Size(175, 21);
             this.comboBox18.TabIndex = 31;
             this.comboBox18.Tag = "required";
             // 
@@ -706,7 +706,7 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(5, 181);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(285, 20);
+            this.label18.Size = new System.Drawing.Size(283, 20);
             this.label18.TabIndex = 91;
             this.label18.Text = "Education/Training:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -722,10 +722,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox17.Location = new System.Drawing.Point(295, 203);
+            this.comboBox17.Location = new System.Drawing.Point(293, 203);
             this.comboBox17.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(173, 21);
+            this.comboBox17.Size = new System.Drawing.Size(175, 21);
             this.comboBox17.TabIndex = 30;
             this.comboBox17.Tag = "required";
             // 
@@ -736,7 +736,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(5, 159);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(285, 20);
+            this.label17.Size = new System.Drawing.Size(283, 20);
             this.label17.TabIndex = 90;
             this.label17.Text = "Knowledge of Job/Company:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -752,10 +752,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox16.Location = new System.Drawing.Point(295, 181);
+            this.comboBox16.Location = new System.Drawing.Point(293, 181);
             this.comboBox16.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(173, 21);
+            this.comboBox16.Size = new System.Drawing.Size(175, 21);
             this.comboBox16.TabIndex = 29;
             this.comboBox16.Tag = "required";
             // 
@@ -766,7 +766,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(5, 137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(285, 20);
+            this.label16.Size = new System.Drawing.Size(283, 20);
             this.label16.TabIndex = 89;
             this.label16.Text = "Confidence:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -782,10 +782,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox15.Location = new System.Drawing.Point(295, 159);
+            this.comboBox15.Location = new System.Drawing.Point(293, 159);
             this.comboBox15.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(173, 21);
+            this.comboBox15.Size = new System.Drawing.Size(175, 21);
             this.comboBox15.TabIndex = 28;
             this.comboBox15.Tag = "required";
             // 
@@ -796,7 +796,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 115);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(285, 20);
+            this.label15.Size = new System.Drawing.Size(283, 20);
             this.label15.TabIndex = 88;
             this.label15.Text = "Level of Interest:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -812,10 +812,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox14.Location = new System.Drawing.Point(295, 137);
+            this.comboBox14.Location = new System.Drawing.Point(293, 137);
             this.comboBox14.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(173, 21);
+            this.comboBox14.Size = new System.Drawing.Size(175, 21);
             this.comboBox14.TabIndex = 27;
             this.comboBox14.Tag = "required";
             // 
@@ -826,7 +826,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 93);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(285, 20);
+            this.label14.Size = new System.Drawing.Size(283, 20);
             this.label14.TabIndex = 87;
             this.label14.Text = "Eye Contact:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -842,10 +842,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox13.Location = new System.Drawing.Point(295, 115);
+            this.comboBox13.Location = new System.Drawing.Point(293, 115);
             this.comboBox13.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(173, 21);
+            this.comboBox13.Size = new System.Drawing.Size(175, 21);
             this.comboBox13.TabIndex = 26;
             this.comboBox13.Tag = "required";
             // 
@@ -856,7 +856,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 71);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(285, 20);
+            this.label8.Size = new System.Drawing.Size(283, 20);
             this.label8.TabIndex = 86;
             this.label8.Text = "Dress Appropriately:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -872,10 +872,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox12.Location = new System.Drawing.Point(295, 93);
+            this.comboBox12.Location = new System.Drawing.Point(293, 93);
             this.comboBox12.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(173, 21);
+            this.comboBox12.Size = new System.Drawing.Size(175, 21);
             this.comboBox12.TabIndex = 25;
             this.comboBox12.Tag = "required";
             // 
@@ -886,7 +886,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 48);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(285, 21);
+            this.label9.Size = new System.Drawing.Size(283, 21);
             this.label9.TabIndex = 85;
             this.label9.Text = "Attitude:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -902,10 +902,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox11.Location = new System.Drawing.Point(295, 71);
+            this.comboBox11.Location = new System.Drawing.Point(293, 71);
             this.comboBox11.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(173, 21);
+            this.comboBox11.Size = new System.Drawing.Size(175, 21);
             this.comboBox11.TabIndex = 24;
             this.comboBox11.Tag = "required";
             // 
@@ -920,10 +920,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox10.Location = new System.Drawing.Point(295, 48);
+            this.comboBox10.Location = new System.Drawing.Point(293, 48);
             this.comboBox10.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(173, 21);
+            this.comboBox10.Size = new System.Drawing.Size(175, 21);
             this.comboBox10.TabIndex = 23;
             this.comboBox10.Tag = "required";
             // 
@@ -938,10 +938,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox9.Location = new System.Drawing.Point(295, 25);
+            this.comboBox9.Location = new System.Drawing.Point(293, 25);
             this.comboBox9.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(173, 21);
+            this.comboBox9.Size = new System.Drawing.Size(175, 21);
             this.comboBox9.TabIndex = 22;
             this.comboBox9.Tag = "required";
             // 
@@ -956,10 +956,10 @@
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox8.Location = new System.Drawing.Point(295, 2);
+            this.comboBox8.Location = new System.Drawing.Point(293, 2);
             this.comboBox8.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(173, 21);
+            this.comboBox8.Size = new System.Drawing.Size(175, 21);
             this.comboBox8.TabIndex = 21;
             this.comboBox8.Tag = "required";
             // 

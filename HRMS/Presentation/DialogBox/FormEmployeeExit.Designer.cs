@@ -50,9 +50,9 @@
             this.link_path = new System.Windows.Forms.LinkLabel();
             this.btn_attach = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.btn_reset = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.btn_register = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.gbxAppInfo.SuspendLayout();
             this.applicantInfo.SuspendLayout();
             this.gbxEvaluationInfo.SuspendLayout();
@@ -318,7 +318,7 @@
             this.gbxAttachment.Controls.Add(this.btn_attach);
             this.gbxAttachment.Location = new System.Drawing.Point(417, 12);
             this.gbxAttachment.Name = "gbxAttachment";
-            this.gbxAttachment.Size = new System.Drawing.Size(301, 212);
+            this.gbxAttachment.Size = new System.Drawing.Size(235, 212);
             this.gbxAttachment.TabIndex = 10;
             this.gbxAttachment.TabStop = false;
             this.gbxAttachment.Text = "Attachment";
@@ -329,9 +329,9 @@
             this.link_path.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_path.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.link_path.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.link_path.Location = new System.Drawing.Point(36, 127);
+            this.link_path.Location = new System.Drawing.Point(24, 127);
             this.link_path.Name = "link_path";
-            this.link_path.Size = new System.Drawing.Size(234, 23);
+            this.link_path.Size = new System.Drawing.Size(187, 23);
             this.link_path.TabIndex = 97;
             this.link_path.TabStop = true;
             this.link_path.Text = "File";
@@ -340,9 +340,9 @@
             // 
             // btn_attach
             // 
-            this.btn_attach.Location = new System.Drawing.Point(84, 58);
+            this.btn_attach.Location = new System.Drawing.Point(55, 67);
             this.btn_attach.Name = "btn_attach";
-            this.btn_attach.Size = new System.Drawing.Size(146, 23);
+            this.btn_attach.Size = new System.Drawing.Size(132, 23);
             this.btn_attach.TabIndex = 79;
             this.btn_attach.Text = "Attach File";
             this.btn_attach.UseVisualStyleBackColor = true;
@@ -353,47 +353,53 @@
             this.openFileDialog.FileName = "openFileDialog1";
             this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialogFileOk);
             // 
-            // btn_reset
-            // 
-            this.btn_reset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_reset.Location = new System.Drawing.Point(484, 241);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(74, 27);
-            this.btn_reset.TabIndex = 101;
-            this.btn_reset.Text = "Reset";
-            this.btn_reset.UseVisualStyleBackColor = false;
-            // 
             // btn_save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_save.Location = new System.Drawing.Point(564, 241);
+            this.btn_save.BackColor = System.Drawing.Color.Teal;
+            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(496, 230);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(74, 27);
-            this.btn_save.TabIndex = 100;
+            this.btn_save.Size = new System.Drawing.Size(75, 35);
+            this.btn_save.TabIndex = 102;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = false;
             // 
-            // btn_register
+            // button1
             // 
-            this.btn_register.BackColor = System.Drawing.Color.Orange;
-            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_register.Location = new System.Drawing.Point(644, 241);
-            this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(74, 27);
-            this.btn_register.TabIndex = 99;
-            this.btn_register.Text = "Cancel";
-            this.btn_register.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(576, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_reset.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reset.ForeColor = System.Drawing.Color.White;
+            this.btn_reset.Location = new System.Drawing.Point(415, 230);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(75, 35);
+            this.btn_reset.TabIndex = 104;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = false;
             // 
             // FormEmployeeExit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 280);
+            this.ClientSize = new System.Drawing.Size(666, 280);
             this.Controls.Add(this.btn_reset);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.btn_register);
             this.Controls.Add(this.gbxAttachment);
             this.Controls.Add(this.gbxEvaluationInfo);
             this.Controls.Add(this.gbxAppInfo);
@@ -443,8 +449,8 @@
         private System.Windows.Forms.LinkLabel link_path;
         private System.Windows.Forms.Button btn_attach;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.Button btn_register;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_reset;
     }
 }

@@ -4,6 +4,7 @@ namespace Data.Entities
 {
     public class ExistingEmployee
     {
+        public int ID { get; set; }
         public Employee Employee { get; set; }
         public EmployeeAddress Address { get; set; }
         public EmployeeHiringManager HiringManager { get; set; }
@@ -14,6 +15,8 @@ namespace Data.Entities
         public EmployeeTeam Team { get; set; }
         public EmployeeContractType ContractType { get; set; }
         public EmployeeSalaryInfo SalaryInfo { get; set; }
+        public EmployeeRole Role { get; set; }
+        public EmployeeOwner Owner { get; set; }
     }
 
     public class Employee
@@ -111,4 +114,5 @@ namespace Data.Entities
         public int EmployeeID { get; set; }
         public string Role { get; set; }
     }
+    
 }

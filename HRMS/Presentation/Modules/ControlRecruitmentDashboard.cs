@@ -16,8 +16,8 @@ namespace Presentation.Modules
             this.context = new DataAccess();
             this.reg_ex_emp = new FormRegisterExistingEmployee();
             this.view_employee.DataSource = context.Employee.ShowData();
-            this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
-            this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
+            //this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
+            //this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
             //
             // view_employeee
             //
@@ -28,8 +28,9 @@ namespace Presentation.Modules
             this.view_employee.Columns["IsActive"].Visible = false;
             //
             // view_external_applicant
-            //
-            this.view_external_applicant.Columns["SSS"].Visible = false;
+            ///
+
+            /*this.view_external_applicant.Columns["SSS"].Visible = false;
             this.view_external_applicant.Columns["HDMF"].Visible = false;
             this.view_external_applicant.Columns["BankAccountNo"].Visible = false;
             this.view_external_applicant.Columns["TIN"].Visible = false;
@@ -42,7 +43,7 @@ namespace Presentation.Modules
             this.view_internal_applicant.Columns["BankAccountNo"].Visible = false;
             this.view_internal_applicant.Columns["TIN"].Visible = false;
             this.view_internal_applicant.Columns["IsActive"].Visible = false;
-
+            */
         }
         private void ReloadExternalApplicantData()
         {

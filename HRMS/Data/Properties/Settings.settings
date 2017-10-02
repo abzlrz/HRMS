@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Data Source=.;Initial Catalog=Arvato_db;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=ArvatoDB;Integrated Security=True</Value>
     </Setting>
     <Setting Name="ShowEmployeeData" Type="System.String" Scope="User">
       <Value Profile="(Default)">[Employee].[sp_showData]</Value>
@@ -15,13 +15,13 @@
       <Value Profile="(Default)">[ExternalApplicant].[sp_showData]</Value>
     </Setting>
     <Setting Name="ShowEmployeeWithPosition" Type="System.String" Scope="User">
-      <Value Profile="(Default)">[Employee].sp_showData_positionTitle</Value>
+      <Value Profile="(Default)">sp_showEmployee</Value>
     </Setting>
     <Setting Name="RegisterExistingEmployee" Type="System.String" Scope="User">
-      <Value Profile="(Default)">[Employee].sp_RegisterExistingEmployee</Value>
+      <Value Profile="(Default)">sp_insertupdate_existing_employee</Value>
     </Setting>
     <Setting Name="ShowHiringManagerData" Type="System.String" Scope="User">
-      <Value Profile="(Default)">[Employee].sp_showHiringManagerData</Value>
+      <Value Profile="(Default)">sp_showHiringManagerData</Value>
     </Setting>
     <Setting Name="ShowTitanTitleData" Type="System.String" Scope="User">
       <Value Profile="(Default)">sp_showTitanTitleData</Value>

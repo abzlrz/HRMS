@@ -25,7 +25,7 @@ namespace Data.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Arvato_db;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=ArvatoDB;Integrated Security=True")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
@@ -73,7 +73,7 @@ namespace Data.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_showData_positionTitle")]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showEmployee")]
         public string ShowEmployeeWithPosition {
             get {
                 return ((string)(this["ShowEmployeeWithPosition"]));
@@ -85,7 +85,7 @@ namespace Data.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_RegisterExistingEmployee")]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_insertupdate_existing_employee")]
         public string RegisterExistingEmployee {
             get {
                 return ((string)(this["RegisterExistingEmployee"]));
@@ -97,7 +97,7 @@ namespace Data.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("[Employee].sp_showHiringManagerData")]
+        [global::System.Configuration.DefaultSettingValueAttribute("sp_showHiringManagerData")]
         public string ShowHiringManagerData {
             get {
                 return ((string)(this["ShowHiringManagerData"]));

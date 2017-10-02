@@ -275,5 +275,10 @@ namespace Presentation.DialogBox
                 table_contacts.Columns.Clear();
             this.Hide();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

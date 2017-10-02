@@ -71,17 +71,19 @@ namespace Data.Access
 
         public DataTable ShowData()
         {
+            
             var data = new DataTable();
             using(var adapter = new SqlDataAdapter())
             {
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowUserData;
+                adapter.SelectCommand.CommandText = Default.ShowBucketData;
 
                 adapter.Fill(data);
             }
             return data;
+            throw new NotImplementedException();
         }
 
         public bool Update(int id, User user)

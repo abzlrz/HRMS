@@ -35,12 +35,8 @@
             this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
             this.lbl_bpi = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.lbl_isUnder18 = new System.Windows.Forms.Label();
-            this.lbl_fname = new System.Windows.Forms.Label();
             this.lbl_midName = new System.Windows.Forms.Label();
-            this.lbl_lastName = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.lbl_primaryContact = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
             this.lbl_sss = new System.Windows.Forms.Label();
@@ -60,6 +56,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.lbl_isUnder18 = new System.Windows.Forms.Label();
+            this.lbl_fname = new System.Windows.Forms.Label();
+            this.lbl_lastName = new System.Windows.Forms.Label();
+            this.lbl_primaryContact = new System.Windows.Forms.Label();
             this.gbx_info.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -160,37 +160,6 @@
             this.imageList.Images.SetKeyName(0, "green_dot.png");
             this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
-            // lbl_isUnder18
-            // 
-            this.lbl_isUnder18.AutoSize = true;
-            this.lbl_isUnder18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_isUnder18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_isUnder18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_isUnder18.ImageIndex = 1;
-            this.lbl_isUnder18.ImageList = this.imageList;
-            this.lbl_isUnder18.Location = new System.Drawing.Point(5, 140);
-            this.lbl_isUnder18.Name = "lbl_isUnder18";
-            this.lbl_isUnder18.Size = new System.Drawing.Size(254, 21);
-            this.lbl_isUnder18.TabIndex = 87;
-            this.lbl_isUnder18.Text = "Is Under 18?";
-            this.lbl_isUnder18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_fname
-            // 
-            this.lbl_fname.AutoSize = true;
-            this.lbl_fname.BackColor = System.Drawing.SystemColors.Control;
-            this.lbl_fname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_fname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_fname.ImageIndex = 1;
-            this.lbl_fname.ImageList = this.imageList;
-            this.lbl_fname.Location = new System.Drawing.Point(5, 2);
-            this.lbl_fname.Name = "lbl_fname";
-            this.lbl_fname.Size = new System.Drawing.Size(254, 21);
-            this.lbl_fname.TabIndex = 51;
-            this.lbl_fname.Text = "Firstname:";
-            this.lbl_fname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // lbl_midName
             // 
             this.lbl_midName.AutoSize = true;
@@ -204,21 +173,6 @@
             this.lbl_midName.Text = "Middlename:";
             this.lbl_midName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_lastName
-            // 
-            this.lbl_lastName.AutoSize = true;
-            this.lbl_lastName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_lastName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lastName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_lastName.ImageIndex = 1;
-            this.lbl_lastName.ImageList = this.imageList;
-            this.lbl_lastName.Location = new System.Drawing.Point(5, 48);
-            this.lbl_lastName.Name = "lbl_lastName";
-            this.lbl_lastName.Size = new System.Drawing.Size(254, 21);
-            this.lbl_lastName.TabIndex = 83;
-            this.lbl_lastName.Text = "Lastname:";
-            this.lbl_lastName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -231,21 +185,6 @@
             this.label14.TabIndex = 84;
             this.label14.Text = "Nickname:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_primaryContact
-            // 
-            this.lbl_primaryContact.AutoSize = true;
-            this.lbl_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_primaryContact.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_primaryContact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_primaryContact.ImageIndex = 1;
-            this.lbl_primaryContact.ImageList = this.imageList;
-            this.lbl_primaryContact.Location = new System.Drawing.Point(5, 94);
-            this.lbl_primaryContact.Name = "lbl_primaryContact";
-            this.lbl_primaryContact.Size = new System.Drawing.Size(254, 21);
-            this.lbl_primaryContact.TabIndex = 85;
-            this.lbl_primaryContact.Text = "Primary Contact Number:";
-            this.lbl_primaryContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label16
             // 
@@ -494,6 +433,67 @@
             this.btn_clear.Text = "Clear All";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // lbl_isUnder18
+            // 
+            this.lbl_isUnder18.AutoSize = true;
+            this.lbl_isUnder18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_isUnder18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_isUnder18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_isUnder18.ImageIndex = 1;
+            this.lbl_isUnder18.ImageList = this.imageList;
+            this.lbl_isUnder18.Location = new System.Drawing.Point(5, 140);
+            this.lbl_isUnder18.Name = "lbl_isUnder18";
+            this.lbl_isUnder18.Size = new System.Drawing.Size(254, 21);
+            this.lbl_isUnder18.TabIndex = 87;
+            this.lbl_isUnder18.Text = "Is Under 18?";
+            this.lbl_isUnder18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_fname
+            // 
+            this.lbl_fname.AutoSize = true;
+            this.lbl_fname.BackColor = System.Drawing.SystemColors.Control;
+            this.lbl_fname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_fname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_fname.ImageIndex = 1;
+            this.lbl_fname.ImageList = this.imageList;
+            this.lbl_fname.Location = new System.Drawing.Point(5, 2);
+            this.lbl_fname.Name = "lbl_fname";
+            this.lbl_fname.Size = new System.Drawing.Size(254, 21);
+            this.lbl_fname.TabIndex = 51;
+            this.lbl_fname.Text = "Firstname:";
+            this.lbl_fname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_lastName
+            // 
+            this.lbl_lastName.AutoSize = true;
+            this.lbl_lastName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_lastName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lastName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_lastName.ImageIndex = 1;
+            this.lbl_lastName.ImageList = this.imageList;
+            this.lbl_lastName.Location = new System.Drawing.Point(5, 48);
+            this.lbl_lastName.Name = "lbl_lastName";
+            this.lbl_lastName.Size = new System.Drawing.Size(254, 21);
+            this.lbl_lastName.TabIndex = 83;
+            this.lbl_lastName.Text = "Lastname:";
+            this.lbl_lastName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_primaryContact
+            // 
+            this.lbl_primaryContact.AutoSize = true;
+            this.lbl_primaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_primaryContact.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_primaryContact.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_primaryContact.ImageIndex = 1;
+            this.lbl_primaryContact.ImageList = this.imageList;
+            this.lbl_primaryContact.Location = new System.Drawing.Point(5, 94);
+            this.lbl_primaryContact.Name = "lbl_primaryContact";
+            this.lbl_primaryContact.Size = new System.Drawing.Size(254, 21);
+            this.lbl_primaryContact.TabIndex = 85;
+            this.lbl_primaryContact.Text = "Primary Contact Number:";
+            this.lbl_primaryContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ControlPersonalInformation
             // 

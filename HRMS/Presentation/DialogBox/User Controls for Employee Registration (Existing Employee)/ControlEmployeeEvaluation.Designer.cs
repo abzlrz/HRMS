@@ -55,6 +55,14 @@
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
+            this.cbx_role = new System.Windows.Forms.ComboBox();
+            this.lbl_role = new System.Windows.Forms.Label();
+            this.lbl_emp_id = new System.Windows.Forms.Label();
+            this.lbl_owner_firstname = new System.Windows.Forms.Label();
+            this.lbl_owner_lastname = new System.Windows.Forms.Label();
+            this.tbx_owner_firstname = new System.Windows.Forms.TextBox();
+            this.tbx_owner_lastname = new System.Windows.Forms.TextBox();
+            this.tbx_owner_empID = new Presentation.Miscellaneous.CustomTextbox();
             this.gbxAppInfo.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -78,6 +86,8 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.68008F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.31992F));
+            this.tableLayoutPanel4.Controls.Add(this.tbx_owner_lastname, 1, 12);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_owner_lastname, 0, 12);
             this.tableLayoutPanel4.Controls.Add(this.cbx_hiringManagerID, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.cbx_hiringManagerName, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_managerName, 0, 1);
@@ -96,9 +106,15 @@
             this.tableLayoutPanel4.Controls.Add(this.lbl_titanTitle, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.lbl_team, 0, 7);
             this.tableLayoutPanel4.Controls.Add(this.lbl_contractType, 0, 8);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(28, 103);
+            this.tableLayoutPanel4.Controls.Add(this.cbx_role, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_role, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_emp_id, 0, 10);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_owner_firstname, 0, 11);
+            this.tableLayoutPanel4.Controls.Add(this.tbx_owner_firstname, 1, 11);
+            this.tableLayoutPanel4.Controls.Add(this.tbx_owner_empID, 1, 10);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(28, 60);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 9;
+            this.tableLayoutPanel4.RowCount = 13;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
@@ -108,8 +124,11 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(506, 209);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(506, 302);
             this.tableLayoutPanel4.TabIndex = 56;
             // 
             // cbx_hiringManagerID
@@ -435,6 +454,110 @@
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
+            // cbx_role
+            // 
+            this.cbx_role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_role.FormattingEnabled = true;
+            this.cbx_role.Location = new System.Drawing.Point(237, 209);
+            this.cbx_role.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_role.Name = "cbx_role";
+            this.cbx_role.Size = new System.Drawing.Size(267, 21);
+            this.cbx_role.TabIndex = 57;
+            this.cbx_role.Tag = "required";
+            this.cbx_role.SelectedIndexChanged += new System.EventHandler(this.cbx_role_SelectedIndexChanged);
+            // 
+            // lbl_role
+            // 
+            this.lbl_role.AutoSize = true;
+            this.lbl_role.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_role.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_role.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_role.ImageIndex = 1;
+            this.lbl_role.ImageList = this.imageList;
+            this.lbl_role.Location = new System.Drawing.Point(5, 209);
+            this.lbl_role.Name = "lbl_role";
+            this.lbl_role.Size = new System.Drawing.Size(227, 21);
+            this.lbl_role.TabIndex = 57;
+            this.lbl_role.Text = "Role:";
+            this.lbl_role.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_emp_id
+            // 
+            this.lbl_emp_id.AutoSize = true;
+            this.lbl_emp_id.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_emp_id.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_emp_id.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_emp_id.ImageIndex = 1;
+            this.lbl_emp_id.ImageList = this.imageList;
+            this.lbl_emp_id.Location = new System.Drawing.Point(5, 232);
+            this.lbl_emp_id.Name = "lbl_emp_id";
+            this.lbl_emp_id.Size = new System.Drawing.Size(227, 21);
+            this.lbl_emp_id.TabIndex = 58;
+            this.lbl_emp_id.Text = "(Owner) Employee ID:";
+            this.lbl_emp_id.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_owner_firstname
+            // 
+            this.lbl_owner_firstname.AutoSize = true;
+            this.lbl_owner_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_owner_firstname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_owner_firstname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_owner_firstname.ImageIndex = 1;
+            this.lbl_owner_firstname.ImageList = this.imageList;
+            this.lbl_owner_firstname.Location = new System.Drawing.Point(5, 255);
+            this.lbl_owner_firstname.Name = "lbl_owner_firstname";
+            this.lbl_owner_firstname.Size = new System.Drawing.Size(227, 21);
+            this.lbl_owner_firstname.TabIndex = 84;
+            this.lbl_owner_firstname.Text = "(Owner) Firstname:";
+            this.lbl_owner_firstname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_owner_lastname
+            // 
+            this.lbl_owner_lastname.AutoSize = true;
+            this.lbl_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_owner_lastname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_owner_lastname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_owner_lastname.ImageIndex = 1;
+            this.lbl_owner_lastname.ImageList = this.imageList;
+            this.lbl_owner_lastname.Location = new System.Drawing.Point(5, 278);
+            this.lbl_owner_lastname.Name = "lbl_owner_lastname";
+            this.lbl_owner_lastname.Size = new System.Drawing.Size(227, 22);
+            this.lbl_owner_lastname.TabIndex = 85;
+            this.lbl_owner_lastname.Text = "(Owner) Lastname:";
+            this.lbl_owner_lastname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbx_owner_firstname
+            // 
+            this.tbx_owner_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_owner_firstname.Location = new System.Drawing.Point(237, 255);
+            this.tbx_owner_firstname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_owner_firstname.Name = "tbx_owner_firstname";
+            this.tbx_owner_firstname.Size = new System.Drawing.Size(267, 22);
+            this.tbx_owner_firstname.TabIndex = 87;
+            this.tbx_owner_firstname.TextChanged += new System.EventHandler(this.tbx_owner_firstname_TextChanged);
+            // 
+            // tbx_owner_lastname
+            // 
+            this.tbx_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_owner_lastname.Location = new System.Drawing.Point(237, 278);
+            this.tbx_owner_lastname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_owner_lastname.Name = "tbx_owner_lastname";
+            this.tbx_owner_lastname.Size = new System.Drawing.Size(267, 22);
+            this.tbx_owner_lastname.TabIndex = 88;
+            this.tbx_owner_lastname.TextChanged += new System.EventHandler(this.tbx_owner_lastname_TextChanged);
+            // 
+            // tbx_owner_empID
+            // 
+            this.tbx_owner_empID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_owner_empID.Location = new System.Drawing.Point(237, 232);
+            this.tbx_owner_empID.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_owner_empID.MaxLength = 15;
+            this.tbx_owner_empID.Name = "tbx_owner_empID";
+            this.tbx_owner_empID.Size = new System.Drawing.Size(267, 22);
+            this.tbx_owner_empID.TabIndex = 89;
+            this.tbx_owner_empID.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
+            this.tbx_owner_empID.TextChanged += new System.EventHandler(this.tbx_owner_empID_TextChanged);
+            // 
             // ControlEmployeeEvaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,5 +603,13 @@
         public System.Windows.Forms.ComboBox cbx_hiringManagerName;
         private System.Windows.Forms.Label lbl_managerName;
         private System.Windows.Forms.Label lbl_managerID;
+        private System.Windows.Forms.TextBox tbx_owner_lastname;
+        private System.Windows.Forms.Label lbl_owner_lastname;
+        public System.Windows.Forms.ComboBox cbx_role;
+        private System.Windows.Forms.Label lbl_role;
+        private System.Windows.Forms.Label lbl_emp_id;
+        private System.Windows.Forms.Label lbl_owner_firstname;
+        private System.Windows.Forms.TextBox tbx_owner_firstname;
+        private Miscellaneous.CustomTextbox tbx_owner_empID;
     }
 }

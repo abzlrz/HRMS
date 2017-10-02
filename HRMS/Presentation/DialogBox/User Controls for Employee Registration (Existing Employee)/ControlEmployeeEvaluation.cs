@@ -21,6 +21,8 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         public EmployeeJobTitle jobtitle;
         public EmployeeTeam team;
         public EmployeeContractType contract_type;
+        public EmployeeOwner owner;
+        public EmployeeRole role;
 
         private DataAccess _eval;
         private EmployeeAccess _emp;
@@ -38,17 +40,18 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             this.jobtitle = new EmployeeJobTitle();
             this.team = new EmployeeTeam();
             this.contract_type = new EmployeeContractType();
+            this.role = new EmployeeRole();
+            this.owner = new EmployeeOwner();
+            
+
+            ClearAllFields();
         }
 
         #region methods 
         private bool ValidateFields()
         {
             bool result = true;
-            /*
-            if (lbl_managerID.ImageIndex == 1)
-                result = false;
-            if (lbl_managerName.ImageIndex == 1)
-                result = false;*/
+
             if (lbl_titanTitle.ImageIndex == 1)
                 result = false;
             if (lbl_langRequirement.ImageIndex == 1)
@@ -63,6 +66,12 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 result = false;
             if (lbl_contractType.ImageIndex == 1)
                 result = false;
+            if (lbl_emp_id.ImageIndex == 1)
+                result = false;
+            if (lbl_owner_firstname.ImageIndex == 1)
+                result = false;
+            if (lbl_owner_lastname.ImageIndex == 1)
+                result = false;
 
             return result;
         }
@@ -76,9 +85,15 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             cbx_team.SelectedIndex = -1;
             cbx_titanTitle.SelectedIndex = -1;
         }
+
         #endregion
 
         #region If fields are empty conditions
+        private void cbx_role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(cbx_role.SelectedIndex, lbl_role);
+        }
+
         private void cbx_titanTitle_SelectedIndexChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(cbx_titanTitle.SelectedIndex, lbl_titanTitle);
@@ -121,6 +136,17 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private void cbx_hiringManagerName_SelectedValueChanged(object sender, EventArgs e)
         {
             this.cbx_hiringManagerID.Text = (cbx_hiringManagerName.DataSource as DataTable).Rows[0][0].ToString();
+        }
+
+
+        private void tbx_owner_firstname_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_owner_firstname.Text, lbl_owner_firstname);
+        }
+
+        private void tbx_owner_lastname_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_owner_lastname.Text, lbl_owner_lastname);
         }
         #endregion
 
@@ -169,6 +195,16 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 // contract type
                 //
                 this.contract_type.ContractType = cbx_contractType.Text;
+                //
+                // role
+                //
+                this.role.Role = cbx_role.Text;
+                //
+                //
+                // owner
+                this.owner.EmployeeID = int.Parse(tbx_owner_empID.Text);
+                this.owner.Firstname = tbx_owner_firstname.Text;
+                this.owner.Lastname = tbx_owner_lastname.Text;
 
                 Next.BringToFront();
             }
@@ -177,14 +213,16 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 MessageBox.Show("Please fill-up all the required fields", "Arvato HRMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+
+        private void tbx_owner_empID_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_owner_empID.Text, lbl_emp_id);
+        }
         #endregion
-        
+
         private void OnLoad(object sender, EventArgs e)
         {
-            //
-            // clear all fields first!
-            //
-            ClearAllFields();
             // ---- LOAD ALL DATA REFERENCES FROM DB TO COMBOBOX
             //
             // hiring manager
@@ -222,6 +260,16 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             this.cbx_contractType.DisplayMember = "Type";
             this.cbx_contractType.ValueMember = "Type";
             this.cbx_contractType.DataSource = _eval.ShowContractType();
+            //
+            //
+            //
+            this.cbx_role.DisplayMember = "Description";
+            this.cbx_role.ValueMember = "Description";
+            this.cbx_role.DataSource = _eval.ShowRoleData();
+            //
+            // clear all fields first!
+            //
+            ClearAllFields();
         }
     }
 }

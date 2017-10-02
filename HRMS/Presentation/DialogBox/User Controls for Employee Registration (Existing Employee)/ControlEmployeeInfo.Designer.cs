@@ -540,6 +540,7 @@
             this.tbx_primaryContact.Name = "tbx_primaryContact";
             this.tbx_primaryContact.Size = new System.Drawing.Size(270, 20);
             this.tbx_primaryContact.TabIndex = 104;
+            this.tbx_primaryContact.TextChanged += new System.EventHandler(this.tbx_primaryContact_TextChanged);
             // 
             // tbx_secondaryContact
             // 

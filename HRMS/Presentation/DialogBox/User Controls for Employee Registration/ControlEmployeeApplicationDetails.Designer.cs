@@ -40,12 +40,12 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.tbx_referralDue = new Presentation.Miscellaneous.CustomTextbox();
             this.tbx_agencyFee = new Presentation.Miscellaneous.CustomTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
+            this.tbx_referralDue = new Presentation.Miscellaneous.CustomTextbox();
             this.gbx_applicationDetails.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,8 +79,8 @@
             this.tableLayoutPanel3.Controls.Add(this.label36, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label37, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label38, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.tbx_referralDue, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.tbx_agencyFee, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.tbx_referralDue, 1, 3);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 103);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -99,6 +99,7 @@
             this.tbx_agencyName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_agencyName.Location = new System.Drawing.Point(184, 94);
             this.tbx_agencyName.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_agencyName.MaxLength = 50;
             this.tbx_agencyName.Name = "tbx_agencyName";
             this.tbx_agencyName.Size = new System.Drawing.Size(320, 22);
             this.tbx_agencyName.TabIndex = 74;
@@ -214,21 +215,12 @@
             this.label38.Text = "Agency Fee:";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbx_referralDue
-            // 
-            this.tbx_referralDue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_referralDue.Location = new System.Drawing.Point(184, 71);
-            this.tbx_referralDue.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_referralDue.Name = "tbx_referralDue";
-            this.tbx_referralDue.Size = new System.Drawing.Size(320, 22);
-            this.tbx_referralDue.TabIndex = 76;
-            this.tbx_referralDue.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            // 
             // tbx_agencyFee
             // 
             this.tbx_agencyFee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_agencyFee.Location = new System.Drawing.Point(184, 117);
             this.tbx_agencyFee.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_agencyFee.MaxLength = 50;
             this.tbx_agencyFee.Name = "tbx_agencyFee";
             this.tbx_agencyFee.Size = new System.Drawing.Size(320, 22);
             this.tbx_agencyFee.TabIndex = 77;
@@ -288,6 +280,17 @@
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
+            // tbx_referralDue
+            // 
+            this.tbx_referralDue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_referralDue.Location = new System.Drawing.Point(184, 71);
+            this.tbx_referralDue.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_referralDue.MaxLength = 10;
+            this.tbx_referralDue.Name = "tbx_referralDue";
+            this.tbx_referralDue.Size = new System.Drawing.Size(320, 22);
+            this.tbx_referralDue.TabIndex = 78;
+            this.tbx_referralDue.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            // 
             // ControlEmployeeApplicationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,7 +326,7 @@
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_previous;
-        private Miscellaneous.CustomTextbox tbx_referralDue;
         private Miscellaneous.CustomTextbox tbx_agencyFee;
+        private Miscellaneous.CustomTextbox tbx_referralDue;
     }
 }

@@ -119,11 +119,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             Misc.TurnGreenIndicator(tbx_lastname.Text, lbl_lastname);
         }
 
-        private void tbx_primaryContact_TextChanged(object sender, EventArgs e)
-        {
-            Misc.TurnGreenIndicator(tbx_primaryContact, lbl_primaryContact, true);
-        }
-
         private void cbx_maritalStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(cbx_maritalStatus.SelectedIndex, lbl_maritalStatus);
@@ -178,6 +173,11 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private void tbx_secondaryContact_TextChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(tbx_secondaryContact, lbl_secondaryContact, false);
+        }
+
+        private void tbx_primaryContact_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_primaryContact, lbl_primaryContact, true);
         }
     }
 }
