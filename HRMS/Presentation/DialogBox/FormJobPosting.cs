@@ -1,5 +1,6 @@
 ﻿using Data.Access;
 using Data.Entities;
+using Presentation.DialogBox.JobPosting;
 using System.IO;
 using System.Windows.Forms;
 
@@ -9,11 +10,15 @@ namespace Presentation.DialogBox
     {
         private JobPostingAccess access;
         private DataAccess access1;
+        private FormRichTextbox form_qualification;
+        private FormRichTextbox form_jobposting;
         public FormJobPosting()
         {
             InitializeComponent();
             this.access = new JobPostingAccess();
             this.access1 = new DataAccess();
+            this.form_qualification = new FormRichTextbox();
+            this.form_jobposting = new FormRichTextbox();
         }
         private void ResetAddFields()
         {
@@ -83,6 +88,11 @@ namespace Presentation.DialogBox
             // jobposting datagridview
             //
             this.view_posting.DataSource = access.ShowData();
+            this.view_posting.Columns["ID"].Visible = false;
+            this.view_posting.Columns["Qualification"].Visible = false;
+            this.view_posting.Columns["JobDescription"].Visible = false;
+            this.view_posting.Columns["PostedBy"].Visible = false;
+            this.view_posting.Columns["Comments"].Visible = false;
             //
             // position combobox
             //
@@ -90,6 +100,10 @@ namespace Presentation.DialogBox
             this.cbx_add_position.DisplayMember = "Title";
             this.cbx_add_position.ValueMember = "Title";
             this.cbx_add_position.SelectedIndex = -1;
+            //
+            // form rich textbox qualification
+            //
+            this.form_qualification.Text = "Job Qualifications";
         }
 
         private void tbx_add_positiontype_TextChanged(object sender, System.EventArgs e)
@@ -114,20 +128,14 @@ namespace Presentation.DialogBox
 
         private void link_add_qualification_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(dialog_qualification.ShowDialog() == DialogResult.OK)
+            if(form_qualification.ShowDialog() == DialogResult.OK)
             {
-                link_add_qualification.Text = string.Format(Path.GetFullPath(dialog_qualification.FileName));
-                lbl_add_qualification.ImageIndex = -1;
+                
             }
         }
 
         private void link_add_jobdesc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(dialog_jobdesc.ShowDialog() == DialogResult.OK)
-            {
-                link_add_jobdesc.Text = string.Format(Path.GetFullPath(dialog_jobdesc.FileName));
-                lbl_add_jobdesc.ImageIndex = 0;
-            }
         }
 
         private void link_edit_jobdesc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -49,7 +49,6 @@
             this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.view_external_applicant = new System.Windows.Forms.DataGridView();
             this.externalApplicantMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.evaluateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +59,6 @@
             this.findSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evaluationResultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.view_internal_applicant = new System.Windows.Forms.DataGridView();
             this.internalApplicantMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,6 +67,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.view_external_applicant = new System.Windows.Forms.DataGridView();
+            this.view_internal_applicant = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.p.SuspendLayout();
@@ -77,11 +77,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
             this.employeeMenuStrip.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).BeginInit();
             this.externalApplicantMenuStrip.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_internal_applicant)).BeginInit();
             this.internalApplicantMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_internal_applicant)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -166,6 +166,7 @@
             this.view_employee.ContextMenuStrip = this.employeeMenuStrip;
             this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_employee.Location = new System.Drawing.Point(0, 0);
+            this.view_employee.MultiSelect = false;
             this.view_employee.Name = "view_employee";
             this.view_employee.ReadOnly = true;
             this.view_employee.RowHeadersVisible = false;
@@ -270,22 +271,6 @@
             this.tabPage2.Text = "External Applicant";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // view_external_applicant
-            // 
-            this.view_external_applicant.AllowUserToAddRows = false;
-            this.view_external_applicant.AllowUserToDeleteRows = false;
-            this.view_external_applicant.AllowUserToResizeRows = false;
-            this.view_external_applicant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.view_external_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_external_applicant.ContextMenuStrip = this.externalApplicantMenuStrip;
-            this.view_external_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_external_applicant.Location = new System.Drawing.Point(0, 0);
-            this.view_external_applicant.Name = "view_external_applicant";
-            this.view_external_applicant.RowHeadersVisible = false;
-            this.view_external_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_external_applicant.Size = new System.Drawing.Size(1079, 634);
-            this.view_external_applicant.TabIndex = 6;
-            // 
             // externalApplicantMenuStrip
             // 
             this.externalApplicantMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -359,22 +344,6 @@
             this.tabPage3.Text = "InternalApplicant";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // view_internal_applicant
-            // 
-            this.view_internal_applicant.AllowUserToAddRows = false;
-            this.view_internal_applicant.AllowUserToDeleteRows = false;
-            this.view_internal_applicant.AllowUserToResizeRows = false;
-            this.view_internal_applicant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.view_internal_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_internal_applicant.ContextMenuStrip = this.externalApplicantMenuStrip;
-            this.view_internal_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_internal_applicant.Location = new System.Drawing.Point(0, 0);
-            this.view_internal_applicant.Name = "view_internal_applicant";
-            this.view_internal_applicant.RowHeadersVisible = false;
-            this.view_internal_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_internal_applicant.Size = new System.Drawing.Size(1079, 634);
-            this.view_internal_applicant.TabIndex = 7;
-            // 
             // internalApplicantMenuStrip
             // 
             this.internalApplicantMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -431,6 +400,42 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(181, 22);
             this.toolStripMenuItem8.Text = "Evaluation Result";
             // 
+            // view_external_applicant
+            // 
+            this.view_external_applicant.AllowUserToAddRows = false;
+            this.view_external_applicant.AllowUserToDeleteRows = false;
+            this.view_external_applicant.AllowUserToResizeRows = false;
+            this.view_external_applicant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_external_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_external_applicant.ContextMenuStrip = this.employeeMenuStrip;
+            this.view_external_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_external_applicant.Location = new System.Drawing.Point(0, 0);
+            this.view_external_applicant.MultiSelect = false;
+            this.view_external_applicant.Name = "view_external_applicant";
+            this.view_external_applicant.ReadOnly = true;
+            this.view_external_applicant.RowHeadersVisible = false;
+            this.view_external_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_external_applicant.Size = new System.Drawing.Size(1079, 634);
+            this.view_external_applicant.TabIndex = 6;
+            // 
+            // view_internal_applicant
+            // 
+            this.view_internal_applicant.AllowUserToAddRows = false;
+            this.view_internal_applicant.AllowUserToDeleteRows = false;
+            this.view_internal_applicant.AllowUserToResizeRows = false;
+            this.view_internal_applicant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_internal_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_internal_applicant.ContextMenuStrip = this.employeeMenuStrip;
+            this.view_internal_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_internal_applicant.Location = new System.Drawing.Point(0, 0);
+            this.view_internal_applicant.MultiSelect = false;
+            this.view_internal_applicant.Name = "view_internal_applicant";
+            this.view_internal_applicant.ReadOnly = true;
+            this.view_internal_applicant.RowHeadersVisible = false;
+            this.view_internal_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_internal_applicant.Size = new System.Drawing.Size(1079, 634);
+            this.view_internal_applicant.TabIndex = 7;
+            // 
             // ControlRecruitmentDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,11 +452,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
             this.employeeMenuStrip.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).EndInit();
             this.externalApplicantMenuStrip.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_internal_applicant)).EndInit();
             this.internalApplicantMenuStrip.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_internal_applicant)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -481,9 +486,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem findSearchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem evaluationResultToolStripMenuItem;
-        private System.Windows.Forms.DataGridView view_external_applicant;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView view_internal_applicant;
         private System.Windows.Forms.ToolStripMenuItem evaluationToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip internalApplicantMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
@@ -497,5 +500,7 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editEmployeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
+        private System.Windows.Forms.DataGridView view_external_applicant;
+        private System.Windows.Forms.DataGridView view_internal_applicant;
     }
 }
