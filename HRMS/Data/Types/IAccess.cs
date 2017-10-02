@@ -20,7 +20,7 @@ namespace Data.Types
     }
     public interface IEmployeeAccess
     {
-        bool Insert(ExistingEmployee form);
+        bool Insert(EmployeeMaster form);
         bool Insert(Employee employee);
         bool Insert(EmployeeAddress address);
         bool Insert(EmployeeSalaryInfo salary);

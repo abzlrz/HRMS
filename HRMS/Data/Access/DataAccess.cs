@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using Data.Entities;
 using static Data.Properties.Settings;
 
 namespace Data.Access
@@ -40,6 +41,16 @@ namespace Data.Access
             }
             return data;
         }
+
+        private DataRow GetEmployeeByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+
         public DataTable ShowRoleData()
         {
             var data = new DataTable();

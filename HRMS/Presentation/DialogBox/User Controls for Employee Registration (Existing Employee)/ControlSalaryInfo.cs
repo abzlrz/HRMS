@@ -1,5 +1,7 @@
-﻿using Data.Entities;
+﻿using Data.Access;
+using Data.Entities;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox.ExistingEmployeeRegistration
@@ -7,12 +9,15 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
     public partial class ControlSalaryInfo : UserControl
     {
         public EmployeeSalaryInfo salaryInfo;
+        public EmployeeAccess access;
         public UserControl Previous { get; set; }
+        public int ID;
 
         public ControlSalaryInfo()
         {
             InitializeComponent();
             this.salaryInfo = new EmployeeSalaryInfo();
+            this.access = new EmployeeAccess();
         }
 
         public bool ValidateFields()
@@ -43,14 +48,24 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 DateApproved = date_approved.Value,
                 DateAccepted = date_accepted.Value,
                 DateStarted = date_started.Value,
-                ApprovedSalary = decimal.Parse(tbx_approvedSalary.Text),
-                AnnualBasedSalary = decimal.Parse(tbx_annualBasedSalary.Text),
-                AnnualLanguageAllowance = decimal.Parse(tbx_annualLangAllowance.Text),
-                ShiftAllowance = decimal.Parse(tbx_shiftAllowance.Text),
-                RelocationAllowance = decimal.Parse(tbx_relocAllowance.Text),
+                ApprovedSalary = IsNoValue(tbx_approvedSalary.Text)? 0 : decimal.Parse(tbx_approvedSalary.Text),
+                AnnualBasedSalary = IsNoValue(tbx_annualBasedSalary.Text)? 0 : decimal.Parse(tbx_annualBasedSalary.Text),
+                AnnualLanguageAllowance = IsNoValue(tbx_annualLangAllowance.Text)? 0 : decimal.Parse(tbx_annualLangAllowance.Text),
+                ShiftAllowance = IsNoValue(tbx_shiftAllowance.Text)? 0 : decimal.Parse(tbx_shiftAllowance.Text),
+                RelocationAllowance = IsNoValue(tbx_relocAllowance.Text)? 0 : decimal.Parse(tbx_relocAllowance.Text),
                 RelocationAllowanceDetail = tbx_relocAllowanceDetails.Text,
-                CostCentre = decimal.Parse(tbx_costCenter.Text)
+                CostCentre = IsNoValue(tbx_costCenter.Text) ? 0 : decimal.Parse(tbx_costCenter.Text)
             };
+        }
+
+        private bool IsNoValue(string text)
+        {
+            bool result = false;
+
+            if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
+                result = true;
+
+            return result;
         }
         public void ClearAllFields()
         {
@@ -113,5 +128,24 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             ClearAllFields();
         }
         #endregion
+
+        private void OnLoad(object sender, EventArgs e)
+        {
+            if(ID > 0)
+            {
+                DataRow row = access.GetSalaryInfo(ID);
+
+                date_approved.Value = DateTime.Parse(row["DateApproved"].ToString());
+                date_accepted.Value = DateTime.Parse(row["DateAccepted"].ToString());
+                date_started.Value = DateTime.Parse(row["DateStarted"].ToString());
+                tbx_approvedSalary.Text = row["ApprovedSalary"].ToString();
+                tbx_annualBasedSalary.Text = row["AnnualBasedSalary"].ToString();
+                tbx_annualLangAllowance.Text = row["AnnualLanguageAllowance"].ToString();
+                tbx_shiftAllowance.Text = row["ShiftAllowance"].ToString();
+                tbx_relocAllowance.Text = row["RelocationAllowance"].ToString();
+                tbx_relocAllowanceDetails.Text = row["RelocationAllowanceDetail"].ToString();
+                tbx_costCenter.Text = row["CostCentre"].ToString();
+            }
+        }
     }
 }

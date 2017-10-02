@@ -1,4 +1,5 @@
 ﻿using Data.Access;
+using Data.Entities;
 using Presentation.DialogBox;
 using System.Windows.Forms;
 
@@ -7,25 +8,14 @@ namespace Presentation.Modules
     public partial class ControlRecruitmentDashboard : UserControl
     {
         DataAccess context;
-        FormRegisterExistingEmployee reg_ex_emp;
+        EmployeeAccess context_employee;
+        int ID;
 
         public ControlRecruitmentDashboard()
         {
             InitializeComponent();
 
             this.context = new DataAccess();
-            this.reg_ex_emp = new FormRegisterExistingEmployee();
-            this.view_employee.DataSource = context.Employee.ShowData();
-            //this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
-            //this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
-            //
-            // view_employeee
-            //
-            this.view_employee.Columns["SSS"].Visible = false;
-            this.view_employee.Columns["HDMF"].Visible = false;
-            this.view_employee.Columns["BankAccountNo"].Visible = false;
-            this.view_employee.Columns["TIN"].Visible = false;
-            this.view_employee.Columns["IsActive"].Visible = false;
             //
             // view_external_applicant
             ///
@@ -60,15 +50,55 @@ namespace Presentation.Modules
 
         private void OnLoad(object sender, System.EventArgs e)
         {
-            ReloadEmployeeData();
-            ReloadExternalApplicantData();
-            ReloadInternalApplicantData();
+            this.context_employee = new EmployeeAccess();
+            this.view_employee.DataSource = context.Employee.ShowData();
+            this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
+            this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
+            //
+            // view_employeee
+            //
+            this.view_employee.Columns["SSS"].Visible = false;
+            this.view_employee.Columns["HDMF"].Visible = false;
+            this.view_employee.Columns["BankAccountNo"].Visible = false;
+            this.view_employee.Columns["TIN"].Visible = false;
+            this.view_employee.Columns["IsActive"].Visible = false;
         }
 
-        private void checklistToolStripMenuItem_Click(object sender, System.EventArgs e)
+        private void addEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            this.reg_ex_emp.ShowDialog();
+            var reg_ex_emp = new FormRegisterExistingEmployee(0);
+            reg_ex_emp.ShowDialog();
             ReloadEmployeeData();
+        }
+
+        private void editEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var reg_ex_emp = new FormRegisterExistingEmployee(ID);
+            reg_ex_emp.ShowDialog();
+            ReloadEmployeeData();
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+            if(ID > 0)
+            {
+                if (MessageBox.Show("Are you sure", "Delete", MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (this.context_employee.DeleteEmployee(ID))
+                    {
+                        MessageBox.Show("Deleted!");
+                    }
+                }
+            }
+        }
+
+        private void view_employee_SelectionChanged(object sender, System.EventArgs e)
+        {
+            if (view_employee.SelectedRows.Count > 0)
+            {
+                ID = int.Parse(view_employee.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }

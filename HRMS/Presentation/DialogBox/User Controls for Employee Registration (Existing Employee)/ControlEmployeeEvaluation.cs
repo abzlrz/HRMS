@@ -26,8 +26,9 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
 
         private DataAccess _eval;
         private EmployeeAccess _emp;
+        public int ID;
         #endregion
-        
+
         public ControlEmployeeEvaluation()
         {
             InitializeComponent();
@@ -266,10 +267,40 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             this.cbx_role.DisplayMember = "Description";
             this.cbx_role.ValueMember = "Description";
             this.cbx_role.DataSource = _eval.ShowRoleData();
-            //
-            // clear all fields first!
-            //
-            ClearAllFields();
+            
+            if(ID > 0)
+            {
+                DataRow row_manager = _emp.GetHiringManager(ID);
+                DataRow row_titantitle = _emp.GetTitanTitle(ID);
+                DataRow row_bucket = _emp.GetBucket(ID);
+                DataRow row_arvatolevel = _emp.GetArvatoLevel(ID);
+                DataRow row_job = _emp.GetJob(ID);
+                DataRow row_team = _emp.GetTeam(ID);
+                DataRow row_contract = _emp.GetContractType(ID);
+                DataRow row_role = _emp.GetRole(ID);
+                DataRow row_owner = _emp.GetOwner(ID);
+
+                cbx_hiringManagerID.Text = row_manager["HiringManagerEmpID"].ToString();
+                cbx_hiringManagerName.Text = row_manager["HiringManagerName"].ToString();
+                cbx_titanTitle.Text = row_titantitle["TitanTitle"].ToString();
+                cbx_langRequirement.Text = row_titantitle["LanguageRequirements"].ToString();
+                cbx_bucket.Text = row_bucket["Bucket"].ToString();
+                cbx_arvatoLevel.Text = row_arvatolevel["ArvatoLevel"].ToString();
+                cbx_jobTitle.Text = row_job["Position"].ToString();
+                cbx_team.Text = row_team["Team"].ToString();
+                cbx_contractType.Text = row_contract["ContractType"].ToString();
+                cbx_role.Text = row_role["Role"].ToString();
+                tbx_owner_empID.Text = row_owner["EmployeeID"].ToString();
+                tbx_owner_firstname.Text = row_owner["Firstname"].ToString();
+                tbx_owner_lastname.Text = row_owner["Lastname"].ToString();
+            }
+            else
+            {
+                //
+                // clear all fields
+                //
+                ClearAllFields();
+            }
         }
     }
 }

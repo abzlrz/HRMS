@@ -37,8 +37,11 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.view_employee = new System.Windows.Forms.DataGridView();
             this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.performanceAppraisalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendEmailToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,7 +69,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.p.SuspendLayout();
@@ -165,10 +167,12 @@
             this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.view_employee.Location = new System.Drawing.Point(0, 0);
             this.view_employee.Name = "view_employee";
+            this.view_employee.ReadOnly = true;
             this.view_employee.RowHeadersVisible = false;
             this.view_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_employee.Size = new System.Drawing.Size(1079, 634);
             this.view_employee.TabIndex = 5;
+            this.view_employee.SelectionChanged += new System.EventHandler(this.view_employee_SelectionChanged);
             // 
             // employeeMenuStrip
             // 
@@ -177,6 +181,8 @@
             this.openToolStripMenuItem,
             this.newEmployeeToolStripMenuItem,
             this.checklistToolStripMenuItem,
+            this.deleteToolStripMenuItem1,
+            this.editEmployeeToolStripMenuItem,
             this.deleteToolStripMenuItem,
             this.performanceAppraisalToolStripMenuItem,
             this.sendEmailToolStripMenuItem2,
@@ -184,7 +190,13 @@
             this.sendEmailToolStripMenuItem,
             this.viewInformationToolStripMenuItem});
             this.employeeMenuStrip.Name = "employeeMenuStrip";
-            this.employeeMenuStrip.Size = new System.Drawing.Size(224, 208);
+            this.employeeMenuStrip.Size = new System.Drawing.Size(224, 230);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.openToolStripMenuItem.Text = "Open";
             // 
             // newEmployeeToolStripMenuItem
             // 
@@ -197,7 +209,21 @@
             this.checklistToolStripMenuItem.Name = "checklistToolStripMenuItem";
             this.checklistToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.checklistToolStripMenuItem.Text = "Register Existing Employee...";
-            this.checklistToolStripMenuItem.Click += new System.EventHandler(this.checklistToolStripMenuItem_Click);
+            this.checklistToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem1
+            // 
+            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(223, 22);
+            this.deleteToolStripMenuItem1.Text = "Delete";
+            this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
+            // 
+            // editEmployeeToolStripMenuItem
+            // 
+            this.editEmployeeToolStripMenuItem.Name = "editEmployeeToolStripMenuItem";
+            this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.editEmployeeToolStripMenuItem.Text = "Edit Employee";
+            this.editEmployeeToolStripMenuItem.Click += new System.EventHandler(this.editEmployeeToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -405,12 +431,6 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(181, 22);
             this.toolStripMenuItem8.Text = "Evaluation Result";
             // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.openToolStripMenuItem.Text = "Open";
-            // 
             // ControlRecruitmentDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,5 +495,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem newEmployeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
     }
 }

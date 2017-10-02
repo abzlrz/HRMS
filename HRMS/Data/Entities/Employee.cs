@@ -2,7 +2,7 @@
 
 namespace Data.Entities
 {
-    public class ExistingEmployee
+    public class EmployeeMaster
     {
         public int ID { get; set; }
         public Employee Employee { get; set; }

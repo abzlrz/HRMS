@@ -1,13 +1,18 @@
-﻿using Data.Entities;
+﻿using Data.Access;
+using Data.Entities;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox.ExistingEmployeeRegistration
 {
     public partial class ControlEmployeeInfo : UserControl
     {
+        public EmployeeAccess access;
         public Employee employee;
         public EmployeeAddress address;
+        internal int ID;
+
         public UserControl Next { get; set; }
         
         public ControlEmployeeInfo()
@@ -15,6 +20,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             InitializeComponent();
             this.employee = new Employee();
             this.address = new EmployeeAddress();
+            this.access = new EmployeeAccess();
         }
         private bool ValidateFields()
         {
@@ -148,8 +154,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         {
             Misc.TurnGreenIndicator(tbx_presentPostalNo.Text, lbl_presentPostalNo);
         }
-        #endregion
-
         private void tbx_SSS_TextChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(tbx_SSS, lbl_sss, false);
@@ -178,6 +182,34 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private void tbx_primaryContact_TextChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(tbx_primaryContact, lbl_primaryContact, true);
+        }
+
+        #endregion
+
+        private void OnLoad(object sender, EventArgs e)
+        {
+            if(ID > 0)
+            {
+                DataRow row_info = access.GetEmployeeInfo(ID);
+                DataRow row_address = access.GetAddress(ID);
+
+                this.tbx_firstname.Text = row_info["Firstname"].ToString();
+                this.tbx_middlename.Text = row_info["Middlename"].ToString();
+                this.tbx_lastname.Text = row_info["Lastname"].ToString();
+                this.tbx_primaryContact.Text = row_info["PrimaryContact"].ToString();
+                this.tbx_secondaryContact.Text = row_info["SecondaryContact"].ToString();
+                this.cbx_maritalStatus.Text = row_info["MaritalStatus"].ToString();
+                this.tbx_email.Text = row_info["Email"].ToString();
+                this.tbx_SSS.Text = row_info["SSS"].ToString();
+                this.tbx_TIN.Text = row_info["TIN"].ToString();
+                this.tbx_HDMF.Text = row_info["HDMF"].ToString();
+                this.tbx_BPI.Text = row_info["BankAccountNo"].ToString();
+
+                this.tbx_presentAddNo.Text = row_address["HouseNo"].ToString();
+                this.tbx_presentAddStreet.Text = row_address["Street"].ToString();
+                this.tbx_presentPostalArea.Text = row_address["PostalArea"].ToString();
+                this.tbx_presentPostalNo.Text = row_address["PostalNo"].ToString();
+            }
         }
     }
 }

@@ -32,10 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlEmployeeEvaluation));
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_owner_lastname = new System.Windows.Forms.TextBox();
+            this.lbl_owner_lastname = new System.Windows.Forms.Label();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.cbx_hiringManagerID = new System.Windows.Forms.ComboBox();
             this.cbx_hiringManagerName = new System.Windows.Forms.ComboBox();
             this.lbl_managerName = new System.Windows.Forms.Label();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.lbl_managerID = new System.Windows.Forms.Label();
             this.cbx_jobTitle = new System.Windows.Forms.ComboBox();
             this.lbl_jobTitle = new System.Windows.Forms.Label();
@@ -51,18 +53,16 @@
             this.lbl_titanTitle = new System.Windows.Forms.Label();
             this.lbl_team = new System.Windows.Forms.Label();
             this.lbl_contractType = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_next = new System.Windows.Forms.Button();
-            this.btn_clear = new System.Windows.Forms.Button();
-            this.btn_previous = new System.Windows.Forms.Button();
             this.cbx_role = new System.Windows.Forms.ComboBox();
             this.lbl_role = new System.Windows.Forms.Label();
             this.lbl_emp_id = new System.Windows.Forms.Label();
             this.lbl_owner_firstname = new System.Windows.Forms.Label();
-            this.lbl_owner_lastname = new System.Windows.Forms.Label();
             this.tbx_owner_firstname = new System.Windows.Forms.TextBox();
-            this.tbx_owner_lastname = new System.Windows.Forms.TextBox();
             this.tbx_owner_empID = new Presentation.Miscellaneous.CustomTextbox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_next = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_previous = new System.Windows.Forms.Button();
             this.gbxAppInfo.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,7 +76,7 @@
             this.gbxAppInfo.Location = new System.Drawing.Point(12, 12);
             this.gbxAppInfo.Name = "gbxAppInfo";
             this.gbxAppInfo.Size = new System.Drawing.Size(563, 404);
-            this.gbxAppInfo.TabIndex = 59;
+            this.gbxAppInfo.TabIndex = 0;
             this.gbxAppInfo.TabStop = false;
             this.gbxAppInfo.Text = "Evaluation Info";
             // 
@@ -131,6 +131,38 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(506, 302);
             this.tableLayoutPanel4.TabIndex = 56;
             // 
+            // tbx_owner_lastname
+            // 
+            this.tbx_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_owner_lastname.Location = new System.Drawing.Point(237, 278);
+            this.tbx_owner_lastname.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_owner_lastname.Name = "tbx_owner_lastname";
+            this.tbx_owner_lastname.Size = new System.Drawing.Size(267, 22);
+            this.tbx_owner_lastname.TabIndex = 12;
+            this.tbx_owner_lastname.TextChanged += new System.EventHandler(this.tbx_owner_lastname_TextChanged);
+            // 
+            // lbl_owner_lastname
+            // 
+            this.lbl_owner_lastname.AutoSize = true;
+            this.lbl_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_owner_lastname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_owner_lastname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_owner_lastname.ImageIndex = 1;
+            this.lbl_owner_lastname.ImageList = this.imageList;
+            this.lbl_owner_lastname.Location = new System.Drawing.Point(5, 278);
+            this.lbl_owner_lastname.Name = "lbl_owner_lastname";
+            this.lbl_owner_lastname.Size = new System.Drawing.Size(227, 22);
+            this.lbl_owner_lastname.TabIndex = 85;
+            this.lbl_owner_lastname.Text = "(Owner) Lastname:";
+            this.lbl_owner_lastname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // imageList
+            // 
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "green_dot.png");
+            this.imageList.Images.SetKeyName(1, "red_dot.png");
+            // 
             // cbx_hiringManagerID
             // 
             this.cbx_hiringManagerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -142,7 +174,7 @@
             this.cbx_hiringManagerID.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_hiringManagerID.Name = "cbx_hiringManagerID";
             this.cbx_hiringManagerID.Size = new System.Drawing.Size(267, 21);
-            this.cbx_hiringManagerID.TabIndex = 57;
+            this.cbx_hiringManagerID.TabIndex = 0;
             this.cbx_hiringManagerID.Tag = "required";
             // 
             // cbx_hiringManagerName
@@ -155,7 +187,7 @@
             this.cbx_hiringManagerName.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_hiringManagerName.Name = "cbx_hiringManagerName";
             this.cbx_hiringManagerName.Size = new System.Drawing.Size(267, 21);
-            this.cbx_hiringManagerName.TabIndex = 57;
+            this.cbx_hiringManagerName.TabIndex = 1;
             this.cbx_hiringManagerName.Tag = "required";
             this.cbx_hiringManagerName.SelectedValueChanged += new System.EventHandler(this.cbx_hiringManagerName_SelectedValueChanged);
             this.cbx_hiringManagerName.TextChanged += new System.EventHandler(this.cbx_hiringManagerName_TextChanged);
@@ -173,13 +205,6 @@
             this.lbl_managerName.TabIndex = 58;
             this.lbl_managerName.Text = "Hiring Manager Name:";
             this.lbl_managerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // imageList
-            // 
-            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
-            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "green_dot.png");
-            this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
             // lbl_managerID
             // 
@@ -203,7 +228,7 @@
             this.cbx_jobTitle.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_jobTitle.Name = "cbx_jobTitle";
             this.cbx_jobTitle.Size = new System.Drawing.Size(267, 21);
-            this.cbx_jobTitle.TabIndex = 83;
+            this.cbx_jobTitle.TabIndex = 6;
             this.cbx_jobTitle.Tag = "required";
             this.cbx_jobTitle.SelectedIndexChanged += new System.EventHandler(this.cbx_jobTitle_SelectedIndexChanged);
             // 
@@ -231,7 +256,7 @@
             this.cbx_team.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_team.Name = "cbx_team";
             this.cbx_team.Size = new System.Drawing.Size(267, 21);
-            this.cbx_team.TabIndex = 58;
+            this.cbx_team.TabIndex = 7;
             this.cbx_team.Tag = "required";
             this.cbx_team.SelectedIndexChanged += new System.EventHandler(this.cbx_team_SelectedIndexChanged);
             // 
@@ -244,7 +269,7 @@
             this.cbx_contractType.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_contractType.Name = "cbx_contractType";
             this.cbx_contractType.Size = new System.Drawing.Size(267, 21);
-            this.cbx_contractType.TabIndex = 53;
+            this.cbx_contractType.TabIndex = 8;
             this.cbx_contractType.Tag = "required";
             this.cbx_contractType.SelectedIndexChanged += new System.EventHandler(this.cbx_contractType_SelectedIndexChanged);
             // 
@@ -262,7 +287,7 @@
             this.cbx_arvatoLevel.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_arvatoLevel.Name = "cbx_arvatoLevel";
             this.cbx_arvatoLevel.Size = new System.Drawing.Size(267, 21);
-            this.cbx_arvatoLevel.TabIndex = 47;
+            this.cbx_arvatoLevel.TabIndex = 5;
             this.cbx_arvatoLevel.Tag = "required";
             this.cbx_arvatoLevel.SelectedIndexChanged += new System.EventHandler(this.cbx_arvatoLevel_SelectedIndexChanged);
             // 
@@ -275,7 +300,7 @@
             this.cbx_bucket.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_bucket.Name = "cbx_bucket";
             this.cbx_bucket.Size = new System.Drawing.Size(267, 21);
-            this.cbx_bucket.TabIndex = 46;
+            this.cbx_bucket.TabIndex = 4;
             this.cbx_bucket.Tag = "required";
             this.cbx_bucket.SelectedIndexChanged += new System.EventHandler(this.cbx_bucket_SelectedIndexChanged);
             // 
@@ -291,7 +316,7 @@
             this.cbx_langRequirement.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_langRequirement.Name = "cbx_langRequirement";
             this.cbx_langRequirement.Size = new System.Drawing.Size(267, 21);
-            this.cbx_langRequirement.TabIndex = 45;
+            this.cbx_langRequirement.TabIndex = 3;
             this.cbx_langRequirement.Tag = "required";
             this.cbx_langRequirement.SelectedIndexChanged += new System.EventHandler(this.cbx_langRequirement_SelectedIndexChanged);
             // 
@@ -304,7 +329,7 @@
             this.cbx_titanTitle.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_titanTitle.Name = "cbx_titanTitle";
             this.cbx_titanTitle.Size = new System.Drawing.Size(267, 21);
-            this.cbx_titanTitle.TabIndex = 44;
+            this.cbx_titanTitle.TabIndex = 2;
             this.cbx_titanTitle.Tag = "required";
             this.cbx_titanTitle.SelectedIndexChanged += new System.EventHandler(this.cbx_titanTitle_SelectedIndexChanged);
             // 
@@ -400,60 +425,6 @@
             this.lbl_contractType.Text = "Contract Type:";
             this.lbl_contractType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_next);
-            this.panel2.Controls.Add(this.btn_clear);
-            this.panel2.Controls.Add(this.btn_previous);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(12, 416);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(563, 91);
-            this.panel2.TabIndex = 58;
-            // 
-            // btn_next
-            // 
-            this.btn_next.BackColor = System.Drawing.Color.DarkGreen;
-            this.btn_next.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_next.ForeColor = System.Drawing.Color.White;
-            this.btn_next.Location = new System.Drawing.Point(459, 32);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(75, 35);
-            this.btn_next.TabIndex = 12;
-            this.btn_next.Text = "Next";
-            this.btn_next.UseVisualStyleBackColor = false;
-            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
-            // 
-            // btn_clear
-            // 
-            this.btn_clear.BackColor = System.Drawing.Color.DimGray;
-            this.btn_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_clear.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(297, 32);
-            this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(75, 35);
-            this.btn_clear.TabIndex = 11;
-            this.btn_clear.Text = "Clear All";
-            this.btn_clear.UseVisualStyleBackColor = false;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // btn_previous
-            // 
-            this.btn_previous.BackColor = System.Drawing.Color.DarkGreen;
-            this.btn_previous.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_previous.ForeColor = System.Drawing.Color.White;
-            this.btn_previous.Location = new System.Drawing.Point(378, 32);
-            this.btn_previous.Name = "btn_previous";
-            this.btn_previous.Size = new System.Drawing.Size(75, 35);
-            this.btn_previous.TabIndex = 13;
-            this.btn_previous.Text = "Previous";
-            this.btn_previous.UseVisualStyleBackColor = false;
-            this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
-            // 
             // cbx_role
             // 
             this.cbx_role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -462,7 +433,7 @@
             this.cbx_role.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_role.Name = "cbx_role";
             this.cbx_role.Size = new System.Drawing.Size(267, 21);
-            this.cbx_role.TabIndex = 57;
+            this.cbx_role.TabIndex = 9;
             this.cbx_role.Tag = "required";
             this.cbx_role.SelectedIndexChanged += new System.EventHandler(this.cbx_role_SelectedIndexChanged);
             // 
@@ -511,21 +482,6 @@
             this.lbl_owner_firstname.Text = "(Owner) Firstname:";
             this.lbl_owner_firstname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_owner_lastname
-            // 
-            this.lbl_owner_lastname.AutoSize = true;
-            this.lbl_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_owner_lastname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_owner_lastname.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_owner_lastname.ImageIndex = 1;
-            this.lbl_owner_lastname.ImageList = this.imageList;
-            this.lbl_owner_lastname.Location = new System.Drawing.Point(5, 278);
-            this.lbl_owner_lastname.Name = "lbl_owner_lastname";
-            this.lbl_owner_lastname.Size = new System.Drawing.Size(227, 22);
-            this.lbl_owner_lastname.TabIndex = 85;
-            this.lbl_owner_lastname.Text = "(Owner) Lastname:";
-            this.lbl_owner_lastname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // tbx_owner_firstname
             // 
             this.tbx_owner_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -533,30 +489,74 @@
             this.tbx_owner_firstname.Margin = new System.Windows.Forms.Padding(0);
             this.tbx_owner_firstname.Name = "tbx_owner_firstname";
             this.tbx_owner_firstname.Size = new System.Drawing.Size(267, 22);
-            this.tbx_owner_firstname.TabIndex = 87;
+            this.tbx_owner_firstname.TabIndex = 11;
             this.tbx_owner_firstname.TextChanged += new System.EventHandler(this.tbx_owner_firstname_TextChanged);
-            // 
-            // tbx_owner_lastname
-            // 
-            this.tbx_owner_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_owner_lastname.Location = new System.Drawing.Point(237, 278);
-            this.tbx_owner_lastname.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_owner_lastname.Name = "tbx_owner_lastname";
-            this.tbx_owner_lastname.Size = new System.Drawing.Size(267, 22);
-            this.tbx_owner_lastname.TabIndex = 88;
-            this.tbx_owner_lastname.TextChanged += new System.EventHandler(this.tbx_owner_lastname_TextChanged);
             // 
             // tbx_owner_empID
             // 
             this.tbx_owner_empID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbx_owner_empID.Location = new System.Drawing.Point(237, 232);
             this.tbx_owner_empID.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_owner_empID.MaxLength = 15;
+            this.tbx_owner_empID.MaxLength = 9;
             this.tbx_owner_empID.Name = "tbx_owner_empID";
             this.tbx_owner_empID.Size = new System.Drawing.Size(267, 22);
-            this.tbx_owner_empID.TabIndex = 89;
+            this.tbx_owner_empID.TabIndex = 10;
             this.tbx_owner_empID.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
             this.tbx_owner_empID.TextChanged += new System.EventHandler(this.tbx_owner_empID_TextChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_next);
+            this.panel2.Controls.Add(this.btn_clear);
+            this.panel2.Controls.Add(this.btn_previous);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(12, 416);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(563, 91);
+            this.panel2.TabIndex = 58;
+            // 
+            // btn_next
+            // 
+            this.btn_next.BackColor = System.Drawing.Color.DarkGreen;
+            this.btn_next.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_next.ForeColor = System.Drawing.Color.White;
+            this.btn_next.Location = new System.Drawing.Point(459, 32);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Size = new System.Drawing.Size(75, 35);
+            this.btn_next.TabIndex = 1;
+            this.btn_next.Text = "Next";
+            this.btn_next.UseVisualStyleBackColor = false;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.BackColor = System.Drawing.Color.DimGray;
+            this.btn_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_clear.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clear.ForeColor = System.Drawing.Color.White;
+            this.btn_clear.Location = new System.Drawing.Point(297, 32);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 35);
+            this.btn_clear.TabIndex = 2;
+            this.btn_clear.Text = "Clear All";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            // 
+            // btn_previous
+            // 
+            this.btn_previous.BackColor = System.Drawing.Color.DarkGreen;
+            this.btn_previous.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_previous.ForeColor = System.Drawing.Color.White;
+            this.btn_previous.Location = new System.Drawing.Point(378, 32);
+            this.btn_previous.Name = "btn_previous";
+            this.btn_previous.Size = new System.Drawing.Size(75, 35);
+            this.btn_previous.TabIndex = 0;
+            this.btn_previous.Text = "Previous";
+            this.btn_previous.UseVisualStyleBackColor = false;
+            this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
             // ControlEmployeeEvaluation
             // 

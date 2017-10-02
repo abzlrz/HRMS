@@ -148,7 +148,7 @@
             this.tbx_presentAddNo.MaxLength = 49;
             this.tbx_presentAddNo.Name = "tbx_presentAddNo";
             this.tbx_presentAddNo.Size = new System.Drawing.Size(270, 22);
-            this.tbx_presentAddNo.TabIndex = 91;
+            this.tbx_presentAddNo.TabIndex = 11;
             this.tbx_presentAddNo.Tag = "required";
             // 
             // tbx_BPI
@@ -161,7 +161,7 @@
             this.tbx_BPI.Mask = "0000 0000 00";
             this.tbx_BPI.Name = "tbx_BPI";
             this.tbx_BPI.Size = new System.Drawing.Size(270, 20);
-            this.tbx_BPI.TabIndex = 118;
+            this.tbx_BPI.TabIndex = 10;
             this.tbx_BPI.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_BPI.TextChanged += new System.EventHandler(this.tbx_BPI_TextChanged);
             // 
@@ -175,7 +175,7 @@
             this.tbx_HDMF.Mask = "0000-0000";
             this.tbx_HDMF.Name = "tbx_HDMF";
             this.tbx_HDMF.Size = new System.Drawing.Size(270, 20);
-            this.tbx_HDMF.TabIndex = 117;
+            this.tbx_HDMF.TabIndex = 9;
             this.tbx_HDMF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_HDMF.TextChanged += new System.EventHandler(this.tbx_HDMF_TextChanged);
             // 
@@ -189,7 +189,7 @@
             this.tbx_TIN.Mask = "000-000-000";
             this.tbx_TIN.Name = "tbx_TIN";
             this.tbx_TIN.Size = new System.Drawing.Size(270, 20);
-            this.tbx_TIN.TabIndex = 116;
+            this.tbx_TIN.TabIndex = 8;
             this.tbx_TIN.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_TIN.TextChanged += new System.EventHandler(this.tbx_TIN_TextChanged);
             // 
@@ -205,7 +205,7 @@
             this.tbx_SSS.RejectInputOnFirstFailure = true;
             this.tbx_SSS.Size = new System.Drawing.Size(270, 20);
             this.tbx_SSS.SkipLiterals = false;
-            this.tbx_SSS.TabIndex = 115;
+            this.tbx_SSS.TabIndex = 7;
             this.tbx_SSS.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbx_SSS.TextChanged += new System.EventHandler(this.tbx_SSS_TextChanged);
             // 
@@ -222,7 +222,7 @@
             this.cbx_maritalStatus.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_maritalStatus.Name = "cbx_maritalStatus";
             this.cbx_maritalStatus.Size = new System.Drawing.Size(270, 21);
-            this.cbx_maritalStatus.TabIndex = 58;
+            this.cbx_maritalStatus.TabIndex = 5;
             this.cbx_maritalStatus.Tag = "required";
             this.cbx_maritalStatus.SelectedIndexChanged += new System.EventHandler(this.cbx_maritalStatus_SelectedIndexChanged);
             // 
@@ -313,7 +313,7 @@
             this.tbx_firstname.MaxLength = 99;
             this.tbx_firstname.Name = "tbx_firstname";
             this.tbx_firstname.Size = new System.Drawing.Size(270, 22);
-            this.tbx_firstname.TabIndex = 78;
+            this.tbx_firstname.TabIndex = 0;
             this.tbx_firstname.Tag = "required";
             this.tbx_firstname.TextChanged += new System.EventHandler(this.tbx_firstname_TextChanged);
             // 
@@ -325,7 +325,7 @@
             this.tbx_middlename.MaxLength = 99;
             this.tbx_middlename.Name = "tbx_middlename";
             this.tbx_middlename.Size = new System.Drawing.Size(270, 22);
-            this.tbx_middlename.TabIndex = 79;
+            this.tbx_middlename.TabIndex = 1;
             this.tbx_middlename.Tag = "required";
             // 
             // tbx_lastname
@@ -336,7 +336,7 @@
             this.tbx_lastname.MaxLength = 99;
             this.tbx_lastname.Name = "tbx_lastname";
             this.tbx_lastname.Size = new System.Drawing.Size(270, 22);
-            this.tbx_lastname.TabIndex = 80;
+            this.tbx_lastname.TabIndex = 2;
             this.tbx_lastname.Tag = "required";
             this.tbx_lastname.TextChanged += new System.EventHandler(this.tbx_lastname_TextChanged);
             // 
@@ -348,7 +348,7 @@
             this.tbx_email.MaxLength = 49;
             this.tbx_email.Name = "tbx_email";
             this.tbx_email.Size = new System.Drawing.Size(270, 22);
-            this.tbx_email.TabIndex = 84;
+            this.tbx_email.TabIndex = 6;
             this.tbx_email.Tag = "required";
             this.tbx_email.TextChanged += new System.EventHandler(this.tbx_email_TextChanged);
             // 
@@ -360,7 +360,7 @@
             this.tbx_presentAddStreet.MaxLength = 99;
             this.tbx_presentAddStreet.Name = "tbx_presentAddStreet";
             this.tbx_presentAddStreet.Size = new System.Drawing.Size(270, 22);
-            this.tbx_presentAddStreet.TabIndex = 90;
+            this.tbx_presentAddStreet.TabIndex = 12;
             this.tbx_presentAddStreet.Tag = "required";
             this.tbx_presentAddStreet.TextChanged += new System.EventHandler(this.tbx_presentAddStreet_TextChanged);
             // 
@@ -372,7 +372,7 @@
             this.tbx_presentPostalArea.MaxLength = 99;
             this.tbx_presentPostalArea.Name = "tbx_presentPostalArea";
             this.tbx_presentPostalArea.Size = new System.Drawing.Size(270, 22);
-            this.tbx_presentPostalArea.TabIndex = 91;
+            this.tbx_presentPostalArea.TabIndex = 13;
             this.tbx_presentPostalArea.Tag = "required";
             this.tbx_presentPostalArea.TextChanged += new System.EventHandler(this.tbx_presentPostalArea_TextChanged);
             // 
@@ -384,7 +384,7 @@
             this.tbx_presentPostalNo.MaxLength = 99;
             this.tbx_presentPostalNo.Name = "tbx_presentPostalNo";
             this.tbx_presentPostalNo.Size = new System.Drawing.Size(270, 22);
-            this.tbx_presentPostalNo.TabIndex = 92;
+            this.tbx_presentPostalNo.TabIndex = 14;
             this.tbx_presentPostalNo.TextChanged += new System.EventHandler(this.tbx_presentPostalNo_TextChanged);
             // 
             // lbl_secondaryContact
@@ -536,10 +536,10 @@
             this.tbx_primaryContact.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_primaryContact.Location = new System.Drawing.Point(237, 71);
             this.tbx_primaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_primaryContact.Mask = "(+63)0000000000";
+            this.tbx_primaryContact.Mask = "+630000000000";
             this.tbx_primaryContact.Name = "tbx_primaryContact";
             this.tbx_primaryContact.Size = new System.Drawing.Size(270, 20);
-            this.tbx_primaryContact.TabIndex = 104;
+            this.tbx_primaryContact.TabIndex = 3;
             this.tbx_primaryContact.TextChanged += new System.EventHandler(this.tbx_primaryContact_TextChanged);
             // 
             // tbx_secondaryContact
@@ -548,10 +548,10 @@
             this.tbx_secondaryContact.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.tbx_secondaryContact.Location = new System.Drawing.Point(237, 94);
             this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_secondaryContact.Mask = "(+63)0000000000";
+            this.tbx_secondaryContact.Mask = "+630000000000";
             this.tbx_secondaryContact.Name = "tbx_secondaryContact";
             this.tbx_secondaryContact.Size = new System.Drawing.Size(270, 20);
-            this.tbx_secondaryContact.TabIndex = 105;
+            this.tbx_secondaryContact.TabIndex = 4;
             this.tbx_secondaryContact.TextChanged += new System.EventHandler(this.tbx_secondaryContact_TextChanged);
             // 
             // panel2
@@ -573,7 +573,7 @@
             this.btn_next.Location = new System.Drawing.Point(459, 32);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(75, 35);
-            this.btn_next.TabIndex = 12;
+            this.btn_next.TabIndex = 0;
             this.btn_next.Text = "Next";
             this.btn_next.UseVisualStyleBackColor = false;
             this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
@@ -588,7 +588,7 @@
             this.btn_clear.Location = new System.Drawing.Point(378, 32);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 35);
-            this.btn_clear.TabIndex = 11;
+            this.btn_clear.TabIndex = 1;
             this.btn_clear.Text = "Clear All";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
@@ -602,6 +602,7 @@
             this.Name = "ControlEmployeeInfo";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(587, 519);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.gbx_info.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -613,7 +614,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbx_info;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox cbx_maritalStatus;
         private System.Windows.Forms.Label lbl_presentPostalNo;
         private System.Windows.Forms.Label lbl_firstname;
@@ -648,5 +648,6 @@
         private System.Windows.Forms.MaskedTextBox tbx_HDMF;
         private System.Windows.Forms.TextBox tbx_presentAddNo;
         private System.Windows.Forms.MaskedTextBox tbx_BPI;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
