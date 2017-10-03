@@ -34,8 +34,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 result = false;
             if (lbl_maritalStatus.ImageIndex == 1)
                 result = false;
-            if (lbl_email.ImageIndex == 1)
-                result = false;
             if (lbl_presentStreet.ImageIndex == 1)
                 result = false;
             if (lbl_presentPostalArea.ImageIndex == 1)
@@ -128,16 +126,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private void cbx_maritalStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(cbx_maritalStatus.SelectedIndex, lbl_maritalStatus);
-        }
-
-        private void tbx_email_TextChanged(object sender, EventArgs e)
-        {
-            Misc.TurnGreenIndicator(tbx_email.Text, lbl_email);
-        }
-
-        private void tbx_presentAddNo_TextChanged(object sender, EventArgs e)
-        {
-            Misc.TurnGreenIndicator(tbx_presentAddNo.Text, lbl_presentAddNo);
         }
 
         private void tbx_presentAddStreet_TextChanged(object sender, EventArgs e)

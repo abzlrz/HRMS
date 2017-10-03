@@ -41,11 +41,11 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.tbx_agencyFee = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_referralDue = new Presentation.Miscellaneous.CustomTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
-            this.tbx_referralDue = new Presentation.Miscellaneous.CustomTextbox();
             this.gbx_applicationDetails.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -226,6 +226,17 @@
             this.tbx_agencyFee.TabIndex = 77;
             this.tbx_agencyFee.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
             // 
+            // tbx_referralDue
+            // 
+            this.tbx_referralDue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_referralDue.Location = new System.Drawing.Point(184, 71);
+            this.tbx_referralDue.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_referralDue.MaxLength = 10;
+            this.tbx_referralDue.Name = "tbx_referralDue";
+            this.tbx_referralDue.Size = new System.Drawing.Size(320, 22);
+            this.tbx_referralDue.TabIndex = 78;
+            this.tbx_referralDue.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_next);
@@ -280,17 +291,6 @@
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
             // 
-            // tbx_referralDue
-            // 
-            this.tbx_referralDue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_referralDue.Location = new System.Drawing.Point(184, 71);
-            this.tbx_referralDue.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_referralDue.MaxLength = 10;
-            this.tbx_referralDue.Name = "tbx_referralDue";
-            this.tbx_referralDue.Size = new System.Drawing.Size(320, 22);
-            this.tbx_referralDue.TabIndex = 78;
-            this.tbx_referralDue.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            // 
             // ControlEmployeeApplicationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,7 +326,7 @@
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_previous;
-        private Miscellaneous.CustomTextbox tbx_agencyFee;
-        private Miscellaneous.CustomTextbox tbx_referralDue;
+        private Presentation.Miscellaneous.CustomTextbox tbx_agencyFee;
+        private Presentation.Miscellaneous.CustomTextbox tbx_referralDue;
     }
 }

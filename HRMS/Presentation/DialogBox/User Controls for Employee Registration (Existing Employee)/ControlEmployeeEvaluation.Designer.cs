@@ -58,7 +58,7 @@
             this.lbl_emp_id = new System.Windows.Forms.Label();
             this.lbl_owner_firstname = new System.Windows.Forms.Label();
             this.tbx_owner_firstname = new System.Windows.Forms.TextBox();
-            this.tbx_owner_empID = new Presentation.Miscellaneous.CustomTextbox();
+            this.cbx_owner_empID = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -111,7 +111,7 @@
             this.tableLayoutPanel4.Controls.Add(this.lbl_emp_id, 0, 10);
             this.tableLayoutPanel4.Controls.Add(this.lbl_owner_firstname, 0, 11);
             this.tableLayoutPanel4.Controls.Add(this.tbx_owner_firstname, 1, 11);
-            this.tableLayoutPanel4.Controls.Add(this.tbx_owner_empID, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.cbx_owner_empID, 1, 10);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(28, 60);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 13;
@@ -492,17 +492,16 @@
             this.tbx_owner_firstname.TabIndex = 11;
             this.tbx_owner_firstname.TextChanged += new System.EventHandler(this.tbx_owner_firstname_TextChanged);
             // 
-            // tbx_owner_empID
+            // cbx_owner_empID
             // 
-            this.tbx_owner_empID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_owner_empID.Location = new System.Drawing.Point(237, 232);
-            this.tbx_owner_empID.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_owner_empID.MaxLength = 9;
-            this.tbx_owner_empID.Name = "tbx_owner_empID";
-            this.tbx_owner_empID.Size = new System.Drawing.Size(267, 22);
-            this.tbx_owner_empID.TabIndex = 10;
-            this.tbx_owner_empID.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
-            this.tbx_owner_empID.TextChanged += new System.EventHandler(this.tbx_owner_empID_TextChanged);
+            this.cbx_owner_empID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_owner_empID.FormattingEnabled = true;
+            this.cbx_owner_empID.Location = new System.Drawing.Point(237, 232);
+            this.cbx_owner_empID.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_owner_empID.Name = "cbx_owner_empID";
+            this.cbx_owner_empID.Size = new System.Drawing.Size(267, 21);
+            this.cbx_owner_empID.TabIndex = 86;
+            this.cbx_owner_empID.TextChanged += new System.EventHandler(this.cbx_owner_empID_TextChanged);
             // 
             // panel2
             // 
@@ -610,6 +609,6 @@
         private System.Windows.Forms.Label lbl_emp_id;
         private System.Windows.Forms.Label lbl_owner_firstname;
         private System.Windows.Forms.TextBox tbx_owner_firstname;
-        private Miscellaneous.CustomTextbox tbx_owner_empID;
+        private System.Windows.Forms.ComboBox cbx_owner_empID;
     }
 }

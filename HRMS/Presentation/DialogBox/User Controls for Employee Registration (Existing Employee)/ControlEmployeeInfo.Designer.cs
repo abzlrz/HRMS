@@ -350,7 +350,6 @@
             this.tbx_email.Size = new System.Drawing.Size(270, 22);
             this.tbx_email.TabIndex = 6;
             this.tbx_email.Tag = "required";
-            this.tbx_email.TextChanged += new System.EventHandler(this.tbx_email_TextChanged);
             // 
             // tbx_presentAddStreet
             // 
@@ -422,8 +421,6 @@
             this.lbl_email.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_email.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_email.ImageIndex = 1;
-            this.lbl_email.ImageList = this.imageList;
             this.lbl_email.Location = new System.Drawing.Point(5, 140);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(227, 21);

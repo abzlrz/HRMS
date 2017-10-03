@@ -945,7 +945,7 @@
         private System.Windows.Forms.Label lbl_add_nature;
         private System.Windows.Forms.Label lbl_add_compensation;
         private System.Windows.Forms.Label lbl_add_reasonLeaving;
-        private Miscellaneous.CustomTextbox tbx_edit_compensation;
-        private Miscellaneous.CustomTextbox tbx_add_compensation;
+        private Presentation.Miscellaneous.CustomTextbox tbx_edit_compensation;
+        private Presentation.Miscellaneous.CustomTextbox tbx_add_compensation;
     }
 }

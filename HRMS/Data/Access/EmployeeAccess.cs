@@ -21,7 +21,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowEmployeeWithPosition;
+                adapter.SelectCommand.CommandText = "sp_showEmployee";
 
                 adapter.Fill(data);
             }

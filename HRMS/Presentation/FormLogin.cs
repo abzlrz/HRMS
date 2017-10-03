@@ -14,7 +14,6 @@ namespace Presentation
         {
             InitializeComponent();
             
-            this.form_application = new FormExternalApplicant();
             this.form_main = new FormMain();
             
             // user acces begin here
@@ -231,28 +230,12 @@ namespace Presentation
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyData == (Keys.Control | Keys.R))
-            {
-                this.form_loginclearance.Text = "Register User";
-                this.form_loginclearance.ShowDialog();
-                e.SuppressKeyPress = true;
-            }
-
-            if (e.KeyCode == Keys.F1)
-            {
-                this.form_application.ShowDialog();
-                e.SuppressKeyPress = true;
-            }
-        }
-
+        
         private Color ArvatoBlue = Color.FromArgb(0, 104, 169);
         private Color ArvatoGreen = Color.FromArgb(176, 200, 0);
         private Color ArvatoRed = Color.FromArgb(233, 15, 64);
         private Draggable draggable;
-
-        private FormExternalApplicant form_application;
+        
         private FormUserManagement form_userManagement;
         private FormClearanceLogin form_loginclearance;
         private FormCheckVacancies form_vacancies;

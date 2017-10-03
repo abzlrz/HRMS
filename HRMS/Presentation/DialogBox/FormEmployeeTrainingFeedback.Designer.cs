@@ -488,7 +488,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tableLayoutPanel2.Controls.Add(this.cbx_others, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.cbx_achievements, 1, 8);
@@ -538,10 +538,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_others.Location = new System.Drawing.Point(161, 209);
+            this.cbx_others.Location = new System.Drawing.Point(159, 209);
             this.cbx_others.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_others.Name = "cbx_others";
-            this.cbx_others.Size = new System.Drawing.Size(57, 21);
+            this.cbx_others.Size = new System.Drawing.Size(59, 21);
             this.cbx_others.TabIndex = 78;
             this.cbx_others.Tag = "required";
             // 
@@ -552,7 +552,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 209);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 21);
+            this.label4.Size = new System.Drawing.Size(149, 21);
             this.label4.TabIndex = 88;
             this.label4.Text = "Others:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -569,10 +569,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_achievements.Location = new System.Drawing.Point(161, 186);
+            this.cbx_achievements.Location = new System.Drawing.Point(159, 186);
             this.cbx_achievements.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_achievements.Name = "cbx_achievements";
-            this.cbx_achievements.Size = new System.Drawing.Size(57, 21);
+            this.cbx_achievements.Size = new System.Drawing.Size(59, 21);
             this.cbx_achievements.TabIndex = 77;
             this.cbx_achievements.Tag = "required";
             // 
@@ -583,7 +583,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 2);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 21);
+            this.label8.Size = new System.Drawing.Size(149, 21);
             this.label8.TabIndex = 79;
             this.label8.Text = "General Quality of Work:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -600,10 +600,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_productivity.Location = new System.Drawing.Point(161, 163);
+            this.cbx_productivity.Location = new System.Drawing.Point(159, 163);
             this.cbx_productivity.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_productivity.Name = "cbx_productivity";
-            this.cbx_productivity.Size = new System.Drawing.Size(57, 21);
+            this.cbx_productivity.Size = new System.Drawing.Size(59, 21);
             this.cbx_productivity.TabIndex = 76;
             this.cbx_productivity.Tag = "required";
             // 
@@ -614,7 +614,7 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(5, 186);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(151, 21);
+            this.label18.Size = new System.Drawing.Size(149, 21);
             this.label18.TabIndex = 87;
             this.label18.Text = "Achievements of Goals:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -631,10 +631,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_contribution.Location = new System.Drawing.Point(161, 140);
+            this.cbx_contribution.Location = new System.Drawing.Point(159, 140);
             this.cbx_contribution.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_contribution.Name = "cbx_contribution";
-            this.cbx_contribution.Size = new System.Drawing.Size(57, 21);
+            this.cbx_contribution.Size = new System.Drawing.Size(59, 21);
             this.cbx_contribution.TabIndex = 75;
             this.cbx_contribution.Tag = "required";
             // 
@@ -645,7 +645,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 21);
+            this.label7.Size = new System.Drawing.Size(149, 21);
             this.label7.TabIndex = 80;
             this.label7.Text = "Dependability:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -662,10 +662,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_managementAbility.Location = new System.Drawing.Point(161, 117);
+            this.cbx_managementAbility.Location = new System.Drawing.Point(159, 117);
             this.cbx_managementAbility.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_managementAbility.Name = "cbx_managementAbility";
-            this.cbx_managementAbility.Size = new System.Drawing.Size(57, 21);
+            this.cbx_managementAbility.Size = new System.Drawing.Size(59, 21);
             this.cbx_managementAbility.TabIndex = 74;
             this.cbx_managementAbility.Tag = "required";
             // 
@@ -676,7 +676,7 @@
             this.lbl.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl.Location = new System.Drawing.Point(5, 163);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(151, 21);
+            this.lbl.Size = new System.Drawing.Size(149, 21);
             this.lbl.TabIndex = 86;
             this.lbl.Text = "Productivity:";
             this.lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -693,10 +693,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_Personal.Location = new System.Drawing.Point(161, 94);
+            this.cbx_Personal.Location = new System.Drawing.Point(159, 94);
             this.cbx_Personal.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_Personal.Name = "cbx_Personal";
-            this.cbx_Personal.Size = new System.Drawing.Size(57, 21);
+            this.cbx_Personal.Size = new System.Drawing.Size(59, 21);
             this.cbx_Personal.TabIndex = 73;
             this.cbx_Personal.Tag = "required";
             // 
@@ -707,7 +707,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 48);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 21);
+            this.label5.Size = new System.Drawing.Size(149, 21);
             this.label5.TabIndex = 81;
             this.label5.Text = "Job Knowledge:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -724,10 +724,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_communicationSkills.Location = new System.Drawing.Point(161, 71);
+            this.cbx_communicationSkills.Location = new System.Drawing.Point(159, 71);
             this.cbx_communicationSkills.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_communicationSkills.Name = "cbx_communicationSkills";
-            this.cbx_communicationSkills.Size = new System.Drawing.Size(57, 21);
+            this.cbx_communicationSkills.Size = new System.Drawing.Size(59, 21);
             this.cbx_communicationSkills.TabIndex = 72;
             this.cbx_communicationSkills.Tag = "required";
             // 
@@ -738,7 +738,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(5, 140);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(151, 21);
+            this.label16.Size = new System.Drawing.Size(149, 21);
             this.label16.TabIndex = 85;
             this.label16.Text = "Contribution to the group:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -755,10 +755,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_jobKnowledge.Location = new System.Drawing.Point(161, 48);
+            this.cbx_jobKnowledge.Location = new System.Drawing.Point(159, 48);
             this.cbx_jobKnowledge.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_jobKnowledge.Name = "cbx_jobKnowledge";
-            this.cbx_jobKnowledge.Size = new System.Drawing.Size(57, 21);
+            this.cbx_jobKnowledge.Size = new System.Drawing.Size(59, 21);
             this.cbx_jobKnowledge.TabIndex = 71;
             this.cbx_jobKnowledge.Tag = "required";
             // 
@@ -769,7 +769,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 21);
+            this.label6.Size = new System.Drawing.Size(149, 21);
             this.label6.TabIndex = 82;
             this.label6.Text = "Communication Skills:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -786,10 +786,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_dependability.Location = new System.Drawing.Point(161, 25);
+            this.cbx_dependability.Location = new System.Drawing.Point(159, 25);
             this.cbx_dependability.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_dependability.Name = "cbx_dependability";
-            this.cbx_dependability.Size = new System.Drawing.Size(57, 21);
+            this.cbx_dependability.Size = new System.Drawing.Size(59, 21);
             this.cbx_dependability.TabIndex = 70;
             this.cbx_dependability.Tag = "required";
             // 
@@ -800,7 +800,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 117);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(151, 21);
+            this.label15.Size = new System.Drawing.Size(149, 21);
             this.label15.TabIndex = 84;
             this.label15.Text = "Management Ability:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -817,10 +817,10 @@
             "3",
             "2",
             "1"});
-            this.cbx_generalQuality.Location = new System.Drawing.Point(161, 2);
+            this.cbx_generalQuality.Location = new System.Drawing.Point(159, 2);
             this.cbx_generalQuality.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_generalQuality.Name = "cbx_generalQuality";
-            this.cbx_generalQuality.Size = new System.Drawing.Size(57, 21);
+            this.cbx_generalQuality.Size = new System.Drawing.Size(59, 21);
             this.cbx_generalQuality.TabIndex = 69;
             this.cbx_generalQuality.Tag = "required";
             // 
@@ -831,7 +831,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 94);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(151, 21);
+            this.label14.Size = new System.Drawing.Size(149, 21);
             this.label14.TabIndex = 83;
             this.label14.Text = "Personality:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

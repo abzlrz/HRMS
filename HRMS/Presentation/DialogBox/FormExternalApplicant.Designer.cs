@@ -35,7 +35,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.controlApplicationDetails1 = new Presentation.DialogBox.ExternalApplication.ControlApplicationDetails();
-            this.controlOtherDetails1 = new Presentation.DialogBox.ExternalApplication.ControlOtherDetails();
+            this.controlOtherDetails1 = new Presentation.DialogBox.ExternalApplication.ControlBackgroundCheck();
             this.controlAddress1 = new Presentation.DialogBox.ExternalApplication.ControlAddress();
             this.controlPersonalInformation1 = new Presentation.DialogBox.ExternalApplication.ControlPersonalInformation();
             this.panel1.SuspendLayout();
@@ -166,6 +166,6 @@
         private ExternalApplication.ControlApplicationDetails controlApplicationDetails1;
         private ExternalApplication.ControlAddress controlAddress1;
         private ExternalApplication.ControlPersonalInformation controlPersonalInformation1;
-        private ExternalApplication.ControlOtherDetails controlOtherDetails1;
+        private ExternalApplication.ControlBackgroundCheck controlOtherDetails1;
     }
 }

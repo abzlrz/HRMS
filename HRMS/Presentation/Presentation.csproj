@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.Designer.cs">
-      <DependentUpon>FormBackgroundLegal.cs</DependentUpon>
-    </Compile>
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,10 +77,10 @@
     <Compile Include="DialogBox\FormJobPosting.Designer.cs">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\JobPosting\FormRichTextbox.cs">
+    <Compile Include="Miscellaneous\FormRichTextbox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogBox\JobPosting\FormRichTextbox.Designer.cs">
+    <Compile Include="Miscellaneous\FormRichTextbox.Designer.cs">
       <DependentUpon>FormRichTextbox.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.cs">
@@ -155,18 +149,6 @@
     <Compile Include="FormClearanceLogin.Designer.cs">
       <DependentUpon>FormClearanceLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.Designer.cs">
-      <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.Designer.cs">
-      <DependentUpon>FormContactPerson.cs</DependentUpon>
-    </Compile>
     <Compile Include="DialogBox\FormEmployeeExit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,11 +197,11 @@
     <Compile Include="DialogBox\User Controls for External Application Form\ControlApplicationDetails.Designer.cs">
       <DependentUpon>ControlApplicationDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.cs">
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlBackgroundCheck.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.Designer.cs">
-      <DependentUpon>ControlOtherDetails.cs</DependentUpon>
+    <Compile Include="DialogBox\User Controls for External Application Form\ControlBackgroundCheck.Designer.cs">
+      <DependentUpon>ControlBackgroundCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogBox\User Controls for External Application Form\ControlPersonalInformation.cs">
       <SubType>UserControl</SubType>
@@ -373,9 +355,6 @@
     <Compile Include="Miscellaneous.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundLegal.resx">
-      <DependentUpon>FormBackgroundLegal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormEmploymentHistory.resx">
       <DependentUpon>FormEmploymentHistory.cs</DependentUpon>
     </EmbeddedResource>
@@ -391,7 +370,7 @@
     <EmbeddedResource Include="DialogBox\FormJobPosting.resx">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\JobPosting\FormRichTextbox.resx">
+    <EmbeddedResource Include="Miscellaneous\FormRichTextbox.resx">
       <DependentUpon>FormRichTextbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\User Controls for Applicant Evaluation\ControlApplicantEvaluation.resx">
@@ -427,12 +406,6 @@
     <EmbeddedResource Include="FormClearanceLogin.resx">
       <DependentUpon>FormClearanceLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundIllness.resx">
-      <DependentUpon>FormBackgroundIllness.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormContactPerson.resx">
-      <DependentUpon>FormContactPerson.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\FormEmployeeExit.resx">
       <DependentUpon>FormEmployeeExit.cs</DependentUpon>
     </EmbeddedResource>
@@ -457,8 +430,8 @@
     <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlApplicationDetails.resx">
       <DependentUpon>ControlApplicationDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlOtherDetails.resx">
-      <DependentUpon>ControlOtherDetails.cs</DependentUpon>
+    <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlBackgroundCheck.resx">
+      <DependentUpon>ControlBackgroundCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\User Controls for External Application Form\ControlPersonalInformation.resx">
       <DependentUpon>ControlPersonalInformation.cs</DependentUpon>
@@ -615,6 +588,7 @@
   <ItemGroup>
     <None Include="Resources\eye.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

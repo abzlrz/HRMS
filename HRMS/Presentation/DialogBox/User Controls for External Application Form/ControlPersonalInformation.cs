@@ -128,7 +128,6 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             isUnder18 = cbx_isUnder18.Equals("Yes") ? true : false;
         }
-        #endregion
 
         private void tbx_SSS_TextChanged(object sender, EventArgs e)
         {
@@ -149,5 +148,28 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             Misc.TurnGreenIndicator(tbx_bankAccnt, lbl_bpi, false);
         }
+
+        private void tbx_contact_firstname_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_contact_firstname.Text, lbl_contact_firstname, 2);
+        }
+
+        private void tbx_contact_lastname_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_contact_lastname.Text, lbl_contact_lastname, 2);
+        }
+
+        private void tbx_contact_number_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_contact_number, lbl_contact_number, true);
+        }
+
+        private void cbx_relationship_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(cbx_relationship.SelectedIndex, lbl_relationship);
+        }
+        #endregion
+
+
     }
 }

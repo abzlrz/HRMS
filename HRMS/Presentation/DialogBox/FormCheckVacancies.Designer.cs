@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.view_employee = new System.Windows.Forms.DataGridView();
+            this.view_posting = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -61,7 +61,7 @@
             this.btnApply = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_posting)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -84,7 +84,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.view_employee);
+            this.panel3.Controls.Add(this.view_posting);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(12, 12);
@@ -92,24 +92,24 @@
             this.panel3.Size = new System.Drawing.Size(389, 436);
             this.panel3.TabIndex = 0;
             // 
-            // view_employee
+            // view_posting
             // 
-            this.view_employee.AllowUserToAddRows = false;
-            this.view_employee.AllowUserToDeleteRows = false;
-            this.view_employee.AllowUserToResizeRows = false;
-            this.view_employee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.view_employee.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.view_employee.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.view_employee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_employee.Location = new System.Drawing.Point(0, 53);
-            this.view_employee.Name = "view_employee";
-            this.view_employee.ReadOnly = true;
-            this.view_employee.RowHeadersVisible = false;
-            this.view_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.view_employee.Size = new System.Drawing.Size(387, 381);
-            this.view_employee.TabIndex = 8;
-            this.view_employee.SelectionChanged += new System.EventHandler(this.view_employee_SelectionChanged);
+            this.view_posting.AllowUserToAddRows = false;
+            this.view_posting.AllowUserToDeleteRows = false;
+            this.view_posting.AllowUserToResizeRows = false;
+            this.view_posting.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.view_posting.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.view_posting.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.view_posting.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_posting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_posting.Location = new System.Drawing.Point(0, 53);
+            this.view_posting.Name = "view_posting";
+            this.view_posting.ReadOnly = true;
+            this.view_posting.RowHeadersVisible = false;
+            this.view_posting.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_posting.Size = new System.Drawing.Size(387, 381);
+            this.view_posting.TabIndex = 8;
+            this.view_posting.SelectionChanged += new System.EventHandler(this.view_employee_SelectionChanged);
             // 
             // panel4
             // 
@@ -232,6 +232,7 @@
             this.link_detail_jobdesc.TabStop = true;
             this.link_detail_jobdesc.Text = "Open";
             this.link_detail_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.link_detail_jobdesc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_detail_jobdesc_LinkClicked);
             // 
             // lbl_detail_location
             // 
@@ -421,6 +422,7 @@
             this.link_detail_qualification.TabStop = true;
             this.link_detail_qualification.Text = "Open";
             this.link_detail_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.link_detail_qualification.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_detail_qualification_LinkClicked);
             // 
             // label1
             // 
@@ -448,15 +450,18 @@
             // btnApply
             // 
             this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
-            this.btnApply.FlatAppearance.BorderSize = 0;
-            this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnApply.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApply.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnApply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(68)))), ((int)(((byte)(4)))));
+            this.btnApply.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(99)))), ((int)(((byte)(6)))));
+            this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApply.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.SystemColors.Control;
             this.btnApply.Location = new System.Drawing.Point(32, 55);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(358, 55);
             this.btnApply.TabIndex = 3;
-            this.btnApply.Text = "Apply";
+            this.btnApply.Text = ">> Apply <<";
+            this.btnApply.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
@@ -479,7 +484,7 @@
             this.Load += new System.EventHandler(this.FormCheckVacancies_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_posting)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -497,7 +502,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView view_employee;
+        private System.Windows.Forms.DataGridView view_posting;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

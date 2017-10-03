@@ -572,12 +572,12 @@
         private System.Windows.Forms.Label lbl_contractType;
         private System.Windows.Forms.ComboBox cbx_team;
         private System.Windows.Forms.Button btn_save;
-        private Miscellaneous.CustomTextbox tbx_approvedSalary;
-        private Miscellaneous.CustomTextbox tbx_annualBasedSalary;
-        private Miscellaneous.CustomTextbox tbx_annualLangAllowance;
-        private Miscellaneous.CustomTextbox tbx_shiftAllowance;
-        private Miscellaneous.CustomTextbox tbx_relocAllowance;
-        private Miscellaneous.CustomTextbox tbx_costCenter;
+        private Presentation.Miscellaneous.CustomTextbox tbx_approvedSalary;
+        private Presentation.Miscellaneous.CustomTextbox tbx_annualBasedSalary;
+        private Presentation.Miscellaneous.CustomTextbox tbx_annualLangAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_shiftAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_relocAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_costCenter;
         private System.Windows.Forms.TextBox tbx_relocAllowanceDetails;
     }
 }

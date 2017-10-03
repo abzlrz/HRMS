@@ -34,6 +34,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btn_reset = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.link_add_benefits = new System.Windows.Forms.LinkLabel();
+            this.cbx_add_positiontype = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.date_add_close = new System.Windows.Forms.DateTimePicker();
             this.link_add_jobdesc = new System.Windows.Forms.LinkLabel();
@@ -47,17 +49,20 @@
             this.lbl_add_location = new System.Windows.Forms.Label();
             this.lbl_add_qualification = new System.Windows.Forms.Label();
             this.lbl_add_jobdesc = new System.Windows.Forms.Label();
-            this.tbx_add_positiontype = new System.Windows.Forms.TextBox();
             this.link_add_qualification = new System.Windows.Forms.LinkLabel();
             this.cbx_add_location = new System.Windows.Forms.ComboBox();
             this.date_add_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_add_comment = new System.Windows.Forms.TextBox();
             this.cbx_add_position = new System.Windows.Forms.ComboBox();
             this.tbx_add_headcount = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_add_wage = new Presentation.Miscellaneous.CustomTextbox();
+            this.lbl_add_benefits = new System.Windows.Forms.Label();
+            this.tbx_add_wage = new System.Windows.Forms.TextBox();
             this.btn_add = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_edit_benefits = new System.Windows.Forms.Label();
+            this.link_edit_benefits = new System.Windows.Forms.LinkLabel();
+            this.cbx_edit_positiontype = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.date_edit_close = new System.Windows.Forms.DateTimePicker();
             this.link_edit_jobdesc = new System.Windows.Forms.LinkLabel();
@@ -70,14 +75,13 @@
             this.lbl_edit_location = new System.Windows.Forms.Label();
             this.lbl_edit_qualification = new System.Windows.Forms.Label();
             this.lbl_edit_jobdesc = new System.Windows.Forms.Label();
-            this.tbx_edit_positiontype = new System.Windows.Forms.TextBox();
             this.link_edit_qualification = new System.Windows.Forms.LinkLabel();
             this.cbx_edit_location = new System.Windows.Forms.ComboBox();
             this.date_edit_posted = new System.Windows.Forms.DateTimePicker();
             this.tbx_edit_comment = new System.Windows.Forms.TextBox();
-            this.tbx_edit_position = new System.Windows.Forms.ComboBox();
-            this.tbx_edit_wage = new Presentation.Miscellaneous.CustomTextbox();
+            this.cbx_edit_position = new System.Windows.Forms.ComboBox();
             this.tbx_edit_headcount = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_edit_wage = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -144,9 +148,11 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.29032F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.70968F));
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.link_add_benefits, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_add_positiontype, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.date_add_close, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.link_add_jobdesc, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.link_add_jobdesc, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.lbl_add_positiontype, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_add_position, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
@@ -154,20 +160,20 @@
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.lbl_add_headcount, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.lbl_add_location, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_add_qualification, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_add_jobdesc, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.tbx_add_positiontype, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.link_add_qualification, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_qualification, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_jobdesc, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.link_add_qualification, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.cbx_add_location, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.date_add_posted, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tbx_add_comment, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.tbx_add_comment, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.cbx_add_position, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tbx_add_headcount, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_add_benefits, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.tbx_add_wage, 1, 4);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
@@ -178,17 +184,45 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(310, 350);
             this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // link_add_benefits
+            // 
+            this.link_add_benefits.AutoEllipsis = true;
+            this.link_add_benefits.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.link_add_benefits.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.link_add_benefits.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_add_benefits.Location = new System.Drawing.Point(127, 199);
+            this.link_add_benefits.Margin = new System.Windows.Forms.Padding(0);
+            this.link_add_benefits.Name = "link_add_benefits";
+            this.link_add_benefits.Size = new System.Drawing.Size(183, 25);
+            this.link_add_benefits.TabIndex = 22;
+            this.link_add_benefits.TabStop = true;
+            this.link_add_benefits.Text = "Compose";
+            this.link_add_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_add_benefits.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_add_benefits_LinkClicked);
+            // 
+            // cbx_add_positiontype
+            // 
+            this.cbx_add_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbx_add_positiontype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_add_positiontype.FormattingEnabled = true;
+            this.cbx_add_positiontype.Location = new System.Drawing.Point(127, 5);
+            this.cbx_add_positiontype.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_add_positiontype.Name = "cbx_add_positiontype";
+            this.cbx_add_positiontype.Size = new System.Drawing.Size(183, 23);
+            this.cbx_add_positiontype.TabIndex = 5;
+            this.cbx_add_positiontype.SelectedIndexChanged += new System.EventHandler(this.cbx_add_positiontype_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 252);
+            this.label2.Location = new System.Drawing.Point(3, 280);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 98);
+            this.label2.Size = new System.Drawing.Size(121, 70);
             this.label2.TabIndex = 21;
             this.label2.Text = "\r\nComments:";
             // 
@@ -208,7 +242,7 @@
             this.link_add_jobdesc.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_add_jobdesc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_add_jobdesc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_add_jobdesc.Location = new System.Drawing.Point(127, 227);
+            this.link_add_jobdesc.Location = new System.Drawing.Point(127, 255);
             this.link_add_jobdesc.Margin = new System.Windows.Forms.Padding(0);
             this.link_add_jobdesc.Name = "link_add_jobdesc";
             this.link_add_jobdesc.Size = new System.Drawing.Size(183, 25);
@@ -321,7 +355,7 @@
             this.lbl_add_qualification.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_add_qualification.ImageIndex = 1;
             this.lbl_add_qualification.ImageList = this.imageList;
-            this.lbl_add_qualification.Location = new System.Drawing.Point(3, 196);
+            this.lbl_add_qualification.Location = new System.Drawing.Point(3, 224);
             this.lbl_add_qualification.Name = "lbl_add_qualification";
             this.lbl_add_qualification.Size = new System.Drawing.Size(121, 28);
             this.lbl_add_qualification.TabIndex = 7;
@@ -335,23 +369,12 @@
             this.lbl_add_jobdesc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_add_jobdesc.ImageIndex = 1;
             this.lbl_add_jobdesc.ImageList = this.imageList;
-            this.lbl_add_jobdesc.Location = new System.Drawing.Point(3, 224);
+            this.lbl_add_jobdesc.Location = new System.Drawing.Point(3, 252);
             this.lbl_add_jobdesc.Name = "lbl_add_jobdesc";
             this.lbl_add_jobdesc.Size = new System.Drawing.Size(121, 28);
             this.lbl_add_jobdesc.TabIndex = 8;
             this.lbl_add_jobdesc.Text = "Job Description:";
             this.lbl_add_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbx_add_positiontype
-            // 
-            this.tbx_add_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_positiontype.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_add_positiontype.Location = new System.Drawing.Point(127, 6);
-            this.tbx_add_positiontype.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_positiontype.Name = "tbx_add_positiontype";
-            this.tbx_add_positiontype.Size = new System.Drawing.Size(183, 22);
-            this.tbx_add_positiontype.TabIndex = 0;
-            this.tbx_add_positiontype.TextChanged += new System.EventHandler(this.tbx_add_positiontype_TextChanged);
             // 
             // link_add_qualification
             // 
@@ -359,7 +382,7 @@
             this.link_add_qualification.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_add_qualification.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_add_qualification.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_add_qualification.Location = new System.Drawing.Point(127, 199);
+            this.link_add_qualification.Location = new System.Drawing.Point(127, 227);
             this.link_add_qualification.Margin = new System.Windows.Forms.Padding(0);
             this.link_add_qualification.Name = "link_add_qualification";
             this.link_add_qualification.Size = new System.Drawing.Size(183, 25);
@@ -372,6 +395,7 @@
             // cbx_add_location
             // 
             this.cbx_add_location.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbx_add_location.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_add_location.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_add_location.FormattingEnabled = true;
             this.cbx_add_location.Items.AddRange(new object[] {
@@ -397,17 +421,19 @@
             // 
             // tbx_add_comment
             // 
-            this.tbx_add_comment.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_add_comment.Location = new System.Drawing.Point(127, 264);
-            this.tbx_add_comment.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_add_comment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_add_comment.Location = new System.Drawing.Point(127, 287);
+            this.tbx_add_comment.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.tbx_add_comment.MaxLength = 99;
             this.tbx_add_comment.Multiline = true;
             this.tbx_add_comment.Name = "tbx_add_comment";
-            this.tbx_add_comment.Size = new System.Drawing.Size(183, 86);
+            this.tbx_add_comment.Size = new System.Drawing.Size(183, 63);
             this.tbx_add_comment.TabIndex = 10;
             // 
             // cbx_add_position
             // 
+            this.cbx_add_position.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_add_position.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbx_add_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_position.FormattingEnabled = true;
             this.cbx_add_position.Location = new System.Drawing.Point(127, 33);
@@ -429,16 +455,28 @@
             this.tbx_add_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
             this.tbx_add_headcount.TextChanged += new System.EventHandler(this.tbx_add_headcount_TextChanged);
             // 
+            // lbl_add_benefits
+            // 
+            this.lbl_add_benefits.AutoSize = true;
+            this.lbl_add_benefits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_add_benefits.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_add_benefits.ImageIndex = 1;
+            this.lbl_add_benefits.ImageList = this.imageList;
+            this.lbl_add_benefits.Location = new System.Drawing.Point(3, 196);
+            this.lbl_add_benefits.Name = "lbl_add_benefits";
+            this.lbl_add_benefits.Size = new System.Drawing.Size(121, 28);
+            this.lbl_add_benefits.TabIndex = 8;
+            this.lbl_add_benefits.Text = "Benefits:";
+            this.lbl_add_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // tbx_add_wage
             // 
             this.tbx_add_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tbx_add_wage.Location = new System.Drawing.Point(127, 117);
             this.tbx_add_wage.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_add_wage.MaxLength = 10;
             this.tbx_add_wage.Name = "tbx_add_wage";
             this.tbx_add_wage.Size = new System.Drawing.Size(183, 23);
-            this.tbx_add_wage.TabIndex = 4;
-            this.tbx_add_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.tbx_add_wage.TabIndex = 23;
             // 
             // btn_add
             // 
@@ -468,9 +506,12 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.29032F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.70968F));
-            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_benefits, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.link_edit_benefits, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.cbx_edit_positiontype, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 10);
             this.tableLayoutPanel2.Controls.Add(this.date_edit_close, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.link_edit_jobdesc, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.link_edit_jobdesc, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_positiontype, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_position, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 2);
@@ -478,20 +519,20 @@
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_headcount, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.lbl_edit_location, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_qualification, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_jobdesc, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_positiontype, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.link_edit_qualification, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_qualification, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_edit_jobdesc, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.link_edit_qualification, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.cbx_edit_location, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.date_edit_posted, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_comment, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_position, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_wage, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_comment, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.cbx_edit_position, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.tbx_edit_headcount, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.tbx_edit_wage, 1, 4);
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 13);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 10;
+            this.tableLayoutPanel2.RowCount = 11;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
@@ -506,13 +547,54 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 350);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
+            // lbl_edit_benefits
+            // 
+            this.lbl_edit_benefits.AutoSize = true;
+            this.lbl_edit_benefits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_edit_benefits.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_edit_benefits.ImageIndex = 1;
+            this.lbl_edit_benefits.ImageList = this.imageList;
+            this.lbl_edit_benefits.Location = new System.Drawing.Point(3, 196);
+            this.lbl_edit_benefits.Name = "lbl_edit_benefits";
+            this.lbl_edit_benefits.Size = new System.Drawing.Size(121, 28);
+            this.lbl_edit_benefits.TabIndex = 22;
+            this.lbl_edit_benefits.Text = "Benefits:";
+            this.lbl_edit_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // link_edit_benefits
+            // 
+            this.link_edit_benefits.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.link_edit_benefits.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.link_edit_benefits.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_edit_benefits.Location = new System.Drawing.Point(127, 199);
+            this.link_edit_benefits.Margin = new System.Windows.Forms.Padding(0);
+            this.link_edit_benefits.Name = "link_edit_benefits";
+            this.link_edit_benefits.Size = new System.Drawing.Size(183, 25);
+            this.link_edit_benefits.TabIndex = 9;
+            this.link_edit_benefits.TabStop = true;
+            this.link_edit_benefits.Text = "Compose";
+            this.link_edit_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.link_edit_benefits.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_benefits_LinkClicked);
+            // 
+            // cbx_edit_positiontype
+            // 
+            this.cbx_edit_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbx_edit_positiontype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_edit_positiontype.FormattingEnabled = true;
+            this.cbx_edit_positiontype.Location = new System.Drawing.Point(127, 5);
+            this.cbx_edit_positiontype.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_edit_positiontype.Name = "cbx_edit_positiontype";
+            this.cbx_edit_positiontype.Size = new System.Drawing.Size(183, 23);
+            this.cbx_edit_positiontype.TabIndex = 4;
+            this.cbx_edit_positiontype.SelectedIndexChanged += new System.EventHandler(this.cbx_edit_positiontype_SelectedIndexChanged);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 252);
+            this.label11.Location = new System.Drawing.Point(3, 280);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 98);
+            this.label11.Size = new System.Drawing.Size(121, 70);
             this.label11.TabIndex = 21;
             this.label11.Text = "\r\nComments:";
             // 
@@ -531,13 +613,13 @@
             this.link_edit_jobdesc.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_edit_jobdesc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_edit_jobdesc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_edit_jobdesc.Location = new System.Drawing.Point(127, 227);
+            this.link_edit_jobdesc.Location = new System.Drawing.Point(127, 255);
             this.link_edit_jobdesc.Margin = new System.Windows.Forms.Padding(0);
             this.link_edit_jobdesc.Name = "link_edit_jobdesc";
             this.link_edit_jobdesc.Size = new System.Drawing.Size(183, 25);
             this.link_edit_jobdesc.TabIndex = 9;
             this.link_edit_jobdesc.TabStop = true;
-            this.link_edit_jobdesc.Text = "Upload";
+            this.link_edit_jobdesc.Text = "Compose";
             this.link_edit_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.link_edit_jobdesc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_jobdesc_LinkClicked);
             // 
@@ -637,7 +719,7 @@
             this.lbl_edit_qualification.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_edit_qualification.ImageIndex = 1;
             this.lbl_edit_qualification.ImageList = this.imageList;
-            this.lbl_edit_qualification.Location = new System.Drawing.Point(3, 196);
+            this.lbl_edit_qualification.Location = new System.Drawing.Point(3, 224);
             this.lbl_edit_qualification.Name = "lbl_edit_qualification";
             this.lbl_edit_qualification.Size = new System.Drawing.Size(121, 28);
             this.lbl_edit_qualification.TabIndex = 7;
@@ -651,44 +733,38 @@
             this.lbl_edit_jobdesc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_edit_jobdesc.ImageIndex = 1;
             this.lbl_edit_jobdesc.ImageList = this.imageList;
-            this.lbl_edit_jobdesc.Location = new System.Drawing.Point(3, 224);
+            this.lbl_edit_jobdesc.Location = new System.Drawing.Point(3, 252);
             this.lbl_edit_jobdesc.Name = "lbl_edit_jobdesc";
             this.lbl_edit_jobdesc.Size = new System.Drawing.Size(121, 28);
             this.lbl_edit_jobdesc.TabIndex = 8;
             this.lbl_edit_jobdesc.Text = "Job Description:";
             this.lbl_edit_jobdesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbx_edit_positiontype
-            // 
-            this.tbx_edit_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_edit_positiontype.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_edit_positiontype.Location = new System.Drawing.Point(127, 6);
-            this.tbx_edit_positiontype.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_edit_positiontype.Name = "tbx_edit_positiontype";
-            this.tbx_edit_positiontype.Size = new System.Drawing.Size(183, 22);
-            this.tbx_edit_positiontype.TabIndex = 0;
-            this.tbx_edit_positiontype.TextChanged += new System.EventHandler(this.tbx_edit_positiontype_TextChanged);
-            // 
             // link_edit_qualification
             // 
             this.link_edit_qualification.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.link_edit_qualification.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.link_edit_qualification.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_edit_qualification.Location = new System.Drawing.Point(127, 199);
+            this.link_edit_qualification.Location = new System.Drawing.Point(127, 227);
             this.link_edit_qualification.Margin = new System.Windows.Forms.Padding(0);
             this.link_edit_qualification.Name = "link_edit_qualification";
             this.link_edit_qualification.Size = new System.Drawing.Size(183, 25);
             this.link_edit_qualification.TabIndex = 8;
             this.link_edit_qualification.TabStop = true;
-            this.link_edit_qualification.Text = "Upload";
+            this.link_edit_qualification.Text = "Compose";
             this.link_edit_qualification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.link_edit_qualification.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_edit_qualification_LinkClicked);
             // 
             // cbx_edit_location
             // 
             this.cbx_edit_location.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbx_edit_location.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_edit_location.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_edit_location.FormattingEnabled = true;
+            this.cbx_edit_location.Items.AddRange(new object[] {
+            "Clark, Pampanga",
+            "Alabang",
+            "Quezon City"});
             this.cbx_edit_location.Location = new System.Drawing.Point(127, 175);
             this.cbx_edit_location.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_edit_location.Name = "cbx_edit_location";
@@ -708,48 +784,51 @@
             // 
             // tbx_edit_comment
             // 
-            this.tbx_edit_comment.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_edit_comment.Location = new System.Drawing.Point(127, 264);
-            this.tbx_edit_comment.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_comment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_edit_comment.Location = new System.Drawing.Point(127, 287);
+            this.tbx_edit_comment.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.tbx_edit_comment.MaxLength = 99;
             this.tbx_edit_comment.Multiline = true;
             this.tbx_edit_comment.Name = "tbx_edit_comment";
-            this.tbx_edit_comment.Size = new System.Drawing.Size(183, 86);
+            this.tbx_edit_comment.Size = new System.Drawing.Size(183, 63);
             this.tbx_edit_comment.TabIndex = 10;
             // 
-            // tbx_edit_position
+            // cbx_edit_position
             // 
-            this.tbx_edit_position.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbx_edit_position.FormattingEnabled = true;
-            this.tbx_edit_position.Location = new System.Drawing.Point(127, 35);
-            this.tbx_edit_position.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_edit_position.Name = "tbx_edit_position";
-            this.tbx_edit_position.Size = new System.Drawing.Size(183, 23);
-            this.tbx_edit_position.TabIndex = 1;
-            this.tbx_edit_position.SelectedIndexChanged += new System.EventHandler(this.tbx_edit_position_SelectedIndexChanged);
-            // 
-            // tbx_edit_wage
-            // 
-            this.tbx_edit_wage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_edit_wage.Location = new System.Drawing.Point(127, 112);
-            this.tbx_edit_wage.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_edit_wage.Name = "tbx_edit_wage";
-            this.tbx_edit_wage.Size = new System.Drawing.Size(183, 23);
-            this.tbx_edit_wage.TabIndex = 4;
-            this.tbx_edit_wage.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.cbx_edit_position.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbx_edit_position.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbx_edit_position.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbx_edit_position.FormattingEnabled = true;
+            this.cbx_edit_position.Location = new System.Drawing.Point(127, 33);
+            this.cbx_edit_position.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_edit_position.Name = "cbx_edit_position";
+            this.cbx_edit_position.Size = new System.Drawing.Size(183, 23);
+            this.cbx_edit_position.TabIndex = 1;
+            this.cbx_edit_position.SelectedIndexChanged += new System.EventHandler(this.tbx_edit_position_SelectedIndexChanged);
             // 
             // tbx_edit_headcount
             // 
-            this.tbx_edit_headcount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_edit_headcount.Location = new System.Drawing.Point(127, 140);
+            this.tbx_edit_headcount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_edit_headcount.Location = new System.Drawing.Point(127, 145);
             this.tbx_edit_headcount.Margin = new System.Windows.Forms.Padding(0);
             this.tbx_edit_headcount.Name = "tbx_edit_headcount";
             this.tbx_edit_headcount.Size = new System.Drawing.Size(183, 23);
             this.tbx_edit_headcount.TabIndex = 5;
             this.tbx_edit_headcount.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Numbers;
+            this.tbx_edit_headcount.TextChanged += new System.EventHandler(this.tbx_edit_headcount_TextChanged);
+            // 
+            // tbx_edit_wage
+            // 
+            this.tbx_edit_wage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbx_edit_wage.Location = new System.Drawing.Point(127, 117);
+            this.tbx_edit_wage.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_edit_wage.Name = "tbx_edit_wage";
+            this.tbx_edit_wage.Size = new System.Drawing.Size(183, 23);
+            this.tbx_edit_wage.TabIndex = 23;
             // 
             // btn_save
             // 
+            this.btn_save.Enabled = false;
             this.btn_save.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Location = new System.Drawing.Point(142, 412);
             this.btn_save.Name = "btn_save";
@@ -757,6 +836,7 @@
             this.btn_save.TabIndex = 0;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // panel1
             // 
@@ -784,6 +864,7 @@
             // 
             // btn_delete
             // 
+            this.btn_delete.Enabled = false;
             this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.Location = new System.Drawing.Point(218, 428);
             this.btn_delete.Name = "btn_delete";
@@ -791,6 +872,7 @@
             this.btn_delete.TabIndex = 3;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // label1
             // 
@@ -826,6 +908,7 @@
             this.tbx_search.Name = "tbx_search";
             this.tbx_search.Size = new System.Drawing.Size(280, 20);
             this.tbx_search.TabIndex = 0;
+            this.tbx_search.TextChanged += new System.EventHandler(this.tbx_search_TextChanged);
             // 
             // view_posting
             // 
@@ -835,10 +918,14 @@
             this.view_posting.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.view_posting.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.view_posting.Location = new System.Drawing.Point(13, 73);
+            this.view_posting.MultiSelect = false;
             this.view_posting.Name = "view_posting";
+            this.view_posting.ReadOnly = true;
             this.view_posting.RowHeadersVisible = false;
+            this.view_posting.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.view_posting.Size = new System.Drawing.Size(458, 348);
             this.view_posting.TabIndex = 2;
+            this.view_posting.SelectionChanged += new System.EventHandler(this.view_posting_SelectionChanged);
             // 
             // dialog_qualification
             // 
@@ -893,6 +980,7 @@
             this.MinimizeBox = false;
             this.Name = "FormJobPosting";
             this.Padding = new System.Windows.Forms.Padding(12);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Job Posting";
             this.Load += new System.EventHandler(this.FormJobPosting_Load);
             this.tabControl1.ResumeLayout(false);
@@ -939,7 +1027,6 @@
         private System.Windows.Forms.Label lbl_edit_location;
         private System.Windows.Forms.Label lbl_edit_qualification;
         private System.Windows.Forms.Label lbl_edit_jobdesc;
-        private System.Windows.Forms.TextBox tbx_edit_positiontype;
         private System.Windows.Forms.LinkLabel link_edit_qualification;
         private System.Windows.Forms.ComboBox cbx_edit_location;
         private System.Windows.Forms.DateTimePicker date_edit_posted;
@@ -957,23 +1044,28 @@
         private System.Windows.Forms.Label lbl_add_location;
         private System.Windows.Forms.Label lbl_add_qualification;
         private System.Windows.Forms.Label lbl_add_jobdesc;
-        private System.Windows.Forms.TextBox tbx_add_positiontype;
         private System.Windows.Forms.LinkLabel link_add_qualification;
         private System.Windows.Forms.ComboBox cbx_add_location;
         private System.Windows.Forms.DateTimePicker date_add_posted;
         private System.Windows.Forms.TextBox tbx_add_comment;
-        private System.Windows.Forms.ComboBox cbx_add_position;
-        private System.Windows.Forms.ComboBox tbx_edit_position;
+        private System.Windows.Forms.ComboBox cbx_edit_position;
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.OpenFileDialog dialog_qualification;
         private System.Windows.Forms.OpenFileDialog dialog_jobdesc;
-        private Miscellaneous.CustomTextbox tbx_add_headcount;
-        private Miscellaneous.CustomTextbox tbx_add_wage;
-        private Miscellaneous.CustomTextbox tbx_edit_wage;
-        private Miscellaneous.CustomTextbox tbx_edit_headcount;
+        private Presentation.Miscellaneous.CustomTextbox tbx_add_headcount;
+        private Presentation.Miscellaneous.CustomTextbox tbx_edit_headcount;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbx_add_positiontype;
+        private System.Windows.Forms.ComboBox cbx_add_position;
+        private System.Windows.Forms.ComboBox cbx_edit_positiontype;
+        private System.Windows.Forms.LinkLabel link_add_benefits;
+        private System.Windows.Forms.Label lbl_add_benefits;
+        private System.Windows.Forms.Label lbl_edit_benefits;
+        private System.Windows.Forms.LinkLabel link_edit_benefits;
+        private System.Windows.Forms.TextBox tbx_add_wage;
+        private System.Windows.Forms.TextBox tbx_edit_wage;
     }
 }

@@ -21,7 +21,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowJobPostingData;
+                adapter.SelectCommand.CommandText = "sp_showJobPosting";
 
                 adapter.Fill(table);
             }
@@ -29,28 +29,29 @@ namespace Data.Access
             return table;
         }
 
-        public bool InsertData(JobPosting item)
+        public bool InsertUpdateData(JobPosting item)
         {
-            using(var cmd = new SqlCommand())
+            using(var command = new SqlCommand())
             {
-                cmd.Connection = new SqlConnection(Default.ConnectionString);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = Default.InsertJobPostings;
+                command.Connection = new SqlConnection(Default.ConnectionString);
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "sp_insertUpdateJobPosting";
 
-                cmd.Parameters.AddWithValue("@positiontype", item.PositionType);
-                cmd.Parameters.AddWithValue("@position", item.Position);
-                cmd.Parameters.AddWithValue("@posted_date", item.PostedDate);
-                cmd.Parameters.AddWithValue("@close_date", item.CloseDate);
-                cmd.Parameters.AddWithValue("@wage", item.Wage);
-                cmd.Parameters.AddWithValue("@headcount", item.HeadCount);
-                cmd.Parameters.AddWithValue("@location", item.Location);
-                cmd.Parameters.AddWithValue("@qualification", item.Qualification);
-                cmd.Parameters.AddWithValue("@jobdesc", item.JobDescription);
-                cmd.Parameters.AddWithValue("@comments", item.Comments);
-
-                cmd.Connection.Open();
-                var rows = cmd.ExecuteNonQuery();
-                cmd.Connection.Close();
+                command.Parameters.AddWithValue("@id", item.ID);
+                command.Parameters.AddWithValue("@position_type ", item.PositionType);
+                command.Parameters.AddWithValue("@position ", item.Position);
+                command.Parameters.AddWithValue("@posted_date ", item.PostedDate);
+                command.Parameters.AddWithValue("@close_date ", item.CloseDate);
+                command.Parameters.AddWithValue("@wage", item.Wage);
+                command.Parameters.AddWithValue("@head_count", item.HeadCount);
+                command.Parameters.AddWithValue("@location ", item.Location);
+                command.Parameters.AddWithValue("@qualification ", item.Qualification);
+                command.Parameters.AddWithValue("@job_desc ", item.JobDescription);
+                command.Parameters.AddWithValue("@comments ", item.Comments);
+                
+                command.Connection.Open();
+                var rows = command.ExecuteNonQuery();
+                command.Connection.Close();
 
                 return rows > 0;
             }
@@ -65,7 +66,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.GetJobPostingByID;
+                adapter.SelectCommand.CommandText = "sp_getJobPostingByID";
 
                 adapter.SelectCommand.Parameters.AddWithValue("@id", id);
 
@@ -73,6 +74,24 @@ namespace Data.Access
                 row = table.Rows.Count > 0 ? table.Rows[0] : null;
 
                 return row;
+            }
+        }
+
+        public bool Delete(int Id)
+        {
+            using(var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_deleteJobPosting";
+
+                cmd.Parameters.AddWithValue("@id", Id);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return rows > 0;
             }
         }
     }

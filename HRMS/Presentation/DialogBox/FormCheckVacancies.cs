@@ -1,12 +1,6 @@
 ﻿using Data.Access;
+using Presentation.DialogBox.JobPosting;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox
@@ -14,23 +8,50 @@ namespace Presentation.DialogBox
     public partial class FormCheckVacancies : Form
     {
         private JobPostingAccess access;
-        private FormExternalApplicant form_applicant;
+        private BindingSource binding_source;
+        private FormRichTextbox qualification;
+        private FormRichTextbox job_desc;
+        private int ID;
+
         public FormCheckVacancies()
         {
             InitializeComponent();
-            this.form_applicant = new FormExternalApplicant();
             this.access = new JobPostingAccess();
+
+            this.binding_source = new BindingSource();
+            this.binding_source.DataSource = access.ShowData();
+            this.view_posting.DataSource = binding_source;
+
+            this.view_posting.Columns["ID"].Visible = false;
+            this.view_posting.Columns["Qualification"].Visible = false;
+            this.view_posting.Columns["JobDescription"].Visible = false;
+            this.view_posting.Columns["Comments"].Visible = false;
+
+            this.qualification = new FormRichTextbox();
+            this.qualification.Values.Enabled = false;
+            this.qualification.Text = "Qualification";
+
+            this.job_desc = new FormRichTextbox();
+            this.job_desc.Values.Enabled = false;
+            this.job_desc.Text = "Job Description";
+            
+        }
+
+        private void ReloadData()
+        {
+            this.binding_source.DataSource = access.ShowData();
+            this.view_posting.DataSource = binding_source;
         }
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            
+            var applicant = new FormExternalApplicant(ID);
+            applicant.ShowDialog();
         }
 
         private void FormCheckVacancies_Load(object sender, EventArgs e)
         {
-            this.view_employee.DataSource = access.ShowData();
-            this.view_employee.ClearSelection();
+            ReloadData();
         }
 
         private void view_employee_SelectionChanged(object sender, EventArgs e)
@@ -38,10 +59,10 @@ namespace Presentation.DialogBox
             try
             {
                 var gridview = sender as DataGridView;
-                if (view_employee.SelectedRows.Count > 0)
+                if (view_posting.SelectedRows.Count > 0)
                 {
-                    int index = int.Parse(gridview.SelectedRows[0].Cells[0].Value.ToString());
-                    var item = access.GetDataByID(index);
+                    ID = int.Parse(gridview.SelectedRows[0].Cells[0].Value.ToString());
+                    var item = access.GetDataByID(ID);
 
                     lbl_detail_positiontype.Text = item["PositionType"].ToString();
                     lbl_detail_position.Text = item["Position"].ToString();
@@ -50,8 +71,8 @@ namespace Presentation.DialogBox
                     lbl_detail_wage.Text = item["Wage"].ToString();
                     lbl_detail_headcount.Text = item["HeadCount"].ToString();
                     lbl_detail_location.Text = item["Location"].ToString();
-                    link_detail_qualification.Text = item["Qualification"].ToString();
-                    link_detail_jobdesc.Text = item["JobDescription"].ToString();
+                    qualification.Values.Text = item["Qualification"].ToString();
+                    job_desc.Values.Text = item["JobDescription"].ToString();
                 }
             }
             catch { }
@@ -59,6 +80,16 @@ namespace Presentation.DialogBox
             {
 
             }
+        }
+
+        private void link_detail_qualification_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.qualification.ShowDialog();
+        }
+
+        private void link_detail_jobdesc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.job_desc.ShowDialog();
         }
     }
 }

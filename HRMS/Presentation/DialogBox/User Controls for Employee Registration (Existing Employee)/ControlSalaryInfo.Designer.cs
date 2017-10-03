@@ -465,11 +465,11 @@
         private System.Windows.Forms.DateTimePicker date_started;
         private System.Windows.Forms.DateTimePicker date_accepted;
         private System.Windows.Forms.DateTimePicker date_approved;
-        private Miscellaneous.CustomTextbox tbx_costCenter;
-        private Miscellaneous.CustomTextbox tbx_relocAllowance;
-        private Miscellaneous.CustomTextbox tbx_shiftAllowance;
-        private Miscellaneous.CustomTextbox tbx_annualLangAllowance;
-        private Miscellaneous.CustomTextbox tbx_annualBasedSalary;
-        private Miscellaneous.CustomTextbox tbx_approvedSalary;
+        private Presentation.Miscellaneous.CustomTextbox tbx_costCenter;
+        private Presentation.Miscellaneous.CustomTextbox tbx_relocAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_shiftAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_annualLangAllowance;
+        private Presentation.Miscellaneous.CustomTextbox tbx_annualBasedSalary;
+        private Presentation.Miscellaneous.CustomTextbox tbx_approvedSalary;
     }
 }

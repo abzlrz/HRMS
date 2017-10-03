@@ -203,7 +203,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 //
                 //
                 // owner
-                this.owner.EmployeeID = int.Parse(tbx_owner_empID.Text);
+                this.owner.EmployeeID = int.Parse(cbx_owner_empID.Text);
                 this.owner.Firstname = tbx_owner_firstname.Text;
                 this.owner.Lastname = tbx_owner_lastname.Text;
 
@@ -213,12 +213,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             {
                 MessageBox.Show("Please fill-up all the required fields", "Arvato HRMS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-
-        private void tbx_owner_empID_TextChanged(object sender, EventArgs e)
-        {
-            Misc.TurnGreenIndicator(tbx_owner_empID.Text, lbl_emp_id);
         }
         #endregion
 
@@ -262,11 +256,17 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             this.cbx_contractType.ValueMember = "Type";
             this.cbx_contractType.DataSource = _eval.ShowContractType();
             //
-            //
+            // combobox role
             //
             this.cbx_role.DisplayMember = "Description";
             this.cbx_role.ValueMember = "Description";
             this.cbx_role.DataSource = _eval.ShowRoleData();
+            //
+            // combobox owner emp id
+            //
+            this.cbx_owner_empID.DisplayMember = "ID";
+            this.cbx_owner_empID.ValueMember = "ID";
+            this.cbx_owner_empID.DataSource = _emp.ShowData();
             
             if(ID > 0)
             {
@@ -280,19 +280,19 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 DataRow row_role = _emp.GetRole(ID);
                 DataRow row_owner = _emp.GetOwner(ID);
 
-                cbx_hiringManagerID.Text = row_manager["HiringManagerEmpID"].ToString();
-                cbx_hiringManagerName.Text = row_manager["HiringManagerName"].ToString();
-                cbx_titanTitle.Text = row_titantitle["TitanTitle"].ToString();
-                cbx_langRequirement.Text = row_titantitle["LanguageRequirements"].ToString();
-                cbx_bucket.Text = row_bucket["Bucket"].ToString();
-                cbx_arvatoLevel.Text = row_arvatolevel["ArvatoLevel"].ToString();
-                cbx_jobTitle.Text = row_job["Position"].ToString();
-                cbx_team.Text = row_team["Team"].ToString();
-                cbx_contractType.Text = row_contract["ContractType"].ToString();
-                cbx_role.Text = row_role["Role"].ToString();
-                tbx_owner_empID.Text = row_owner["EmployeeID"].ToString();
-                tbx_owner_firstname.Text = row_owner["Firstname"].ToString();
-                tbx_owner_lastname.Text = row_owner["Lastname"].ToString();
+                this.cbx_hiringManagerID.Text = row_manager["HiringManagerEmpID"].ToString();
+                this.cbx_hiringManagerName.Text = row_manager["HiringManagerName"].ToString();
+                this.cbx_titanTitle.Text = row_titantitle["TitanTitle"].ToString();
+                this.cbx_langRequirement.Text = row_titantitle["LanguageRequirements"].ToString();
+                this.cbx_bucket.Text = row_bucket["Bucket"].ToString();
+                this.cbx_arvatoLevel.Text = row_arvatolevel["ArvatoLevel"].ToString();
+                this.cbx_jobTitle.Text = row_job["Position"].ToString();
+                this.cbx_team.Text = row_team["Team"].ToString();
+                this.cbx_contractType.Text = row_contract["ContractType"].ToString();
+                this.cbx_role.Text = row_role["Role"].ToString();
+                this.cbx_owner_empID.Text = row_owner["EmployeeID"].ToString();
+                this.tbx_owner_firstname.Text = row_owner["Firstname"].ToString();
+                this.tbx_owner_lastname.Text = row_owner["Lastname"].ToString();
             }
             else
             {
@@ -301,6 +301,11 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 //
                 ClearAllFields();
             }
+        }
+
+        private void cbx_owner_empID_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(cbx_owner_empID.Text, lbl_emp_id);
         }
     }
 }

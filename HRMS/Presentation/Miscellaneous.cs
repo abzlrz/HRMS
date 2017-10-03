@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -156,11 +157,27 @@ namespace Presentation
     }
     public static class Misc
     {
+        public static void TurnGreenIndicator(DataTable table, Label source)
+        {
+            if (table.Rows.Count > 0)
+                source.ImageIndex = 0;
+            else
+                source.ImageIndex = 1;
+        }
         public static void TurnGreenIndicator(string text, Label source)
         {
             if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
                 source.ImageIndex = 1;
             else if (text.Length < 2)
+                source.ImageIndex = 1;
+            else
+                source.ImageIndex = 0;
+        }
+        public static void TurnGreenIndicator(string text, Label source, int length)
+        {
+            if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
+                source.ImageIndex = 1;
+            else if (text.Length < length)
                 source.ImageIndex = 1;
             else
                 source.ImageIndex = 0;

@@ -387,7 +387,7 @@
             this.btn_next.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_next.ForeColor = System.Drawing.Color.White;
-            this.btn_next.Location = new System.Drawing.Point(492, 35);
+            this.btn_next.Location = new System.Drawing.Point(492, 29);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(75, 35);
             this.btn_next.TabIndex = 12;
@@ -402,7 +402,7 @@
             this.btn_clear.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(330, 35);
+            this.btn_clear.Location = new System.Drawing.Point(330, 29);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 35);
             this.btn_clear.TabIndex = 11;
@@ -416,7 +416,7 @@
             this.btn_previous.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.btn_previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_previous.ForeColor = System.Drawing.Color.White;
-            this.btn_previous.Location = new System.Drawing.Point(411, 35);
+            this.btn_previous.Location = new System.Drawing.Point(411, 29);
             this.btn_previous.Name = "btn_previous";
             this.btn_previous.Size = new System.Drawing.Size(75, 35);
             this.btn_previous.TabIndex = 13;

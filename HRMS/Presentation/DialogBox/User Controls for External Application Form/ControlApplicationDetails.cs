@@ -1,5 +1,7 @@
 ﻿using Data.Access;
 using Data.Entities;
+using Presentation.DialogBox.ExternalApplicationForm;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Presentation.DialogBox.ExternalApplication
@@ -14,6 +16,10 @@ namespace Presentation.DialogBox.ExternalApplication
         #region fields
         private ApplicationSource source;
         private DataAccess context;
+        private FormBackgroundEducation education;
+        private FormEmploymentHistory employment;
+        public DataTable table_education;
+        public DataTable table_employment;
         #endregion
 
         public ControlApplicationDetails()
@@ -21,6 +27,9 @@ namespace Presentation.DialogBox.ExternalApplication
             InitializeComponent();
             this.source = new ApplicationSource();
             this.context = new DataAccess();
+            this.employment = new FormEmploymentHistory();
+            this.table_education = new DataTable();
+            this.table_employment = new DataTable();
         }
 
         #region methods
@@ -126,6 +135,24 @@ namespace Presentation.DialogBox.ExternalApplication
             this.cbx_source.DisplayMember = "Source";
             this.cbx_source.ValueMember = "Source";
             this.cbx_source.DataSource = context.ShowApplicationSourceData();
+        }
+
+        private void link_education_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(this.education.ShowDialog() == DialogResult.OK)
+            {
+                this.table_education = education.table_education;
+                Misc.TurnGreenIndicator(table_education, lbl_educationBackground);
+            }
+        }
+
+        private void link_employment_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(this.employment.ShowDialog() == DialogResult.OK)
+            {
+                this.table_employment = employment.table_employment;
+                Misc.TurnGreenIndicator(table_employment, lbl_employment);
+            }
         }
     }
 }
