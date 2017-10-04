@@ -45,6 +45,7 @@ namespace Data.Access
                 command.Parameters.AddWithValue("@wage", item.Wage);
                 command.Parameters.AddWithValue("@head_count", item.HeadCount);
                 command.Parameters.AddWithValue("@location ", item.Location);
+                command.Parameters.AddWithValue("@benefits", item.Benefits);
                 command.Parameters.AddWithValue("@qualification ", item.Qualification);
                 command.Parameters.AddWithValue("@job_desc ", item.JobDescription);
                 command.Parameters.AddWithValue("@comments ", item.Comments);

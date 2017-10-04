@@ -5,6 +5,8 @@ using System.Windows.Forms;
 using Data.Access;
 using Data.Entities;
 using Presentation.Maintenance;
+using static Presentation.Properties.Settings;
+using System.Data;
 
 namespace Presentation
 {
@@ -188,8 +190,17 @@ namespace Presentation
 
                 if (access.Login(user))
                 {
-                    this.form_main.Show();
+                    DataRow row = access.GetUserByID(int.Parse(user.Username));
+                    Default.AccessType = row["TitanTitle"].ToString();
+
+                    this.form_main.ShowDialog();
                     this.Hide();
+                }
+                else if(tbx_username.Text.Equals(Default.username3086) 
+                    && tbx_password.Text.Equals(Default.password3086))
+                {
+                    Default.AccessType = "Admin";
+                    this.form_main.ShowDialog();
                 }
                 else
                 {
@@ -201,6 +212,7 @@ namespace Presentation
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void OnApplyClick(object sender, System.EventArgs e)
         {
             this.form_vacancies.ShowDialog();

@@ -59,6 +59,12 @@
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.designer.cs">
       <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DialogBox\FormAuditLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormAuditLog.Designer.cs">
+      <DependentUpon>FormAuditLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\FormCheckVacancies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,18 @@
     </Compile>
     <Compile Include="DialogBox\FormJobPosting.Designer.cs">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\FormUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\FormUserManagement.Designer.cs">
+      <DependentUpon>FormUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\FormNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\FormNewPassword.Designer.cs">
+      <DependentUpon>FormNewPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\FormRichTextbox.cs">
       <SubType>Form</SubType>
@@ -227,12 +245,6 @@
     <Compile Include="Maintenance\FormRefManager.Designer.cs">
       <DependentUpon>FormRefManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maintenance\FormUserManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Maintenance\FormUserManagement.Designer.cs">
-      <DependentUpon>FormUserManagement.cs</DependentUpon>
-    </Compile>
     <Compile Include="Miscellaneous\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,12 +286,6 @@
     </Compile>
     <Compile Include="Modules\ControlInterviewEvaluation.Designer.cs">
       <DependentUpon>ControlInterviewEvaluation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\ControlPERChecklist.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Modules\ControlPERChecklist.Designer.cs">
-      <DependentUpon>ControlPERChecklist.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\ControlPerformanceAppraisal.cs">
       <SubType>UserControl</SubType>
@@ -370,6 +376,12 @@
     <EmbeddedResource Include="DialogBox\FormJobPosting.resx">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\FormUserManagement.resx">
+      <DependentUpon>FormUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\FormNewPassword.resx">
+      <DependentUpon>FormNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous\FormRichTextbox.resx">
       <DependentUpon>FormRichTextbox.cs</DependentUpon>
     </EmbeddedResource>
@@ -445,9 +457,6 @@
     <EmbeddedResource Include="Maintenance\FormRefManager.resx">
       <DependentUpon>FormRefManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Maintenance\FormUserManagement.resx">
-      <DependentUpon>FormUserManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,9 +477,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlInterviewEvaluation.resx">
       <DependentUpon>ControlInterviewEvaluation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ControlPERChecklist.resx">
-      <DependentUpon>ControlPERChecklist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ControlPerformanceAppraisal.resx">
       <DependentUpon>ControlPerformanceAppraisal.cs</DependentUpon>

@@ -78,28 +78,29 @@ namespace Data.Entities
     public class Illness
     {
         public int ApplicantID { get; set; }
-        public string IsDiagnosed { get; set; }
+        public bool IsDiagnosed { get; set; }
         public string Details { get; set; }
     }
 
     public class LegalCase
     {
         public int ApplicantID { get; set; }
-        public string IsLawsuited { get; set; }
-        public string Details { get; set; }
+        public bool IsLawsuited { get; set; }
+        public string Type { get; set; }
+        public string Status { get; set; }
     }
 
     public class LegalConviction
     {
         public int ApplicantID { get; set; }
-        public string IsConvicted { get; set; }
+        public bool IsConvicted { get; set; }
         public string Details { get; set; }
     }
 
     public class MedicalOperation
     {
         public int ApplicantID { get; set; }
-        public string IsOperated { get; set; }
+        public bool IsOperated { get; set; }
         public string Details { get; set; }
     }
 

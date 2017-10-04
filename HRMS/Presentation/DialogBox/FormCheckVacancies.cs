@@ -11,6 +11,7 @@ namespace Presentation.DialogBox
         private BindingSource binding_source;
         private FormRichTextbox qualification;
         private FormRichTextbox job_desc;
+        private FormRichTextbox benefits;
         private int ID;
 
         public FormCheckVacancies()
@@ -28,12 +29,16 @@ namespace Presentation.DialogBox
             this.view_posting.Columns["Comments"].Visible = false;
 
             this.qualification = new FormRichTextbox();
-            this.qualification.Values.Enabled = false;
+            this.qualification.Values.ReadOnly = true;
             this.qualification.Text = "Qualification";
 
             this.job_desc = new FormRichTextbox();
-            this.job_desc.Values.Enabled = false;
+            this.job_desc.Values.ReadOnly = true;
             this.job_desc.Text = "Job Description";
+
+            this.benefits = new FormRichTextbox();
+            this.benefits.Values.ReadOnly = true;
+            this.benefits.Text = "Benefits";
             
         }
 
@@ -45,7 +50,8 @@ namespace Presentation.DialogBox
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            var applicant = new FormExternalApplicant(ID);
+            var applicant = new FormExternalApplicant();
+            applicant.jobPostingID = ID;
             applicant.ShowDialog();
         }
 
@@ -59,8 +65,11 @@ namespace Presentation.DialogBox
             try
             {
                 var gridview = sender as DataGridView;
+
                 if (view_posting.SelectedRows.Count > 0)
                 {
+                    this.panel.Enabled = true;
+
                     ID = int.Parse(gridview.SelectedRows[0].Cells[0].Value.ToString());
                     var item = access.GetDataByID(ID);
 
@@ -71,8 +80,13 @@ namespace Presentation.DialogBox
                     lbl_detail_wage.Text = item["Wage"].ToString();
                     lbl_detail_headcount.Text = item["HeadCount"].ToString();
                     lbl_detail_location.Text = item["Location"].ToString();
+                    benefits.Values.Text = item["Benefits"].ToString();
                     qualification.Values.Text = item["Qualification"].ToString();
                     job_desc.Values.Text = item["JobDescription"].ToString();
+                }
+                else
+                {
+                    this.panel.Enabled = false;
                 }
             }
             catch { }
@@ -90,6 +104,11 @@ namespace Presentation.DialogBox
         private void link_detail_jobdesc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.job_desc.ShowDialog();
+        }
+
+        private void link_benefits_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.benefits.ShowDialog();
         }
     }
 }

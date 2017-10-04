@@ -8,11 +8,11 @@ namespace Presentation.DialogBox.JobPosting
         public FormRichTextbox()
         {
             InitializeComponent();
-            this.TYPE.Text = 0.ToString();
+            this.TYPE.Text = Values.TextLength.ToString();
         }
         private void Values_TextChanged(object sender, System.EventArgs e)
         {
-            this.TYPE.Text = Values.Text.Length.ToString();
+            this.TYPE.Text = Values.TextLength.ToString();
         }
     }
 }

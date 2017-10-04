@@ -32,26 +32,24 @@
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Interview Evaluation");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Employee Registration");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Employee Performance Appraisal");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Employee PER Checklist");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Recruitment", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Recruitment", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
-            treeNode3,
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Training Schedule");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Training Feedback & Assesment");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Training", new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Employee Resignation");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Reliving", new System.Windows.Forms.TreeNode[] {
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Reporting");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("5th Month");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Contract");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Notifications", new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13});
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Training Schedule");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Training Feedback & Assesment");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Training", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Employee Resignation");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Reliving", new System.Windows.Forms.TreeNode[] {
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Reporting");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("5th Month");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Contract");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Notifications", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.treeView = new System.Windows.Forms.TreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -105,44 +103,42 @@
             treeNode2.Text = "Employee Registration";
             treeNode3.Name = "Node3";
             treeNode3.Text = "Employee Performance Appraisal";
+            treeNode4.ImageIndex = 0;
             treeNode4.Name = "Node0";
-            treeNode4.Text = "Employee PER Checklist";
+            treeNode4.Text = "Recruitment";
             treeNode5.ImageIndex = 0;
-            treeNode5.Name = "Node0";
-            treeNode5.Text = "Recruitment";
+            treeNode5.Name = "Node4";
+            treeNode5.Text = "Training Schedule";
             treeNode6.ImageIndex = 0;
-            treeNode6.Name = "Node4";
-            treeNode6.Text = "Training Schedule";
+            treeNode6.Name = "Node6";
+            treeNode6.Text = "Training Feedback & Assesment";
             treeNode7.ImageIndex = 0;
-            treeNode7.Name = "Node6";
-            treeNode7.Text = "Training Feedback & Assesment";
+            treeNode7.Name = "Node1";
+            treeNode7.Text = "Training";
             treeNode8.ImageIndex = 0;
-            treeNode8.Name = "Node1";
-            treeNode8.Text = "Training";
+            treeNode8.Name = "Node9";
+            treeNode8.Text = "Employee Resignation";
             treeNode9.ImageIndex = 0;
-            treeNode9.Name = "Node9";
-            treeNode9.Text = "Employee Resignation";
+            treeNode9.Name = "Node8";
+            treeNode9.Text = "Reliving";
             treeNode10.ImageIndex = 0;
-            treeNode10.Name = "Node8";
-            treeNode10.Text = "Reliving";
+            treeNode10.Name = "Node11";
+            treeNode10.Text = "Reporting";
             treeNode11.ImageIndex = 0;
-            treeNode11.Name = "Node11";
-            treeNode11.Text = "Reporting";
+            treeNode11.Name = "Node18";
+            treeNode11.Text = "5th Month";
             treeNode12.ImageIndex = 0;
-            treeNode12.Name = "Node18";
-            treeNode12.Text = "5th Month";
+            treeNode12.Name = "Node20";
+            treeNode12.Text = "Contract";
             treeNode13.ImageIndex = 0;
-            treeNode13.Name = "Node20";
-            treeNode13.Text = "Contract";
-            treeNode14.ImageIndex = 0;
-            treeNode14.Name = "Node17";
-            treeNode14.Text = "Notifications";
+            treeNode13.Name = "Node17";
+            treeNode13.Text = "Notifications";
             this.treeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode8,
+            treeNode4,
+            treeNode7,
+            treeNode9,
             treeNode10,
-            treeNode11,
-            treeNode14});
+            treeNode13});
             this.treeView.SelectedImageIndex = 0;
             this.treeView.Size = new System.Drawing.Size(243, 555);
             this.treeView.TabIndex = 1;
@@ -196,25 +192,27 @@
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
             this.toolsToolStripMenuItem.Text = "&Tools";
+            this.toolsToolStripMenuItem.Visible = false;
             // 
             // customizeToolStripMenuItem
             // 
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
             this.customizeToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.customizeToolStripMenuItem.Text = "&Manage Users";
+            this.customizeToolStripMenuItem.Click += new System.EventHandler(this.customizeToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.optionsToolStripMenuItem.Text = "Job Posting";
-            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // auditLogsToolStripMenuItem
             // 
             this.auditLogsToolStripMenuItem.Name = "auditLogsToolStripMenuItem";
             this.auditLogsToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.auditLogsToolStripMenuItem.Text = "Audit Logs";
+            this.auditLogsToolStripMenuItem.Click += new System.EventHandler(this.auditLogsToolStripMenuItem_Click);
             // 
             // manageReferencesToolStripMenuItem
             // 
@@ -432,7 +430,6 @@
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
@@ -454,6 +451,7 @@
         private System.Windows.Forms.ToolStripMenuItem manageReferencesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUserToolStripMenuItem;
         private Miscellaneous.ControlCurrentUserOnUse controlCurrentUserOnUse1;
+        public System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
     }
 }
 

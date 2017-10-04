@@ -101,6 +101,7 @@ namespace Presentation
             }
             return result;
         }
+        
         public static void ClearAll(this Panel panel)
         {
             foreach (Control control in panel.Controls)
@@ -189,15 +190,6 @@ namespace Presentation
             else
                 source.ImageIndex = 0;
         }
-
-        public static void TurnGreenIndicator(bool linkvalue, Label source)
-        {
-            if (linkvalue)
-                source.ImageIndex = 0;
-            else
-                source.ImageIndex = 1;
-        }
-
         public static void TurnGreenIndicator(MaskedTextBox tbs, Label source, bool IsRequired)
         {
             if (IsRequired)
@@ -220,6 +212,7 @@ namespace Presentation
                 }
             }
         }
+        
     }
     public class Draggable
     {

@@ -133,13 +133,6 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         {
             Misc.TurnGreenIndicator(cbx_hiringManagerName.Text, lbl_managerName);
         }
-
-        private void cbx_hiringManagerName_SelectedValueChanged(object sender, EventArgs e)
-        {
-            this.cbx_hiringManagerID.Text = (cbx_hiringManagerName.DataSource as DataTable).Rows[0][0].ToString();
-        }
-
-
         private void tbx_owner_firstname_TextChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(tbx_owner_firstname.Text, lbl_owner_firstname);
@@ -169,7 +162,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 //
                 // hiring manager
                 //
-                this.hiringmanager.EmployeeID = int.Parse(cbx_hiringManagerID.Text);
+                this.hiringmanager.EmployeeID = int.Parse(tbx_hiringManagerID.Text);
                 this.hiringmanager.Name = cbx_hiringManagerName.Text;
                 //
                 // titan title
@@ -266,7 +259,7 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             //
             this.cbx_owner_empID.DisplayMember = "ID";
             this.cbx_owner_empID.ValueMember = "ID";
-            this.cbx_owner_empID.DataSource = _emp.ShowData();
+            this.cbx_owner_empID.DataSource = _emp.ShowHiringManagerData();
             
             if(ID > 0)
             {
@@ -278,10 +271,10 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 DataRow row_team = _emp.GetTeam(ID);
                 DataRow row_contract = _emp.GetContractType(ID);
                 DataRow row_role = _emp.GetRole(ID);
-                DataRow row_owner = _emp.GetOwner(ID);
+                DataRow row_owner = _emp.GetManager(ID);
 
-                this.cbx_hiringManagerID.Text = row_manager["HiringManagerEmpID"].ToString();
-                this.cbx_hiringManagerName.Text = row_manager["HiringManagerName"].ToString();
+                this.tbx_hiringManagerID.Text = row_manager["HiringManagerID"].ToString();
+                this.tbx_hiringManagerID.Text = row_manager["HiringManagerName"].ToString();
                 this.cbx_titanTitle.Text = row_titantitle["TitanTitle"].ToString();
                 this.cbx_langRequirement.Text = row_titantitle["LanguageRequirements"].ToString();
                 this.cbx_bucket.Text = row_bucket["Bucket"].ToString();
@@ -306,6 +299,20 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
         private void cbx_owner_empID_TextChanged(object sender, EventArgs e)
         {
             Misc.TurnGreenIndicator(cbx_owner_empID.Text, lbl_emp_id);
+        }
+
+        private void cbx_hiringManagerName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataRow row = _emp.GetHiringManager(cbx_hiringManagerName.Text);
+            tbx_hiringManagerID.Text = row["ID"].ToString();
+
+        }
+
+        private void cbx_owner_empID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataRow row = _emp.GetEmployeeInfo(int.Parse(cbx_owner_empID.Text));
+            tbx_owner_firstname.Text = row["Firstname"].ToString();
+            tbx_owner_lastname.Text = row["Lastname"].ToString();
         }
     }
 }

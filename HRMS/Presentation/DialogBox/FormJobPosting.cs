@@ -41,8 +41,6 @@ namespace Presentation.DialogBox
             this.form_edit_qualification.Values.TextChanged += Form_Edit_QualificationValues_Textchanged;
         }
 
-        
-
         #region Methods
         private void ResetAddFields()
         {
@@ -75,6 +73,12 @@ namespace Presentation.DialogBox
             cbx_add_location.SelectedIndex = -1;
             cbx_add_position.SelectedIndex = -1;
             cbx_edit_location.SelectedIndex = -1;
+            form_add_benefits.Values.ResetText();
+            form_add_jobdesc.Values.ResetText();
+            form_add_qualification.Values.ResetText();
+            form_edit_benefits.Values.ResetText();
+            form_edit_jobdesc.Values.ResetText();
+            form_edit_qualification.Values.ResetText();
         }
         private void RefreshData()
         {
@@ -169,6 +173,7 @@ namespace Presentation.DialogBox
             this.view_posting.Columns["ID"].Visible = false;
             this.view_posting.Columns["Qualification"].Visible = false;
             this.view_posting.Columns["JobDescription"].Visible = false;
+            this.view_posting.Columns["Benefits"].Visible = false;
             this.view_posting.Columns["Comments"].Visible = false;
             //
             // add_position combobox
@@ -374,7 +379,7 @@ namespace Presentation.DialogBox
 
                     if (access.InsertUpdateData(item))
                     {
-                        MessageBox.Show("Data Successfully Added!");
+                        MessageBox.Show("Data Successfully Updated!");
                         RefreshData();
                         ResetAddFields();
                     }

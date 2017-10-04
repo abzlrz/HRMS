@@ -9,94 +9,82 @@ namespace Data.Access
 {
     public class UserAccess
     {
-        public bool Login(User user)
+        public DataRow GetUserByID(int Id)
         {
-            var table = new DataTable();
-            DataRow row;
-
-            using (var adapter = new SqlDataAdapter())
-            {
-                adapter.SelectCommand = new SqlCommand();
-                adapter.SelectCommand.Connection = new SqlConnection(DB.ConnectionString);
-                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "[User].sp_login";
-                adapter.SelectCommand.Parameters.AddWithValue("@id", user.Username);
-                adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
-
-                adapter.Fill(table);
-                row = table.Rows.Count > 0 ? table.Rows[0] : null;
-
-                return row == null ? false : true;
-            }
-        }
-
-        public DataRow GetUserByID(int id)
-        {
-            var table = new DataTable();
-            DataRow row;
+            DataTable table = new DataTable();
             using (var adapter = new SqlDataAdapter())
             {
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.GetUserByID;
+                adapter.SelectCommand.CommandText = "sp_getUserByID";
 
-                adapter.SelectCommand.Parameters.AddWithValue("@id", id);
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
 
                 adapter.Fill(table);
-                row = table.Rows.Count > 0 ? table.Rows[0] : null;
 
-                return row;
+                return table.Rows.Count > 0 ? table.Rows[0] : null;
             }
         }
 
-        public bool Insert(User user)
+        public bool Login(User user)
         {
-            using(var cmd = new SqlCommand())
-            {
-                cmd.Connection = new SqlConnection(Default.ConnectionString);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = Default.InsertUser;
-
-                cmd.Parameters.AddWithValue("@username", user.Username);
-                cmd.Parameters.AddWithValue("@password", user.Password);
-
-                cmd.Connection.Open();
-                var rows = cmd.ExecuteNonQuery();
-                cmd.Connection.Close();
-
-                return rows > 0;
-            }
-        }
-
-        public DataTable ShowData()
-        {
-            
-            var data = new DataTable();
+            var table = new DataTable();
             using(var adapter = new SqlDataAdapter())
             {
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = Default.ShowBucketData;
+                adapter.SelectCommand.CommandText = "sp_user_login";
 
-                adapter.Fill(data);
+                adapter.SelectCommand.Parameters.AddWithValue("@id", user.Username);
+                adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
+
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? true : false;
             }
-            return data;
-            throw new NotImplementedException();
         }
 
-        public bool Update(int id, User user)
+        public void ReloadHRUsers()
         {
-            using(var cmd = new SqlCommand())
+            using (var cmd = new SqlCommand())
             {
                 cmd.Connection = new SqlConnection(Default.ConnectionString);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = Default.UpdateUser;
+                cmd.CommandText = "sp_reload_hr_users";
 
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@username", user.Username);
-                cmd.Parameters.AddWithValue("@password", user.Password);
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+            }
+        }
+
+        public DataTable ShowHRUsers()
+        {
+            DataTable table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showHRUsers";
+
+                adapter.Fill(table);
+            }
+            return table;
+        }
+
+        public bool UpdateUserPassword(string text, int id)
+        {
+            using (var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_updateUserPassword";
+
+                cmd.Parameters.AddWithValue("@id", id); 
+                cmd.Parameters.AddWithValue("@password", text);
 
                 cmd.Connection.Open();
                 var rows = cmd.ExecuteNonQuery();
@@ -105,23 +93,23 @@ namespace Data.Access
                 return rows > 0;
             }
         }
-        public bool Delete(int id)
+
+        public bool UnblockUser(int Id)
         {
             using (var cmd = new SqlCommand())
             {
                 cmd.Connection = new SqlConnection(Default.ConnectionString);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = Default.DeleteUser;
+                cmd.CommandText = "sp_unblockUser";
 
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", Id);
 
                 cmd.Connection.Open();
-                var row = cmd.ExecuteNonQuery();
+                var rows = cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
 
-                return row > 0;
+                return rows > 0;
             }
         }
-
     }
 }

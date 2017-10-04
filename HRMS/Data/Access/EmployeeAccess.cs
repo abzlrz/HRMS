@@ -27,6 +27,20 @@ namespace Data.Access
             }
             return data;
         }
+        public DataTable ShowDataFullname()
+        {
+            var data = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showEmployeeName";
+
+                adapter.Fill(data);
+            }
+            return data;
+        }
         public DataTable ShowHiringManagerData()
         {
             var data = new DataTable();
@@ -97,6 +111,40 @@ namespace Data.Access
 
                 return rows > 0;
             }
+        }
+
+        public DataRow GetEmployeeID(string name)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getEmployeeIDByName";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@name", name);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
+        }
+
+        public DataRow GetEmployeeName(int Id)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getEmployeeNameByID";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
         }
 
         public bool DeleteEmployee(int Id)
@@ -185,6 +233,23 @@ namespace Data.Access
             return table.Rows.Count > 0 ? table.Rows[0] : null;
         }
 
+        public DataRow GetHiringManager(string name)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getHiringManagerByName";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@name", name);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
+        }
+
         public DataRow GetTitanTitle(int Id)
         {
             var table = new DataTable();
@@ -219,6 +284,23 @@ namespace Data.Access
             return table.Rows.Count > 0 ? table.Rows[0] : null;
         }
 
+        public DataRow GetManager(int Id)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showManagerData";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
+        }
+        
         public DataRow GetRole(int Id)
         {
             var table = new DataTable();

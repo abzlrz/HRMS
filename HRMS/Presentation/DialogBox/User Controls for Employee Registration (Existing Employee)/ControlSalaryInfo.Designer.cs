@@ -32,6 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlSalaryInfo));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_costCenter = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_relocAllowance = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_shiftAllowance = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_annualLangAllowance = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_annualBasedSalary = new Presentation.Miscellaneous.CustomTextbox();
+            this.tbx_approvedSalary = new Presentation.Miscellaneous.CustomTextbox();
             this.date_started = new System.Windows.Forms.DateTimePicker();
             this.date_accepted = new System.Windows.Forms.DateTimePicker();
             this.tbx_relocAllowanceDetails = new System.Windows.Forms.TextBox();
@@ -51,12 +57,6 @@
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_previous = new System.Windows.Forms.Button();
-            this.tbx_approvedSalary = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_annualBasedSalary = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_annualLangAllowance = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_shiftAllowance = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_relocAllowance = new Presentation.Miscellaneous.CustomTextbox();
-            this.tbx_costCenter = new Presentation.Miscellaneous.CustomTextbox();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -117,6 +117,70 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(499, 235);
             this.tableLayoutPanel3.TabIndex = 56;
             // 
+            // tbx_costCenter
+            // 
+            this.tbx_costCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_costCenter.Location = new System.Drawing.Point(262, 209);
+            this.tbx_costCenter.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_costCenter.Name = "tbx_costCenter";
+            this.tbx_costCenter.Size = new System.Drawing.Size(235, 22);
+            this.tbx_costCenter.TabIndex = 62;
+            this.tbx_costCenter.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            // 
+            // tbx_relocAllowance
+            // 
+            this.tbx_relocAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_relocAllowance.Location = new System.Drawing.Point(262, 163);
+            this.tbx_relocAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_relocAllowance.Name = "tbx_relocAllowance";
+            this.tbx_relocAllowance.Size = new System.Drawing.Size(235, 22);
+            this.tbx_relocAllowance.TabIndex = 61;
+            this.tbx_relocAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            // 
+            // tbx_shiftAllowance
+            // 
+            this.tbx_shiftAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_shiftAllowance.Location = new System.Drawing.Point(262, 140);
+            this.tbx_shiftAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_shiftAllowance.Name = "tbx_shiftAllowance";
+            this.tbx_shiftAllowance.Size = new System.Drawing.Size(235, 22);
+            this.tbx_shiftAllowance.TabIndex = 60;
+            this.tbx_shiftAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.tbx_shiftAllowance.TextChanged += new System.EventHandler(this.tbx_shiftAllowance_TextChanged);
+            // 
+            // tbx_annualLangAllowance
+            // 
+            this.tbx_annualLangAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_annualLangAllowance.Location = new System.Drawing.Point(262, 117);
+            this.tbx_annualLangAllowance.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_annualLangAllowance.Name = "tbx_annualLangAllowance";
+            this.tbx_annualLangAllowance.Size = new System.Drawing.Size(235, 22);
+            this.tbx_annualLangAllowance.TabIndex = 59;
+            this.tbx_annualLangAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.tbx_annualLangAllowance.TextChanged += new System.EventHandler(this.tbx_annualLangAllowance_TextChanged);
+            // 
+            // tbx_annualBasedSalary
+            // 
+            this.tbx_annualBasedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_annualBasedSalary.Location = new System.Drawing.Point(262, 94);
+            this.tbx_annualBasedSalary.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_annualBasedSalary.Name = "tbx_annualBasedSalary";
+            this.tbx_annualBasedSalary.Size = new System.Drawing.Size(235, 22);
+            this.tbx_annualBasedSalary.TabIndex = 58;
+            this.tbx_annualBasedSalary.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.tbx_annualBasedSalary.TextChanged += new System.EventHandler(this.tbx_annualBasedSalary_TextChanged);
+            // 
+            // tbx_approvedSalary
+            // 
+            this.tbx_approvedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_approvedSalary.Location = new System.Drawing.Point(262, 71);
+            this.tbx_approvedSalary.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_approvedSalary.Name = "tbx_approvedSalary";
+            this.tbx_approvedSalary.Size = new System.Drawing.Size(235, 22);
+            this.tbx_approvedSalary.TabIndex = 57;
+            this.tbx_approvedSalary.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
+            this.tbx_approvedSalary.TextChanged += new System.EventHandler(this.tbx_approvedSalary_TextChanged);
+            // 
             // date_started
             // 
             this.date_started.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -171,7 +235,7 @@
             this.lbl_shiftAllowance.Name = "lbl_shiftAllowance";
             this.lbl_shiftAllowance.Size = new System.Drawing.Size(252, 21);
             this.lbl_shiftAllowance.TabIndex = 49;
-            this.lbl_shiftAllowance.Text = "Shift Allowance:";
+            this.lbl_shiftAllowance.Text = "Shift Allowance (PHP):";
             this.lbl_shiftAllowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // imageList
@@ -193,7 +257,7 @@
             this.lbl_annualLangAllowance.Name = "lbl_annualLangAllowance";
             this.lbl_annualLangAllowance.Size = new System.Drawing.Size(252, 21);
             this.lbl_annualLangAllowance.TabIndex = 42;
-            this.lbl_annualLangAllowance.Text = "Annual Language Allowance:";
+            this.lbl_annualLangAllowance.Text = "Annual Language Allowance (PHP):";
             this.lbl_annualLangAllowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_annualBasedSalary
@@ -208,7 +272,7 @@
             this.lbl_annualBasedSalary.Name = "lbl_annualBasedSalary";
             this.lbl_annualBasedSalary.Size = new System.Drawing.Size(252, 21);
             this.lbl_annualBasedSalary.TabIndex = 40;
-            this.lbl_annualBasedSalary.Text = "Annual-based Salary:";
+            this.lbl_annualBasedSalary.Text = "Annual-based Salary (PHP):";
             this.lbl_annualBasedSalary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_approvedSalary
@@ -223,7 +287,7 @@
             this.lbl_approvedSalary.Name = "lbl_approvedSalary";
             this.lbl_approvedSalary.Size = new System.Drawing.Size(252, 21);
             this.lbl_approvedSalary.TabIndex = 36;
-            this.lbl_approvedSalary.Text = "Approved Salary:";
+            this.lbl_approvedSalary.Text = "Approved Salary (PHP):";
             this.lbl_approvedSalary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_dateStarted
@@ -281,7 +345,7 @@
             this.lbl_relocAllowance.Name = "lbl_relocAllowance";
             this.lbl_relocAllowance.Size = new System.Drawing.Size(252, 21);
             this.lbl_relocAllowance.TabIndex = 50;
-            this.lbl_relocAllowance.Text = "Relocation Allowance:";
+            this.lbl_relocAllowance.Text = "Relocation Allowance (PHP):";
             this.lbl_relocAllowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_relocAllowanceDetails
@@ -359,70 +423,6 @@
             this.btn_previous.Text = "Previous";
             this.btn_previous.UseVisualStyleBackColor = false;
             this.btn_previous.Click += new System.EventHandler(this.btn_previous_Click);
-            // 
-            // tbx_approvedSalary
-            // 
-            this.tbx_approvedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_approvedSalary.Location = new System.Drawing.Point(262, 71);
-            this.tbx_approvedSalary.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_approvedSalary.Name = "tbx_approvedSalary";
-            this.tbx_approvedSalary.Size = new System.Drawing.Size(235, 22);
-            this.tbx_approvedSalary.TabIndex = 57;
-            this.tbx_approvedSalary.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            this.tbx_approvedSalary.TextChanged += new System.EventHandler(this.tbx_approvedSalary_TextChanged);
-            // 
-            // tbx_annualBasedSalary
-            // 
-            this.tbx_annualBasedSalary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_annualBasedSalary.Location = new System.Drawing.Point(262, 94);
-            this.tbx_annualBasedSalary.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_annualBasedSalary.Name = "tbx_annualBasedSalary";
-            this.tbx_annualBasedSalary.Size = new System.Drawing.Size(235, 22);
-            this.tbx_annualBasedSalary.TabIndex = 58;
-            this.tbx_annualBasedSalary.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            this.tbx_annualBasedSalary.TextChanged += new System.EventHandler(this.tbx_annualBasedSalary_TextChanged);
-            // 
-            // tbx_annualLangAllowance
-            // 
-            this.tbx_annualLangAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_annualLangAllowance.Location = new System.Drawing.Point(262, 117);
-            this.tbx_annualLangAllowance.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_annualLangAllowance.Name = "tbx_annualLangAllowance";
-            this.tbx_annualLangAllowance.Size = new System.Drawing.Size(235, 22);
-            this.tbx_annualLangAllowance.TabIndex = 59;
-            this.tbx_annualLangAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            this.tbx_annualLangAllowance.TextChanged += new System.EventHandler(this.tbx_annualLangAllowance_TextChanged);
-            // 
-            // tbx_shiftAllowance
-            // 
-            this.tbx_shiftAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_shiftAllowance.Location = new System.Drawing.Point(262, 140);
-            this.tbx_shiftAllowance.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_shiftAllowance.Name = "tbx_shiftAllowance";
-            this.tbx_shiftAllowance.Size = new System.Drawing.Size(235, 22);
-            this.tbx_shiftAllowance.TabIndex = 60;
-            this.tbx_shiftAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            this.tbx_shiftAllowance.TextChanged += new System.EventHandler(this.tbx_shiftAllowance_TextChanged);
-            // 
-            // tbx_relocAllowance
-            // 
-            this.tbx_relocAllowance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_relocAllowance.Location = new System.Drawing.Point(262, 163);
-            this.tbx_relocAllowance.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_relocAllowance.Name = "tbx_relocAllowance";
-            this.tbx_relocAllowance.Size = new System.Drawing.Size(235, 22);
-            this.tbx_relocAllowance.TabIndex = 61;
-            this.tbx_relocAllowance.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
-            // 
-            // tbx_costCenter
-            // 
-            this.tbx_costCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_costCenter.Location = new System.Drawing.Point(262, 209);
-            this.tbx_costCenter.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_costCenter.Name = "tbx_costCenter";
-            this.tbx_costCenter.Size = new System.Drawing.Size(235, 22);
-            this.tbx_costCenter.TabIndex = 62;
-            this.tbx_costCenter.TextInputType = Presentation.Miscellaneous.CustomTextbox.InputType.Decimals;
             // 
             // ControlSalaryInfo
             // 

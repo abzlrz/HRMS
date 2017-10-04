@@ -209,7 +209,7 @@
             this.cbx_add_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_positiontype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_add_positiontype.FormattingEnabled = true;
-            this.cbx_add_positiontype.Location = new System.Drawing.Point(127, 5);
+            this.cbx_add_positiontype.Location = new System.Drawing.Point(127, 7);
             this.cbx_add_positiontype.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_positiontype.Name = "cbx_add_positiontype";
             this.cbx_add_positiontype.Size = new System.Drawing.Size(183, 23);
@@ -436,7 +436,7 @@
             this.cbx_add_position.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbx_add_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_add_position.FormattingEnabled = true;
-            this.cbx_add_position.Location = new System.Drawing.Point(127, 33);
+            this.cbx_add_position.Location = new System.Drawing.Point(127, 35);
             this.cbx_add_position.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_add_position.Name = "cbx_add_position";
             this.cbx_add_position.Size = new System.Drawing.Size(183, 23);
@@ -581,7 +581,7 @@
             this.cbx_edit_positiontype.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_edit_positiontype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_edit_positiontype.FormattingEnabled = true;
-            this.cbx_edit_positiontype.Location = new System.Drawing.Point(127, 5);
+            this.cbx_edit_positiontype.Location = new System.Drawing.Point(127, 7);
             this.cbx_edit_positiontype.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_edit_positiontype.Name = "cbx_edit_positiontype";
             this.cbx_edit_positiontype.Size = new System.Drawing.Size(183, 23);
@@ -799,7 +799,7 @@
             this.cbx_edit_position.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbx_edit_position.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbx_edit_position.FormattingEnabled = true;
-            this.cbx_edit_position.Location = new System.Drawing.Point(127, 33);
+            this.cbx_edit_position.Location = new System.Drawing.Point(127, 35);
             this.cbx_edit_position.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_edit_position.Name = "cbx_edit_position";
             this.cbx_edit_position.Size = new System.Drawing.Size(183, 23);

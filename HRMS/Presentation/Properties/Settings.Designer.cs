@@ -58,5 +58,41 @@ namespace Presentation.Properties {
                 this["yes"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
+        public string username3086 {
+            get {
+                return ((string)(this["username3086"]));
+            }
+            set {
+                this["username3086"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12#2!@31se")]
+        public string password3086 {
+            get {
+                return ((string)(this["password3086"]));
+            }
+            set {
+                this["password3086"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Administrator")]
+        public string AccessType {
+            get {
+                return ((string)(this["AccessType"]));
+            }
+            set {
+                this["AccessType"] = value;
+            }
+        }
     }
 }

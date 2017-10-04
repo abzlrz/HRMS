@@ -12,8 +12,8 @@ namespace Presentation.DialogBox.ExternalApplication
         #endregion
 
         #region fields
-        private ApplicantAddress present_address;
-        private ApplicantAddress permanent_address;
+        public ApplicantAddress present_address;
+        public ApplicantAddress permanent_address;
         #endregion
         public ControlAddress()
         {

@@ -39,10 +39,6 @@ namespace Presentation.Modules
         {
             this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
         }
-        private void ReloadInternalApplicantData()
-        {
-            this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
-        }
         private void ReloadEmployeeData()
         {
             this.view_employee.DataSource = context.Employee.ShowData();
@@ -52,7 +48,6 @@ namespace Presentation.Modules
         {
             this.context_employee = new EmployeeAccess();
             this.view_employee.DataSource = context.Employee.ShowData();
-            this.view_internal_applicant.DataSource = context.InternalApplicant.ShowData();
             this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
             //
             // view_employeee
@@ -89,6 +84,8 @@ namespace Presentation.Modules
                     {
                         MessageBox.Show("Deleted!");
                     }
+
+                    ReloadEmployeeData();
                 }
             }
         }

@@ -13,6 +13,7 @@ namespace Presentation.DialogBox.ExternalApplication
 
         #region fields
         public Applicant applicant;
+        public ContactPerson contact;
         private bool isUnder18 = false;
         #endregion
 
@@ -20,6 +21,7 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             InitializeComponent();
             this.applicant = new Applicant();
+            this.contact = new ContactPerson();
         }
 
         #region methods
@@ -92,7 +94,10 @@ namespace Presentation.DialogBox.ExternalApplication
                 this.applicant.HDMF = tbx_HDMF.Text;
                 this.applicant.BankAccount = tbx_bankAccnt.Text;
                 this.applicant.ApplicationDate = DateTime.Today;
-
+                this.contact.Firstname = tbx_contact_firstname.Text;
+                this.contact.Lastname = tbx_contact_lastname.Text;
+                this.contact.ContactNumber = tbx_contact_number.Text;
+                this.contact.RelationShip = cbx_relationship.Text;
                 Next.BringToFront();
             }
             else
@@ -169,7 +174,5 @@ namespace Presentation.DialogBox.ExternalApplication
             Misc.TurnGreenIndicator(cbx_relationship.SelectedIndex, lbl_relationship);
         }
         #endregion
-
-
     }
 }

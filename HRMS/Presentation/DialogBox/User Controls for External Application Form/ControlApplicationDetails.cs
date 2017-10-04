@@ -14,10 +14,13 @@ namespace Presentation.DialogBox.ExternalApplication
         #endregion
 
         #region fields
-        private ApplicationSource source;
-        private DataAccess context;
-        private FormBackgroundEducation education;
-        private FormEmploymentHistory employment;
+        public ApplicationSource source;
+        public Position position;
+        private JobPostingAccess access_jobposting;
+        private DataAccess access;
+        private EmployeeAccess access_employee;
+        private FormBackgroundEducation form_education;
+        private FormEmploymentHistory form_employment;
         public DataTable table_education;
         public DataTable table_employment;
         #endregion
@@ -26,8 +29,12 @@ namespace Presentation.DialogBox.ExternalApplication
         {
             InitializeComponent();
             this.source = new ApplicationSource();
-            this.context = new DataAccess();
-            this.employment = new FormEmploymentHistory();
+            this.position = new Position();
+            this.access = new DataAccess();
+            this.access_jobposting = new JobPostingAccess();
+            this.access_employee = new EmployeeAccess();
+            this.form_employment = new FormEmploymentHistory();
+            this.form_education = new FormBackgroundEducation();
             this.table_education = new DataTable();
             this.table_employment = new DataTable();
         }
@@ -86,12 +93,15 @@ namespace Presentation.DialogBox.ExternalApplication
 
         private void cbx_employeeName_TextChanged(object sender, System.EventArgs e)
         {
-            Misc.TurnGreenIndicator(cbx_employeeName.SelectedIndex, lbl_employeeName);
+            Misc.TurnGreenIndicator(cbx_employeeName.Text, lbl_employeeName);
         }
 
         private void cbx_employeeID_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            Misc.TurnGreenIndicator(cbx_employeeID.SelectedIndex, lbl_employeeID);
+            DataRow row = access_employee.GetEmployeeName(int.Parse(cbx_employeeID.Text));
+            this.cbx_employeeName.Text = row["Name"].ToString();
+
+            Misc.TurnGreenIndicator(cbx_employeeID.Text, lbl_employeeID);
         }
         #endregion
 
@@ -109,8 +119,13 @@ namespace Presentation.DialogBox.ExternalApplication
                 // application source
                 //
                 source.Source = cbx_source.Text;
-                source.ReferralID = int.Parse(cbx_source.Text);
+                source.ReferralID = int.Parse(cbx_employeeID.Text);
                 source.ReferralName = cbx_employeeName.Text;
+                //
+                // position applied
+                //
+                position.PositionTitle = lbl_position_title.Text;
+                position.PreferredSite = lbl_site.Text;
 
                 Next.BringToFront();
             }
@@ -129,30 +144,65 @@ namespace Presentation.DialogBox.ExternalApplication
 
         private void OnLoad(object sender, System.EventArgs e)
         {
+            ClearAllFields();
             //
             // cbx_applicationsource
             //
             this.cbx_source.DisplayMember = "Source";
             this.cbx_source.ValueMember = "Source";
-            this.cbx_source.DataSource = context.ShowApplicationSourceData();
+            this.cbx_source.DataSource = access.ShowApplicationSourceData();
+            //
+            //
+            //
+            this.cbx_employeeName.DisplayMember = "Name";
+            this.cbx_employeeName.ValueMember = "Name";
+            this.cbx_employeeName.DataSource = access_employee.ShowDataFullname();
+            //
+            //
+            //
+            this.cbx_employeeID.DisplayMember = "ID";
+            this.cbx_employeeID.ValueMember = "ID";
+            this.cbx_employeeID.DataSource = access_employee.ShowDataFullname();
         }
 
         private void link_education_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(this.education.ShowDialog() == DialogResult.OK)
+            if(this.form_education.ShowDialog() == DialogResult.OK)
             {
-                this.table_education = education.table_education;
+                this.table_education = form_education.table_education;
                 Misc.TurnGreenIndicator(table_education, lbl_educationBackground);
             }
         }
 
         private void link_employment_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(this.employment.ShowDialog() == DialogResult.OK)
+            if(this.form_employment.ShowDialog() == DialogResult.OK)
             {
-                this.table_employment = employment.table_employment;
+                this.table_employment = form_employment.table_employment;
                 Misc.TurnGreenIndicator(table_employment, lbl_employment);
             }
+        }
+
+        private void cbx_employeeName_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            DataRow row = access_employee.GetEmployeeID(cbx_employeeName.Text);
+            this.cbx_employeeID.Text = row["ID"].ToString();
+        }
+
+        private void cbx_workExp_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            if(cbx_workExp.Text.Equals("Yes"))
+            {
+                link_employment.Visible = true;
+                lbl_employment.ImageIndex = 1;
+            }
+            else
+            {
+                link_employment.Visible = false;
+                lbl_employment.ImageIndex = -1;
+            }
+
+            Misc.TurnGreenIndicator(cbx_workExp.SelectedIndex, lbl_workExp);
         }
     }
 }

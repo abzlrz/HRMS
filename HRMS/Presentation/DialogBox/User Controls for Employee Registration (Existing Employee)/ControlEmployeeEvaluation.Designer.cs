@@ -32,17 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlEmployeeEvaluation));
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_hiringManagerID = new System.Windows.Forms.TextBox();
             this.tbx_owner_lastname = new System.Windows.Forms.TextBox();
             this.lbl_owner_lastname = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.cbx_hiringManagerID = new System.Windows.Forms.ComboBox();
             this.cbx_hiringManagerName = new System.Windows.Forms.ComboBox();
             this.lbl_managerName = new System.Windows.Forms.Label();
             this.lbl_managerID = new System.Windows.Forms.Label();
             this.cbx_jobTitle = new System.Windows.Forms.ComboBox();
             this.lbl_jobTitle = new System.Windows.Forms.Label();
             this.cbx_team = new System.Windows.Forms.ComboBox();
-            this.cbx_contractType = new System.Windows.Forms.ComboBox();
             this.cbx_arvatoLevel = new System.Windows.Forms.ComboBox();
             this.cbx_bucket = new System.Windows.Forms.ComboBox();
             this.cbx_langRequirement = new System.Windows.Forms.ComboBox();
@@ -59,6 +58,7 @@
             this.lbl_owner_firstname = new System.Windows.Forms.Label();
             this.tbx_owner_firstname = new System.Windows.Forms.TextBox();
             this.cbx_owner_empID = new System.Windows.Forms.ComboBox();
+            this.cbx_contractType = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@
             this.gbxAppInfo.Size = new System.Drawing.Size(563, 404);
             this.gbxAppInfo.TabIndex = 0;
             this.gbxAppInfo.TabStop = false;
-            this.gbxAppInfo.Text = "Evaluation Info";
+            this.gbxAppInfo.Text = "Job Info";
             // 
             // tableLayoutPanel4
             // 
@@ -86,16 +86,15 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.68008F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.31992F));
+            this.tableLayoutPanel4.Controls.Add(this.tbx_hiringManagerID, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.tbx_owner_lastname, 1, 12);
             this.tableLayoutPanel4.Controls.Add(this.lbl_owner_lastname, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.cbx_hiringManagerID, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.cbx_hiringManagerName, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_managerName, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_managerID, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.cbx_jobTitle, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.lbl_jobTitle, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.cbx_team, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.cbx_contractType, 0, 8);
             this.tableLayoutPanel4.Controls.Add(this.cbx_arvatoLevel, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.cbx_bucket, 1, 4);
             this.tableLayoutPanel4.Controls.Add(this.cbx_langRequirement, 1, 3);
@@ -112,6 +111,7 @@
             this.tableLayoutPanel4.Controls.Add(this.lbl_owner_firstname, 0, 11);
             this.tableLayoutPanel4.Controls.Add(this.tbx_owner_firstname, 1, 11);
             this.tableLayoutPanel4.Controls.Add(this.cbx_owner_empID, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.cbx_contractType, 1, 8);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(28, 60);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 13;
@@ -130,6 +130,16 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(506, 302);
             this.tableLayoutPanel4.TabIndex = 56;
+            // 
+            // tbx_hiringManagerID
+            // 
+            this.tbx_hiringManagerID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_hiringManagerID.Location = new System.Drawing.Point(237, 2);
+            this.tbx_hiringManagerID.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_hiringManagerID.Name = "tbx_hiringManagerID";
+            this.tbx_hiringManagerID.ReadOnly = true;
+            this.tbx_hiringManagerID.Size = new System.Drawing.Size(267, 22);
+            this.tbx_hiringManagerID.TabIndex = 57;
             // 
             // tbx_owner_lastname
             // 
@@ -163,20 +173,6 @@
             this.imageList.Images.SetKeyName(0, "green_dot.png");
             this.imageList.Images.SetKeyName(1, "red_dot.png");
             // 
-            // cbx_hiringManagerID
-            // 
-            this.cbx_hiringManagerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_hiringManagerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_hiringManagerID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_hiringManagerID.Enabled = false;
-            this.cbx_hiringManagerID.FormattingEnabled = true;
-            this.cbx_hiringManagerID.Location = new System.Drawing.Point(237, 2);
-            this.cbx_hiringManagerID.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_hiringManagerID.Name = "cbx_hiringManagerID";
-            this.cbx_hiringManagerID.Size = new System.Drawing.Size(267, 21);
-            this.cbx_hiringManagerID.TabIndex = 0;
-            this.cbx_hiringManagerID.Tag = "required";
-            // 
             // cbx_hiringManagerName
             // 
             this.cbx_hiringManagerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -189,7 +185,7 @@
             this.cbx_hiringManagerName.Size = new System.Drawing.Size(267, 21);
             this.cbx_hiringManagerName.TabIndex = 1;
             this.cbx_hiringManagerName.Tag = "required";
-            this.cbx_hiringManagerName.SelectedValueChanged += new System.EventHandler(this.cbx_hiringManagerName_SelectedValueChanged);
+            this.cbx_hiringManagerName.SelectedIndexChanged += new System.EventHandler(this.cbx_hiringManagerName_SelectedIndexChanged);
             this.cbx_hiringManagerName.TextChanged += new System.EventHandler(this.cbx_hiringManagerName_TextChanged);
             // 
             // lbl_managerName
@@ -259,19 +255,6 @@
             this.cbx_team.TabIndex = 7;
             this.cbx_team.Tag = "required";
             this.cbx_team.SelectedIndexChanged += new System.EventHandler(this.cbx_team_SelectedIndexChanged);
-            // 
-            // cbx_contractType
-            // 
-            this.cbx_contractType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_contractType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_contractType.FormattingEnabled = true;
-            this.cbx_contractType.Location = new System.Drawing.Point(237, 186);
-            this.cbx_contractType.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_contractType.Name = "cbx_contractType";
-            this.cbx_contractType.Size = new System.Drawing.Size(267, 21);
-            this.cbx_contractType.TabIndex = 8;
-            this.cbx_contractType.Tag = "required";
-            this.cbx_contractType.SelectedIndexChanged += new System.EventHandler(this.cbx_contractType_SelectedIndexChanged);
             // 
             // cbx_arvatoLevel
             // 
@@ -501,7 +484,21 @@
             this.cbx_owner_empID.Name = "cbx_owner_empID";
             this.cbx_owner_empID.Size = new System.Drawing.Size(267, 21);
             this.cbx_owner_empID.TabIndex = 86;
+            this.cbx_owner_empID.SelectedIndexChanged += new System.EventHandler(this.cbx_owner_empID_SelectedIndexChanged);
             this.cbx_owner_empID.TextChanged += new System.EventHandler(this.cbx_owner_empID_TextChanged);
+            // 
+            // cbx_contractType
+            // 
+            this.cbx_contractType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_contractType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_contractType.FormattingEnabled = true;
+            this.cbx_contractType.Location = new System.Drawing.Point(237, 186);
+            this.cbx_contractType.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_contractType.Name = "cbx_contractType";
+            this.cbx_contractType.Size = new System.Drawing.Size(267, 21);
+            this.cbx_contractType.TabIndex = 8;
+            this.cbx_contractType.Tag = "required";
+            this.cbx_contractType.SelectedIndexChanged += new System.EventHandler(this.cbx_contractType_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -598,7 +595,6 @@
         public System.Windows.Forms.ComboBox cbx_langRequirement;
         public System.Windows.Forms.ComboBox cbx_titanTitle;
         public System.Windows.Forms.ComboBox cbx_jobTitle;
-        public System.Windows.Forms.ComboBox cbx_hiringManagerID;
         public System.Windows.Forms.ComboBox cbx_hiringManagerName;
         private System.Windows.Forms.Label lbl_managerName;
         private System.Windows.Forms.Label lbl_managerID;
@@ -610,5 +606,6 @@
         private System.Windows.Forms.Label lbl_owner_firstname;
         private System.Windows.Forms.TextBox tbx_owner_firstname;
         private System.Windows.Forms.ComboBox cbx_owner_empID;
+        private System.Windows.Forms.TextBox tbx_hiringManagerID;
     }
 }

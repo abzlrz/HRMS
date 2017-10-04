@@ -240,6 +240,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
             catch { }
             finally
             {
+                MessageBox.Show("Saved!");
                 view_educ.ClearSelection();
                 ResetEditFields();
             }

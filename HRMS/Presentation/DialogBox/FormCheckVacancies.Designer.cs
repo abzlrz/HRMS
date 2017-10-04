@@ -34,7 +34,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -57,13 +57,15 @@
             this.lbl_detail_positiontype = new System.Windows.Forms.Label();
             this.link_detail_qualification = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btnApply = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.link_benefits = new System.Windows.Forms.LinkLabel();
+            this.lbl_benefits = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_posting)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -140,16 +142,17 @@
             this.textBox1.Size = new System.Drawing.Size(293, 22);
             this.textBox1.TabIndex = 0;
             // 
-            // panel2
+            // panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(425, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(12);
-            this.panel2.Size = new System.Drawing.Size(442, 460);
-            this.panel2.TabIndex = 1;
+            this.panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel.Controls.Add(this.panel5);
+            this.panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel.Enabled = false;
+            this.panel.Location = new System.Drawing.Point(425, 12);
+            this.panel.Name = "panel";
+            this.panel.Padding = new System.Windows.Forms.Padding(12);
+            this.panel.Size = new System.Drawing.Size(442, 460);
+            this.panel.TabIndex = 1;
             // 
             // panel5
             // 
@@ -173,8 +176,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 235F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 264F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(418, 436);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -184,7 +187,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.link_detail_jobdesc, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.link_detail_jobdesc, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.lbl_detail_location, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.lbl_detail_headcount, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.lbl_detail_wage, 1, 4);
@@ -198,15 +201,17 @@
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label9, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.lbl_detail_positiontype, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.link_detail_qualification, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.link_detail_qualification, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.link_benefits, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_benefits, 0, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 28);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 10;
+            this.tableLayoutPanel2.RowCount = 11;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -216,8 +221,9 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(418, 235);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(418, 264);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // link_detail_jobdesc
@@ -225,9 +231,9 @@
             this.link_detail_jobdesc.AutoEllipsis = true;
             this.link_detail_jobdesc.AutoSize = true;
             this.link_detail_jobdesc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.link_detail_jobdesc.Location = new System.Drawing.Point(212, 209);
+            this.link_detail_jobdesc.Location = new System.Drawing.Point(212, 235);
             this.link_detail_jobdesc.Name = "link_detail_jobdesc";
-            this.link_detail_jobdesc.Size = new System.Drawing.Size(202, 25);
+            this.link_detail_jobdesc.Size = new System.Drawing.Size(202, 28);
             this.link_detail_jobdesc.TabIndex = 17;
             this.link_detail_jobdesc.TabStop = true;
             this.link_detail_jobdesc.Text = "Open";
@@ -381,7 +387,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(4, 183);
+            this.label9.Location = new System.Drawing.Point(4, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(201, 25);
             this.label9.TabIndex = 7;
@@ -392,9 +398,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(4, 209);
+            this.label10.Location = new System.Drawing.Point(4, 235);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(201, 25);
+            this.label10.Size = new System.Drawing.Size(201, 28);
             this.label10.TabIndex = 8;
             this.label10.Text = "Job Description";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -415,7 +421,7 @@
             this.link_detail_qualification.AutoEllipsis = true;
             this.link_detail_qualification.AutoSize = true;
             this.link_detail_qualification.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.link_detail_qualification.Location = new System.Drawing.Point(212, 183);
+            this.link_detail_qualification.Location = new System.Drawing.Point(212, 209);
             this.link_detail_qualification.Name = "link_detail_qualification";
             this.link_detail_qualification.Size = new System.Drawing.Size(202, 25);
             this.link_detail_qualification.TabIndex = 16;
@@ -438,15 +444,6 @@
             this.label1.Text = "Job Posting Details";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btnApply);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 266);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(412, 167);
-            this.panel6.TabIndex = 2;
-            // 
             // btnApply
             // 
             this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
@@ -456,7 +453,7 @@
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApply.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnApply.Location = new System.Drawing.Point(32, 55);
+            this.btnApply.Location = new System.Drawing.Point(31, 38);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(358, 55);
             this.btnApply.TabIndex = 3;
@@ -465,6 +462,40 @@
             this.btnApply.UseVisualStyleBackColor = false;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnApply);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 295);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(412, 138);
+            this.panel6.TabIndex = 2;
+            // 
+            // link_benefits
+            // 
+            this.link_benefits.AutoEllipsis = true;
+            this.link_benefits.AutoSize = true;
+            this.link_benefits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.link_benefits.Location = new System.Drawing.Point(212, 183);
+            this.link_benefits.Name = "link_benefits";
+            this.link_benefits.Size = new System.Drawing.Size(202, 25);
+            this.link_benefits.TabIndex = 18;
+            this.link_benefits.TabStop = true;
+            this.link_benefits.Text = "Open";
+            this.link_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.link_benefits.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_benefits_LinkClicked);
+            // 
+            // lbl_benefits
+            // 
+            this.lbl_benefits.AutoSize = true;
+            this.lbl_benefits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_benefits.Location = new System.Drawing.Point(4, 183);
+            this.lbl_benefits.Name = "lbl_benefits";
+            this.lbl_benefits.Size = new System.Drawing.Size(201, 25);
+            this.lbl_benefits.TabIndex = 19;
+            this.lbl_benefits.Text = "Benefits";
+            this.lbl_benefits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FormCheckVacancies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,7 +503,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(879, 484);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
@@ -487,7 +518,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.view_posting)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.panel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -500,7 +531,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView view_posting;
         private System.Windows.Forms.Panel panel4;
@@ -526,9 +557,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl_detail_positiontype;
         private System.Windows.Forms.LinkLabel link_detail_qualification;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.LinkLabel link_benefits;
+        private System.Windows.Forms.Label lbl_benefits;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btnApply;
     }
 }

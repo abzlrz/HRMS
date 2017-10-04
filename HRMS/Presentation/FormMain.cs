@@ -5,6 +5,7 @@ using Presentation.Modules;
 using Presentation.View;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using static Presentation.Properties.Settings;
 
 namespace Presentation
 {
@@ -31,7 +32,6 @@ namespace Presentation
             this.mod_evaluation = new ControlInterviewEvaluation();
             this.mod_resignation = new ControlEmployeeResignation();
             this.mod_appraisal = new ControlPerformanceAppraisal();
-            this.mod_checklist = new ControlPERChecklist();
             this.mod_trainingFeedback = new ControlTrainingFeedback();
             this.mod_trainingSchedule = new ControlTrainingSchedule();
 
@@ -77,13 +77,6 @@ namespace Presentation
             if (selectedNode == "Interview Evaluation")
             {
                 ShowControlOnPanel2(modPanel, mod_evaluation);
-                ShowControlOnPanel2(viewsPanel, view_recruitment);
-            }
-                
-
-            if (selectedNode == "Employee PER Checklist")
-            {
-                ShowControlOnPanel2(modPanel, mod_checklist);
                 ShowControlOnPanel2(viewsPanel, view_recruitment);
             }
                 
@@ -142,13 +135,16 @@ namespace Presentation
             login.Show();
             this.Hide();
         }
+        private void auditLogsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
 
+        }
         private void OnLoad(object sender, System.EventArgs e)
         {
             var mods = new List<UserControl>()
             {
                 mod_employeeRegistration, mod_evaluation, mod_appraisal,
-                mod_checklist, mod_resignation, mod_trainingFeedback, mod_trainingSchedule
+                mod_resignation, mod_trainingFeedback, mod_trainingSchedule
             };
 
             var views = new List<UserControl>()
@@ -164,6 +160,22 @@ namespace Presentation
             mods.ForEach(x => { modPanel.Controls.Add(x); x.Dock = DockStyle.Fill; } );
             views.ForEach(x => { viewsPanel.Controls.Add(x); x.Dock = DockStyle.Fill; });
             dash.ForEach(x => { panel1.Controls.Add(x); x.Dock = DockStyle.Fill; });
+
+            if (Default.AccessType.Equals("Admin"))
+            {
+                toolsToolStripMenuItem.Visible = true;
+                dash_recruitment.modifyToolStripMenuItem.Visible = true;
+                dash_recruitment.editEmployeeToolStripMenuItem.Visible = true;
+                dash_recruitment.deleteToolStripMenuItem1.Visible = true;
+                
+            } 
+            else
+            {
+                toolsToolStripMenuItem.Visible = false;
+                dash_recruitment.modifyToolStripMenuItem.Visible = false;
+                dash_recruitment.editEmployeeToolStripMenuItem.Visible = false;
+                dash_recruitment.deleteToolStripMenuItem1.Visible = false;
+            }
         }
 
         private void closeClick(object sender, System.EventArgs e)
@@ -190,9 +202,9 @@ namespace Presentation
             refmngr.ShowDialog();
         }
 
-        private void optionsToolStripMenuItem_Click(object sender, System.EventArgs e)
+        private void customizeToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            jobposting.ShowDialog();
+            usermgr.ShowDialog();
         }
 
         private ControlEmployee view_employee;
@@ -206,7 +218,6 @@ namespace Presentation
 
         private ControlEmployeeRegistration mod_employeeRegistration;
         private ControlInterviewEvaluation mod_evaluation;
-        private ControlPERChecklist mod_checklist;
         private ControlPerformanceAppraisal mod_appraisal;
         private ControlEmployeeResignation mod_resignation;
         private ControlTrainingFeedback mod_trainingFeedback;

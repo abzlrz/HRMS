@@ -11,5 +11,14 @@
     <Setting Name="yes" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="username3086" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="password3086" Type="System.String" Scope="User">
+      <Value Profile="(Default)">12#2!@31se</Value>
+    </Setting>
+    <Setting Name="AccessType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

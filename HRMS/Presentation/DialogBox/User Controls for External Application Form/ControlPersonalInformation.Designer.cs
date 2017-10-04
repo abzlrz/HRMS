@@ -64,10 +64,10 @@
             this.lbl_contact_number = new System.Windows.Forms.Label();
             this.tbx_contact_firstname = new System.Windows.Forms.TextBox();
             this.cbx_relationship = new System.Windows.Forms.ComboBox();
+            this.tbx_contact_number = new System.Windows.Forms.MaskedTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_next = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.tbx_contact_number = new System.Windows.Forms.MaskedTextBox();
             this.gbx_info.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -597,6 +597,18 @@
             this.cbx_relationship.TabIndex = 125;
             this.cbx_relationship.SelectedIndexChanged += new System.EventHandler(this.cbx_relationship_SelectedIndexChanged);
             // 
+            // tbx_contact_number
+            // 
+            this.tbx_contact_number.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_contact_number.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_contact_number.Location = new System.Drawing.Point(264, 324);
+            this.tbx_contact_number.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_contact_number.Mask = "+630000000000";
+            this.tbx_contact_number.Name = "tbx_contact_number";
+            this.tbx_contact_number.Size = new System.Drawing.Size(286, 20);
+            this.tbx_contact_number.TabIndex = 126;
+            this.tbx_contact_number.TextChanged += new System.EventHandler(this.tbx_contact_number_TextChanged);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -636,18 +648,6 @@
             this.btn_clear.Text = "Clear All";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // tbx_contact_number
-            // 
-            this.tbx_contact_number.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_contact_number.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.tbx_contact_number.Location = new System.Drawing.Point(264, 324);
-            this.tbx_contact_number.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_contact_number.Mask = "+630000000000";
-            this.tbx_contact_number.Name = "tbx_contact_number";
-            this.tbx_contact_number.Size = new System.Drawing.Size(286, 20);
-            this.tbx_contact_number.TabIndex = 126;
-            this.tbx_contact_number.TextChanged += new System.EventHandler(this.tbx_contact_number_TextChanged);
             // 
             // ControlPersonalInformation
             // 

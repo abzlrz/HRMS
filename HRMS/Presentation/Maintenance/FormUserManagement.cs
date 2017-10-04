@@ -1,180 +1,97 @@
 ﻿using Data.Access;
-using Data.Entities;
-using System;
 using System.Data;
 using System.Windows.Forms;
+using System;
 
 namespace Presentation.Maintenance
 {
     public partial class FormUserManagement : Form
     {
-        private string procedure;
-        private int ID;
         private UserAccess access;
+        private int ID;
 
         public FormUserManagement()
         {
             InitializeComponent();
             this.access = new UserAccess();
-            view_user.DataSource = access.ShowData();
-            view_user.Columns["ID"].Visible = false;
-            ReloadData();
-        }
-        private void ReloadData()
-        {
-            view_user.DataSource = access.ShowData();
         }
 
-        private void ResetFields()
+        private void PopulateUser(int ID)
         {
-            tbx_username.ResetText();
-            tbx_password.ResetText();
+            DataRow row = access.GetUserByID(ID);
+            lbl_employee_id.Text = row["ID"].ToString();
+            lbl_name.Text = row["Name"].ToString();
+            lbl_position.Text = row["Position"].ToString();
+            lbl_titantitle.Text = row["TitanTitle"].ToString();
+            //
+            // populate user password by datagridview
+            //
+            tbx_password.Text = view_user.SelectedRows[0].Cells["Password"].Value.ToString();
         }
-        private void EnableMenuStrip(bool arg)
+
+        private void cx_viewpassword_CheckedChanged(object sender, System.EventArgs e)
         {
-            if (arg == true)
-                view_user.ContextMenuStrip = menu_strip;
+            if (cx_viewpassword.Checked)
+                tbx_password.UseSystemPasswordChar = false;
             else
-                view_user.ContextMenuStrip = null;
+                tbx_password.UseSystemPasswordChar = true;
         }
-        private void PopulateFields(int iD)
+
+        private void tbx_password_TextChanged(object sender, System.EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_password.Text, lbl_indicator, 6);
+        }
+
+        private void OnLoad(object sender, System.EventArgs e)
+        {
+            this.access.ReloadHRUsers();
+            this.view_user.DataSource = access.ShowHRUsers();
+        }
+
+        private void view_user_SelectionChanged(object sender, System.EventArgs e)
+        {
+            if(view_user.SelectedRows.Count > 0)
+            {
+                ID = int.Parse(view_user.SelectedRows[0].Cells[0].Value.ToString());
+                PopulateUser(ID);
+            }
+        }
+
+        private void btnSave_Click(object sender, System.EventArgs e)
         {
             try
             {
-                DataRow row = access.GetUserByID(ID);
-                tbx_username.Text = row["Username"].ToString();
-                tbx_password.Text = row["Password"].ToString();
-            }
-            catch { }
-        }
-        private bool ValidateFields()
-        {
-            bool result = true;
-
-            if (string.IsNullOrEmpty(tbx_username.Text) || string.IsNullOrWhiteSpace(tbx_username.Text))
-                result = false;
-            if (string.IsNullOrEmpty(tbx_password.Text) || string.IsNullOrWhiteSpace(tbx_password.Text))
-                result = false;
-
-            return result;
-        }
-        private void BackToNormal()
-        {
-            main.Visible = false;
-            view_user.Enabled = true;
-            ResetFields();
-            ReloadData();
-        }
-
-        private void view_user_SelectionChanged(object sender, EventArgs e)
-        {
-            var gdv = (DataGridView)sender;
-            if(gdv.SelectedRows.Count > 0)
-                ID = int.Parse(gdv.SelectedRows[0].Cells[0].Value.ToString());
-        }
-
-        private void OnLoad(object sender, EventArgs e)
-        {
-            ReloadData();
-        }
-
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            procedure = "insert";
-            main.Visible = true;
-            view_user.Enabled = false;
-        }
-
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            procedure = "update";
-            main.Visible = true;
-            view_user.Enabled = false;
-            PopulateFields(ID);
-        }
-
-        private void btn_cancel_Click(object sender, EventArgs e)
-        {
-            BackToNormal();
-        }
-
-        private void btn_save_Click(object sender, EventArgs e)
-        {
-            if (ValidateFields())
-            {
-                if(procedure == "insert")
+                if(!(string.IsNullOrEmpty(tbx_password.Text) || string.IsNullOrWhiteSpace(tbx_password.Text)))
                 {
-                    var user = new User()
+                    if (access.UpdateUserPassword(tbx_password.Text, int.Parse(lbl_employee_id.Text)))
                     {
-                        Username = tbx_username.Text,
-                        Password = tbx_password.Text
-                    };
-
-                    try
-                    {
-                        var success = access.Insert(user);
-                        if (success)
-                        {
-                            MessageBox.Show("Data Successfully added!");
-                            BackToNormal();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-
-                }
-
-                if(procedure == "update")
-                {
-                    var user = new User()
-                    {
-                        Username = tbx_username.Text,
-                        Password = tbx_password.Text
-                    };
-
-                    var success = access.Update(ID, user);
-                    if(success)
-                    {
-                        MessageBox.Show("Data Updated!");
-                        BackToNormal();
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please complete the fields!");
-            }
-        }
-
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if ( MessageBox.Show("Are you sure?", "Confirm delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    var success = access.Delete(ID);
-
-                    if (success)
-                    {
-                        MessageBox.Show("Done!");
-                        BackToNormal();
+                        MessageBox.Show("Data Successfully Updated!");
+                        this.access.ReloadHRUsers();
+                        RefreshData();
+                        tbx_password.ResetText();
                     }
                 }
             }
             catch { }
         }
 
-        private void seeLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RefreshData()
         {
-
+            this.view_user.DataSource = access.ShowHRUsers();
         }
 
-        private void btn_ok_Click(object sender, EventArgs e)
+        private void btn_unblock_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ResetFields();
+            if (view_user.SelectedRows[0].Cells["State"].Value.ToString().Equals("Blocked"))
+            {
+                if (access.UnblockUser(ID))
+                {
+                    MessageBox.Show("Data Successfully Updated!");
+                    this.access.ReloadHRUsers();
+                    RefreshData();
+                    tbx_password.ResetText();
+                }
+            }
         }
     }
 }

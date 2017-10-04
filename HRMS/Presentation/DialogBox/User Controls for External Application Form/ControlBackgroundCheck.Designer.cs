@@ -39,52 +39,53 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.question4 = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.yes_convicted = new System.Windows.Forms.RadioButton();
+            this.no_convicted = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
             this.tbx_convicted_details = new System.Windows.Forms.TextBox();
+            this.q4 = new System.Windows.Forms.Label();
             this.question5 = new System.Windows.Forms.TableLayoutPanel();
             this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.yes_legalcase = new System.Windows.Forms.RadioButton();
+            this.no_legalcase = new System.Windows.Forms.RadioButton();
             this.label25 = new System.Windows.Forms.Label();
             this.tbx_legalcase_type = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.tbx_legalcase_status = new System.Windows.Forms.TextBox();
+            this.q5 = new System.Windows.Forms.Label();
+            this.q6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.question3 = new System.Windows.Forms.TableLayoutPanel();
+            this.q3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.yes_perpetual = new System.Windows.Forms.RadioButton();
+            this.no_perpetual = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
             this.tbx_perpetual_illness = new System.Windows.Forms.TextBox();
             this.question2 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.yes_med_op = new System.Windows.Forms.RadioButton();
+            this.no_med_op = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.tbx_illness_details = new System.Windows.Forms.TextBox();
+            this.tbx_med_operation_details = new System.Windows.Forms.TextBox();
+            this.q2 = new System.Windows.Forms.Label();
             this.question1 = new System.Windows.Forms.TableLayoutPanel();
+            this.q1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.yes_illness = new System.Windows.Forms.RadioButton();
+            this.no_illness = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_illness_details = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -164,7 +165,7 @@
             this.groupBox1.Size = new System.Drawing.Size(617, 410);
             this.groupBox1.TabIndex = 85;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Initial Background Check";
+            this.groupBox1.Text = "Background Check";
             // 
             // panel1
             // 
@@ -189,13 +190,13 @@
             this.question4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question4.Controls.Add(this.label16, 1, 1);
-            this.question4.Controls.Add(this.label17, 0, 1);
             this.question4.Controls.Add(this.label18, 2, 0);
             this.question4.Controls.Add(this.label19, 3, 0);
-            this.question4.Controls.Add(this.radioButton7, 2, 1);
-            this.question4.Controls.Add(this.radioButton8, 3, 1);
+            this.question4.Controls.Add(this.yes_convicted, 2, 1);
+            this.question4.Controls.Add(this.no_convicted, 3, 1);
             this.question4.Controls.Add(this.label20, 1, 2);
             this.question4.Controls.Add(this.tbx_convicted_details, 1, 3);
+            this.question4.Controls.Add(this.q4, 0, 2);
             this.question4.Location = new System.Drawing.Point(34, 494);
             this.question4.Name = "question4";
             this.question4.RowCount = 4;
@@ -215,19 +216,6 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Have you ever been convicted or charged with any crime in any court of law?";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.ImageIndex = 0;
-            this.label17.ImageList = this.imageList;
-            this.label17.Location = new System.Drawing.Point(3, 20);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 36);
-            this.label17.TabIndex = 1;
-            this.label17.Text = " ";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
@@ -251,31 +239,32 @@
             this.label19.Text = "No";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton7
+            // yes_convicted
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton7.Location = new System.Drawing.Point(424, 23);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton7.Size = new System.Drawing.Size(44, 30);
-            this.radioButton7.TabIndex = 4;
-            this.radioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.yes_convicted.AutoSize = true;
+            this.yes_convicted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yes_convicted.Location = new System.Drawing.Point(424, 23);
+            this.yes_convicted.Name = "yes_convicted";
+            this.yes_convicted.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.yes_convicted.Size = new System.Drawing.Size(44, 30);
+            this.yes_convicted.TabIndex = 4;
+            this.yes_convicted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes_convicted.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // no_convicted
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Checked = true;
-            this.radioButton8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton8.Location = new System.Drawing.Point(474, 23);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton8.Size = new System.Drawing.Size(44, 30);
-            this.radioButton8.TabIndex = 5;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.no_convicted.AutoSize = true;
+            this.no_convicted.Checked = true;
+            this.no_convicted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_convicted.Location = new System.Drawing.Point(474, 23);
+            this.no_convicted.Name = "no_convicted";
+            this.no_convicted.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.no_convicted.Size = new System.Drawing.Size(44, 30);
+            this.no_convicted.TabIndex = 5;
+            this.no_convicted.TabStop = true;
+            this.no_convicted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.no_convicted.UseVisualStyleBackColor = true;
+            this.no_convicted.CheckedChanged += new System.EventHandler(this.no_convicted_CheckedChanged);
             // 
             // label20
             // 
@@ -297,6 +286,19 @@
             this.tbx_convicted_details.Name = "tbx_convicted_details";
             this.tbx_convicted_details.Size = new System.Drawing.Size(375, 58);
             this.tbx_convicted_details.TabIndex = 7;
+            this.tbx_convicted_details.TextChanged += new System.EventHandler(this.tbx_convicted_details_TextChanged);
+            // 
+            // q4
+            // 
+            this.q4.AutoSize = true;
+            this.q4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q4.ImageList = this.imageList;
+            this.q4.Location = new System.Drawing.Point(3, 56);
+            this.q4.Name = "q4";
+            this.q4.Size = new System.Drawing.Size(20, 23);
+            this.q4.TabIndex = 9;
+            this.q4.Text = " ";
+            this.q4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // question5
             // 
@@ -306,15 +308,16 @@
             this.question5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question5.Controls.Add(this.label21, 1, 1);
-            this.question5.Controls.Add(this.label22, 0, 1);
             this.question5.Controls.Add(this.label23, 2, 0);
             this.question5.Controls.Add(this.label24, 3, 0);
-            this.question5.Controls.Add(this.radioButton9, 2, 1);
-            this.question5.Controls.Add(this.radioButton10, 3, 1);
+            this.question5.Controls.Add(this.yes_legalcase, 2, 1);
+            this.question5.Controls.Add(this.no_legalcase, 3, 1);
             this.question5.Controls.Add(this.label25, 1, 2);
             this.question5.Controls.Add(this.tbx_legalcase_type, 1, 3);
             this.question5.Controls.Add(this.label26, 1, 4);
             this.question5.Controls.Add(this.tbx_legalcase_status, 1, 5);
+            this.question5.Controls.Add(this.q5, 0, 2);
+            this.question5.Controls.Add(this.q6, 0, 4);
             this.question5.Location = new System.Drawing.Point(34, 674);
             this.question5.Name = "question5";
             this.question5.RowCount = 6;
@@ -336,19 +339,6 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Do you have pending legal case/s against your former employer/s?";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.ImageIndex = 0;
-            this.label22.ImageList = this.imageList;
-            this.label22.Location = new System.Drawing.Point(3, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(20, 36);
-            this.label22.TabIndex = 1;
-            this.label22.Text = " ";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
@@ -372,31 +362,32 @@
             this.label24.Text = "No";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton9
+            // yes_legalcase
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton9.Location = new System.Drawing.Point(424, 23);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton9.Size = new System.Drawing.Size(44, 30);
-            this.radioButton9.TabIndex = 4;
-            this.radioButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.yes_legalcase.AutoSize = true;
+            this.yes_legalcase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yes_legalcase.Location = new System.Drawing.Point(424, 23);
+            this.yes_legalcase.Name = "yes_legalcase";
+            this.yes_legalcase.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.yes_legalcase.Size = new System.Drawing.Size(44, 30);
+            this.yes_legalcase.TabIndex = 4;
+            this.yes_legalcase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes_legalcase.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // no_legalcase
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Checked = true;
-            this.radioButton10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton10.Location = new System.Drawing.Point(474, 23);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton10.Size = new System.Drawing.Size(44, 30);
-            this.radioButton10.TabIndex = 5;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.no_legalcase.AutoSize = true;
+            this.no_legalcase.Checked = true;
+            this.no_legalcase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_legalcase.Location = new System.Drawing.Point(474, 23);
+            this.no_legalcase.Name = "no_legalcase";
+            this.no_legalcase.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.no_legalcase.Size = new System.Drawing.Size(44, 30);
+            this.no_legalcase.TabIndex = 5;
+            this.no_legalcase.TabStop = true;
+            this.no_legalcase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.no_legalcase.UseVisualStyleBackColor = true;
+            this.no_legalcase.CheckedChanged += new System.EventHandler(this.no_legalcase_CheckedChanged);
             // 
             // label25
             // 
@@ -417,6 +408,7 @@
             this.tbx_legalcase_type.Name = "tbx_legalcase_type";
             this.tbx_legalcase_type.Size = new System.Drawing.Size(375, 22);
             this.tbx_legalcase_type.TabIndex = 7;
+            this.tbx_legalcase_type.TextChanged += new System.EventHandler(this.tbx_legalcase_type_TextChanged);
             // 
             // label26
             // 
@@ -439,6 +431,31 @@
             this.tbx_legalcase_status.Name = "tbx_legalcase_status";
             this.tbx_legalcase_status.Size = new System.Drawing.Size(375, 64);
             this.tbx_legalcase_status.TabIndex = 10;
+            this.tbx_legalcase_status.TextChanged += new System.EventHandler(this.tbx_legalcase_status_TextChanged);
+            // 
+            // q5
+            // 
+            this.q5.AutoSize = true;
+            this.q5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q5.ImageList = this.imageList;
+            this.q5.Location = new System.Drawing.Point(3, 56);
+            this.q5.Name = "q5";
+            this.q5.Size = new System.Drawing.Size(20, 23);
+            this.q5.TabIndex = 11;
+            this.q5.Text = " ";
+            this.q5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // q6
+            // 
+            this.q6.AutoSize = true;
+            this.q6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q6.ImageList = this.imageList;
+            this.q6.Location = new System.Drawing.Point(3, 105);
+            this.q6.Name = "q6";
+            this.q6.Size = new System.Drawing.Size(20, 18);
+            this.q6.TabIndex = 12;
+            this.q6.Text = " ";
+            this.q6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -455,12 +472,12 @@
             this.question3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.question3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.question3.Controls.Add(this.q3, 0, 2);
             this.question3.Controls.Add(this.label11, 1, 1);
-            this.question3.Controls.Add(this.label12, 0, 1);
             this.question3.Controls.Add(this.label13, 2, 0);
             this.question3.Controls.Add(this.label14, 3, 0);
-            this.question3.Controls.Add(this.radioButton5, 2, 1);
-            this.question3.Controls.Add(this.radioButton6, 3, 1);
+            this.question3.Controls.Add(this.yes_perpetual, 2, 1);
+            this.question3.Controls.Add(this.no_perpetual, 3, 1);
             this.question3.Controls.Add(this.label15, 1, 2);
             this.question3.Controls.Add(this.tbx_perpetual_illness, 1, 3);
             this.question3.Location = new System.Drawing.Point(34, 317);
@@ -473,6 +490,18 @@
             this.question3.Size = new System.Drawing.Size(521, 147);
             this.question3.TabIndex = 3;
             // 
+            // q3
+            // 
+            this.q3.AutoSize = true;
+            this.q3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q3.ImageList = this.imageList;
+            this.q3.Location = new System.Drawing.Point(3, 56);
+            this.q3.Name = "q3";
+            this.q3.Size = new System.Drawing.Size(20, 23);
+            this.q3.TabIndex = 11;
+            this.q3.Text = " ";
+            this.q3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label11
             // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -483,19 +512,6 @@
             this.label11.Text = "Are you suffering from any perpetual illness that needs constant medical attentio" +
     "n?";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ImageIndex = 0;
-            this.label12.ImageList = this.imageList;
-            this.label12.Location = new System.Drawing.Point(3, 20);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(20, 36);
-            this.label12.TabIndex = 1;
-            this.label12.Text = " ";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
@@ -519,31 +535,32 @@
             this.label14.Text = "No";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton5
+            // yes_perpetual
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton5.Location = new System.Drawing.Point(424, 23);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Padding = new System.Windows.Forms.Padding(15, 5, 5, 15);
-            this.radioButton5.Size = new System.Drawing.Size(44, 30);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.yes_perpetual.AutoSize = true;
+            this.yes_perpetual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yes_perpetual.Location = new System.Drawing.Point(424, 23);
+            this.yes_perpetual.Name = "yes_perpetual";
+            this.yes_perpetual.Padding = new System.Windows.Forms.Padding(15, 5, 5, 15);
+            this.yes_perpetual.Size = new System.Drawing.Size(44, 30);
+            this.yes_perpetual.TabIndex = 4;
+            this.yes_perpetual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes_perpetual.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // no_perpetual
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton6.Location = new System.Drawing.Point(474, 23);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Padding = new System.Windows.Forms.Padding(15, 5, 5, 15);
-            this.radioButton6.Size = new System.Drawing.Size(44, 30);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.no_perpetual.AutoSize = true;
+            this.no_perpetual.Checked = true;
+            this.no_perpetual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_perpetual.Location = new System.Drawing.Point(474, 23);
+            this.no_perpetual.Name = "no_perpetual";
+            this.no_perpetual.Padding = new System.Windows.Forms.Padding(15, 5, 5, 15);
+            this.no_perpetual.Size = new System.Drawing.Size(44, 30);
+            this.no_perpetual.TabIndex = 5;
+            this.no_perpetual.TabStop = true;
+            this.no_perpetual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.no_perpetual.UseVisualStyleBackColor = true;
+            this.no_perpetual.CheckedChanged += new System.EventHandler(this.no_perpetual_CheckedChanged);
             // 
             // label15
             // 
@@ -565,6 +582,7 @@
             this.tbx_perpetual_illness.Name = "tbx_perpetual_illness";
             this.tbx_perpetual_illness.Size = new System.Drawing.Size(375, 58);
             this.tbx_perpetual_illness.TabIndex = 7;
+            this.tbx_perpetual_illness.TextChanged += new System.EventHandler(this.tbx_perpetual_illness_TextChanged);
             // 
             // question2
             // 
@@ -574,13 +592,13 @@
             this.question2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question2.Controls.Add(this.label6, 1, 1);
-            this.question2.Controls.Add(this.label7, 0, 1);
             this.question2.Controls.Add(this.label8, 2, 0);
             this.question2.Controls.Add(this.label9, 3, 0);
-            this.question2.Controls.Add(this.radioButton3, 2, 1);
-            this.question2.Controls.Add(this.radioButton4, 3, 1);
+            this.question2.Controls.Add(this.yes_med_op, 2, 1);
+            this.question2.Controls.Add(this.no_med_op, 3, 1);
             this.question2.Controls.Add(this.label10, 1, 2);
-            this.question2.Controls.Add(this.tbx_illness_details, 1, 3);
+            this.question2.Controls.Add(this.tbx_med_operation_details, 1, 3);
+            this.question2.Controls.Add(this.q2, 0, 2);
             this.question2.Location = new System.Drawing.Point(34, 164);
             this.question2.Name = "question2";
             this.question2.RowCount = 4;
@@ -600,19 +618,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Have you ever been hospitalized for any operation or other reason?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.ImageIndex = 0;
-            this.label7.ImageList = this.imageList;
-            this.label7.Location = new System.Drawing.Point(3, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(20, 21);
-            this.label7.TabIndex = 1;
-            this.label7.Text = " ";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -636,31 +641,32 @@
             this.label9.Text = "No";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton3
+            // yes_med_op
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton3.Location = new System.Drawing.Point(424, 23);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton3.Size = new System.Drawing.Size(44, 15);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.yes_med_op.AutoSize = true;
+            this.yes_med_op.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yes_med_op.Location = new System.Drawing.Point(424, 23);
+            this.yes_med_op.Name = "yes_med_op";
+            this.yes_med_op.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.yes_med_op.Size = new System.Drawing.Size(44, 15);
+            this.yes_med_op.TabIndex = 4;
+            this.yes_med_op.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes_med_op.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // no_med_op
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Checked = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton4.Location = new System.Drawing.Point(474, 23);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton4.Size = new System.Drawing.Size(44, 15);
-            this.radioButton4.TabIndex = 5;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.no_med_op.AutoSize = true;
+            this.no_med_op.Checked = true;
+            this.no_med_op.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_med_op.Location = new System.Drawing.Point(474, 23);
+            this.no_med_op.Name = "no_med_op";
+            this.no_med_op.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.no_med_op.Size = new System.Drawing.Size(44, 15);
+            this.no_med_op.TabIndex = 5;
+            this.no_med_op.TabStop = true;
+            this.no_med_op.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.no_med_op.UseVisualStyleBackColor = true;
+            this.no_med_op.CheckedChanged += new System.EventHandler(this.no_med_op_CheckedChanged);
             // 
             // label10
             // 
@@ -671,16 +677,29 @@
             this.label10.Text = "If Yes, Please provide details:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbx_illness_details
+            // tbx_med_operation_details
             // 
-            this.tbx_illness_details.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_illness_details.Enabled = false;
-            this.tbx_illness_details.Location = new System.Drawing.Point(41, 67);
-            this.tbx_illness_details.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.tbx_illness_details.Multiline = true;
-            this.tbx_illness_details.Name = "tbx_illness_details";
-            this.tbx_illness_details.Size = new System.Drawing.Size(375, 55);
-            this.tbx_illness_details.TabIndex = 7;
+            this.tbx_med_operation_details.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_med_operation_details.Enabled = false;
+            this.tbx_med_operation_details.Location = new System.Drawing.Point(41, 67);
+            this.tbx_med_operation_details.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.tbx_med_operation_details.Multiline = true;
+            this.tbx_med_operation_details.Name = "tbx_med_operation_details";
+            this.tbx_med_operation_details.Size = new System.Drawing.Size(375, 55);
+            this.tbx_med_operation_details.TabIndex = 7;
+            this.tbx_med_operation_details.TextChanged += new System.EventHandler(this.tbx_med_operation_details_TextChanged);
+            // 
+            // q2
+            // 
+            this.q2.AutoSize = true;
+            this.q2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q2.ImageList = this.imageList;
+            this.q2.Location = new System.Drawing.Point(3, 41);
+            this.q2.Name = "q2";
+            this.q2.Size = new System.Drawing.Size(20, 21);
+            this.q2.TabIndex = 10;
+            this.q2.Text = " ";
+            this.q2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // question1
             // 
@@ -689,14 +708,14 @@
             this.question1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.question1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.question1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.question1.Controls.Add(this.q1, 0, 2);
             this.question1.Controls.Add(this.label1, 1, 1);
-            this.question1.Controls.Add(this.label2, 0, 1);
             this.question1.Controls.Add(this.label3, 2, 0);
             this.question1.Controls.Add(this.label4, 3, 0);
-            this.question1.Controls.Add(this.radioButton1, 2, 1);
-            this.question1.Controls.Add(this.radioButton2, 3, 1);
+            this.question1.Controls.Add(this.yes_illness, 2, 1);
+            this.question1.Controls.Add(this.no_illness, 3, 1);
             this.question1.Controls.Add(this.label5, 1, 2);
-            this.question1.Controls.Add(this.textBox1, 1, 3);
+            this.question1.Controls.Add(this.tbx_illness_details, 1, 3);
             this.question1.Location = new System.Drawing.Point(34, 13);
             this.question1.Name = "question1";
             this.question1.RowCount = 4;
@@ -707,6 +726,18 @@
             this.question1.Size = new System.Drawing.Size(521, 127);
             this.question1.TabIndex = 1;
             // 
+            // q1
+            // 
+            this.q1.AutoSize = true;
+            this.q1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.q1.ImageList = this.imageList;
+            this.q1.Location = new System.Drawing.Point(3, 41);
+            this.q1.Name = "q1";
+            this.q1.Size = new System.Drawing.Size(20, 21);
+            this.q1.TabIndex = 9;
+            this.q1.Text = " ";
+            this.q1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -716,19 +747,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Are you suffering or have you suffered from any Illness or Disability?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.ImageIndex = 0;
-            this.label2.ImageList = this.imageList;
-            this.label2.Location = new System.Drawing.Point(3, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = " ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -752,31 +770,32 @@
             this.label4.Text = "No";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // radioButton1
+            // yes_illness
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton1.Location = new System.Drawing.Point(424, 23);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton1.Size = new System.Drawing.Size(44, 15);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.yes_illness.AutoSize = true;
+            this.yes_illness.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yes_illness.Location = new System.Drawing.Point(424, 23);
+            this.yes_illness.Name = "yes_illness";
+            this.yes_illness.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.yes_illness.Size = new System.Drawing.Size(44, 15);
+            this.yes_illness.TabIndex = 4;
+            this.yes_illness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yes_illness.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // no_illness
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Location = new System.Drawing.Point(474, 23);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.radioButton2.Size = new System.Drawing.Size(44, 15);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.no_illness.AutoSize = true;
+            this.no_illness.Checked = true;
+            this.no_illness.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_illness.Location = new System.Drawing.Point(474, 23);
+            this.no_illness.Name = "no_illness";
+            this.no_illness.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.no_illness.Size = new System.Drawing.Size(44, 15);
+            this.no_illness.TabIndex = 5;
+            this.no_illness.TabStop = true;
+            this.no_illness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.no_illness.UseVisualStyleBackColor = true;
+            this.no_illness.CheckedChanged += new System.EventHandler(this.no_illness_CheckedChanged);
             // 
             // label5
             // 
@@ -787,16 +806,17 @@
             this.label5.Text = "If Yes, Please provide details:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // tbx_illness_details
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(41, 67);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 55);
-            this.textBox1.TabIndex = 7;
+            this.tbx_illness_details.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_illness_details.Enabled = false;
+            this.tbx_illness_details.Location = new System.Drawing.Point(41, 67);
+            this.tbx_illness_details.Margin = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.tbx_illness_details.Multiline = true;
+            this.tbx_illness_details.Name = "tbx_illness_details";
+            this.tbx_illness_details.Size = new System.Drawing.Size(375, 55);
+            this.tbx_illness_details.TabIndex = 7;
+            this.tbx_illness_details.TextChanged += new System.EventHandler(this.tbx_illness_details_TextChanged);
             // 
             // ControlBackgroundCheck
             // 
@@ -807,6 +827,7 @@
             this.Name = "ControlBackgroundCheck";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(641, 515);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -829,56 +850,57 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_previous;
-        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel question2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton yes_med_op;
+        private System.Windows.Forms.RadioButton no_med_op;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tbx_illness_details;
+        private System.Windows.Forms.TextBox tbx_med_operation_details;
         private System.Windows.Forms.TableLayoutPanel question1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton yes_illness;
+        private System.Windows.Forms.RadioButton no_illness;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_illness_details;
         private System.Windows.Forms.TableLayoutPanel question4;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton yes_convicted;
+        private System.Windows.Forms.RadioButton no_convicted;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox tbx_convicted_details;
         private System.Windows.Forms.TableLayoutPanel question3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton yes_perpetual;
+        private System.Windows.Forms.RadioButton no_perpetual;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox tbx_perpetual_illness;
         private System.Windows.Forms.TableLayoutPanel question5;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton yes_legalcase;
+        private System.Windows.Forms.RadioButton no_legalcase;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox tbx_legalcase_type;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox tbx_legalcase_status;
         private System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Label q4;
+        private System.Windows.Forms.Label q5;
+        private System.Windows.Forms.Label q6;
+        private System.Windows.Forms.Label q3;
+        private System.Windows.Forms.Label q2;
+        private System.Windows.Forms.Label q1;
     }
 }
