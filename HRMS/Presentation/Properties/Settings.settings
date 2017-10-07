@@ -17,8 +17,14 @@
     <Setting Name="password3086" Type="System.String" Scope="User">
       <Value Profile="(Default)">12#2!@31se</Value>
     </Setting>
-    <Setting Name="AccessType" Type="System.String" Scope="User">
+    <Setting Name="UserAccessType" Type="System.String" Scope="User">
       <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="UserFirstname" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserLastname" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

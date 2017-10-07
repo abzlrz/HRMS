@@ -29,31 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlInterviewEvaluation));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.view_interviewEvaluation = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.evaluateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cbx_show = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbl_totalNumber = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbx_Search = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.p1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.view_internalApplicant = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.view_employee = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tbx_employee_search = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.view_external_applicant = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbx_applicant_search = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.view_interviewEvaluation)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             this.panel4.SuspendLayout();
+            this.view_internalApplicant.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -73,24 +77,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.view_interviewEvaluation);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.view_internalApplicant);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(1, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1073, 373);
             this.panel1.TabIndex = 1;
-            // 
-            // view_interviewEvaluation
-            // 
-            this.view_interviewEvaluation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_interviewEvaluation.ContextMenuStrip = this.contextMenuStrip;
-            this.view_interviewEvaluation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_interviewEvaluation.Location = new System.Drawing.Point(0, 29);
-            this.view_interviewEvaluation.Name = "view_interviewEvaluation";
-            this.view_interviewEvaluation.Size = new System.Drawing.Size(1073, 344);
-            this.view_interviewEvaluation.TabIndex = 0;
             // 
             // contextMenuStrip
             // 
@@ -106,102 +99,6 @@
             this.evaluateToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.evaluateToolStripMenuItem.Text = "Evaluate";
             this.evaluateToolStripMenuItem.Click += new System.EventHandler(this.OnEvaluateToolStripMenuItemClick);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.p1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1073, 29);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.cbx_show);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.lbl_totalNumber);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.cbx_Search);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1045, 27);
-            this.panel3.TabIndex = 0;
-            // 
-            // cbx_show
-            // 
-            this.cbx_show.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_show.FormattingEnabled = true;
-            this.cbx_show.Location = new System.Drawing.Point(597, 3);
-            this.cbx_show.Name = "cbx_show";
-            this.cbx_show.Size = new System.Drawing.Size(196, 21);
-            this.cbx_show.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(557, 6);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Show:";
-            // 
-            // lbl_totalNumber
-            // 
-            this.lbl_totalNumber.AutoSize = true;
-            this.lbl_totalNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_totalNumber.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalNumber.Location = new System.Drawing.Point(180, 7);
-            this.lbl_totalNumber.Name = "lbl_totalNumber";
-            this.lbl_totalNumber.Size = new System.Drawing.Size(81, 13);
-            this.lbl_totalNumber.TabIndex = 3;
-            this.lbl_totalNumber.Text = "[Total Number]";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Pick Applicant Below";
-            // 
-            // cbx_Search
-            // 
-            this.cbx_Search.Location = new System.Drawing.Point(846, 3);
-            this.cbx_Search.Name = "cbx_Search";
-            this.cbx_Search.Size = new System.Drawing.Size(186, 20);
-            this.cbx_Search.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(800, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Search:";
-            // 
-            // p1
-            // 
-            this.p1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.p1.Image = ((System.Drawing.Image)(resources.GetObject("p1.Image")));
-            this.p1.Location = new System.Drawing.Point(1045, 0);
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(26, 27);
-            this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.p1.TabIndex = 1;
-            this.p1.TabStop = false;
-            this.p1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnP1MouseDown);
-            this.p1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnP1MouseUp);
             // 
             // panel4
             // 
@@ -227,6 +124,141 @@
             this.label1.Text = "Interview Evaluation";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // view_internalApplicant
+            // 
+            this.view_internalApplicant.Controls.Add(this.tabPage1);
+            this.view_internalApplicant.Controls.Add(this.tabPage2);
+            this.view_internalApplicant.Controls.Add(this.tabPage3);
+            this.view_internalApplicant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_internalApplicant.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.view_internalApplicant.HotTrack = true;
+            this.view_internalApplicant.Location = new System.Drawing.Point(0, 0);
+            this.view_internalApplicant.Name = "view_internalApplicant";
+            this.view_internalApplicant.SelectedIndex = 0;
+            this.view_internalApplicant.Size = new System.Drawing.Size(1073, 373);
+            this.view_internalApplicant.TabIndex = 5;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.view_employee);
+            this.tabPage1.Controls.Add(this.panel3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(1065, 347);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Accepted";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // view_employee
+            // 
+            this.view_employee.AllowUserToAddRows = false;
+            this.view_employee.AllowUserToDeleteRows = false;
+            this.view_employee.AllowUserToResizeRows = false;
+            this.view_employee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_employee.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.view_employee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_employee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_employee.Location = new System.Drawing.Point(0, 27);
+            this.view_employee.MultiSelect = false;
+            this.view_employee.Name = "view_employee";
+            this.view_employee.ReadOnly = true;
+            this.view_employee.RowHeadersVisible = false;
+            this.view_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_employee.Size = new System.Drawing.Size(1065, 320);
+            this.view_employee.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.tbx_employee_search);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1065, 27);
+            this.panel3.TabIndex = 6;
+            // 
+            // tbx_employee_search
+            // 
+            this.tbx_employee_search.Location = new System.Drawing.Point(52, 3);
+            this.tbx_employee_search.Name = "tbx_employee_search";
+            this.tbx_employee_search.Size = new System.Drawing.Size(186, 22);
+            this.tbx_employee_search.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Search:";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.view_external_applicant);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(1065, 347);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Rejected";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // view_external_applicant
+            // 
+            this.view_external_applicant.AllowUserToAddRows = false;
+            this.view_external_applicant.AllowUserToDeleteRows = false;
+            this.view_external_applicant.AllowUserToResizeRows = false;
+            this.view_external_applicant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_external_applicant.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.view_external_applicant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_external_applicant.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_external_applicant.Location = new System.Drawing.Point(0, 27);
+            this.view_external_applicant.MultiSelect = false;
+            this.view_external_applicant.Name = "view_external_applicant";
+            this.view_external_applicant.ReadOnly = true;
+            this.view_external_applicant.RowHeadersVisible = false;
+            this.view_external_applicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_external_applicant.Size = new System.Drawing.Size(1065, 320);
+            this.view_external_applicant.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tbx_applicant_search);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1065, 27);
+            this.panel2.TabIndex = 7;
+            // 
+            // tbx_applicant_search
+            // 
+            this.tbx_applicant_search.Location = new System.Drawing.Point(52, 3);
+            this.tbx_applicant_search.Name = "tbx_applicant_search";
+            this.tbx_applicant_search.Size = new System.Drawing.Size(186, 22);
+            this.tbx_applicant_search.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Search:";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1065, 347);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Shortlisted";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // ControlInterviewEvaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,13 +269,17 @@
             this.Size = new System.Drawing.Size(1075, 400);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.view_interviewEvaluation)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.view_internalApplicant.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -252,19 +288,21 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView view_interviewEvaluation;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lbl_totalNumber;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox cbx_Search;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox p1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbx_show;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem evaluateToolStripMenuItem;
+        private System.Windows.Forms.TabControl view_internalApplicant;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView view_employee;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox tbx_employee_search;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView view_external_applicant;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox tbx_applicant_search;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

@@ -27,6 +27,25 @@ namespace Data.Access
             }
         }
 
+        public bool LoginAsAdmin(User user)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_user_login_admin";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", int.Parse(user.Username));
+                adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
+
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? true : false;
+            }
+        }
+
         public bool Login(User user)
         {
             var table = new DataTable();
@@ -35,9 +54,9 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "sp_user_login";
+                adapter.SelectCommand.CommandText = "sp_user_login_admin";
 
-                adapter.SelectCommand.Parameters.AddWithValue("@id", user.Username);
+                adapter.SelectCommand.Parameters.AddWithValue("@id", int.Parse(user.Username));
                 adapter.SelectCommand.Parameters.AddWithValue("@password", user.Password);
 
                 adapter.Fill(table);

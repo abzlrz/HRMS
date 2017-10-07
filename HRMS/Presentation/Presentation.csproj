@@ -59,6 +59,12 @@
     <Compile Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.designer.cs">
       <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DialogBox\FormAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox\FormAudit.Designer.cs">
+      <DependentUpon>FormAudit.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogBox\FormAuditLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="DialogBox\FormJobPosting.Designer.cs">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Maintenance\FormUserManagement.cs">
       <SubType>Form</SubType>
@@ -305,6 +317,12 @@
     <Compile Include="Modules\ControlRelivingDashboard.Designer.cs">
       <DependentUpon>ControlRelivingDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ControlReportServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ControlReportServices.Designer.cs">
+      <DependentUpon>ControlReportServices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\ControlTrainingDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -367,6 +385,9 @@
     <EmbeddedResource Include="DialogBox\Dialog Box for External Application Form\FormBackgroundEducation.resx">
       <DependentUpon>FormBackgroundEducation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox\FormAudit.resx">
+      <DependentUpon>FormAudit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\FormCheckVacancies.resx">
       <DependentUpon>FormCheckVacancies.cs</DependentUpon>
     </EmbeddedResource>
@@ -375,6 +396,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogBox\FormJobPosting.resx">
       <DependentUpon>FormJobPosting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\FormUserManagement.resx">
       <DependentUpon>FormUserManagement.cs</DependentUpon>

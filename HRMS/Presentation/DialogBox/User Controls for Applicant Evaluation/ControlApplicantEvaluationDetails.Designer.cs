@@ -36,13 +36,10 @@
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbx_managerName = new System.Windows.Forms.ComboBox();
             this.cbx_managerID = new System.Windows.Forms.ComboBox();
             this.cbx_arvatoLevel = new System.Windows.Forms.ComboBox();
             this.cbx_languageRequirement = new System.Windows.Forms.ComboBox();
             this.cbx_titanTitle = new System.Windows.Forms.ComboBox();
-            this.cbx_jobTitle = new System.Windows.Forms.ComboBox();
-            this.lbl_managerName = new System.Windows.Forms.Label();
             this.lbl_jobTitle = new System.Windows.Forms.Label();
             this.lbl_bucket = new System.Windows.Forms.Label();
             this.lbl_titanTitle = new System.Windows.Forms.Label();
@@ -50,6 +47,7 @@
             this.lbl_arvatoLevel = new System.Windows.Forms.Label();
             this.lbl_managerID = new System.Windows.Forms.Label();
             this.cbx_bucket = new System.Windows.Forms.ComboBox();
+            this.cbx_position = new System.Windows.Forms.ComboBox();
             this.gbxAppInfo = new System.Windows.Forms.GroupBox();
             this.applicantInfo = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -129,13 +127,10 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.0179F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.9821F));
-            this.tableLayoutPanel3.Controls.Add(this.cbx_managerName, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.cbx_managerID, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.cbx_arvatoLevel, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.cbx_languageRequirement, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.cbx_titanTitle, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.cbx_jobTitle, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lbl_managerName, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.lbl_jobTitle, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.lbl_bucket, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lbl_titanTitle, 0, 2);
@@ -143,32 +138,20 @@
             this.tableLayoutPanel3.Controls.Add(this.lbl_arvatoLevel, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.lbl_managerID, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.cbx_bucket, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cbx_position, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(25, 43);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 7;
+            this.tableLayoutPanel3.RowCount = 6;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(506, 163);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(506, 140);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // cbx_managerName
-            // 
-            this.cbx_managerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbx_managerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbx_managerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_managerName.FormattingEnabled = true;
-            this.cbx_managerName.Location = new System.Drawing.Point(184, 140);
-            this.cbx_managerName.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_managerName.Name = "cbx_managerName";
-            this.cbx_managerName.Size = new System.Drawing.Size(320, 21);
-            this.cbx_managerName.TabIndex = 83;
-            this.cbx_managerName.SelectedIndexChanged += new System.EventHandler(this.cbx_managerName_SelectedIndexChanged);
             // 
             // cbx_managerID
             // 
@@ -178,6 +161,7 @@
             this.cbx_managerID.FormattingEnabled = true;
             this.cbx_managerID.Location = new System.Drawing.Point(184, 117);
             this.cbx_managerID.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_managerID.MaxLength = 10;
             this.cbx_managerID.Name = "cbx_managerID";
             this.cbx_managerID.Size = new System.Drawing.Size(320, 21);
             this.cbx_managerID.TabIndex = 82;
@@ -226,37 +210,6 @@
             this.cbx_titanTitle.Size = new System.Drawing.Size(320, 21);
             this.cbx_titanTitle.TabIndex = 79;
             this.cbx_titanTitle.SelectedIndexChanged += new System.EventHandler(this.cbx_titanTitle_SelectedIndexChanged);
-            // 
-            // cbx_jobTitle
-            // 
-            this.cbx_jobTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbx_jobTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_jobTitle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbx_jobTitle.FormattingEnabled = true;
-            this.cbx_jobTitle.Items.AddRange(new object[] {
-            "yes",
-            "no",
-            "maybe"});
-            this.cbx_jobTitle.Location = new System.Drawing.Point(184, 2);
-            this.cbx_jobTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.cbx_jobTitle.Name = "cbx_jobTitle";
-            this.cbx_jobTitle.Size = new System.Drawing.Size(320, 21);
-            this.cbx_jobTitle.TabIndex = 77;
-            this.cbx_jobTitle.SelectedIndexChanged += new System.EventHandler(this.cbx_jobTitle_SelectedIndexChanged);
-            // 
-            // lbl_managerName
-            // 
-            this.lbl_managerName.AutoSize = true;
-            this.lbl_managerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_managerName.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbl_managerName.ImageIndex = 1;
-            this.lbl_managerName.ImageList = this.imageList;
-            this.lbl_managerName.Location = new System.Drawing.Point(5, 140);
-            this.lbl_managerName.Name = "lbl_managerName";
-            this.lbl_managerName.Size = new System.Drawing.Size(174, 21);
-            this.lbl_managerName.TabIndex = 76;
-            this.lbl_managerName.Text = "Hiring Manager Name:";
-            this.lbl_managerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_jobTitle
             // 
@@ -356,6 +309,18 @@
             this.cbx_bucket.Size = new System.Drawing.Size(320, 21);
             this.cbx_bucket.TabIndex = 78;
             this.cbx_bucket.SelectedIndexChanged += new System.EventHandler(this.cbx_bucket_SelectedIndexChanged);
+            // 
+            // cbx_position
+            // 
+            this.cbx_position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_position.FormattingEnabled = true;
+            this.cbx_position.Location = new System.Drawing.Point(184, 2);
+            this.cbx_position.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_position.Name = "cbx_position";
+            this.cbx_position.Size = new System.Drawing.Size(320, 21);
+            this.cbx_position.TabIndex = 84;
+            this.cbx_position.SelectedIndexChanged += new System.EventHandler(this.cbx_position_SelectedIndexChanged);
             // 
             // gbxAppInfo
             // 
@@ -485,6 +450,7 @@
             this.Name = "ControlApplicantEvaluationDetails";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(587, 521);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -504,13 +470,9 @@
         private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ComboBox cbx_managerName;
-        private System.Windows.Forms.ComboBox cbx_managerID;
         private System.Windows.Forms.ComboBox cbx_arvatoLevel;
         private System.Windows.Forms.ComboBox cbx_languageRequirement;
         private System.Windows.Forms.ComboBox cbx_titanTitle;
-        private System.Windows.Forms.ComboBox cbx_jobTitle;
-        private System.Windows.Forms.Label lbl_managerName;
         private System.Windows.Forms.Label lbl_jobTitle;
         private System.Windows.Forms.Label lbl_bucket;
         private System.Windows.Forms.Label lbl_titanTitle;
@@ -523,8 +485,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Label lbl_applicationDate;
-        private System.Windows.Forms.Label lbl_positionApplied;
+        public System.Windows.Forms.Label lbl_name;
+        public System.Windows.Forms.Label lbl_applicationDate;
+        public System.Windows.Forms.Label lbl_positionApplied;
+        private System.Windows.Forms.ComboBox cbx_position;
+        private System.Windows.Forms.ComboBox cbx_managerID;
     }
 }

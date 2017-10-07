@@ -9,7 +9,7 @@ namespace Presentation.Modules
         public ControlPerformanceAppraisal()
         {
             InitializeComponent();
-            this.appraisal = new FormEmployeePerformanceAppraisal();
+            this.appraisal = new FormEmployeePerformanceAppraisal(0);
         }
 
         private void OnPerformanceAppraisalToolStripMenuItemClick(object sender, EventArgs e)

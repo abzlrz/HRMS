@@ -194,8 +194,10 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_info_maritalstatus = new System.Windows.Forms.Label();
+            this.sdf = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
-            this.lbl_contact_relationship = new System.Windows.Forms.Label();
+            this.lbl_address_postal_no = new System.Windows.Forms.Label();
             this.lbl_info_email = new System.Windows.Forms.Label();
             this.lbl_info_secondary_contact = new System.Windows.Forms.Label();
             this.lbl_info_primary_contact = new System.Windows.Forms.Label();
@@ -221,12 +223,35 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
-            this.lbl_contact_firstname = new System.Windows.Forms.Label();
-            this.lbl_contact_lastname = new System.Windows.Forms.Label();
-            this.lbl_contact_number = new System.Windows.Forms.Label();
+            this.lbl_address_no = new System.Windows.Forms.Label();
+            this.lbl_address_street = new System.Windows.Forms.Label();
+            this.lbl_address_postal_area = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_salary_shift_allowance = new System.Windows.Forms.Label();
+            this.lbl_salary_annual_allowance = new System.Windows.Forms.Label();
+            this.lbl_salary_annual = new System.Windows.Forms.Label();
+            this.lbl_salary_approved = new System.Windows.Forms.Label();
+            this.lbl_salary_date_started = new System.Windows.Forms.Label();
+            this.lbl_salary_date_accepted = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.lbl_salary_date_approved = new System.Windows.Forms.Label();
+            this.label128 = new System.Windows.Forms.Label();
+            this.lbl_salary_reloc_allowance = new System.Windows.Forms.Label();
+            this.lbl_salary_reloc_detail = new System.Windows.Forms.Label();
+            this.lbl_salary_cost_centre = new System.Windows.Forms.Label();
+            this.label140 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_job_team = new System.Windows.Forms.Label();
@@ -254,29 +279,6 @@
             this.label121 = new System.Windows.Forms.Label();
             this.lbl_owner_lastname = new System.Windows.Forms.Label();
             this.label127 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
-            this.label118 = new System.Windows.Forms.Label();
-            this.label120 = new System.Windows.Forms.Label();
-            this.label122 = new System.Windows.Forms.Label();
-            this.label123 = new System.Windows.Forms.Label();
-            this.label124 = new System.Windows.Forms.Label();
-            this.label125 = new System.Windows.Forms.Label();
-            this.label126 = new System.Windows.Forms.Label();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label140 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -286,10 +288,10 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -406,7 +408,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label97, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.link_payroll, 2, 1);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(421, 32);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(432, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 19;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -1374,7 +1376,7 @@
             this.tableLayoutPanel2.Controls.Add(this.link_proofOftin, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.checkBox1, 3, 1);
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(23, 32);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 21;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -2367,9 +2369,9 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 390F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(418, 420);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 415F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(418, 445);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel4
@@ -2378,9 +2380,11 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.label104, 0, 14);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_contact_relationship, 0, 14);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_info_email, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_maritalstatus, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.sdf, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.label104, 0, 15);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_address_postal_no, 0, 15);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_email, 1, 7);
             this.tableLayoutPanel4.Controls.Add(this.lbl_info_secondary_contact, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.lbl_info_primary_contact, 1, 4);
             this.tableLayoutPanel4.Controls.Add(this.lbl_info_lastname, 1, 3);
@@ -2392,28 +2396,28 @@
             this.tableLayoutPanel4.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.label7, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 10);
             this.tableLayoutPanel4.Controls.Add(this.lbl_info_employee_id, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_benefits, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_info_sss, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_info_tin, 1, 8);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_info_hdmf, 1, 9);
-            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 10);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_info_bpi, 1, 10);
-            this.tableLayoutPanel4.Controls.Add(this.label64, 0, 11);
-            this.tableLayoutPanel4.Controls.Add(this.label98, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.label99, 0, 13);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_contact_firstname, 1, 11);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_contact_lastname, 1, 12);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_contact_number, 1, 13);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_benefits, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_sss, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_tin, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_hdmf, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 11);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_info_bpi, 1, 11);
+            this.tableLayoutPanel4.Controls.Add(this.label64, 0, 12);
+            this.tableLayoutPanel4.Controls.Add(this.label98, 0, 13);
+            this.tableLayoutPanel4.Controls.Add(this.label99, 0, 14);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_address_no, 1, 12);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_address_street, 1, 13);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_address_postal_area, 1, 14);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 28);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 15;
+            this.tableLayoutPanel4.RowCount = 16;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -2429,38 +2433,59 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(418, 390);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(418, 415);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // lbl_info_maritalstatus
+            // 
+            this.lbl_info_maritalstatus.AutoSize = true;
+            this.lbl_info_maritalstatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_info_maritalstatus.Location = new System.Drawing.Point(212, 157);
+            this.lbl_info_maritalstatus.Name = "lbl_info_maritalstatus";
+            this.lbl_info_maritalstatus.Size = new System.Drawing.Size(202, 25);
+            this.lbl_info_maritalstatus.TabIndex = 8;
+            this.lbl_info_maritalstatus.Text = "<-->";
+            this.lbl_info_maritalstatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // sdf
+            // 
+            this.sdf.AutoSize = true;
+            this.sdf.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sdf.Location = new System.Drawing.Point(4, 157);
+            this.sdf.Name = "sdf";
+            this.sdf.Size = new System.Drawing.Size(201, 25);
+            this.sdf.TabIndex = 7;
+            this.sdf.Text = "Marital Status";
+            this.sdf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label104
             // 
             this.label104.AutoSize = true;
             this.label104.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label104.Location = new System.Drawing.Point(4, 365);
+            this.label104.Location = new System.Drawing.Point(4, 391);
             this.label104.Name = "label104";
             this.label104.Size = new System.Drawing.Size(201, 25);
             this.label104.TabIndex = 32;
             this.label104.Text = "(Contact Person) Relationship";
             this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_contact_relationship
+            // lbl_address_postal_no
             // 
-            this.lbl_contact_relationship.AutoSize = true;
-            this.lbl_contact_relationship.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_contact_relationship.Location = new System.Drawing.Point(212, 365);
-            this.lbl_contact_relationship.Name = "lbl_contact_relationship";
-            this.lbl_contact_relationship.Size = new System.Drawing.Size(202, 25);
-            this.lbl_contact_relationship.TabIndex = 31;
-            this.lbl_contact_relationship.Text = "<-->";
-            this.lbl_contact_relationship.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_address_postal_no.AutoSize = true;
+            this.lbl_address_postal_no.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_address_postal_no.Location = new System.Drawing.Point(212, 391);
+            this.lbl_address_postal_no.Name = "lbl_address_postal_no";
+            this.lbl_address_postal_no.Size = new System.Drawing.Size(202, 25);
+            this.lbl_address_postal_no.TabIndex = 31;
+            this.lbl_address_postal_no.Text = "<-->";
+            this.lbl_address_postal_no.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_info_email
             // 
             this.lbl_info_email.AutoSize = true;
             this.lbl_info_email.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_info_email.Location = new System.Drawing.Point(212, 157);
+            this.lbl_info_email.Location = new System.Drawing.Point(212, 183);
             this.lbl_info_email.Name = "lbl_info_email";
             this.lbl_info_email.Size = new System.Drawing.Size(202, 25);
             this.lbl_info_email.TabIndex = 15;
@@ -2592,7 +2617,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(4, 157);
+            this.label8.Location = new System.Drawing.Point(4, 183);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(201, 25);
             this.label8.TabIndex = 6;
@@ -2603,7 +2628,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(4, 209);
+            this.label9.Location = new System.Drawing.Point(4, 235);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(201, 25);
             this.label9.TabIndex = 7;
@@ -2614,7 +2639,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(4, 235);
+            this.label1.Location = new System.Drawing.Point(4, 261);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 25);
             this.label1.TabIndex = 8;
@@ -2636,7 +2661,7 @@
             // 
             this.lbl_benefits.AutoSize = true;
             this.lbl_benefits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_benefits.Location = new System.Drawing.Point(4, 183);
+            this.lbl_benefits.Location = new System.Drawing.Point(4, 209);
             this.lbl_benefits.Name = "lbl_benefits";
             this.lbl_benefits.Size = new System.Drawing.Size(201, 25);
             this.lbl_benefits.TabIndex = 19;
@@ -2647,7 +2672,7 @@
             // 
             this.lbl_info_sss.AutoSize = true;
             this.lbl_info_sss.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_info_sss.Location = new System.Drawing.Point(212, 183);
+            this.lbl_info_sss.Location = new System.Drawing.Point(212, 209);
             this.lbl_info_sss.Name = "lbl_info_sss";
             this.lbl_info_sss.Size = new System.Drawing.Size(202, 25);
             this.lbl_info_sss.TabIndex = 20;
@@ -2658,7 +2683,7 @@
             // 
             this.lbl_info_tin.AutoSize = true;
             this.lbl_info_tin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_info_tin.Location = new System.Drawing.Point(212, 209);
+            this.lbl_info_tin.Location = new System.Drawing.Point(212, 235);
             this.lbl_info_tin.Name = "lbl_info_tin";
             this.lbl_info_tin.Size = new System.Drawing.Size(202, 25);
             this.lbl_info_tin.TabIndex = 21;
@@ -2669,7 +2694,7 @@
             // 
             this.lbl_info_hdmf.AutoSize = true;
             this.lbl_info_hdmf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_info_hdmf.Location = new System.Drawing.Point(212, 235);
+            this.lbl_info_hdmf.Location = new System.Drawing.Point(212, 261);
             this.lbl_info_hdmf.Name = "lbl_info_hdmf";
             this.lbl_info_hdmf.Size = new System.Drawing.Size(202, 25);
             this.lbl_info_hdmf.TabIndex = 22;
@@ -2680,7 +2705,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(4, 261);
+            this.label16.Location = new System.Drawing.Point(4, 287);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(201, 25);
             this.label16.TabIndex = 23;
@@ -2691,7 +2716,7 @@
             // 
             this.lbl_info_bpi.AutoSize = true;
             this.lbl_info_bpi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_info_bpi.Location = new System.Drawing.Point(212, 261);
+            this.lbl_info_bpi.Location = new System.Drawing.Point(212, 287);
             this.lbl_info_bpi.Name = "lbl_info_bpi";
             this.lbl_info_bpi.Size = new System.Drawing.Size(202, 25);
             this.lbl_info_bpi.TabIndex = 24;
@@ -2702,7 +2727,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.Location = new System.Drawing.Point(4, 287);
+            this.label64.Location = new System.Drawing.Point(4, 313);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(201, 25);
             this.label64.TabIndex = 25;
@@ -2713,7 +2738,7 @@
             // 
             this.label98.AutoSize = true;
             this.label98.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label98.Location = new System.Drawing.Point(4, 313);
+            this.label98.Location = new System.Drawing.Point(4, 339);
             this.label98.Name = "label98";
             this.label98.Size = new System.Drawing.Size(201, 25);
             this.label98.TabIndex = 26;
@@ -2724,45 +2749,45 @@
             // 
             this.label99.AutoSize = true;
             this.label99.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label99.Location = new System.Drawing.Point(4, 339);
+            this.label99.Location = new System.Drawing.Point(4, 365);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(201, 25);
             this.label99.TabIndex = 27;
             this.label99.Text = "(Contact Person) Contact Number";
             this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_contact_firstname
+            // lbl_address_no
             // 
-            this.lbl_contact_firstname.AutoSize = true;
-            this.lbl_contact_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_contact_firstname.Location = new System.Drawing.Point(212, 287);
-            this.lbl_contact_firstname.Name = "lbl_contact_firstname";
-            this.lbl_contact_firstname.Size = new System.Drawing.Size(202, 25);
-            this.lbl_contact_firstname.TabIndex = 28;
-            this.lbl_contact_firstname.Text = "<-->";
-            this.lbl_contact_firstname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_address_no.AutoSize = true;
+            this.lbl_address_no.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_address_no.Location = new System.Drawing.Point(212, 313);
+            this.lbl_address_no.Name = "lbl_address_no";
+            this.lbl_address_no.Size = new System.Drawing.Size(202, 25);
+            this.lbl_address_no.TabIndex = 28;
+            this.lbl_address_no.Text = "<-->";
+            this.lbl_address_no.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_contact_lastname
+            // lbl_address_street
             // 
-            this.lbl_contact_lastname.AutoSize = true;
-            this.lbl_contact_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_contact_lastname.Location = new System.Drawing.Point(212, 313);
-            this.lbl_contact_lastname.Name = "lbl_contact_lastname";
-            this.lbl_contact_lastname.Size = new System.Drawing.Size(202, 25);
-            this.lbl_contact_lastname.TabIndex = 29;
-            this.lbl_contact_lastname.Text = "<-->";
-            this.lbl_contact_lastname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_address_street.AutoSize = true;
+            this.lbl_address_street.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_address_street.Location = new System.Drawing.Point(212, 339);
+            this.lbl_address_street.Name = "lbl_address_street";
+            this.lbl_address_street.Size = new System.Drawing.Size(202, 25);
+            this.lbl_address_street.TabIndex = 29;
+            this.lbl_address_street.Text = "<-->";
+            this.lbl_address_street.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_contact_number
+            // lbl_address_postal_area
             // 
-            this.lbl_contact_number.AutoSize = true;
-            this.lbl_contact_number.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_contact_number.Location = new System.Drawing.Point(212, 339);
-            this.lbl_contact_number.Name = "lbl_contact_number";
-            this.lbl_contact_number.Size = new System.Drawing.Size(202, 25);
-            this.lbl_contact_number.TabIndex = 30;
-            this.lbl_contact_number.Text = "<-->";
-            this.lbl_contact_number.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_address_postal_area.AutoSize = true;
+            this.lbl_address_postal_area.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_address_postal_area.Location = new System.Drawing.Point(212, 365);
+            this.lbl_address_postal_area.Name = "lbl_address_postal_area";
+            this.lbl_address_postal_area.Size = new System.Drawing.Size(202, 25);
+            this.lbl_address_postal_area.TabIndex = 30;
+            this.lbl_address_postal_area.Text = "<-->";
+            this.lbl_address_postal_area.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label11
             // 
@@ -2800,6 +2825,306 @@
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "Job & Salary Info";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label140, 0, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(424, 5);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(390, 289);
+            this.tableLayoutPanel7.TabIndex = 6;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_shift_allowance, 1, 6);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_annual_allowance, 1, 5);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_annual, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_approved, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_date_started, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_date_accepted, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label114, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label116, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label117, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.label118, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label120, 0, 4);
+            this.tableLayoutPanel8.Controls.Add(this.label122, 0, 5);
+            this.tableLayoutPanel8.Controls.Add(this.label123, 0, 6);
+            this.tableLayoutPanel8.Controls.Add(this.label124, 0, 8);
+            this.tableLayoutPanel8.Controls.Add(this.label125, 0, 9);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_date_approved, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.label128, 0, 7);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_reloc_allowance, 1, 7);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_reloc_detail, 1, 8);
+            this.tableLayoutPanel8.Controls.Add(this.lbl_salary_cost_centre, 1, 9);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 28);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 10;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(390, 261);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // lbl_salary_shift_allowance
+            // 
+            this.lbl_salary_shift_allowance.AutoSize = true;
+            this.lbl_salary_shift_allowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_shift_allowance.Location = new System.Drawing.Point(198, 157);
+            this.lbl_salary_shift_allowance.Name = "lbl_salary_shift_allowance";
+            this.lbl_salary_shift_allowance.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_shift_allowance.TabIndex = 15;
+            this.lbl_salary_shift_allowance.Text = "<-->";
+            this.lbl_salary_shift_allowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_annual_allowance
+            // 
+            this.lbl_salary_annual_allowance.AutoSize = true;
+            this.lbl_salary_annual_allowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_annual_allowance.Location = new System.Drawing.Point(198, 131);
+            this.lbl_salary_annual_allowance.Name = "lbl_salary_annual_allowance";
+            this.lbl_salary_annual_allowance.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_annual_allowance.TabIndex = 14;
+            this.lbl_salary_annual_allowance.Text = "<-->";
+            this.lbl_salary_annual_allowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_annual
+            // 
+            this.lbl_salary_annual.AutoSize = true;
+            this.lbl_salary_annual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_annual.Location = new System.Drawing.Point(198, 105);
+            this.lbl_salary_annual.Name = "lbl_salary_annual";
+            this.lbl_salary_annual.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_annual.TabIndex = 13;
+            this.lbl_salary_annual.Text = "<-->";
+            this.lbl_salary_annual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_approved
+            // 
+            this.lbl_salary_approved.AutoSize = true;
+            this.lbl_salary_approved.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_approved.Location = new System.Drawing.Point(198, 79);
+            this.lbl_salary_approved.Name = "lbl_salary_approved";
+            this.lbl_salary_approved.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_approved.TabIndex = 12;
+            this.lbl_salary_approved.Text = "<-->";
+            this.lbl_salary_approved.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_date_started
+            // 
+            this.lbl_salary_date_started.AutoSize = true;
+            this.lbl_salary_date_started.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_date_started.Location = new System.Drawing.Point(198, 53);
+            this.lbl_salary_date_started.Name = "lbl_salary_date_started";
+            this.lbl_salary_date_started.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_date_started.TabIndex = 11;
+            this.lbl_salary_date_started.Text = "<-->";
+            this.lbl_salary_date_started.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_date_accepted
+            // 
+            this.lbl_salary_date_accepted.AutoSize = true;
+            this.lbl_salary_date_accepted.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_date_accepted.Location = new System.Drawing.Point(198, 27);
+            this.lbl_salary_date_accepted.Name = "lbl_salary_date_accepted";
+            this.lbl_salary_date_accepted.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_date_accepted.TabIndex = 10;
+            this.lbl_salary_date_accepted.Text = "<-->";
+            this.lbl_salary_date_accepted.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label114.Location = new System.Drawing.Point(4, 1);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(187, 25);
+            this.label114.TabIndex = 0;
+            this.label114.Text = "Date Approved";
+            this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label116.Location = new System.Drawing.Point(4, 27);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(187, 25);
+            this.label116.TabIndex = 1;
+            this.label116.Text = "Date Accepted";
+            this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label117.Location = new System.Drawing.Point(4, 53);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(187, 25);
+            this.label117.TabIndex = 2;
+            this.label117.Text = "Date Started";
+            this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label118.Location = new System.Drawing.Point(4, 79);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(187, 25);
+            this.label118.TabIndex = 3;
+            this.label118.Text = "Approved Salary (PHP)";
+            this.label118.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label120.Location = new System.Drawing.Point(4, 105);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(187, 25);
+            this.label120.TabIndex = 4;
+            this.label120.Text = "Annual-based Salary (PHP):";
+            this.label120.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label122.Location = new System.Drawing.Point(4, 131);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(187, 25);
+            this.label122.TabIndex = 5;
+            this.label122.Text = "Annual Language Allowance (PHP):";
+            this.label122.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label123.Location = new System.Drawing.Point(4, 157);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(187, 25);
+            this.label123.TabIndex = 6;
+            this.label123.Text = "Shift Allowance (PHP):";
+            this.label123.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label124.Location = new System.Drawing.Point(4, 209);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(187, 25);
+            this.label124.TabIndex = 7;
+            this.label124.Text = "Relocation Allowance Detail:";
+            this.label124.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label125.Location = new System.Drawing.Point(4, 235);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(187, 25);
+            this.label125.TabIndex = 8;
+            this.label125.Text = "Cost Center:";
+            this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_date_approved
+            // 
+            this.lbl_salary_date_approved.AutoSize = true;
+            this.lbl_salary_date_approved.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_date_approved.Location = new System.Drawing.Point(198, 1);
+            this.lbl_salary_date_approved.Name = "lbl_salary_date_approved";
+            this.lbl_salary_date_approved.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_date_approved.TabIndex = 9;
+            this.lbl_salary_date_approved.Text = "<-->";
+            this.lbl_salary_date_approved.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label128.Location = new System.Drawing.Point(4, 183);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(187, 25);
+            this.label128.TabIndex = 19;
+            this.label128.Text = "Relocation Allowance (PHP):";
+            this.label128.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_reloc_allowance
+            // 
+            this.lbl_salary_reloc_allowance.AutoSize = true;
+            this.lbl_salary_reloc_allowance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_reloc_allowance.Location = new System.Drawing.Point(198, 183);
+            this.lbl_salary_reloc_allowance.Name = "lbl_salary_reloc_allowance";
+            this.lbl_salary_reloc_allowance.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_reloc_allowance.TabIndex = 20;
+            this.lbl_salary_reloc_allowance.Text = "<-->";
+            this.lbl_salary_reloc_allowance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_reloc_detail
+            // 
+            this.lbl_salary_reloc_detail.AutoSize = true;
+            this.lbl_salary_reloc_detail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_reloc_detail.Location = new System.Drawing.Point(198, 209);
+            this.lbl_salary_reloc_detail.Name = "lbl_salary_reloc_detail";
+            this.lbl_salary_reloc_detail.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_reloc_detail.TabIndex = 21;
+            this.lbl_salary_reloc_detail.Text = "<-->";
+            this.lbl_salary_reloc_detail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_salary_cost_centre
+            // 
+            this.lbl_salary_cost_centre.AutoSize = true;
+            this.lbl_salary_cost_centre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_salary_cost_centre.Location = new System.Drawing.Point(198, 235);
+            this.lbl_salary_cost_centre.Name = "lbl_salary_cost_centre";
+            this.lbl_salary_cost_centre.Size = new System.Drawing.Size(188, 25);
+            this.lbl_salary_cost_centre.TabIndex = 22;
+            this.lbl_salary_cost_centre.Text = "<-->";
+            this.lbl_salary_cost_centre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label140
+            // 
+            this.label140.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label140.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label140.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label140.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label140.Location = new System.Drawing.Point(0, 0);
+            this.label140.Margin = new System.Windows.Forms.Padding(0);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(390, 28);
+            this.label140.TabIndex = 1;
+            this.label140.Text = "Salary Info";
+            this.label140.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel5
             // 
@@ -3149,306 +3474,6 @@
             this.label127.Text = "Job Info";
             this.label127.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label140, 0, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(424, 5);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 261F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 146F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(390, 289);
-            this.tableLayoutPanel7.TabIndex = 6;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.label15, 1, 6);
-            this.tableLayoutPanel8.Controls.Add(this.label17, 1, 5);
-            this.tableLayoutPanel8.Controls.Add(this.label100, 1, 4);
-            this.tableLayoutPanel8.Controls.Add(this.label101, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.label102, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.label103, 1, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label114, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label116, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.label117, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.label118, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.label120, 0, 4);
-            this.tableLayoutPanel8.Controls.Add(this.label122, 0, 5);
-            this.tableLayoutPanel8.Controls.Add(this.label123, 0, 6);
-            this.tableLayoutPanel8.Controls.Add(this.label124, 0, 8);
-            this.tableLayoutPanel8.Controls.Add(this.label125, 0, 9);
-            this.tableLayoutPanel8.Controls.Add(this.label126, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label128, 0, 7);
-            this.tableLayoutPanel8.Controls.Add(this.label129, 1, 7);
-            this.tableLayoutPanel8.Controls.Add(this.label130, 1, 8);
-            this.tableLayoutPanel8.Controls.Add(this.label131, 1, 9);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 28);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 10;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(390, 261);
-            this.tableLayoutPanel8.TabIndex = 0;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(198, 157);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(188, 25);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "<-->";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(198, 131);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(188, 25);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "<-->";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label100.Location = new System.Drawing.Point(198, 105);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(188, 25);
-            this.label100.TabIndex = 13;
-            this.label100.Text = "<-->";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label101.Location = new System.Drawing.Point(198, 79);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(188, 25);
-            this.label101.TabIndex = 12;
-            this.label101.Text = "<-->";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label102.Location = new System.Drawing.Point(198, 53);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(188, 25);
-            this.label102.TabIndex = 11;
-            this.label102.Text = "<-->";
-            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label103.Location = new System.Drawing.Point(198, 27);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(188, 25);
-            this.label103.TabIndex = 10;
-            this.label103.Text = "<-->";
-            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label114.Location = new System.Drawing.Point(4, 1);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(187, 25);
-            this.label114.TabIndex = 0;
-            this.label114.Text = "Date Approved";
-            this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label116.Location = new System.Drawing.Point(4, 27);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(187, 25);
-            this.label116.TabIndex = 1;
-            this.label116.Text = "Date Accepted";
-            this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label117.Location = new System.Drawing.Point(4, 53);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(187, 25);
-            this.label117.TabIndex = 2;
-            this.label117.Text = "Date Started";
-            this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label118.Location = new System.Drawing.Point(4, 79);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(187, 25);
-            this.label118.TabIndex = 3;
-            this.label118.Text = "Approved Salary (PHP)";
-            this.label118.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label120.Location = new System.Drawing.Point(4, 105);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(187, 25);
-            this.label120.TabIndex = 4;
-            this.label120.Text = "Annual-based Salary (PHP):";
-            this.label120.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label122.Location = new System.Drawing.Point(4, 131);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(187, 25);
-            this.label122.TabIndex = 5;
-            this.label122.Text = "Annual Language Allowance (PHP):";
-            this.label122.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label123.Location = new System.Drawing.Point(4, 157);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(187, 25);
-            this.label123.TabIndex = 6;
-            this.label123.Text = "Shift Allowance (PHP):";
-            this.label123.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label124.Location = new System.Drawing.Point(4, 209);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(187, 25);
-            this.label124.TabIndex = 7;
-            this.label124.Text = "Relocation Allowance Detail:";
-            this.label124.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label125.Location = new System.Drawing.Point(4, 235);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(187, 25);
-            this.label125.TabIndex = 8;
-            this.label125.Text = "Cost Center:";
-            this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label126.Location = new System.Drawing.Point(198, 1);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(188, 25);
-            this.label126.TabIndex = 9;
-            this.label126.Text = "<-->";
-            this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label128.Location = new System.Drawing.Point(4, 183);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(187, 25);
-            this.label128.TabIndex = 19;
-            this.label128.Text = "Relocation Allowance (PHP):";
-            this.label128.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label129.Location = new System.Drawing.Point(198, 183);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(188, 25);
-            this.label129.TabIndex = 20;
-            this.label129.Text = "<-->";
-            this.label129.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label130.Location = new System.Drawing.Point(198, 209);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(188, 25);
-            this.label130.TabIndex = 21;
-            this.label130.Text = "<-->";
-            this.label130.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label131.Location = new System.Drawing.Point(198, 235);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(188, 25);
-            this.label131.TabIndex = 22;
-            this.label131.Text = "<-->";
-            this.label131.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label140
-            // 
-            this.label140.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label140.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label140.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label140.Location = new System.Drawing.Point(0, 0);
-            this.label140.Margin = new System.Windows.Forms.Padding(0);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(390, 28);
-            this.label140.TabIndex = 1;
-            this.label140.Text = "Salary Info";
-            this.label140.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormEmployeeDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3459,6 +3484,7 @@
             this.Name = "FormEmployeeDashboard";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.FormEmployeeDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -3471,12 +3497,12 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3672,14 +3698,14 @@
         private System.Windows.Forms.Label lbl_info_hdmf;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lbl_info_bpi;
-        private System.Windows.Forms.Label lbl_contact_firstname;
+        private System.Windows.Forms.Label lbl_address_no;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label lbl_contact_relationship;
-        private System.Windows.Forms.Label lbl_contact_lastname;
-        private System.Windows.Forms.Label lbl_contact_number;
+        private System.Windows.Forms.Label lbl_address_postal_no;
+        private System.Windows.Forms.Label lbl_address_street;
+        private System.Windows.Forms.Label lbl_address_postal_area;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -3710,12 +3736,12 @@
         private System.Windows.Forms.Label label127;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label lbl_salary_shift_allowance;
+        private System.Windows.Forms.Label lbl_salary_annual_allowance;
+        private System.Windows.Forms.Label lbl_salary_annual;
+        private System.Windows.Forms.Label lbl_salary_approved;
+        private System.Windows.Forms.Label lbl_salary_date_started;
+        private System.Windows.Forms.Label lbl_salary_date_accepted;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.Label label117;
@@ -3725,11 +3751,13 @@
         private System.Windows.Forms.Label label123;
         private System.Windows.Forms.Label label124;
         private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label lbl_salary_date_approved;
         private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.Label label130;
-        private System.Windows.Forms.Label label131;
+        private System.Windows.Forms.Label lbl_salary_reloc_allowance;
+        private System.Windows.Forms.Label lbl_salary_reloc_detail;
+        private System.Windows.Forms.Label lbl_salary_cost_centre;
         private System.Windows.Forms.Label label140;
+        private System.Windows.Forms.Label lbl_info_maritalstatus;
+        private System.Windows.Forms.Label sdf;
     }
 }

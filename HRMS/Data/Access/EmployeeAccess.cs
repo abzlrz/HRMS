@@ -27,6 +27,51 @@ namespace Data.Access
             }
             return data;
         }
+
+        public DataRow GetJobInfo(int iD)
+        {
+            DataTable table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getJobInfo";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", iD);
+
+                adapter.Fill(table);
+
+                adapter.SelectCommand.Connection.Open();
+                var rows = table.Rows.Count > 0 ? table.Rows[0] : null;
+                adapter.SelectCommand.Connection.Close();
+
+                return rows;
+            }
+        }
+
+        public DataRow GetContactPerson(int Id)
+        {
+            DataTable table = new DataTable();
+            using(var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getContactPerson";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+
+                adapter.Fill(table);
+
+                adapter.SelectCommand.Connection.Open();
+                var rows = table.Rows.Count > 0 ? table.Rows[0] : null;
+                adapter.SelectCommand.Connection.Close();
+
+                return rows;
+            }
+        }
+
         public DataTable ShowDataFullname()
         {
             var data = new DataTable();
@@ -111,6 +156,60 @@ namespace Data.Access
 
                 return rows > 0;
             }
+        }
+
+        public DataTable SearchData(string text, string schema, string table)
+        {
+            var dt = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_FindStringInTable";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@stringToFind", text);
+                adapter.SelectCommand.Parameters.AddWithValue("@schema", schema);
+                adapter.SelectCommand.Parameters.AddWithValue("@table", table);
+
+                adapter.Fill(dt);
+
+                return dt;
+            }
+        }
+
+        public DataRow GetManagerName(int Id)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getManagerName";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
+        }
+
+        public DataRow GetManagerID(string text)
+        {
+            var table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getManagerID";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@name", text);
+
+                adapter.Fill(table);
+            }
+            return table.Rows.Count > 0 ? table.Rows[0] : null;
         }
 
         public DataRow GetEmployeeID(string name)
@@ -292,7 +391,7 @@ namespace Data.Access
                 adapter.SelectCommand = new SqlCommand();
                 adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-                adapter.SelectCommand.CommandText = "sp_showManagerData";
+                adapter.SelectCommand.CommandText = "sp_getEmployeeByID";
 
                 adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
 

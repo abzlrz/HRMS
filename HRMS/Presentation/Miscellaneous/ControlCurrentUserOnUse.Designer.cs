@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.l_lastname = new System.Windows.Forms.Label();
-            this.l_firstname = new System.Windows.Forms.Label();
+            this.Lastname = new System.Windows.Forms.Label();
+            this.Firstname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.l_employeeID = new System.Windows.Forms.Label();
+            this.EmployeeID = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -63,12 +63,12 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.93103F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.06897F));
-            this.tableLayoutPanel1.Controls.Add(this.l_lastname, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.l_firstname, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Lastname, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Firstname, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.l_employeeID, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EmployeeID, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 21);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -79,31 +79,31 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(227, 96);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // l_lastname
+            // Lastname
             // 
-            this.l_lastname.AutoEllipsis = true;
-            this.l_lastname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.l_lastname.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_lastname.ForeColor = System.Drawing.Color.Black;
-            this.l_lastname.Location = new System.Drawing.Point(89, 63);
-            this.l_lastname.Name = "l_lastname";
-            this.l_lastname.Size = new System.Drawing.Size(134, 32);
-            this.l_lastname.TabIndex = 5;
-            this.l_lastname.Text = "none";
-            this.l_lastname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lastname.AutoEllipsis = true;
+            this.Lastname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Lastname.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lastname.ForeColor = System.Drawing.Color.Black;
+            this.Lastname.Location = new System.Drawing.Point(89, 63);
+            this.Lastname.Name = "Lastname";
+            this.Lastname.Size = new System.Drawing.Size(134, 32);
+            this.Lastname.TabIndex = 5;
+            this.Lastname.Text = "none";
+            this.Lastname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // l_firstname
+            // Firstname
             // 
-            this.l_firstname.AutoEllipsis = true;
-            this.l_firstname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.l_firstname.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_firstname.ForeColor = System.Drawing.Color.Black;
-            this.l_firstname.Location = new System.Drawing.Point(89, 32);
-            this.l_firstname.Name = "l_firstname";
-            this.l_firstname.Size = new System.Drawing.Size(134, 30);
-            this.l_firstname.TabIndex = 4;
-            this.l_firstname.Text = "none";
-            this.l_firstname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Firstname.AutoEllipsis = true;
+            this.Firstname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Firstname.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Firstname.ForeColor = System.Drawing.Color.Black;
+            this.Firstname.Location = new System.Drawing.Point(89, 32);
+            this.Firstname.Name = "Firstname";
+            this.Firstname.Size = new System.Drawing.Size(134, 30);
+            this.Firstname.TabIndex = 4;
+            this.Firstname.Text = "none";
+            this.Firstname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -147,18 +147,18 @@
             this.label3.Text = "Lastname:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // l_employeeID
+            // EmployeeID
             // 
-            this.l_employeeID.AutoEllipsis = true;
-            this.l_employeeID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.l_employeeID.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_employeeID.ForeColor = System.Drawing.Color.Black;
-            this.l_employeeID.Location = new System.Drawing.Point(89, 1);
-            this.l_employeeID.Name = "l_employeeID";
-            this.l_employeeID.Size = new System.Drawing.Size(134, 30);
-            this.l_employeeID.TabIndex = 3;
-            this.l_employeeID.Text = "none";
-            this.l_employeeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EmployeeID.AutoEllipsis = true;
+            this.EmployeeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmployeeID.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeID.ForeColor = System.Drawing.Color.Black;
+            this.EmployeeID.Location = new System.Drawing.Point(89, 1);
+            this.EmployeeID.Name = "EmployeeID";
+            this.EmployeeID.Size = new System.Drawing.Size(134, 30);
+            this.EmployeeID.TabIndex = 3;
+            this.EmployeeID.Text = "none";
+            this.EmployeeID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ControlCurrentUserOnUse
             // 
@@ -179,12 +179,12 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label l_lastname;
-        private System.Windows.Forms.Label l_firstname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label l_employeeID;
         private System.Windows.Forms.ToolTip toolTip;
+        public System.Windows.Forms.Label Lastname;
+        public System.Windows.Forms.Label Firstname;
+        public System.Windows.Forms.Label EmployeeID;
     }
 }

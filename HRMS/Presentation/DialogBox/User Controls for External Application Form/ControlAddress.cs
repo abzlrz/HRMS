@@ -37,7 +37,9 @@ namespace Presentation.DialogBox.ExternalApplication
                 result = false;
             if (lbl_postalNo1.ImageIndex == 1)
                 result = false;
-            
+            if (lbl_postalNo2.ImageIndex == 1)
+                result = false;
+
             return result;
         }
         private void ClearAllFields()

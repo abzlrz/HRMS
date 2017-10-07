@@ -7,6 +7,7 @@ using Data.Entities;
 using Presentation.Maintenance;
 using static Presentation.Properties.Settings;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Presentation
 {
@@ -17,7 +18,10 @@ namespace Presentation
             InitializeComponent();
             
             this.form_main = new FormMain();
-            
+            //
+            // employee user info
+            this.access_employee = new EmployeeAccess();
+
             // user acces begin here
             this.access = new UserAccess();
 
@@ -35,7 +39,7 @@ namespace Presentation
             this.form_userManagement = new FormUserManagement();
 
             //clearance login
-            this.form_loginclearance = new FormClearanceLogin();
+            this.form_loginclearance = new FormClearanceLogin(this);
 
             //check vancancies
             this.form_vacancies = new FormCheckVacancies();
@@ -191,7 +195,12 @@ namespace Presentation
                 if (access.Login(user))
                 {
                     DataRow row = access.GetUserByID(int.Parse(user.Username));
-                    Default.AccessType = row["TitanTitle"].ToString();
+                    DataRow row_user = access_employee.GetEmployeeInfo(int.Parse(user.Username));
+
+                    Default.UserAccessType = row["TitanTitle"].ToString();
+                    Default.EmployeeID = user.Username;
+                    Default.UserFirstname = row_user["Firstname"].ToString();
+                    Default.UserLastname = row_user["Lastname"].ToString();
 
                     this.form_main.ShowDialog();
                     this.Hide();
@@ -199,17 +208,35 @@ namespace Presentation
                 else if(tbx_username.Text.Equals(Default.username3086) 
                     && tbx_password.Text.Equals(Default.password3086))
                 {
-                    Default.AccessType = "Admin";
-                    this.form_main.ShowDialog();
+                    Default.UserAccessType = "Admin";
+                    this.form_main.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    if(attempts == 0)
+                    {
+                        MessageBox.Show("You've been locked!");
+                        form_loginclearance.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username or Password is Invalid");
+                        attempts--;
+                    }
+                }
+            }
+            catch
+            {
+                if (attempts == 0)
+                {
+                    form_loginclearance.ShowDialog();
                 }
                 else
                 {
                     MessageBox.Show("Username or Password is Invalid");
+                    attempts--;
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -254,7 +281,9 @@ namespace Presentation
         private FormMain form_main;
 
         private UserAccess access;
+        private EmployeeAccess access_employee;
         private User user;
+        private int attempts = 4;
         
         private bool clicked = false;
     }

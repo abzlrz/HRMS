@@ -49,6 +49,17 @@ namespace Presentation.DialogBox.ExternalApplication
             if (lbl_bpi.ImageIndex == 1)
                 result = false;
 
+            if (lbl_contact_firstname.ImageIndex == 1)
+                result = false;
+            if (lbl_contact_lastname.ImageIndex == 1)
+                result = false;
+            if (lbl_contact_firstname.ImageIndex == 1)
+                result = false;
+            if (lbl_contact_number.ImageIndex == 1)
+                result = false;
+            if (lbl_relationship.ImageIndex == 1)
+                result = false;
+
             return result;
         }
         public void ClearAllFields()
@@ -93,7 +104,6 @@ namespace Presentation.DialogBox.ExternalApplication
                 this.applicant.TIN = tbx_TIN.Text;
                 this.applicant.HDMF = tbx_HDMF.Text;
                 this.applicant.BankAccount = tbx_bankAccnt.Text;
-                this.applicant.ApplicationDate = DateTime.Today;
                 this.contact.Firstname = tbx_contact_firstname.Text;
                 this.contact.Lastname = tbx_contact_lastname.Text;
                 this.contact.ContactNumber = tbx_contact_number.Text;
@@ -174,5 +184,10 @@ namespace Presentation.DialogBox.ExternalApplication
             Misc.TurnGreenIndicator(cbx_relationship.SelectedIndex, lbl_relationship);
         }
         #endregion
+
+        private void tbx_secondaryContact_TextChanged(object sender, EventArgs e)
+        {
+            Misc.TurnGreenIndicator(tbx_secondaryContact, lbl_secondary_contact_no, false);
+        }
     }
 }

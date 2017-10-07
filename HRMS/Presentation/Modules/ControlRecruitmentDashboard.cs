@@ -2,53 +2,44 @@
 using Data.Entities;
 using Presentation.DialogBox;
 using System.Windows.Forms;
+using System;
 
 namespace Presentation.Modules
 {
     public partial class ControlRecruitmentDashboard : UserControl
     {
-        DataAccess context;
-        EmployeeAccess context_employee;
-        int ID;
+        private DataAccess context;
+        private ExternalApplicantAccess context_applicant;
+        private EmployeeAccess context_employee;
+        private FormEmployeeDashboard form_dash;
+        private BindingSource bs_employee;
+
+        private int employee_ID;
+        private int applicant_ID;
 
         public ControlRecruitmentDashboard()
         {
             InitializeComponent();
-
             this.context = new DataAccess();
-            //
-            // view_external_applicant
-            ///
+            this.context_employee = new EmployeeAccess();
+            this.context_applicant = new ExternalApplicantAccess();
+            this.bs_employee = new BindingSource();
 
-            /*this.view_external_applicant.Columns["SSS"].Visible = false;
-            this.view_external_applicant.Columns["HDMF"].Visible = false;
-            this.view_external_applicant.Columns["BankAccountNo"].Visible = false;
-            this.view_external_applicant.Columns["TIN"].Visible = false;
-            this.view_external_applicant.Columns["IsActive"].Visible = false;
-            //
-            // view_internal_applicant
-            //
-            this.view_internal_applicant.Columns["SSS"].Visible = false;
-            this.view_internal_applicant.Columns["HDMF"].Visible = false;
-            this.view_internal_applicant.Columns["BankAccountNo"].Visible = false;
-            this.view_internal_applicant.Columns["TIN"].Visible = false;
-            this.view_internal_applicant.Columns["IsActive"].Visible = false;
-            */
-        }
-        private void ReloadExternalApplicantData()
-        {
-            this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
-        }
-        private void ReloadEmployeeData()
-        {
-            this.view_employee.DataSource = context.Employee.ShowData();
+            this.bs_employee.DataSource = context_employee.ShowData();
+            this.view_employee.DataSource = bs_employee;
         }
 
+        private void ReloadData()
+        {
+            this.bs_employee.DataSource = context_employee.ShowData();
+            this.view_employee.DataSource = bs_employee;
+        }
+        
         private void OnLoad(object sender, System.EventArgs e)
         {
             this.context_employee = new EmployeeAccess();
             this.view_employee.DataSource = context.Employee.ShowData();
-            this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
+            this.view_external_applicant.DataSource = context_applicant.ShowData();
             //
             // view_employeee
             //
@@ -57,6 +48,20 @@ namespace Presentation.Modules
             this.view_employee.Columns["BankAccountNo"].Visible = false;
             this.view_employee.Columns["TIN"].Visible = false;
             this.view_employee.Columns["IsActive"].Visible = false;
+            //
+            // view_external_applicant
+            ///
+            this.view_external_applicant.Columns["SSS"].Visible = false;
+            this.view_external_applicant.Columns["HDMF"].Visible = false;
+            this.view_external_applicant.Columns["BankAccountNo"].Visible = false;
+            this.view_external_applicant.Columns["TIN"].Visible = false;
+
+        }
+
+        #region Employee Region
+        private void ReloadEmployeeData()
+        {
+            this.view_employee.DataSource = context.Employee.ShowData();
         }
 
         private void addEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -65,22 +70,21 @@ namespace Presentation.Modules
             reg_ex_emp.ShowDialog();
             ReloadEmployeeData();
         }
-
         private void editEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            var reg_ex_emp = new FormRegisterExistingEmployee(ID);
+            var reg_ex_emp = new FormRegisterExistingEmployee(employee_ID);
             reg_ex_emp.ShowDialog();
             ReloadEmployeeData();
         }
-
         private void deleteToolStripMenuItem1_Click(object sender, System.EventArgs e)
         {
-            if(ID > 0)
+            if (employee_ID > 0)
             {
                 if (MessageBox.Show("Are you sure", "Delete", MessageBoxButtons.YesNo,
                MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    if (this.context_employee.DeleteEmployee(ID))
+                    view_employee.ClearSelection();
+                    if (this.context_employee.DeleteEmployee(employee_ID))
                     {
                         MessageBox.Show("Deleted!");
                     }
@@ -89,13 +93,87 @@ namespace Presentation.Modules
                 }
             }
         }
-
         private void view_employee_SelectionChanged(object sender, System.EventArgs e)
         {
             if (view_employee.SelectedRows.Count > 0)
             {
-                ID = int.Parse(view_employee.SelectedRows[0].Cells[0].Value.ToString());
+                employee_ID = int.Parse(view_employee.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+        private void viewInformationToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            this.form_dash = new FormEmployeeDashboard(employee_ID);
+            this.form_dash.ShowDialog();
+        }
+        private void resignToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var form = new FormEmployeeExit(employee_ID);
+        }
+        private void performanceAppraisalToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var form = new FormEmployeePerformanceAppraisal(employee_ID);
+            form.ShowDialog();
+        }
+        #endregion
+
+        #region Applicant Region
+        private void ReloadExternalApplicantData()
+        {
+            this.view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
+        }
+        private void evaluateToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var app_evaluation = new FormEvaluateApplicant(int.Parse(view_external_applicant.SelectedRows[0].Cells[0].Value.ToString()));
+            app_evaluation.ShowDialog();
+            ReloadExternalApplicantData();
+        }
+
+        private void view_external_applicant_SelectionChanged(object sender, System.EventArgs e)
+        {
+            if (view_external_applicant.SelectedRows.Count > 0)
+            {
+                applicant_ID = int.Parse(view_external_applicant.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        #endregion
+
+        private void tbx_applicant_search_TextChanged(object sender, System.EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbx_employee_search.Text))
+                ReloadData();
+            else
+                view_external_applicant.DataSource = context_employee.SearchData(tbx_employee_search.Text, "ExternalApplicant", "Applicant");
+        }
+
+        private void tbx_employee_search_TextChanged(object sender, System.EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tbx_employee_search.Text))
+                ReloadData();
+            else
+                view_employee.DataSource = context_employee.SearchData(tbx_employee_search.Text, "Employee", "Employee");
+        }
+
+        private void deleteToolStripMenuItem2_Click(object sender, System.EventArgs e)
+        {
+            if(applicant_ID > 0)
+            {
+                if (MessageBox.Show("Are you sure", "Delete", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (this.context_applicant.DeleteApplicant(applicant_ID))
+                    {
+                        MessageBox.Show("Deleted!");
+                    }
+
+                    ReloadApplicantData();
+                }
+            }
+        }
+
+        private void ReloadApplicantData()
+        {
+            view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
         }
     }
 }

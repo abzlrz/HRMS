@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlPersonalInformation));
             this.gbx_info = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
             this.tbx_contact_lastname = new System.Windows.Forms.TextBox();
             this.lbl_relationship = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.lbl_contact_firstname = new System.Windows.Forms.Label();
-            this.tbx_secondaryContact = new System.Windows.Forms.MaskedTextBox();
             this.lbl_bpi = new System.Windows.Forms.Label();
             this.lbl_isUnder18 = new System.Windows.Forms.Label();
             this.lbl_fname = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.lbl_lastName = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lbl_primaryContact = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbl_secondary_contact_no = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
             this.lbl_sss = new System.Windows.Forms.Label();
             this.lbl_tin = new System.Windows.Forms.Label();
@@ -92,10 +92,10 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.78068F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.21932F));
+            this.tableLayoutPanel4.Controls.Add(this.tbx_secondaryContact, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.tbx_contact_lastname, 1, 13);
             this.tableLayoutPanel4.Controls.Add(this.lbl_relationship, 0, 15);
             this.tableLayoutPanel4.Controls.Add(this.lbl_contact_firstname, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.tbx_secondaryContact, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.lbl_bpi, 0, 11);
             this.tableLayoutPanel4.Controls.Add(this.lbl_isUnder18, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.lbl_fname, 0, 0);
@@ -103,7 +103,7 @@
             this.tableLayoutPanel4.Controls.Add(this.lbl_lastName, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label14, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.lbl_primaryContact, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_secondary_contact_no, 0, 5);
             this.tableLayoutPanel4.Controls.Add(this.lbl_email, 0, 7);
             this.tableLayoutPanel4.Controls.Add(this.lbl_sss, 0, 8);
             this.tableLayoutPanel4.Controls.Add(this.lbl_tin, 0, 9);
@@ -146,6 +146,20 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(552, 370);
             this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // tbx_secondaryContact
+            // 
+            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbx_secondaryContact.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.tbx_secondaryContact.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.tbx_secondaryContact.Location = new System.Drawing.Point(264, 117);
+            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
+            this.tbx_secondaryContact.Mask = "+630000000000";
+            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
+            this.tbx_secondaryContact.Size = new System.Drawing.Size(286, 20);
+            this.tbx_secondaryContact.TabIndex = 116;
+            this.tbx_secondaryContact.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbx_secondaryContact.TextChanged += new System.EventHandler(this.tbx_secondaryContact_TextChanged);
             // 
             // tbx_contact_lastname
             // 
@@ -194,17 +208,6 @@
             this.lbl_contact_firstname.TabIndex = 118;
             this.lbl_contact_firstname.Text = "(Contact Person) Firstname:";
             this.lbl_contact_firstname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbx_secondaryContact
-            // 
-            this.tbx_secondaryContact.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbx_secondaryContact.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbx_secondaryContact.Location = new System.Drawing.Point(264, 117);
-            this.tbx_secondaryContact.Margin = new System.Windows.Forms.Padding(0);
-            this.tbx_secondaryContact.Mask = "+630000000000";
-            this.tbx_secondaryContact.Name = "tbx_secondaryContact";
-            this.tbx_secondaryContact.Size = new System.Drawing.Size(286, 20);
-            this.tbx_secondaryContact.TabIndex = 113;
             // 
             // lbl_bpi
             // 
@@ -307,18 +310,19 @@
             this.lbl_primaryContact.Text = "Primary Contact Number:";
             this.lbl_primaryContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lbl_secondary_contact_no
             // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ImageList = this.imageList;
-            this.label16.Location = new System.Drawing.Point(5, 117);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(254, 21);
-            this.label16.TabIndex = 86;
-            this.label16.Text = "Secondary Contact Number:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_secondary_contact_no.AutoSize = true;
+            this.lbl_secondary_contact_no.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_secondary_contact_no.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_secondary_contact_no.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_secondary_contact_no.ImageList = this.imageList;
+            this.lbl_secondary_contact_no.Location = new System.Drawing.Point(5, 117);
+            this.lbl_secondary_contact_no.Name = "lbl_secondary_contact_no";
+            this.lbl_secondary_contact_no.Size = new System.Drawing.Size(254, 21);
+            this.lbl_secondary_contact_no.TabIndex = 86;
+            this.lbl_secondary_contact_no.Text = "Secondary Contact Number:";
+            this.lbl_secondary_contact_no.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_email
             // 
@@ -588,8 +592,7 @@
             "Stepfather",
             "Stepbrother",
             "Stepsister",
-            "Friend",
-            "Others"});
+            "Friend"});
             this.cbx_relationship.Location = new System.Drawing.Point(264, 347);
             this.cbx_relationship.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_relationship.Name = "cbx_relationship";
@@ -674,7 +677,6 @@
         private System.Windows.Forms.Button btn_next;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
         private System.Windows.Forms.Label lbl_bpi;
         private System.Windows.Forms.Label lbl_isUnder18;
         private System.Windows.Forms.Label lbl_fname;
@@ -682,7 +684,7 @@
         private System.Windows.Forms.Label lbl_lastName;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lbl_primaryContact;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbl_secondary_contact_no;
         private System.Windows.Forms.Label lbl_email;
         private System.Windows.Forms.Label lbl_sss;
         private System.Windows.Forms.Label lbl_tin;
@@ -706,5 +708,6 @@
         private System.Windows.Forms.TextBox tbx_contact_firstname;
         private System.Windows.Forms.ComboBox cbx_relationship;
         private System.Windows.Forms.MaskedTextBox tbx_contact_number;
+        private System.Windows.Forms.MaskedTextBox tbx_secondaryContact;
     }
 }

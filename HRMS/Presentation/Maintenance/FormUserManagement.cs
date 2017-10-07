@@ -19,6 +19,7 @@ namespace Presentation.Maintenance
         private void PopulateUser(int ID)
         {
             DataRow row = access.GetUserByID(ID);
+
             lbl_employee_id.Text = row["ID"].ToString();
             lbl_name.Text = row["Name"].ToString();
             lbl_position.Text = row["Position"].ToString();
@@ -50,11 +51,15 @@ namespace Presentation.Maintenance
 
         private void view_user_SelectionChanged(object sender, System.EventArgs e)
         {
-            if(view_user.SelectedRows.Count > 0)
+            try
             {
-                ID = int.Parse(view_user.SelectedRows[0].Cells[0].Value.ToString());
-                PopulateUser(ID);
+                if (view_user.SelectedRows.Count > 0)
+                {
+                    ID = int.Parse(view_user.SelectedRows[0].Cells[0].Value.ToString());
+                    PopulateUser(ID);
+                }
             }
+            catch { }
         }
 
         private void btnSave_Click(object sender, System.EventArgs e)

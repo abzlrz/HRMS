@@ -10,6 +10,8 @@ namespace Data.Entities
 
     public class ExternalApplicant
     {
+        public int ID { get; set; }
+        public DateTime ApplicationDate { get; set; }
         public Applicant Applicant { get; set; }
         public ApplicationSource ApplicationSource { get; set; }
         public DataTable EducationHistory { get; set; }
@@ -24,6 +26,7 @@ namespace Data.Entities
         public ApplicantAddress PermanentAddress { get; set; }
         public Position ApplicationPosition { get; set; }
     }
+    
 
     public class ApplicationSource
     {
@@ -47,7 +50,6 @@ namespace Data.Entities
         public string TIN { get; set; }
         public string HDMF { get; set; }
         public string BankAccount { get; set; }
-        public DateTime ApplicationDate { get; set; }
     }
 
     public class Education
@@ -71,7 +73,7 @@ namespace Data.Entities
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
         public string Nature { get; set; }
-        public decimal MonthlyCompensation { get; set; }
+        public string MonthlyCompensation { get; set; }
         public string ReasonForLeaving { get; set; }
     }
 

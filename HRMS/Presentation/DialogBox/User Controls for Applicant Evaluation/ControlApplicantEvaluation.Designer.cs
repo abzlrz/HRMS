@@ -37,52 +37,52 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.cbx_goodwork_question = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.cbx_organization = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.cbx_judgement = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.cbx_self_motivation = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.cbx_coping_ability = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.cbx_leadershipskills = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.cbx_listeningskills = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.cbx_nonverbal = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.cbx_comskils = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.cbx_csskils = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.cbx_teamskils = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.cbx_strengths = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.cbx_answered_question = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.cbx_experience = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.cbx_education = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.cbx_knowledge = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.cbx_confidence = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.cbx_interest = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.cbx_eyecontact = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cbx_dress = new System.Windows.Forms.ComboBox();
+            this.cbx_attitude = new System.Windows.Forms.ComboBox();
+            this.cbx_impression = new System.Windows.Forms.ComboBox();
+            this.cbx_greetings = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel.SuspendLayout();
@@ -196,53 +196,53 @@
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.08943F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
-            this.tableLayoutPanel1.Controls.Add(this.comboBox30, 1, 22);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.tableLayoutPanel1.Controls.Add(this.cbx_goodwork_question, 1, 22);
             this.tableLayoutPanel1.Controls.Add(this.label32, 0, 22);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label31, 0, 21);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox29, 1, 21);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_organization, 1, 21);
             this.tableLayoutPanel1.Controls.Add(this.label30, 0, 20);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label29, 0, 19);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox28, 1, 20);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_judgement, 1, 20);
             this.tableLayoutPanel1.Controls.Add(this.label28, 0, 18);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox27, 1, 19);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_self_motivation, 1, 19);
             this.tableLayoutPanel1.Controls.Add(this.label27, 0, 17);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox26, 1, 18);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_coping_ability, 1, 18);
             this.tableLayoutPanel1.Controls.Add(this.label26, 0, 16);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox25, 1, 17);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_leadershipskills, 1, 17);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 15);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox24, 1, 16);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_listeningskills, 1, 16);
             this.tableLayoutPanel1.Controls.Add(this.label24, 0, 14);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox23, 1, 15);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_nonverbal, 1, 15);
             this.tableLayoutPanel1.Controls.Add(this.label23, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox22, 1, 14);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_comskils, 1, 14);
             this.tableLayoutPanel1.Controls.Add(this.label22, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox21, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_csskils, 1, 13);
             this.tableLayoutPanel1.Controls.Add(this.label21, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox20, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_teamskils, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.label20, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox19, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_strengths, 1, 11);
             this.tableLayoutPanel1.Controls.Add(this.label19, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox18, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_answered_question, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.label18, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox17, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_experience, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.label17, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox16, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_education, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.label16, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox15, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_knowledge, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label15, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox14, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_confidence, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label14, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox13, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_interest, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox12, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_eyecontact, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox11, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox10, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox9, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox8, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_dress, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_attitude, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_impression, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbx_greetings, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(38, 18);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -273,23 +273,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(470, 513);
             this.tableLayoutPanel1.TabIndex = 62;
             // 
-            // comboBox30
+            // cbx_goodwork_question
             // 
-            this.comboBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
+            this.cbx_goodwork_question.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_goodwork_question.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_goodwork_question.FormattingEnabled = true;
+            this.cbx_goodwork_question.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox30.Location = new System.Drawing.Point(293, 489);
-            this.comboBox30.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(175, 21);
-            this.comboBox30.TabIndex = 106;
-            this.comboBox30.Tag = "required";
+            this.cbx_goodwork_question.Location = new System.Drawing.Point(277, 489);
+            this.cbx_goodwork_question.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_goodwork_question.Name = "cbx_goodwork_question";
+            this.cbx_goodwork_question.Size = new System.Drawing.Size(191, 21);
+            this.cbx_goodwork_question.TabIndex = 106;
+            this.cbx_goodwork_question.Tag = "required";
             // 
             // label32
             // 
@@ -298,7 +298,7 @@
             this.label32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(5, 489);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(283, 22);
+            this.label32.Size = new System.Drawing.Size(267, 22);
             this.label32.TabIndex = 105;
             this.label32.Text = "Asked Good Work Questions:";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,7 +310,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(283, 21);
+            this.label5.Size = new System.Drawing.Size(267, 21);
             this.label5.TabIndex = 44;
             this.label5.Text = "Made Good First Impression:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,28 +322,28 @@
             this.label31.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(5, 467);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(283, 20);
+            this.label31.Size = new System.Drawing.Size(267, 20);
             this.label31.TabIndex = 104;
             this.label31.Text = "Organization/Planning Skills:";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox29
+            // cbx_organization
             // 
-            this.comboBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
+            this.cbx_organization.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_organization.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_organization.FormattingEnabled = true;
+            this.cbx_organization.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox29.Location = new System.Drawing.Point(293, 467);
-            this.comboBox29.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(175, 21);
-            this.comboBox29.TabIndex = 42;
-            this.comboBox29.Tag = "required";
+            this.cbx_organization.Location = new System.Drawing.Point(277, 467);
+            this.cbx_organization.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_organization.Name = "cbx_organization";
+            this.cbx_organization.Size = new System.Drawing.Size(191, 21);
+            this.cbx_organization.TabIndex = 42;
+            this.cbx_organization.Tag = "required";
             // 
             // label30
             // 
@@ -352,7 +352,7 @@
             this.label30.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(5, 445);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(283, 20);
+            this.label30.Size = new System.Drawing.Size(267, 20);
             this.label30.TabIndex = 103;
             this.label30.Text = "Judgement, Decision Making:";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -364,7 +364,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 2);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(283, 21);
+            this.label6.Size = new System.Drawing.Size(267, 21);
             this.label6.TabIndex = 43;
             this.label6.Text = "Greeting to Committee:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -376,28 +376,28 @@
             this.label29.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(5, 423);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(283, 20);
+            this.label29.Size = new System.Drawing.Size(267, 20);
             this.label29.TabIndex = 102;
             this.label29.Text = "Self Motivation && Goals:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox28
+            // cbx_judgement
             // 
-            this.comboBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Items.AddRange(new object[] {
+            this.cbx_judgement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_judgement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_judgement.FormattingEnabled = true;
+            this.cbx_judgement.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox28.Location = new System.Drawing.Point(293, 445);
-            this.comboBox28.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(175, 21);
-            this.comboBox28.TabIndex = 41;
-            this.comboBox28.Tag = "required";
+            this.cbx_judgement.Location = new System.Drawing.Point(277, 445);
+            this.cbx_judgement.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_judgement.Name = "cbx_judgement";
+            this.cbx_judgement.Size = new System.Drawing.Size(191, 21);
+            this.cbx_judgement.TabIndex = 41;
+            this.cbx_judgement.Tag = "required";
             // 
             // label28
             // 
@@ -406,28 +406,28 @@
             this.label28.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(5, 401);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(283, 20);
+            this.label28.Size = new System.Drawing.Size(267, 20);
             this.label28.TabIndex = 101;
             this.label28.Text = "Coping Ability (Stress, Conflict, Time Demands):";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox27
+            // cbx_self_motivation
             // 
-            this.comboBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Items.AddRange(new object[] {
+            this.cbx_self_motivation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_self_motivation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_self_motivation.FormattingEnabled = true;
+            this.cbx_self_motivation.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox27.Location = new System.Drawing.Point(293, 423);
-            this.comboBox27.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(175, 21);
-            this.comboBox27.TabIndex = 40;
-            this.comboBox27.Tag = "required";
+            this.cbx_self_motivation.Location = new System.Drawing.Point(277, 423);
+            this.cbx_self_motivation.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_self_motivation.Name = "cbx_self_motivation";
+            this.cbx_self_motivation.Size = new System.Drawing.Size(191, 21);
+            this.cbx_self_motivation.TabIndex = 40;
+            this.cbx_self_motivation.Tag = "required";
             // 
             // label27
             // 
@@ -436,28 +436,28 @@
             this.label27.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(5, 379);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(283, 20);
+            this.label27.Size = new System.Drawing.Size(267, 20);
             this.label27.TabIndex = 100;
             this.label27.Text = "Leadership Skills:";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox26
+            // cbx_coping_ability
             // 
-            this.comboBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Items.AddRange(new object[] {
+            this.cbx_coping_ability.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_coping_ability.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_coping_ability.FormattingEnabled = true;
+            this.cbx_coping_ability.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox26.Location = new System.Drawing.Point(293, 401);
-            this.comboBox26.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(175, 21);
-            this.comboBox26.TabIndex = 39;
-            this.comboBox26.Tag = "required";
+            this.cbx_coping_ability.Location = new System.Drawing.Point(277, 401);
+            this.cbx_coping_ability.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_coping_ability.Name = "cbx_coping_ability";
+            this.cbx_coping_ability.Size = new System.Drawing.Size(191, 21);
+            this.cbx_coping_ability.TabIndex = 39;
+            this.cbx_coping_ability.Tag = "required";
             // 
             // label26
             // 
@@ -466,28 +466,28 @@
             this.label26.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(5, 357);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(283, 20);
+            this.label26.Size = new System.Drawing.Size(267, 20);
             this.label26.TabIndex = 99;
             this.label26.Text = "Listening Skills:";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox25
+            // cbx_leadershipskills
             // 
-            this.comboBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Items.AddRange(new object[] {
+            this.cbx_leadershipskills.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_leadershipskills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_leadershipskills.FormattingEnabled = true;
+            this.cbx_leadershipskills.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox25.Location = new System.Drawing.Point(293, 379);
-            this.comboBox25.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(175, 21);
-            this.comboBox25.TabIndex = 38;
-            this.comboBox25.Tag = "required";
+            this.cbx_leadershipskills.Location = new System.Drawing.Point(277, 379);
+            this.cbx_leadershipskills.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_leadershipskills.Name = "cbx_leadershipskills";
+            this.cbx_leadershipskills.Size = new System.Drawing.Size(191, 21);
+            this.cbx_leadershipskills.TabIndex = 38;
+            this.cbx_leadershipskills.Tag = "required";
             // 
             // label7
             // 
@@ -496,28 +496,28 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 335);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(283, 20);
+            this.label7.Size = new System.Drawing.Size(267, 20);
             this.label7.TabIndex = 98;
             this.label7.Text = "Non-verbal (Posture, Hand Gesture, Didn\'t Fidget):";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox24
+            // cbx_listeningskills
             // 
-            this.comboBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Items.AddRange(new object[] {
+            this.cbx_listeningskills.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_listeningskills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_listeningskills.FormattingEnabled = true;
+            this.cbx_listeningskills.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox24.Location = new System.Drawing.Point(293, 357);
-            this.comboBox24.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(175, 21);
-            this.comboBox24.TabIndex = 37;
-            this.comboBox24.Tag = "required";
+            this.cbx_listeningskills.Location = new System.Drawing.Point(277, 357);
+            this.cbx_listeningskills.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_listeningskills.Name = "cbx_listeningskills";
+            this.cbx_listeningskills.Size = new System.Drawing.Size(191, 21);
+            this.cbx_listeningskills.TabIndex = 37;
+            this.cbx_listeningskills.Tag = "required";
             // 
             // label24
             // 
@@ -526,28 +526,28 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(5, 313);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(283, 20);
+            this.label24.Size = new System.Drawing.Size(267, 20);
             this.label24.TabIndex = 97;
             this.label24.Text = "Communication Skills:";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox23
+            // cbx_nonverbal
             // 
-            this.comboBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.cbx_nonverbal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_nonverbal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_nonverbal.FormattingEnabled = true;
+            this.cbx_nonverbal.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox23.Location = new System.Drawing.Point(293, 335);
-            this.comboBox23.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(175, 21);
-            this.comboBox23.TabIndex = 36;
-            this.comboBox23.Tag = "required";
+            this.cbx_nonverbal.Location = new System.Drawing.Point(277, 335);
+            this.cbx_nonverbal.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_nonverbal.Name = "cbx_nonverbal";
+            this.cbx_nonverbal.Size = new System.Drawing.Size(191, 21);
+            this.cbx_nonverbal.TabIndex = 36;
+            this.cbx_nonverbal.Tag = "required";
             // 
             // label23
             // 
@@ -556,28 +556,28 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(5, 291);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(283, 20);
+            this.label23.Size = new System.Drawing.Size(267, 20);
             this.label23.TabIndex = 96;
             this.label23.Text = "Customer Service Skills:";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox22
+            // cbx_comskils
             // 
-            this.comboBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.cbx_comskils.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_comskils.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_comskils.FormattingEnabled = true;
+            this.cbx_comskils.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox22.Location = new System.Drawing.Point(293, 313);
-            this.comboBox22.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(175, 21);
-            this.comboBox22.TabIndex = 35;
-            this.comboBox22.Tag = "required";
+            this.cbx_comskils.Location = new System.Drawing.Point(277, 313);
+            this.cbx_comskils.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_comskils.Name = "cbx_comskils";
+            this.cbx_comskils.Size = new System.Drawing.Size(191, 21);
+            this.cbx_comskils.TabIndex = 35;
+            this.cbx_comskils.Tag = "required";
             // 
             // label22
             // 
@@ -586,28 +586,28 @@
             this.label22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(5, 269);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(283, 20);
+            this.label22.Size = new System.Drawing.Size(267, 20);
             this.label22.TabIndex = 95;
             this.label22.Text = "Team Skills:";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox21
+            // cbx_csskils
             // 
-            this.comboBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
+            this.cbx_csskils.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_csskils.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_csskils.FormattingEnabled = true;
+            this.cbx_csskils.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox21.Location = new System.Drawing.Point(293, 291);
-            this.comboBox21.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(175, 21);
-            this.comboBox21.TabIndex = 34;
-            this.comboBox21.Tag = "required";
+            this.cbx_csskils.Location = new System.Drawing.Point(277, 291);
+            this.cbx_csskils.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_csskils.Name = "cbx_csskils";
+            this.cbx_csskils.Size = new System.Drawing.Size(191, 21);
+            this.cbx_csskils.TabIndex = 34;
+            this.cbx_csskils.Tag = "required";
             // 
             // label21
             // 
@@ -616,28 +616,28 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(5, 247);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(283, 20);
+            this.label21.Size = new System.Drawing.Size(267, 20);
             this.label21.TabIndex = 94;
             this.label21.Text = "Answers Focus on Strengths:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox20
+            // cbx_teamskils
             // 
-            this.comboBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
+            this.cbx_teamskils.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_teamskils.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_teamskils.FormattingEnabled = true;
+            this.cbx_teamskils.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox20.Location = new System.Drawing.Point(293, 269);
-            this.comboBox20.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(175, 21);
-            this.comboBox20.TabIndex = 33;
-            this.comboBox20.Tag = "required";
+            this.cbx_teamskils.Location = new System.Drawing.Point(277, 269);
+            this.cbx_teamskils.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_teamskils.Name = "cbx_teamskils";
+            this.cbx_teamskils.Size = new System.Drawing.Size(191, 21);
+            this.cbx_teamskils.TabIndex = 33;
+            this.cbx_teamskils.Tag = "required";
             // 
             // label20
             // 
@@ -646,28 +646,28 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(5, 225);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(283, 20);
+            this.label20.Size = new System.Drawing.Size(267, 20);
             this.label20.TabIndex = 93;
             this.label20.Text = "Answered Questions Well:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox19
+            // cbx_strengths
             // 
-            this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
+            this.cbx_strengths.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_strengths.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_strengths.FormattingEnabled = true;
+            this.cbx_strengths.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox19.Location = new System.Drawing.Point(293, 247);
-            this.comboBox19.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(175, 21);
-            this.comboBox19.TabIndex = 32;
-            this.comboBox19.Tag = "required";
+            this.cbx_strengths.Location = new System.Drawing.Point(277, 247);
+            this.cbx_strengths.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_strengths.Name = "cbx_strengths";
+            this.cbx_strengths.Size = new System.Drawing.Size(191, 21);
+            this.cbx_strengths.TabIndex = 32;
+            this.cbx_strengths.Tag = "required";
             // 
             // label19
             // 
@@ -676,28 +676,28 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(5, 203);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(283, 20);
+            this.label19.Size = new System.Drawing.Size(267, 20);
             this.label19.TabIndex = 92;
             this.label19.Text = "Related Experience:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox18
+            // cbx_answered_question
             // 
-            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
+            this.cbx_answered_question.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_answered_question.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_answered_question.FormattingEnabled = true;
+            this.cbx_answered_question.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox18.Location = new System.Drawing.Point(293, 225);
-            this.comboBox18.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(175, 21);
-            this.comboBox18.TabIndex = 31;
-            this.comboBox18.Tag = "required";
+            this.cbx_answered_question.Location = new System.Drawing.Point(277, 225);
+            this.cbx_answered_question.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_answered_question.Name = "cbx_answered_question";
+            this.cbx_answered_question.Size = new System.Drawing.Size(191, 21);
+            this.cbx_answered_question.TabIndex = 31;
+            this.cbx_answered_question.Tag = "required";
             // 
             // label18
             // 
@@ -706,28 +706,28 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(5, 181);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(283, 20);
+            this.label18.Size = new System.Drawing.Size(267, 20);
             this.label18.TabIndex = 91;
             this.label18.Text = "Education/Training:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox17
+            // cbx_experience
             // 
-            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.cbx_experience.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_experience.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_experience.FormattingEnabled = true;
+            this.cbx_experience.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox17.Location = new System.Drawing.Point(293, 203);
-            this.comboBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(175, 21);
-            this.comboBox17.TabIndex = 30;
-            this.comboBox17.Tag = "required";
+            this.cbx_experience.Location = new System.Drawing.Point(277, 203);
+            this.cbx_experience.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_experience.Name = "cbx_experience";
+            this.cbx_experience.Size = new System.Drawing.Size(191, 21);
+            this.cbx_experience.TabIndex = 30;
+            this.cbx_experience.Tag = "required";
             // 
             // label17
             // 
@@ -736,28 +736,28 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(5, 159);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(283, 20);
+            this.label17.Size = new System.Drawing.Size(267, 20);
             this.label17.TabIndex = 90;
             this.label17.Text = "Knowledge of Job/Company:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox16
+            // cbx_education
             // 
-            this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.cbx_education.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_education.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_education.FormattingEnabled = true;
+            this.cbx_education.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox16.Location = new System.Drawing.Point(293, 181);
-            this.comboBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(175, 21);
-            this.comboBox16.TabIndex = 29;
-            this.comboBox16.Tag = "required";
+            this.cbx_education.Location = new System.Drawing.Point(277, 181);
+            this.cbx_education.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_education.Name = "cbx_education";
+            this.cbx_education.Size = new System.Drawing.Size(191, 21);
+            this.cbx_education.TabIndex = 29;
+            this.cbx_education.Tag = "required";
             // 
             // label16
             // 
@@ -766,28 +766,28 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(5, 137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(283, 20);
+            this.label16.Size = new System.Drawing.Size(267, 20);
             this.label16.TabIndex = 89;
             this.label16.Text = "Confidence:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox15
+            // cbx_knowledge
             // 
-            this.comboBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.cbx_knowledge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_knowledge.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_knowledge.FormattingEnabled = true;
+            this.cbx_knowledge.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox15.Location = new System.Drawing.Point(293, 159);
-            this.comboBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(175, 21);
-            this.comboBox15.TabIndex = 28;
-            this.comboBox15.Tag = "required";
+            this.cbx_knowledge.Location = new System.Drawing.Point(277, 159);
+            this.cbx_knowledge.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_knowledge.Name = "cbx_knowledge";
+            this.cbx_knowledge.Size = new System.Drawing.Size(191, 21);
+            this.cbx_knowledge.TabIndex = 28;
+            this.cbx_knowledge.Tag = "required";
             // 
             // label15
             // 
@@ -796,28 +796,28 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 115);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(283, 20);
+            this.label15.Size = new System.Drawing.Size(267, 20);
             this.label15.TabIndex = 88;
             this.label15.Text = "Level of Interest:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox14
+            // cbx_confidence
             // 
-            this.comboBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.cbx_confidence.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_confidence.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_confidence.FormattingEnabled = true;
+            this.cbx_confidence.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox14.Location = new System.Drawing.Point(293, 137);
-            this.comboBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(175, 21);
-            this.comboBox14.TabIndex = 27;
-            this.comboBox14.Tag = "required";
+            this.cbx_confidence.Location = new System.Drawing.Point(277, 137);
+            this.cbx_confidence.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_confidence.Name = "cbx_confidence";
+            this.cbx_confidence.Size = new System.Drawing.Size(191, 21);
+            this.cbx_confidence.TabIndex = 27;
+            this.cbx_confidence.Tag = "required";
             // 
             // label14
             // 
@@ -826,28 +826,28 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 93);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(283, 20);
+            this.label14.Size = new System.Drawing.Size(267, 20);
             this.label14.TabIndex = 87;
             this.label14.Text = "Eye Contact:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox13
+            // cbx_interest
             // 
-            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.cbx_interest.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_interest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_interest.FormattingEnabled = true;
+            this.cbx_interest.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox13.Location = new System.Drawing.Point(293, 115);
-            this.comboBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(175, 21);
-            this.comboBox13.TabIndex = 26;
-            this.comboBox13.Tag = "required";
+            this.cbx_interest.Location = new System.Drawing.Point(277, 115);
+            this.cbx_interest.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_interest.Name = "cbx_interest";
+            this.cbx_interest.Size = new System.Drawing.Size(191, 21);
+            this.cbx_interest.TabIndex = 26;
+            this.cbx_interest.Tag = "required";
             // 
             // label8
             // 
@@ -856,28 +856,28 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 71);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(283, 20);
+            this.label8.Size = new System.Drawing.Size(267, 20);
             this.label8.TabIndex = 86;
             this.label8.Text = "Dress Appropriately:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox12
+            // cbx_eyecontact
             // 
-            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.cbx_eyecontact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_eyecontact.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_eyecontact.FormattingEnabled = true;
+            this.cbx_eyecontact.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox12.Location = new System.Drawing.Point(293, 93);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(175, 21);
-            this.comboBox12.TabIndex = 25;
-            this.comboBox12.Tag = "required";
+            this.cbx_eyecontact.Location = new System.Drawing.Point(277, 93);
+            this.cbx_eyecontact.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_eyecontact.Name = "cbx_eyecontact";
+            this.cbx_eyecontact.Size = new System.Drawing.Size(191, 21);
+            this.cbx_eyecontact.TabIndex = 25;
+            this.cbx_eyecontact.Tag = "required";
             // 
             // label9
             // 
@@ -886,82 +886,82 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 48);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(283, 21);
+            this.label9.Size = new System.Drawing.Size(267, 21);
             this.label9.TabIndex = 85;
             this.label9.Text = "Attitude:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox11
+            // cbx_dress
             // 
-            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.cbx_dress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_dress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_dress.FormattingEnabled = true;
+            this.cbx_dress.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox11.Location = new System.Drawing.Point(293, 71);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(175, 21);
-            this.comboBox11.TabIndex = 24;
-            this.comboBox11.Tag = "required";
+            this.cbx_dress.Location = new System.Drawing.Point(277, 71);
+            this.cbx_dress.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_dress.Name = "cbx_dress";
+            this.cbx_dress.Size = new System.Drawing.Size(191, 21);
+            this.cbx_dress.TabIndex = 24;
+            this.cbx_dress.Tag = "required";
             // 
-            // comboBox10
+            // cbx_attitude
             // 
-            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.cbx_attitude.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_attitude.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_attitude.FormattingEnabled = true;
+            this.cbx_attitude.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox10.Location = new System.Drawing.Point(293, 48);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(175, 21);
-            this.comboBox10.TabIndex = 23;
-            this.comboBox10.Tag = "required";
+            this.cbx_attitude.Location = new System.Drawing.Point(277, 48);
+            this.cbx_attitude.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_attitude.Name = "cbx_attitude";
+            this.cbx_attitude.Size = new System.Drawing.Size(191, 21);
+            this.cbx_attitude.TabIndex = 23;
+            this.cbx_attitude.Tag = "required";
             // 
-            // comboBox9
+            // cbx_impression
             // 
-            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.cbx_impression.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_impression.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_impression.FormattingEnabled = true;
+            this.cbx_impression.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox9.Location = new System.Drawing.Point(293, 25);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(175, 21);
-            this.comboBox9.TabIndex = 22;
-            this.comboBox9.Tag = "required";
+            this.cbx_impression.Location = new System.Drawing.Point(277, 25);
+            this.cbx_impression.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_impression.Name = "cbx_impression";
+            this.cbx_impression.Size = new System.Drawing.Size(191, 21);
+            this.cbx_impression.TabIndex = 22;
+            this.cbx_impression.Tag = "required";
             // 
-            // comboBox8
+            // cbx_greetings
             // 
-            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cbx_greetings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_greetings.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_greetings.FormattingEnabled = true;
+            this.cbx_greetings.Items.AddRange(new object[] {
             "Poor",
             "Fair",
             "Proficient",
             "Very Good",
             "Excellent"});
-            this.comboBox8.Location = new System.Drawing.Point(293, 2);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(175, 21);
-            this.comboBox8.TabIndex = 21;
-            this.comboBox8.Tag = "required";
+            this.cbx_greetings.Location = new System.Drawing.Point(277, 2);
+            this.cbx_greetings.Margin = new System.Windows.Forms.Padding(0);
+            this.cbx_greetings.Name = "cbx_greetings";
+            this.cbx_greetings.Size = new System.Drawing.Size(191, 21);
+            this.cbx_greetings.TabIndex = 21;
+            this.cbx_greetings.Tag = "required";
             // 
             // ControlApplicantEvaluation
             // 
@@ -983,59 +983,59 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_reject;
         private System.Windows.Forms.Button btn_clear;
-        private System.Windows.Forms.Button btn_previous;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox cbx_goodwork_question;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox cbx_organization;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox cbx_judgement;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox cbx_self_motivation;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox cbx_coping_ability;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.ComboBox cbx_leadershipskills;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox cbx_listeningskills;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox cbx_nonverbal;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox cbx_comskils;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox cbx_csskils;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox cbx_teamskils;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox cbx_strengths;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox cbx_answered_question;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox cbx_experience;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox cbx_education;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox cbx_knowledge;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox cbx_confidence;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox cbx_interest;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox cbx_eyecontact;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.Button btn_shortlist;
-        private System.Windows.Forms.Button btn_accept;
+        private System.Windows.Forms.ComboBox cbx_dress;
+        private System.Windows.Forms.ComboBox cbx_attitude;
+        private System.Windows.Forms.ComboBox cbx_impression;
+        private System.Windows.Forms.ComboBox cbx_greetings;
+        public System.Windows.Forms.Button btn_reject;
+        public System.Windows.Forms.Button btn_previous;
+        public System.Windows.Forms.Button btn_shortlist;
+        public System.Windows.Forms.Button btn_accept;
     }
 }

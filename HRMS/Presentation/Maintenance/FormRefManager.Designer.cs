@@ -1262,6 +1262,7 @@
             // 
             // view_appSource
             // 
+            this.view_appSource.AutoArrange = false;
             this.view_appSource.BackColor = System.Drawing.SystemColors.Control;
             this.view_appSource.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.column_appsource});

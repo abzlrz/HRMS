@@ -98,11 +98,13 @@ namespace Presentation.DialogBox.ExternalApplication
             if (no_illness.Checked)
             {
                 illness_isDiagnosed = false;
+                tbx_illness_details.Enabled = false;
                 q1.ImageIndex = -1;
             }
             else
             {
                 illness_isDiagnosed = true;
+                tbx_illness_details.Enabled = true;
                 q1.ImageIndex = 1;
             }
         }
@@ -112,11 +114,13 @@ namespace Presentation.DialogBox.ExternalApplication
             if (no_med_op.Checked)
             {
                 medical_isOperated = false;
+                tbx_med_operation_details.Enabled = false;
                 q2.ImageIndex = -1;
             }
             else
             {
                 medical_isOperated = true;
+                tbx_med_operation_details.Enabled = true;
                 q2.ImageIndex = 1;
             }
         }
@@ -126,11 +130,13 @@ namespace Presentation.DialogBox.ExternalApplication
             if (no_perpetual.Checked)
             {
                 illness_perpetual_isDiagnosed = false;
+                tbx_perpetual_illness.Enabled = false;
                 q3.ImageIndex = -1;
             }
             else
             {
                 illness_perpetual_isDiagnosed = true;
+                tbx_perpetual_illness.Enabled = true;
                 q3.ImageIndex = 1;
             }
         }
@@ -140,11 +146,13 @@ namespace Presentation.DialogBox.ExternalApplication
             if (no_convicted.Checked)
             {
                 legal_isConvicted = false;
+                tbx_convicted_details.Enabled = false;
                 q4.ImageIndex = -1;
             }
             else
             {
                 legal_isConvicted = true;
+                tbx_convicted_details.Enabled = true;
                 q4.ImageIndex = 1;
             }
         }
@@ -154,12 +162,14 @@ namespace Presentation.DialogBox.ExternalApplication
             if (no_convicted.Checked)
             {
                 legal_isLawsuited = false;
+                tbx_legalcase_status.Enabled = false;
                 q5.ImageIndex = -1;
                 q6.ImageIndex = -1;
             }
             else
             {
                 legal_isLawsuited = true;
+                tbx_legalcase_status.Enabled = true;
                 q5.ImageIndex = 1;
                 q6.ImageIndex = 1;
             }

@@ -456,6 +456,7 @@
             this.q6.TabIndex = 12;
             this.q6.Text = " ";
             this.q6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
             // 
             // panel3
             // 

@@ -135,9 +135,9 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
             {
                 DataRow row = access.GetSalaryInfo(ID);
 
-                date_approved.Value = DateTime.Parse(row["DateApproved"].ToString());
-                date_accepted.Value = DateTime.Parse(row["DateAccepted"].ToString());
-                date_started.Value = DateTime.Parse(row["DateStarted"].ToString());
+                date_approved.Value = CheckDateApproved(row["DateApproved"].ToString());
+                date_accepted.Value = CheckDateApproved(row["DateAccepted"].ToString());
+                date_started.Value = CheckDateApproved(row["DateStarted"].ToString());
                 tbx_approvedSalary.Text = row["ApprovedSalary"].ToString();
                 tbx_annualBasedSalary.Text = row["AnnualBasedSalary"].ToString();
                 tbx_annualLangAllowance.Text = row["AnnualLanguageAllowance"].ToString();
@@ -145,6 +145,18 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 tbx_relocAllowance.Text = row["RelocationAllowance"].ToString();
                 tbx_relocAllowanceDetails.Text = row["RelocationAllowanceDetail"].ToString();
                 tbx_costCenter.Text = row["CostCentre"].ToString();
+            }
+        }
+
+        public DateTime CheckDateApproved(string value)
+        {
+            try
+            {
+                return DateTime.Parse(value);
+            }
+            catch
+            {
+                return DateTime.Today;
             }
         }
     }

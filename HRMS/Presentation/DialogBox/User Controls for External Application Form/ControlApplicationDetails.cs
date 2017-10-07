@@ -65,31 +65,10 @@ namespace Presentation.DialogBox.ExternalApplication
             cbx_source.SelectedIndex = -1;
             cbx_employeeID.SelectedIndex = -1;
             cbx_employeeName.SelectedIndex = -1;
-
-            date_applicationDate.ResetText();
         }
         #endregion
 
         #region if fields are empty conditions
-        private void cbx_source_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            Misc.TurnGreenIndicator(cbx_source.SelectedIndex, lbl_source);
-            
-            if(cbx_source.SelectedIndex == 1)
-            {
-                cbx_employeeID.Enabled = true;
-                cbx_employeeName.Enabled = true;
-                lbl_employeeID.ImageIndex = 1;
-                lbl_employeeName.ImageIndex = 1;
-            }
-            else
-            {
-                cbx_employeeID.Enabled = false;
-                cbx_employeeName.Enabled = false;
-                lbl_employeeID.ImageIndex = -1;
-                lbl_employeeName.ImageIndex = -1;
-            }
-        }
 
         private void cbx_employeeName_TextChanged(object sender, System.EventArgs e)
         {
@@ -203,6 +182,27 @@ namespace Presentation.DialogBox.ExternalApplication
             }
 
             Misc.TurnGreenIndicator(cbx_workExp.SelectedIndex, lbl_workExp);
+        }
+
+        private void cbx_source_TextChanged(object sender, System.EventArgs e)
+        {
+
+            Misc.TurnGreenIndicator(cbx_source.SelectedIndex, lbl_source);
+
+            if (cbx_source.Text.Equals("Employee Referral"))
+            {
+                cbx_employeeID.Enabled = true;
+                cbx_employeeName.Enabled = true;
+                lbl_employeeID.ImageIndex = 1;
+                lbl_employeeName.ImageIndex = 1;
+            }
+            else
+            {
+                cbx_employeeID.Enabled = false;
+                cbx_employeeName.Enabled = false;
+                lbl_employeeID.ImageIndex = -1;
+                lbl_employeeName.ImageIndex = -1;
+            }
         }
     }
 }

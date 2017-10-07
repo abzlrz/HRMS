@@ -14,9 +14,11 @@ namespace Presentation.DialogBox
 {
     public partial class FormEmployeeExit : Form
     {
-        public FormEmployeeExit()
+        private int Id;
+        public FormEmployeeExit(int id)
         {
             InitializeComponent();
+            Id = id;
         }
 
         private void btnAttach_Click(object sender, EventArgs e)

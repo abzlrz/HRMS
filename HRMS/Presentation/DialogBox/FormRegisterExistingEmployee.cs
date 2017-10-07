@@ -112,14 +112,5 @@ namespace Presentation.DialogBox
             else
                 MessageBox.Show("Error.");
         }
-
-        private void FormRegisterExistingEmployee_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            controlEmployeeInfo1.ClearAllFields();
-            controlEmployeeEvaluation1.ClearAllFields();
-            controlSalaryInfo1.ClearAllFields();
-
-            controlEmployeeInfo1.BringToFront();
-        }
     }
 }

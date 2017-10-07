@@ -271,10 +271,10 @@ namespace Presentation.DialogBox.ExistingEmployeeRegistration
                 DataRow row_team = _emp.GetTeam(ID);
                 DataRow row_contract = _emp.GetContractType(ID);
                 DataRow row_role = _emp.GetRole(ID);
-                DataRow row_owner = _emp.GetManager(ID);
+                DataRow row_owner = _emp.GetOwner(ID);
 
-                this.tbx_hiringManagerID.Text = row_manager["HiringManagerID"].ToString();
-                this.tbx_hiringManagerID.Text = row_manager["HiringManagerName"].ToString();
+                this.tbx_hiringManagerID.Text = row_manager["HiringManagerEmpID"].ToString();
+                this.cbx_hiringManagerName.Text = row_manager["HiringManagerName"].ToString();
                 this.cbx_titanTitle.Text = row_titantitle["TitanTitle"].ToString();
                 this.cbx_langRequirement.Text = row_titantitle["LanguageRequirements"].ToString();
                 this.cbx_bucket.Text = row_bucket["Bucket"].ToString();

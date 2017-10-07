@@ -10,7 +10,24 @@ namespace Data.Access
     {
         public EmployeeAccess Employee { get; set; } = new EmployeeAccess();
         public ExternalApplicantAccess ExternalApplicant { get; set; } = new ExternalApplicantAccess();
-        public InternalApplicantAccess InternalApplicant { get; set; } = new InternalApplicantAccess();
+
+        public DataTable ShowLog()
+        {
+            DataTable table = new DataTable();
+            using(var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showLog";
+
+                adapter.Fill(table);
+
+                return table;
+            }
+        }
+
+        // public InternalApplicantAccess InternalApplicant { get; set; } = new InternalApplicantAccess();
 
         #region SELECT
         public DataTable ShowTitanTitleData()

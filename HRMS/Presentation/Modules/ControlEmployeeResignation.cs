@@ -16,7 +16,7 @@ namespace Presentation.Modules
         public ControlEmployeeResignation()
         {
             InitializeComponent();
-            this.exit = new FormEmployeeExit();
+            this.exit = new FormEmployeeExit(0);
         }
 
         private void applyResignationToolStripMenuItem_Click(object sender, EventArgs e)

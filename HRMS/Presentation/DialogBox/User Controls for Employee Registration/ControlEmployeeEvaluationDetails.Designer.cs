@@ -64,7 +64,7 @@
             this.gbx_applicationInfo.Size = new System.Drawing.Size(563, 406);
             this.gbx_applicationInfo.TabIndex = 3;
             this.gbx_applicationInfo.TabStop = false;
-            this.gbx_applicationInfo.Text = "Evaluation Info";
+            this.gbx_applicationInfo.Text = "Personal Info";
             // 
             // applicantInfo
             // 

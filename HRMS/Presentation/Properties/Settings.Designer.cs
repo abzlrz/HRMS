@@ -86,12 +86,36 @@ namespace Presentation.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Administrator")]
-        public string AccessType {
+        public string UserAccessType {
             get {
-                return ((string)(this["AccessType"]));
+                return ((string)(this["UserAccessType"]));
             }
             set {
-                this["AccessType"] = value;
+                this["UserAccessType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UserFirstname {
+            get {
+                return ((string)(this["UserFirstname"]));
+            }
+            set {
+                this["UserFirstname"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UserLastname {
+            get {
+                return ((string)(this["UserLastname"]));
+            }
+            set {
+                this["UserLastname"] = value;
             }
         }
     }

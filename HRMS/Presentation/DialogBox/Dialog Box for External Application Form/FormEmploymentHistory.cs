@@ -139,7 +139,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
                         FromDate = date_add_from.Value,
                         ToDate = date_add_to.Value,
                         Nature = tbx_add_nature.Text,
-                        MonthlyCompensation = decimal.Parse(tbx_add_compensation.Text),
+                        MonthlyCompensation = tbx_add_compensation.Text,
                         ReasonForLeaving = tbx_add_reason.Text
                     };
 
@@ -155,6 +155,8 @@ namespace Presentation.DialogBox.ExternalApplicationForm
                         row.ReasonForLeaving);
 
                     MessageBox.Show("Data Successfully Added!");
+                    view_employee.ClearSelection();
+                    ResetAddFields();
                 }
                 else
                 {
@@ -162,11 +164,6 @@ namespace Presentation.DialogBox.ExternalApplicationForm
                 }
             }
             catch { }
-            finally
-            {
-                view_employee.ClearSelection();
-                ResetAddFields();
-            }
         }
 
         private void btn_edit_save_Click(object sender, EventArgs e)
@@ -185,7 +182,7 @@ namespace Presentation.DialogBox.ExternalApplicationForm
                         FromDate = date_edit_from.Value,
                         ToDate = date_edit_to.Value,
                         Nature = tbx_edit_nature.Text,
-                        MonthlyCompensation = decimal.Parse(tbx_edit_compensation.Text),
+                        MonthlyCompensation = tbx_edit_compensation.Text,
                         ReasonForLeaving = tbx_edit_reason.Text
                     };
 

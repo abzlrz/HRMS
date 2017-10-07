@@ -212,10 +212,10 @@ namespace Presentation
                 }
             }
         }
-        
     }
+
     public class Draggable
-    {
+    {   
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
@@ -256,4 +256,5 @@ namespace Presentation
         void EnableControl(bool arg);
         void ResetAll();
     }
+
 }

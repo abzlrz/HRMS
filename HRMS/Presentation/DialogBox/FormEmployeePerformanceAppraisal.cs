@@ -4,9 +4,11 @@ namespace Presentation.DialogBox
 {
     public partial class FormEmployeePerformanceAppraisal : Form
     {
-        public FormEmployeePerformanceAppraisal()
+        private int ID;
+        public FormEmployeePerformanceAppraisal(int Id)
         {
             InitializeComponent();
+            ID = Id;
         }
 
         private void EmployeePerformanceAppraisal_FormClosing(object sender, FormClosingEventArgs e)

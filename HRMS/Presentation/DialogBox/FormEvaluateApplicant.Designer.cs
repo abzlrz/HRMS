@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.controlApplicantEvaluationDetails1 = new Presentation.DialogBox.ApplicantEvaluation.ControlApplicantEvaluationDetails();
-            this.controlApplicantEvaluation1 = new Presentation.DialogBox.ApplicantEvaluation.ControlApplicantEvaluation();
+            this.ctrl_eval = new Presentation.DialogBox.ApplicantEvaluation.ControlApplicantEvaluation();
+            this.ctrl_eval_details = new Presentation.DialogBox.ApplicantEvaluation.ControlApplicantEvaluationDetails();
             this.SuspendLayout();
             // 
-            // controlApplicantEvaluationDetails1
+            // ctrl_eval
             // 
-            this.controlApplicantEvaluationDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlApplicantEvaluationDetails1.Location = new System.Drawing.Point(0, 0);
-            this.controlApplicantEvaluationDetails1.Name = "controlApplicantEvaluationDetails1";
-            this.controlApplicantEvaluationDetails1.Next = this.controlApplicantEvaluation1;
-            this.controlApplicantEvaluationDetails1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlApplicantEvaluationDetails1.Size = new System.Drawing.Size(587, 521);
-            this.controlApplicantEvaluationDetails1.TabIndex = 0;
+            this.ctrl_eval.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrl_eval.Location = new System.Drawing.Point(0, 0);
+            this.ctrl_eval.Name = "ctrl_eval";
+            this.ctrl_eval.Padding = new System.Windows.Forms.Padding(12);
+            this.ctrl_eval.Previous = this.ctrl_eval_details;
+            this.ctrl_eval.Size = new System.Drawing.Size(587, 521);
+            this.ctrl_eval.TabIndex = 1;
             // 
-            // controlApplicantEvaluation1
+            // ctrl_eval_details
             // 
-            this.controlApplicantEvaluation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlApplicantEvaluation1.Location = new System.Drawing.Point(0, 0);
-            this.controlApplicantEvaluation1.Name = "controlApplicantEvaluation1";
-            this.controlApplicantEvaluation1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlApplicantEvaluation1.Previous = this.controlApplicantEvaluationDetails1;
-            this.controlApplicantEvaluation1.Size = new System.Drawing.Size(587, 521);
-            this.controlApplicantEvaluation1.TabIndex = 1;
+            this.ctrl_eval_details.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrl_eval_details.Location = new System.Drawing.Point(0, 0);
+            this.ctrl_eval_details.Name = "ctrl_eval_details";
+            this.ctrl_eval_details.Next = this.ctrl_eval;
+            this.ctrl_eval_details.Padding = new System.Windows.Forms.Padding(12);
+            this.ctrl_eval_details.Size = new System.Drawing.Size(587, 521);
+            this.ctrl_eval_details.TabIndex = 2;
             // 
             // FormEvaluateApplicant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 521);
-            this.Controls.Add(this.controlApplicantEvaluationDetails1);
-            this.Controls.Add(this.controlApplicantEvaluation1);
+            this.Controls.Add(this.ctrl_eval_details);
+            this.Controls.Add(this.ctrl_eval);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -67,14 +67,13 @@
             this.MinimizeBox = false;
             this.Name = "FormEvaluateApplicant";
             this.Text = "Interview Evaluation";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EvaluateApplicant_FormClosing);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private ApplicantEvaluation.ControlApplicantEvaluationDetails controlApplicantEvaluationDetails1;
-        private ApplicantEvaluation.ControlApplicantEvaluation controlApplicantEvaluation1;
+        private ApplicantEvaluation.ControlApplicantEvaluation ctrl_eval;
+        private ApplicantEvaluation.ControlApplicantEvaluationDetails ctrl_eval_details;
     }
 }

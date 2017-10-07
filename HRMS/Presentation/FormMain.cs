@@ -36,9 +36,9 @@ namespace Presentation
             this.mod_trainingSchedule = new ControlTrainingSchedule();
 
             this.usermgr = new FormUserManagement();
-            this.clrLogin = new FormClearanceLogin();
             this.refmngr = new FormRefManager();
             this.jobposting = new FormJobPosting();
+            this.audit = new FormAudit();
 
             this.about = new AboutBox();
         }
@@ -72,14 +72,12 @@ namespace Presentation
                 ShowControlOnPanel2(modPanel, mod_employeeRegistration);
                 ShowControlOnPanel2(viewsPanel, view_recruitment);
             }
-                
 
             if (selectedNode == "Interview Evaluation")
             {
                 ShowControlOnPanel2(modPanel, mod_evaluation);
                 ShowControlOnPanel2(viewsPanel, view_recruitment);
-            }
-                
+            } 
 
             if (selectedNode == "Employee Performance Appraisal")
             {
@@ -137,7 +135,7 @@ namespace Presentation
         }
         private void auditLogsToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-
+            audit.ShowDialog();
         }
         private void OnLoad(object sender, System.EventArgs e)
         {
@@ -161,7 +159,7 @@ namespace Presentation
             views.ForEach(x => { viewsPanel.Controls.Add(x); x.Dock = DockStyle.Fill; });
             dash.ForEach(x => { panel1.Controls.Add(x); x.Dock = DockStyle.Fill; });
 
-            if (Default.AccessType.Equals("Admin"))
+            if (Default.UserAccessType.Equals("Admin"))
             {
                 toolsToolStripMenuItem.Visible = true;
                 dash_recruitment.modifyToolStripMenuItem.Visible = true;
@@ -176,6 +174,10 @@ namespace Presentation
                 dash_recruitment.editEmployeeToolStripMenuItem.Visible = false;
                 dash_recruitment.deleteToolStripMenuItem1.Visible = false;
             }
+
+            this.controlCurrentUserOnUse1.Firstname.Text = Default.UserFirstname;
+            this.controlCurrentUserOnUse1.Lastname.Text = Default.UserLastname;
+            this.controlCurrentUserOnUse1.EmployeeID.Text = Default.EmployeeID;
         }
 
         private void closeClick(object sender, System.EventArgs e)
@@ -207,6 +209,11 @@ namespace Presentation
             usermgr.ShowDialog();
         }
 
+        private void jobPostingToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            this.jobposting.ShowDialog();
+        }
+
         private ControlEmployee view_employee;
         private ControlRecruitment view_recruitment;
         private ControlTraining view_training;
@@ -224,9 +231,9 @@ namespace Presentation
         private ControlTrainingSchedule mod_trainingSchedule;
 
         private FormUserManagement usermgr;
-        private FormClearanceLogin clrLogin;
         private FormRefManager refmngr;
         private FormJobPosting jobposting;
+        private FormAudit audit;
 
         private AboutBox about;
     }

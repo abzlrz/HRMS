@@ -13,6 +13,7 @@ namespace Presentation.DialogBox
         private ExternalApplicantAccess access_applicant;
         private JobPostingAccess access_jobposting;
         public int jobPostingID;
+
         public FormExternalApplicant()
         {
             InitializeComponent();
@@ -24,25 +25,34 @@ namespace Presentation.DialogBox
 
         private void Btn_save_Click(object sender, System.EventArgs e)
         {
-            controlOtherDetails1.LoadValues();
-            applicant.Applicant = controlPersonalInformation1.applicant;
-            applicant.Contacts = controlPersonalInformation1.contact;
-            applicant.PermanentAddress = controlAddress1.permanent_address;
-            applicant.PresentAddress = controlAddress1.present_address;
-            applicant.ApplicationSource = controlApplicationDetails1.source;
-            applicant.ApplicationPosition = controlApplicationDetails1.position;
-            applicant.EducationHistory = controlApplicationDetails1.table_education;
-            applicant.EmploymentHistory = controlApplicationDetails1.table_employment;
-            applicant.Illness = controlOtherDetails1.illness;
-            applicant.PerpetualIllness = controlOtherDetails1.illness_perpetual;
-            applicant.MedicalOperation = controlOtherDetails1.operation;
-            applicant.LegalConviction = controlOtherDetails1.legal_conviction;
-            applicant.LegalCase = controlOtherDetails1.legal_case;
-
-            var success = access_applicant.InsertData(applicant);
-            if (success)
+            if (MessageBox.Show("Please kindly double check your inputs, Do you want to save?",
+                "Application Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                controlOtherDetails1.LoadValues();
+                applicant.ApplicationDate = date_application.Value;
+                applicant.Applicant = controlPersonalInformation1.applicant;
+                applicant.Contacts = controlPersonalInformation1.contact;
+                applicant.PermanentAddress = controlAddress1.permanent_address;
+                applicant.PresentAddress = controlAddress1.present_address;
+                applicant.ApplicationSource = controlApplicationDetails1.source;
+                applicant.ApplicationPosition = controlApplicationDetails1.position;
+                applicant.EducationHistory = controlApplicationDetails1.table_education;
+                applicant.EmploymentHistory = controlApplicationDetails1.table_employment;
+                applicant.Illness = controlOtherDetails1.illness;
+                applicant.PerpetualIllness = controlOtherDetails1.illness_perpetual;
+                applicant.MedicalOperation = controlOtherDetails1.operation;
+                applicant.LegalConviction = controlOtherDetails1.legal_conviction;
+                applicant.LegalCase = controlOtherDetails1.legal_case;
 
+                var success = access_applicant.InsertData(applicant);
+                if (success)
+                {
+                    MessageBox.Show("Data Successfully Added!");
+                    this.Dispose();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Error.");
             }
         }
 
