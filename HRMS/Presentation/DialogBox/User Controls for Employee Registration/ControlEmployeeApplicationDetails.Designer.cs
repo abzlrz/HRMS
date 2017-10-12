@@ -300,6 +300,7 @@
             this.Name = "ControlEmployeeApplicationDetails";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(587, 521);
+            this.Load += new System.EventHandler(this.ControlEmployeeApplicationDetails_Load);
             this.gbx_applicationDetails.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();

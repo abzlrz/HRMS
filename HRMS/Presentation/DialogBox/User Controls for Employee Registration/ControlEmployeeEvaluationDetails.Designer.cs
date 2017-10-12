@@ -64,7 +64,7 @@
             this.gbx_applicationInfo.Size = new System.Drawing.Size(563, 406);
             this.gbx_applicationInfo.TabIndex = 3;
             this.gbx_applicationInfo.TabStop = false;
-            this.gbx_applicationInfo.Text = "Personal Info";
+            this.gbx_applicationInfo.Text = "Evaluation Info";
             // 
             // applicantInfo
             // 
@@ -364,6 +364,7 @@
             this.Name = "ControlEmployeeEvaluationDetails";
             this.Padding = new System.Windows.Forms.Padding(12);
             this.Size = new System.Drawing.Size(587, 521);
+            this.Load += new System.EventHandler(this.ControlEmployeeEvaluationDetails_Load);
             this.gbx_applicationInfo.ResumeLayout(false);
             this.applicantInfo.ResumeLayout(false);
             this.applicantInfo.PerformLayout();

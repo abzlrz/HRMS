@@ -1,7 +1,6 @@
 ﻿using Data.Entities;
 using System.Data;
 using System.Data.SqlClient;
-using Data.Types;
 using System;
 using static Data.Properties.Settings;
 

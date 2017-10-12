@@ -2,6 +2,13 @@
 
 namespace Data.Entities
 {
+    public class EmployeePartial
+    {
+        public int ApplicantID { get; set; }
+        public EmployeeTeam Team { get; set; }
+        public EmployeeContractType Contract { get; set; }
+        public EmployeeSalaryInfo SalaryInfo { get; set; }
+    }
     public class EmployeeMaster
     {
         public int ID { get; set; }

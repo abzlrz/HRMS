@@ -107,6 +107,12 @@
     <Compile Include="Miscellaneous\FormNewPassword.Designer.cs">
       <DependentUpon>FormNewPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Miscellaneous\FormReApplicationDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\FormReApplicationDate.Designer.cs">
+      <DependentUpon>FormReApplicationDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Miscellaneous\FormRichTextbox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -405,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous\FormNewPassword.resx">
       <DependentUpon>FormNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous\FormReApplicationDate.resx">
+      <DependentUpon>FormReApplicationDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous\FormRichTextbox.resx">
       <DependentUpon>FormRichTextbox.cs</DependentUpon>

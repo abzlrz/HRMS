@@ -33,7 +33,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.p = new System.Windows.Forms.Panel();
-            this.view_internalApplicant = new System.Windows.Forms.TabControl();
+            this.tabcontrol4 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.view_employee = new System.Windows.Forms.DataGridView();
             this.employeeMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -58,6 +58,7 @@
             this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evaluationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sendEmailToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.findSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,11 +66,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbx_applicant_search = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.view_applicant_evaluated = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.p.SuspendLayout();
-            this.view_internalApplicant.SuspendLayout();
+            this.tabcontrol4.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).BeginInit();
             this.employeeMenuStrip.SuspendLayout();
@@ -78,6 +83,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.view_external_applicant)).BeginInit();
             this.externalApplicantMenuStrip.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.view_applicant_evaluated)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -121,25 +129,26 @@
             // 
             // p
             // 
-            this.p.Controls.Add(this.view_internalApplicant);
+            this.p.Controls.Add(this.tabcontrol4);
             this.p.Dock = System.Windows.Forms.DockStyle.Fill;
             this.p.Location = new System.Drawing.Point(3, 28);
             this.p.Name = "p";
             this.p.Size = new System.Drawing.Size(1087, 660);
             this.p.TabIndex = 3;
             // 
-            // view_internalApplicant
+            // tabcontrol4
             // 
-            this.view_internalApplicant.Controls.Add(this.tabPage1);
-            this.view_internalApplicant.Controls.Add(this.tabPage2);
-            this.view_internalApplicant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.view_internalApplicant.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.view_internalApplicant.HotTrack = true;
-            this.view_internalApplicant.Location = new System.Drawing.Point(0, 0);
-            this.view_internalApplicant.Name = "view_internalApplicant";
-            this.view_internalApplicant.SelectedIndex = 0;
-            this.view_internalApplicant.Size = new System.Drawing.Size(1087, 660);
-            this.view_internalApplicant.TabIndex = 4;
+            this.tabcontrol4.Controls.Add(this.tabPage1);
+            this.tabcontrol4.Controls.Add(this.tabPage2);
+            this.tabcontrol4.Controls.Add(this.tabPage5);
+            this.tabcontrol4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabcontrol4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabcontrol4.HotTrack = true;
+            this.tabcontrol4.Location = new System.Drawing.Point(0, 0);
+            this.tabcontrol4.Name = "tabcontrol4";
+            this.tabcontrol4.SelectedIndex = 0;
+            this.tabcontrol4.Size = new System.Drawing.Size(1087, 660);
+            this.tabcontrol4.TabIndex = 4;
             // 
             // tabPage1
             // 
@@ -298,7 +307,7 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1079, 634);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Applicant";
+            this.tabPage2.Text = "Applicant (For Evaluation)";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // view_external_applicant
@@ -333,7 +342,7 @@
             this.findSearchToolStripMenuItem,
             this.evaluationResultToolStripMenuItem});
             this.externalApplicantMenuStrip.Name = "applicantMenuStrip";
-            this.externalApplicantMenuStrip.Size = new System.Drawing.Size(182, 164);
+            this.externalApplicantMenuStrip.Size = new System.Drawing.Size(182, 142);
             // 
             // evaluateToolStripMenuItem
             // 
@@ -362,6 +371,13 @@
             this.evaluationToolStripMenuItem.Name = "evaluationToolStripMenuItem";
             this.evaluationToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.evaluationToolStripMenuItem.Text = "Evaluation Details";
+            // 
+            // deleteToolStripMenuItem2
+            // 
+            this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
+            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(181, 22);
+            this.deleteToolStripMenuItem2.Text = "Delete";
+            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
             // 
             // sendEmailToolStripMenuItem1
             // 
@@ -414,12 +430,63 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Search:";
             // 
-            // deleteToolStripMenuItem2
+            // tabPage5
             // 
-            this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(181, 22);
-            this.deleteToolStripMenuItem2.Text = "Delete";
-            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
+            this.tabPage5.Controls.Add(this.view_applicant_evaluated);
+            this.tabPage5.Controls.Add(this.panel6);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1079, 634);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Applicant (Evaluated)";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // view_applicant_evaluated
+            // 
+            this.view_applicant_evaluated.AllowUserToAddRows = false;
+            this.view_applicant_evaluated.AllowUserToDeleteRows = false;
+            this.view_applicant_evaluated.AllowUserToResizeRows = false;
+            this.view_applicant_evaluated.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.view_applicant_evaluated.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.view_applicant_evaluated.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.view_applicant_evaluated.ContextMenuStrip = this.externalApplicantMenuStrip;
+            this.view_applicant_evaluated.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.view_applicant_evaluated.Location = new System.Drawing.Point(0, 27);
+            this.view_applicant_evaluated.MultiSelect = false;
+            this.view_applicant_evaluated.Name = "view_applicant_evaluated";
+            this.view_applicant_evaluated.ReadOnly = true;
+            this.view_applicant_evaluated.RowHeadersVisible = false;
+            this.view_applicant_evaluated.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.view_applicant_evaluated.Size = new System.Drawing.Size(1079, 607);
+            this.view_applicant_evaluated.TabIndex = 10;
+            this.view_applicant_evaluated.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.view_applicant_evaluated_CellFormatting);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1079, 27);
+            this.panel6.TabIndex = 11;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(52, 3);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(186, 22);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Search:";
             // 
             // ControlRecruitmentDashboard
             // 
@@ -432,7 +499,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.p.ResumeLayout(false);
-            this.view_internalApplicant.ResumeLayout(false);
+            this.tabcontrol4.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.view_employee)).EndInit();
             this.employeeMenuStrip.ResumeLayout(false);
@@ -443,6 +510,10 @@
             this.externalApplicantMenuStrip.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.view_applicant_evaluated)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +523,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel p;
-        private System.Windows.Forms.TabControl view_internalApplicant;
+        private System.Windows.Forms.TabControl tabcontrol4;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView view_employee;
         private System.Windows.Forms.TabPage tabPage2;
@@ -485,5 +556,10 @@
         private System.Windows.Forms.TextBox tbx_applicant_search;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataGridView view_applicant_evaluated;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label5;
     }
 }

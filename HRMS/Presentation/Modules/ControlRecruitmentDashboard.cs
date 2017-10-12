@@ -3,6 +3,7 @@ using Data.Entities;
 using Presentation.DialogBox;
 using System.Windows.Forms;
 using System;
+using System.Drawing;
 
 namespace Presentation.Modules
 {
@@ -40,6 +41,7 @@ namespace Presentation.Modules
             this.context_employee = new EmployeeAccess();
             this.view_employee.DataSource = context.Employee.ShowData();
             this.view_external_applicant.DataSource = context_applicant.ShowData();
+            this.view_applicant_evaluated.DataSource = context_applicant.ShowApplicantEvaluated();
             //
             // view_employeee
             //
@@ -55,7 +57,6 @@ namespace Presentation.Modules
             this.view_external_applicant.Columns["HDMF"].Visible = false;
             this.view_external_applicant.Columns["BankAccountNo"].Visible = false;
             this.view_external_applicant.Columns["TIN"].Visible = false;
-
         }
 
         #region Employee Region
@@ -126,6 +127,12 @@ namespace Presentation.Modules
             var app_evaluation = new FormEvaluateApplicant(int.Parse(view_external_applicant.SelectedRows[0].Cells[0].Value.ToString()));
             app_evaluation.ShowDialog();
             ReloadExternalApplicantData();
+            ReloadApplicantEvaluated();
+        }
+
+        private void ReloadApplicantEvaluated()
+        {
+            this.view_applicant_evaluated.DataSource = context_applicant.ShowApplicantEvaluated();
         }
 
         private void view_external_applicant_SelectionChanged(object sender, System.EventArgs e)
@@ -174,6 +181,18 @@ namespace Presentation.Modules
         private void ReloadApplicantData()
         {
             view_external_applicant.DataSource = context.ExternalApplicant.ShowData();
+        }
+
+        private void view_applicant_evaluated_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            var result = view_applicant_evaluated.Rows[e.RowIndex].Cells[7].Value.ToString();
+
+            if (result == "Accepted")
+                view_applicant_evaluated.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Green;
+            if (result == "Rejected")
+                view_applicant_evaluated.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+            if (result == "Shortlisted")
+                view_applicant_evaluated.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Yellow;
         }
     }
 }

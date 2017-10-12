@@ -1,5 +1,4 @@
-﻿using Data.Types;
-using System;
+﻿using System;
 using System.ComponentModel;
 using Data.Entities;
 using System.Data;
@@ -25,9 +24,154 @@ namespace Data.Access
             return data;
         }
 
-        public DataTable ShowIllnessData()
+        public DataRow GetEvalDetails(int Id)
         {
-            throw new NotImplementedException();
+            DataTable table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getApplicant_eval_details";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? table.Rows[0] : null;
+            }
+        }
+
+        public DataRow GetApplicantManager(int iD)
+        {
+            DataTable table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "get_applicant_address";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", iD);
+
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? table.Rows[0] : null;
+            }
+        }
+
+        public DataRow GetApplicantAddress(int Id)
+        {
+            DataTable table = new DataTable();
+            using(var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "get_applicant_address";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? table.Rows[0] : null;
+            }
+        }
+
+        public DataRow GetApplicationSource(int Id)
+        {
+            DataTable table = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_getApplication_source";
+
+                adapter.SelectCommand.Parameters.AddWithValue("@id", Id);
+                adapter.Fill(table);
+
+                return table.Rows.Count > 0 ? table.Rows[0] : null;
+            }
+        }
+
+        public bool SaveReapplication(int id, int app_Id, DateTime date)
+        {
+            using (var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_insertupdate_applicantReapplication";
+
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@applicant_id", app_Id);
+                cmd.Parameters.AddWithValue("@date", date);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return rows > 0;
+            }
+        }
+
+        public object ShowApplicantShortlisted()
+        {
+            var data = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showApplicant_shortlisted";
+
+                adapter.Fill(data);
+            }
+            return data;
+        }
+
+        public DataTable ShowApplicantEvaluated()
+        {
+            var data = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showApplicant_evaluated";
+
+                adapter.Fill(data);
+            }
+            return data;
+        }
+
+        public DataTable ShowApplicantRejected()
+        {
+            var data = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showApplicant_rejected";
+
+                adapter.Fill(data);
+            }
+            return data;
+        }
+
+        public DataTable ShowApplicantAccepted()
+        {
+            var data = new DataTable();
+            using (var adapter = new SqlDataAdapter())
+            {
+                adapter.SelectCommand = new SqlCommand();
+                adapter.SelectCommand.Connection = new SqlConnection(Default.ConnectionString);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.CommandText = "sp_showApplicant_accepted";
+
+                adapter.Fill(data);
+            }
+            return data;
         }
 
         public bool SaveInterview(InterviewEvaluation interview)
@@ -76,6 +220,25 @@ namespace Data.Access
                 command.Connection.Close();
 
                 return rowsAffected > 0;
+            }
+        }
+
+        public bool SaveResult(int id, string result)
+        {
+            using (var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_insert_applicantEvalResult";
+
+                cmd.Parameters.AddWithValue("@applicant_id", id);
+                cmd.Parameters.AddWithValue("@result", result);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return rows > 0;
             }
         }
 
@@ -137,11 +300,6 @@ namespace Data.Access
 
                 return rows > 0;
             }
-        }
-
-        public object EvaluateApplicant(EvaluationAnalysis obj)
-        {
-            throw new NotImplementedException();
         }
 
         public DataRow GetApplicantByID(int Id)

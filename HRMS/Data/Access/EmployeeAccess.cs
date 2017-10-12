@@ -50,6 +50,36 @@ namespace Data.Access
             }
         }
 
+        public bool InsertEmployee(EmployeePartial employee)
+        {
+            using(var cmd = new SqlCommand())
+            {
+                cmd.Connection = new SqlConnection(Default.ConnectionString);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_register_employee";
+
+                cmd.Parameters.AddWithValue("@id", employee.ApplicantID);
+                cmd.Parameters.AddWithValue("@team", employee.Team.Team);
+                cmd.Parameters.AddWithValue("@contract_type", employee.Contract.ContractType);
+                cmd.Parameters.AddWithValue("@date_approved ", employee.SalaryInfo.DateApproved);
+                cmd.Parameters.AddWithValue("@date_accepted ", employee.SalaryInfo.DateAccepted);
+                cmd.Parameters.AddWithValue("@date_started ", employee.SalaryInfo.DateStarted);
+                cmd.Parameters.AddWithValue("@approved_salary ", employee.SalaryInfo.ApprovedSalary);
+                cmd.Parameters.AddWithValue("@annual_based_salary ", employee.SalaryInfo.AnnualBasedSalary);
+                cmd.Parameters.AddWithValue("@annual_lang_allowance ", employee.SalaryInfo.AnnualLanguageAllowance);
+                cmd.Parameters.AddWithValue("@shift_allowance ", employee.SalaryInfo.ShiftAllowance);
+                cmd.Parameters.AddWithValue("@reloc_allowance ", employee.SalaryInfo.RelocationAllowance);
+                cmd.Parameters.AddWithValue("@reloc_allowance_detail ", employee.SalaryInfo.RelocationAllowanceDetail);
+                cmd.Parameters.AddWithValue("@cost_centre ", employee.SalaryInfo.CostCentre);
+
+                cmd.Connection.Open();
+                var rows = cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                return rows > 0;
+            }
+        }
+
         public DataRow GetContactPerson(int Id)
         {
             DataTable table = new DataTable();

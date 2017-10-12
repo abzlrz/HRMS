@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.controlEmployeeApplicationDetails1 = new Presentation.DialogBox.EmployeeRegistration.ControlEmployeeApplicationDetails();
-            this.controlEmployeeEvaluationDetails1 = new Presentation.DialogBox.EmployeeRegistration.ControlEmployeeEvaluationDetails();
             this.controlEmployeeDetailsAndSalaryInfo1 = new Presentation.DialogBox.EmployeeRegistration.ControlEmployeeDetailsAndSalaryInfo();
+            this.controlEmployeeEvaluationDetails1 = new Presentation.DialogBox.EmployeeRegistration.ControlEmployeeEvaluationDetails();
             this.SuspendLayout();
             // 
             // controlEmployeeApplicationDetails1
@@ -44,16 +44,6 @@
             this.controlEmployeeApplicationDetails1.Size = new System.Drawing.Size(587, 521);
             this.controlEmployeeApplicationDetails1.TabIndex = 0;
             // 
-            // controlEmployeeEvaluationDetails1
-            // 
-            this.controlEmployeeEvaluationDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlEmployeeEvaluationDetails1.Location = new System.Drawing.Point(0, 0);
-            this.controlEmployeeEvaluationDetails1.Name = "controlEmployeeEvaluationDetails1";
-            this.controlEmployeeEvaluationDetails1.Next = this.controlEmployeeApplicationDetails1;
-            this.controlEmployeeEvaluationDetails1.Padding = new System.Windows.Forms.Padding(12);
-            this.controlEmployeeEvaluationDetails1.Size = new System.Drawing.Size(587, 521);
-            this.controlEmployeeEvaluationDetails1.TabIndex = 1;
-            // 
             // controlEmployeeDetailsAndSalaryInfo1
             // 
             this.controlEmployeeDetailsAndSalaryInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -63,6 +53,16 @@
             this.controlEmployeeDetailsAndSalaryInfo1.Previous = this.controlEmployeeApplicationDetails1;
             this.controlEmployeeDetailsAndSalaryInfo1.Size = new System.Drawing.Size(587, 521);
             this.controlEmployeeDetailsAndSalaryInfo1.TabIndex = 2;
+            // 
+            // controlEmployeeEvaluationDetails1
+            // 
+            this.controlEmployeeEvaluationDetails1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlEmployeeEvaluationDetails1.Location = new System.Drawing.Point(0, 0);
+            this.controlEmployeeEvaluationDetails1.Name = "controlEmployeeEvaluationDetails1";
+            this.controlEmployeeEvaluationDetails1.Next = this.controlEmployeeApplicationDetails1;
+            this.controlEmployeeEvaluationDetails1.Padding = new System.Windows.Forms.Padding(12);
+            this.controlEmployeeEvaluationDetails1.Size = new System.Drawing.Size(587, 521);
+            this.controlEmployeeEvaluationDetails1.TabIndex = 1;
             // 
             // FormRegisterEmployee
             // 
@@ -80,7 +80,7 @@
             this.MinimizeBox = false;
             this.Name = "FormRegisterEmployee";
             this.Text = "Register Employee";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegisterEmployee_FormClosing);
+            this.Load += new System.EventHandler(this.FormRegisterEmployee_Load);
             this.ResumeLayout(false);
 
         }
