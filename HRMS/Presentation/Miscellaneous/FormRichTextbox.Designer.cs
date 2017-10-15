@@ -87,6 +87,7 @@
             this.TYPE.Size = new System.Drawing.Size(13, 13);
             this.TYPE.TabIndex = 4;
             this.TYPE.Text = "0";
+            this.TYPE.Visible = false;
             // 
             // label3
             // 
@@ -96,6 +97,7 @@
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Type Letters:";
+            this.label3.Visible = false;
             // 
             // FormRichTextbox
             // 
